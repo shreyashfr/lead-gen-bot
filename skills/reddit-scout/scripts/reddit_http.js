@@ -1,10 +1,21 @@
 // reddit_http.js
 // Polite JSON fetch: user-agent, gap, timeout, basic retry.
+// Routes through Decodo ISP proxy to bypass Reddit datacenter IP blocks.
+
+const { ProxyAgent, fetch: undiciFetch } = require('undici');
+
+const PROXY_HOST = 'isp.decodo.com';
+const PROXY_PORT = 10002;
+const PROXY_USER = 'sp22adtw9l';
+const PROXY_PASS = 'iifDj2fZ60XI+s6hdc';
+const PROXY_URL  = `http://${PROXY_USER}:${encodeURIComponent(PROXY_PASS)}@${PROXY_HOST}:${PROXY_PORT}`;
+
+const proxyDispatcher = new ProxyAgent(PROXY_URL);
 
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 
 async function jget(url, {
-  userAgent = 'openclaw-reddit-scout/0.1 (skill; contact: local)',
+  userAgent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
   gapMs = 1200,
   timeoutMs = 15000,
   retries = 2,
@@ -17,8 +28,9 @@ async function jget(url, {
     const ctrl = new AbortController();
     const t = setTimeout(() => ctrl.abort(), timeoutMs);
     try {
-      const res = await fetch(url, {
+      const res = await undiciFetch(url, {
         signal: ctrl.signal,
+        dispatcher: proxyDispatcher,
         headers: {
           'User-Agent': userAgent,
           'Accept': 'application/json'
