@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Self-Improving Content Engine — Architecture</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap');
+
+  :root {
+    --bg: #0a0a0f;
+    --surface: #111118;
+    --border: #1e1e2e;
+    --accent1: #7c3aed;
+    --accent2: #06b6d4;
+    --accent3: #f59e0b;
+    --accent4: #10b981;
+    --accent5: #ef4444;
+    --text: #e2e8f0;
+    --muted: #64748b;
+    --dim: #1a1a2e;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* ── HEADER ── */
+  header {
+    padding: 60px 40px 40px;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+  }
+  header::before {
+    content: '';
+    position: absolute;
+    top: -80px; left: -80px;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(124,58,237,0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  header::after {
+    content: '';
+    position: absolute;
+    bottom: -100px; right: 100px;
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, rgba(6,182,212,0.1) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .header-tag {
+    font-size: 11px;
+    color: var(--accent2);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(28px, 4vw, 52px);
+    font-weight: 800;
+    line-height: 1.1;
+    background: linear-gradient(135deg, #fff 0%, var(--accent1) 50%, var(--accent2) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 16px;
+  }
+  .header-sub {
+    color: var(--muted);
+    max-width: 600px;
+    font-size: 13px;
+  }
+  .research-pills {
+    display: flex; gap: 8px; flex-wrap: wrap;
+    margin-top: 24px;
+  }
+  .pill {
+    padding: 4px 12px;
+    border-radius: 2px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .pill-purple { background: rgba(124,58,237,0.2); color: var(--accent1); border: 1px solid rgba(124,58,237,0.3); }
+  .pill-cyan   { background: rgba(6,182,212,0.2);  color: var(--accent2); border: 1px solid rgba(6,182,212,0.3); }
+  .pill-amber  { background: rgba(245,158,11,0.2); color: var(--accent3); border: 1px solid rgba(245,158,11,0.3); }
+
+  /* ── NAV ── */
+  nav {
+    display: flex; gap: 0;
+    border-bottom: 1px solid var(--border);
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  nav::-webkit-scrollbar { display: none; }
+  .nav-btn {
+    padding: 14px 24px;
+    background: none;
+    border: none;
+    color: var(--muted);
+    cursor: pointer;
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+  }
+  .nav-btn:hover { color: var(--text); }
+  .nav-btn.active { color: var(--accent2); border-bottom-color: var(--accent2); }
+
+  /* ── SECTIONS ── */
+  .section { display: none; padding: 40px; }
+  .section.active { display: block; }
+
+  .section-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .section-desc {
+    color: var(--muted);
+    margin-bottom: 36px;
+    max-width: 700px;
+  }
+
+  /* ── MERMAID CONTAINER ── */
+  .mermaid-wrap {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 32px;
+    overflow-x: auto;
+    margin-bottom: 32px;
+  }
+  .mermaid { min-width: 600px; }
+
+  /* ── DETAIL CARDS ── */
+  .detail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
+    margin-top: 24px;
+  }
+  .detail-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .detail-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+  }
+  .card-purple::before { background: var(--accent1); }
+  .card-cyan::before   { background: var(--accent2); }
+  .card-amber::before  { background: var(--accent3); }
+  .card-green::before  { background: var(--accent4); }
+  .card-red::before    { background: var(--accent5); }
+
+  .card-label {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+  .card-purple .card-label { color: var(--accent1); }
+  .card-cyan   .card-label { color: var(--accent2); }
+  .card-amber  .card-label { color: var(--accent3); }
+  .card-green  .card-label { color: var(--accent4); }
+  .card-red    .card-label { color: var(--accent5); }
+
+  .card-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .card-body {
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.7;
+  }
+  .card-body strong { color: var(--text); }
+
+  /* ── JSON SCHEMA ── */
+  .json-block {
+    background: #0d0d14;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 24px;
+    overflow-x: auto;
+    font-size: 12px;
+    line-height: 1.8;
+    tab-size: 2;
+  }
+  .j-key    { color: #7dd3fc; }
+  .j-str    { color: #86efac; }
+  .j-num    { color: var(--accent3); }
+  .j-bool   { color: var(--accent1); }
+  .j-comment{ color: #475569; font-style: italic; }
+  .j-brace  { color: #94a3b8; }
+
+  /* ── FLOW TABLE ── */
+  .flow-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  .flow-table th {
+    text-align: left;
+    padding: 10px 16px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--muted);
+    border-bottom: 1px solid var(--border);
+  }
+  .flow-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid rgba(30,30,46,0.6);
+    font-size: 12px;
+    vertical-align: top;
+  }
+  .flow-table tr:hover td { background: rgba(255,255,255,0.02); }
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 2px;
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  /* ── RESEARCH CALLOUT ── */
+  .research-callout {
+    border-left: 3px solid var(--accent3);
+    background: rgba(245,158,11,0.05);
+    padding: 14px 18px;
+    margin: 20px 0;
+    border-radius: 0 4px 4px 0;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .research-callout strong { color: var(--accent3); }
+
+  /* ── AGENT ROW ── */
+  .agent-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  .agent-icon {
+    width: 36px; height: 36px;
+    border-radius: 4px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .agent-name {
+    font-family: 'Syne', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .agent-desc { color: var(--muted); font-size: 12px; }
+  .agent-reads {
+    margin-top: 8px;
+    display: flex; gap: 6px; flex-wrap: wrap;
+  }
+  .reads-tag {
+    font-size: 10px;
+    padding: 2px 8px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    color: var(--muted);
+  }
+
+  /* ── DIVIDER ── */
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 32px 0;
+  }
+
+  h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 28px 0 14px;
+    color: var(--text);
+  }
+
+  /* ── SCROLLBAR ── */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-tag">// System Architecture v2.0</div>
+  <h1>Self-Improving<br>Content Engine</h1>
+  <p class="header-sub">A research-backed multi-agent system that learns Ayush's voice, reflects on failures, and compounds intelligence over time.</p>
+  <div class="research-pills">
+    <span class="pill pill-purple">Self-Reflection Paper</span>
+    <span class="pill pill-cyan">MetaGPT SOP Model</span>
+    <span class="pill pill-amber">Reflect-Retry-Reward RL</span>
+  </div>
+</header>
+
+<nav>
+  <button class="nav-btn active" onclick="showTab('overview')">01 — Full Pipeline</button>
+  <button class="nav-btn" onclick="showTab('rl')">02 — Reflection / RL Loop</button>
+  <button class="nav-btn" onclick="showTab('memory')">03 — voice-memory.json</button>
+  <button class="nav-btn" onclick="showTab('comms')">04 — Agent Comms Layer</button>
+  <button class="nav-btn" onclick="showTab('guardian')">05 — Voice Guardian</button>
+</nav>
+
+<!-- ═══════════════════════════════════════════════ TAB 1: OVERVIEW -->
+<div id="tab-overview" class="section active">
+  <div class="section-title">Full System Pipeline</div>
+  <p class="section-desc">End-to-end flow from a single trigger message to published content, with self-improvement baked into every rejection cycle.</p>
+
+  <div class="mermaid-wrap">
+    <pre class="mermaid">
+flowchart TD
+    TRIGGER(["💬 Ayush sends\n'pillar: [topic]'"])
+
+    subgraph COORD ["STAGE 1 — Coordinator Agent (Structured Outputs)"]
+        direction LR
+        R1["🔍 Research Agent\n→ JSON: sources, signals"]
+        R2["📈 Trend Agent\n→ JSON: hooks, emotions"]
+        R3["🕵️ Competitive Audit\n→ JSON: gaps, patterns"]
+        R4["📊 Performance Review\n→ reads voice-memory.json"]
+        R1 --> R2 --> R3 --> R4
+    end
+
+    subgraph IDEA ["STAGE 2 — Idea Generator"]
+        IG["💡 Generates 15 ideas\nHook · Angle · Format · Story · Why"]
+        PICK["Ayush picks: '1, 3, 7'"]
+        IG --> PICK
+    end
+
+    subgraph PRODUCE ["STAGE 3 — Content Producer"]
+        PRE["⚡ Pre-write Signal\nLast rejection summary injected"]
+        DRAFT["✍️ Draft Content\nReads voice-memory.json first"]
+        PRE --> DRAFT
+    end
+
+    subgraph GUARD ["STAGE 4 — Voice Guardian"]
+        G1["❌ Forbidden phrase check"]
+        G2["🎙️ Tone match score"]
+        G3["🤖 AI Detection API\n(executable ground truth)"]
+        G4["📐 Voice guardrails"]
+        G1 --> G2 --> G3 --> G4
+    end
+
+    subgraph APPROVE ["STAGE 5 — Approval Loop"]
+        AYUSH{"Ayush\nreviews"}
+        APPROVED["✅ Push to\nAirtable calendar"]
+        REJECTED["❌ Rejected\nor edited"]
+    end
+
+    subgraph REFLECT ["STAGE 6 — Composite Reflection (Research-backed)"]
+        direction TB
+        RF1["1️⃣ EXPLANATION\nWhy did this fail?"]
+        RF2["2️⃣ SOLUTION\nStep-by-step rewrite reasoning"]
+        RF3["3️⃣ INSTRUCTIONS\nRules for this format going forward"]
+        RFQ["🔬 Reflection Quality Validator\nSpecific? Generalizable?"]
+        RF1 --> RF2 --> RF3 --> RFQ
+    end
+
+    subgraph RL ["STAGE 7 — RL Memory Update"]
+        LOG["📝 Log rejection\n+ reflection quality score"]
+        IMM["⚡ Immediate signal\ninjected into next pre-write"]
+        BATCH["📊 Every 5 entries:\nPattern analysis"]
+        LESSON["💾 New voice_lesson\nadded to voice-memory.json"]
+        LOG --> IMM
+        LOG --> BATCH --> LESSON
+    end
+
+    TRIGGER --> COORD
+    COORD -->|"Strategic Brief\n(structured JSON)"| IDEA
+    IDEA --> PRODUCE
+    PRODUCE --> GUARD
+
+    GUARD -->|"FAIL"| PRODUCE
+    GUARD -->|"PASS"| APPROVE
+
+    AYUSH -->|"Approved"| APPROVED
+    AYUSH -->|"Rejected"| REJECTED
+    REJECTED --> REFLECT
+    REFLECT --> RL
+    RL -->|"Updated memory\n+ pre-write signal"| PRODUCE
+
+    style COORD fill:#1a1025,stroke:#7c3aed,stroke-width:1px,color:#e2e8f0
+    style IDEA  fill:#0d1a1a,stroke:#06b6d4,stroke-width:1px,color:#e2e8f0
+    style PRODUCE fill:#0d1a1a,stroke:#06b6d4,stroke-width:1px,color:#e2e8f0
+    style GUARD fill:#1a1500,stroke:#f59e0b,stroke-width:1px,color:#e2e8f0
+    style APPROVE fill:#0d1a12,stroke:#10b981,stroke-width:1px,color:#e2e8f0
+    style REFLECT fill:#1a0d0d,stroke:#ef4444,stroke-width:1px,color:#e2e8f0
+    style RL fill:#1a1025,stroke:#7c3aed,stroke-width:1px,color:#e2e8f0
+    </pre>
+  </div>
+
+  <div class="research-callout">
+    <strong>Research basis:</strong> The Coordinator now emits structured JSON documents at each sub-task boundary — not narrative prose — following MetaGPT's SOP principle. This prevents hallucination compounding across agent handoffs.
+  </div>
+
+  <h3>Stage Summary</h3>
+  <table class="flow-table">
+    <tr>
+      <th>Stage</th>
+      <th>Agent</th>
+      <th>Input</th>
+      <th>Output Format</th>
+      <th>Research Upgrade</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Coordinator (4 sub-agents)</td>
+      <td>Topic pillar</td>
+      <td>Structured JSON per sub-task</td>
+      <td><span class="badge" style="background:rgba(6,182,212,0.15);color:#06b6d4">MetaGPT SOPs</span></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Idea Generator</td>
+      <td>Strategic JSON brief</td>
+      <td>15 structured idea objects</td>
+      <td><span class="badge" style="background:rgba(6,182,212,0.15);color:#06b6d4">Pub-Sub reads</span></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Content Producer</td>
+      <td>Idea + pre-write signal + voice-memory</td>
+      <td>Draft content</td>
+      <td><span class="badge" style="background:rgba(124,58,237,0.15);color:#7c3aed">Retry signal</span></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Voice Guardian</td>
+      <td>Draft</td>
+      <td>Pass / Fail + reason</td>
+      <td><span class="badge" style="background:rgba(245,158,11,0.15);color:#f59e0b">Executable check</span></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Approval Loop</td>
+      <td>Clean draft</td>
+      <td>Approved → Airtable / Rejected → Reflect</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Composite Reflector</td>
+      <td>Rejected draft + reason</td>
+      <td>Explanation + Solution + Instructions</td>
+      <td><span class="badge" style="background:rgba(239,68,68,0.15);color:#ef4444">Self-Reflection paper</span></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>RL Memory Updater</td>
+      <td>Reflection + quality score</td>
+      <td>Updated voice-memory.json</td>
+      <td><span class="badge" style="background:rgba(124,58,237,0.15);color:#7c3aed">Reflect-Retry-Reward</span></td>
+    </tr>
+  </table>
+</div>
+
+<!-- ═══════════════════════════════════════════════ TAB 2: RL LOOP -->
+<div id="tab-rl" class="section">
+  <div class="section-title">Reflection / RL Loop</div>
+  <p class="section-desc">The two-tier feedback system: an immediate Retry signal fires before every draft, and a deep Composite reflection fires on every rejection. Based on findings from both the Self-Reflection paper and Reflect-Retry-Reward.</p>
+
+  <div class="mermaid-wrap">
+    <pre class="mermaid">
+flowchart LR
+    REJ(["❌ Rejection\nreceived"])
+
+    subgraph TIER1 ["TIER 1 — Immediate (fires every time)"]
+        IMM["⚡ Pre-Write Signal\nOne-line injected before next draft:\n'Last [LinkedIn] rejected for: AI hook'\n\n→ Acts as Retry agent signal\n→ Shifts attention before generation"]
+    end
+
+    subgraph TIER2 ["TIER 2 — Composite Reflection"]
+        direction TB
+        EXP["📖 EXPLANATION\n'Why did this fail?\nBe specific about the\nexact failure point.'"]
+        SOL["🛠️ SOLUTION\n'Rewrite the failing\nsection step-by-step\nwith your reasoning.'"]
+        INS["📋 INSTRUCTIONS\n'Write numbered rules\nfor this content type\ngoing forward.'"]
+        EXP --> SOL --> INS
+    end
+
+    subgraph RFQ ["REFLECTION QUALITY VALIDATOR"]
+        Q1{"Specific?\n(identifies exact\nfailure point)"}
+        Q2{"Generalizable?\n(applies beyond\nthis one post)"}
+        GOOD["✅ High-quality\nreflection\nScore: 8-10"]
+        BAD["⚠️ Low-quality\nreflection\nScore: 1-4"]
+        Q1 -->|yes| Q2
+        Q1 -->|no| BAD
+        Q2 -->|yes| GOOD
+        Q2 -->|no| BAD
+    end
+
+    subgraph MEMORY ["VOICE-MEMORY UPDATE"]
+        LOG1["📝 Log entry:\n{category, reflection,\nquality_score, timestamp}"]
+        COUNT{"Entry count\nmod 5 = 0?"}
+        SKIP["Skip batch\nanalysis"]
+        ANALYZE["📊 Pattern analysis\nacross last 5 entries"]
+        LESSON["💾 Synthesize\nnew voice_lesson\n(short + generalizable)"]
+        LOG1 --> COUNT
+        COUNT -->|no| SKIP
+        COUNT -->|yes| ANALYZE --> LESSON
+    end
+
+    REJ --> TIER1
+    REJ --> TIER2
+    TIER2 --> RFQ
+    RFQ --> MEMORY
+
+    style TIER1 fill:#0d1a1a,stroke:#06b6d4,stroke-width:1px,color:#e2e8f0
+    style TIER2 fill:#1a0d0d,stroke:#ef4444,stroke-width:1px,color:#e2e8f0
+    style RFQ fill:#1a1500,stroke:#f59e0b,stroke-width:1px,color:#e2e8f0
+    style MEMORY fill:#1a1025,stroke:#7c3aed,stroke-width:1px,color:#e2e8f0
+    </pre>
+  </div>
+
+  <div class="research-callout">
+    <strong>Self-Reflection paper finding:</strong> Composite reflection (Explanation + Solution + Instructions) achieved 93% vs Retry's 83% — a 10-point gap. Simply retrying is the weakest form. The biggest jump comes from Solution-type reflections that work through the correction step-by-step.
+  </div>
+
+  <div class="research-callout" style="border-left-color: var(--accent1); background: rgba(124,58,237,0.05);">
+    <strong style="color: var(--accent1);">Reflect-Retry-Reward finding:</strong> Train the reflection quality, not the content quality. The bottleneck is how well the model diagnoses failure — not how much content data it has seen. Scoring reflection quality separately (specific + generalizable) is the mechanism for this.
+  </div>
+
+  <h3>Reflection Quality Scoring Rubric</h3>
+  <table class="flow-table">
+    <tr>
+      <th>Dimension</th>
+      <th>Score 1–4 (bad)</th>
+      <th>Score 5–7 (ok)</th>
+      <th>Score 8–10 (good)</th>
+    </tr>
+    <tr>
+      <td><strong>Specificity</strong></td>
+      <td>"The hook wasn't good"</td>
+      <td>"The hook was too generic"</td>
+      <td>"The hook led with a concept instead of a personal moment — failed the 'me not you' rule"</td>
+    </tr>
+    <tr>
+      <td><strong>Generalizability</strong></td>
+      <td>Only applies to this exact post</td>
+      <td>Applies to this content type</td>
+      <td>One-sentence rule that applies across all LinkedIn posts</td>
+    </tr>
+    <tr>
+      <td><strong>Actionability</strong></td>
+      <td>Vague aspiration</td>
+      <td>Describes what to avoid</td>
+      <td>Tells the model exactly what to do differently next time</td>
+    </tr>
+  </table>
+
+  <h3>Failure Categories to Track</h3>
+  <div class="detail-grid">
+    <div class="detail-card card-red">
+      <div class="card-label">Category 01</div>
+      <div class="card-title">Hook Failure</div>
+      <div class="card-body">Hook led with concept not story · Too vague · Too AI-sounding · Missing tension · No personal stake</div>
+    </div>
+    <div class="detail-card card-amber">
+      <div class="card-label">Category 02</div>
+      <div class="card-title">Tone Failure</div>
+      <div class="card-body">Sounds like a LinkedIn thought leader cliché · Over-polished · Missing Ayush's directness · Wrong register for platform</div>
+    </div>
+    <div class="detail-card card-purple">
+      <div class="card-label">Category 03</div>
+      <div class="card-title">Depth Failure</div>
+      <div class="card-body">Surface-level insight · No original perspective · Restates obvious · Missing the "why this matters to me specifically"</div>
+    </div>
+    <div class="detail-card card-cyan">
+      <div class="card-label">Category 04</div>
+      <div class="card-title">Format Failure</div>
+      <div class="card-body">Wrong length for platform · Poor structure · CTA missing or weak · Carousel flow breaks · Thread pacing off</div>
+    </div>
+    <div class="detail-card card-green">
+      <div class="card-label">Category 05</div>
+      <div class="card-title">Story Fit Failure</div>
+      <div class="card-body">Wrong life story matched · Story doesn't support the angle · Forced connection between idea and narrative</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════ TAB 3: MEMORY -->
+<div id="tab-memory" class="section">
+  <div class="section-title">voice-memory.json Schema</div>
+  <p class="section-desc">The single source of truth. Structured with agent-specific read scopes (MetaGPT pub-sub pattern) so each agent loads only what it needs — preventing context bloat and irrelevant noise.</p>
+
+  <div class="mermaid-wrap">
+    <pre class="mermaid">
+flowchart LR
+    VM[("📁 voice-memory\n.json")]
+
+    subgraph READS ["AGENT READ SCOPES (Pub-Sub)"]
+        CP["✍️ Content Producer\nreads:\n• voice_rules\n• hook_patterns\n• voice_lessons\n• pre_write_signal"]
+        VG["🛡️ Voice Guardian\nreads:\n• forbidden_phrases\n• tone_rules\n• ai_threshold\n• format_rules"]
+        IG["💡 Idea Generator\nreads:\n• competitor_gaps\n• trs_by_format\n• high_perf_topics\n• story_bank"]
+        CO["🧠 Coordinator\nreads:\n• rl_metrics\n• performance_history\n• failure_patterns"]
+    end
+
+    subgraph WRITES ["WHO WRITES"]
+        W1["RL Updater\n→ voice_lessons\n→ feedback_log\n→ pre_write_signal"]
+        W2["Coordinator\n→ competitor_gaps\n→ performance_history"]
+        W3["Guardian\n→ ai_detection_log"]
+    end
+
+    VM --> READS
+    WRITES --> VM
+
+    style VM fill:#1a1025,stroke:#7c3aed,stroke-width:2px,color:#e2e8f0
+    style READS fill:#0d1a1a,stroke:#06b6d4,stroke-width:1px,color:#e2e8f0
+    style WRITES fill:#1a0d0d,stroke:#ef4444,stroke-width:1px,color:#e2e8f0
+    </pre>
+  </div>
+
+  <h3>Full Schema</h3>
+  <div class="json-block"><pre><span class="j-brace">{</span>
+  <span class="j-comment">// ── IDENTITY ──────────────────────────────────────────────────</span>
+  <span class="j-key">"schema_version"</span>: <span class="j-str">"2.0"</span>,
+  <span class="j-key">"last_updated"</span>: <span class="j-str">"2025-01-01T00:00:00Z"</span>,
+  <span class="j-key">"owner"</span>: <span class="j-str">"Ayush"</span>,
+
+  <span class="j-comment">// ── VOICE RULES (Content Producer reads) ──────────────────────</span>
+  <span class="j-key">"voice_rules"</span>: <span class="j-brace">{</span>
+    <span class="j-key">"tone"</span>: <span class="j-str">"direct, first-person, no thought-leader clichés"</span>,
+    <span class="j-key">"pov"</span>: <span class="j-str">"always from lived experience, never abstract"</span>,
+    <span class="j-key">"sentence_style"</span>: <span class="j-str">"short punchy sentences. vary rhythm."</span>,
+    <span class="j-key">"forbidden_phrases"</span>: <span class="j-brace">[</span>
+      <span class="j-str">"In today's world"</span>, <span class="j-str">"Game changer"</span>, <span class="j-str">"Let that sink in"</span>,
+      <span class="j-str">"I'm excited to share"</span>, <span class="j-str">"Unpopular opinion"</span>, <span class="j-str">"Hot take"</span>
+    <span class="j-brace">]</span>,
+    <span class="j-key">"hook_rules"</span>: <span class="j-brace">[</span>
+      <span class="j-str">"Lead with personal moment, not concept"</span>,
+      <span class="j-str">"First line must create tension or curiosity"</span>,
+      <span class="j-str">"No rhetorical questions as openers"</span>
+    <span class="j-brace">]</span>
+  <span class="j-brace">}</span>,
+
+  <span class="j-comment">// ── PRE-WRITE SIGNAL (injected before every draft) ─────────────</span>
+  <span class="j-key">"pre_write_signal"</span>: <span class="j-brace">{</span>
+    <span class="j-key">"last_rejection_format"</span>: <span class="j-str">"LinkedIn"</span>,
+    <span class="j-key">"last_rejection_reason"</span>: <span class="j-str">"AI-sounding hook — led with concept not story"</span>,
+    <span class="j-key">"last_rejection_category"</span>: <span class="j-str">"hook_failure"</span>,
+    <span class="j-key">"timestamp"</span>: <span class="j-str">"2025-01-01T00:00:00Z"</span>
+  <span class="j-brace">}</span>,
+
+  <span class="j-comment">// ── HOOK PATTERNS (high-performing) ────────────────────────────</span>
+  <span class="j-key">"hook_patterns"</span>: <span class="j-brace">[</span>
+    <span class="j-brace">{</span>
+      <span class="j-key">"pattern"</span>: <span class="j-str">"The day I [specific event] changed how I think about [concept]"</span>,
+      <span class="j-key">"avg_trs"</span>: <span class="j-num">8.4</span>,
+      <span class="j-key">"best_formats"</span>: <span class="j-brace">[</span><span class="j-str">"LinkedIn"</span>, <span class="j-str">"Twitter Thread"</span><span class="j-brace">]</span>
+    <span class="j-brace">}</span>,
+    <span class="j-brace">{</span>
+      <span class="j-key">"pattern"</span>: <span class="j-str">"[Counterintuitive number] that surprised me about [topic]"</span>,
+      <span class="j-key">"avg_trs"</span>: <span class="j-num">7.9</span>,
+      <span class="j-key">"best_formats"</span>: <span class="j-brace">[</span><span class="j-str">"Tweet"</span>, <span class="j-str">"Instagram Carousel"</span><span class="j-brace">]</span>
+    <span class="j-brace">}</span>
+  <span class="j-brace">]</span>,
+
+  <span class="j-comment">// ── VOICE LESSONS (RL-derived, grows over time) ─────────────────</span>
+  <span class="j-key">"voice_lessons"</span>: <span class="j-brace">[</span>
+    <span class="j-brace">{</span>
+      <span class="j-key">"id"</span>: <span class="j-str">"VL001"</span>,
+      <span class="j-key">"lesson"</span>: <span class="j-str">"LinkedIn hooks that start with 'I' outperform those starting with a concept by ~40%"</span>,
+      <span class="j-key">"derived_from_rejections"</span>: <span class="j-brace">[</span><span class="j-str">"r_012"</span>, <span class="j-str">"r_015"</span>, <span class="j-str">"r_019"</span><span class="j-brace">]</span>,
+      <span class="j-key">"quality_score"</span>: <span class="j-num">9.2</span>,
+      <span class="j-key">"category"</span>: <span class="j-str">"hook_failure"</span>,
+      <span class="j-key">"created_at"</span>: <span class="j-str">"2025-01-01T00:00:00Z"</span>
+    <span class="j-brace">}</span>
+  <span class="j-brace">]</span>,
+
+  <span class="j-comment">// ── FEEDBACK LOG (raw rejection data) ──────────────────────────</span>
+  <span class="j-key">"feedback_log"</span>: <span class="j-brace">[</span>
+    <span class="j-brace">{</span>
+      <span class="j-key">"id"</span>: <span class="j-str">"r_001"</span>,
+      <span class="j-key">"format"</span>: <span class="j-str">"LinkedIn"</span>,
+      <span class="j-key">"pillar"</span>: <span class="j-str">"AI careers"</span>,
+      <span class="j-key">"rejection_reason"</span>: <span class="j-str">"Hook too generic"</span>,
+      <span class="j-key">"category"</span>: <span class="j-str">"hook_failure"</span>,
+      <span class="j-key">"reflection"</span>: <span class="j-brace">{</span>
+        <span class="j-key">"explanation"</span>: <span class="j-str">"Led with abstract concept instead of personal story"</span>,
+        <span class="j-key">"solution"</span>: <span class="j-str">"Rewrote opening with specific memory from first week at job"</span>,
+        <span class="j-key">"instructions"</span>: <span class="j-str">"Always anchor LinkedIn hook to a date, place, or moment"</span>,
+        <span class="j-key">"quality_score"</span>: <span class="j-num">8.5</span>,
+        <span class="j-key">"is_specific"</span>: <span class="j-bool">true</span>,
+        <span class="j-key">"is_generalizable"</span>: <span class="j-bool">true</span>
+      <span class="j-brace">}</span>,
+      <span class="j-key">"timestamp"</span>: <span class="j-str">"2025-01-01T00:00:00Z"</span>
+    <span class="j-brace">}</span>
+  <span class="j-brace">]</span>,
+
+  <span class="j-comment">// ── RL METRICS (performance tracking) ──────────────────────────</span>
+  <span class="j-key">"rl_metrics"</span>: <span class="j-brace">{</span>
+    <span class="j-key">"total_drafts"</span>: <span class="j-num">0</span>,
+    <span class="j-key">"total_rejections"</span>: <span class="j-num">0</span>,
+    <span class="j-key">"approval_rate_by_format"</span>: <span class="j-brace">{</span>
+      <span class="j-key">"LinkedIn"</span>: <span class="j-num">0.0</span>,
+      <span class="j-key">"Twitter Thread"</span>: <span class="j-num">0.0</span>,
+      <span class="j-key">"Tweet"</span>: <span class="j-num">0.0</span>,
+      <span class="j-key">"X Article"</span>: <span class="j-num">0.0</span>,
+      <span class="j-key">"Instagram Carousel"</span>: <span class="j-num">0.0</span>
+    <span class="j-brace">}</span>,
+    <span class="j-key">"avg_reflection_quality"</span>: <span class="j-num">0.0</span>,
+    <span class="j-key">"top_failure_category"</span>: <span class="j-str">"none"</span>
+  <span class="j-brace">}</span>,
+
+  <span class="j-comment">// ── COMPETITOR INTELLIGENCE ─────────────────────────────────────</span>
+  <span class="j-key">"competitor_gaps"</span>: <span class="j-brace">[</span>
+    <span class="j-brace">{</span>
+      <span class="j-key">"gap"</span>: <span class="j-str">"No one writing about [topic] from practitioner POV"</span>,
+      <span class="j-key">"confidence"</span>: <span class="j-num">0.87</span>,
+      <span class="j-key">"found_at"</span>: <span class="j-str">"2025-01-01"</span>
+    <span class="j-brace">}</span>
+  <span class="j-brace">]</span>,
+
+  <span class="j-comment">// ── STORY BANK ──────────────────────────────────────────────────</span>
+  <span class="j-key">"story_bank"</span>: <span class="j-brace">[</span>
+    <span class="j-brace">{</span>
+      <span class="j-key">"id"</span>: <span class="j-str">"S001"</span>,
+      <span class="j-key">"summary"</span>: <span class="j-str">"First job rejection that led to better opportunity"</span>,
+      <span class="j-key">"themes"</span>: <span class="j-brace">[</span><span class="j-str">"resilience"</span>, <span class="j-str">"career pivots"</span>, <span class="j-str">"rejection"</span><span class="j-brace">]</span>,
+      <span class="j-key">"used_count"</span>: <span class="j-num">0</span>,
+      <span class="j-key">"avg_trs_when_used"</span>: <span class="j-num">0.0</span>
+    <span class="j-brace">}</span>
+  <span class="j-brace">]</span>
+<span class="j-brace">}</span></pre></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════ TAB 4: COMMS -->
+<div id="tab-comms" class="section">
+  <div class="section-title">Agent Communication Layer</div>
+  <p class="section-desc">Structured document handoffs between agents — not natural language chat. Each agent publishes a typed schema and subscribes only to what it needs. Based on MetaGPT's SOP and publish-subscribe architecture.</p>
+
+  <div class="mermaid-wrap">
+    <pre class="mermaid">
+flowchart TD
+    subgraph POOL ["📮 SHARED MESSAGE POOL (Structured JSON only)"]
+        M1["📄 research_brief.json"]
+        M2["📄 trend_brief.json"]
+        M3["📄 competitive_brief.json"]
+        M4["📄 performance_brief.json"]
+        M5["📄 idea_list.json"]
+        M6["📄 draft_content.json"]
+        M7["📄 guardian_result.json"]
+        M8["📄 rejection_event.json"]
+        M9["📄 reflection.json"]
+        M10["📄 memory_update.json"]
+    end
+
+    subgraph AGENTS ["AGENTS + THEIR SUBSCRIPTIONS"]
+        A1["🔍 Research Agent\n✏️ PUBLISHES: research_brief.json"]
+        A2["📈 Trend Agent\n📖 READS: research_brief\n✏️ PUBLISHES: trend_brief.json"]
+        A3["🕵️ Competitive Agent\n📖 READS: research_brief\n✏️ PUBLISHES: competitive_brief.json"]
+        A4["📊 Performance Agent\n📖 READS: voice-memory (rl_metrics)\n✏️ PUBLISHES: performance_brief.json"]
+        A5["💡 Idea Generator\n📖 READS: all 4 briefs\n✏️ PUBLISHES: idea_list.json"]
+        A6["✍️ Content Producer\n📖 READS: idea_list + pre_write_signal\n✏️ PUBLISHES: draft_content.json"]
+        A7["🛡️ Voice Guardian\n📖 READS: draft_content\n✏️ PUBLISHES: guardian_result.json"]
+        A8["🔴 Rejection Handler\n📖 READS: guardian_result (FAIL)\n✏️ PUBLISHES: rejection_event.json"]
+        A9["🪞 Composite Reflector\n📖 READS: rejection_event\n✏️ PUBLISHES: reflection.json"]
+        A10["💾 RL Memory Updater\n📖 READS: reflection\n✏️ PUBLISHES: memory_update.json"]
+    end
+
+    A1 --> M1 --> A2
+    M1 --> A3
+    A2 --> M2 --> A5
+    A3 --> M3 --> A5
+    A4 --> M4 --> A5
+    A5 --> M5 --> A6
+    A6 --> M6 --> A7
+    A7 --> M7 --> A8
+    A8 --> M8 --> A9
+    A9 --> M9 --> A10
+    A10 --> M10
+
+    style POOL fill:#0d0d14,stroke:#7c3aed,stroke-width:1px,color:#e2e8f0
+    style AGENTS fill:#111118,stroke:#06b6d4,stroke-width:1px,color:#e2e8f0
+    </pre>
+  </div>
+
+  <div class="research-callout">
+    <strong>MetaGPT finding:</strong> Agents that communicate via structured documents instead of natural language conversation reduce hallucination compounding. Each agent is only exposed to the exact information it needs — nothing more. This is the publish-subscribe pattern.
+  </div>
+
+  <h3>Document Schemas for Each Handoff</h3>
+  <div class="detail-grid">
+    <div class="detail-card card-cyan">
+      <div class="card-label">research_brief.json</div>
+      <div class="card-title">Research Agent → Pool</div>
+      <div class="card-body">
+        <pre style="font-size:11px;color:#94a3b8;line-height:1.6">{
+  platform: string,
+  topic: string,
+  post_url: string,
+  engagement_signal: string,
+  why_resonating: string,
+  source_credibility: 0.0–1.0
+}</pre>
+      </div>
+    </div>
+    <div class="detail-card card-cyan">
+      <div class="card-label">idea_list.json</div>
+      <div class="card-title">Idea Generator → Pool</div>
+      <div class="card-body">
+        <pre style="font-size:11px;color:#94a3b8;line-height:1.6">{
+  ideas: [{
+    id: number,
+    hook: string,
+    angle: string,
+    format: string,
+    story_id: string,
+    why_it_works: string,
+    predicted_trs: 0.0–10.0
+  }]
+}</pre>
+      </div>
+    </div>
+    <div class="detail-card card-red">
+      <div class="card-label">rejection_event.json</div>
+      <div class="card-title">Rejection Handler → Pool</div>
+      <div class="card-body">
+        <pre style="font-size:11px;color:#94a3b8;line-height:1.6">{
+  draft_id: string,
+  format: string,
+  pillar: string,
+  rejected_by: "guardian"|"ayush",
+  reason: string,
+  category: string,
+  failed_draft: string
+}</pre>
+      </div>
+    </div>
+    <div class="detail-card card-purple">
+      <div class="card-label">reflection.json</div>
+      <div class="card-title">Composite Reflector → Pool</div>
+      <div class="card-body">
+        <pre style="font-size:11px;color:#94a3b8;line-height:1.6">{
+  explanation: string,
+  solution: string,
+  instructions: string[],
+  quality_score: 0–10,
+  is_specific: boolean,
+  is_generalizable: boolean,
+  category: string
+}</pre>
+      </div>
+    </div>
+  </div>
+
+  <h3>Agent Read/Write Permissions Summary</h3>
+  <div class="agent-row">
+    <div class="agent-icon" style="background:rgba(6,182,212,0.1);">🧠</div>
+    <div>
+      <div class="agent-name">Coordinator (4 sub-agents)</div>
+      <div class="agent-desc">Each sub-agent publishes one typed JSON document. No sub-agent reads another's output directly — all goes through the pool. Prevents compounding errors.</div>
+      <div class="agent-reads">
+        <span class="reads-tag">WRITES → research_brief</span>
+        <span class="reads-tag">WRITES → trend_brief</span>
+        <span class="reads-tag">WRITES → competitive_brief</span>
+        <span class="reads-tag">WRITES → performance_brief</span>
+      </div>
+    </div>
+  </div>
+  <div class="agent-row">
+    <div class="agent-icon" style="background:rgba(16,185,129,0.1);">💡</div>
+    <div>
+      <div class="agent-name">Idea Generator</div>
+      <div class="agent-desc">The only agent that reads all 4 coordinator briefs. Synthesizes across them to generate scored, structured idea objects.</div>
+      <div class="agent-reads">
+        <span class="reads-tag">READS competitor_gaps</span>
+        <span class="reads-tag">READS trs_by_format</span>
+        <span class="reads-tag">READS high_perf_topics</span>
+        <span class="reads-tag">READS story_bank</span>
+      </div>
+    </div>
+  </div>
+  <div class="agent-row">
+    <div class="agent-icon" style="background:rgba(124,58,237,0.1);">✍️</div>
+    <div>
+      <div class="agent-name">Content Producer</div>
+      <div class="agent-desc">Reads a targeted slice of voice-memory only. Gets the pre-write signal (immediate Retry layer) before generating. Never reads competitor or performance data — that's noise for this task.</div>
+      <div class="agent-reads">
+        <span class="reads-tag">READS voice_rules</span>
+        <span class="reads-tag">READS hook_patterns</span>
+        <span class="reads-tag">READS voice_lessons</span>
+        <span class="reads-tag">READS pre_write_signal</span>
+      </div>
+    </div>
+  </div>
+  <div class="agent-row">
+    <div class="agent-icon" style="background:rgba(239,68,68,0.1);">🪞</div>
+    <div>
+      <div class="agent-name">Composite Reflector</div>
+      <div class="agent-desc">Reads rejection_event only. Generates three reflection types (Explanation, Solution, Instructions) and self-scores on quality dimensions before writing to pool.</div>
+      <div class="agent-reads">
+        <span class="reads-tag">READS rejection_event</span>
+        <span class="reads-tag">WRITES reflection.json</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════ TAB 5: GUARDIAN -->
+<div id="tab-guardian" class="section">
+  <div class="section-title">Voice Guardian Logic</div>
+  <p class="section-desc">Four-layer validation with one executable ground-truth check (AI detection API). Only clean drafts reach Ayush. Failures route to the Composite Reflector, not back to a blind retry.</p>
+
+  <div class="mermaid-wrap">
+    <pre class="mermaid">
+flowchart TD
+    IN(["📄 draft_content.json\nreceived"])
+
+    subgraph L1 ["LAYER 1 — Forbidden Phrase Check (deterministic)"]
+        FP{"Any forbidden\nphrase found?"}
+        FP_FAIL["❌ FAIL\nCategory: tone_failure\nNo reflection needed — rule violation"]
+        FP_PASS["✅ Continue"]
+        FP -->|yes| FP_FAIL
+        FP -->|no| FP_PASS
+    end
+
+    subgraph L2 ["LAYER 2 — Format Rules Check (deterministic)"]
+        FR{"Length in range?\nStructure valid?\nCTA present?"}
+        FR_FAIL["❌ FAIL\nCategory: format_failure"]
+        FR_PASS["✅ Continue"]
+        FR -->|no| FR_FAIL
+        FR -->|yes| FR_PASS
+    end
+
+    subgraph L3 ["LAYER 3 — Tone Match Score (LLM-judged)"]
+        TM["Score draft against\nvoice_rules + hook_rules\n0.0 – 1.0"]
+        TM_THRESH{"Score ≥ 0.75?"}
+        TM_FAIL["❌ FAIL\nCategory: tone_failure\nScore logged"]
+        TM_PASS["✅ Continue"]
+        TM --> TM_THRESH
+        TM_THRESH -->|no| TM_FAIL
+        TM_THRESH -->|yes| TM_PASS
+    end
+
+    subgraph L4 ["LAYER 4 — AI Detection API (executable ground truth)"]
+        API["POST to AI Detection API\n(e.g. Sapling / Winston AI)\nReturns: score 0.0–1.0"]
+        API_THRESH{"AI score\n≤ 0.25?"}
+        API_FAIL["❌ FAIL\nCategory: ai_detection\nScore logged to voice-memory"]
+        API_PASS["✅ PASS ALL LAYERS"]
+        API --> API_THRESH
+        API_THRESH -->|no| API_FAIL
+        API_THRESH -->|yes| API_PASS
+    end
+
+    ROUTE{"Route failure\nto reflector?"}
+    REJECT_ROUTE["→ rejection_event.json\n→ Composite Reflector\n→ RL update"]
+    AYUSH(["✅ Draft reaches\nAyush"])
+
+    IN --> L1
+    FP_PASS --> L2
+    FR_PASS --> L3
+    TM_PASS --> L4
+    FP_FAIL --> ROUTE
+    FR_FAIL --> ROUTE
+    TM_FAIL --> ROUTE
+    API_FAIL --> ROUTE
+    ROUTE -->|yes| REJECT_ROUTE
+    API_PASS --> AYUSH
+
+    style L1 fill:#1a1500,stroke:#f59e0b,stroke-width:1px,color:#e2e8f0
+    style L2 fill:#1a1500,stroke:#f59e0b,stroke-width:1px,color:#e2e8f0
+    style L3 fill:#0d1a1a,stroke:#06b6d4,stroke-width:1px,color:#e2e8f0
+    style L4 fill:#1a0d0d,stroke:#ef4444,stroke-width:1px,color:#e2e8f0
+    </pre>
+  </div>
+
+  <div class="research-callout">
+    <strong>MetaGPT finding:</strong> Adding code execution (a binary pass/fail ground truth) gave a 5.4% benchmark improvement because it's immune to hallucination — the code either runs or it doesn't. Layer 4 (AI Detection API) is your equivalent. The model cannot hallucinate its way past an external API score.
+  </div>
+
+  <h3>Layer-by-Layer Breakdown</h3>
+  <div class="detail-grid">
+    <div class="detail-card card-amber">
+      <div class="card-label">Layer 1</div>
+      <div class="card-title">Forbidden Phrase Check</div>
+      <div class="card-body">
+        <strong>Type:</strong> Deterministic string match<br><br>
+        <strong>Source:</strong> <code>voice_memory.voice_rules.forbidden_phrases</code><br><br>
+        <strong>On fail:</strong> Immediate rejection. No reflection triggered — this is a rule violation, not a judgment call. The Content Producer should never have produced this; the pre-write signal updates.<br><br>
+        <strong>Cost:</strong> Near zero. Fast.
+      </div>
+    </div>
+    <div class="detail-card card-amber">
+      <div class="card-label">Layer 2</div>
+      <div class="card-title">Format Rules Check</div>
+      <div class="card-body">
+        <strong>Type:</strong> Deterministic rules per format<br><br>
+        <strong>Checks:</strong> Word count in range · CTA present · Structure valid (thread has numbered points, carousel has slide count, etc.)<br><br>
+        <strong>On fail:</strong> Rejection with category <code>format_failure</code>. Routes to reflector. Reflector generates instructions for format compliance.<br><br>
+        <strong>Cost:</strong> Near zero. Logic-based.
+      </div>
+    </div>
+    <div class="detail-card card-cyan">
+      <div class="card-label">Layer 3</div>
+      <div class="card-title">Tone Match Score</div>
+      <div class="card-body">
+        <strong>Type:</strong> LLM-judged (one API call)<br><br>
+        <strong>Prompt:</strong> Score this draft 0–1 against these voice rules and hook rules. Return JSON: <code>{score, reason, specific_issue}</code><br><br>
+        <strong>Threshold:</strong> ≥ 0.75 to pass<br><br>
+        <strong>On fail:</strong> Routes to reflector with the specific issue logged. Tone scores tracked in <code>rl_metrics</code> over time.<br><br>
+        <strong>Cost:</strong> ~$0.001 per check.
+      </div>
+    </div>
+    <div class="detail-card card-red">
+      <div class="card-label">Layer 4</div>
+      <div class="card-title">AI Detection API</div>
+      <div class="card-body">
+        <strong>Type:</strong> External API call — executable ground truth<br><br>
+        <strong>Threshold:</strong> AI probability ≤ 0.25 to pass<br><br>
+        <strong>On fail:</strong> Score logged to <code>ai_detection_log</code> in voice-memory. Routes to reflector. Reflector generates instructions specifically about writing patterns that triggered detection.<br><br>
+        <strong>Why last:</strong> Most expensive check. Only runs if draft passes layers 1–3. Catches the drafts that <em>sound</em> like Ayush but still pattern-match as AI.
+      </div>
+    </div>
+  </div>
+
+  <h3>Guardian Output Schema</h3>
+  <div class="json-block"><pre><span class="j-comment">// guardian_result.json — published to message pool</span>
+<span class="j-brace">{</span>
+  <span class="j-key">"draft_id"</span>: <span class="j-str">"d_042"</span>,
+  <span class="j-key">"result"</span>: <span class="j-str">"FAIL"</span>,           <span class="j-comment">// "PASS" | "FAIL"</span>
+  <span class="j-key">"failed_layer"</span>: <span class="j-num">3</span>,            <span class="j-comment">// 1 | 2 | 3 | 4 | null</span>
+  <span class="j-key">"failure_category"</span>: <span class="j-str">"tone_failure"</span>,
+  <span class="j-key">"failure_reason"</span>: <span class="j-str">"Hook leads with concept not personal story. Score: 0.61"</span>,
+  <span class="j-key">"tone_score"</span>: <span class="j-num">0.61</span>,          <span class="j-comment">// null if failed earlier layer</span>
+  <span class="j-key">"ai_detection_score"</span>: <span class="j-num">null</span>,   <span class="j-comment">// null if didn't reach layer 4</span>
+  <span class="j-key">"route_to_reflector"</span>: <span class="j-bool">true</span>,
+  <span class="j-key">"timestamp"</span>: <span class="j-str">"2025-01-01T00:00:00Z"</span>
+<span class="j-brace">}</span></pre></div>
+</div>
+
+<script>
+  // Load mermaid
+  const script = document.createElement('script');
+  script.src = 'https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.js';
+  script.onload = () => {
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: 'dark',
+      themeVariables: {
+        primaryColor: '#1a1025',
+        primaryTextColor: '#e2e8f0',
+        primaryBorderColor: '#7c3aed',
+        lineColor: '#475569',
+        secondaryColor: '#0d1a1a',
+        tertiaryColor: '#0d0d14',
+        background: '#0a0a0f',
+        mainBkg: '#111118',
+        nodeBorder: '#7c3aed',
+        clusterBkg: '#111118',
+        titleColor: '#e2e8f0',
+        edgeLabelBackground: '#0a0a0f',
+        fontFamily: 'Space Mono, monospace',
+        fontSize: '13px'
+      },
+      flowchart: { curve: 'basis', padding: 20 }
+    });
+  };
+  document.head.appendChild(script);
+
+  function showTab(name) {
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('tab-' + name).classList.add('active');
+    event.target.classList.add('active');
+    // Re-render mermaid if needed
+    if (window.mermaid) {
+      setTimeout(() => mermaid.run(), 100);
+    }
+  }
+</script>
+</body>
+</html>

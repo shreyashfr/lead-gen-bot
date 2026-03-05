@@ -1,0 +1,26 @@
+{
+  "niche": "got",
+  "nicheSlug": "got",
+  "runId": "2026-02-28T02-28-20-456Z",
+  "startedAt": "2026-02-28T02:28:20.462Z",
+  "keywords": [
+    "got"
+  ],
+  "mustInclude": [],
+  "search": "got",
+  "subAllowlist": null,
+  "config": {
+    "topN": 12,
+    "subLimit": 8,
+    "gapMs": 800,
+    "limitPerListing": 25,
+    "time": "year",
+    "kinds": [
+      "rising",
+      "top"
+    ],
+    "searchSort": "top",
+    "searchTime": null,
+    "minSubscribers": 0
+  }
+}

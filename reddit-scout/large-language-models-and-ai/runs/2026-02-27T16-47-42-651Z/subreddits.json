@@ -1,0 +1,52 @@
+[
+  {
+    "name": "science",
+    "title": "Reddit Science",
+    "subscribers": 34341426,
+    "over18": false,
+    "url": "https://www.reddit.com/r/science/",
+    "discoveredBy": [
+      "Large Language Models and AI"
+    ]
+  },
+  {
+    "name": "technology",
+    "title": "/r/Technology ",
+    "subscribers": 20156589,
+    "over18": false,
+    "url": "https://www.reddit.com/r/technology/",
+    "discoveredBy": [
+      "Large Language Models and AI"
+    ]
+  },
+  {
+    "name": "singularity",
+    "title": "Singularity",
+    "subscribers": 3848465,
+    "over18": false,
+    "url": "https://www.reddit.com/r/singularity/",
+    "discoveredBy": [
+      "Large Language Models and AI"
+    ]
+  },
+  {
+    "name": "CharacterAI",
+    "title": "Character.AI",
+    "subscribers": 2574884,
+    "over18": false,
+    "url": "https://www.reddit.com/r/CharacterAI/",
+    "discoveredBy": [
+      "Large Language Models and AI"
+    ]
+  },
+  {
+    "name": "ArtificialInteligence",
+    "title": "Artificial Intelligence",
+    "subscribers": 1708939,
+    "over18": false,
+    "url": "https://www.reddit.com/r/ArtificialInteligence/",
+    "discoveredBy": [
+      "Large Language Models and AI"
+    ]
+  }
+]

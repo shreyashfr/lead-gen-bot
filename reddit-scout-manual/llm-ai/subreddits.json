@@ -1,0 +1,144 @@
+[
+  {
+    "name": "ChatGPT",
+    "title": "ChatGPT",
+    "subscribers": 11384805,
+    "over18": false,
+    "url": "https://www.reddit.com/r/ChatGPT/",
+    "discoveredBy": [
+      "large language models",
+      "LLM",
+      "chatgpt",
+      "openai",
+      "anthropic",
+      "prompt engineering",
+      "ai agents"
+    ]
+  },
+  {
+    "name": "singularity",
+    "title": "Singularity",
+    "subscribers": 3848439,
+    "over18": false,
+    "url": "https://www.reddit.com/r/singularity/",
+    "discoveredBy": [
+      "large language models",
+      "LLM",
+      "chatgpt",
+      "openai",
+      "anthropic",
+      "ai agents",
+      "machine learning"
+    ]
+  },
+  {
+    "name": "MachineLearning",
+    "title": "Machine Learning",
+    "subscribers": 3026390,
+    "over18": false,
+    "url": "https://www.reddit.com/r/MachineLearning/",
+    "discoveredBy": [
+      "large language models",
+      "LLM",
+      "openai",
+      "machine learning"
+    ]
+  },
+  {
+    "name": "datascience",
+    "title": "Data Science",
+    "subscribers": 2726577,
+    "over18": false,
+    "url": "https://www.reddit.com/r/datascience/",
+    "discoveredBy": [
+      "machine learning"
+    ]
+  },
+  {
+    "name": "OpenAI",
+    "title": "OpenAI",
+    "subscribers": 2658429,
+    "over18": false,
+    "url": "https://www.reddit.com/r/OpenAI/",
+    "discoveredBy": [
+      "LLM",
+      "chatgpt",
+      "openai",
+      "anthropic",
+      "prompt engineering",
+      "ai agents"
+    ]
+  },
+  {
+    "name": "ArtificialInteligence",
+    "title": "Artificial Intelligence",
+    "subscribers": 1708897,
+    "over18": false,
+    "url": "https://www.reddit.com/r/ArtificialInteligence/",
+    "discoveredBy": [
+      "large language models",
+      "LLM",
+      "chatgpt",
+      "openai",
+      "anthropic",
+      "local llama",
+      "prompt engineering",
+      "ai agents",
+      "machine learning"
+    ]
+  },
+  {
+    "name": "artificial",
+    "title": "Artificial Intelligence (AI)",
+    "subscribers": 1228089,
+    "over18": false,
+    "url": "https://www.reddit.com/r/artificial/",
+    "discoveredBy": [
+      "openai",
+      "anthropic",
+      "ai agents",
+      "machine learning"
+    ]
+  },
+  {
+    "name": "ChatGPTPromptGenius",
+    "title": "ChatGPTPromptGenius",
+    "subscribers": 744322,
+    "over18": false,
+    "url": "https://www.reddit.com/r/ChatGPTPromptGenius/",
+    "discoveredBy": [
+      "chatgpt",
+      "prompt engineering"
+    ]
+  },
+  {
+    "name": "LocalLLaMA",
+    "title": "LocalLlama",
+    "subscribers": 636430,
+    "over18": false,
+    "url": "https://www.reddit.com/r/LocalLLaMA/",
+    "discoveredBy": [
+      "large language models",
+      "LLM",
+      "openai",
+      "anthropic",
+      "local llama",
+      "rag",
+      "prompt engineering",
+      "ai agents"
+    ]
+  },
+  {
+    "name": "learnmachinelearning",
+    "title": "Learn Machine Learning",
+    "subscribers": 611654,
+    "over18": false,
+    "url": "https://www.reddit.com/r/learnmachinelearning/",
+    "discoveredBy": [
+      "large language models",
+      "LLM",
+      "prompt engineering",
+      "machine learning"
+    ]
+  }
+]

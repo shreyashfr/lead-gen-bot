@@ -1,0 +1,109 @@
+[
+  {
+    "name": "AskReddit",
+    "title": "Ask Reddit...",
+    "subscribers": 57861672,
+    "over18": false,
+    "url": "https://www.reddit.com/r/AskReddit/",
+    "discoveredBy": [
+      "video games"
+    ]
+  },
+  {
+    "name": "gaming",
+    "title": "r/gaming",
+    "subscribers": 47015783,
+    "over18": false,
+    "url": "https://www.reddit.com/r/gaming/",
+    "discoveredBy": [
+      "video games",
+      "gaming",
+      "indie games",
+      "pc gaming",
+      "nintendo",
+      "playstation"
+    ]
+  },
+  {
+    "name": "Showerthoughts",
+    "title": "Showerthoughts",
+    "subscribers": 34056944,
+    "over18": false,
+    "url": "https://www.reddit.com/r/Showerthoughts/",
+    "discoveredBy": [
+      "video games"
+    ]
+  },
+  {
+    "name": "videos",
+    "title": "/r/videos",
+    "subscribers": 26796677,
+    "over18": false,
+    "url": "https://www.reddit.com/r/videos/",
+    "discoveredBy": [
+      "video games"
+    ]
+  },
+  {
+    "name": "pcmasterrace",
+    "title": "PC Master Race - PCMR: A place where all enthusiasts of PC, PC gaming and PC technology are welcome!",
+    "subscribers": 15983455,
+    "over18": false,
+    "url": "https://www.reddit.com/r/pcmasterrace/",
+    "discoveredBy": [
+      "gaming",
+      "pc gaming"
+    ]
+  },
+  {
+    "name": "buildapc",
+    "title": "/r/buildapc - Planning on building a computer but need some advice? This is the place to ask!",
+    "subscribers": 8410371,
+    "over18": false,
+    "url": "https://www.reddit.com/r/buildapc/",
+    "discoveredBy": [
+      "gaming",
+      "pc gaming"
+    ]
+  },
+  {
+    "name": "leagueoflegends",
+    "title": "League of Legends",
+    "subscribers": 8344778,
+    "over18": false,
+    "url": "https://www.reddit.com/r/leagueoflegends/",
+    "discoveredBy": [
+      "gaming"
+    ]
+  },
+  {
+    "name": "PS5",
+    "title": "PlayStation 5 • News • Games • Discussion",
+    "subscribers": 8102141,
+    "over18": false,
+    "url": "https://www.reddit.com/r/PS5/",
+    "discoveredBy": [
+      "playstation"
+    ]
+  },
+  {
+    "name": "NintendoSwitch",
+    "title": "Nintendo Switch - News, Updates, and Information",
+    "subscribers": 7898617,
+    "over18": false,
+    "url": "https://www.reddit.com/r/NintendoSwitch/",
+    "discoveredBy": [
+      "nintendo"
+    ]
+  },
+  {
+    "name": "PS4",
+    "title": "PlayStation 4 - News • Discussion • Community",
+    "subscribers": 5517088,
+    "over18": false,
+    "url": "https://www.reddit.com/r/PS4/",
+    "discoveredBy": [
+      "playstation"
+    ]
+  }
+]

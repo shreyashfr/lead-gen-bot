@@ -1,0 +1,32 @@
+[
+  {
+    "name": "jobs",
+    "title": "Jobs",
+    "subscribers": 2560253,
+    "over18": false,
+    "url": "https://www.reddit.com/r/jobs/",
+    "discoveredBy": [
+      "ai layoffs"
+    ]
+  },
+  {
+    "name": "Catswithjobs",
+    "title": "Purposeful Pusses",
+    "subscribers": 1512467,
+    "over18": false,
+    "url": "https://www.reddit.com/r/Catswithjobs/",
+    "discoveredBy": [
+      "job loss due to ai"
+    ]
+  },
+  {
+    "name": "tressless",
+    "title": "Tressless: the most popular hair loss community for sufferers of alopecia and balding",
+    "subscribers": 499997,
+    "over18": false,
+    "url": "https://www.reddit.com/r/tressless/",
+    "discoveredBy": [
+      "job loss due to ai"
+    ]
+  }
+]

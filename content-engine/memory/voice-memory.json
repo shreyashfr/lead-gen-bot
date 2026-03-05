@@ -1,0 +1,300 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-02-22",
+  "voice_rules": {
+    "forbidden_phrases": [
+      "leverage",
+      "utilize",
+      "streamline",
+      "optimize",
+      "facilitate",
+      "enhance",
+      "professionalism",
+      "I hope this message finds you well",
+      "I'd be delighted to",
+      "I'd love to assist",
+      "I'm reaching out because",
+      "I wanted to connect because"
+    ],
+    "required_style": {
+      "capitalization": "lowercase_default",
+      "contractions": "always_use",
+      "sentence_length": "short_preferably_under_220_chars",
+      "paragraph_max_lines": 3,
+      "em_dashes": "never",
+      "semicolons": "never"
+    },
+    "tone_guardrails": {
+      "corporate_jargon": "reject",
+      "over_complimenting": "reject",
+      "generic_motivational": "reject",
+      "filler_words": "minimize",
+      "ai_detectability": "must_fail_ai_test"
+    }
+  },
+  "high_performers": {
+    "hooks": [
+      {
+        "hook": "i worked on transformers before GPT existed. i did MLOps before MLOps was a word. i built a million $ business before the GenAI hype.",
+        "platform": "instagram",
+        "result": "1,200 comments, 1,200 likes, 20K views, +700 followers in 2 days",
+        "archetype": "authority_stacking_before_it_was_a_thing",
+        "pillar": "AI careers"
+      },
+      {
+        "hook": "your company didn't lay you off because of AI. they used AI as the excuse.",
+        "platform": "linkedin",
+        "result": "14,803 impressions, 74 likes, 24 comments, 17 reposts — highest repost of the week",
+        "archetype": "false_consensus_flip",
+        "pillar": "Job Loss in an AI World"
+      },
+      {
+        "hook": "entry-level tech jobs are dying. senior tech jobs are fine. nobody's explaining why the gap exists.",
+        "platform": "twitter_thread",
+        "result": "drove biggest impression day of the week (Feb 25)",
+        "archetype": "observation_gap_nobody_explains",
+        "pillar": "AI careers"
+      }
+    ],
+    "formats_by_platform": {
+      "linkedin": [
+        {
+          "title": "your company didn't lay you off because of AI",
+          "pillar": "Job Loss in an AI World",
+          "published": "2026-02-27",
+          "structure": "false consensus opener → BLS data + real numbers → counter-narrative → p.s with resource link",
+          "result": "74 likes, 24 comments, 17 reposts",
+          "notes": "17 reposts = highest virality signal. Specific data (165K layoffs, BLS study) made it shareable. p.s CTA to guide drove profile clicks."
+        }
+      ],
+      "x_articles": [],
+      "threads": [
+        {
+          "title": "entry-level tech jobs dying",
+          "pillar": "AI careers",
+          "published": "2026-02-25",
+          "structure": "11 tweets, numbered 1/11 through 11/11. Single idea per tweet. Closing tweet standalone.",
+          "result": "drove Feb 25 impression spike on X",
+          "notes": "numbered format creates completeness compulsion. closing tweet must work alone."
+        }
+      ],
+      "tweets": [],
+      "instagram": [
+        {
+          "title": "i worked on transformers before GPT existed",
+          "pillar": "AI careers / founder authority",
+          "published": "2026-02-27",
+          "structure": "authority stacking slide 1 (3 'I did X before X existed' lines) + pattern tease + p.s pointing to last slide. insight slides 2-4. next waves list slide 5. comment CTA last slide.",
+          "cta": "comment 'waves'",
+          "result": "1,200 likes, 1,200 comments, 20K views, +700 followers in 2 days — VIRAL",
+          "notes": "1:1 likes-to-comments = perfect comment trigger execution. personal authority framing is the highest leverage format on Instagram for Ayush."
+        },
+        {
+          "title": "will ai take your job?",
+          "pillar": "Job Loss in an AI World",
+          "published": "2026-02-25",
+          "structure": "7 slides. hook + p.s teaser on slide 1. byline between every slide. category breakdown slides 2-5. test slide 6. worksheet CTA on slide 7.",
+          "cta": "comment 'worksheet'",
+          "result": "~60 likes — underperformed vs WAVES carousel",
+          "notes": "topic was good but comment CTA 'worksheet' is less aspirational than 'waves'. the WAVES carousel hit because it combined personal authority + aspirational insider knowledge. worksheet framing is utility, not aspiration."
+        }
+      ]
+    },
+    "emotional_archetypes": [
+      {
+        "archetype": "authority_stacking",
+        "description": "I did X before X existed. I did Y before Y had a name. This isn't luck.",
+        "platform_fit": "instagram (primary), linkedin (secondary)",
+        "emotional_driver": "credibility + aspiration — audience wants to understand the pattern behind the results"
+      },
+      {
+        "archetype": "false_consensus_flip",
+        "description": "Everyone says X. Real data says Y. Here's what's actually happening.",
+        "platform_fit": "linkedin (primary), twitter (secondary)",
+        "emotional_driver": "validation + insider feeling — audience wants to feel like they now know something others don't"
+      },
+      {
+        "archetype": "gap_nobody_explains",
+        "description": "X is dying. Y is fine. Nobody's explaining why the gap exists.",
+        "platform_fit": "twitter threads, linkedin",
+        "emotional_driver": "curiosity + self-relevance — forces reader to identify which side of the gap they're on"
+      }
+    ],
+    "viral_structures": [
+      {
+        "name": "Instagram Authority Carousel",
+        "template": "Slide 1: [3x 'I did X before X existed'] + pattern tease + p.s pointing to last slide. Slides 2-4: mechanism/insight. Slide 5: insider list. Last slide: comment [keyword] CTA.",
+        "result": "VIRAL — 20K views, +700 followers from 1 post",
+        "rule": "authority must be specific and pre-hype. 'I worked on transformers before GPT' > 'I've been in AI for years'"
+      },
+      {
+        "name": "LinkedIn Counter-Narrative with Data",
+        "template": "[False consensus people believe] → [Real data that contradicts it, with specific numbers] → [The actual explanation] → [What it means for the reader] → p.s [resource]",
+        "result": "17 reposts — highest virality signal of the week",
+        "rule": "must have at least 2 specific data points (numbers, studies, named companies). Observation without data gets likes, not reposts."
+      }
+    ]
+  },
+  "agent_logs": {
+    "research_agent": {
+      "last_run": "2026-03-03",
+      "sources_checked": ["Reddit r/SaaS", "Reddit r/GrowthHacking", "Reddit r/b2bmarketing", "Reddit r/DigitalMarketing", "Reddit r/sales", "belkins.io", "expandi.io", "martal.ca", "salesbread.com", "salesso.com", "sopro.io", "dux-soup.com", "linkboost.co", "connectsafely.ai", "phantombuster.com", "blog.linkmate.io"],
+      "topics_covered": ["LinkedIn Outbound", "Job Loss in an AI World", "Modern AI/ML Roadmap + Career in AI"]
+    },
+    "trend_psychologist": {
+      "last_run": "2026-02-22",
+      "patterns_detected": ["fear+contrarian twist", "insider credibility", "builder vs reactor", "data paradox", "AI washing narrative"]
+    },
+    "competitive_auditor": {
+      "last_run": "2026-02-22",
+      "accounts_audited": ["generic AI job loss content creators"],
+      "gaps_found": ["insider ML POV on job loss", "India-specific angle", "entry-level vs senior gap with data", "AI washing from credible voice", "builder vs reactor framing"]
+    },
+    "performance_reviewer": {
+      "last_run": "2026-02-22",
+      "metrics_tracked": ["first production run — no historical data yet"]
+    }
+  },
+  "feedback_log": [
+    {
+      "date": "2026-02-22",
+      "format": "LinkedIn",
+      "pillar": "Job Loss in an AI World",
+      "idea_number": 1,
+      "issue_type": "structure + personal_story",
+      "what_was_wrong": "Post was too complex. Personal story used (VC 'you're just kids' rejection) didn't fit — the parallel wasn't clean enough. Ayush doesn't want a forced personal story where the connection is loose.",
+      "what_fixed_it": "Simplified language throughout. Removed VC kids story. Kept it observation/data-driven instead of forcing a personal narrative that doesn't fit."
+    },
+    {
+      "date": "2026-02-22",
+      "format": "LinkedIn",
+      "pillar": "Job Loss in an AI World",
+      "idea_number": 9,
+      "issue_type": "personal_story + hook + em_dashes",
+      "what_was_wrong": "Used 'I didn't want to be alive in 2025' — Ayush does NOT want to say this publicly. Real 2025 story: he was silent on social media, quietly building SBL (revenue, funding, tech). He was OBSERVING the AI panic noise from the sidelines, not participating. Also had em dashes in the draft.",
+      "what_fixed_it": "New hook and angle: heads-down building vs. the noise. Observer POV. The contrast between people posting panic content vs people who were building. Removed all em dashes."
+    },
+    {
+      "date": "2026-02-25",
+      "format": "Instagram Carousel",
+      "pillar": "Job Loss in an AI World",
+      "issue_type": "carousel_structure + padding",
+      "what_was_wrong": "Added unnecessary 'category X: going ⟶' transition slides that Ayush cut entirely. Draft had 10+ slides including filler transitions. Also added a philosophical closing line ('the question was never...') on the last slide that he dropped — he went straight to the worksheet CTA. Also misread the ⟶ format — it's inline text in the hook/p.s line, NOT a separate slide. The p.s on slide 1 should point to the last slide ('check last slide'), not be a direct comment CTA.",
+      "what_fixed_it": "Published version: 7 clean content slides, no transition fillers. Slide 1 p.s says 'check last slide' to tease the CTA. Last slide goes straight into the value (worksheet steps) then comment CTA. No philosophical restatement of the hook at the end."
+    }
+  ],
+  "batch_analysis_state": {
+    "last_analyzed_at": null,
+    "reflections_at_last_analysis": 0,
+    "total_reflections_logged": 0,
+    "analyses_run": 0,
+    "last_analysis_summary": null
+  },
+  "last_rejection_by_format": {
+    "linkedin": null,
+    "x_article": null,
+    "thread": null,
+    "tweet": null,
+    "carousel": null
+  },
+  "reflection_log": [],
+  "voice_lessons": [
+    {
+      "lesson": "no em dashes ever",
+      "context": "rewrite sentences to avoid them",
+      "first_detected": "2026-02-22"
+    },
+    {
+      "lesson": "write like texting a work friend",
+      "context": "lowercase, contractions, short lines",
+      "first_detected": "2026-02-22"
+    },
+    {
+      "lesson": "X articles minimum 2000 words",
+      "context": "essay depth, short paragraphs per section",
+      "first_detected": "2026-02-22"
+    },
+    {
+      "lesson": "only use personal stories when the parallel is airtight",
+      "context": "don't force a personal story where the connection is loose — better to go data/observation-only than a weak analogy",
+      "first_detected": "2026-02-22"
+    },
+    {
+      "lesson": "simplicity over cleverness — short sentences, plain words",
+      "context": "when in doubt, cut complexity. Ayush's voice is direct, not sophisticated-sounding.",
+      "first_detected": "2026-02-22"
+    },
+    {
+      "lesson": "NEVER say Ayush didn't want to live / was mentally broken publicly",
+      "context": "2025 real story: quiet on social media, heads-down building SBL, getting revenue, raising funds. The narrative is BUILDER who was observing the noise, not someone who was struggling. Keep the breakdown private.",
+      "first_detected": "2026-02-22"
+    },
+    {
+      "lesson": "zero em dashes — ever. reread every draft and remove them before sending",
+      "context": "Ayush flagged em dashes again. Double-check every single draft. Replace with a period or new line.",
+      "first_detected": "2026-02-22"
+    },
+    {
+      "lesson": "instagram carousels are 7 slides max — no filler transition slides",
+      "context": "do NOT add 'category X: going ⟶' transition slides. that's padding. each slide carries real content. Ayush cuts them every time.",
+      "first_detected": "2026-02-25"
+    },
+    {
+      "lesson": "⟶ is inline text in the hook/p.s line, not a separate slide",
+      "context": "the ⟶ arrow appears inside the hook line or p.s — never as a standalone transition slide. study the paper carousel format for reference.",
+      "first_detected": "2026-02-25"
+    },
+    {
+      "lesson": "slide 1 p.s points to the last slide, not a direct CTA",
+      "context": "format: 'p.s - check last slide to get [thing]' — tease the CTA from slide 1, deliver it on last slide. don't put the comment ask on slide 1.",
+      "first_detected": "2026-02-25"
+    },
+    {
+      "lesson": "last slide goes straight to value then CTA — no philosophical restatement",
+      "context": "don't restate the hook or add a closing philosophical line on the last slide. go directly into the worksheet steps or deliverable, then the comment CTA.",
+      "first_detected": "2026-02-25"
+    },
+    {
+      "lesson": "instagram CTAs must be 'comment [keyword]' format — no exceptions",
+      "context": "WAVES carousel (comment trigger) got 1,200 comments. worksheet carousel (passive CTA) got ~60 likes. 20x gap. every instagram post ends with comment [keyword] CTA.",
+      "first_detected": "2026-03-02",
+      "source": "performance_data"
+    },
+    {
+      "lesson": "optimize LinkedIn for reposts not impressions — reposts are the real virality signal",
+      "context": "post with 14,803 impressions + 17 reposts > post with 18,265 impressions + 1 comment. reposts = people stamping their name on it. that's the bar.",
+      "first_detected": "2026-03-02",
+      "source": "performance_data"
+    },
+    {
+      "lesson": "specific data makes posts shareable — observation posts get likes, data posts get reposts",
+      "context": "the BLS data post (165K layoffs stat, BLS job tracking study, Sam Altman quote) got 17 reposts. the soft-hook observation post (18K impressions) got 1 comment. add at least 2 specific data points to any LinkedIn post you want shared.",
+      "first_detected": "2026-03-02",
+      "source": "performance_data"
+    },
+    {
+      "lesson": "personal authority framing beats news commentary on all platforms",
+      "context": "'I worked on transformers before GPT existed' (20K views, +700 followers) vs news-commentary style posts. insider POV from lived experience outperforms journalist POV every time.",
+      "first_detected": "2026-03-02",
+      "source": "performance_data"
+    },
+    {
+      "lesson": "satirical list format needs an open loop to get comments",
+      "context": "Jack Dorsey step-by-step post got 12,686 impressions, 6 comments. the format was clever but closed — no question, no 'who's next', nothing for the audience to react to. always end a satirical list with an open question or prediction.",
+      "first_detected": "2026-03-02",
+      "source": "performance_data"
+    },
+    {
+      "lesson": "soft hooks ('something is happening...') get passive reads, not engagement",
+      "context": "india tech workforce post had 18,265 impressions (highest of the week) but 1 comment. the hook 'something is happening in india's tech workforce that nobody wants to say out loud' built curiosity but no tension. use contradiction or data in the hook to create a reaction, not just curiosity.",
+      "first_detected": "2026-03-02",
+      "source": "performance_data"
+    },
+    {
+      "lesson": "primary audience is 18-24 Indian male early-career tech workers — write directly to their fear + ambition",
+      "context": "X audience data confirmed: 90.6% India, 87.8% male, 46.7% aged 18-24. content resonates most when it speaks to the fear of being left behind + the ambition to be on the right side of the wave. peak posting: Friday-Saturday, noon + evening IST.",
+      "first_detected": "2026-03-02",
+      "source": "audience_data"
+    }
+  ]
+}

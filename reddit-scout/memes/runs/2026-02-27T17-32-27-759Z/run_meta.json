@@ -1,0 +1,28 @@
+{
+  "niche": "memes",
+  "nicheSlug": "memes",
+  "runId": "2026-02-27T17-32-27-759Z",
+  "startedAt": "2026-02-27T17:32:27.762Z",
+  "keywords": [
+    "memes",
+    "meme template",
+    "dank memes",
+    "me irl"
+  ],
+  "mustInclude": [
+    "meme",
+    "memes"
+  ],
+  "config": {
+    "topN": 12,
+    "subLimit": 12,
+    "gapMs": 1200,
+    "limitPerListing": 25,
+    "time": "week",
+    "kinds": [
+      "top",
+      "hot",
+      "rising"
+    ]
+  }
+}

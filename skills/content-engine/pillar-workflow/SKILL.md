@@ -172,10 +172,10 @@ Reply:
 | **TOTAL** | **22** | |
 
 ## Master Files — Read at Start of Every Run
-1. `/Users/ayushsingh/.openclaw/workspace/master-doc.md` — voice, stories, angles, hook library
-2. `/Users/ayushsingh/.openclaw/workspace/content-queue.md` — what's already been produced (avoid repeating)
-3. `/Users/ayushsingh/.openclaw/workspace/feed-intelligence.md` — latest niche trends (if exists)
-4. `/Users/ayushsingh/.openclaw/workspace/competitive-gaps.md` — gaps competitors aren't covering (if exists)
+1. `/home/ubuntu/.openclaw/workspace/master-doc.md` — voice, stories, angles, hook library
+2. `/home/ubuntu/.openclaw/workspace/content-queue.md` — what's already been produced (avoid repeating)
+3. `/home/ubuntu/.openclaw/workspace/feed-intelligence.md` — latest niche trends (if exists)
+4. `/home/ubuntu/.openclaw/workspace/competitive-gaps.md` — gaps competitors aren't covering (if exists)
 
 ---
 
@@ -228,7 +228,7 @@ Spawn the Coordinator Agent to run all research, trend, competitive, and perform
 
 ```bash
 sessions_spawn(
-  task="You are the Coordinator Agent. Read /Users/ayushsingh/.openclaw/workspace/skills/coordinator-agent/SKILL.md for full instructions. Your job: run 4 intelligence streams sequentially (Research → Trend Analysis → Competitive Audit → Performance Review), merge into strategic brief, generate 15 ideas. Topic: [pillar topic].",
+  task="You are the Coordinator Agent. Read /home/ubuntu/.openclaw/workspace/skills/content-engine/coordinator-agent/SKILL.md for full instructions. Your job: (1) run reddit-scout as primary research source, (2) supplement with web research, (3) run trend psychology + competitive audit + performance review, (4) merge into strategic brief, (5) generate 15 viral ideas sorted by viral score. Send live chat updates throughout. Topic: [pillar topic].",
   label="coordinator-[topic]",
   model="anthropic/claude-sonnet-4-6",
   runTimeoutSeconds=600
@@ -345,7 +345,7 @@ Start with LinkedIn posts → then X Articles → then Threads → then Tweets (
 Before sending draft to Ayush:
 ```bash
 sessions_spawn(
-  task="Voice Guardian: Validate this draft against voice-memory.json. Check: (1) no forbidden phrases, (2) correct tone (conversational not corporate), (3) AI detectability test passes, (4) matches master-doc voice, (5) follows guardrails. Respond APPROVED or list issues with line numbers.",
+  task="You are the Voice Guardian. Read /home/ubuntu/.openclaw/workspace/skills/content-engine/voice-guardian/SKILL.md for full instructions. Validate this draft against voice-memory.json. Check: (1) no forbidden phrases, (2) correct tone (conversational not corporate), (3) AI detectability test passes, (4) matches master-doc voice, (5) follows guardrails. Draft: [insert full draft]. Respond APPROVED or list issues with line numbers.",
   label="voice-guardian-[format]-[idea]"
 )
 ```
@@ -387,7 +387,7 @@ STEP 5D — Send revised draft to Ayush
 **STEP 5A — Spawn Reflection Agent:**
 ```bash
 sessions_spawn(
-  task="You are the Reflection Agent. Read /Users/ayushsingh/.openclaw/workspace/skills/reflection-agent/SKILL.md for full instructions. A draft was rejected. Rejected draft: [insert full draft]. Rejection reason: [insert Ayush feedback OR Voice Guardian issue list]. Format: [format]. Pillar: [topic]. Generate a Composite Reflection (Explanation + Solution + Instructions), log it to voice-memory.json, update last_rejection_by_format, then output the Rewrite Brief.",
+  task="You are the Reflection Agent. Read /home/ubuntu/.openclaw/workspace/skills/reflection-agent/SKILL.md for full instructions. A draft was rejected. Rejected draft: [insert full draft]. Rejection reason: [insert Ayush feedback OR Voice Guardian issue list]. Format: [format]. Pillar: [topic]. Generate a Composite Reflection (Explanation + Solution + Instructions), log it to voice-memory.json, update last_rejection_by_format, then output the Rewrite Brief.",
   label="reflection-[format]-[date]",
   runTimeoutSeconds=120
 )
@@ -448,7 +448,7 @@ total_reflections_logged - reflections_at_last_analysis
 - If **≥ 5**: Spawn Reflection Agent in batch analysis mode:
   ```bash
   sessions_spawn(
-    task="You are the Reflection Agent in batch analysis mode. Read /Users/ayushsingh/.openclaw/workspace/skills/reflection-agent/SKILL.md — specifically the 'Tier 2 — Batch Analysis' section. Run the full batch analysis on the reflection_log in voice-memory.json. Derive meta-lessons, update voice_lessons and batch_analysis_state. Output the analysis summary.",
+    task="You are the Reflection Agent in batch analysis mode. Read /home/ubuntu/.openclaw/workspace/skills/reflection-agent/SKILL.md — specifically the 'Tier 2 — Batch Analysis' section. Run the full batch analysis on the reflection_log in voice-memory.json. Derive meta-lessons, update voice_lessons and batch_analysis_state. Output the analysis summary.",
     label="reflection-batch-analysis",
     runTimeoutSeconds=120
   )
@@ -471,7 +471,7 @@ curl -s "https://api.airtable.com/v0/apprDKHi7GVzcXuN3/Posts" \
 ```
 Max 10 records per request — batch if needed.
 
-2. Append to `/Users/ayushsingh/.openclaw/workspace/content-queue.md`:
+2. Append to `/home/ubuntu/.openclaw/workspace/content-queue.md`:
 ```
 ## [Date] — [Format] — [Idea Title]
 **Pillar:** [topic]

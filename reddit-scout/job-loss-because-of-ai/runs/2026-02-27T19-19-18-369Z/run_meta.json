@@ -1,0 +1,43 @@
+{
+  "niche": "job loss because of ai",
+  "nicheSlug": "job-loss-because-of-ai",
+  "runId": "2026-02-27T19-19-18-369Z",
+  "startedAt": "2026-02-27T19:19:18.370Z",
+  "keywords": [
+    "job loss because of ai"
+  ],
+  "mustInclude": [
+    "loss",
+    "because"
+  ],
+  "search": "laid off because of AI",
+  "subAllowlist": [
+    "jobs",
+    "layoffs",
+    "jobsearchhacks",
+    "careerguidance",
+    "career_advice",
+    "recruitinghell",
+    "cscareerquestions",
+    "antiwork",
+    "work",
+    "technology",
+    "futurology",
+    "artificial",
+    "singularity"
+  ],
+  "config": {
+    "topN": 12,
+    "subLimit": 12,
+    "gapMs": 1200,
+    "limitPerListing": 25,
+    "time": "month",
+    "kinds": [
+      "top",
+      "rising"
+    ],
+    "searchSort": "top",
+    "searchTime": "month",
+    "minSubscribers": 200000
+  }
+}
