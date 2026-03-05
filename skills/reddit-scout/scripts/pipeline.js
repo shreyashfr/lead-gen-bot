@@ -11,7 +11,7 @@ const { viralScore } = require('./score');
 const { renderCards } = require('./render_cards');
 const { downloadPostMedia, pickGalleryMediaUrl } = require('./media');
 const { ensureAvatar } = require('./avatars');
-const { tokenize, buildKeywordSet, isRelevantSubreddit, postContainsKeywords, postMatchesConceptAnd } = require('./relevance');
+const { tokenize, buildKeywordSet, isRelevantSubreddit, postContainsKeywords, postTitleMatchesKeywords, postMatchesConceptAnd, postMatchesAllConcepts, containsAnyWordBoundary, isBlockedSub } = require('./relevance');
 const { CONCEPTS, nicheImpliesJoblossAi } = require('./concepts');
 const { generateReportAndChat } = require('./report');
 
@@ -72,12 +72,14 @@ async function subredditSearch(keyword, opts) {
   })).filter(x => x.name);
 }
 
-async function fetchListing(sub, kind, url, opts, mustIncludeWords, conceptAnd) {
+async function fetchListing(sub, kind, url, opts, mustIncludeWords, conceptAnd, titleMustWords) {
   const j = await jget(url, opts);
   const children = j?.data?.children || [];
   return children
     .map(normalizePost)
-    .filter(p => postContainsKeywords(p, mustIncludeWords))
+    .filter(p => !isBlockedSub(p.subreddit))
+    .filter(p => postTitleMatchesKeywords(p, titleMustWords))   // title-first: primary signal
+    .filter(p => postContainsKeywords(p, mustIncludeWords))      // body: secondary confirm
     .filter(p => postMatchesConceptAnd(p, conceptAnd))
     .map(p => ({
       ...p,
@@ -175,6 +177,13 @@ async function main() {
   }
 
   const mustIncludeWords = mustInclude.map(s => s.toLowerCase());
+
+  // Title-first filter: most specific tokens from the niche (>=5 chars, not generic).
+  // Posts whose TITLE doesn't mention any of these are almost never relevant.
+  const TITLE_STOP = new Set(['usage','using','about','their','these','those','with','from','that','this','have','data']);
+  const titleMustWords = mustInclude
+    .map(s => s.toLowerCase())
+    .filter(w => w.length >= 5 && !TITLE_STOP.has(w));
 
   const keywordSet = buildKeywordSet({ niche, keywords, mustInclude });
 
@@ -309,7 +318,7 @@ async function main() {
     if (kinds.has('rising')) endpoints.push(['rising', `${base}/rising.json?limit=${limitPerListing}`]);
     for (const [kind, url] of endpoints) {
       try {
-        const posts = await fetchListing(sub, kind, url, opts, mustIncludeWords, conceptAnd);
+        const posts = await fetchListing(sub, kind, url, opts, mustIncludeWords, conceptAnd, titleMustWords);
         all.push(...posts);
       } catch (e) {
         console.error('listing fail', sub, kind, e.message);
@@ -331,6 +340,8 @@ async function main() {
       const children = j?.data?.children || [];
       const posts = children
         .map(normalizePost)
+        .filter(p => !isBlockedSub(p.subreddit))
+        .filter(p => postTitleMatchesKeywords(p, titleMustWords))
         .filter(p => postContainsKeywords(p, mustIncludeWords))
         .filter(p => postMatchesConceptAnd(p, conceptAnd))
         .map(p => ({ ...p, listing: `search:${searchSort}:${t}`, viral_score: viralScore(p, `search:${searchSort}`) }));
@@ -354,16 +365,21 @@ async function main() {
 
   fs.writeFileSync(path.join(runDir, 'posts_ranked.json'), JSON.stringify(ranked.slice(0, 200), null, 2));
 
-  // 4) Detail fetch for topN
+  // 4) Detail fetch for topN — fall back to base post data if detail fetch fails
   const top = ranked.slice(0, topN);
   const detailed = [];
   for (const p of top) {
-    if (!p.permalink) continue;
+    if (!p.permalink) {
+      detailed.push({ ...p, detail: null });
+      continue;
+    }
     try {
       const det = await fetchPostDetail(p.permalink, opts);
       detailed.push({ ...p, detail: det });
     } catch (e) {
       console.error('detail fail', p.permalink, e.message);
+      // Still include the post — just without comments/selftext detail
+      detailed.push({ ...p, detail: null });
     }
   }
 

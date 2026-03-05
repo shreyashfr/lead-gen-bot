@@ -70,6 +70,51 @@ function postContainsKeywords(post, mustIncludeWords) {
   return containsAnyWordBoundary(hay, mustIncludeWords);
 }
 
+/**
+ * Strict title-first relevance check.
+ * The post TITLE must contain at least one keyword.
+ * Selftext is a soft secondary signal only — not enough on its own.
+ */
+function postTitleMatchesKeywords(post, mustIncludeWords) {
+  if (!mustIncludeWords || mustIncludeWords.length === 0) return true;
+  const title = String(post?.title || '');
+  return containsAnyWordBoundary(title, mustIncludeWords);
+}
+
+/**
+ * Concept AND check for multi-concept niches.
+ * Given an array of concept groups (each group is an array of synonyms),
+ * the post title+body must match at least one term from EACH group.
+ * e.g. [['water','h2o','cooling'],['datacenter','data center','server']]
+ * → post must mention water-related AND datacenter-related terms.
+ */
+function postMatchesAllConcepts(post, conceptGroups) {
+  if (!conceptGroups || conceptGroups.length === 0) return true;
+  const hay = (String(post?.title || '') + ' ' + String(post?.selftext || '')).slice(0, 800);
+  return conceptGroups.every(group => containsAnyWordBoundary(hay, group));
+}
+
+/**
+ * Generic lifestyle/off-topic subreddit blocklist.
+ * These subs are almost never relevant to tech/AI/business niches.
+ * Applies even when --subAllowlist is used.
+ */
+const GENERIC_BLOCK = new Set([
+  'babybumps','childfree','relationship_advice','amitheasshole','tifu','mildlyinteresting',
+  'mildlyinfuriating','askreddit','pics','funny','aww','videos','news','worldnews',
+  'todayilearned','showerthoughts','lifeprotips','explainlikeimfive','nottheonion',
+  'beupdates','boru','borUpdates','wellthatsucks','facepalm','cringe',
+  'roms','gaming','games','pcgaming','fo76','valheim','fgo','onepiece',
+  'anime','manga','movies','television','music','sports','nba','nfl','soccer',
+  'cooking','food','recipes','fitness','loseit','progresspics','beauty',
+  'personalfinance','legaladvice','malefashionadvice','femalefashionadvice',
+  'adultingphwins','indiana','smallbusiness','entrepreneur'
+]);
+
+function isBlockedSub(subName) {
+  return GENERIC_BLOCK.has(String(subName || '').toLowerCase());
+}
+
 function postMatchesConceptAnd(post, conceptGroups) {
   if (!conceptGroups || conceptGroups.length === 0) return true;
 
@@ -81,4 +126,4 @@ function postMatchesConceptAnd(post, conceptGroups) {
   return conceptGroups.every(group => containsAnyWordBoundary(windowed, group));
 }
 
-module.exports = { tokenize, buildKeywordSet, isRelevantSubreddit, postContainsKeywords, postMatchesConceptAnd, containsAnyWordBoundary };
+module.exports = { tokenize, buildKeywordSet, isRelevantSubreddit, postContainsKeywords, postTitleMatchesKeywords, postMatchesConceptAnd, postMatchesAllConcepts, containsAnyWordBoundary, isBlockedSub };
