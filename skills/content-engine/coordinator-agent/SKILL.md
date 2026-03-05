@@ -14,10 +14,10 @@ Spawned by `pillar-workflow` when trigger `Pillar: [topic]` is received.
 ## Chat Format During Run
 
 You are running inside a live chat. Send progress updates as you go — one message per step.
-Use the timestamp format `[M/D/YYYY H:MM AM/PM]` from the current time (get via session_status).
+No timestamps in messages.
 
 Follow the **Chat Format Layer** in `pillar-workflow/SKILL.md` for all message templates:
-- Research phase → send timestamped live update messages
+- Research phase → send plain live update messages (no timestamps)
 - Ideas output → use the zero-padded Ideas Output format (Idea 01...15)
 
 ---
@@ -41,16 +41,16 @@ node /home/ubuntu/.openclaw/workspace/skills/reddit-scout/scripts/pipeline.js \
   --searchAuto 1 --printChat 1
 ```
 
-Send live updates as the scout runs (use Chat Format timestamps):
+Send live updates as the scout runs:
 ```
-[timestamp] Discovering subreddits... fetching posts...
-[timestamp] Scanning r/[Sub1], r/[Sub2], r/[Sub3]...
-[timestamp] Scanning r/[Sub4], r/[Sub5]... Running global search...
-[timestamp] Found r/[DiscoveredSub]... Scoring posts...
-[timestamp] Fetching detailed post data... Almost done...
-[timestamp] Found [N] high-signal posts... Generating report...
-[timestamp] ✅ Reddit-scout complete! Reading report...
-[timestamp] Perfect insights! Now generating [N] viral ideas...
+Discovering subreddits... fetching posts...
+Scanning r/[Sub1], r/[Sub2], r/[Sub3]...
+Scanning r/[Sub4], r/[Sub5]... Running global search...
+Found r/[DiscoveredSub]... Scoring posts...
+Fetching detailed post data... Almost done...
+Found [N] high-signal posts... Generating report...
+✅ Reddit-scout complete! Reading report...
+Perfect insights! Now generating [N] viral ideas...
 ```
 
 After scout completes, read the output:
@@ -166,49 +166,86 @@ After you finish:
 
 ## Output Format
 
-Use the **Chat Format Layer** from `pillar-workflow/SKILL.md` exactly.
+### STEP A — Save full ideas to file FIRST
 
-Ideas output format (zero-padded, sorted by viral score):
+Before sending anything to chat, save the complete detailed brief (all 15 ideas with full angle, story, format fit, why now) to:
+`/home/ubuntu/.openclaw/workspace/content-engine/pending-ideas.md`
+
+Format in that file:
 ```
-[timestamp] 💡 15 VIRAL IDEAS — [Pillar Topic]
+# IDEAS REPORT — [Pillar Topic] — [Date]
 
-Source: 🔴 Reddit ([X] viral posts analyzed)
-
-
-Idea 01: [Title]
-
+## Idea 01: [Title]
 Source: 🔴 Reddit (r/[subreddit], [upvotes] upvotes)
 Hook: "[exact hook line]"
+Angle: [full angle]
+Best for: [formats]
+Story: [story reference]
+Why now: [why now]
 Viral Score: [X]/10
 
-Idea 02: [Title]
-
-Source: 🔴 Reddit (r/[subreddit], [upvotes] upvotes)
-Hook: "[exact hook line]"
-Viral Score: [X]/10
-
-[... through Idea 15]
-
-
-🎯 Top 5 Recommended
-
-1. Idea [N] ([score]/10) - [short label]
-2. Idea [N] ([score]/10) - [short label]
-3. Idea [N] ([score]/10) - [short label]
-4. Idea [N] ([score]/10) - [short label]
-5. Idea [N] ([score]/10) - [short label]
-
-Pick idea + format to start production.
-
-Format codes:
-
-• LP = LinkedIn Post
-• TH = Twitter Thread
-• XA = X Article (long-form)
-• TW = Single Tweet
-• CA = Instagram Carousel
-Example: 1, LP or 3, XA or 5, TH
+[... all 15 ideas in full detail ...]
 ```
+
+### STEP B — Send CONDENSED version to chat
+
+After saving to file, send a SHORT chat message (Telegram-safe, under 3500 chars total):
+
+```
+💡 IDEAS — [Pillar Topic]
+
+01 ([score]/10) — [Title]
+Hook: "[hook]"
+
+02 ([score]/10) — [Title]
+Hook: "[hook]"
+
+03 ([score]/10) — [Title]
+Hook: "[hook]"
+
+04 ([score]/10) — [Title]
+Hook: "[hook]"
+
+05 ([score]/10) — [Title]
+Hook: "[hook]"
+
+06 ([score]/10) — [Title]
+Hook: "[hook]"
+
+07 ([score]/10) — [Title]
+Hook: "[hook]"
+
+08 ([score]/10) — [Title]
+Hook: "[hook]"
+
+09 ([score]/10) — [Title]
+Hook: "[hook]"
+
+10 ([score]/10) — [Title]
+Hook: "[hook]"
+
+11 ([score]/10) — [Title]
+Hook: "[hook]"
+
+12 ([score]/10) — [Title]
+Hook: "[hook]"
+
+13 ([score]/10) — [Title]
+Hook: "[hook]"
+
+14 ([score]/10) — [Title]
+Hook: "[hook]"
+
+15 ([score]/10) — [Title]
+Hook: "[hook]"
+
+Full details saved to pending-ideas.md
+
+Reply with idea number + format (e.g. 3, LP or 7, XA)
+Formats: LP LinkedIn · TH Thread · XA X Article · TW Tweet · CA Carousel
+```
+
+**CRITICAL:** The condensed chat message must stay under 3500 characters total. Hook lines should be max 100 chars each — truncate with "..." if needed. Title max 60 chars.
 
 ---
 
