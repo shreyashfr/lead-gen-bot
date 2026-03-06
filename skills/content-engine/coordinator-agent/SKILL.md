@@ -296,6 +296,7 @@ Starting idea generation — 15 ideas incoming...
 ## Idea [NN]: [Title]
 Source: 🔴 Reddit (r/[sub], [upvotes] upvotes, relative score [X]/10)
    OR   🐦 Twitter (@[handle], ❤️[N], relative score [X]/10)
+Source URL: [exact URL from scout output]
 Hook: "[exact hook line — under 100 chars]"
 Angle: [1-line tension or take]
 Format: [LinkedIn / Thread / X Article / Tweet / Carousel]
@@ -312,23 +313,33 @@ Relative Score: [X]/10
 
 ## STEP 8 — Send Condensed Ideas to Chat
 
-Send ONE message under 3500 chars total:
+Send ONE message under 4000 chars total:
 
 ```
 💡 IDEAS — [Pillar Topic]
 
 01 ([X]/10) — [Title max 60 chars]
 Hook: "[hook max 100 chars]"
+📌 🔴 https://reddit.com/r/[sub]/comments/[id]/...
+   OR
+📌 🐦 https://x.com/[handle]/status/[id]
 
 02 ([X]/10) — [Title]
 Hook: "[hook]"
+📌 🔴/🐦 [real source URL]
 
-[...all 15...]
+[...all 15 with source URL below every idea...]
 
 Full details → pending-ideas.md
 Reply: idea number + format (e.g. 3, LP or 7, TH)
 Formats: LP LinkedIn · TH Thread · XA X Article · TW Tweet · CA Carousel
 ```
+
+**Rules:**
+- Hook max 100 chars, title max 60 chars
+- Every single idea MUST have the 📌 source line with the real URL from scout output
+- Multiple ideas can share the same source post URL — that's fine, show it each time
+- Never invent a URL. Copy it exactly from the scout report files.
 
 ---
 
