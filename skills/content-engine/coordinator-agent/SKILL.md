@@ -1,6 +1,6 @@
 ---
 name: coordinator-agent
-description: Single comprehensive agent that runs research (via reddit-scout), trend analysis, competitive audit, and performance review sequentially in one session. Merges into strategic brief and generates 15 ideas. Called by pillar-workflow on every Pillar: [topic] trigger.
+description: Single comprehensive agent that runs research (via reddit-scout + xurl Twitter intelligence), trend analysis, competitive audit, and performance review sequentially in one session. Merges into strategic brief and generates 15 ideas. Called by pillar-workflow on every Pillar: [topic] trigger.
 ---
 
 # Coordinator Agent — Single-Session Intelligence Orchestrator
@@ -70,19 +70,65 @@ Use `web_search` queries:
 
 ---
 
-### STEP 2 — Web + Industry Research (SECONDARY)
+### STEP 2 — Twitter Intelligence via xurl (SECONDARY — runs after Reddit)
 
-Supplement reddit-scout data with:
-- **Google News / Web:** `[pillar topic] 2026`, recent articles past 2 weeks
-- **Viral angles:** `[pillar topic] controversial opinion`, `[pillar topic] unpopular take`
+**xurl** is the Twitter/X research layer. It does NOT use the Twitter API — use `web_fetch` to pull content from X/Twitter URLs, then apply xurl's analysis framework.
 
-Extract: stats, data points, industry reports, trending angles missing from Reddit.
+**How to run:**
+
+1. **Search for relevant Twitter content** using `web_search`:
+   - `site:twitter.com OR site:x.com "[pillar topic]" pain frustration`
+   - `site:twitter.com OR site:x.com "[pillar topic]" viral thread 2026`
+
+2. **Fetch top results** using `web_fetch` on 3–5 of the most promising URLs.
+
+3. **Apply xurl analysis framework on fetched content:**
+
+   **Pain Point Mining** — extract from replies/threads:
+   - Recurring frustrations (WordPress performance, Shopify CRO, dev bottlenecks, tech debt)
+   - Emotional language: words people use when venting ("I'm sick of...", "why is it so hard...")
+   - Unresolved debates or questions with no clear expert voice
+
+   **Thread Breakdown** — for any high-engagement thread:
+   - Core idea + hook structure
+   - What made it resonate (fear, anger, curiosity, vulnerability, aspiration?)
+   - Contrarian or improved angle for Ayush's niche
+
+   **Content Opportunity Mapping** — extract:
+   - Gaps: angles discussed but nobody is authoritatively answering
+   - Authority vacuums: repeated questions with no expert voice
+   - Lead signals: bios/threads showing hiring intent, growth frustration, tool switching
+
+4. **Extract and carry forward:**
+   - Top Twitter pain points (with thread context)
+   - Best hook structures from viral threads
+   - 2–3 Twitter-specific content opportunities
+   - Any qualified lead signals (profiles showing WordPress/Shopify pain)
+
+**Send a live update after this step:**
+```
+✅ Twitter intelligence complete! [N] pain points + [N] content gaps identified...
+Now running web research + trend psychology...
+```
+
+**Fallback (if Twitter URLs are not fetchable):**
+Skip silently, note in strategic brief: "Twitter layer unavailable — relied on Reddit + web."
 
 ---
 
-### STEP 3 — Trend Psychology Analysis
+### STEP 3 — Web + Industry Research (TERTIARY)
 
-Analyze combined research (reddit-scout + web). Extract:
+Supplement reddit-scout + xurl data with:
+- **Google News / Web:** `[pillar topic] 2026`, recent articles past 2 weeks
+- **Viral angles:** `[pillar topic] controversial opinion`, `[pillar topic] unpopular take`
+
+Extract: stats, data points, industry reports, trending angles missing from Reddit and Twitter.
+
+---
+
+### STEP 4 — Trend Psychology Analysis
+
+Analyze combined research (reddit-scout + xurl + web). Extract:
 - Which emotional archetypes are working RIGHT NOW (fear, anger, curiosity, vulnerability, inspiration)?
 - What hook structures repeat across viral posts?
 - Which emotional triggers are oversaturated?
@@ -90,7 +136,7 @@ Analyze combined research (reddit-scout + web). Extract:
 
 ---
 
-### STEP 4 — Competitive Audit
+### STEP 5 — Competitive Audit
 
 - Check `/home/ubuntu/.openclaw/workspace/content-queue.md` — what has Ayush already posted on similar topics?
 - Identify: What worked? What underperformed?
@@ -98,16 +144,16 @@ Analyze combined research (reddit-scout + web). Extract:
 
 ---
 
-### STEP 5 — Performance Pattern Recognition
+### STEP 6 — Performance Pattern Recognition
 
 - Read `master-doc.md` + `content-queue.md` for Ayush's published content history
 - Extract: Which formats perform best for him? (LinkedIn vs X vs Thread vs Carousel)
 - Which hook styles convert highest?
-- Correlate with emotional archetypes from Step 3
+- Correlate with emotional archetypes from Step 4
 
 ---
 
-### STEP 6 — Strategic Synthesis
+### STEP 7 — Strategic Synthesis
 
 Merge all findings into ONE strategic brief and save to:
 `/home/ubuntu/.openclaw/workspace/strategic-brief-[topic-slug]-[date].md`
@@ -118,8 +164,11 @@ Merge all findings into ONE strategic brief and save to:
 ### What Reddit Shows (from reddit-scout)
 [Top pain points, debates, viral patterns — with real subreddit sources]
 
+### What Twitter Shows (from xurl)
+[Top pain points from threads/replies, viral hook structures, content gaps, lead signals]
+
 ### Web/Industry Layer
-[Key data points, recent angles, missing from Reddit]
+[Key data points, recent angles, missing from Reddit and Twitter]
 
 ### Emotional Patterns That Work
 [Which emotions/archetypes are winning right now]
@@ -133,16 +182,16 @@ Merge all findings into ONE strategic brief and save to:
 
 ---
 
-### STEP 7 — Generate 15 Ideas
+### STEP 8 — Generate 15 Ideas
 
-Using: strategic brief + reddit-scout top posts + master-doc.md + voice-memory.json
+Using: strategic brief + reddit-scout top posts + xurl Twitter findings + master-doc.md + voice-memory.json
 
 Each idea must include:
-- **Hook:** Exact opening line (conversational, specific — derived from real Reddit post patterns)
+- **Hook:** Exact opening line (conversational, specific — derived from real Reddit or Twitter patterns)
 - **Angle:** One-line tension or take
 - **Format fit:** LinkedIn / X Article / Thread / Tweet / Carousel
-- **Source:** Which Reddit post or web finding inspired this idea (include subreddit + upvotes if Reddit)
-- **Viral Score:** Estimate 1-10 based on reddit-scout viral scores of source posts
+- **Source:** Which Reddit post or Twitter thread/pain point inspired this idea (include subreddit + upvotes if Reddit; include tweet context if Twitter)
+- **Viral Score:** Estimate 1-10 based on reddit-scout viral scores or Twitter engagement signals
 - **Why now:** Tie to strategic brief
 
 **Sort ideas by Viral Score descending before outputting.**
@@ -159,7 +208,7 @@ Before you start:
 After you finish:
 1. Log to voice-memory.json:
    - `agent_logs.research_agent.last_run = today`
-   - `agent_logs.research_agent.sources_checked = ["reddit-scout", "web_search", ...]`
+   - `agent_logs.research_agent.sources_checked = ["reddit-scout", "xurl-twitter", "web_search", ...]`
    - `agent_logs.research_agent.topics_covered = [pillar topic]`
 
 ---
