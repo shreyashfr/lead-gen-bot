@@ -70,51 +70,51 @@ Use `web_search` queries:
 
 ---
 
-### STEP 2 — Twitter Viral Research via xurl (SECONDARY — runs parallel to Reddit)
+### STEP 2 — Twitter Viral Research via twitter-scout (SECONDARY — runs after Reddit)
 
-**xurl** is the Twitter/X equivalent of reddit-scout. Goal: find what's going viral on X right now for the pillar topic, extract hooks, engagement signals, and content angles — exactly the same output shape as reddit-scout, just from Twitter.
-
-**xurl does NOT use the Twitter API.** Use `web_fetch` + `web_search` to pull live Twitter content.
+**twitter-scout** is the Twitter/X equivalent of reddit-scout. Uses Playwright + saved session cookies to scrape real viral tweets with full engagement metrics.
 
 **How to run:**
 
-1. **Find viral Twitter content** on the pillar topic using `web_search`:
-   - `site:x.com "[pillar topic]" -filter:replies` *(standalone posts)*
-   - `site:x.com "[pillar topic]" thread 2026`
-   - `site:x.com "[pillar topic]" viral OR trending`
-   - Also try nitter mirrors if x.com is not fetchable: `site:nitter.net "[pillar topic]"`
+```bash
+node /home/ubuntu/.openclaw/workspace/skills/twitter-scout/scripts/pipeline.js \
+  --query "[pillar topic]" \
+  --out "/home/ubuntu/.openclaw/workspace/twitter-scout" \
+  --topN 10 --printChat
+```
 
-2. **Fetch 3–5 top results** using `web_fetch` — prioritise threads and posts with visible reply/like signals.
+After it completes, read the outputs:
+- `/home/ubuntu/.openclaw/workspace/twitter-scout/[slug]/runs/[latest]/report.md`
+- `/home/ubuntu/.openclaw/workspace/twitter-scout/[slug]/runs/[latest]/top_posts_detailed.json`
 
-3. **Extract from each fetched post/thread:**
-   - **Hook line** — the exact opening line that made it shareable
-   - **Core angle** — the tension, take, or insight driving engagement
-   - **Emotional trigger** — fear / anger / curiosity / vulnerability / aspiration
-   - **Engagement signal** — likes, replies, reposts (if visible in fetched content)
-   - **Viral score** — estimate 1–10 based on engagement signals and hook strength
+**Extract from the report:**
+- **Hook line** — exact opening line of each viral tweet
+- **Core angle** — the tension or take driving engagement
+- **Emotional trigger** — fear / anger / curiosity / vulnerability / aspiration
+- **Engagement** — likes, retweets, replies, bookmarks (real numbers)
+- **Viral score** — pre-calculated 1–10 score in the report
 
-4. **Output: Twitter Viral Signals block** (same structure as reddit-scout output):
-   ```
-   ## Twitter Viral Signals — [Pillar Topic]
+**Output: Twitter Viral Signals block:**
+```
+## Twitter Viral Signals — [Pillar Topic]
 
-   Post 1: "[hook line]"
-   Angle: [core take]
-   Trigger: [emotion]
-   Engagement: [likes/replies if visible]
-   Viral Score: [X]/10
+Post 1: "[tweet text]"
+Author: [name] ([handle])
+Engagement: ❤️ [likes]  🔁 [rts]  💬 [replies]
+Viral Score: [X]/10
+URL: [url]
 
-   Post 2: ...
-   [up to 5 posts]
-   ```
+[up to 5 posts]
+```
 
 **Send a live update after this step:**
 ```
-✅ Twitter scan complete! [N] viral posts found, top hook: "[hook]"...
+✅ Twitter-scout complete! [N] viral tweets found, top: "[hook]" (score [X])...
 Now running web research + trend psychology...
 ```
 
-**Fallback (if Twitter/X content is not fetchable):**
-Try nitter.net mirrors. If still unavailable, skip silently and note in strategic brief: "Twitter layer unavailable — relied on Reddit + web."
+**Fallback (if twitter-scout fails):**
+Skip silently and note in strategic brief: "Twitter layer unavailable — relied on Reddit + web."
 
 ---
 
