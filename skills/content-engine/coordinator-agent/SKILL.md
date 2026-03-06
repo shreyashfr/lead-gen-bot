@@ -12,20 +12,56 @@ description: Single comprehensive agent that runs research (reddit-scout + twitt
 ### 1. NO HALLUCINATION — EVER
 - Every Reddit post cited must come from the actual reddit-scout output files
 - Every tweet cited must come from the actual twitter-scout output files
-- Every upvote count, like count, viral score must be copied exactly from the output files
-- **NEVER invent a post, tweet, upvote count, viral score, subreddit, or handle**
+- Every upvote count, like count, raw engagement must be copied exactly from the output files
+- **NEVER invent a post, tweet, upvote count, or handle**
 - If a source file is empty or missing — say so. Do not fill in with made-up data.
 
 ### 2. RELEVANCE FILTER — STRICT
-- Before using any post or tweet, check: **Is this actually about [pillar topic]?**
-- Reject anything that mentions the topic keyword but is about something else
-- A tweet scoring 9.1 about "YouTube channels to learn" is NOT relevant for "AI DevOps" unless it specifically discusses AI in DevOps workflows
-- Only use posts that are directly and specifically about the pillar topic
-- If fewer than 3 relevant posts found from a source — say so clearly in the update
+Before including ANY post or tweet, it must pass ALL of these checks:
 
-### 3. CITE EVERY SOURCE
+✅ **Keep if:** The post is specifically and directly about [pillar topic] as its MAIN subject
+✅ **Keep if:** It discusses a real problem, insight, or experience directly tied to [pillar topic]
+
+❌ **Reject if:** The post only MENTIONS the topic keyword in a list alongside many other topics
+❌ **Reject if:** The post is about something else entirely (fan content, crypto, unrelated careers, etc.)
+❌ **Reject if:** The pillar topic keyword appears in a newsletter tagline/bio but the post isn't about it
+❌ **Reject if:** It's a generic "learn these 10 skills" list where [pillar topic] is just one bullet of many
+❌ **Reject if:** The post is from an account promoting its own newsletter/product and the topic is incidental
+
+**Examples of rejection for "MLOps Career":**
+- Tweet: "my career in Solana NFTs started randomly..." → ❌ REJECT (totally unrelated)
+- Tweet: "mlmu is on ep 8" → ❌ REJECT (fan content, no relation)
+- Tweet: "Build DevOps/Cloud career with a laptop — we cover DevOps, K8s, MLOps [newsletter promo]" → ❌ REJECT (MLOps is just a tag in a newsletter, not the main subject)
+- Tweet: "4–6 years MLOps, Kubernetes, offering 4–9 LPA India" → ✅ KEEP (directly about MLOps career reality)
+- Tweet: "MLOps interview — documentation is everything" → ✅ KEEP (direct MLOps career insight)
+
+Log how many posts were rejected and why in the step completion message.
+
+### 3. RELATIVE VIRAL SCORING — NOT ABSOLUTE
+**Do NOT use the raw viral scores from reddit-scout or twitter-scout output files directly.**
+
+Instead, after reading all posts from a source, **re-normalize scores relative to the batch:**
+
+```
+relative_score = (post_raw_engagement / max_raw_engagement_in_batch) × 10
+```
+
+Where raw engagement =
+- Reddit: upvotes + (comments × 2)
+- Twitter: likes + (retweets × 2) + (quotes × 2) + replies + bookmarks
+
+This means:
+- The BEST post in your retrieved batch always scores ~10/10
+- Other posts are scored relative to it
+- A post with 14 upvotes in a niche batch where max is 30 upvotes scores 5.3/10 — not 0.35/10
+- This makes scores meaningful and comparable within the context of what was actually found
+
+**Always calculate and use relative scores. Never carry forward raw scores from scout files.**
+
+### 4. CITE EVERY SOURCE
 - Every idea generated must include the exact source post/tweet it came from
-- Format: `🔴 Reddit (r/[sub], [N] upvotes, viral score [X])` OR `🐦 Twitter (@[handle], ❤️ [N], viral score [X])`
+- Format: `🔴 Reddit (r/[sub], [N] upvotes, relative score [X]/10)` OR `🐦 Twitter (@[handle], ❤️ [N], relative score [X]/10)`
+- Relative score = calculated by you after normalizing the batch (Rule 3 above)
 - If you cannot cite a real source — drop the idea
 
 ### 4. STRUCTURED STEP LOGS
@@ -72,13 +108,17 @@ node /home/ubuntu/.openclaw/workspace/skills/reddit-scout/scripts/pipeline.js \
 
 **Relevance filter:** Go through each post. Ask: is this post genuinely about [pillar topic]? If not — exclude it. Log excluded count.
 
+**After reading the report, calculate relative scores for all kept posts:**
+- Find the post with highest raw engagement (upvotes + comments×2) → that = 10/10
+- Score all others relative to it
+
 **Step 1 completion log (send to chat):**
 ```
 ✅ Reddit done.
 Subreddits scanned: [list real subreddit names]
-Total posts found: [N]
-Relevant posts kept: [N]
-Top post: "[exact title]" (r/[sub], [upvotes] upvotes, viral score [X]/10)
+Total posts found: [N] | Irrelevant excluded: [N] | Kept: [N]
+Top post: "[exact title]" (r/[sub], [upvotes] upvotes, relative score 10/10)
+Second: "[title]" (r/[sub], [upvotes] upvotes, relative score [X]/10)
 Top pain point: "[1 line from top comment]"
 ```
 
@@ -106,12 +146,16 @@ node /home/ubuntu/.openclaw/workspace/skills/twitter-scout/scripts/pipeline.js \
 
 **Relevance filter:** Check each tweet. Is it genuinely about [pillar topic]? Posts with generic keywords but off-topic content must be excluded. Log excluded count.
 
+**After reading the report, calculate relative scores for all kept tweets:**
+- Find the tweet with highest raw engagement (likes + retweets×2 + replies) → that = 10/10
+- Score all others relative to it
+
 **Step 2 completion log (send to chat):**
 ```
 ✅ Twitter done.
-Total tweets found: [N]
-Relevant tweets kept: [N]
-Top tweet: "[first 80 chars of tweet text]" (@[handle], ❤️ [likes], viral score [X]/10)
+Total tweets found: [N] | Irrelevant excluded: [N] | Kept: [N]
+Top tweet: "[first 80 chars]" (@[handle], ❤️ [likes], relative score 10/10)
+Second: "[first 80 chars]" (@[handle], ❤️ [likes], relative score [X]/10)
 ```
 
 **If twitter-scout fails:** Send `⚠️ Twitter layer unavailable — continuing with Reddit + web only.` Do not fabricate tweets.
@@ -250,14 +294,16 @@ Starting idea generation — 15 ideas incoming...
 **Each idea structure:**
 ```
 ## Idea [NN]: [Title]
-Source: 🔴 Reddit (r/[sub], [upvotes] upvotes, viral score [X]/10)
-   OR   🐦 Twitter (@[handle], ❤️[N], viral score [X]/10)
+Source: 🔴 Reddit (r/[sub], [upvotes] upvotes, relative score [X]/10)
+   OR   🐦 Twitter (@[handle], ❤️[N], relative score [X]/10)
 Hook: "[exact hook line — under 100 chars]"
 Angle: [1-line tension or take]
 Format: [LinkedIn / Thread / X Article / Tweet / Carousel]
 Why now: [1 sentence tied to brief]
-Viral Score: [X]/10
+Relative Score: [X]/10
 ```
+
+**Reminder: relative score = this post's engagement ÷ max engagement in batch × 10. The top idea should always be close to 10/10.**
 
 **Save full 15 ideas to:**
 `/home/ubuntu/.openclaw/workspace/content-engine/pending-ideas.md`
