@@ -70,49 +70,51 @@ Use `web_search` queries:
 
 ---
 
-### STEP 2 — Twitter Intelligence via xurl (SECONDARY — runs after Reddit)
+### STEP 2 — Twitter Viral Research via xurl (SECONDARY — runs parallel to Reddit)
 
-**xurl** is the Twitter/X research layer. It does NOT use the Twitter API — use `web_fetch` to pull content from X/Twitter URLs, then apply xurl's analysis framework.
+**xurl** is the Twitter/X equivalent of reddit-scout. Goal: find what's going viral on X right now for the pillar topic, extract hooks, engagement signals, and content angles — exactly the same output shape as reddit-scout, just from Twitter.
+
+**xurl does NOT use the Twitter API.** Use `web_fetch` + `web_search` to pull live Twitter content.
 
 **How to run:**
 
-1. **Search for relevant Twitter content** using `web_search`:
-   - `site:twitter.com OR site:x.com "[pillar topic]" pain frustration`
-   - `site:twitter.com OR site:x.com "[pillar topic]" viral thread 2026`
+1. **Find viral Twitter content** on the pillar topic using `web_search`:
+   - `site:x.com "[pillar topic]" -filter:replies` *(standalone posts)*
+   - `site:x.com "[pillar topic]" thread 2026`
+   - `site:x.com "[pillar topic]" viral OR trending`
+   - Also try nitter mirrors if x.com is not fetchable: `site:nitter.net "[pillar topic]"`
 
-2. **Fetch top results** using `web_fetch` on 3–5 of the most promising URLs.
+2. **Fetch 3–5 top results** using `web_fetch` — prioritise threads and posts with visible reply/like signals.
 
-3. **Apply xurl analysis framework on fetched content:**
+3. **Extract from each fetched post/thread:**
+   - **Hook line** — the exact opening line that made it shareable
+   - **Core angle** — the tension, take, or insight driving engagement
+   - **Emotional trigger** — fear / anger / curiosity / vulnerability / aspiration
+   - **Engagement signal** — likes, replies, reposts (if visible in fetched content)
+   - **Viral score** — estimate 1–10 based on engagement signals and hook strength
 
-   **Pain Point Mining** — extract from replies/threads:
-   - Recurring frustrations (WordPress performance, Shopify CRO, dev bottlenecks, tech debt)
-   - Emotional language: words people use when venting ("I'm sick of...", "why is it so hard...")
-   - Unresolved debates or questions with no clear expert voice
+4. **Output: Twitter Viral Signals block** (same structure as reddit-scout output):
+   ```
+   ## Twitter Viral Signals — [Pillar Topic]
 
-   **Thread Breakdown** — for any high-engagement thread:
-   - Core idea + hook structure
-   - What made it resonate (fear, anger, curiosity, vulnerability, aspiration?)
-   - Contrarian or improved angle for Ayush's niche
+   Post 1: "[hook line]"
+   Angle: [core take]
+   Trigger: [emotion]
+   Engagement: [likes/replies if visible]
+   Viral Score: [X]/10
 
-   **Content Opportunity Mapping** — extract:
-   - Gaps: angles discussed but nobody is authoritatively answering
-   - Authority vacuums: repeated questions with no expert voice
-   - Lead signals: bios/threads showing hiring intent, growth frustration, tool switching
-
-4. **Extract and carry forward:**
-   - Top Twitter pain points (with thread context)
-   - Best hook structures from viral threads
-   - 2–3 Twitter-specific content opportunities
-   - Any qualified lead signals (profiles showing WordPress/Shopify pain)
+   Post 2: ...
+   [up to 5 posts]
+   ```
 
 **Send a live update after this step:**
 ```
-✅ Twitter intelligence complete! [N] pain points + [N] content gaps identified...
+✅ Twitter scan complete! [N] viral posts found, top hook: "[hook]"...
 Now running web research + trend psychology...
 ```
 
-**Fallback (if Twitter URLs are not fetchable):**
-Skip silently, note in strategic brief: "Twitter layer unavailable — relied on Reddit + web."
+**Fallback (if Twitter/X content is not fetchable):**
+Try nitter.net mirrors. If still unavailable, skip silently and note in strategic brief: "Twitter layer unavailable — relied on Reddit + web."
 
 ---
 
@@ -165,7 +167,7 @@ Merge all findings into ONE strategic brief and save to:
 [Top pain points, debates, viral patterns — with real subreddit sources]
 
 ### What Twitter Shows (from xurl)
-[Top pain points from threads/replies, viral hook structures, content gaps, lead signals]
+[Top viral posts, hooks, engagement signals — same format as Reddit section]
 
 ### Web/Industry Layer
 [Key data points, recent angles, missing from Reddit and Twitter]
@@ -184,15 +186,17 @@ Merge all findings into ONE strategic brief and save to:
 
 ### STEP 8 — Generate 15 Ideas
 
-Using: strategic brief + reddit-scout top posts + xurl Twitter findings + master-doc.md + voice-memory.json
+Using: strategic brief + reddit-scout viral posts + xurl Twitter viral posts + master-doc.md + voice-memory.json
 
 Each idea must include:
-- **Hook:** Exact opening line (conversational, specific — derived from real Reddit or Twitter patterns)
+- **Hook:** Exact opening line (conversational, specific — derived from a real Reddit post or Twitter post pattern)
 - **Angle:** One-line tension or take
 - **Format fit:** LinkedIn / X Article / Thread / Tweet / Carousel
-- **Source:** Which Reddit post or Twitter thread/pain point inspired this idea (include subreddit + upvotes if Reddit; include tweet context if Twitter)
-- **Viral Score:** Estimate 1-10 based on reddit-scout viral scores or Twitter engagement signals
+- **Source:** Which post inspired it — `🔴 Reddit (r/[sub], [upvotes] upvotes)` OR `🐦 Twitter ([hook preview], viral score [X])`
+- **Viral Score:** Carry forward from reddit-scout or xurl viral score of the source post
 - **Why now:** Tie to strategic brief
+
+**Ideas sourced from Twitter (xurl) are equal weight to Reddit ideas — mix them freely. Best signal wins.**
 
 **Sort ideas by Viral Score descending before outputting.**
 
