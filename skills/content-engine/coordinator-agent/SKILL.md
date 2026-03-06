@@ -1,37 +1,62 @@
 ---
 name: coordinator-agent
-description: Single comprehensive agent that runs research (via reddit-scout + xurl Twitter intelligence), trend analysis, competitive audit, and performance review sequentially in one session. Merges into strategic brief and generates 15 ideas. Called by pillar-workflow on every Pillar: [topic] trigger.
+description: Single comprehensive agent that runs research (reddit-scout + twitter-scout), trend analysis, competitive audit, and performance review sequentially. Merges into strategic brief and generates 15 ideas. Called by pillar-workflow on every Pillar: [topic] trigger.
 ---
 
-# Coordinator Agent — Single-Session Intelligence Orchestrator
+# Coordinator Agent — Content Intelligence Orchestrator
 
-Runs all 4 intelligence streams sequentially (no sub-agents), merges findings, generates 15 ideas.
+---
+
+## ⚠️ CORE RULES — READ FIRST, NEVER VIOLATE
+
+### 1. NO HALLUCINATION — EVER
+- Every Reddit post cited must come from the actual reddit-scout output files
+- Every tweet cited must come from the actual twitter-scout output files
+- Every upvote count, like count, viral score must be copied exactly from the output files
+- **NEVER invent a post, tweet, upvote count, viral score, subreddit, or handle**
+- If a source file is empty or missing — say so. Do not fill in with made-up data.
+
+### 2. RELEVANCE FILTER — STRICT
+- Before using any post or tweet, check: **Is this actually about [pillar topic]?**
+- Reject anything that mentions the topic keyword but is about something else
+- A tweet scoring 9.1 about "YouTube channels to learn" is NOT relevant for "AI DevOps" unless it specifically discusses AI in DevOps workflows
+- Only use posts that are directly and specifically about the pillar topic
+- If fewer than 3 relevant posts found from a source — say so clearly in the update
+
+### 3. CITE EVERY SOURCE
+- Every idea generated must include the exact source post/tweet it came from
+- Format: `🔴 Reddit (r/[sub], [N] upvotes, viral score [X])` OR `🐦 Twitter (@[handle], ❤️ [N], viral score [X])`
+- If you cannot cite a real source — drop the idea
+
+### 4. STRUCTURED STEP LOGS
+- Every step ends with a structured log block showing exactly what was found
+- No skipping steps. No merging steps. Run them in order.
+
+### 5. KEEP USER UPDATED
+- Send a progress message at the START of each step
+- Send a completion message at the END of each step with real numbers
+- Never go silent for more than one step
+
+---
 
 ## Trigger
 
-Spawned by `pillar-workflow` when trigger `Pillar: [topic]` is received.
-
-## Chat Format During Run
-
-You are running inside a live chat. Send progress updates as you go — one message per step.
-No timestamps in messages.
-
-Follow the **Chat Format Layer** in `pillar-workflow/SKILL.md` for all message templates:
-- Research phase → send plain live update messages (no timestamps)
-- Ideas output → use the zero-padded Ideas Output format (Idea 01...15)
+Spawned when `Pillar: [topic]` is received. Read these files before starting:
+- `/home/ubuntu/.openclaw/workspace/master-doc.md` — Ayush's voice, stories, positioning
+- `/home/ubuntu/.openclaw/workspace/voice-memory.json` — tone rules, forbidden phrases, past performance
+- `/home/ubuntu/.openclaw/workspace/content-queue.md` — what Ayush has already posted
 
 ---
 
-## Your Mission
+## STEP 1 — Reddit Research (PRIMARY)
 
-You are the intelligence coordinator for the pillar: `[TOPIC]`
+**Send this update first:**
+```
+🔴 Step 1/6: Running Reddit scout for "[topic]"...
+Discovering subreddits + scanning top posts from the past week.
+```
 
----
-
-### STEP 1 — Reddit Deep Dive (PRIMARY via reddit-scout)
-
-**reddit-scout is the PRIMARY research source.** Run it first, before any web search.
-
+**Run reddit-scout:**
 ```bash
 node /home/ubuntu/.openclaw/workspace/skills/reddit-scout/scripts/pipeline.js \
   --niche "[pillar topic]" \
@@ -41,41 +66,33 @@ node /home/ubuntu/.openclaw/workspace/skills/reddit-scout/scripts/pipeline.js \
   --searchAuto 1 --printChat 1
 ```
 
-Send live updates as the scout runs:
+**After completion, read:**
+- `reddit-scout/[niche-slug]/runs/[latest]/report.md`
+- `reddit-scout/[niche-slug]/runs/[latest]/top_posts_detailed.json`
+
+**Relevance filter:** Go through each post. Ask: is this post genuinely about [pillar topic]? If not — exclude it. Log excluded count.
+
+**Step 1 completion log (send to chat):**
 ```
-Discovering subreddits... fetching posts...
-Scanning r/[Sub1], r/[Sub2], r/[Sub3]...
-Scanning r/[Sub4], r/[Sub5]... Running global search...
-Found r/[DiscoveredSub]... Scoring posts...
-Fetching detailed post data... Almost done...
-Found [N] high-signal posts... Generating report...
-✅ Reddit-scout complete! Reading report...
-Perfect insights! Now generating [N] viral ideas...
+✅ Reddit done.
+Subreddits scanned: [list real subreddit names]
+Total posts found: [N]
+Relevant posts kept: [N]
+Top post: "[exact title]" (r/[sub], [upvotes] upvotes, viral score [X]/10)
+Top pain point: "[1 line from top comment]"
 ```
-
-After scout completes, read the output:
-- `/home/ubuntu/.openclaw/workspace/reddit-scout/[niche-slug]/runs/[latest]/report.md`
-- `/home/ubuntu/.openclaw/workspace/reddit-scout/[niche-slug]/runs/[latest]/top_posts_detailed.json`
-
-Extract from reddit-scout output:
-- Top subreddits found (real names from the scan)
-- Viral posts (title, subreddit, upvote count, hook patterns)
-- Top comments (pain points, debates, what people are actually saying)
-- Viral scores for each post (carry these into idea generation)
-
-**Fallback (only if reddit-scout fails/unavailable):**
-Use `web_search` queries:
-- `site:reddit.com [pillar topic] 2026`
-- `site:reddit.com [pillar topic] career site:reddit.com`
 
 ---
 
-### STEP 2 — Twitter Viral Research via twitter-scout (SECONDARY — runs after Reddit)
+## STEP 2 — Twitter Research (SECONDARY)
 
-**twitter-scout** is the Twitter/X equivalent of reddit-scout. Uses Playwright + saved session cookies to scrape real viral tweets with full engagement metrics.
+**Send this update:**
+```
+🐦 Step 2/6: Running Twitter scout for "[topic]"...
+Searching X/Twitter for viral posts — Top filter.
+```
 
-**How to run:**
-
+**Run twitter-scout:**
 ```bash
 node /home/ubuntu/.openclaw/workspace/skills/twitter-scout/scripts/pipeline.js \
   --query "[pillar topic]" \
@@ -83,228 +100,217 @@ node /home/ubuntu/.openclaw/workspace/skills/twitter-scout/scripts/pipeline.js \
   --topN 10 --printChat
 ```
 
-After it completes, read the outputs:
-- `/home/ubuntu/.openclaw/workspace/twitter-scout/[slug]/runs/[latest]/report.md`
-- `/home/ubuntu/.openclaw/workspace/twitter-scout/[slug]/runs/[latest]/top_posts_detailed.json`
+**After completion, read:**
+- `twitter-scout/[slug]/runs/[latest]/report.md`
+- `twitter-scout/[slug]/runs/[latest]/top_posts_detailed.json`
 
-**Extract from the report:**
-- **Hook line** — exact opening line of each viral tweet
-- **Core angle** — the tension or take driving engagement
-- **Emotional trigger** — fear / anger / curiosity / vulnerability / aspiration
-- **Engagement** — likes, retweets, replies, bookmarks (real numbers)
-- **Viral score** — pre-calculated 1–10 score in the report
+**Relevance filter:** Check each tweet. Is it genuinely about [pillar topic]? Posts with generic keywords but off-topic content must be excluded. Log excluded count.
 
-**Output: Twitter Viral Signals block:**
+**Step 2 completion log (send to chat):**
 ```
-## Twitter Viral Signals — [Pillar Topic]
-
-Post 1: "[tweet text]"
-Author: [name] ([handle])
-Engagement: ❤️ [likes]  🔁 [rts]  💬 [replies]
-Viral Score: [X]/10
-URL: [url]
-
-[up to 5 posts]
+✅ Twitter done.
+Total tweets found: [N]
+Relevant tweets kept: [N]
+Top tweet: "[first 80 chars of tweet text]" (@[handle], ❤️ [likes], viral score [X]/10)
 ```
 
-**Send a live update after this step:**
-```
-✅ Twitter-scout complete! [N] viral tweets found, top: "[hook]" (score [X])...
-Now running web research + trend psychology...
-```
-
-**Fallback (if twitter-scout fails):**
-Skip silently and note in strategic brief: "Twitter layer unavailable — relied on Reddit + web."
+**If twitter-scout fails:** Send `⚠️ Twitter layer unavailable — continuing with Reddit + web only.` Do not fabricate tweets.
 
 ---
 
-### STEP 3 — Web + Industry Research (TERTIARY)
+## STEP 3 — Web Research (SUPPLEMENTARY)
 
-Supplement reddit-scout + xurl data with:
-- **Google News / Web:** `[pillar topic] 2026`, recent articles past 2 weeks
-- **Viral angles:** `[pillar topic] controversial opinion`, `[pillar topic] unpopular take`
+**Send this update:**
+```
+🌐 Step 3/6: Running web research for "[topic]"...
+Looking for recent stats, data points, and industry angles.
+```
 
-Extract: stats, data points, industry reports, trending angles missing from Reddit and Twitter.
+Run 3–4 targeted searches:
+- `"[pillar topic]" 2026 trends`
+- `"[pillar topic]" statistics data research`
+- `"[pillar topic]" controversial unpopular take`
 
----
+**Extract only facts with a verifiable source** (publication name + approximate date). No made-up stats.
 
-### STEP 4 — Trend Psychology Analysis
-
-Analyze combined research (reddit-scout + xurl + web). Extract:
-- Which emotional archetypes are working RIGHT NOW (fear, anger, curiosity, vulnerability, inspiration)?
-- What hook structures repeat across viral posts?
-- Which emotional triggers are oversaturated?
-- What emotional angle is completely empty right now?
-
----
-
-### STEP 5 — Competitive Audit
-
-- Check `/home/ubuntu/.openclaw/workspace/content-queue.md` — what has Ayush already posted on similar topics?
-- Identify: What worked? What underperformed?
-- Extract: Where are the narrative gaps? What angle is nobody owning?
+**Step 3 completion log (send to chat):**
+```
+✅ Web research done.
+Key data points found: [N]
+Top stat: "[stat]" — [source name]
+Top trend: "[trend]"
+```
 
 ---
 
-### STEP 6 — Performance Pattern Recognition
+## STEP 4 — Trend Psychology + Competitive Audit
 
-- Read `master-doc.md` + `content-queue.md` for Ayush's published content history
-- Extract: Which formats perform best for him? (LinkedIn vs X vs Thread vs Carousel)
+**Send this update:**
+```
+🧠 Step 4/6: Running trend psychology + competitive audit...
+```
+
+**Trend psychology** — based ONLY on real posts found in Steps 1–3:
+- Which emotions are winning right now? (fear / anger / curiosity / aspiration / vulnerability)
+- What hook structures repeat across the top posts?
+- What emotional angle is completely empty / not being used?
+
+**Competitive audit:**
+- Read `content-queue.md` — what has Ayush already posted on this topic?
+- What worked? What underperformed?
+- What angle is completely uncovered?
+
+**Step 4 completion log (send to chat):**
+```
+✅ Analysis done.
+Dominant emotion: [emotion]
+Most used hook structure: "[structure]"
+Biggest gap: "[angle nobody is covering]"
+Ayush's existing coverage: [N posts on this topic]
+```
+
+---
+
+## STEP 5 — Performance Patterns
+
+**Send this update:**
+```
+📊 Step 5/6: Checking performance patterns...
+```
+
+From `voice-memory.json` + `content-queue.md`:
+- Which formats perform best for Ayush?
 - Which hook styles convert highest?
-- Correlate with emotional archetypes from Step 4
+- What should he avoid?
+
+(Skip this step silently only if both files are empty/missing)
 
 ---
 
-### STEP 7 — Strategic Synthesis
+## STEP 6 — Strategic Brief
 
-Merge all findings into ONE strategic brief and save to:
-`/home/ubuntu/.openclaw/workspace/strategic-brief-[topic-slug]-[date].md`
-
+**Send this update:**
 ```
+📋 Step 6/6: Writing strategic brief...
+```
+
+Save to: `/home/ubuntu/.openclaw/workspace/strategic-brief-[topic-slug]-[YYYY-MM-DD].md`
+
+```markdown
 ## STRATEGIC BRIEF — [Topic] — [Date]
 
-### What Reddit Shows (from reddit-scout)
-[Top pain points, debates, viral patterns — with real subreddit sources]
+### Reddit Signals (from reddit-scout)
+Subreddits: [list]
+Top posts:
+1. "[title]" — r/[sub], [N] upvotes, viral score [X]/10
+2. "[title]" — r/[sub], [N] upvotes, viral score [X]/10
+[...]
+Top pain points: [real quotes from comments]
 
-### What Twitter Shows (from xurl)
-[Top viral posts, hooks, engagement signals — same format as Reddit section]
+### Twitter Signals (from twitter-scout)
+Top tweets:
+1. "[text]" — @[handle], ❤️[N] 🔁[N], viral score [X]/10
+2. "[text]" — @[handle], ❤️[N] 🔁[N], viral score [X]/10
+[Only list tweets that passed relevance filter]
 
 ### Web/Industry Layer
-[Key data points, recent angles, missing from Reddit and Twitter]
+[Bullet points with real data + source names]
 
-### Emotional Patterns That Work
-[Which emotions/archetypes are winning right now]
+### Emotional Patterns Right Now
+Dominant: [emotion]
+Underused: [emotion]
+Hook structures winning: [list]
 
-### What Ayush Has Already Covered
-[Past posts + what worked/underperformed]
+### Competitive Gap
+[What angle Ayush has NOT covered that has strong signal]
 
 ### Strategic Recommendation
-[The angle Ayush should own, the format that will convert best, why now]
+Format: [best format for this topic right now]
+Angle: [the specific angle to own]
+Why now: [1-2 sentences tied to real data above]
+```
+
+**After saving, send to chat:**
+```
+✅ Strategic brief saved.
+Starting idea generation — 15 ideas incoming...
 ```
 
 ---
 
-### STEP 8 — Generate 15 Ideas
+## STEP 7 — Generate 15 Ideas
 
-Using: strategic brief + reddit-scout viral posts + xurl Twitter viral posts + master-doc.md + voice-memory.json
+**Rules for generation:**
+- Every idea MUST be derived from a real source post found in Steps 1–3
+- Hook lines must be inspired by actual viral posts — adapted to Ayush's voice, not copied verbatim
+- No generic takes. No "AI is transforming [industry]" hooks. Every hook must be specific and grounded.
+- Mix Reddit and Twitter sources freely — best signal wins
+- Sort by viral score descending
 
-Each idea must include:
-- **Hook:** Exact opening line (conversational, specific — derived from a real Reddit post or Twitter post pattern)
-- **Angle:** One-line tension or take
-- **Format fit:** LinkedIn / X Article / Thread / Tweet / Carousel
-- **Source:** Which post inspired it — `🔴 Reddit (r/[sub], [upvotes] upvotes)` OR `🐦 Twitter ([hook preview], viral score [X])`
-- **Viral Score:** Carry forward from reddit-scout or xurl viral score of the source post
-- **Why now:** Tie to strategic brief
+**Each idea structure:**
+```
+## Idea [NN]: [Title]
+Source: 🔴 Reddit (r/[sub], [upvotes] upvotes, viral score [X]/10)
+   OR   🐦 Twitter (@[handle], ❤️[N], viral score [X]/10)
+Hook: "[exact hook line — under 100 chars]"
+Angle: [1-line tension or take]
+Format: [LinkedIn / Thread / X Article / Tweet / Carousel]
+Why now: [1 sentence tied to brief]
+Viral Score: [X]/10
+```
 
-**Ideas sourced from Twitter (xurl) are equal weight to Reddit ideas — mix them freely. Best signal wins.**
-
-**Sort ideas by Viral Score descending before outputting.**
-
----
-
-## Memory Management
-
-Before you start:
-1. Read `/home/ubuntu/.openclaw/workspace/master-doc.md` (voice, stories, positioning)
-2. Read `/home/ubuntu/.openclaw/workspace/voice-memory.json` (rules, high performers, tone guardrails)
-3. Check `voice-memory.json → agent_logs.research_agent.sources_checked` — don't rescan same sources from past 24h
-
-After you finish:
-1. Log to voice-memory.json:
-   - `agent_logs.research_agent.last_run = today`
-   - `agent_logs.research_agent.sources_checked = ["reddit-scout", "xurl-twitter", "web_search", ...]`
-   - `agent_logs.research_agent.topics_covered = [pillar topic]`
-
----
-
-## Output Format
-
-### STEP A — Save full ideas to file FIRST
-
-Before sending anything to chat, save the complete detailed brief (all 15 ideas with full angle, story, format fit, why now) to:
+**Save full 15 ideas to:**
 `/home/ubuntu/.openclaw/workspace/content-engine/pending-ideas.md`
 
-Format in that file:
-```
-# IDEAS REPORT — [Pillar Topic] — [Date]
+---
 
-## Idea 01: [Title]
-Source: 🔴 Reddit (r/[subreddit], [upvotes] upvotes)
-Hook: "[exact hook line]"
-Angle: [full angle]
-Best for: [formats]
-Story: [story reference]
-Why now: [why now]
-Viral Score: [X]/10
+## STEP 8 — Send Condensed Ideas to Chat
 
-[... all 15 ideas in full detail ...]
-```
-
-### STEP B — Send CONDENSED version to chat
-
-After saving to file, send a SHORT chat message (Telegram-safe, under 3500 chars total):
+Send ONE message under 3500 chars total:
 
 ```
 💡 IDEAS — [Pillar Topic]
 
-01 ([score]/10) — [Title]
+01 ([X]/10) — [Title max 60 chars]
+Hook: "[hook max 100 chars]"
+
+02 ([X]/10) — [Title]
 Hook: "[hook]"
 
-02 ([score]/10) — [Title]
-Hook: "[hook]"
+[...all 15...]
 
-03 ([score]/10) — [Title]
-Hook: "[hook]"
-
-04 ([score]/10) — [Title]
-Hook: "[hook]"
-
-05 ([score]/10) — [Title]
-Hook: "[hook]"
-
-06 ([score]/10) — [Title]
-Hook: "[hook]"
-
-07 ([score]/10) — [Title]
-Hook: "[hook]"
-
-08 ([score]/10) — [Title]
-Hook: "[hook]"
-
-09 ([score]/10) — [Title]
-Hook: "[hook]"
-
-10 ([score]/10) — [Title]
-Hook: "[hook]"
-
-11 ([score]/10) — [Title]
-Hook: "[hook]"
-
-12 ([score]/10) — [Title]
-Hook: "[hook]"
-
-13 ([score]/10) — [Title]
-Hook: "[hook]"
-
-14 ([score]/10) — [Title]
-Hook: "[hook]"
-
-15 ([score]/10) — [Title]
-Hook: "[hook]"
-
-Full details saved to pending-ideas.md
-
-Reply with idea number + format (e.g. 3, LP or 7, XA)
+Full details → pending-ideas.md
+Reply: idea number + format (e.g. 3, LP or 7, TH)
 Formats: LP LinkedIn · TH Thread · XA X Article · TW Tweet · CA Carousel
 ```
 
-**CRITICAL:** The condensed chat message must stay under 3500 characters total. Hook lines should be max 100 chars each — truncate with "..." if needed. Title max 60 chars.
+---
+
+## Failure Handling
+
+| Situation | Action |
+|---|---|
+| reddit-scout fails | Send `⚠️ Reddit scout failed: [error]`. Use web_search as fallback. Tell user. |
+| twitter-scout fails | Send `⚠️ Twitter scout unavailable`. Continue without it. |
+| Fewer than 3 relevant posts from a source | Say so in the step log. Do NOT pad with irrelevant posts. |
+| No relevant data at all | Stop and tell user: "Not enough signal found for this topic. Try a more specific pillar." |
+| Idea has no real source | Drop the idea. Do not generate sourceless ideas. |
 
 ---
 
-## Voice Rules Baked In
+## Memory Update (after every run)
 
-- Everything you write reflects Ayush's voice (from master-doc.md)
-- Respect forbidden phrases (from voice-memory.json)
-- No corporate jargon, no filler words
-- Ideas are grounded in real Reddit signal — not generic AI takes
+Update `voice-memory.json`:
+```json
+{
+  "agent_logs": {
+    "research_agent": {
+      "last_run": "[date]",
+      "sources_checked": ["reddit-scout", "twitter-scout", "web_search"],
+      "topics_covered": ["[pillar topic]"],
+      "reddit_posts_used": [N],
+      "twitter_posts_used": [N]
+    }
+  }
+}
+```
