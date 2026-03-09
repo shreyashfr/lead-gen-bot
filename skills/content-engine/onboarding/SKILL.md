@@ -248,7 +248,7 @@ Save as array in `data.already_posted_topics`. Update `onboarding_step: 12`. Mov
 ### STEP 12 — Private Topics (What NOT to Say)
 
 ```
-Last question: is there anything about your life or work that you DON'T want mentioned publicly in content?
+Is there anything about your life or work that you DON'T want mentioned publicly in content?
 
 Personal struggles you want to keep private, specific business details, anything sensitive.
 
@@ -261,13 +261,68 @@ Save as array in `data.private_topics`. Update `onboarding_step: 13`. Move to st
 
 ---
 
-### STEP 13 — BUILD WORKSPACE (no question — just work)
+### STEP 13 — Airtable Setup
+
+```
+Last thing — do you want to connect Airtable so approved content gets pushed there automatically after each session?
+
+Reply YES or NO.
+```
+
+**If NO:**
+Save `data.airtable_enabled: false`. Update `onboarding_step: 14`. Move to step 14.
+
+**If YES:**
+```
+Great! I need two things:
+
+1️⃣ Your Airtable Personal Access Token
+   (Go to airtable.com/create/tokens → create a token with data.records:write scope)
+
+2️⃣ Your Base ID
+   (Open your Airtable base → Help → API docs → you'll see the base ID starting with "app...")
+
+Send them like this:
+Token: patXXXXXXXXXX
+Base ID: appXXXXXXXXXX
+```
+
+On response: extract `token` and `base_id` from their message.
+
+Then ask:
+```
+What's the table name where posts should go?
+(Default is "Posts" — just say "default" if that works)
+```
+
+Save:
+- `data.airtable_enabled: true`
+- `data.airtable_token`: their token
+- `data.airtable_base_id`: their base ID
+- `data.airtable_table`: their table name (or "Posts" if default)
+
+Create `{USER_WORKSPACE}airtable-config.json`:
+```json
+{
+  "enabled": true,
+  "api_key": "{token}",
+  "base_id": "{base_id}",
+  "table_name": "{table_name}",
+  "setup_date": "{today}"
+}
+```
+
+Update `onboarding_step: 14`. Move to step 14.
+
+---
+
+### STEP 14 — BUILD WORKSPACE (no question — just work)
 
 Do all of this silently, then send the confirmation message.
 
 ---
 
-**13a. Create `{USER_WORKSPACE}master-doc.md`:**
+**14a. Create `{USER_WORKSPACE}master-doc.md`:**
 
 ```markdown
 # Master Doc — {name}
@@ -368,7 +423,7 @@ Do all of this silently, then send the confirmation message.
 
 ---
 
-**13b. Create `{USER_WORKSPACE}voice-memory.json`:**
+**14b. Create `{USER_WORKSPACE}voice-memory.json`:**
 
 ```json
 {
@@ -416,7 +471,7 @@ Do all of this silently, then send the confirmation message.
 
 ---
 
-**13c. Create `{USER_WORKSPACE}content-queue.md`:**
+**14c. Create `{USER_WORKSPACE}content-queue.md`:**
 ```markdown
 # Content Queue — {name}
 
@@ -424,7 +479,7 @@ Do all of this silently, then send the confirmation message.
 |---|--------|--------|------|--------|----------|
 ```
 
-**13d. Update `users/registry.json`:**
+**14d. Update `users/registry.json`:**
 - `name`, `niche`, `platforms`, `onboarding_complete: true`, `onboarding_step: null`, `joined: today`
 
 **Then send this message:**

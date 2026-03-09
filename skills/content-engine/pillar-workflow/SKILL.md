@@ -465,17 +465,29 @@ Note: The Reflection Agent also auto-checks this count on every individual call 
 
 ### On each approval:
 
-1. Push to Airtable (TOOLS.md has credentials):
+1. **Check user's Airtable config first:**
+Read `{USER_WORKSPACE}airtable-config.json`
+
+- If `enabled: false` → skip Airtable push, just update content-queue.md
+- If `enabled: true` → push using their credentials:
+
 ```bash
-curl -s "https://api.airtable.com/v0/apprDKHi7GVzcXuN3/Posts" \
+# Read from {USER_WORKSPACE}airtable-config.json:
+# API_KEY = airtable-config.api_key
+# BASE_ID = airtable-config.base_id
+# TABLE   = airtable-config.table_name
+
+curl -s "https://api.airtable.com/v0/{BASE_ID}/{TABLE}" \
   -X POST \
-  -H "Authorization: Bearer patZ5zuyvWZQ53Q1v.9be8e95f264e0c9de9b902a7e09235f9d289b3ea71c63ef8e318724cbc5f1e27" \
+  -H "Authorization: Bearer {API_KEY}" \
   -H "Content-Type: application/json" \
   -d '{"records":[{"fields":{"Title":"...","Pillar":"[topic]","Platform":"[LinkedIn/X/Instagram]","Hook":"[opening line]","Content":"[full content]","Status":"Draft","Week":"[YYYY-MM-DD Monday of current week]"}}]}'
 ```
 Max 10 records per request — batch if needed.
 
-2. Append to `/home/ubuntu/.openclaw/workspace/content-queue.md`:
+If push fails (invalid key, wrong base ID, etc.): tell the user "Airtable push failed — check your credentials. Content is saved in your queue." Do NOT stop the session.
+
+2. Append to `{USER_WORKSPACE}content-queue.md`:
 ```
 ## [Date] — [Format] — [Idea Title]
 **Pillar:** [topic]
