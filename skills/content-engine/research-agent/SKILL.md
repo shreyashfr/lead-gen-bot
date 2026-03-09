@@ -30,7 +30,18 @@ Focus on: **Niche**, **Core Opinions & Angles**, **What's Already Posted**
 
 ## Always Announce Before Running
 
-Before running any scout, send this message to the user:
+**CRITICAL: Use the `message` tool to send the announcement FIRST, as a separate action before any exec calls.**
+Do NOT combine the announcement text with the tool execution in the same turn — the user will see them arrive together and won't get the heads-up they need.
+
+Correct order:
+1. `message(action=send)` → send the announcement
+2. `exec(...)` → run Reddit Scout
+3. `message(action=send)` → "✅ Reddit done. Now scanning Twitter/X..."
+4. `exec(...)` → run Twitter Scout
+5. `message(action=send)` → "✅ Both scouts done. Compiling report + ideas now..."
+6. Compile and send the full report
+
+Announcement message:
 ```
 🔍 Starting research on: [Pillar Topic]
 
@@ -38,9 +49,6 @@ Scanning Reddit + Twitter/X for what's viral around this right now — top posts
 
 This usually takes 5-7 minutes. I'll send the full report + 15 ideas when it's ready. Hang tight...
 ```
-
-After Reddit scout completes, send: `✅ Reddit done. Now scanning Twitter/X...`
-After both complete, send: `✅ Both scouts done. Compiling report + ideas now...`
 
 ---
 

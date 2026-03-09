@@ -1,0 +1,35 @@
+{
+  "n": 5,
+  "cards": [
+    {
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/krish-naik-ai-youtube-data-science-machine-learning/runs/2026-03-09T20-47-49-916Z/cards/1rp2pcv.png",
+      "caption": "1) [R] PCA on ~40k × 40k matrix in representation learning — sklearn SVD crashes even with 128GB RAM. Any practical solutions?\nr/MachineLearning · score 49 · 23 ups · 59 comments\nhttps://www.reddit.com/r/MachineLearning/comments/1rp2pcv/r_pca_on_40k_40k_matrix_in_representation/",
+      "permalink": "https://www.reddit.com/r/MachineLearning/comments/1rp2pcv/r_pca_on_40k_40k_matrix_in_representation/",
+      "id": "1rp2pcv"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/krish-naik-ai-youtube-data-science-machine-learning/runs/2026-03-09T20-47-49-916Z/cards/1rp1qsb.png",
+      "caption": "2) [Hiring] Machine Learning Engineer\nr/MLjobs · score 1 · 3 ups · 0 comments\nhttps://www.reddit.com/r/MLjobs/comments/1rp1qsb/hiring_machine_learning_engineer/",
+      "permalink": "https://www.reddit.com/r/MLjobs/comments/1rp1qsb/hiring_machine_learning_engineer/",
+      "id": "1rp1qsb"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/krish-naik-ai-youtube-data-science-machine-learning/runs/2026-03-09T20-47-49-916Z/cards/1rld49y.png",
+      "caption": "3) Best Machine Learning Jobs for 2026: Where the Money (and Sanity) Is?\nr/MLjobs · score 0 · 11 ups · 1 comments\nhttps://www.reddit.com/r/MLjobs/comments/1rld49y/best_machine_learning_jobs_for_2026_where_the/",
+      "permalink": "https://www.reddit.com/r/MLjobs/comments/1rld49y/best_machine_learning_jobs_for_2026_where_the/",
+      "id": "1rld49y"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/krish-naik-ai-youtube-data-science-machine-learning/runs/2026-03-09T20-47-49-916Z/cards/1rny5mo.png",
+      "caption": "4) Senior Sunday: Top 10 Highest-Paying AI/Data Science Senior Positions from Last Week\nr/jobsindata · score 0 · 2 ups · 1 comments\nhttps://www.reddit.com/r/jobsindata/comments/1rny5mo/senior_sunday_top_10_highestpaying_aidata_science/",
+      "permalink": "https://www.reddit.com/r/jobsindata/comments/1rny5mo/senior_sunday_top_10_highestpaying_aidata_science/",
+      "id": "1rny5mo"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/krish-naik-ai-youtube-data-science-machine-learning/runs/2026-03-09T20-47-49-916Z/cards/1rn3cfl.png",
+      "caption": "5) Director's Saturday: Top 10 Highest-Paying AI/Data Science Director/Manager Positions from Last Week\nr/jobsindata · score 0 · 1 ups · 0 comments\nhttps://www.reddit.com/r/jobsindata/comments/1rn3cfl/directors_saturday_top_10_highestpaying_aidata/",
+      "permalink": "https://www.reddit.com/r/jobsindata/comments/1rn3cfl/directors_saturday_top_10_highestpaying_aidata/",
+      "id": "1rn3cfl"
+    }
+  ]
+}

@@ -30,6 +30,8 @@ Replace ALL file paths:
 Before starting any processing step, always send a heads-up message to the user. Never silently start a long task.
 
 **Before Research (Step 1):**
+
+Use the `message` tool to send this FIRST (before any exec/tool calls):
 ```
 🔍 Starting research on: [Pillar Topic]
 
@@ -37,6 +39,9 @@ Scanning Reddit + Twitter/X for what's viral around this right now — top posts
 
 This usually takes 5-7 minutes. I'll send the full report + 15 ideas when it's ready. Hang tight...
 ```
+
+Only AFTER this message is sent → run the Reddit Scout exec call.
+Do NOT combine the announcement and the tool call in the same turn.
 
 **Before Idea Generation (Step 2):**
 ```

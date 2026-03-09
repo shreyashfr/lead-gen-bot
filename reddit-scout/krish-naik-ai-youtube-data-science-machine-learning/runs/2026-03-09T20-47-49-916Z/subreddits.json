@@ -1,0 +1,72 @@
+[
+  {
+    "name": "MachineLearning",
+    "title": "Machine Learning",
+    "subscribers": 3028673,
+    "over18": false,
+    "url": "https://www.reddit.com/r/MachineLearning/",
+    "discoveredBy": [
+      "Krish Naik AI YouTube data science machine learning"
+    ]
+  },
+  {
+    "name": "MLjobs",
+    "title": "Machine Learning Jobs",
+    "subscribers": 9991,
+    "over18": false,
+    "url": "https://www.reddit.com/r/MLjobs/",
+    "discoveredBy": [
+      "Krish Naik AI YouTube data science machine learning"
+    ]
+  },
+  {
+    "name": "DataScienceSimplified",
+    "title": "People learning Data Science, together.",
+    "subscribers": 7962,
+    "over18": false,
+    "url": "https://www.reddit.com/r/DataScienceSimplified/",
+    "discoveredBy": [
+      "Krish Naik AI YouTube data science machine learning"
+    ]
+  },
+  {
+    "name": "DataScienceStudents",
+    "title": "Data Science Students",
+    "subscribers": 2991,
+    "over18": false,
+    "url": "https://www.reddit.com/r/DataScienceStudents/",
+    "discoveredBy": [
+      "Krish Naik AI YouTube data science machine learning"
+    ]
+  },
+  {
+    "name": "DataSciencewithR",
+    "title": "DataSciencewithR",
+    "subscribers": 817,
+    "over18": false,
+    "url": "https://www.reddit.com/r/DataSciencewithR/",
+    "discoveredBy": [
+      "Krish Naik AI YouTube data science machine learning"
+    ]
+  },
+  {
+    "name": "LearningML",
+    "title": "Learning Machine Learning Tutorials",
+    "subscribers": 424,
+    "over18": false,
+    "url": "https://www.reddit.com/r/LearningML/",
+    "discoveredBy": [
+      "Krish Naik AI YouTube data science machine learning"
+    ]
+  },
+  {
+    "name": "jobsindata",
+    "title": "jobsindata",
+    "subscribers": 140,
+    "over18": false,
+    "url": "https://www.reddit.com/r/jobsindata/",
+    "discoveredBy": [
+      "Krish Naik AI YouTube data science machine learning"
+    ]
+  }
+]

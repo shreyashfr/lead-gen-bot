@@ -1223,6 +1223,42 @@
       "url": "https://styles.redditmedia.com/t5_e2tjpe/styles/profileIcon_4v6jctomd1jg1.png?width=256&height=256&crop=256:256,smart&s=2c4d4307550f7f4d6283d656a86db7ac7a3584ca",
       "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/mcp-server-model-context-protocol-ai-agents/runs/2026-03-09T19-35-32-898Z/avatars/Cyclr_Tech_Man.png",
       "fetchedAt": "2026-03-09T19:36:21.938Z"
+    },
+    "nat-abhishek": {
+      "user": "nat-abhishek",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_5.png",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/krish-naik-ai-youtube-data-science-machine-learning/runs/2026-03-09T20-47-49-916Z/avatars/nat-abhishek.png",
+      "fetchedAt": "2026-03-09T20:48:59.520Z"
+    },
+    "Glum-Adagio7489": {
+      "user": "Glum-Adagio7489",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/krish-naik-ai-youtube-data-science-machine-learning/runs/2026-03-09T20-47-49-916Z/avatars/Glum-Adagio7489.png",
+      "fetchedAt": "2026-03-09T20:49:01.051Z"
+    },
+    "Loud_Inevitable_1162": {
+      "user": "Loud_Inevitable_1162",
+      "url": "https://styles.redditmedia.com/t5_bzndrw/styles/profileIcon_pxln8d5hzbng1.png?width=256&height=256&crop=256:256,smart&s=f9ec0fa102e9e9dc807c8914657bc63a87aec6b1",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/krish-naik-ai-youtube-data-science-machine-learning/runs/2026-03-09T20-47-49-916Z/avatars/Loud_Inevitable_1162.png",
+      "fetchedAt": "2026-03-09T20:49:02.799Z"
+    },
+    "pg860": {
+      "user": "pg860",
+      "url": "https://i.redd.it/snoovatar/avatars/4cf0a6a0-26ad-4037-b97d-aaa2d5acc1a6.png",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/krish-naik-ai-youtube-data-science-machine-learning/runs/2026-03-09T20-47-49-916Z/avatars/pg860.png",
+      "fetchedAt": "2026-03-09T20:49:04.491Z"
+    },
+    "Dry_Clerk_3484": {
+      "user": "Dry_Clerk_3484",
+      "url": "https://i.redd.it/snoovatar/avatars/41b07e9e-de5f-4222-8117-7b0619038fa7.png",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/krish-naik-ai-youtube-data-science-machine-learning/runs/2026-03-09T20-47-49-916Z/avatars/Dry_Clerk_3484.png",
+      "fetchedAt": "2026-03-09T20:49:06.171Z"
+    },
+    "MutedJeweler9205": {
+      "user": "MutedJeweler9205",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_1.png",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/krish-naik-ai-youtube-data-science-machine-learning/runs/2026-03-09T20-47-49-916Z/avatars/MutedJeweler9205.png",
+      "fetchedAt": "2026-03-09T20:49:07.748Z"
     }
   }
 }
