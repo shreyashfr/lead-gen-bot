@@ -7,6 +7,14 @@ description: 'Orchestrates Ayush Singh''s full weekly content pipeline. Triggers
 
 One trigger. 22 pieces. Full automation.
 
+## ⚠️ MULTI-USER MODE
+If this skill is being called by the dispatcher for a non-Shreyash user:
+- `USER_NAME` is set to the current user's name (not "Ayush Singh")
+- `USER_WORKSPACE` is set to their isolated workspace path
+- All file paths use `USER_WORKSPACE` as prefix
+- All references to "Ayush" in this skill should be read as `USER_NAME`
+- The dispatcher handles path substitution — follow the injected context
+
 ## Trigger
 Message matching: `Pillar: [topic]` (case-insensitive, any capitalisation)
 

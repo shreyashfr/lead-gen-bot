@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "skills": {
+    "xurl": {
+      "version": "1.0.0",
+      "installedAt": 1772792300468
+    },
+    "x-twitter": {
+      "version": "2.3.1",
+      "installedAt": 1772794155098
+    }
+  }
+}

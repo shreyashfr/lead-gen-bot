@@ -158,3 +158,45 @@ this is piece 1 of 22. documenting everything I learned moving AI from demo to p
 if you're building AI products, this series is for you.
 **Status:** Approved ✅
 **Airtable:** pushed ✅
+
+## 2026-03-05 — LinkedIn Post — Apple Music Just Started the Sorting Event
+**Pillar:** Music Production and AI
+**Platform:** LinkedIn
+**Hook:** Apple Music just labeled AI-generated tracks.
+**Content:**
+Apple Music just labeled AI-generated tracks.
+
+Spotify is flooded with AI slop. YouTube Music is worse. The platforms are sorting because they have no choice.
+
+This is the same sorting event happening in ML right now.
+
+Six months ago, everyone with a laptop and GarageBand was uploading "music." Streaming royalties looked like a side hustle. Playlist placements felt accessible.
+
+Then the infrastructure started pushing back.
+
+Apple's disclosure tags dropped March 4. Not a ban. Not a punishment. Just a label.
+
+But labels are how sorting starts.
+
+It's identical to what's happening in the ML job market. AI made it easy to collect credentials, generate projects, fake depth. For two years, that worked.
+
+Now the infrastructure is pushing back there too.
+
+Companies aren't hiring "AI engineers" from bootcamps anymore. They're asking questions that Google can't answer. They want to see commit history, not course certificates.
+
+The people who built real skills before AI arrived aren't worried about the label.
+
+They are the label.
+
+The tagging already started. Most people just don't know it yet.
+**Status:** Approved ✅
+**Airtable:** pushed ✅
+
+## 2026-03-05 — LinkedIn Post — LoRA Changed Fine-Tuning Forever
+**Pillar:** Fine Tuning of LLM
+**Platform:** LinkedIn
+**Idea:** #06
+**Hook:** before LoRA, fine-tuning a 7B model cost roughly $50,000 in compute. after LoRA, you can do it on a single RTX 3090 in 4 hours.
+**Status:** Approved ✅
+**Airtable:** recPkiruRL5jQGvZ4
+

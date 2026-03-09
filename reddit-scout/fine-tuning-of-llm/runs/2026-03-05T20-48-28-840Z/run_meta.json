@@ -1,0 +1,46 @@
+{
+  "niche": "Fine Tuning of LLM",
+  "nicheSlug": "fine-tuning-of-llm",
+  "runId": "2026-03-05T20-48-28-840Z",
+  "startedAt": "2026-03-05T20:48:28.841Z",
+  "keywords": [
+    "Fine Tuning of LLM"
+  ],
+  "mustInclude": [
+    "fine",
+    "tuning"
+  ],
+  "search": "fine tuning LLM language model training",
+  "subAllowlist": [
+    "machinelearning",
+    "localllama",
+    "artificial",
+    "futurology",
+    "technology",
+    "openai",
+    "chatgpt",
+    "languagetechnology",
+    "deeplearning",
+    "learnmachinelearning",
+    "mlops",
+    "datascience",
+    "programming",
+    "singularity",
+    "artificialintelligence"
+  ],
+  "config": {
+    "topN": 10,
+    "subLimit": 15,
+    "gapMs": 3000,
+    "limitPerListing": 25,
+    "time": "month",
+    "kinds": [
+      "top",
+      "hot"
+    ],
+    "searchSort": "top",
+    "searchTime": null,
+    "minSubscribers": 0,
+    "sendCardsN": 5
+  }
+}

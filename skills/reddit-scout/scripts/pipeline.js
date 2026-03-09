@@ -178,12 +178,13 @@ async function main() {
 
   const mustIncludeWords = mustInclude.map(s => s.toLowerCase());
 
-  // Title-first filter: most specific tokens from the niche (>=5 chars, not generic).
+  // Title-first filter: most specific tokens from the niche (>=3 chars, not generic stop words).
   // Posts whose TITLE doesn't mention any of these are almost never relevant.
-  const TITLE_STOP = new Set(['usage','using','about','their','these','those','with','from','that','this','have','data']);
+  // Minimum 3 chars to preserve short but specific tech terms (LLM, GPT, RAG, AI, etc.)
+  const TITLE_STOP = new Set(['usage','using','about','their','these','those','with','from','that','this','have','data','and','for','the','of','in','on','a','an','is','are']);
   const titleMustWords = mustInclude
     .map(s => s.toLowerCase())
-    .filter(w => w.length >= 5 && !TITLE_STOP.has(w));
+    .filter(w => w.length >= 3 && !TITLE_STOP.has(w));
 
   const keywordSet = buildKeywordSet({ niche, keywords, mustInclude });
 

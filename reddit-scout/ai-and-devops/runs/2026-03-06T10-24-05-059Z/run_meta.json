@@ -1,0 +1,30 @@
+{
+  "niche": "AI and DevOps",
+  "nicheSlug": "ai-and-devops",
+  "runId": "2026-03-06T10-24-05-059Z",
+  "startedAt": "2026-03-06T10:24:05.059Z",
+  "keywords": [
+    "AI and DevOps"
+  ],
+  "mustInclude": [
+    "devops"
+  ],
+  "search": "AI and DevOps",
+  "subAllowlist": null,
+  "config": {
+    "topN": 10,
+    "subLimit": 8,
+    "gapMs": 1200,
+    "limitPerListing": 25,
+    "time": "week",
+    "kinds": [
+      "top",
+      "hot",
+      "rising"
+    ],
+    "searchSort": "top",
+    "searchTime": null,
+    "minSubscribers": 0,
+    "sendCardsN": 5
+  }
+}

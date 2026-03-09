@@ -1,0 +1,32 @@
+{
+  "niche": "Black Friday Sale and AI",
+  "nicheSlug": "black-friday-sale-and-ai",
+  "runId": "2026-03-06T12-47-31-858Z",
+  "startedAt": "2026-03-06T12:47:31.858Z",
+  "keywords": [
+    "Black Friday Sale and AI"
+  ],
+  "mustInclude": [
+    "black",
+    "friday",
+    "sale"
+  ],
+  "search": "Black Friday Sale and AI",
+  "subAllowlist": null,
+  "config": {
+    "topN": 10,
+    "subLimit": 8,
+    "gapMs": 1200,
+    "limitPerListing": 25,
+    "time": "week",
+    "kinds": [
+      "top",
+      "hot",
+      "rising"
+    ],
+    "searchSort": "top",
+    "searchTime": null,
+    "minSubscribers": 0,
+    "sendCardsN": 5
+  }
+}

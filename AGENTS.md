@@ -210,3 +210,28 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 ## Make It Yours
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.
+
+---
+
+## 🤖 Content Engine — Multi-User Telegram Bot
+
+The Content Engine now supports 100s of users messaging the Telegram bot.
+
+**When a Telegram message arrives:**
+1. Check inbound metadata `sender_id`
+2. If `sender_id = 5122439348` (Shreyash) → normal assistant flow
+3. Any other `sender_id` → read `skills/content-engine/MULTI-USER-ROUTING.md`, then load `skills/content-engine/dispatcher/SKILL.md`
+
+**Key files:**
+- `skills/content-engine/MULTI-USER-ROUTING.md` — routing logic overview
+- `skills/content-engine/dispatcher/SKILL.md` — user router (registry lookup, context injection)
+- `skills/content-engine/onboarding/SKILL.md` — new user setup flow
+- `skills/content-engine/user-scheduler/SKILL.md` — per-user cron scheduling
+
+**User workspaces:** `users/{telegram_id}/` — fully isolated per user
+**Registry:** `users/registry.json` — all users index
+
+**Schedule reminders:** When a cron fires with `CONTENT_SCHEDULE_REMINDER` in the system event text:
+- Parse `user_id` and `user_name` from the event
+- Send reminder via `message(action="send", channel="telegram", target="{user_id}", message="...")`
+- Do NOT process as a chat message

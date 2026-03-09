@@ -1,0 +1,54 @@
+{
+  "niche": "Water Usage and Datacenters",
+  "nicheSlug": "water-usage-and-datacenters",
+  "runId": "2026-03-05T16-41-46-279Z",
+  "startedAt": "2026-03-05T16:41:46.279Z",
+  "keywords": [
+    "Water Usage and Datacenters"
+  ],
+  "mustInclude": [
+    "data",
+    "water",
+    "datacenter",
+    "cooling",
+    "energy",
+    "AI",
+    "server",
+    "cloud",
+    "tech"
+  ],
+  "search": "data center water consumption cooling AI",
+  "subAllowlist": [
+    "environment",
+    "technology",
+    "futurology",
+    "climate",
+    "machinelearning",
+    "artificial",
+    "datacenter",
+    "sysadmin",
+    "sustainability",
+    "energy",
+    "climatechange",
+    "hardware",
+    "cloudcomputing",
+    "tech",
+    "worldnews",
+    "politics"
+  ],
+  "config": {
+    "topN": 10,
+    "subLimit": 15,
+    "gapMs": 1200,
+    "limitPerListing": 25,
+    "time": "month",
+    "kinds": [
+      "top",
+      "hot"
+    ],
+    "searchSort": "top",
+    "searchTime": null,
+    "minSubscribers": 0,
+    "sendCardsN": 5
+  }
+}

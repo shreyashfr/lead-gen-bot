@@ -1,0 +1,173 @@
+[
+  {
+    "id": "1rklzpd",
+    "subreddit": "datascience",
+    "title": "[Project] PerpetualBooster v1.9.4 - a GBM that skips the hyperparameter tuning step entirely. Now with drift detection, prediction intervals, and causal inference built in.",
+    "selftext": "Hey r/datascience,\n\nIf you've ever spent an afternoon watching Optuna churn through 100 LightGBM trials only to realize you need to re-run everything after fixing a feature, this is the tool I wish I had.\n\n**Perpetual** is a gradient boosting machine (Rust core, Python/R bindings) that replaces hyperparameter tuning with a single `budget` parameter. You set it, train once, and the model generalizes itself internally. No grid search, no early stopping tuning, no validation set ceremony.\n\n```python\nfrom perpetual import PerpetualBooster\n\nmodel = PerpetualBooster(objective=\"SquaredLoss\", budget=1.0)\nmodel.fit(X, y)\n```\n\nOn benchmarks it matches Optuna + LightGBM (100 trials) accuracy with up to **405x wall-time speedup** because you're doing one run instead of a hundred. It also outperformed AutoGluon (best quality preset) on **18/20 OpenML tasks** while using less memory.\n\n**What's actually useful in practice (v1.9.4):**\n\n**Prediction intervals, not just point estimates** - `predict_intervals()` gives you calibrated intervals via conformal prediction (CQR). Train, calibrate on a holdout, get intervals at any confidence level. Also `predict_sets()` for classification and `predict_distribution()` for full distributional predictions.\n\n**Drift monitoring without ground truth** - detects data drift and concept drift using the tree structure. You don't need labels to know your model is going stale. Useful for anything in production where feedback loops are slow.\n\n**Causal inference built in** - Double Machine Learning, meta-learners (S/T/X), uplift modeling, instrumental variables, policy learning. If you've ever stitched together EconML + LightGBM + a tuning loop, this does it in one package with zero hyperparameter tuning.\n\n**19 objectives** - covers regression (Squared, Huber, Quantile, Poisson, Gamma, Tweedie, MAPE, ...), classification (LogLoss, Brier, Hinge), ranking (ListNet), and custom loss functions.\n\n**Production stuff** - export to XGBoost/ONNX, zero-copy Polars support, native categoricals (no one-hot), missing value handling, monotonic constraints, continual learning (O(n) retraining), scikit-learn compatible API.\n\n**Where I'd actually use it over XGBoost/LightGBM:**\n\n- Training hundreds of models (per-SKU forecasting, per-region, etc.) where tuning each one isn't feasible\n- When you need intervals/calibration without retraining. No need to bolt on another library\n- Production monitoring - drift detection without retraining in the same package as the model\n- Causal inference workflows where you want the GBM and the estimator to be the same thing\n- Prototyping - go from data to trained model in 3 lines, decide later if you need more control\n\n```\npip install perpetual\n```\n\nGitHub: https://github.com/perpetual-ml/perpetual\n\nDocs: https://perpetual-ml.github.io/perpetual\n\nHappy to answer questions.\n",
+    "author": "mutlu_simsek",
+    "created_utc": 1772632374,
+    "permalink": "https://www.reddit.com/r/datascience/comments/1rklzpd/project_perpetualbooster_v194_a_gbm_that_skips/",
+    "url": "https://www.reddit.com/r/datascience/comments/1rklzpd/project_perpetualbooster_v194_a_gbm_that_skips/",
+    "domain": "self.datascience",
+    "is_self": true,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 53,
+    "score": 53,
+    "num_comments": 13,
+    "upvote_ratio": 0.97,
+    "thumbnail": "self",
+    "media": null,
+    "post_hint": "self",
+    "listing": "hot",
+    "viral_score": 3.7578526263981487,
+    "detail": {
+      "post": {
+        "id": "1rklzpd",
+        "title": "[Project] PerpetualBooster v1.9.4 - a GBM that skips the hyperparameter tuning step entirely. Now with drift detection, prediction intervals, and causal inference built in.",
+        "selftext": "Hey r/datascience,\n\nIf you've ever spent an afternoon watching Optuna churn through 100 LightGBM trials only to realize you need to re-run everything after fixing a feature, this is the tool I wish I had.\n\n**Perpetual** is a gradient boosting machine (Rust core, Python/R bindings) that replaces hyperparameter tuning with a single `budget` parameter. You set it, train once, and the model generalizes itself internally. No grid search, no early stopping tuning, no validation set ceremony.\n\n```python\nfrom perpetual import PerpetualBooster\n\nmodel = PerpetualBooster(objective=\"SquaredLoss\", budget=1.0)\nmodel.fit(X, y)\n```\n\nOn benchmarks it matches Optuna + LightGBM (100 trials) accuracy with up to **405x wall-time speedup** because you're doing one run instead of a hundred. It also outperformed AutoGluon (best quality preset) on **18/20 OpenML tasks** while using less memory.\n\n**What's actually useful in practice (v1.9.4):**\n\n**Prediction intervals, not just point estimates** - `predict_intervals()` gives you calibrated intervals via conformal prediction (CQR). Train, calibrate on a holdout, get intervals at any confidence level. Also `predict_sets()` for classification and `predict_distribution()` for full distributional predictions.\n\n**Drift monitoring without ground truth** - detects data drift and concept drift using the tree structure. You don't need labels to know your model is going stale. Useful for anything in production where feedback loops are slow.\n\n**Causal inference built in** - Double Machine Learning, meta-learners (S/T/X), uplift modeling, instrumental variables, policy learning. If you've ever stitched together EconML + LightGBM + a tuning loop, this does it in one package with zero hyperparameter tuning.\n\n**19 objectives** - covers regression (Squared, Huber, Quantile, Poisson, Gamma, Tweedie, MAPE, ...), classification (LogLoss, Brier, Hinge), ranking (ListNet), and custom loss functions.\n\n**Production stuff** - export to XGBoost/ONNX, zero-copy Polars support, native categoricals (no one-hot), missing value handling, monotonic constraints, continual learning (O(n) retraining), scikit-learn compatible API.\n\n**Where I'd actually use it over XGBoost/LightGBM:**\n\n- Training hundreds of models (per-SKU forecasting, per-region, etc.) where tuning each one isn't feasible\n- When you need intervals/calibration without retraining. No need to bolt on another library\n- Production monitoring - drift detection without retraining in the same package as the model\n- Causal inference workflows where you want the GBM and the estimator to be the same thing\n- Prototyping - go from data to trained model in 3 lines, decide later if you need more control\n\n```\npip install perpetual\n```\n\nGitHub: https://github.com/perpetual-ml/perpetual\n\nDocs: https://perpetual-ml.github.io/perpetual\n\nHappy to answer questions.\n",
+        "author": "mutlu_simsek",
+        "subreddit": "datascience",
+        "created_utc": 1772632374,
+        "ups": 58,
+        "num_comments": 13,
+        "upvote_ratio": 0.99,
+        "permalink": "https://www.reddit.com/r/datascience/comments/1rklzpd/project_perpetualbooster_v194_a_gbm_that_skips/",
+        "url": "https://www.reddit.com/r/datascience/comments/1rklzpd/project_perpetualbooster_v194_a_gbm_that_skips/",
+        "is_self": true,
+        "post_hint": "self",
+        "thumbnail": "self",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://external-preview.redd.it/BgEBG7rHLjhk102b2ujsyYSQZke_ut5uYY5B1MJn0vk.png?auto=webp&amp;s=eaa328d47d43a4aad65d28eaf84b9836d4b62386",
+                "width": 1200,
+                "height": 600
+              },
+              "resolutions": [
+                {
+                  "url": "https://external-preview.redd.it/BgEBG7rHLjhk102b2ujsyYSQZke_ut5uYY5B1MJn0vk.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=121c081ba55333c604e12fed255eb9178a35d4ca",
+                  "width": 108,
+                  "height": 54
+                },
+                {
+                  "url": "https://external-preview.redd.it/BgEBG7rHLjhk102b2ujsyYSQZke_ut5uYY5B1MJn0vk.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=128ad0e6fb93c72a15e43150c757f79409617392",
+                  "width": 216,
+                  "height": 108
+                },
+                {
+                  "url": "https://external-preview.redd.it/BgEBG7rHLjhk102b2ujsyYSQZke_ut5uYY5B1MJn0vk.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=0ddf18b946443470cf8b227f01f2c6f8d455a164",
+                  "width": 320,
+                  "height": 160
+                },
+                {
+                  "url": "https://external-preview.redd.it/BgEBG7rHLjhk102b2ujsyYSQZke_ut5uYY5B1MJn0vk.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=a9d8515779b54df036a51551a66d49e283d24811",
+                  "width": 640,
+                  "height": 320
+                },
+                {
+                  "url": "https://external-preview.redd.it/BgEBG7rHLjhk102b2ujsyYSQZke_ut5uYY5B1MJn0vk.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=47161e00c6951cdca334f0854ee89ef710ab444d",
+                  "width": 960,
+                  "height": 480
+                },
+                {
+                  "url": "https://external-preview.redd.it/BgEBG7rHLjhk102b2ujsyYSQZke_ut5uYY5B1MJn0vk.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=de7bc64f53187383d198792a7261b80e182d56fb",
+                  "width": 1080,
+                  "height": 540
+                }
+              ],
+              "variants": {},
+              "id": "BgEBG7rHLjhk102b2ujsyYSQZke_ut5uYY5B1MJn0vk"
+            }
+          ],
+          "enabled": false
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "1234okie1234",
+          "ups": 3,
+          "body": "How is econML (DML) works with a GBM model? I dont get it? Either you do the predictive part with gbm, but in theory its still a dml model , or you dont. Is that what this is offering? Hyperparameter tuning automatically for the prediction models within dml?"
+        },
+        {
+          "author": "Khaaaaaaan_",
+          "ups": 3,
+          "body": "Sounds interesting. Will have a look at the docs. Can you say anything on the drift part? Cheers"
+        },
+        {
+          "author": "Alarmed_Poetry_502",
+          "ups": 2,
+          "body": "Exciting! Are there any published papers and lectures (e.g. youtube or other platforms)  explaining this package? "
+        }
+      ]
+    },
+    "author_avatar": {
+      "user": "mutlu_simsek",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_1.png",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/fine-tuning-of-llm/runs/2026-03-05T20-48-28-840Z/avatars/mutlu_simsek.png",
+      "fetchedAt": "2026-03-05T20:51:00.005Z"
+    }
+  },
+  {
+    "id": "1rldptw",
+    "subreddit": "LanguageTechnology",
+    "title": "Fine-tuning TTS for Poetic/Cinematic Urdu &amp; Hindi (Beyond the \"Robot\" Accent)",
+    "selftext": "I’m looking to develop a custom Text-to-Speech (TTS) pipeline specifically for high-art Urdu and Hindi. Current paid models (ElevenLabs, Azure, etc.) are great for narration but fail miserably at the emotional \"theatrics\" required for poetry (*Shayari*) or cinematic dialogue. They lack the proper breath control, the deep resonance (*thehrao*), and the specific phonetic stresses that make poetic Urdu sound authentic.\n\n**The Goal:**\n\n* **Authentic Emotion:** A model that understands when to pause for dramatic effect and how to add \"breathiness\" or depth.\n* **Stylized Delivery:** Training it to mimic the cadence of legendary voice actors or poets rather than a news anchor.\n* **Source Material:** I have access to high-quality public domain videos and clean audio of poetic recitations to use as training data.\n\n**The Constraints / Questions:**\n\n1. **Model Selection:** Which open-source base model handles Indo-Aryan phonology best for fine-tuning? (e.g., XTTSv2, Fish Speech, or Parler-TTS?)\n2. **Dataset Preparation:** Since poetry relies on \"rhythm,\" how should I label the data to ensure the model picks up on pauses and breath sounds?\n3. **Technique:** Is \"Voice Cloning\" (Zero-shot) enough, or do I need a full LoRA/Fine-tune to capture the actual *style* of delivery?\n\nAny guidance from those who have worked on non-English emotional TTS would be greatly appreciated.",
+    "author": "Severe_Pay_334",
+    "created_utc": 1772704879,
+    "permalink": "https://www.reddit.com/r/LanguageTechnology/comments/1rldptw/finetuning_tts_for_poeticcinematic_urdu_hindi/",
+    "url": "https://www.reddit.com/r/LanguageTechnology/comments/1rldptw/finetuning_tts_for_poeticcinematic_urdu_hindi/",
+    "domain": "self.LanguageTechnology",
+    "is_self": true,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 3,
+    "score": 3,
+    "num_comments": 0,
+    "upvote_ratio": 1,
+    "thumbnail": null,
+    "media": null,
+    "post_hint": null,
+    "listing": "hot",
+    "viral_score": 0.25279325817378945,
+    "detail": {
+      "post": {
+        "id": "1rldptw",
+        "title": "Fine-tuning TTS for Poetic/Cinematic Urdu &amp; Hindi (Beyond the \"Robot\" Accent)",
+        "selftext": "I’m looking to develop a custom Text-to-Speech (TTS) pipeline specifically for high-art Urdu and Hindi. Current paid models (ElevenLabs, Azure, etc.) are great for narration but fail miserably at the emotional \"theatrics\" required for poetry (*Shayari*) or cinematic dialogue. They lack the proper breath control, the deep resonance (*thehrao*), and the specific phonetic stresses that make poetic Urdu sound authentic.\n\n**The Goal:**\n\n* **Authentic Emotion:** A model that understands when to pause for dramatic effect and how to add \"breathiness\" or depth.\n* **Stylized Delivery:** Training it to mimic the cadence of legendary voice actors or poets rather than a news anchor.\n* **Source Material:** I have access to high-quality public domain videos and clean audio of poetic recitations to use as training data.\n\n**The Constraints / Questions:**\n\n1. **Model Selection:** Which open-source base model handles Indo-Aryan phonology best for fine-tuning? (e.g., XTTSv2, Fish Speech, or Parler-TTS?)\n2. **Dataset Preparation:** Since poetry relies on \"rhythm,\" how should I label the data to ensure the model picks up on pauses and breath sounds?\n3. **Technique:** Is \"Voice Cloning\" (Zero-shot) enough, or do I need a full LoRA/Fine-tune to capture the actual *style* of delivery?\n\nAny guidance from those who have worked on non-English emotional TTS would be greatly appreciated.",
+        "author": "Severe_Pay_334",
+        "subreddit": "LanguageTechnology",
+        "created_utc": 1772704879,
+        "ups": 3,
+        "num_comments": 0,
+        "upvote_ratio": 1,
+        "permalink": "https://www.reddit.com/r/LanguageTechnology/comments/1rldptw/finetuning_tts_for_poeticcinematic_urdu_hindi/",
+        "url": "https://www.reddit.com/r/LanguageTechnology/comments/1rldptw/finetuning_tts_for_poeticcinematic_urdu_hindi/",
+        "is_self": true,
+        "post_hint": null,
+        "thumbnail": null,
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": null,
+        "media": null
+      },
+      "topComments": []
+    },
+    "author_avatar": {
+      "user": "Severe_Pay_334",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_2.png",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/fine-tuning-of-llm/runs/2026-03-05T20-48-28-840Z/avatars/Severe_Pay_334.png",
+      "fetchedAt": "2026-03-05T20:51:03.323Z"
+    }
+  }
+]

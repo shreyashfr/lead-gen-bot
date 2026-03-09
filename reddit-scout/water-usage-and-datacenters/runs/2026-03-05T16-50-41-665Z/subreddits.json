@@ -1,0 +1,142 @@
+[
+  {
+    "name": "environment",
+    "title": "environment",
+    "subscribers": 0,
+    "over18": false,
+    "url": "https://www.reddit.com/r/environment/",
+    "discoveredBy": [
+      "--subAllowlist"
+    ]
+  },
+  {
+    "name": "technology",
+    "title": "technology",
+    "subscribers": 0,
+    "over18": false,
+    "url": "https://www.reddit.com/r/technology/",
+    "discoveredBy": [
+      "--subAllowlist"
+    ]
+  },
+  {
+    "name": "futurology",
+    "title": "futurology",
+    "subscribers": 0,
+    "over18": false,
+    "url": "https://www.reddit.com/r/futurology/",
+    "discoveredBy": [
+      "--subAllowlist"
+    ]
+  },
+  {
+    "name": "climate",
+    "title": "climate",
+    "subscribers": 0,
+    "over18": false,
+    "url": "https://www.reddit.com/r/climate/",
+    "discoveredBy": [
+      "--subAllowlist"
+    ]
+  },
+  {
+    "name": "machinelearning",
+    "title": "machinelearning",
+    "subscribers": 0,
+    "over18": false,
+    "url": "https://www.reddit.com/r/machinelearning/",
+    "discoveredBy": [
+      "--subAllowlist"
+    ]
+  },
+  {
+    "name": "artificial",
+    "title": "artificial",
+    "subscribers": 0,
+    "over18": false,
+    "url": "https://www.reddit.com/r/artificial/",
+    "discoveredBy": [
+      "--subAllowlist"
+    ]
+  },
+  {
+    "name": "datacenter",
+    "title": "datacenter",
+    "subscribers": 0,
+    "over18": false,
+    "url": "https://www.reddit.com/r/datacenter/",
+    "discoveredBy": [
+      "--subAllowlist"
+    ]
+  },
+  {
+    "name": "sysadmin",
+    "title": "sysadmin",
+    "subscribers": 0,
+    "over18": false,
+    "url": "https://www.reddit.com/r/sysadmin/",
+    "discoveredBy": [
+      "--subAllowlist"
+    ]
+  },
+  {
+    "name": "sustainability",
+    "title": "sustainability",
+    "subscribers": 0,
+    "over18": false,
+    "url": "https://www.reddit.com/r/sustainability/",
+    "discoveredBy": [
+      "--subAllowlist"
+    ]
+  },
+  {
+    "name": "energy",
+    "title": "energy",
+    "subscribers": 0,
+    "over18": false,
+    "url": "https://www.reddit.com/r/energy/",
+    "discoveredBy": [
+      "--subAllowlist"
+    ]
+  },
+  {
+    "name": "climatechange",
+    "title": "climatechange",
+    "subscribers": 0,
+    "over18": false,
+    "url": "https://www.reddit.com/r/climatechange/",
+    "discoveredBy": [
+      "--subAllowlist"
+    ]
+  },
+  {
+    "name": "hardware",
+    "title": "hardware",
+    "subscribers": 0,
+    "over18": false,
+    "url": "https://www.reddit.com/r/hardware/",
+    "discoveredBy": [
+      "--subAllowlist"
+    ]
+  },
+  {
+    "name": "cloudcomputing",
+    "title": "cloudcomputing",
+    "subscribers": 0,
+    "over18": false,
+    "url": "https://www.reddit.com/r/cloudcomputing/",
+    "discoveredBy": [
+      "--subAllowlist"
+    ]
+  },
+  {
+    "name": "tech",
+    "title": "tech",
+    "subscribers": 0,
+    "over18": false,
+    "url": "https://www.reddit.com/r/tech/",
+    "discoveredBy": [
+      "--subAllowlist"
+    ]
+  }
+]

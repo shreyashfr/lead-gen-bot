@@ -1,0 +1,35 @@
+{
+  "n": 5,
+  "cards": [
+    {
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/ai-and-devops/runs/2026-03-06T10-24-05-059Z/cards/1rj5izi.png",
+      "caption": "1) do y'all actually listen to devops podcasts?\nr/devops · score 2 · 31 ups · 71 comments\nhttps://www.reddit.com/r/devops/comments/1rj5izi/do_yall_actually_listen_to_devops_podcasts/",
+      "permalink": "https://www.reddit.com/r/devops/comments/1rj5izi/do_yall_actually_listen_to_devops_podcasts/",
+      "id": "1rj5izi"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/ai-and-devops/runs/2026-03-06T10-24-05-059Z/cards/1rkoqav.png",
+      "caption": "2) Advice on switching job in devops\nr/devops · score 2 · 13 ups · 28 comments\nhttps://www.reddit.com/r/devops/comments/1rkoqav/advice_on_switching_job_in_devops/",
+      "permalink": "https://www.reddit.com/r/devops/comments/1rkoqav/advice_on_switching_job_in_devops/",
+      "id": "1rkoqav"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/ai-and-devops/runs/2026-03-06T10-24-05-059Z/cards/1rknzse.png",
+      "caption": "3) 2 Months to find devops role job, no success.\nr/devops · score 2 · 10 ups · 29 comments\nhttps://www.reddit.com/r/devops/comments/1rknzse/2_months_to_find_devops_role_job_no_success/",
+      "permalink": "https://www.reddit.com/r/devops/comments/1rknzse/2_months_to_find_devops_role_job_no_success/",
+      "id": "1rknzse"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/ai-and-devops/runs/2026-03-06T10-24-05-059Z/cards/1rijpmf.png",
+      "caption": "4) Integrating AI for DevOps and Best Practices you've found???\nr/devops · score 1 · 41 ups · 36 comments\nhttps://www.reddit.com/r/devops/comments/1rijpmf/integrating_ai_for_devops_and_best_practices/",
+      "permalink": "https://www.reddit.com/r/devops/comments/1rijpmf/integrating_ai_for_devops_and_best_practices/",
+      "id": "1rijpmf"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/ai-and-devops/runs/2026-03-06T10-24-05-059Z/cards/1ri0cwk.png",
+      "caption": "5) Has anyone here moved from QA to devops? I can forsee QA career is cooked fr, and want to move into devops.\nr/devops · score 1 · 15 ups · 55 comments\nhttps://www.reddit.com/r/devops/comments/1ri0cwk/has_anyone_here_moved_from_qa_to_devops_i_can/",
+      "permalink": "https://www.reddit.com/r/devops/comments/1ri0cwk/has_anyone_here_moved_from_qa_to_devops_i_can/",
+      "id": "1ri0cwk"
+    }
+  ]
+}

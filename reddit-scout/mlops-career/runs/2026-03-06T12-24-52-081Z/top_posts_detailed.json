@@ -1,0 +1,336 @@
+[
+  {
+    "id": "1rlq4ui",
+    "subreddit": "mlops",
+    "title": "What’s your \"daily driver\" MLOps win?",
+    "selftext": "I’m a few months into my first MLOps role and starting to feel a bit lost in the weeds. I’ve been working on the inference side, CI/CD jobs, basic orchestration, and distributed tracing—but I’m looking for some energy and fresh ideas to push past the \"junior\" stage.\n\nThe Question: What’s one project or architectural shift that actually revolutionized your daily workflow or your company’s ops?\n\nMy biggest win so far was decoupling model checkpoints from the container image. It made our redeployments lightning-fast and finally gave me a deeper look into how model artifacts actually function. It felt like a massive \"aha\" moment, and now I’m hunting for the next one.\n\nI’d love to hear from the pros:\n\n \\* The Daily Grind: What does your actual job look like? Are you mostly fighting configuration files, or building something \"brilliant\"?\n\n \\* The Level-up: For someone who understands the basics of deployment and tracing, what’s the next \"rabbit hole\" worth jumping into to truly understand the lifecycle?\n\n \\* Perspective: Is there a specific concept or shift in thinking that saved your sanity?\n\nTrying to find some inspiration and a better mental model for this career. Any thoughts or \"war stories\" are appreciated!",
+    "author": "ChimSau19",
+    "created_utc": 1772736869,
+    "permalink": "https://www.reddit.com/r/mlops/comments/1rlq4ui/whats_your_daily_driver_mlops_win/",
+    "url": "https://www.reddit.com/r/mlops/comments/1rlq4ui/whats_your_daily_driver_mlops_win/",
+    "domain": "self.mlops",
+    "is_self": true,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 14,
+    "score": 14,
+    "num_comments": 11,
+    "upvote_ratio": 1,
+    "thumbnail": "self",
+    "media": null,
+    "post_hint": null,
+    "listing": "rising",
+    "viral_score": 3.1585132384849897,
+    "detail": {
+      "post": {
+        "id": "1rlq4ui",
+        "title": "What’s your \"daily driver\" MLOps win?",
+        "selftext": "I’m a few months into my first MLOps role and starting to feel a bit lost in the weeds. I’ve been working on the inference side, CI/CD jobs, basic orchestration, and distributed tracing—but I’m looking for some energy and fresh ideas to push past the \"junior\" stage.\n\nThe Question: What’s one project or architectural shift that actually revolutionized your daily workflow or your company’s ops?\n\nMy biggest win so far was decoupling model checkpoints from the container image. It made our redeployments lightning-fast and finally gave me a deeper look into how model artifacts actually function. It felt like a massive \"aha\" moment, and now I’m hunting for the next one.\n\nI’d love to hear from the pros:\n\n \\* The Daily Grind: What does your actual job look like? Are you mostly fighting configuration files, or building something \"brilliant\"?\n\n \\* The Level-up: For someone who understands the basics of deployment and tracing, what’s the next \"rabbit hole\" worth jumping into to truly understand the lifecycle?\n\n \\* Perspective: Is there a specific concept or shift in thinking that saved your sanity?\n\nTrying to find some inspiration and a better mental model for this career. Any thoughts or \"war stories\" are appreciated!",
+        "author": "ChimSau19",
+        "subreddit": "mlops",
+        "created_utc": 1772736869,
+        "ups": 14,
+        "num_comments": 11,
+        "upvote_ratio": 1,
+        "permalink": "https://www.reddit.com/r/mlops/comments/1rlq4ui/whats_your_daily_driver_mlops_win/",
+        "url": "https://www.reddit.com/r/mlops/comments/1rlq4ui/whats_your_daily_driver_mlops_win/",
+        "is_self": true,
+        "post_hint": null,
+        "thumbnail": "self",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": null,
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "symphonicdev",
+          "ups": 8,
+          "body": "My job over the past month has been talking to people and sitting them together at a same table, trying to reach a consensus that we don't need real-time inference yet. :D"
+        },
+        {
+          "author": "NotSoGenius00",
+          "ups": 4,
+          "body": "No war stories the job is pretty boring but boring is stable. I would say focus on creating internal tools that not only ML people use but everyone across the org can."
+        },
+        {
+          "author": "ChoiceCarpenter4861",
+          "ups": 3,
+          "body": "what is distributed tracing? is it distributed training?"
+        }
+      ]
+    },
+    "author_avatar": {
+      "user": "ChimSau19",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_4.png",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/mlops-career/runs/2026-03-06T12-24-52-081Z/avatars/ChimSau19.png",
+      "fetchedAt": "2026-03-06T12:25:13.771Z"
+    }
+  },
+  {
+    "id": "1rkij9r",
+    "subreddit": "mlops",
+    "title": "Wrote a detailed walkthrough on LLM inference system design with RAG, for anyone prepping for MLOps interviews",
+    "selftext": "I've been writing about the DevOps-to-MLOps transition for a while now, and one question that keeps coming up is the system design side. Specifically, what actually happens when a user sends a prompt to an LLM app.\n\nSo I wrote a detailed Medium post that walks through the full architecture, the way I'd explain it in an interview. Covers the end-to-end flow: API gateway, FastAPI orchestrator, embedding models, hybrid search (Elasticsearch + vector DB), reranking, vLLM inference, response streaming, and observability.\n\nTried to keep it practical and not just a list of buzzwords. Used a real example (customer support chatbot) and traced one actual request through every component, with reasoning on why each piece exists and what breaks if you skip it.\n\nAlso covered some stuff I don't see discussed much:\n\n* Why K8s doesn't support GPUs natively and what you actually need to install\n* Why you should autoscale on queue depth, not GPU utilisation\n* When to add Kafka vs when it's over-engineering\n* How to explain PagedAttention using infra concepts interviewers already know\n\nLink: [https://medium.com/@thevarunfreelance/system-design-interview-what-actually-happens-when-a-user-sends-a-prompt-to-your-llm-app-806f61894d5e](https://medium.com/@thevarunfreelance/system-design-interview-what-actually-happens-when-a-user-sends-a-prompt-to-your-llm-app-806f61894d5e) \n\nHappy to answer questions here, too.\n\nAlso, if you're going through the infra to MLOps transition and want to chat about resumes, interview prep, or what to focus on, DMs are open, or you can grab time here: [topmate.io/varun\\_rajput\\_1914](http://topmate.io/varun_rajput_1914)",
+    "author": "Extension_Key_5970",
+    "created_utc": 1772622055,
+    "permalink": "https://www.reddit.com/r/mlops/comments/1rkij9r/wrote_a_detailed_walkthrough_on_llm_inference/",
+    "url": "https://www.reddit.com/r/mlops/comments/1rkij9r/wrote_a_detailed_walkthrough_on_llm_inference/",
+    "domain": "self.mlops",
+    "is_self": true,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 32,
+    "score": 32,
+    "num_comments": 3,
+    "upvote_ratio": 0.94,
+    "thumbnail": "self",
+    "media": null,
+    "post_hint": null,
+    "listing": "rising",
+    "viral_score": 0.9735825448280653,
+    "detail": {
+      "post": {
+        "id": "1rkij9r",
+        "title": "Wrote a detailed walkthrough on LLM inference system design with RAG, for anyone prepping for MLOps interviews",
+        "selftext": "I've been writing about the DevOps-to-MLOps transition for a while now, and one question that keeps coming up is the system design side. Specifically, what actually happens when a user sends a prompt to an LLM app.\n\nSo I wrote a detailed Medium post that walks through the full architecture, the way I'd explain it in an interview. Covers the end-to-end flow: API gateway, FastAPI orchestrator, embedding models, hybrid search (Elasticsearch + vector DB), reranking, vLLM inference, response streaming, and observability.\n\nTried to keep it practical and not just a list of buzzwords. Used a real example (customer support chatbot) and traced one actual request through every component, with reasoning on why each piece exists and what breaks if you skip it.\n\nAlso covered some stuff I don't see discussed much:\n\n* Why K8s doesn't support GPUs natively and what you actually need to install\n* Why you should autoscale on queue depth, not GPU utilisation\n* When to add Kafka vs when it's over-engineering\n* How to explain PagedAttention using infra concepts interviewers already know\n\nLink: [https://medium.com/@thevarunfreelance/system-design-interview-what-actually-happens-when-a-user-sends-a-prompt-to-your-llm-app-806f61894d5e](https://medium.com/@thevarunfreelance/system-design-interview-what-actually-happens-when-a-user-sends-a-prompt-to-your-llm-app-806f61894d5e) \n\nHappy to answer questions here, too.\n\nAlso, if you're going through the infra to MLOps transition and want to chat about resumes, interview prep, or what to focus on, DMs are open, or you can grab time here: [topmate.io/varun\\_rajput\\_1914](http://topmate.io/varun_rajput_1914)",
+        "author": "Extension_Key_5970",
+        "subreddit": "mlops",
+        "created_utc": 1772622055,
+        "ups": 30,
+        "num_comments": 3,
+        "upvote_ratio": 0.94,
+        "permalink": "https://www.reddit.com/r/mlops/comments/1rkij9r/wrote_a_detailed_walkthrough_on_llm_inference/",
+        "url": "https://www.reddit.com/r/mlops/comments/1rkij9r/wrote_a_detailed_walkthrough_on_llm_inference/",
+        "is_self": true,
+        "post_hint": null,
+        "thumbnail": "self",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": null,
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "DqDPLC",
+          "ups": 1,
+          "body": "This is amazing post thanks for sharing "
+        },
+        {
+          "author": "BeerBatteredHemroids",
+          "ups": 1,
+          "body": "If i didn't already do this for a living i too would think this is great."
+        },
+        {
+          "author": "KneeTop2597",
+          "ups": 1,
+          "body": "Your post covers the core flow well—API gateway to streaming responses. For interviews, emphasize latency optimizations (e.g., vLLM’s batch scheduling) and failure handling (e.g., fallback models). [llmpicker.blog](http://llmpicker.blog) is handy for hardware/model compatibility checks, so adding practical specs examples could strengthen your examples."
+        }
+      ]
+    },
+    "author_avatar": {
+      "user": "Extension_Key_5970",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_1.png",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/fine-tuning-of-llm/runs/2026-03-05T20-51-34-391Z/avatars/Extension_Key_5970.png",
+      "fetchedAt": "2026-03-05T20:54:40.517Z"
+    }
+  },
+  {
+    "id": "1riej7v",
+    "subreddit": "mlops",
+    "title": "How can I learn MLOps while working?",
+    "selftext": "I just started as an MLOps Jr. This is my first job, as my background and experience are more academic.\n\nI work at a startup where almost everyone is a Jr. We are just two MLOps and four DS. Our lead/manager/whatever is a DE, so they have more experience in that area rather than with models and productizing them.\n\nI feel things are done on the fly, and everything is messy. Model deployment, training, and monitoring are all manual... from what I have read, I would say we are more on a level 0 of MLOps.\n\nDS doesn't know much about deployment. Before I started working here, they deployed models on Jupyter Notebooks and didn't use something like MLflow.\n\nI mean, I get it, I'm just a junior, and all my coworkers might have more experience than me (since I don't have any).\n\nBut how can I really learn? I mean, sure, I get paid and everything, and I'm also learning on the fly, but I feel I'm not learning and not contributing that much (I have only 4 months working).\n\nSo, how do I really learn when my team doesn't know that much of MLOps? I have been reading some blogs and I'm doing some Datacamp courses but I feel is not enough:(",
+    "author": "Plus_Cardiologist540",
+    "created_utc": 1772412539,
+    "permalink": "https://www.reddit.com/r/mlops/comments/1riej7v/how_can_i_learn_mlops_while_working/",
+    "url": "https://www.reddit.com/r/mlops/comments/1riej7v/how_can_i_learn_mlops_while_working/",
+    "domain": "self.mlops",
+    "is_self": true,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 17,
+    "score": 17,
+    "num_comments": 8,
+    "upvote_ratio": 0.91,
+    "thumbnail": "self",
+    "media": null,
+    "post_hint": null,
+    "listing": "rising",
+    "viral_score": 0.3491052897410796,
+    "detail": {
+      "post": {
+        "id": "1riej7v",
+        "title": "How can I learn MLOps while working?",
+        "selftext": "I just started as an MLOps Jr. This is my first job, as my background and experience are more academic.\n\nI work at a startup where almost everyone is a Jr. We are just two MLOps and four DS. Our lead/manager/whatever is a DE, so they have more experience in that area rather than with models and productizing them.\n\nI feel things are done on the fly, and everything is messy. Model deployment, training, and monitoring are all manual... from what I have read, I would say we are more on a level 0 of MLOps.\n\nDS doesn't know much about deployment. Before I started working here, they deployed models on Jupyter Notebooks and didn't use something like MLflow.\n\nI mean, I get it, I'm just a junior, and all my coworkers might have more experience than me (since I don't have any).\n\nBut how can I really learn? I mean, sure, I get paid and everything, and I'm also learning on the fly, but I feel I'm not learning and not contributing that much (I have only 4 months working).\n\nSo, how do I really learn when my team doesn't know that much of MLOps? I have been reading some blogs and I'm doing some Datacamp courses but I feel is not enough:(",
+        "author": "Plus_Cardiologist540",
+        "subreddit": "mlops",
+        "created_utc": 1772412539,
+        "ups": 19,
+        "num_comments": 8,
+        "upvote_ratio": 0.91,
+        "permalink": "https://www.reddit.com/r/mlops/comments/1riej7v/how_can_i_learn_mlops_while_working/",
+        "url": "https://www.reddit.com/r/mlops/comments/1riej7v/how_can_i_learn_mlops_while_working/",
+        "is_self": true,
+        "post_hint": null,
+        "thumbnail": "self",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": null,
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "BeerBatteredHemroids",
+          "ups": 5,
+          "body": "You're on the wrong team. You don't know anything, your lead doesn't know anything and your colleague is just as green as you. You're going to pick up bad habits and not even know it. \n\nSmall start-ups are not really fresher friendly. You need to put yourself onto an established team at an established firm that has been successfully deploying production models for a while to learn how its done."
+        },
+        {
+          "author": "hop_kins",
+          "ups": 1,
+          "body": "On whatever you are working on, try to ask yourself what could be automated. Ask your favorite AI how to do it and implement. As time passes, you might have somes pieces on the pipeline which are automated and some which are not. Your next step will be to integrate these. "
+        },
+        {
+          "author": "FearlessSentence7701",
+          "ups": 1,
+          "body": "I’m new to MLOPS also and my whole team is exploring as me, we are all DevOps engineers so let’s connect we might help each others"
+        }
+      ]
+    },
+    "author_avatar": {
+      "user": "Plus_Cardiologist540",
+      "url": "https://i.redd.it/snoovatar/avatars/nftv2_bmZ0X2VpcDE1NToxMzdfNmFjYjhmYjgyODgwZDM5YzJiODQ0NmY4Nzc4YTE0ZDM0ZWU2Y2ZiN18xNTE2MDE_rare_f532f894-23f0-4174-94ea-3960dfe5fbd1.png",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/mlops-career/runs/2026-03-06T12-24-52-081Z/avatars/Plus_Cardiologist540.png",
+      "fetchedAt": "2026-03-06T12:25:15.522Z"
+    }
+  },
+  {
+    "id": "1rhf2iy",
+    "subreddit": "mlops",
+    "title": "how was your journey to become an mlops engineer",
+    "selftext": "hello, I've been wondering how to be or what path to follow to be an mlops engineer as i heard its not an entry level role",
+    "author": "Economy-Outside3932",
+    "created_utc": 1772315361,
+    "permalink": "https://www.reddit.com/r/mlops/comments/1rhf2iy/how_was_your_journey_to_become_an_mlops_engineer/",
+    "url": "https://www.reddit.com/r/mlops/comments/1rhf2iy/how_was_your_journey_to_become_an_mlops_engineer/",
+    "domain": "self.mlops",
+    "is_self": true,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 11,
+    "score": 11,
+    "num_comments": 2,
+    "upvote_ratio": 0.92,
+    "thumbnail": "self",
+    "media": null,
+    "post_hint": null,
+    "listing": "rising",
+    "viral_score": 0.10794708025845227,
+    "detail": {
+      "post": {
+        "id": "1rhf2iy",
+        "title": "how was your journey to become an mlops engineer",
+        "selftext": "hello, I've been wondering how to be or what path to follow to be an mlops engineer as i heard its not an entry level role",
+        "author": "Economy-Outside3932",
+        "subreddit": "mlops",
+        "created_utc": 1772315361,
+        "ups": 11,
+        "num_comments": 2,
+        "upvote_ratio": 0.92,
+        "permalink": "https://www.reddit.com/r/mlops/comments/1rhf2iy/how_was_your_journey_to_become_an_mlops_engineer/",
+        "url": "https://www.reddit.com/r/mlops/comments/1rhf2iy/how_was_your_journey_to_become_an_mlops_engineer/",
+        "is_self": true,
+        "post_hint": null,
+        "thumbnail": "self",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": null,
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "symphonicdev",
+          "ups": 11,
+          "body": "Mine was rather unplanned.\n- I graduated with a Master in ML in Sweden. Got an internship as an ML Engineer at a good company, doing machine learning for search model. I got a returned offer after the internship, but it was shortly rescinded as the team didn't have a budget for new engineers.\n- Then the tech mass layoff happened. I couldn't find any job at those product companies. And I got into an AI engineer position at a small consulting company. There, only people with a PhD can work in the modelling part, so I learned to do MLOps there\n- Since then, I've tried to apply for ML Engineer positions again and again, but so far have failed as I don't have enough skills and experiences building models for real business.\n- At the same time, I've got better and better at MLOps, building infra for data scientists and ML engineers, landed Senior MLOps positions. So I keep doing MLOps.\n\nHope someday I can do the model part of ML."
+        },
+        {
+          "author": "CalmWorld1688",
+          "ups": 6,
+          "body": "My story is that no one else could do it and I had to deploy models, somehow.\n\nI graduated in 2023 from a robotics related MSc, where I’ve had a few optimization and ML courses and quickly landed a job in a small manufacturing company as an AI Engineer.\n\nFrom internships and part-time work I knew how to build different kind of models including: time-series, CNNs, trees, doing optimizations and basically navigating myself through the modeling part.\nBut then, I had difficulties to deploy and release those models, especially GPU ones where latency mattered so I started learning MLOps through reading books.\n\nSince the company was small, we had one dedicated DevOps engineer who was responsible for managing our servers, so I kept asking him different kind of deployment related questions and then the pandora box opened.\n\nI found out that it is not an easy thing to do, and that to have reliable systems you need to: version datasets, track experiments, monitor performance metrics and drift, manage offline and online inference and etc. which the more I dig into it the more interesting it sounded.\n\nSo a year later I got a side gig to design and build an ML platform for a small team of data scientists for them to have somewhere where to deploy and track their models - and after going through this myself once I’ve found it quite intuitive and interesting, as I knew what pieces of the puzzle I needed and how things had to interact with each other to make it all work. I guess this marked the beginning of my MLOps journey.\n\nA few months later my side gig was over and with that all-around experience I landed a Senior MLE role for a SaaS company, where I do full-stack ML development from modeling to MLOps. Currently I am considering transitioning fully to MLOps as I don’t find modeling as fun anymore. Don’t know why, but perhaps got a bit tired of all the modeling and AI hype and started to personally value infrastructure side of things and “enabling” others more."
+        }
+      ]
+    },
+    "author_avatar": {
+      "user": "Economy-Outside3932",
+      "url": "https://i.redd.it/snoovatar/avatars/aa540a4e-2ffe-4a8c-a9d7-73541e5a36c6.png",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/mlops-career/runs/2026-03-06T12-24-52-081Z/avatars/Economy-Outside3932.png",
+      "fetchedAt": "2026-03-06T12:25:17.211Z"
+    }
+  },
+  {
+    "id": "1rgognq",
+    "subreddit": "mlops",
+    "title": "Transition from SWE to AI ML Infra , MLops, AI engineer roles",
+    "selftext": "",
+    "author": "DqDPLC",
+    "created_utc": 1772239825,
+    "permalink": "https://www.reddit.com/r/mlops/comments/1rgognq/transition_from_swe_to_ai_ml_infra_mlops_ai/",
+    "url": "/r/learnmachinelearning/comments/1rgmdec/transition_from_swe_to_ai_ml_infra_mlops_ai/",
+    "domain": null,
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 3,
+    "score": 3,
+    "num_comments": 0,
+    "upvote_ratio": 1,
+    "thumbnail": "default",
+    "media": null,
+    "post_hint": null,
+    "listing": "top:week",
+    "viral_score": 0.012834057608980612,
+    "detail": {
+      "post": {
+        "id": "1rgognq",
+        "title": "Transition from SWE to AI ML Infra , MLops, AI engineer roles",
+        "selftext": "",
+        "author": "DqDPLC",
+        "subreddit": "mlops",
+        "created_utc": 1772239825,
+        "ups": 3,
+        "num_comments": 0,
+        "upvote_ratio": 1,
+        "permalink": "https://www.reddit.com/r/mlops/comments/1rgognq/transition_from_swe_to_ai_ml_infra_mlops_ai/",
+        "url": "/r/learnmachinelearning/comments/1rgmdec/transition_from_swe_to_ai_ml_infra_mlops_ai/",
+        "is_self": false,
+        "post_hint": null,
+        "thumbnail": "default",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": null,
+        "media": null
+      },
+      "topComments": []
+    },
+    "author_avatar": {
+      "user": "DqDPLC",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_0.png",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/mlops-career/runs/2026-03-06T12-24-52-081Z/avatars/DqDPLC.png",
+      "fetchedAt": "2026-03-06T12:25:18.775Z"
+    }
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "name": "devops",
+    "title": "Everything DevOps",
+    "subscribers": 472688,
+    "over18": false,
+    "url": "https://www.reddit.com/r/devops/",
+    "discoveredBy": [
+      "AI and DevOps"
+    ]
+  },
+  {
+    "name": "azuredevops",
+    "title": "Azure DevOps",
+    "subscribers": 29035,
+    "over18": false,
+    "url": "https://www.reddit.com/r/azuredevops/",
+    "discoveredBy": [
+      "AI and DevOps"
+    ]
+  },
+  {
+    "name": "Docker_DevOps",
+    "title": "Docker DevOps",
+    "subscribers": 7748,
+    "over18": false,
+    "url": "https://www.reddit.com/r/Docker_DevOps/",
+    "discoveredBy": [
+      "AI and DevOps"
+    ]
+  },
+  {
+    "name": "devopsish",
+    "title": "devopsish",
+    "subscribers": 3493,
+    "over18": false,
+    "url": "https://www.reddit.com/r/devopsish/",
+    "discoveredBy": [
+      "AI and DevOps"
+    ]
+  },
+  {
+    "name": "DevOpsHumor",
+    "title": "DevOpsHumor",
+    "subscribers": 74,
+    "over18": false,
+    "url": "https://www.reddit.com/r/DevOpsHumor/",
+    "discoveredBy": [
+      "AI and DevOps"
+    ]
+  },
+  {
+    "name": "thedevopsworld",
+    "title": "thedevopsworld",
+    "subscribers": 51,
+    "over18": false,
+    "url": "https://www.reddit.com/r/thedevopsworld/",
+    "discoveredBy": [
+      "AI and DevOps"
+    ]
+  },
+  {
+    "name": "devopsAI",
+    "title": "devopsAI",
+    "subscribers": 17,
+    "over18": false,
+    "url": "https://www.reddit.com/r/devopsAI/",
+    "discoveredBy": [
+      "AI and DevOps"
+    ]
+  }
+]

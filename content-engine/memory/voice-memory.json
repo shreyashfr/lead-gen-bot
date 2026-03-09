@@ -137,9 +137,9 @@
   },
   "agent_logs": {
     "research_agent": {
-      "last_run": "2026-03-03",
-      "sources_checked": ["Reddit r/SaaS", "Reddit r/GrowthHacking", "Reddit r/b2bmarketing", "Reddit r/DigitalMarketing", "Reddit r/sales", "belkins.io", "expandi.io", "martal.ca", "salesbread.com", "salesso.com", "sopro.io", "dux-soup.com", "linkboost.co", "connectsafely.ai", "phantombuster.com", "blog.linkmate.io"],
-      "topics_covered": ["LinkedIn Outbound", "Job Loss in an AI World", "Modern AI/ML Roadmap + Career in AI"]
+      "last_run": "2026-03-06",
+      "sources_checked": ["reddit-scout (r/devops, r/azuredevops, r/Docker_DevOps, r/devopsish, r/DevOpsHumor, r/devopsAI)", "github-blog-march-2026", "master-doc", "content-queue", "voice-memory"],
+      "topics_covered": ["LinkedIn Outbound", "Job Loss in an AI World", "Modern AI/ML Roadmap + Career in AI", "AI ML Career", "AI and DevOps"]
     },
     "trend_psychologist": {
       "last_run": "2026-02-22",

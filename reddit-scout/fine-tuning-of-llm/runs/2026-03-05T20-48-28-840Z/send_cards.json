@@ -1,0 +1,17 @@
+{
+  "n": 2,
+  "cards": [
+    {
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/fine-tuning-of-llm/runs/2026-03-05T20-48-28-840Z/cards/1rklzpd.png",
+      "caption": "1) [Project] PerpetualBooster v1.9.4 - a GBM that skips the hyperparameter tuning step entirely. Now with drift detection, prediction intervals, and causal inference built in.\nr/datascience · score 4 · 58 ups · 13 comments\nhttps://www.reddit.com/r/datascience/comments/1rklzpd/project_perpetualbooster_v194_a_gbm_that_skips/",
+      "permalink": "https://www.reddit.com/r/datascience/comments/1rklzpd/project_perpetualbooster_v194_a_gbm_that_skips/",
+      "id": "1rklzpd"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/fine-tuning-of-llm/runs/2026-03-05T20-48-28-840Z/cards/1rldptw.png",
+      "caption": "2) Fine-tuning TTS for Poetic/Cinematic Urdu &amp; Hindi (Beyond the \"Robot\" Accent)\nr/LanguageTechnology · score 0 · 3 ups · 0 comments\nhttps://www.reddit.com/r/LanguageTechnology/comments/1rldptw/finetuning_tts_for_poeticcinematic_urdu_hindi/",
+      "permalink": "https://www.reddit.com/r/LanguageTechnology/comments/1rldptw/finetuning_tts_for_poeticcinematic_urdu_hindi/",
+      "id": "1rldptw"
+    }
+  ]
+}

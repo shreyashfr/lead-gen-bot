@@ -1,0 +1,4 @@
+{
+  "_comment": "User registry for Content Engine multi-user system. Keyed by Telegram user ID.",
+  "users": {}
+}
