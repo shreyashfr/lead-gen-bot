@@ -1,0 +1,32 @@
+[
+  {
+    "name": "mcp",
+    "title": "Model Context Protocol (MCP)",
+    "subscribers": 98523,
+    "over18": false,
+    "url": "https://www.reddit.com/r/mcp/",
+    "discoveredBy": [
+      "MCP Server Model Context Protocol AI agents"
+    ]
+  },
+  {
+    "name": "MCPAgents",
+    "title": "MCPAgents",
+    "subscribers": 178,
+    "over18": false,
+    "url": "https://www.reddit.com/r/MCPAgents/",
+    "discoveredBy": [
+      "MCP Server Model Context Protocol AI agents"
+    ]
+  },
+  {
+    "name": "mcpserver",
+    "title": "mcpserver",
+    "subscribers": 15,
+    "over18": false,
+    "url": "https://www.reddit.com/r/mcpserver/",
+    "discoveredBy": [
+      "MCP Server Model Context Protocol AI agents"
+    ]
+  }
+]

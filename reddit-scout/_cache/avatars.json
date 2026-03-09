@@ -1199,6 +1199,30 @@
       "url": "https://i.redd.it/snoovatar/avatars/1e0201c2-68f2-429a-a5f0-51645822dcee.png",
       "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/mcp-server-model-context-protocol-ai/runs/2026-03-09T19-23-14-483Z/avatars/Consistent-Arm-3878.png",
       "fetchedAt": "2026-03-09T19:24:04.474Z"
+    },
+    "reversedu": {
+      "user": "reversedu",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_6.png",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/mcp-server-model-context-protocol-ai-agents/runs/2026-03-09T19-35-32-898Z/avatars/reversedu.png",
+      "fetchedAt": "2026-03-09T19:36:17.052Z"
+    },
+    "Kakachia777": {
+      "user": "Kakachia777",
+      "url": "https://i.redd.it/snoovatar/avatars/851f1b86-a929-486c-ae28-79ecb9d22bdf.png",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/mcp-server-model-context-protocol-ai-agents/runs/2026-03-09T19-35-32-898Z/avatars/Kakachia777.png",
+      "fetchedAt": "2026-03-09T19:36:18.682Z"
+    },
+    "manveerc": {
+      "user": "manveerc",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_2.png",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/mcp-server-model-context-protocol-ai-agents/runs/2026-03-09T19-35-32-898Z/avatars/manveerc.png",
+      "fetchedAt": "2026-03-09T19:36:20.261Z"
+    },
+    "Cyclr_Tech_Man": {
+      "user": "Cyclr_Tech_Man",
+      "url": "https://styles.redditmedia.com/t5_e2tjpe/styles/profileIcon_4v6jctomd1jg1.png?width=256&height=256&crop=256:256,smart&s=2c4d4307550f7f4d6283d656a86db7ac7a3584ca",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/mcp-server-model-context-protocol-ai-agents/runs/2026-03-09T19-35-32-898Z/avatars/Cyclr_Tech_Man.png",
+      "fetchedAt": "2026-03-09T19:36:21.938Z"
     }
   }
 }

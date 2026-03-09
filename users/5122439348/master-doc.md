@@ -113,6 +113,11 @@ Not a thought leader. Not a guru. Someone who's actually doing the work and shar
 ## TAGGING STRATEGY
 Tag relevant founders, research paper authors, innovators, or companies in posts to boost reach. Always relevant — never random.
 
+### Known Tags
+- MCP creators: Josh Spahrsum (https://uk.linkedin.com/in/jspahrsummers) + David Soria Parra (https://uk.linkedin.com/in/david-soria-parra-4a78b3a)
+- Anthropic CEO: Dario Amodei (https://www.linkedin.com/in/dario-amodei-3934934)
+- Company: Anthropic (tag on LinkedIn as @Anthropic)
+
 ---
 
 ## OPEN THREADS

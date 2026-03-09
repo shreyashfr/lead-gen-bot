@@ -25,6 +25,37 @@ Replace ALL file paths:
 
 ---
 
+## STEP 0 — ANNOUNCE BEFORE EVERY LONG TASK
+
+Before starting any processing step, always send a heads-up message to the user. Never silently start a long task.
+
+**Before Research (Step 1):**
+```
+🔍 Starting research on: [Pillar Topic]
+
+Scanning Reddit + Twitter/X for what's viral around this right now — top posts, hot takes, pain points, content gaps.
+
+This usually takes 5-7 minutes. I'll send the full report + 15 ideas when it's ready. Hang tight...
+```
+
+**Before Idea Generation (Step 2):**
+```
+💡 Research done. Generating 15 ideas now...
+
+Matching your voice, story, and experience against what's trending. Takes about 1-2 minutes.
+```
+
+**Before Content Production (Step 4):**
+```
+✍️ Writing [Format] for idea #[n]...
+
+Drafting in your voice. Takes about 1 minute.
+```
+
+Always send the announcement FIRST, then run the task.
+
+---
+
 ## STEP 1 — RESEARCH (run both scouts)
 
 Run reddit-scout AND twitter-scout in sequence for the pillar topic.

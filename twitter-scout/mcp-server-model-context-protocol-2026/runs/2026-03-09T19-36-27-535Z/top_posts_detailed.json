@@ -1,0 +1,170 @@
+[
+  {
+    "id": "1900456268084764689",
+    "text": "Model Context Protocol (MCP), clearly explained:",
+    "author_name": "Akshay ",
+    "author_handle": "@akshay_pachaar",
+    "metrics": {
+      "likes": 2300,
+      "retweets": 479,
+      "replies": 36,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 3.3,
+    "url": "https://x.com/akshay_pachaar/status/1900456268084764689"
+  },
+  {
+    "id": "1933793051987566835",
+    "text": "Model Context Protocol (MCP), clearly explained:",
+    "author_name": "Akshay ",
+    "author_handle": "@akshay_pachaar",
+    "metrics": {
+      "likes": 645,
+      "retweets": 135,
+      "replies": 5,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/akshay_pachaar/status/1933793051987566835"
+  },
+  {
+    "id": "1948818463944048924",
+    "text": "MCP gives AI superpowers. And it's simpler than you think.\n\nHere's all you need to know.",
+    "author_name": "Vercel",
+    "author_handle": "@vercel",
+    "metrics": {
+      "likes": 508,
+      "retweets": 82,
+      "replies": 22,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/vercel/status/1948818463944048924"
+  },
+  {
+    "id": "2024318030306496670",
+    "text": "MCP vs. API: it’s about who the consumer is  vs \n\nWe’ve spent decades mastering APIs. They are the plumbing of modern software strict contracts between your code and a service. You know exactly what inputs to send (POST /payments) and exactly what outputs to expect.\n\nBut when",
+    "author_name": "Priyanka Vergadia",
+    "author_handle": "@pvergadia",
+    "metrics": {
+      "likes": 480,
+      "retweets": 92,
+      "replies": 16,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HBeaBskacAAjEWQ?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/pvergadia/status/2024318030306496670"
+  },
+  {
+    "id": "1901619733507498229",
+    "text": "I outline 𝗺𝘆 𝘁𝗵𝗼𝘂𝗴𝗵𝘁𝘀 𝗼𝗻 𝗠𝗖𝗣 in my latest Newsletter episode \n\nMCP by Anthropic attempts to standardise the protocol on how LLM based applications integrate with other environments.\n\nHigh level architecture:\n\n𝟭. MCP Hosts - Programs using LLMs at the core that",
+    "author_name": "Aurimas Griciūnas",
+    "author_handle": "@Aurimas_Gr",
+    "metrics": {
+      "likes": 465,
+      "retweets": 122,
+      "replies": 11,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/Aurimas_Gr/status/1901619733507498229"
+  },
+  {
+    "id": "1992109099434353045",
+    "text": "MCP Apps: Extending servers with interactive user interfaces",
+    "author_name": "Jenova.ai",
+    "author_handle": "@JenovaAIAgent",
+    "metrics": {
+      "likes": 457,
+      "retweets": 98,
+      "replies": 8,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/JenovaAIAgent/status/1992109099434353045"
+  },
+  {
+    "id": "1933712759344279689",
+    "text": "Swiss Army Knife for MCP Servers.\n\nIt has CLI for interacting with MCP (Model Context Protocol) servers.\n\nDiscover, call, and manage tools, resources, and prompts from any MCP-compatible server.\n\n100% Opensource.",
+    "author_name": "Shubham Saboo",
+    "author_handle": "@Saboo_Shubham_",
+    "metrics": {
+      "likes": 410,
+      "retweets": 61,
+      "replies": 14,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/GtXtgddbMAIIY2x?format=png&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/Saboo_Shubham_/status/1933712759344279689"
+  },
+  {
+    "id": "1902706694372880416",
+    "text": "GitHub 上一份可能是目前收集整理最全的 MCP 服务器合集：Model Context Protocol servers，已斩获 21.4k+ Star。\n\n包含 20+ 个官方参考实现，75+ 官方集成，150+ 实用的 MCP 服务器，涉及文件操作、数据库、API、Docker 等等内容。\n\nGitHub：\nhttp://\ngithub.com/modelcontextpr\notocol/servers\n…",
+    "author_name": "GitHubDaily",
+    "author_handle": "@GitHub_Daily",
+    "metrics": {
+      "likes": 393,
+      "retweets": 112,
+      "replies": 3,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/GmegrXbaAAAUNeB?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/GitHub_Daily/status/1902706694372880416"
+  },
+  {
+    "id": "2025435641085915413",
+    "text": "Setting up a simple MCP server is a great way to learn the fundamentals of the Model Context Protocol.\n\nBut for production apps, you'll need to include features like authentication, data persistence, and more.\n\nAnd in this in-depth guide, \n@wani_shola\n teaches you how to do that by",
+    "author_name": "freeCodeCamp.org",
+    "author_handle": "@freeCodeCamp",
+    "metrics": {
+      "likes": 323,
+      "retweets": 39,
+      "replies": 2,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HBvK-0zXAAAnC6N?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/freeCodeCamp/status/2025435641085915413"
+  },
+  {
+    "id": "2029726316766056753",
+    "text": "앤트로픽이 공식 오픈한 무료 강의 플랫폼 (개발자부터, 비개발자용까지 모두)\n\n 개발자용\n- Claude Code in Action\n- Building with the Claude API\n- Introduction to Model Context Protocol\n- Model Context Protocol: Advanced Topics\n- Introduction to Agent Skills\n\n 비개발자용\n- Claude",
+    "author_name": "요즘IT",
+    "author_handle": "@yozm_it",
+    "metrics": {
+      "likes": 135,
+      "retweets": 46,
+      "replies": 0,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/yozm_it/status/2029726316766056753"
+  }
+]

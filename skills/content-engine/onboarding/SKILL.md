@@ -295,6 +295,25 @@ What's the table name where posts should go?
 (Default is "Posts" — just say "default" if that works)
 ```
 
+On response: extract `token` and `base_id` from their message.
+
+**IMPORTANT — Verify Airtable connection before continuing:**
+
+1. Test token by hitting: `GET https://api.airtable.com/v0/{base_id}/Table%201?maxRecords=1`
+   - If 200 → base is accessible, proceed
+   - If error → tell user: "Token or Base ID seems off. Make sure:
+     - Token has `data.records:read` + `data.records:write` + `schema.bases:write` scopes
+     - Token has access to this base (Edit token → Add a base → select your base)
+     - Send the updated token and try again"
+   - Do NOT proceed until connection is verified
+
+2. Once connection verified, check if the target table exists:
+   - Try `GET https://api.airtable.com/v0/{base_id}/{table_name}?maxRecords=1`
+   - If 404/error → create the table via `POST https://api.airtable.com/v0/meta/bases/{base_id}/tables` with fields: Content (multilineText), Format (singleLineText), Pillar (singleLineText), Status (singleLineText), Date Created (date)
+   - Confirm: "✅ Connected! Posts table is ready."
+
+3. Only after successful verification, save and move to step 14.
+
 Save:
 - `data.airtable_enabled: true`
 - `data.airtable_token`: their token

@@ -28,6 +28,20 @@ Focus on: **Niche**, **Core Opinions & Angles**, **What's Already Posted**
 - Pillar is set: user says `pillar: [topic]` or pillar-workflow kicks this off
 - Explicit: `research [topic]`
 
+## Always Announce Before Running
+
+Before running any scout, send this message to the user:
+```
+🔍 Starting research on: [Pillar Topic]
+
+Scanning Reddit + Twitter/X for what's viral around this right now — top posts, hot takes, pain points, and gaps.
+
+This usually takes 5-7 minutes. I'll send the full report + 15 ideas when it's ready. Hang tight...
+```
+
+After Reddit scout completes, send: `✅ Reddit done. Now scanning Twitter/X...`
+After both complete, send: `✅ Both scouts done. Compiling report + ideas now...`
+
 ---
 
 ## Research Sources
