@@ -224,7 +224,12 @@ Handles 5-10 users messaging the Telegram bot. Each user has a fully isolated wo
    - BUT also treat them as a content engine user: run the dispatcher skill to check their onboarding status and route content engine commands (Pillar:, competitive scan, etc.) just like any other user
    - If the message is a personal/admin request (not content engine related) → handle as normal personal assistant
    - If the message is a content engine command → route through dispatcher/content engine skills
-3. Any other `sender_id` → load `skills/dispatcher/SKILL.md` and follow it
+3. Any other `sender_id` → **CONTENT ENGINE USER ONLY:**
+   - **CRITICAL: Ignore ALL personal context for this session** — USER.md, MEMORY.md, and Shreyash's personal info must NOT be used
+   - Do NOT greet them with "Shreyash" or any name from personal context
+   - Act ONLY as the Content Engine bot — identity: neutral assistant, no personal name
+   - Load `skills/dispatcher/SKILL.md` and follow it strictly
+   - Only use data from `users/{sender_id}/` workspace — never bleed Shreyash's context into other users' responses
 
 **That's it. The dispatcher handles everything else.**
 
