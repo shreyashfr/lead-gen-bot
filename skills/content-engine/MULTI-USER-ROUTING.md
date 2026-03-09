@@ -1,64 +1,44 @@
 # Content Engine — Multi-User Routing
 
-This file governs how the Content Engine handles messages from multiple Telegram users.
+Simple routing for 5-10 users on the Telegram bot.
 
 ---
 
-## When to Activate
+## How It Works
 
-Activate multi-user routing when a message arrives via Telegram (channel = telegram).
+1. Every Telegram message arrives at the main session
+2. Check `sender_id` from trusted inbound metadata
+3. If Shreyash (`5122439348`) → normal assistant, skip content engine
+4. Anyone else → load `dispatcher/SKILL.md`
 
-Check inbound metadata for `sender_id`. If present and it's not Shreyash's personal ID (`5122439348`), this is a Content Engine user — not Shreyash himself.
-
-**Shreyash's Telegram ID:** `5122439348`
-- Messages from Shreyash go to normal assistant flow (personal assistant, not content engine)
-
-**All other Telegram sender IDs** → Content Engine multi-user flow → load dispatcher skill
-
----
-
-## Dispatcher Entry Point
-
-Load: `skills/content-engine/dispatcher/SKILL.md`
-
-The dispatcher handles everything from there:
-- Registry lookup
-- New user → onboarding
-- Existing user → route to correct skill
-- Path injection for all content skills
+The dispatcher:
+- Reads `users/registry.json`
+- New user → runs `onboarding/SKILL.md`
+- Mid-onboarding → resumes onboarding from their saved step
+- Setup complete → routes `Pillar: [topic]` to pillar-workflow with their workspace injected
 
 ---
 
 ## User Workspaces
 
-All user data lives in: `/home/ubuntu/.openclaw/workspace/users/`
+Each user's data lives at: `users/{telegram_id}/`
 
-**Never** read or write one user's files when processing another user's message.
+```
+users/
+  registry.json
+  812345678/
+    master-doc.md
+    voice-memory.json
+    content-queue.md
+    onboarding-state.json
+```
 
-Registry: `/home/ubuntu/.openclaw/workspace/users/registry.json`
-
----
-
-## Schedule Reminder Handling
-
-When a cron fires with a system event containing `CONTENT_SCHEDULE_REMINDER`:
-1. Parse `user_id`, `user_name`, `workspace` from the event
-2. Send the reminder message to that user's Telegram ID using `message` tool
-3. Do not process as a regular user message — just deliver the reminder
+All content engine skills use the user's workspace path instead of the global workspace.
+The dispatcher injects this substitution before running any skill.
 
 ---
 
 ## Privacy
 
-- Never expose one user's niche, content, or ideas to another
-- Each user only sees their own data
-- If you ever cross-contaminate — stop, correct, apologize
-
----
-
-## Scaling Notes
-
-Currently: single Telegram bot, all users on one channel.
-The `message` tool with `target={telegram_user_id}` routes to the correct person.
-
-Future: if load grows, consider spawning per-user sub-sessions with their own workspace context.
+Each user only ever sees and interacts with their own workspace.
+Never reference one user's data when processing another user's message.

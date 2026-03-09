@@ -1,31 +1,30 @@
 ---
 name: onboarding
 description: >
-  Onboarding flow for new Content Engine users. Collects name, niche, audience,
-  opinions, voice style, platforms, and scheduling preferences. Builds master-doc.md
-  and voice-memory.json for their isolated workspace. Ends by setting up their
-  content schedule via user-scheduler.
+  Onboarding flow for new Content Engine users on Telegram.
+  Collects name, niche, audience, opinions, voice style, and platforms.
+  Builds master-doc.md and voice-memory.json in their isolated workspace.
+  Ends by explaining how to use the content engine.
 ---
 
 # Onboarding — New User Setup
 
-Welcome a new user and set up their complete content engine. This is a conversational flow — warm, clear, one step at a time.
+Set up a new user's content system. Conversational, warm, one step at a time.
 
 ---
 
 ## TONE
 
-Be warm but efficient. This person is excited to set up their content system. Don't make it feel like a form. Ask naturally, acknowledge their answers briefly, move forward.
-
-Keep each message focused. One question at a time. No walls of text.
+Friendly and efficient. They're here to get set up — don't make it feel like a form.
+One question per message. No walls of text. Acknowledge answers briefly, move forward.
 
 ---
 
-## STATE MACHINE
+## STATE FILE
 
-Track state in `{USER_WORKSPACE}onboarding-state.json`. Create the file and the workspace directory if they don't exist.
+Track progress in `{USER_WORKSPACE}onboarding-state.json`.
+Create it (and the workspace directory) if it doesn't exist.
 
-State file format:
 ```json
 {
   "step": 1,
@@ -35,106 +34,106 @@ State file format:
     "audience": null,
     "hot_takes": [],
     "voice_style": null,
-    "platforms": [],
-    "posting_examples": []
+    "posting_examples": [],
+    "platforms": []
   }
 }
 ```
+
+Save after every step. If user comes back mid-onboarding, read this file and resume.
 
 ---
 
 ## STEPS
 
 ### STEP 1 — Welcome + Name
-**Send:**
+
 ```
 Hey! 👋 Welcome to the Content Engine.
 
-I'm going to help you build a full content system that generates ideas, writes in your voice, and handles your weekly content pipeline — all on autopilot.
+I'll help you build a complete content system — research, ideas, writing in your voice, and posting to Airtable. All from one command.
 
-First things first — what's your name?
+First: what's your name?
 ```
 
-On response: save `data.name`. Move to step 2.
+Save `data.name`. Update registry: `onboarding_step: 2`. Move to step 2.
 
 ---
 
 ### STEP 2 — Niche
-**Send:**
+
 ```
 Nice to meet you, {name}! 🙌
 
 What do you create content about? Give me your niche in 1-2 sentences.
-(e.g. "I help early-career software engineers land top tech jobs" or "I talk about building SaaS products as a solo founder")
+
+(e.g. "I help early-career engineers break into product roles" or "I talk about building SaaS as a solo founder")
 ```
 
-On response: save `data.niche`. Move to step 3.
+Save `data.niche`. Update registry: `onboarding_step: 3`. Move to step 3.
 
 ---
 
 ### STEP 3 — Audience
-**Send:**
+
 ```
-Got it. Who exactly are you talking to? Describe your ideal reader/follower.
-(e.g. "Fresh CS grads who want to break into FAANG" or "Indie hackers doing $0-$10k MRR")
+Got it. Who exactly are you talking to?
+
+Describe your ideal reader — who are they, where are they in their journey?
 ```
 
-On response: save `data.audience`. Move to step 4.
+Save `data.audience`. Update registry: `onboarding_step: 4`. Move to step 4.
 
 ---
 
-### STEP 4 — Hot Takes / Core Opinions
-**Send:**
+### STEP 4 — Hot Takes
+
 ```
-Love it. Now — what's your biggest opinion or hot take in your space?
+Perfect. What's your biggest opinion or hot take in your space?
 
-Something you believe that most people in your niche *don't* say publicly, or something you'd push back on.
-
-Give me 2-3 of your strongest takes.
+Give me 2-3 things you believe that most people in your niche don't say out loud.
 ```
 
-On response: save as array in `data.hot_takes`. Move to step 5.
+Save as array in `data.hot_takes`. Update registry: `onboarding_step: 5`. Move to step 5.
 
 ---
 
 ### STEP 5 — Voice Style
-**Send:**
+
 ```
-Perfect. Now let's nail your voice.
+Love it. Now let's nail your voice.
 
-How would you describe your writing style? And if you have any posts you're proud of — paste one or two here so I can study your tone.
+How would you describe your writing style? And if you have any posts you're proud of — paste one or two so I can study your tone.
 
-(If you don't have examples yet, just describe how you want to sound — e.g. "direct, no fluff, slightly sarcastic" or "warm and encouraging, like a mentor")
+(No examples? Just describe how you want to sound — e.g. "direct, no fluff, a bit sarcastic" or "warm, like a mentor")
 ```
 
-On response: save `data.voice_style` and any examples in `data.posting_examples`. Move to step 6.
+Save `data.voice_style` and any examples in `data.posting_examples`. Update registry: `onboarding_step: 6`. Move to step 6.
 
 ---
 
 ### STEP 6 — Platforms
-**Send:**
-```
-Almost done with setup! Which platforms are you posting on?
 
-Reply with any/all that apply:
-- LinkedIn
-- Twitter / X
-- Instagram
-- Threads
-- YouTube (scripts)
+```
+Almost done! Which platforms are you posting on?
+
+Reply with any that apply:
+• LinkedIn
+• Twitter / X
+• Instagram
+• Threads
+• YouTube (scripts)
 ```
 
-On response: save `data.platforms` as array. Move to step 7.
+Save `data.platforms` as array (lowercase). Update registry: `onboarding_step: 7`. Move to step 7.
 
 ---
 
-### STEP 7 — Build Master Doc + Voice Memory
+### STEP 7 — BUILD WORKSPACE (no question, just work)
 
-Now BUILD their workspace files. Do NOT ask another question yet — do the work silently then confirm.
+Do all of this silently, then send the confirmation message.
 
 **7a. Create `{USER_WORKSPACE}master-doc.md`:**
-
-Use the template below, filling in everything from the onboarding data:
 
 ```markdown
 # Master Doc — {name}
@@ -151,7 +150,7 @@ Use the template below, filling in everything from the onboarding data:
 ---
 
 ## Core Opinions & Angles
-{hot_takes formatted as bullet list}
+{hot_takes as bullet list}
 
 ---
 
@@ -159,7 +158,7 @@ Use the template below, filling in everything from the onboarding data:
 {voice_style}
 
 ### Posting Examples
-{posting_examples if provided, or "To be added — share posts you're proud of"}
+{posting_examples if provided, otherwise: "To be added — share posts you're proud of any time."}
 
 ---
 
@@ -169,18 +168,17 @@ Use the template below, filling in everything from the onboarding data:
 ---
 
 ## Story Bank
-*(Your personal experiences, failures, wins to reference in content)*
-*(Add these over time — the more specific, the better)*
+*(Your personal experiences to reference — add these as you go, the more specific the better)*
 
 ---
 
 ## Platforms
-{platforms as list with formats they use}
+{platforms as bullet list}
 
 ---
 
 ## What You've Posted
-*(Updated automatically as content is approved and pushed)*
+*(Auto-updated as content is approved and pushed)*
 
 ---
 
@@ -197,129 +195,105 @@ Use the template below, filling in everything from the onboarding data:
   "voice_rules": {
     "tone": "{voice_style summary}",
     "forbidden_phrases": [
-      "leverage",
-      "utilize",
-      "streamline",
-      "optimize",
-      "facilitate",
-      "enhance",
+      "leverage", "utilize", "streamline", "optimize",
+      "facilitate", "enhance",
       "I hope this message finds you well",
       "I'd be delighted to",
       "I'm reaching out because"
     ],
     "style_notes": [
-      "Write like {name} talks, not like a corporate blog",
-      "Short sentences. No filler.",
+      "Write like {name} actually talks, not like a blog post",
+      "Short sentences. Cut filler.",
       "Opinions over observations"
     ],
     "high_performing_patterns": [],
     "voice_lessons": []
   },
-  "last_updated": "{today's date}"
+  "last_updated": "{today's date YYYY-MM-DD}"
 }
 ```
 
-**7c. Create other workspace files:**
-- `{USER_WORKSPACE}content-queue.md` → empty with header `# Content Queue — {name}`
-- `{USER_WORKSPACE}competitor-list.md` → empty with prompt to fill later
+**7c. Create `{USER_WORKSPACE}content-queue.md`:**
 
-**7d. Update registry.json** — set `onboarding_complete: false`, `onboarding_step: 8` (scheduling still pending)
+```markdown
+# Content Queue — {name}
 
-**Send:**
-```
-✅ Your content system is set up, {name}!
-
-Here's what I built:
-📄 Master Doc — your brand bible with your niche, audience, and voice
-🎙️ Voice Memory — your tone guardrails so content always sounds like you
-📋 Content Queue — ready to fill with approved posts
-
-One last thing: let's set up your content schedule.
+| # | Pillar | Format | Hook | Status | Airtable |
+|---|--------|--------|------|--------|----------|
 ```
 
-Move to step 8.
+**7d. Update `users/registry.json`:**
+- `name`: their name
+- `niche`: their niche (one-line)
+- `platforms`: array
+- `onboarding_complete`: `true`
+- `onboarding_step`: `null`
+- `joined`: today's date
+
+**Then send this message:**
+
+```
+✅ You're all set, {name}!
+
+Here's what I built for you:
+📄 Master Doc — your brand bible (niche, audience, voice, opinions)
+🎙️ Voice Memory — tone guardrails so everything sounds like you
+📋 Content Queue — ready to fill
 
 ---
 
-### STEP 8 — Scheduling: Frequency
-**Send:**
-```
-How often do you want to generate content?
+Here's how the Content Engine works:
 
-1️⃣ Weekly — one big session per week
-2️⃣ Daily — quick session each day
-```
+🚀 START A CONTENT SESSION
 
-On response: save `schedule.frequency`. Move to step 9a or 9b.
-
----
-
-### STEP 9a — Weekly: Day + Time
-**Send:**
-```
-Which day works best for your content session?
-(e.g. Sunday, Monday, Saturday)
-
-And what time? (I'll message you in IST — Indian Standard Time)
-```
-
-On response: save `schedule.day` and `schedule.time_ist`. Move to step 10.
-
-### STEP 9b — Daily: Time
-**Send:**
-```
-What time each day should I send your content reminder?
-(Tell me in IST — e.g. "9am", "7pm")
-```
-
-On response: save `schedule.time_ist`. Move to step 10.
-
----
-
-### STEP 10 — Create Cron Job + Finish
-
-Call the **user-scheduler** skill with the collected schedule data to create their cron job.
-
-Then update registry.json:
-- `onboarding_complete: true`
-- `onboarding_step: null`
-- Full `schedule` object filled in
-
-**Send:**
-```
-🎉 You're all set, {name}!
-
-Here's your content engine summary:
-
-📌 Niche: {niche}
-🎯 Audience: {audience}
-📅 Content schedule: {frequency} on {day/time IST}
-📲 Platforms: {platforms}
-
-When your reminder fires, just reply with:
+Send:
   Pillar: [your topic]
 
-And I'll run the full pipeline — research → ideas → you pick → I write → Airtable.
+Example:
+  Pillar: how to get your first SaaS customer
 
-You can also run it anytime manually. Just send:
-  Pillar: [topic]
-
-See you on {next scheduled day}! 🚀
-```
-
-Onboarding complete. Set `onboarding_complete: true` in registry.
+That triggers the full pipeline:
+1️⃣ Research — I scan Reddit + Twitter for what's viral in your niche right now
+2️⃣ Ideas — I generate 15 content ideas with hooks, angles, and viral scores
+3️⃣ You pick — reply with the idea numbers you like (e.g. "1, 3, 5")
+4️⃣ Production — I write every piece in your voice across your platforms
+5️⃣ Approval — approve each piece or ask for fixes, I remember your feedback
+6️⃣ Airtable — approved content gets pushed one by one
 
 ---
 
-## ERROR HANDLING
+📋 FORMATS I PRODUCE
 
-If a user sends something unexpected mid-onboarding (like "what is this?" or "how does this work?"):
+• LP — LinkedIn Post
+• TH — Twitter Thread
+• XA — X Article (long-form)
+• TW — Single Tweet
+• CA — Instagram Carousel copy
+
+---
+
+💡 OTHER COMMANDS
+
+• "run competitive scan" — scan what competitors are posting this week
+• "my numbers: [paste metrics]" — update performance, I'll log what worked
+
+---
+
+Ready when you are. Just send:
+  Pillar: [your topic]
+```
+
+---
+
+## RESUME LOGIC
+
+If user messages during onboarding and it's not an answer (e.g. "what is this?" or "how does it work?"):
 - Answer briefly
-- Gently steer back: "Let's finish your setup first — [repeat current question]"
+- Steer back: "Let's finish your setup first — [repeat current question]"
 
-If a user says "skip" for any optional step (examples, etc.):
-- Accept it, save null, move forward
+If user says "skip" for optional steps (examples, etc.):
+- Accept it, save null/empty, move forward
 
-If a user goes quiet and comes back later:
-- Read their `onboarding-state.json` to resume from where they left off
-- "Hey {name}! Let's pick up where we left off..."
+If user comes back after going quiet:
+- Read `onboarding-state.json` to find their step
+- "Hey {name}! Let's pick up where we left off. [repeat current question]"
