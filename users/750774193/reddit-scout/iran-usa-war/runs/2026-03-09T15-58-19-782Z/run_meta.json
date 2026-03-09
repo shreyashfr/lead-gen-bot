@@ -1,0 +1,30 @@
+{
+  "niche": "Iran USA War",
+  "nicheSlug": "iran-usa-war",
+  "runId": "2026-03-09T15-58-19-782Z",
+  "startedAt": "2026-03-09T15:58:19.782Z",
+  "keywords": [
+    "Iran USA War"
+  ],
+  "mustInclude": [
+    "iran"
+  ],
+  "search": "Iran USA War",
+  "subAllowlist": null,
+  "config": {
+    "topN": 15,
+    "subLimit": 5,
+    "gapMs": 1200,
+    "limitPerListing": 25,
+    "time": "month",
+    "kinds": [
+      "top",
+      "hot",
+      "rising"
+    ],
+    "searchSort": "top",
+    "searchTime": null,
+    "minSubscribers": 0,
+    "sendCardsN": 5
+  }
+}

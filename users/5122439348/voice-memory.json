@@ -1,0 +1,52 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-03-09",
+  "user_name": "Shreyash",
+  "niche": "Agentic AI Engineering, automation, Gen AI",
+  "voice_rules": {
+    "forbidden_phrases": [
+      "leverage", "utilize", "streamline", "optimize",
+      "facilitate", "enhance",
+      "I hope this message finds you well",
+      "I'd be delighted to",
+      "I'm reaching out because",
+      "thought leader",
+      "guru",
+      "game-changer",
+      "revolutionary"
+    ],
+    "required_style": {
+      "capitalization": "normal",
+      "contractions": "always_use",
+      "sentence_length": "short_to_medium",
+      "em_dashes": "avoid",
+      "semicolons": "avoid",
+      "ellipsis": "use for natural pauses"
+    },
+    "tone_guardrails": {
+      "corporate_jargon": "reject",
+      "generic_motivational": "reject",
+      "ai_detectability": "must_fail_ai_test",
+      "advice_giving": "reject — share experiences only, never tell audience what to do",
+      "bias": "reject — present facts and experiences, let reader conclude"
+    },
+    "private_topics": [
+      "NEET pre-medical exam — never mention",
+      "Confidential Second Brain Labs project details — never mention"
+    ],
+    "tagging_strategy": "Suggest relevant founders, research paper authors, innovators, or companies to tag for reach"
+  },
+  "high_performers": {
+    "hooks": [],
+    "formats_by_platform": {},
+    "emotional_archetypes": [],
+    "viral_structures": []
+  },
+  "voice_lessons": [],
+  "feedback_log": [],
+  "reflection_log": [],
+  "agent_logs": {
+    "research_agent": { "last_run": null },
+    "performance_reviewer": { "last_run": null }
+  }
+}

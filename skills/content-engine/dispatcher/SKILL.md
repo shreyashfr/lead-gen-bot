@@ -53,6 +53,7 @@ Read: `/home/ubuntu/.openclaw/workspace/users/registry.json`
 Look up `users[sender_id]`:
 
 **Not found → new user.**
+Send an immediate message: "Setting up your workspace... please wait a moment! ⏳"
 Create their workspace directory: `/home/ubuntu/.openclaw/workspace/users/{sender_id}/`
 Run the **onboarding** skill.
 

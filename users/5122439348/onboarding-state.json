@@ -1,0 +1,41 @@
+{
+  "step": 14,
+  "data": {
+    "name": "Shreyash",
+    "niche": "Agentic AI Engineering, automation (Playwright, Zapier, N8n), Gen AI (Vector DBs, Langchain, OpenClaw)",
+    "positioning": "Final-year CS BTech student & Agentic AI Engineer at Second Brain Labs — self-taught, interviewed 400+ AI engineers across MNCs, built real automations for startups, and ships tools like miniclaw on top of openclaw.",
+    "audience_description": "Tech professionals and students, 20s to 40s, trying to keep up with AI trends. Worried about job loss or being left behind by AI. Not looking for guidance — want real experiences and what actually works.",
+    "audience_age_range": "20s to 40s",
+    "audience_country": null,
+    "audience_fear": "Job loss, irrelevance, AI replacing them, getting lost in the hype with no clear direction",
+    "audience_aspiration": "Stay relevant, understand what's actually happening in AI, learn from someone who's in the trenches doing it",
+    "current_project": "Building a confidential project with OpenClaw for Second Brain Labs, deployed on AWS EC2. Details not public.",
+    "origin_story": "Started in high school preparing for NEET (pre-medical). During COVID in 12th grade, decided to ditch medicine and start learning to code — driven by a childhood interest in tech. Couldn't get BTech CSE admission due to biology/medical background, so took a diploma in CS instead. Since then: built and shipped projects, pitched prototypes to VCs, participated in hackathons, freelanced, and kept building.",
+    "specific_milestones": [
+      "Pitched Tokeno-Phone (blockchain-first decentralised smartphone) to 100x VC at age 18",
+      "Participated in MIT iQuHack — MIT's quantum computing hackathon",
+      "Built Memory Mo — Android journal app with memory/context, STT and TTS, Gen AI-first",
+      "Automated social media posting pipeline using N8n",
+      "Built multiple Gen AI-first products"
+    ],
+    "hot_takes": [
+      "Execution is the key — ideas mean nothing without shipping",
+      "Stop building AI wrappers. Learn the actual underlying tech or you're building on sand.",
+      "Most people hyping AI tools haven't actually deployed anything real"
+    ],
+    "voice_style": "Direct and blunt. Human, conversational tone. Uses '...' for natural pauses. Hates bias in content — presents experience, not agenda.",
+    "style_rules": {
+      "tone": "direct, blunt, human",
+      "ellipsis": "use ... for natural pauses",
+      "bias": "never — present experiences not conclusions for others",
+      "em_dashes": "avoid",
+      "corporate_jargon": "never",
+      "sentence_length": "short to medium"
+    },
+    "posting_examples": ["Example (old style — do NOT mimic, reference only for vibe): '#LearningInPublic — This year would be fun! Challenged myself to play around Neural Networks. Short term goal: implement Attention is all you need. Will be sharing insights along the journey :>'"],
+    "platforms": ["linkedin", "twitter", "instagram", "threads", "youtube"],
+    "already_posted_topics": ["nothing yet — fresh start"],
+    "tagging_strategy": "Tag relevant founders, research paper authors, innovators, or companies in posts to boost reach",
+    "private_topics": ["NEET pre-medical exam preparation — never mention in content"]
+  }
+}

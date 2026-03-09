@@ -219,8 +219,12 @@ Handles 5-10 users messaging the Telegram bot. Each user has a fully isolated wo
 
 **When a Telegram message arrives (channel = telegram):**
 1. Check inbound metadata `sender_id`
-2. If `sender_id = 5122439348` (Shreyash) → normal personal assistant flow, ignore below
-3. Any other `sender_id` → load `skills/content-engine/dispatcher/SKILL.md` and follow it
+2. If `sender_id = 5122439348` (Shreyash) → **ADMIN + CONTENT ENGINE user:**
+   - Shreyash has full admin/personal assistant access as always
+   - BUT also treat them as a content engine user: run the dispatcher skill to check their onboarding status and route content engine commands (Pillar:, competitive scan, etc.) just like any other user
+   - If the message is a personal/admin request (not content engine related) → handle as normal personal assistant
+   - If the message is a content engine command → route through dispatcher/content engine skills
+3. Any other `sender_id` → load `skills/dispatcher/SKILL.md` and follow it
 
 **That's it. The dispatcher handles everything else.**
 

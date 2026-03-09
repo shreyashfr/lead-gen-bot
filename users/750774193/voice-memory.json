@@ -1,0 +1,55 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-03-09",
+  "user_name": "Sourabh",
+  "niche": "UPSC preparation, geopolitics, international affairs, political science",
+  "voice_rules": {
+    "forbidden_phrases": [
+      "leverage", "utilize", "streamline", "optimize",
+      "facilitate", "enhance",
+      "I hope this message finds you well",
+      "I'd be delighted to",
+      "I'm reaching out because",
+      "game-changer",
+      "hustle",
+      "grind"
+    ],
+    "required_style": {
+      "capitalization": "normal",
+      "contractions": "flexible",
+      "sentence_length": "medium — analytical, not choppy",
+      "em_dashes": "ok for emphasis",
+      "semicolons": "ok"
+    },
+    "tone_guardrails": {
+      "corporate_jargon": "reject",
+      "generic_motivational": "reject",
+      "biased_opinions": "strictly reject — always present balanced perspectives",
+      "one_sided_takes": "reject",
+      "ai_detectability": "must_fail_ai_test"
+    },
+    "private_topics": [
+      "Never mention or reference inconsistency in studies or inability to be consistent"
+    ],
+    "style_notes": [
+      "Use quotes from notable thinkers, leaders, and experts",
+      "Always present multiple perspectives on geopolitical issues",
+      "Explain acronyms and technical UPSC terms — audience may be beginners",
+      "Analytical and research-driven — not casual, not preachy",
+      "Cite sources when relevant"
+    ]
+  },
+  "high_performers": {
+    "hooks": [],
+    "formats_by_platform": {},
+    "emotional_archetypes": [],
+    "viral_structures": []
+  },
+  "voice_lessons": [],
+  "feedback_log": [],
+  "reflection_log": [],
+  "agent_logs": {
+    "research_agent": { "last_run": null },
+    "performance_reviewer": { "last_run": null }
+  }
+}

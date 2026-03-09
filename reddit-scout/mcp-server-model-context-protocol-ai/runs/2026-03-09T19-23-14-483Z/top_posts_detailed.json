@@ -1,0 +1,1434 @@
+[
+  {
+    "id": "1rncjv3",
+    "subreddit": "homelab",
+    "title": "I 3D printed a 12U server rack and stuffed $3,700 of gear inside. Here's the full build.",
+    "selftext": "Hey r/homelab! I finally finished my first home lab build and put together a video walking through the whole thing. Figured I'd share the details here since this community was a huge part of my research.\n\n**The Build:**\n\n\\- **Rack:** KWS Rack V2 — 12U, 10-inch, fully 3D printed (designed by Ilan Kushnir). Printed on a Bambu P1S with a 0.8mm nozzle. \\~2 full days of print time, using PETG-HF \\~$48 in filament.\n\n\\- **Compute:** 4x Lenovo ThinkCentre Tiny PCs\n\n\\- 3x M720q (i5-9500T, 32GB/16GB RAM) running Proxmox cluster\n\n\\- 1x M920q (i5-8500T, 8GB RAM) running pfSense\n\n\\- **Storage:** Terramaster D5-310 DAS (2x 12TB WD Red Plus, 1x 18TB Exos) + 3x 2TB NVMe via USB enclosures\n\n\\- **Network:** 10-port switch (8x 2.5G + 2x 10G), keystone patch panel with RJ45/USB/HDMI\n\n\\- **Extras:** Google Coral TPU, Zigbee/Bluetooth/Matter adapters, Lutron Caseta bridge\n\n**What it runs:**\n\nProxmox cluster hosting Plex, Immich (replaced Google Photos), Nextcloud (replaced Google Drive), Frigate NVR with Coral AI detection, Home Assistant, Vaultwarden, Pi-hole, and more. pfSense handles routing, firewall, DNS, DHCP, and WireGuard VPN.\n\n**Total cost: $3,737 CAD**\n\nThe network cards I bought came with full-height brackets that didn't fit the ThinkCentres, so I designed and 3D printed custom low-profile PCIe brackets in Fusion 360. One of those moments where having a 3D printer next to the lab pays for itself.\n\nThe KWS Rack is modular, you build it in sections and bolt on more as you grow. As a first-time rack builder (I'm a Red Seal Plumber &amp; Gas-fitter by trade, not IT), it was surprisingly approachable. Felt more like building Ikea furniture than a server.\n\nI collaborated with Ilan (the rack designer) throughout the build — super cool guy. This is the first full build video of the KWS Rack on YouTube as far as we know.\n\n**Video link:** [https://www.youtube.com/watch?v=5cET4sfqdlE](https://www.youtube.com/watch?v=5cET4sfqdlE)  \n**KWS Rack:** [https://makerworld.com/en/models/2139130-kws-rack-v-2-heavy-duty-10-inch-homelab-rack#profileId-2317125](https://makerworld.com/en/models/2139130-kws-rack-v-2-heavy-duty-10-inch-homelab-rack#profileId-2317125)\n\nHappy to answer any questions about the build, the rack, or the software stack. I try to read every comment.",
+    "author": "CaptainRedsLab",
+    "created_utc": 1772896836,
+    "permalink": "https://www.reddit.com/r/homelab/comments/1rncjv3/i_3d_printed_a_12u_server_rack_and_stuffed_3700/",
+    "url": "https://www.reddit.com/gallery/1rncjv3",
+    "domain": "reddit.com",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 1368,
+    "score": 1368,
+    "num_comments": 58,
+    "upvote_ratio": 0.98,
+    "thumbnail": "https://preview.redd.it/ucdezssp3nng1.jpg?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=bfa9188d1c7a4da175e81107d172f58f5df92fd1",
+    "media": null,
+    "post_hint": null,
+    "listing": "search:top:week",
+    "viral_score": 59.4685779171898,
+    "detail": {
+      "post": {
+        "id": "1rncjv3",
+        "title": "I 3D printed a 12U server rack and stuffed $3,700 of gear inside. Here's the full build.",
+        "selftext": "Hey r/homelab! I finally finished my first home lab build and put together a video walking through the whole thing. Figured I'd share the details here since this community was a huge part of my research.\n\n**The Build:**\n\n\\- **Rack:** KWS Rack V2 — 12U, 10-inch, fully 3D printed (designed by Ilan Kushnir). Printed on a Bambu P1S with a 0.8mm nozzle. \\~2 full days of print time, using PETG-HF \\~$48 in filament.\n\n\\- **Compute:** 4x Lenovo ThinkCentre Tiny PCs\n\n\\- 3x M720q (i5-9500T, 32GB/16GB RAM) running Proxmox cluster\n\n\\- 1x M920q (i5-8500T, 8GB RAM) running pfSense\n\n\\- **Storage:** Terramaster D5-310 DAS (2x 12TB WD Red Plus, 1x 18TB Exos) + 3x 2TB NVMe via USB enclosures\n\n\\- **Network:** 10-port switch (8x 2.5G + 2x 10G), keystone patch panel with RJ45/USB/HDMI\n\n\\- **Extras:** Google Coral TPU, Zigbee/Bluetooth/Matter adapters, Lutron Caseta bridge\n\n**What it runs:**\n\nProxmox cluster hosting Plex, Immich (replaced Google Photos), Nextcloud (replaced Google Drive), Frigate NVR with Coral AI detection, Home Assistant, Vaultwarden, Pi-hole, and more. pfSense handles routing, firewall, DNS, DHCP, and WireGuard VPN.\n\n**Total cost: $3,737 CAD**\n\nThe network cards I bought came with full-height brackets that didn't fit the ThinkCentres, so I designed and 3D printed custom low-profile PCIe brackets in Fusion 360. One of those moments where having a 3D printer next to the lab pays for itself.\n\nThe KWS Rack is modular, you build it in sections and bolt on more as you grow. As a first-time rack builder (I'm a Red Seal Plumber &amp; Gas-fitter by trade, not IT), it was surprisingly approachable. Felt more like building Ikea furniture than a server.\n\nI collaborated with Ilan (the rack designer) throughout the build — super cool guy. This is the first full build video of the KWS Rack on YouTube as far as we know.\n\n**Video link:** [https://www.youtube.com/watch?v=5cET4sfqdlE](https://www.youtube.com/watch?v=5cET4sfqdlE)  \n**KWS Rack:** [https://makerworld.com/en/models/2139130-kws-rack-v-2-heavy-duty-10-inch-homelab-rack#profileId-2317125](https://makerworld.com/en/models/2139130-kws-rack-v-2-heavy-duty-10-inch-homelab-rack#profileId-2317125)\n\nHappy to answer any questions about the build, the rack, or the software stack. I try to read every comment.",
+        "author": "CaptainRedsLab",
+        "subreddit": "homelab",
+        "created_utc": 1772896836,
+        "ups": 1368,
+        "num_comments": 58,
+        "upvote_ratio": 0.98,
+        "permalink": "https://www.reddit.com/r/homelab/comments/1rncjv3/i_3d_printed_a_12u_server_rack_and_stuffed_3700/",
+        "url": "https://www.reddit.com/gallery/1rncjv3",
+        "is_self": false,
+        "post_hint": null,
+        "thumbnail": "https://preview.redd.it/ucdezssp3nng1.jpg?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=bfa9188d1c7a4da175e81107d172f58f5df92fd1",
+        "is_gallery": true,
+        "gallery_data": {
+          "items": [
+            {
+              "media_id": "ucdezssp3nng1",
+              "id": 880506260
+            },
+            {
+              "media_id": "enizc9nq3nng1",
+              "id": 880506261
+            },
+            {
+              "media_id": "ff3pc7dr3nng1",
+              "id": 880506262
+            },
+            {
+              "media_id": "qkcqplhs3nng1",
+              "id": 880506263
+            },
+            {
+              "media_id": "s74qszzs3nng1",
+              "id": 880506264
+            },
+            {
+              "media_id": "155mztut3nng1",
+              "id": 880506265
+            }
+          ]
+        },
+        "media_metadata": {
+          "ff3pc7dr3nng1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/jpg",
+            "p": [
+              {
+                "y": 162,
+                "x": 108,
+                "u": "https://preview.redd.it/ff3pc7dr3nng1.jpg?width=108&amp;crop=smart&amp;auto=webp&amp;s=069f28fd64254a1422d9338cb673532fef7d46fc"
+              },
+              {
+                "y": 324,
+                "x": 216,
+                "u": "https://preview.redd.it/ff3pc7dr3nng1.jpg?width=216&amp;crop=smart&amp;auto=webp&amp;s=1327615272f859293967360ba1c2ae08a33ecf06"
+              },
+              {
+                "y": 480,
+                "x": 320,
+                "u": "https://preview.redd.it/ff3pc7dr3nng1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=bac1a7c500cdff19f94e01dd1c0260086fc0eb75"
+              },
+              {
+                "y": 960,
+                "x": 640,
+                "u": "https://preview.redd.it/ff3pc7dr3nng1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=c66cf4afca9e93d3d4a09c7021124848d66fc94b"
+              },
+              {
+                "y": 1440,
+                "x": 960,
+                "u": "https://preview.redd.it/ff3pc7dr3nng1.jpg?width=960&amp;crop=smart&amp;auto=webp&amp;s=55972d439f6c560e7209d7fd0a2a29a463a7cd96"
+              },
+              {
+                "y": 1620,
+                "x": 1080,
+                "u": "https://preview.redd.it/ff3pc7dr3nng1.jpg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=6fc247a0c1ccb8242476c145f33300d268e65f74"
+              }
+            ],
+            "s": {
+              "y": 6000,
+              "x": 4000,
+              "u": "https://preview.redd.it/ff3pc7dr3nng1.jpg?width=4000&amp;format=pjpg&amp;auto=webp&amp;s=838a908e0b43392133862c9018dda23e355b4594"
+            },
+            "id": "ff3pc7dr3nng1"
+          },
+          "enizc9nq3nng1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/jpg",
+            "p": [
+              {
+                "y": 162,
+                "x": 108,
+                "u": "https://preview.redd.it/enizc9nq3nng1.jpg?width=108&amp;crop=smart&amp;auto=webp&amp;s=7e0dfdc44708b048388b11ab10be77e03b3233dc"
+              },
+              {
+                "y": 324,
+                "x": 216,
+                "u": "https://preview.redd.it/enizc9nq3nng1.jpg?width=216&amp;crop=smart&amp;auto=webp&amp;s=2ec2697192692ccee4f8be1258ea0c79454af2ca"
+              },
+              {
+                "y": 480,
+                "x": 320,
+                "u": "https://preview.redd.it/enizc9nq3nng1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=1e5821855654579a42627bc734485e5a71b0bfbd"
+              },
+              {
+                "y": 960,
+                "x": 640,
+                "u": "https://preview.redd.it/enizc9nq3nng1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=dc17cfb5139cb1a219c4593319a8037c3261d252"
+              },
+              {
+                "y": 1440,
+                "x": 960,
+                "u": "https://preview.redd.it/enizc9nq3nng1.jpg?width=960&amp;crop=smart&amp;auto=webp&amp;s=1f4975a9b10982dcc9ebd91122464213b1e7d393"
+              },
+              {
+                "y": 1620,
+                "x": 1080,
+                "u": "https://preview.redd.it/enizc9nq3nng1.jpg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=5933e3395417ed2616069ec2b37c5b801c1c2cce"
+              }
+            ],
+            "s": {
+              "y": 6000,
+              "x": 4000,
+              "u": "https://preview.redd.it/enizc9nq3nng1.jpg?width=4000&amp;format=pjpg&amp;auto=webp&amp;s=2115339e9f59c392a0ee84f302aef124b03a5faf"
+            },
+            "id": "enizc9nq3nng1"
+          },
+          "ucdezssp3nng1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/jpg",
+            "p": [
+              {
+                "y": 162,
+                "x": 108,
+                "u": "https://preview.redd.it/ucdezssp3nng1.jpg?width=108&amp;crop=smart&amp;auto=webp&amp;s=ebceeab2aebc33f9bfcb44740cd102c8df2a22bb"
+              },
+              {
+                "y": 324,
+                "x": 216,
+                "u": "https://preview.redd.it/ucdezssp3nng1.jpg?width=216&amp;crop=smart&amp;auto=webp&amp;s=5fdab12318a8b50dd812f51683160b5fde509848"
+              },
+              {
+                "y": 480,
+                "x": 320,
+                "u": "https://preview.redd.it/ucdezssp3nng1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=2e7e6f2063e6f1ed0f4e270ccdb553e9e4ff4e40"
+              },
+              {
+                "y": 960,
+                "x": 640,
+                "u": "https://preview.redd.it/ucdezssp3nng1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=5f0bedf6e0652058ca55c5b84f3570eb58d370d9"
+              },
+              {
+                "y": 1440,
+                "x": 960,
+                "u": "https://preview.redd.it/ucdezssp3nng1.jpg?width=960&amp;crop=smart&amp;auto=webp&amp;s=c5f7cee836408d833c7a0bac8dee3b5e9155a57e"
+              },
+              {
+                "y": 1620,
+                "x": 1080,
+                "u": "https://preview.redd.it/ucdezssp3nng1.jpg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=0f3479feee285f407b07c7fbdaaa3bd92718ff77"
+              }
+            ],
+            "s": {
+              "y": 6000,
+              "x": 4000,
+              "u": "https://preview.redd.it/ucdezssp3nng1.jpg?width=4000&amp;format=pjpg&amp;auto=webp&amp;s=163876c557395c5af22d94f18a9dd5587b958135"
+            },
+            "id": "ucdezssp3nng1"
+          },
+          "155mztut3nng1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/jpg",
+            "p": [
+              {
+                "y": 143,
+                "x": 108,
+                "u": "https://preview.redd.it/155mztut3nng1.jpg?width=108&amp;crop=smart&amp;auto=webp&amp;s=4e911f89d7d65682c402e058eadf2cf3c0f52798"
+              },
+              {
+                "y": 286,
+                "x": 216,
+                "u": "https://preview.redd.it/155mztut3nng1.jpg?width=216&amp;crop=smart&amp;auto=webp&amp;s=5b0f7d6edf8a26feece548fed231c760ba6a081e"
+              },
+              {
+                "y": 425,
+                "x": 320,
+                "u": "https://preview.redd.it/155mztut3nng1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=76c7be6c636662e1f031c6ed7a7d65ef89e15069"
+              },
+              {
+                "y": 850,
+                "x": 640,
+                "u": "https://preview.redd.it/155mztut3nng1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=2582e687ee817f5577c6ea3a9ffbbf19491706f8"
+              },
+              {
+                "y": 1275,
+                "x": 960,
+                "u": "https://preview.redd.it/155mztut3nng1.jpg?width=960&amp;crop=smart&amp;auto=webp&amp;s=fe439130e85c44c9fcbb4b6b92e7681cada42b4a"
+              },
+              {
+                "y": 1434,
+                "x": 1080,
+                "u": "https://preview.redd.it/155mztut3nng1.jpg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=167046b111e1f5ac3c999cd7179c9fe36daac2a3"
+              }
+            ],
+            "s": {
+              "y": 4080,
+              "x": 3072,
+              "u": "https://preview.redd.it/155mztut3nng1.jpg?width=3072&amp;format=pjpg&amp;auto=webp&amp;s=2a2e339ba9092d8c1bb5256460d11d1b666a4bf6"
+            },
+            "id": "155mztut3nng1"
+          },
+          "s74qszzs3nng1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/jpg",
+            "p": [
+              {
+                "y": 72,
+                "x": 108,
+                "u": "https://preview.redd.it/s74qszzs3nng1.jpg?width=108&amp;crop=smart&amp;auto=webp&amp;s=43b4afd3c64bdc5cad0caf829682e6bc162419ee"
+              },
+              {
+                "y": 144,
+                "x": 216,
+                "u": "https://preview.redd.it/s74qszzs3nng1.jpg?width=216&amp;crop=smart&amp;auto=webp&amp;s=c9f4bda05cf79fb5c96469bd31b1cdb82d668cb5"
+              },
+              {
+                "y": 213,
+                "x": 320,
+                "u": "https://preview.redd.it/s74qszzs3nng1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=52b762f3ac3d7b12bd6e050cfa5dc1a55c6f1d76"
+              },
+              {
+                "y": 426,
+                "x": 640,
+                "u": "https://preview.redd.it/s74qszzs3nng1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=fecf144cb75b4eb0821abdc4defc077784e7f837"
+              },
+              {
+                "y": 640,
+                "x": 960,
+                "u": "https://preview.redd.it/s74qszzs3nng1.jpg?width=960&amp;crop=smart&amp;auto=webp&amp;s=c9508d49104381de8666e2d40c706fd2394e6e72"
+              },
+              {
+                "y": 720,
+                "x": 1080,
+                "u": "https://preview.redd.it/s74qszzs3nng1.jpg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=f377d042c6a37e4991dabf4e321bbdeb31f84c2c"
+              }
+            ],
+            "s": {
+              "y": 4000,
+              "x": 6000,
+              "u": "https://preview.redd.it/s74qszzs3nng1.jpg?width=6000&amp;format=pjpg&amp;auto=webp&amp;s=f2655dc3a6abdb18624343b7afac647f767e6da7"
+            },
+            "id": "s74qszzs3nng1"
+          },
+          "qkcqplhs3nng1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/jpg",
+            "p": [
+              {
+                "y": 72,
+                "x": 108,
+                "u": "https://preview.redd.it/qkcqplhs3nng1.jpg?width=108&amp;crop=smart&amp;auto=webp&amp;s=8f0e509e016a0dc26d8016dd5c6773538e41c983"
+              },
+              {
+                "y": 144,
+                "x": 216,
+                "u": "https://preview.redd.it/qkcqplhs3nng1.jpg?width=216&amp;crop=smart&amp;auto=webp&amp;s=52c483bf6ca0e53f5cbe55a069443b7ce0a77231"
+              },
+              {
+                "y": 213,
+                "x": 320,
+                "u": "https://preview.redd.it/qkcqplhs3nng1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=75836981c27751ba7a6e354596903c82a912cf82"
+              },
+              {
+                "y": 426,
+                "x": 640,
+                "u": "https://preview.redd.it/qkcqplhs3nng1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=11df0a6c62e33c87eea9ecb7812be8233f760911"
+              },
+              {
+                "y": 640,
+                "x": 960,
+                "u": "https://preview.redd.it/qkcqplhs3nng1.jpg?width=960&amp;crop=smart&amp;auto=webp&amp;s=c11d3321a5f24c838987335c9e076e29176d872e"
+              },
+              {
+                "y": 720,
+                "x": 1080,
+                "u": "https://preview.redd.it/qkcqplhs3nng1.jpg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=ef808ccf89149db96f1ff28aa82f2897779ffd12"
+              }
+            ],
+            "s": {
+              "y": 4000,
+              "x": 6000,
+              "u": "https://preview.redd.it/qkcqplhs3nng1.jpg?width=6000&amp;format=pjpg&amp;auto=webp&amp;s=9c03b9c7d45e5a2d27c53cbdc793d184aeb3ca63"
+            },
+            "id": "qkcqplhs3nng1"
+          }
+        },
+        "preview": null,
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "kcitsstick",
+          "ups": 37,
+          "body": "I have been seeing these on homelab for some time, but yours is a beautiful build! Nice work!"
+        },
+        {
+          "author": "FallenPhoenix_",
+          "ups": 14,
+          "body": "It’s refreshing to see a compact well thought out homelab, great job!"
+        },
+        {
+          "author": "edmillss",
+          "ups": 12,
+          "body": "3D printed rack is genius. the custom fit for your specific gear is something you cant get with off the shelf racks. plus the ability to iterate on the design and reprint specific parts when you add hardware is a massive advantage\n\nhows the structural integrity holding up? PLA can sag over time with heat from the gear, PETG or ABS might be worth considering for the load-bearing parts if you havent already\n\nfor finding monitoring and management tools for your homelab setup theres a good catalog of self-hosted options at https://www.producthunt.com/products/indiestack-4?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-indiestack-4"
+        }
+      ]
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "CaptainRedsLab",
+      "url": "https://styles.redditmedia.com/t5_gkq6ml/styles/profileIcon_mkbh1rvd9big1.jpeg?width=256&height=256&crop=256:256,smart&s=26a28f3344836883a2c1ec206e7b8bd638c47ff7",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/mcp-server-model-context-protocol-ai/runs/2026-03-09T19-23-14-483Z/avatars/CaptainRedsLab.jpeg",
+      "fetchedAt": "2026-03-09T19:23:50.981Z"
+    }
+  },
+  {
+    "id": "1rp9qtn",
+    "subreddit": "mcp",
+    "title": "MCP server with 6 read-only tools for an arcology engineering knowledge base — 8 domains, 420+ parameters, 140 open questions",
+    "selftext": "Built an MCP server that exposes a structured engineering knowledge base. It's part of a long-term science-fiction project, but the data is meant to be genuinely technical. It includes everything from structural engineering, energy systems, AI governance, construction logistics, and more.  \n  \nHere's how to connect: \n\n  \n\\`\\`\\`json  \n{  \n  \"mcpServers\": {  \n\"arcology\": {  \n\"url\": \"https://arcology-mcp.fly.dev/mcp\"  \n}  \n  }  \n}  \n\\`\\`\\`  \n  \nRight now we're working with 6 tools, all read-only, no auth:  \n  \n| Tool | What it does |  \n|------|-------------|  \n| \\`read\\_node\\` | Get a full entry by domain + slug |  \n| \\`search\\_knowledge\\` | Full-text search, filter by domain/confidence/type |  \n| \\`list\\_domains\\` | All 8 domains with entry counts and stats |  \n| \\`get\\_open\\_questions\\` | 140+ unanswered engineering questions |  \n| \\`get\\_entry\\_parameters\\` | 420+ quantitative parameters with units and confidence |  \n| \\`get\\_domain\\_stats\\` | Aggregate platform statistics |  \n  \nEach knowledge entry has a KEDL maturity level (100-500), confidence rating (1-5), quantitative parameters, open questions, cross-references, citations, and assumptions.  \n  \nThe knowledge base is designed so agents can do cross-domain consistency checking since the parameters in one domain should be consistent with parameters in other domains, but some aren't (deliberately). It's a good test case for multi-domain reasoning.  \n  \nSource: [https://github.com/YourLifewithAI/Lifewithai/tree/main/mcp](https://github.com/YourLifewithAI/Lifewithai/tree/main/mcp)  \nSite: [https://lifewithai.ai/mcp](https://lifewithai.ai/mcp)",
+    "author": "Herodont5915",
+    "created_utc": 1773083875,
+    "permalink": "https://www.reddit.com/r/mcp/comments/1rp9qtn/mcp_server_with_6_readonly_tools_for_an_arcology/",
+    "url": "https://www.reddit.com/r/mcp/comments/1rp9qtn/mcp_server_with_6_readonly_tools_for_an_arcology/",
+    "domain": "self.mcp",
+    "is_self": true,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 1,
+    "score": 1,
+    "num_comments": 0,
+    "upvote_ratio": 1,
+    "thumbnail": "self",
+    "media": null,
+    "post_hint": null,
+    "listing": "rising",
+    "viral_score": 18.189658634731657,
+    "detail": {
+      "post": {
+        "id": "1rp9qtn",
+        "title": "MCP server with 6 read-only tools for an arcology engineering knowledge base — 8 domains, 420+ parameters, 140 open questions",
+        "selftext": "Built an MCP server that exposes a structured engineering knowledge base. It's part of a long-term science-fiction project, but the data is meant to be genuinely technical. It includes everything from structural engineering, energy systems, AI governance, construction logistics, and more.  \n  \nHere's how to connect: \n\n  \n\\`\\`\\`json  \n{  \n  \"mcpServers\": {  \n\"arcology\": {  \n\"url\": \"https://arcology-mcp.fly.dev/mcp\"  \n}  \n  }  \n}  \n\\`\\`\\`  \n  \nRight now we're working with 6 tools, all read-only, no auth:  \n  \n| Tool | What it does |  \n|------|-------------|  \n| \\`read\\_node\\` | Get a full entry by domain + slug |  \n| \\`search\\_knowledge\\` | Full-text search, filter by domain/confidence/type |  \n| \\`list\\_domains\\` | All 8 domains with entry counts and stats |  \n| \\`get\\_open\\_questions\\` | 140+ unanswered engineering questions |  \n| \\`get\\_entry\\_parameters\\` | 420+ quantitative parameters with units and confidence |  \n| \\`get\\_domain\\_stats\\` | Aggregate platform statistics |  \n  \nEach knowledge entry has a KEDL maturity level (100-500), confidence rating (1-5), quantitative parameters, open questions, cross-references, citations, and assumptions.  \n  \nThe knowledge base is designed so agents can do cross-domain consistency checking since the parameters in one domain should be consistent with parameters in other domains, but some aren't (deliberately). It's a good test case for multi-domain reasoning.  \n  \nSource: [https://github.com/YourLifewithAI/Lifewithai/tree/main/mcp](https://github.com/YourLifewithAI/Lifewithai/tree/main/mcp)  \nSite: [https://lifewithai.ai/mcp](https://lifewithai.ai/mcp)",
+        "author": "Herodont5915",
+        "subreddit": "mcp",
+        "created_utc": 1773083875,
+        "ups": 1,
+        "num_comments": 0,
+        "upvote_ratio": 1,
+        "permalink": "https://www.reddit.com/r/mcp/comments/1rp9qtn/mcp_server_with_6_readonly_tools_for_an_arcology/",
+        "url": "https://www.reddit.com/r/mcp/comments/1rp9qtn/mcp_server_with_6_readonly_tools_for_an_arcology/",
+        "is_self": true,
+        "post_hint": null,
+        "thumbnail": "self",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": null,
+        "media": null
+      },
+      "topComments": []
+    },
+    "author_avatar": {
+      "user": "Herodont5915",
+      "url": "https://i.redd.it/snoovatar/avatars/5f029251-845d-4ad0-8b9a-0c1d722b5a75.png",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/mcp-server-model-context-protocol-ai/runs/2026-03-09T19-23-14-483Z/avatars/Herodont5915.png",
+      "fetchedAt": "2026-03-09T19:23:52.721Z"
+    }
+  },
+  {
+    "id": "1rotzan",
+    "subreddit": "mcp",
+    "title": "One Prompt to Save 90% Context for Any MCP Server",
+    "selftext": "# Local Code Mode for MCP\n\nMost MCP servers just wrap CRUD JSON APIs into tools — I did it too with [scim-mcp](https://github.com/chenhunghan/scim-mcp) and [garmin-mcp-app](https://github.com/chenhunghan/garmin-mcp-app). It works, until you realize a tool call dumps 50KB+ into context.\n\n[MCP isn't dead](https://ejholmes.github.io/2026/02/28/mcp-is-dead-long-live-the-cli.html) — but we need to design MCP tools with the context window in mind.\n\nThat's what code mode does. The LLM writes a small script, the server runs it in a sandbox against the raw data, and only the script's compact output enters context.\n\nInspired by [Cloudflare's Code Mode](https://blog.cloudflare.com/code-mode-mcp/), but using a local sandboxed runtime instead of a remote one — no external dependencies, isolated from filesystem and network by default.\n\nWorks best with well-known APIs (SCIM, Kubernetes, GitHub, Stripe, Slack, AWS) because LLMs already know the schemas — they write the extraction script in one shot.\n\n# The Prompt to Save 65-99% Context\n\nCopy-paste this into any AI agent inside your MCP server project:\n\n    Add a \"code mode\" tool to this MCP server. Code mode lets the LLM write a processing\n    script that runs against large API responses in a sandboxed runtime — only the script's\n    stdout enters context instead of the full response.\n    \n    Steps:\n    \n    1. Read the codebase. Identify which tools return large responses.\n    \n    2. Pick a sandbox isolated from filesystem and network by default:\n       - TypeScript/JS: `quickjs-emscripten`\n       - Python: `RestrictedPython`\n       - Go: `goja`\n       - Rust: `boa_engine`\n    \n    3. Create an executor that injects `DATA` (raw response as string) into the sandbox,\n       runs the script, captures stdout.\n    \n    4. Create a code mode MCP tool accepting `command`, `code`, and optional `language`.\n    \n    5. Create a benchmark comparing before/after sizes across realistic scenarios.\n    \n    Walk me through your plan before implementing. Confirm each step.",
+    "author": "chenhunghan",
+    "created_utc": 1773042473,
+    "permalink": "https://www.reddit.com/r/mcp/comments/1rotzan/one_prompt_to_save_90_context_for_any_mcp_server/",
+    "url": "https://gist.github.com/chenhunghan/27ef2fece7329ac7b88f815ce0c0fbb1",
+    "domain": "gist.github.com",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 33,
+    "score": 33,
+    "num_comments": 10,
+    "upvote_ratio": 0.94,
+    "thumbnail": "https://external-preview.redd.it/OAXSl8SY6T3JK9MGQyKxkoYbqZ71HQRYXLeB8CV0NXg.png?width=140&amp;height=70&amp;auto=webp&amp;s=0bb984ff024de451ea8ab9603a0985fc6786fd8c",
+    "media": null,
+    "post_hint": "link",
+    "listing": "rising",
+    "viral_score": 7.866940116273797,
+    "detail": {
+      "post": {
+        "id": "1rotzan",
+        "title": "One Prompt to Save 90% Context for Any MCP Server",
+        "selftext": "# Local Code Mode for MCP\n\nMost MCP servers just wrap CRUD JSON APIs into tools — I did it too with [scim-mcp](https://github.com/chenhunghan/scim-mcp) and [garmin-mcp-app](https://github.com/chenhunghan/garmin-mcp-app). It works, until you realize a tool call dumps 50KB+ into context.\n\n[MCP isn't dead](https://ejholmes.github.io/2026/02/28/mcp-is-dead-long-live-the-cli.html) — but we need to design MCP tools with the context window in mind.\n\nThat's what code mode does. The LLM writes a small script, the server runs it in a sandbox against the raw data, and only the script's compact output enters context.\n\nInspired by [Cloudflare's Code Mode](https://blog.cloudflare.com/code-mode-mcp/), but using a local sandboxed runtime instead of a remote one — no external dependencies, isolated from filesystem and network by default.\n\nWorks best with well-known APIs (SCIM, Kubernetes, GitHub, Stripe, Slack, AWS) because LLMs already know the schemas — they write the extraction script in one shot.\n\n# The Prompt to Save 65-99% Context\n\nCopy-paste this into any AI agent inside your MCP server project:\n\n    Add a \"code mode\" tool to this MCP server. Code mode lets the LLM write a processing\n    script that runs against large API responses in a sandboxed runtime — only the script's\n    stdout enters context instead of the full response.\n    \n    Steps:\n    \n    1. Read the codebase. Identify which tools return large responses.\n    \n    2. Pick a sandbox isolated from filesystem and network by default:\n       - TypeScript/JS: `quickjs-emscripten`\n       - Python: `RestrictedPython`\n       - Go: `goja`\n       - Rust: `boa_engine`\n    \n    3. Create an executor that injects `DATA` (raw response as string) into the sandbox,\n       runs the script, captures stdout.\n    \n    4. Create a code mode MCP tool accepting `command`, `code`, and optional `language`.\n    \n    5. Create a benchmark comparing before/after sizes across realistic scenarios.\n    \n    Walk me through your plan before implementing. Confirm each step.",
+        "author": "chenhunghan",
+        "subreddit": "mcp",
+        "created_utc": 1773042473,
+        "ups": 33,
+        "num_comments": 10,
+        "upvote_ratio": 0.95,
+        "permalink": "https://www.reddit.com/r/mcp/comments/1rotzan/one_prompt_to_save_90_context_for_any_mcp_server/",
+        "url": "https://gist.github.com/chenhunghan/27ef2fece7329ac7b88f815ce0c0fbb1",
+        "is_self": false,
+        "post_hint": "link",
+        "thumbnail": "https://external-preview.redd.it/OAXSl8SY6T3JK9MGQyKxkoYbqZ71HQRYXLeB8CV0NXg.png?width=140&amp;height=70&amp;auto=webp&amp;s=0bb984ff024de451ea8ab9603a0985fc6786fd8c",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://external-preview.redd.it/OAXSl8SY6T3JK9MGQyKxkoYbqZ71HQRYXLeB8CV0NXg.png?auto=webp&amp;s=c7cbcc7517e2406e2326e7a1eb6bdb9022c27fda",
+                "width": 1280,
+                "height": 640
+              },
+              "resolutions": [
+                {
+                  "url": "https://external-preview.redd.it/OAXSl8SY6T3JK9MGQyKxkoYbqZ71HQRYXLeB8CV0NXg.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=796041decb8c1250cbc2f301331b72f7385b477d",
+                  "width": 108,
+                  "height": 54
+                },
+                {
+                  "url": "https://external-preview.redd.it/OAXSl8SY6T3JK9MGQyKxkoYbqZ71HQRYXLeB8CV0NXg.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=2e3562243f324d16bc6d9dd09adb1da4e0b100b5",
+                  "width": 216,
+                  "height": 108
+                },
+                {
+                  "url": "https://external-preview.redd.it/OAXSl8SY6T3JK9MGQyKxkoYbqZ71HQRYXLeB8CV0NXg.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=564e5f4bb6808064a14eb3965a6911671c3c9807",
+                  "width": 320,
+                  "height": 160
+                },
+                {
+                  "url": "https://external-preview.redd.it/OAXSl8SY6T3JK9MGQyKxkoYbqZ71HQRYXLeB8CV0NXg.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=0f53460a90493497883ab4cacbbb58e2acb464c4",
+                  "width": 640,
+                  "height": 320
+                },
+                {
+                  "url": "https://external-preview.redd.it/OAXSl8SY6T3JK9MGQyKxkoYbqZ71HQRYXLeB8CV0NXg.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=7a4f79362039959fa37eab208ae001245ccfe6e3",
+                  "width": 960,
+                  "height": 480
+                },
+                {
+                  "url": "https://external-preview.redd.it/OAXSl8SY6T3JK9MGQyKxkoYbqZ71HQRYXLeB8CV0NXg.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=912f966e123e94e32e7975fe8aebac89450a6b98",
+                  "width": 1080,
+                  "height": 540
+                }
+              ],
+              "variants": {},
+              "id": "OAXSl8SY6T3JK9MGQyKxkoYbqZ71HQRYXLeB8CV0NXg"
+            }
+          ],
+          "enabled": false
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "taylorwilsdon",
+          "ups": 2,
+          "body": "I actually just finished implementing a codemode variant into my most popular mcp server and it’s hard to argue with the mental model that for any server with significant tool sprawl and a good model making the calls.  Seems like a peek into the future."
+        },
+        {
+          "author": "chenhunghan",
+          "ups": 1,
+          "body": "If you prefer an interactive planning experience with detailed sandbox comparisons and benchmark templates, install the full agent skill:\n\n    npx skills add chenhunghan/code-mode-skill"
+        },
+        {
+          "author": "Loud-Option9008",
+          "ups": 1,
+          "body": "The \"run extraction script against raw data, only return stdout\" pattern is underrated. Most MCP implementations dump the full API response into context and then wonder why the model loses track of the actual task. Having the LLM write the filter before seeing the data is the right inversion.\n\nThe sandbox choice matters more than people think here. RestrictedPython has known escapes  it's fine for accidental misuse but not for adversarial input. quickjs-emscripten is the safer bet for JS."
+        }
+      ]
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "chenhunghan",
+      "url": "https://i.redd.it/snoovatar/avatars/8debf27a-d10a-4cf9-a3d2-3a659ab82930.png",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/mcp-server-model-context-protocol-ai/runs/2026-03-09T19-23-14-483Z/avatars/chenhunghan.png",
+      "fetchedAt": "2026-03-09T19:23:54.279Z"
+    }
+  },
+  {
+    "id": "1rmi3r2",
+    "subreddit": "mcp",
+    "title": "CodeGraphContext - An MCP server that converts your codebase into a graph database, enabling AI assistants and humans to retrieve precise, structured context.",
+    "selftext": "## CodeGraphContext- the go to solution for code indexing now got 1k stars🎉🎉...\n\nIt's an MCP server that understands a codebase as a **graph**, not chunks of text. Now has grown way beyond my expectations - both technically and in adoption.\n\n### Where it is now\n\n- **v0.2.6 released**\n- ~**1k GitHub stars**, ~**325 forks**\n- **50k+ downloads**\n- **75+ contributors, ~150 members community**\n- Used and praised by many devs building MCP tooling, agents, and IDE workflows\n- Expanded to 14 different Coding languages\n\n### What it actually does\n\nCodeGraphContext indexes a repo into a **repository-scoped symbol-level graph**:  files, functions, classes, calls, imports, inheritance and serves **precise, relationship-aware context** to AI tools via MCP.\n\nThat means:\n- Fast *“who calls what”, “who inherits what”, etc* queries\n- Minimal context (no token spam)\n- **Real-time updates** as code changes\n- Graph storage stays in **MBs, not GBs**\n\nIt’s infrastructure for **code understanding**, not just 'grep' search.\n\n### Ecosystem adoption\n\nIt’s now listed or used across:\nPulseMCP, MCPMarket, MCPHunt, Awesome MCP Servers, Glama, Skywork, Playbooks, Stacker News, and many more.\n\n- Python package→ https://pypi.org/project/codegraphcontext/\n- Website + cookbook → https://codegraphcontext.vercel.app/\n- GitHub Repo → https://github.com/CodeGraphContext/CodeGraphContext\n- Docs → https://codegraphcontext.github.io/\n- Our Discord Server → https://discord.gg/dR4QY32uYQ \n\nThis isn’t a VS Code trick or a RAG wrapper- it’s meant to sit  \n**between large repositories and humans/AI systems** as shared infrastructure.\n\nHappy to hear feedback, skepticism, comparisons, or ideas from folks building MCP servers or dev tooling.\n\nOriginal post (for context):  \nhttps://www.reddit.com/r/mcp/comments/1o22gc5/i_built_codegraphcontext_an_mcp_server_that/",
+    "author": "Desperate-Ad-9679",
+    "created_utc": 1772813331,
+    "permalink": "https://www.reddit.com/r/mcp/comments/1rmi3r2/codegraphcontext_an_mcp_server_that_converts_your/",
+    "url": "https://www.reddit.com/gallery/1rmi3r2",
+    "domain": "reddit.com",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 155,
+    "score": 155,
+    "num_comments": 56,
+    "upvote_ratio": 0.99,
+    "thumbnail": "https://preview.redd.it/lcgmbe658gng1.png?width=140&amp;height=61&amp;auto=webp&amp;s=ccf605e268e77099f0ab5a68584d7cfcdc838009",
+    "media": null,
+    "post_hint": null,
+    "listing": "top:week",
+    "viral_score": 5.52363212693702,
+    "detail": {
+      "post": {
+        "id": "1rmi3r2",
+        "title": "CodeGraphContext - An MCP server that converts your codebase into a graph database, enabling AI assistants and humans to retrieve precise, structured context.",
+        "selftext": "## CodeGraphContext- the go to solution for code indexing now got 1k stars🎉🎉...\n\nIt's an MCP server that understands a codebase as a **graph**, not chunks of text. Now has grown way beyond my expectations - both technically and in adoption.\n\n### Where it is now\n\n- **v0.2.6 released**\n- ~**1k GitHub stars**, ~**325 forks**\n- **50k+ downloads**\n- **75+ contributors, ~150 members community**\n- Used and praised by many devs building MCP tooling, agents, and IDE workflows\n- Expanded to 14 different Coding languages\n\n### What it actually does\n\nCodeGraphContext indexes a repo into a **repository-scoped symbol-level graph**:  files, functions, classes, calls, imports, inheritance and serves **precise, relationship-aware context** to AI tools via MCP.\n\nThat means:\n- Fast *“who calls what”, “who inherits what”, etc* queries\n- Minimal context (no token spam)\n- **Real-time updates** as code changes\n- Graph storage stays in **MBs, not GBs**\n\nIt’s infrastructure for **code understanding**, not just 'grep' search.\n\n### Ecosystem adoption\n\nIt’s now listed or used across:\nPulseMCP, MCPMarket, MCPHunt, Awesome MCP Servers, Glama, Skywork, Playbooks, Stacker News, and many more.\n\n- Python package→ https://pypi.org/project/codegraphcontext/\n- Website + cookbook → https://codegraphcontext.vercel.app/\n- GitHub Repo → https://github.com/CodeGraphContext/CodeGraphContext\n- Docs → https://codegraphcontext.github.io/\n- Our Discord Server → https://discord.gg/dR4QY32uYQ \n\nThis isn’t a VS Code trick or a RAG wrapper- it’s meant to sit  \n**between large repositories and humans/AI systems** as shared infrastructure.\n\nHappy to hear feedback, skepticism, comparisons, or ideas from folks building MCP servers or dev tooling.\n\nOriginal post (for context):  \nhttps://www.reddit.com/r/mcp/comments/1o22gc5/i_built_codegraphcontext_an_mcp_server_that/",
+        "author": "Desperate-Ad-9679",
+        "subreddit": "mcp",
+        "created_utc": 1772813331,
+        "ups": 159,
+        "num_comments": 56,
+        "upvote_ratio": 0.99,
+        "permalink": "https://www.reddit.com/r/mcp/comments/1rmi3r2/codegraphcontext_an_mcp_server_that_converts_your/",
+        "url": "https://www.reddit.com/gallery/1rmi3r2",
+        "is_self": false,
+        "post_hint": null,
+        "thumbnail": "https://preview.redd.it/lcgmbe658gng1.png?width=140&amp;height=61&amp;auto=webp&amp;s=ccf605e268e77099f0ab5a68584d7cfcdc838009",
+        "is_gallery": true,
+        "gallery_data": {
+          "items": [
+            {
+              "media_id": "lcgmbe658gng1",
+              "id": 879740873
+            },
+            {
+              "media_id": "i19dw5658gng1",
+              "id": 879740874
+            },
+            {
+              "media_id": "es2sw4658gng1",
+              "id": 879740875
+            }
+          ]
+        },
+        "media_metadata": {
+          "i19dw5658gng1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 63,
+                "x": 108,
+                "u": "https://preview.redd.it/i19dw5658gng1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=e1f82e53bd8170b1b9dbba32f9f029103a43b43e"
+              },
+              {
+                "y": 126,
+                "x": 216,
+                "u": "https://preview.redd.it/i19dw5658gng1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=af8c6fc4d7d0b91f87fb9db30f9400782ea323a1"
+              },
+              {
+                "y": 187,
+                "x": 320,
+                "u": "https://preview.redd.it/i19dw5658gng1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=bc50aa8c47392c0e3421f6b82631906b530c07d6"
+              },
+              {
+                "y": 375,
+                "x": 640,
+                "u": "https://preview.redd.it/i19dw5658gng1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=3afc903a5263f469598f639bd62bde2e6427b185"
+              },
+              {
+                "y": 562,
+                "x": 960,
+                "u": "https://preview.redd.it/i19dw5658gng1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=1d69f6881a829121e50e1468f2cd248d2f262192"
+              },
+              {
+                "y": 633,
+                "x": 1080,
+                "u": "https://preview.redd.it/i19dw5658gng1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=ec226231f780eebf5d8d0d1e64949d99a395479f"
+              }
+            ],
+            "s": {
+              "y": 653,
+              "x": 1114,
+              "u": "https://preview.redd.it/i19dw5658gng1.png?width=1114&amp;format=png&amp;auto=webp&amp;s=0852c7fb792c6d652ab8fa379266205a74a845eb"
+            },
+            "id": "i19dw5658gng1"
+          },
+          "es2sw4658gng1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 58,
+                "x": 108,
+                "u": "https://preview.redd.it/es2sw4658gng1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=31fa3f30374d598841dc0184eae66f6e8c2aee83"
+              },
+              {
+                "y": 117,
+                "x": 216,
+                "u": "https://preview.redd.it/es2sw4658gng1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=81cc2ff5659c415276c9edc866a10330443f3ac1"
+              },
+              {
+                "y": 173,
+                "x": 320,
+                "u": "https://preview.redd.it/es2sw4658gng1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=65a9b77fdc930e10d0dbd37c500a25e663693b74"
+              },
+              {
+                "y": 346,
+                "x": 640,
+                "u": "https://preview.redd.it/es2sw4658gng1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=8baecf8a10b64a1e76db7a9395130abede3f4134"
+              },
+              {
+                "y": 520,
+                "x": 960,
+                "u": "https://preview.redd.it/es2sw4658gng1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=e55110fc71649e85c62319a072ce1e491f5f6944"
+              }
+            ],
+            "s": {
+              "y": 584,
+              "x": 1078,
+              "u": "https://preview.redd.it/es2sw4658gng1.png?width=1078&amp;format=png&amp;auto=webp&amp;s=31510b5995b520f69b12afc5d89c0e4d310d4260"
+            },
+            "id": "es2sw4658gng1"
+          },
+          "lcgmbe658gng1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 47,
+                "x": 108,
+                "u": "https://preview.redd.it/lcgmbe658gng1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=6c8b749d574605d061b78596bfbe5ffded3e8273"
+              },
+              {
+                "y": 94,
+                "x": 216,
+                "u": "https://preview.redd.it/lcgmbe658gng1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=3654cd7b9e837493488c32e3023cc745e113b3eb"
+              },
+              {
+                "y": 139,
+                "x": 320,
+                "u": "https://preview.redd.it/lcgmbe658gng1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=2a80f7fea44c4211edcfbe5e43826dd0fb27befd"
+              },
+              {
+                "y": 279,
+                "x": 640,
+                "u": "https://preview.redd.it/lcgmbe658gng1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=b14277d081811dc62084a55e399c43fb8a27e8b5"
+              },
+              {
+                "y": 418,
+                "x": 960,
+                "u": "https://preview.redd.it/lcgmbe658gng1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=abf0a915fcc549adc5492ca98d69fd74020e6b1e"
+              },
+              {
+                "y": 471,
+                "x": 1080,
+                "u": "https://preview.redd.it/lcgmbe658gng1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=a87a2631ca8c7fad22b4b9626ca1075f0e33e8cd"
+              }
+            ],
+            "s": {
+              "y": 816,
+              "x": 1870,
+              "u": "https://preview.redd.it/lcgmbe658gng1.png?width=1870&amp;format=png&amp;auto=webp&amp;s=9abaefa1f161e8987b655d708391698efe4ebfb4"
+            },
+            "id": "lcgmbe658gng1"
+          }
+        },
+        "preview": null,
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "BC_MARO",
+          "ups": 8,
+          "body": "Graph-based indexing is the right move for big repos. Can you export the graph so other tooling can cache it instead of rebuilding per client?"
+        },
+        {
+          "author": "ShagBuddy",
+          "ups": 5,
+          "body": "Nice update!  Just launched a new big update myself.  You guys forced me to up my game. 😁\n\nhttps://github.com/GlitterKill/sdl-mcp\n\nCodegraph relationships + semantic relationships + living index + Iris Gate (token saving ladder) = almost feels like magic.  The next update WILL feel like magic, though. 😉"
+        },
+        {
+          "author": "maraudingguard",
+          "ups": 3,
+          "body": "You need multiple of these: context, code, knowledge, entity, data, dependency, constraints, ontology, neurosymbolic, etc. These are needed because it's not just about code, we're not even the ones creating the code, so you need to ground the system. "
+        }
+      ]
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "Desperate-Ad-9679",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_6.png",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/mcp-server-model-context-protocol-ai/runs/2026-03-09T19-23-14-483Z/avatars/Desperate-Ad-9679.png",
+      "fetchedAt": "2026-03-09T19:23:55.855Z"
+    }
+  },
+  {
+    "id": "1rp6q31",
+    "subreddit": "mcp",
+    "title": "CodeGraphContext (An MCP server that indexes local code into a graph database) now has a website playground for experiments",
+    "selftext": "Hey everyone!\n\nI have been developing **CodeGraphContext**, an open-source MCP server transforming code into a symbol-level code graph, as opposed to text-based code analysis.\n\nThis means that AI agents won’t be sending entire code blocks to the model, but can retrieve context via: function calls, imported modules, class inheritance, file dependencies etc.\n\nThis allows AI agents (and humans!) to better grasp how code is internally connected.\n\n# What it does\n\nCodeGraphContext analyzes a code repository, generating a code graph of: **files, functions, classes, modules** and their **relationships**, etc.\n\nAI agents can then query this graph to retrieve only the relevant context, reducing hallucinations.\n\n# Playground Demo on [website](https://codegraphcontext.vercel.app/)\n\nI've also added a playground demo that lets you play with small repos directly. You can load a project from: a local code folder, a GitHub repo, a GitLab repo\n\nEverything runs on the local client browser. For larger repos, it’s recommended to get the full version from pip or Docker.\n\nAdditionally, the playground lets you visually explore code links and relationships. I’m also adding support for architecture diagrams and chatting with the codebase.\n\nStatus so far- \n⭐ ~1.5k GitHub stars \n🍴 350+ forks \n📦 100k+ downloads combined\n\nIf you’re building AI dev tooling, MCP servers, or code intelligence systems, I’d love your feedback.\n\nRepo: [https://github.com/CodeGraphContext/CodeGraphContext](https://github.com/CodeGraphContext/CodeGraphContext)",
+    "author": "Desperate-Ad-9679",
+    "created_utc": 1773077522,
+    "permalink": "https://www.reddit.com/r/mcp/comments/1rp6q31/codegraphcontext_an_mcp_server_that_indexes_local/",
+    "url": "https://v.redd.it/lr0nycer12og1",
+    "domain": "v.redd.it",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 5,
+    "score": 5,
+    "num_comments": 0,
+    "upvote_ratio": 0.78,
+    "thumbnail": "https://external-preview.redd.it/dHJkNTVsZnIxMm9nMVaoblXC-tJL5I8ktWm1OeZlUPcMvJe74ENettpnyY8U.png?width=140&amp;height=78&amp;format=jpg&amp;auto=webp&amp;s=dd945958399f3329c52672b0b7163029c07e180d",
+    "media": {
+      "reddit_video": {
+        "bitrate_kbps": 1200,
+        "fallback_url": "https://v.redd.it/lr0nycer12og1/CMAF_480.mp4?source=fallback",
+        "has_audio": true,
+        "height": 480,
+        "width": 852,
+        "scrubber_media_url": "https://v.redd.it/lr0nycer12og1/CMAF_96.mp4",
+        "dash_url": "https://v.redd.it/lr0nycer12og1/DASHPlaylist.mpd?a=1775676202%2CNzU1YzE5ODI5Zjc2YzNhNThlZTBlMWY1NzgyZWVjYjBkZTI3ZDE0NGY2MmExOTA4Yjc1YWNiM2RlMGM0NDNlMQ%3D%3D&amp;v=1&amp;f=sd",
+        "duration": 44,
+        "hls_url": "https://v.redd.it/lr0nycer12og1/HLSPlaylist.m3u8?a=1775676202%2COGM0OWQ5ZDE5MGI5MGMzNDYzODljOWFjZTE2NzE2NzRjNzdhNmVhMjliYzBjMzljNDgyMjE1Njg4MTNhYTdhNQ%3D%3D&amp;v=1&amp;f=sd",
+        "is_gif": false,
+        "transcoding_status": "completed"
+      }
+    },
+    "post_hint": "hosted:video",
+    "listing": "hot",
+    "viral_score": 2.496242067331249,
+    "detail": {
+      "post": {
+        "id": "1rp6q31",
+        "title": "CodeGraphContext (An MCP server that indexes local code into a graph database) now has a website playground for experiments",
+        "selftext": "Hey everyone!\n\nI have been developing **CodeGraphContext**, an open-source MCP server transforming code into a symbol-level code graph, as opposed to text-based code analysis.\n\nThis means that AI agents won’t be sending entire code blocks to the model, but can retrieve context via: function calls, imported modules, class inheritance, file dependencies etc.\n\nThis allows AI agents (and humans!) to better grasp how code is internally connected.\n\n# What it does\n\nCodeGraphContext analyzes a code repository, generating a code graph of: **files, functions, classes, modules** and their **relationships**, etc.\n\nAI agents can then query this graph to retrieve only the relevant context, reducing hallucinations.\n\n# Playground Demo on [website](https://codegraphcontext.vercel.app/)\n\nI've also added a playground demo that lets you play with small repos directly. You can load a project from: a local code folder, a GitHub repo, a GitLab repo\n\nEverything runs on the local client browser. For larger repos, it’s recommended to get the full version from pip or Docker.\n\nAdditionally, the playground lets you visually explore code links and relationships. I’m also adding support for architecture diagrams and chatting with the codebase.\n\nStatus so far- \n⭐ ~1.5k GitHub stars \n🍴 350+ forks \n📦 100k+ downloads combined\n\nIf you’re building AI dev tooling, MCP servers, or code intelligence systems, I’d love your feedback.\n\nRepo: [https://github.com/CodeGraphContext/CodeGraphContext](https://github.com/CodeGraphContext/CodeGraphContext)",
+        "author": "Desperate-Ad-9679",
+        "subreddit": "mcp",
+        "created_utc": 1773077522,
+        "ups": 5,
+        "num_comments": 0,
+        "upvote_ratio": 0.86,
+        "permalink": "https://www.reddit.com/r/mcp/comments/1rp6q31/codegraphcontext_an_mcp_server_that_indexes_local/",
+        "url": "https://v.redd.it/lr0nycer12og1",
+        "is_self": false,
+        "post_hint": "hosted:video",
+        "thumbnail": "https://external-preview.redd.it/dHJkNTVsZnIxMm9nMVaoblXC-tJL5I8ktWm1OeZlUPcMvJe74ENettpnyY8U.png?width=140&amp;height=78&amp;format=jpg&amp;auto=webp&amp;s=dd945958399f3329c52672b0b7163029c07e180d",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://external-preview.redd.it/dHJkNTVsZnIxMm9nMVaoblXC-tJL5I8ktWm1OeZlUPcMvJe74ENettpnyY8U.png?format=pjpg&amp;auto=webp&amp;s=baedb87cdb1572aa096835a008b1c796e5afea20",
+                "width": 852,
+                "height": 480
+              },
+              "resolutions": [
+                {
+                  "url": "https://external-preview.redd.it/dHJkNTVsZnIxMm9nMVaoblXC-tJL5I8ktWm1OeZlUPcMvJe74ENettpnyY8U.png?width=108&amp;crop=smart&amp;format=pjpg&amp;auto=webp&amp;s=76e02dddbd962138f9fd706d20928d8de8dcab69",
+                  "width": 108,
+                  "height": 60
+                },
+                {
+                  "url": "https://external-preview.redd.it/dHJkNTVsZnIxMm9nMVaoblXC-tJL5I8ktWm1OeZlUPcMvJe74ENettpnyY8U.png?width=216&amp;crop=smart&amp;format=pjpg&amp;auto=webp&amp;s=e1d6f614bc7bb60f68a56e82247b2d5f7b881dda",
+                  "width": 216,
+                  "height": 121
+                },
+                {
+                  "url": "https://external-preview.redd.it/dHJkNTVsZnIxMm9nMVaoblXC-tJL5I8ktWm1OeZlUPcMvJe74ENettpnyY8U.png?width=320&amp;crop=smart&amp;format=pjpg&amp;auto=webp&amp;s=75c51a534720ce6fa7dfbdc7bbd1625379ca68bd",
+                  "width": 320,
+                  "height": 180
+                },
+                {
+                  "url": "https://external-preview.redd.it/dHJkNTVsZnIxMm9nMVaoblXC-tJL5I8ktWm1OeZlUPcMvJe74ENettpnyY8U.png?width=640&amp;crop=smart&amp;format=pjpg&amp;auto=webp&amp;s=8524a85308a74f6f1f5c59bbcb5ec22b34d1a061",
+                  "width": 640,
+                  "height": 360
+                }
+              ],
+              "variants": {},
+              "id": "dHJkNTVsZnIxMm9nMVaoblXC-tJL5I8ktWm1OeZlUPcMvJe74ENettpnyY8U"
+            }
+          ],
+          "enabled": false
+        },
+        "media": {
+          "reddit_video": {
+            "bitrate_kbps": 1200,
+            "fallback_url": "https://v.redd.it/lr0nycer12og1/CMAF_480.mp4?source=fallback",
+            "has_audio": true,
+            "height": 480,
+            "width": 852,
+            "scrubber_media_url": "https://v.redd.it/lr0nycer12og1/CMAF_96.mp4",
+            "dash_url": "https://v.redd.it/lr0nycer12og1/DASHPlaylist.mpd?a=1775676220%2CZDE3NzU4M2I3NGFkOTAxYWJkNjM4MzYyODdhZGM3MzhiNWQ4NTRlYWFhNmVjMGVjMTdmMzA0ODgwZmNiYmM5Yw%3D%3D&amp;v=1&amp;f=sd",
+            "duration": 44,
+            "hls_url": "https://v.redd.it/lr0nycer12og1/HLSPlaylist.m3u8?a=1775676220%2CYTk1Y2E4NGQyY2U1NzE2ZmVjMjQ4YTZiOWJmMmZlNWZiNzYyODVlYzEwNDdiYmM1MzM0N2JjYWE5MGM2OTY4OA%3D%3D&amp;v=1&amp;f=sd",
+            "is_gif": false,
+            "transcoding_status": "completed"
+          }
+        }
+      },
+      "topComments": []
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "Desperate-Ad-9679",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_6.png",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/mcp-server-model-context-protocol-ai/runs/2026-03-09T19-23-14-483Z/avatars/Desperate-Ad-9679.png",
+      "fetchedAt": "2026-03-09T19:23:55.855Z"
+    }
+  },
+  {
+    "id": "1rnidj7",
+    "subreddit": "mcp",
+    "title": "BREAKING CHANGE: Remove MCP server mode",
+    "selftext": "Google just removed the MCP mode for their new googleworkspace tool.\n\nThis made me sad. Perhaps lots of comments on the PR will change their mind.",
+    "author": "Obvious-Car-2016",
+    "created_utc": 1772910456,
+    "permalink": "https://www.reddit.com/r/mcp/comments/1rnidj7/breaking_change_remove_mcp_server_mode/",
+    "url": "https://github.com/googleworkspace/cli/pull/275",
+    "domain": "github.com",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 42,
+    "score": 42,
+    "num_comments": 17,
+    "upvote_ratio": 0.87,
+    "thumbnail": "https://external-preview.redd.it/RQsQiHAyuffyUhXboL46ewAMnRBO-MbdtEHc_aqpkV4.png?width=140&amp;height=70&amp;auto=webp&amp;s=20bba3c8bcb54d108254662cdd451008665562d1",
+    "media": null,
+    "post_hint": "link",
+    "listing": "top:week",
+    "viral_score": 1.920103305547492,
+    "detail": {
+      "post": {
+        "id": "1rnidj7",
+        "title": "BREAKING CHANGE: Remove MCP server mode",
+        "selftext": "Google just removed the MCP mode for their new googleworkspace tool.\n\nThis made me sad. Perhaps lots of comments on the PR will change their mind.",
+        "author": "Obvious-Car-2016",
+        "subreddit": "mcp",
+        "created_utc": 1772910456,
+        "ups": 46,
+        "num_comments": 17,
+        "upvote_ratio": 0.88,
+        "permalink": "https://www.reddit.com/r/mcp/comments/1rnidj7/breaking_change_remove_mcp_server_mode/",
+        "url": "https://github.com/googleworkspace/cli/pull/275",
+        "is_self": false,
+        "post_hint": "link",
+        "thumbnail": "https://external-preview.redd.it/RQsQiHAyuffyUhXboL46ewAMnRBO-MbdtEHc_aqpkV4.png?width=140&amp;height=70&amp;auto=webp&amp;s=20bba3c8bcb54d108254662cdd451008665562d1",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://external-preview.redd.it/RQsQiHAyuffyUhXboL46ewAMnRBO-MbdtEHc_aqpkV4.png?auto=webp&amp;s=8a8cdc913221d58696884a31635ebdf1225dae80",
+                "width": 1200,
+                "height": 600
+              },
+              "resolutions": [
+                {
+                  "url": "https://external-preview.redd.it/RQsQiHAyuffyUhXboL46ewAMnRBO-MbdtEHc_aqpkV4.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=885eb5af630d08d8d0115b1752bfbae594e140a6",
+                  "width": 108,
+                  "height": 54
+                },
+                {
+                  "url": "https://external-preview.redd.it/RQsQiHAyuffyUhXboL46ewAMnRBO-MbdtEHc_aqpkV4.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=b76454a87a1275092a728fb017bef572ee3b30d5",
+                  "width": 216,
+                  "height": 108
+                },
+                {
+                  "url": "https://external-preview.redd.it/RQsQiHAyuffyUhXboL46ewAMnRBO-MbdtEHc_aqpkV4.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=01f0b96fb2c75ae0578c429d51d2f0e6575a4f69",
+                  "width": 320,
+                  "height": 160
+                },
+                {
+                  "url": "https://external-preview.redd.it/RQsQiHAyuffyUhXboL46ewAMnRBO-MbdtEHc_aqpkV4.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=129fedd949bdc9b7a32fae67df83945662c6c972",
+                  "width": 640,
+                  "height": 320
+                },
+                {
+                  "url": "https://external-preview.redd.it/RQsQiHAyuffyUhXboL46ewAMnRBO-MbdtEHc_aqpkV4.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=4db9c11b5e55ddf04a7524be97cfac45e09cda75",
+                  "width": 960,
+                  "height": 480
+                },
+                {
+                  "url": "https://external-preview.redd.it/RQsQiHAyuffyUhXboL46ewAMnRBO-MbdtEHc_aqpkV4.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=7e33285e76aeb9d492899f529e4856024997f954",
+                  "width": 1080,
+                  "height": 540
+                }
+              ],
+              "variants": {},
+              "id": "RQsQiHAyuffyUhXboL46ewAMnRBO-MbdtEHc_aqpkV4"
+            }
+          ],
+          "enabled": false
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "Obvious-Car-2016",
+          "ups": 6,
+          "body": "Strange sub-reddit, why is this down-voted?"
+        },
+        {
+          "author": "ticktockbent",
+          "ups": 3,
+          "body": "I wonder why they're removing it."
+        },
+        {
+          "author": "PhilipM33",
+          "ups": 2,
+          "body": "Is it because of their new CLI thing?"
+        }
+      ]
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "Obvious-Car-2016",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_5.png",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/mcp-server-model-context-protocol-ai/runs/2026-03-09T19-23-14-483Z/avatars/Obvious-Car-2016.png",
+      "fetchedAt": "2026-03-09T19:23:57.447Z"
+    }
+  },
+  {
+    "id": "1rmq4ww",
+    "subreddit": "mcp",
+    "title": "I built an MCP server where me and my friend let our agents talk to each other so we don't have to",
+    "selftext": "I am working with my friend on a project and I noticed that a lot of work happens within our communication on discord, for example passing information, discussing solutions, etc. So I've thought why not just let the agents talk directly, they already do most of the work. And so I've spent several weeks over-engineering a way to do this.\n\nInitially I built an MCP server that lets agents communicate in a chatroom, with tools like send\\_message, catch\\_up\\_on\\_messages, join\\_room, etc. But I realized that agents are so bad at knowing when to pull messages, MCP is one-way only (you can't send messages from server to agent).\n\nThis led me down a rabbit-hole where I built a tmux solution (terminal session manager) to push messages to agents immediately when they arrive from other agents (instead of waiting on the agent to read messages).\n\nBasically this creates a real-time communication effect. You can see a demo of this happening live here: [https://github.com/stoops-io/stoops-cli](https://github.com/stoops-io/stoops-cli)\n\nSurprisingly, the communication works pretty smooth, and newer models especially understand that this is a chatroom and they don't spiral with each other with infinite messages.\n\nNow I haven't yet came across a really good use case for this real-time communcation pattern beyond this server solution. But I think something good can be built upon it.\n\nlmk what you think :3",
+    "author": "izzat5233",
+    "created_utc": 1772831079,
+    "permalink": "https://www.reddit.com/r/mcp/comments/1rmq4ww/i_built_an_mcp_server_where_me_and_my_friend_let/",
+    "url": "https://www.reddit.com/gallery/1rmq4ww",
+    "domain": "reddit.com",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 42,
+    "score": 42,
+    "num_comments": 17,
+    "upvote_ratio": 0.94,
+    "thumbnail": "https://preview.redd.it/vop43jiuohng1.png?width=140&amp;height=75&amp;auto=webp&amp;s=ac00bad7f2d979c77579d85c754f866996efc93a",
+    "media": null,
+    "post_hint": null,
+    "listing": "top:week",
+    "viral_score": 1.319301003881622,
+    "detail": {
+      "post": {
+        "id": "1rmq4ww",
+        "title": "I built an MCP server where me and my friend let our agents talk to each other so we don't have to",
+        "selftext": "I am working with my friend on a project and I noticed that a lot of work happens within our communication on discord, for example passing information, discussing solutions, etc. So I've thought why not just let the agents talk directly, they already do most of the work. And so I've spent several weeks over-engineering a way to do this.\n\nInitially I built an MCP server that lets agents communicate in a chatroom, with tools like send\\_message, catch\\_up\\_on\\_messages, join\\_room, etc. But I realized that agents are so bad at knowing when to pull messages, MCP is one-way only (you can't send messages from server to agent).\n\nThis led me down a rabbit-hole where I built a tmux solution (terminal session manager) to push messages to agents immediately when they arrive from other agents (instead of waiting on the agent to read messages).\n\nBasically this creates a real-time communication effect. You can see a demo of this happening live here: [https://github.com/stoops-io/stoops-cli](https://github.com/stoops-io/stoops-cli)\n\nSurprisingly, the communication works pretty smooth, and newer models especially understand that this is a chatroom and they don't spiral with each other with infinite messages.\n\nNow I haven't yet came across a really good use case for this real-time communcation pattern beyond this server solution. But I think something good can be built upon it.\n\nlmk what you think :3",
+        "author": "izzat5233",
+        "subreddit": "mcp",
+        "created_utc": 1772831079,
+        "ups": 42,
+        "num_comments": 17,
+        "upvote_ratio": 0.94,
+        "permalink": "https://www.reddit.com/r/mcp/comments/1rmq4ww/i_built_an_mcp_server_where_me_and_my_friend_let/",
+        "url": "https://www.reddit.com/gallery/1rmq4ww",
+        "is_self": false,
+        "post_hint": null,
+        "thumbnail": "https://preview.redd.it/vop43jiuohng1.png?width=140&amp;height=75&amp;auto=webp&amp;s=ac00bad7f2d979c77579d85c754f866996efc93a",
+        "is_gallery": true,
+        "gallery_data": {
+          "items": [
+            {
+              "media_id": "vop43jiuohng1",
+              "id": 879939945
+            },
+            {
+              "media_id": "si064t5vohng1",
+              "id": 879939946
+            }
+          ]
+        },
+        "media_metadata": {
+          "vop43jiuohng1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 58,
+                "x": 108,
+                "u": "https://preview.redd.it/vop43jiuohng1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=44611eaad77f054bc5c04faf8601dff61021ef04"
+              },
+              {
+                "y": 117,
+                "x": 216,
+                "u": "https://preview.redd.it/vop43jiuohng1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=8fa85e194eb2d309d65aa949f8ef5584ba1aa58f"
+              },
+              {
+                "y": 173,
+                "x": 320,
+                "u": "https://preview.redd.it/vop43jiuohng1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=657b0c23d55d73a5f4b408430fa26ea96059a94c"
+              },
+              {
+                "y": 347,
+                "x": 640,
+                "u": "https://preview.redd.it/vop43jiuohng1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=a788df9023e6000032f6ad856cfd964ae01a9ee9"
+              },
+              {
+                "y": 521,
+                "x": 960,
+                "u": "https://preview.redd.it/vop43jiuohng1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=9af9320b31f0e1c1f13e545a534e8a5815b7efe5"
+              },
+              {
+                "y": 586,
+                "x": 1080,
+                "u": "https://preview.redd.it/vop43jiuohng1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=f6aada1bf011ccf69226717029137026032c03e1"
+              }
+            ],
+            "s": {
+              "y": 1116,
+              "x": 2056,
+              "u": "https://preview.redd.it/vop43jiuohng1.png?width=2056&amp;format=png&amp;auto=webp&amp;s=a0bc44feb79dc726ecba40255e4a58bcb9da3419"
+            },
+            "id": "vop43jiuohng1"
+          },
+          "si064t5vohng1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 60,
+                "x": 108,
+                "u": "https://preview.redd.it/si064t5vohng1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=3a306bbe5b812a59e522a21f752adf691bd2291d"
+              },
+              {
+                "y": 121,
+                "x": 216,
+                "u": "https://preview.redd.it/si064t5vohng1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=46b0264c9f37fce648a79b55c5a9fb2e58a04eaa"
+              },
+              {
+                "y": 180,
+                "x": 320,
+                "u": "https://preview.redd.it/si064t5vohng1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=69097a6b339977a4daaafc41d397f84c2cd5fe93"
+              },
+              {
+                "y": 360,
+                "x": 640,
+                "u": "https://preview.redd.it/si064t5vohng1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=906afcf446d176ccd06781c7b311483afea78131"
+              },
+              {
+                "y": 540,
+                "x": 960,
+                "u": "https://preview.redd.it/si064t5vohng1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=8f8c891a84eab51de8583cf57c42d1e3bc2362aa"
+              },
+              {
+                "y": 607,
+                "x": 1080,
+                "u": "https://preview.redd.it/si064t5vohng1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=3af600e0d71d708722c6df079c092f4f3251de7d"
+              }
+            ],
+            "s": {
+              "y": 1080,
+              "x": 1920,
+              "u": "https://preview.redd.it/si064t5vohng1.png?width=1920&amp;format=png&amp;auto=webp&amp;s=32a66f04f451acbcbabdd4283821738d4d23ac9b"
+            },
+            "id": "si064t5vohng1"
+          }
+        },
+        "preview": null,
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "Important_Storage123",
+          "ups": 3,
+          "body": "Autist lvl 1000"
+        },
+        {
+          "author": "izzat5233",
+          "ups": 2,
+          "body": "Please don't mind the DATABASE\\_URL secret I am sharing, its just for demos :P"
+        },
+        {
+          "author": "Baseradio",
+          "ups": 2,
+          "body": "Wtf? Is that title? Now we are not even talking? Then what eles we are doing? "
+        }
+      ]
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "izzat5233",
+      "url": "https://i.redd.it/snoovatar/avatars/7db2a4af-c6d0-44a5-9a16-b7dc4aa0e382.png",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/mcp-server-model-context-protocol-ai/runs/2026-03-09T19-23-14-483Z/avatars/izzat5233.png",
+      "fetchedAt": "2026-03-09T19:23:59.312Z"
+    }
+  },
+  {
+    "id": "1rp4hyv",
+    "subreddit": "mcp",
+    "title": "Open-source MCP server for Overleaf (read LaTeX projects directly with AI)",
+    "selftext": "Hi everyone,\n\nI built an open-source **MCP server for Overleaf** that allows AI assistants (Claude, Cursor, VS Code MCP clients, etc.) to directly interact with Overleaf projects.\n\nInstead of copy-pasting LaTeX files manually, the AI can access your project structure and read files programmatically.\n\n# What it can do\n\n* List files in an Overleaf project\n* Read `.tex` files\n* Let AI assistants understand paper structure\n* Works with MCP clients like Claude Desktop, Cursor, etc.\n\n# Repo\n\nGitHub:  \n[https://github.com/YounesBensafia/overleaf-mcp-server](https://github.com/YounesBensafia/overleaf-mcp-server)\n\nIf you're using **Overleaf + AI tools**, I’d love feedback or contributions\n\nStars are also appreciated!",
+    "author": "younesbensafia7",
+    "created_utc": 1773072819,
+    "permalink": "https://www.reddit.com/r/mcp/comments/1rp4hyv/opensource_mcp_server_for_overleaf_read_latex/",
+    "url": "https://www.reddit.com/r/mcp/comments/1rp4hyv/opensource_mcp_server_for_overleaf_read_latex/",
+    "domain": "self.mcp",
+    "is_self": true,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 1,
+    "score": 1,
+    "num_comments": 1,
+    "upvote_ratio": 1,
+    "thumbnail": "self",
+    "media": null,
+    "post_hint": null,
+    "listing": "rising",
+    "viral_score": 1.155101964150373,
+    "detail": {
+      "post": {
+        "id": "1rp4hyv",
+        "title": "Open-source MCP server for Overleaf (read LaTeX projects directly with AI)",
+        "selftext": "Hi everyone,\n\nI built an open-source **MCP server for Overleaf** that allows AI assistants (Claude, Cursor, VS Code MCP clients, etc.) to directly interact with Overleaf projects.\n\nInstead of copy-pasting LaTeX files manually, the AI can access your project structure and read files programmatically.\n\n# What it can do\n\n* List files in an Overleaf project\n* Read `.tex` files\n* Let AI assistants understand paper structure\n* Works with MCP clients like Claude Desktop, Cursor, etc.\n\n# Repo\n\nGitHub:  \n[https://github.com/YounesBensafia/overleaf-mcp-server](https://github.com/YounesBensafia/overleaf-mcp-server)\n\nIf you're using **Overleaf + AI tools**, I’d love feedback or contributions\n\nStars are also appreciated!",
+        "author": "younesbensafia7",
+        "subreddit": "mcp",
+        "created_utc": 1773072819,
+        "ups": 1,
+        "num_comments": 1,
+        "upvote_ratio": 1,
+        "permalink": "https://www.reddit.com/r/mcp/comments/1rp4hyv/opensource_mcp_server_for_overleaf_read_latex/",
+        "url": "https://www.reddit.com/r/mcp/comments/1rp4hyv/opensource_mcp_server_for_overleaf_read_latex/",
+        "is_self": true,
+        "post_hint": null,
+        "thumbnail": "self",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": null,
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "Li3Ch33s3cak3",
+          "ups": 1,
+          "body": "Open-source MCP for Overleaf would be killer if someone built it properly - last I checked the LaTeX parsing ones on GitHub are half-baked and crash on big docs, anyone got a working fork worth trying"
+        }
+      ]
+    },
+    "author_avatar": {
+      "user": "younesbensafia7",
+      "url": "https://i.redd.it/snoovatar/avatars/dd9ed1a4-44a3-42b2-aa75-3b68affefc9f.png",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/mcp-server-model-context-protocol-ai/runs/2026-03-09T19-23-14-483Z/avatars/younesbensafia7.png",
+      "fetchedAt": "2026-03-09T19:24:01.042Z"
+    }
+  },
+  {
+    "id": "1rnahdh",
+    "subreddit": "mcp",
+    "title": "Built an MCP server to replace copy-pasting context into every AI conversation",
+    "selftext": "I built this to solve a problem I kept running into.\n\nI was consistently hunting down the right sources to export them as PDFs to pull into conversations or (if building out a frontend component) screenshotting UIs I liked to drag into conversations. And even if I did add things as Project files, the details would eventually change, and I'd need to re-upload or end up referencing outdated content.\n\nA few specific things that pushed me to build this:\n\n* **Cold LinkedIn outreach:** I want my AI to write in my tone and pull principles from messages that actually landed, not re-explain my voice every session or maintain a running Google Doc to keep it current.\n* **UI design references:** I screenshot apps with great UX and want Claude Code to immediately have those when I'm building. No file attachments needed.\n* **Async Slack answers:** Hearing from friends that are maintaining manual knowledge bases to have Claude/ChatGPT draft Slack responses.\n\nSo I built a persistent knowledge store that connects to your AI through MCP. Allowing you to point at context once and your AI knows it everywhere.\n\n**How it works:**\n\n* [**MCP server**](https://github.com/obris-dev/obris-mcp): works with Claude Desktop, Claude Code, ChatGPT, or any MCP-compatible client. You can also save key insights or learning back to Obris directly from your AI conversation.\n* [**CLI**](https://github.com/obris-dev/obris-cli): for automated capture and scripting (used to grab the Linear screenshot in the video)\n* [**Chrome extension**](https://chromewebstore.google.com/detail/obris-%E2%80%93-save-key-content/kkkiblfabiopcmoghfcjffiobjlppfdp): save any webpage or key text section, or live-sync any Google Doc or Sheet to a topic in one click\n\n**In the video:** I capture Linear's hero page with the CLI, then ask Claude Desktop to build an Obris landing page in Linear's style, pulling my brand guidelines and logos already saved in the tool. No file attachments, no copy-paste.\n\nI'd love feedback, and curious how other people are solving the context portability problem. Happy to open up the core if people are interested in self hosting as well.\n\n[registry.modelcontextprotocol.io/?q=obris](https://registry.modelcontextprotocol.io/?q=obris)",
+    "author": "IHaveARedditName",
+    "created_utc": 1772891466,
+    "permalink": "https://www.reddit.com/r/mcp/comments/1rnahdh/built_an_mcp_server_to_replace_copypasting/",
+    "url": "https://v.redd.it/jwlnd4k6omng1",
+    "domain": "v.redd.it",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 30,
+    "score": 30,
+    "num_comments": 6,
+    "upvote_ratio": 0.97,
+    "thumbnail": "https://external-preview.redd.it/bGp1enplbDZvbW5nMax1FjYu26EocvNCbmD5st20Ih0rv039pTw_G4-6Lv_f.png?width=140&amp;height=88&amp;format=jpg&amp;auto=webp&amp;s=fd835d1d242becc0a7186b0a3fd4b23d5df08e30",
+    "media": {
+      "reddit_video": {
+        "bitrate_kbps": 2400,
+        "fallback_url": "https://v.redd.it/jwlnd4k6omng1/CMAF_720.mp4?source=fallback",
+        "has_audio": false,
+        "height": 720,
+        "width": 1144,
+        "scrubber_media_url": "https://v.redd.it/jwlnd4k6omng1/CMAF_96.mp4",
+        "dash_url": "https://v.redd.it/jwlnd4k6omng1/DASHPlaylist.mpd?a=1775676199%2CMTZjZjZhYzA0ZDc1NWI5ZGU2MmYwZDFlN2I2Nzk2ZTdmZGY1MDg3ZTUwYzJhNGI4N2RlMjQ2NjlhOTk0MmU1MA%3D%3D&amp;v=1&amp;f=sd",
+        "duration": 53,
+        "hls_url": "https://v.redd.it/jwlnd4k6omng1/HLSPlaylist.m3u8?a=1775676199%2COTkxYjBjMTI5NzYyYjA5MzMyYjY1ODg1NzZiMjEzYTgyZGYwZGVmNDhlZGFjOWViNzRhMDJmMmU1MDJlYTI0OQ%3D%3D&amp;v=1&amp;f=sd",
+        "is_gif": false,
+        "transcoding_status": "completed"
+      }
+    },
+    "post_hint": "hosted:video",
+    "listing": "top:week",
+    "viral_score": 0.9086528720745725,
+    "detail": {
+      "post": {
+        "id": "1rnahdh",
+        "title": "Built an MCP server to replace copy-pasting context into every AI conversation",
+        "selftext": "I built this to solve a problem I kept running into.\n\nI was consistently hunting down the right sources to export them as PDFs to pull into conversations or (if building out a frontend component) screenshotting UIs I liked to drag into conversations. And even if I did add things as Project files, the details would eventually change, and I'd need to re-upload or end up referencing outdated content.\n\nA few specific things that pushed me to build this:\n\n* **Cold LinkedIn outreach:** I want my AI to write in my tone and pull principles from messages that actually landed, not re-explain my voice every session or maintain a running Google Doc to keep it current.\n* **UI design references:** I screenshot apps with great UX and want Claude Code to immediately have those when I'm building. No file attachments needed.\n* **Async Slack answers:** Hearing from friends that are maintaining manual knowledge bases to have Claude/ChatGPT draft Slack responses.\n\nSo I built a persistent knowledge store that connects to your AI through MCP. Allowing you to point at context once and your AI knows it everywhere.\n\n**How it works:**\n\n* [**MCP server**](https://github.com/obris-dev/obris-mcp): works with Claude Desktop, Claude Code, ChatGPT, or any MCP-compatible client. You can also save key insights or learning back to Obris directly from your AI conversation.\n* [**CLI**](https://github.com/obris-dev/obris-cli): for automated capture and scripting (used to grab the Linear screenshot in the video)\n* [**Chrome extension**](https://chromewebstore.google.com/detail/obris-%E2%80%93-save-key-content/kkkiblfabiopcmoghfcjffiobjlppfdp): save any webpage or key text section, or live-sync any Google Doc or Sheet to a topic in one click\n\n**In the video:** I capture Linear's hero page with the CLI, then ask Claude Desktop to build an Obris landing page in Linear's style, pulling my brand guidelines and logos already saved in the tool. No file attachments, no copy-paste.\n\nI'd love feedback, and curious how other people are solving the context portability problem. Happy to open up the core if people are interested in self hosting as well.\n\n[registry.modelcontextprotocol.io/?q=obris](https://registry.modelcontextprotocol.io/?q=obris)",
+        "author": "IHaveARedditName",
+        "subreddit": "mcp",
+        "created_utc": 1772891466,
+        "ups": 29,
+        "num_comments": 6,
+        "upvote_ratio": 0.97,
+        "permalink": "https://www.reddit.com/r/mcp/comments/1rnahdh/built_an_mcp_server_to_replace_copypasting/",
+        "url": "https://v.redd.it/jwlnd4k6omng1",
+        "is_self": false,
+        "post_hint": "hosted:video",
+        "thumbnail": "https://external-preview.redd.it/bGp1enplbDZvbW5nMax1FjYu26EocvNCbmD5st20Ih0rv039pTw_G4-6Lv_f.png?width=140&amp;height=88&amp;format=jpg&amp;auto=webp&amp;s=fd835d1d242becc0a7186b0a3fd4b23d5df08e30",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://external-preview.redd.it/bGp1enplbDZvbW5nMax1FjYu26EocvNCbmD5st20Ih0rv039pTw_G4-6Lv_f.png?format=pjpg&amp;auto=webp&amp;s=869ee587bd658ca14a0e822861d2662501422c85",
+                "width": 1144,
+                "height": 720
+              },
+              "resolutions": [
+                {
+                  "url": "https://external-preview.redd.it/bGp1enplbDZvbW5nMax1FjYu26EocvNCbmD5st20Ih0rv039pTw_G4-6Lv_f.png?width=108&amp;crop=smart&amp;format=pjpg&amp;auto=webp&amp;s=f40f05d3cdb5c8cc6a596fde9e6dcd27740c3ef4",
+                  "width": 108,
+                  "height": 67
+                },
+                {
+                  "url": "https://external-preview.redd.it/bGp1enplbDZvbW5nMax1FjYu26EocvNCbmD5st20Ih0rv039pTw_G4-6Lv_f.png?width=216&amp;crop=smart&amp;format=pjpg&amp;auto=webp&amp;s=d2414decd4f1fe61e9810727c62c3c320c928e66",
+                  "width": 216,
+                  "height": 135
+                },
+                {
+                  "url": "https://external-preview.redd.it/bGp1enplbDZvbW5nMax1FjYu26EocvNCbmD5st20Ih0rv039pTw_G4-6Lv_f.png?width=320&amp;crop=smart&amp;format=pjpg&amp;auto=webp&amp;s=54a954a18d6175cb1d2e40b3b608b19fef374e0a",
+                  "width": 320,
+                  "height": 201
+                },
+                {
+                  "url": "https://external-preview.redd.it/bGp1enplbDZvbW5nMax1FjYu26EocvNCbmD5st20Ih0rv039pTw_G4-6Lv_f.png?width=640&amp;crop=smart&amp;format=pjpg&amp;auto=webp&amp;s=07ae660efecea6c6e87207ae6fb970cb03b82657",
+                  "width": 640,
+                  "height": 402
+                },
+                {
+                  "url": "https://external-preview.redd.it/bGp1enplbDZvbW5nMax1FjYu26EocvNCbmD5st20Ih0rv039pTw_G4-6Lv_f.png?width=960&amp;crop=smart&amp;format=pjpg&amp;auto=webp&amp;s=dd3a473269f339719a4f5a997ca20640b647b2cb",
+                  "width": 960,
+                  "height": 604
+                },
+                {
+                  "url": "https://external-preview.redd.it/bGp1enplbDZvbW5nMax1FjYu26EocvNCbmD5st20Ih0rv039pTw_G4-6Lv_f.png?width=1080&amp;crop=smart&amp;format=pjpg&amp;auto=webp&amp;s=9049942a78180ddac5bc732b7ed63ed75687732e",
+                  "width": 1080,
+                  "height": 679
+                }
+              ],
+              "variants": {},
+              "id": "bGp1enplbDZvbW5nMax1FjYu26EocvNCbmD5st20Ih0rv039pTw_G4-6Lv_f"
+            }
+          ],
+          "enabled": false
+        },
+        "media": {
+          "reddit_video": {
+            "bitrate_kbps": 2400,
+            "fallback_url": "https://v.redd.it/jwlnd4k6omng1/CMAF_720.mp4?source=fallback",
+            "has_audio": false,
+            "height": 720,
+            "width": 1144,
+            "scrubber_media_url": "https://v.redd.it/jwlnd4k6omng1/CMAF_96.mp4",
+            "dash_url": "https://v.redd.it/jwlnd4k6omng1/DASHPlaylist.mpd?a=1775676227%2CNDEzN2RhMjIwOGZkZTI1Y2Q2M2I1MmQ4YmYwNTVmZTE0NzY5N2RmMzUyNjc1NWNhNGQ4MWZlMGNiMDMzYjRlZQ%3D%3D&amp;v=1&amp;f=sd",
+            "duration": 53,
+            "hls_url": "https://v.redd.it/jwlnd4k6omng1/HLSPlaylist.m3u8?a=1775676227%2CMDNhOWI0ZTczYWRlNjA0NmIyY2FmNGU0ODgyYTEyZjc5YzY2NTc1NTcwOWU4ZGIxNzU0MDNjYmFjNDc3MmJiOA%3D%3D&amp;v=1&amp;f=sd",
+            "is_gif": false,
+            "transcoding_status": "completed"
+          }
+        }
+      },
+      "topComments": [
+        {
+          "author": "BC_MARO",
+          "ups": 2,
+          "body": "the slack use case is the one that sticks out - maintaining a manual knowledge base just to give an AI your communication style is exactly the workflow that should disappear. curious how you are handling context freshness when the source changes vs. just snapshots?"
+        },
+        {
+          "author": "p_235615",
+          "ups": 1,
+          "body": "Why not use instead something like open-webui - you add all your AI APIs you want or even local stuff, you add all the MCP, memories, knowledge base, RAG, anything... and just switch the model what is getting called instead of switching windows and copy-paste stuff around ?"
+        }
+      ]
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "IHaveARedditName",
+      "url": "https://i.redd.it/snoovatar/avatars/d4b350b9-4a56-4477-833e-4dd2c9673189.png",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/mcp-server-model-context-protocol-ai/runs/2026-03-09T19-23-14-483Z/avatars/IHaveARedditName.png",
+      "fetchedAt": "2026-03-09T19:24:02.706Z"
+    }
+  },
+  {
+    "id": "1rnktve",
+    "subreddit": "mcp",
+    "title": "I built an open-source MCP server for LinkedIn — search people, scrape profiles, browse jobs, and more",
+    "selftext": "https://reddit.com/link/1rnktve/video/4qhkgq53bung1/player\n\n  \n  \nHey everyone 👋\n\nI've been playing around with MCP lately and decided to build my first server — one that connects to LinkedIn.\n\nBasically, it lets your AI assistant search for people, companies, and jobs on LinkedIn, and scrape full profiles with all the details (experience, education, contact info, etc.). Everything comes back as structured JSON so the LLM can actually make sense of it.\n\nUnder the hood it uses Patchright (undetected Playwright fork) for browser automation and FastMCP for the MCP layer. You log in to LinkedIn once, the session is saved locally, and you're good to go. Works with stdio for Claude Desktop/Cursor or HTTP transport if you need it.\n\nThis is my first MCP project so I'm sure there's a lot I can improve. Would love to hear any feedback — what you'd change, what you'd add, or if something feels off. Contributions are also very welcome!\n\n[https://github.com/eliasbiondo/linkedin-mcp-server](https://github.com/eliasbiondo/linkedin-mcp-server)\n\n",
+    "author": "Consistent-Arm-3878",
+    "created_utc": 1772916241,
+    "permalink": "https://www.reddit.com/r/mcp/comments/1rnktve/i_built_an_opensource_mcp_server_for_linkedin/",
+    "url": "https://www.reddit.com/r/mcp/comments/1rnktve/i_built_an_opensource_mcp_server_for_linkedin/",
+    "domain": "self.mcp",
+    "is_self": true,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 21,
+    "score": 21,
+    "num_comments": 7,
+    "upvote_ratio": 1,
+    "thumbnail": "https://external-preview.redd.it/jGUbWqHMh77Hb7tuO0QPpwfCPzjHi0sOJV5OF9Phm08.png?width=140&amp;height=70&amp;auto=webp&amp;s=7da7d1f2229f0bed983fb0c73f9d9f374715b83a",
+    "media": null,
+    "post_hint": null,
+    "listing": "top:week",
+    "viral_score": 0.8724568750372059,
+    "detail": {
+      "post": {
+        "id": "1rnktve",
+        "title": "I built an open-source MCP server for LinkedIn — search people, scrape profiles, browse jobs, and more",
+        "selftext": "https://reddit.com/link/1rnktve/video/4qhkgq53bung1/player\n\n  \n  \nHey everyone 👋\n\nI've been playing around with MCP lately and decided to build my first server — one that connects to LinkedIn.\n\nBasically, it lets your AI assistant search for people, companies, and jobs on LinkedIn, and scrape full profiles with all the details (experience, education, contact info, etc.). Everything comes back as structured JSON so the LLM can actually make sense of it.\n\nUnder the hood it uses Patchright (undetected Playwright fork) for browser automation and FastMCP for the MCP layer. You log in to LinkedIn once, the session is saved locally, and you're good to go. Works with stdio for Claude Desktop/Cursor or HTTP transport if you need it.\n\nThis is my first MCP project so I'm sure there's a lot I can improve. Would love to hear any feedback — what you'd change, what you'd add, or if something feels off. Contributions are also very welcome!\n\n[https://github.com/eliasbiondo/linkedin-mcp-server](https://github.com/eliasbiondo/linkedin-mcp-server)\n\n",
+        "author": "Consistent-Arm-3878",
+        "subreddit": "mcp",
+        "created_utc": 1772916241,
+        "ups": 20,
+        "num_comments": 7,
+        "upvote_ratio": 0.96,
+        "permalink": "https://www.reddit.com/r/mcp/comments/1rnktve/i_built_an_opensource_mcp_server_for_linkedin/",
+        "url": "https://www.reddit.com/r/mcp/comments/1rnktve/i_built_an_opensource_mcp_server_for_linkedin/",
+        "is_self": true,
+        "post_hint": null,
+        "thumbnail": "https://external-preview.redd.it/jGUbWqHMh77Hb7tuO0QPpwfCPzjHi0sOJV5OF9Phm08.png?width=140&amp;height=70&amp;auto=webp&amp;s=7da7d1f2229f0bed983fb0c73f9d9f374715b83a",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": {
+          "4qhkgq53bung1": {
+            "status": "valid",
+            "e": "RedditVideo",
+            "dashUrl": "https://v.redd.it/link/1rnktve/asset/4qhkgq53bung1/DASHPlaylist.mpd?a=1775676229%2CMmVkMTc3M2Q3M2E1YjBiNDdhMTkxYTE0MjdhNGRhY2I2OGJlOWYyYmU2OWY4ZDQ5ODE3ZDQ3MjkyNDkzZTBmMg%3D%3D&amp;v=1&amp;f=sd",
+            "x": 1346,
+            "y": 1080,
+            "hlsUrl": "https://v.redd.it/link/1rnktve/asset/4qhkgq53bung1/HLSPlaylist.m3u8?a=1775676229%2CMTc3ZDVhYmQwMjY0NTE5OGI4NjliNDM1YzAwNmRkNTNiNWZjZjhhZDFlNzYyNDVkYjEzMzYxYjM5ZDJhYWQ3Yw%3D%3D&amp;v=1&amp;f=sd",
+            "id": "4qhkgq53bung1",
+            "isGif": false
+          }
+        },
+        "preview": null,
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "Double_Appearance741",
+          "ups": 3,
+          "body": "I think that Linkedin could block the account. Am I right?"
+        },
+        {
+          "author": "jftf",
+          "ups": 2,
+          "body": "Hypothetically could a user log in with an app you create and then authenticate to LinkedIn with this mcp?"
+        },
+        {
+          "author": "keinsaas-navigator",
+          "ups": 1,
+          "body": "nice will try it with our Navigator Platform: [https://app.keinsaas.com/mcp](https://app.keinsaas.com/mcp)"
+        }
+      ]
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "Consistent-Arm-3878",
+      "url": "https://i.redd.it/snoovatar/avatars/1e0201c2-68f2-429a-a5f0-51645822dcee.png",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/mcp-server-model-context-protocol-ai/runs/2026-03-09T19-23-14-483Z/avatars/Consistent-Arm-3878.png",
+      "fetchedAt": "2026-03-09T19:24:04.474Z"
+    }
+  }
+]

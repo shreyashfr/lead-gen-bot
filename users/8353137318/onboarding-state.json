@@ -1,0 +1,53 @@
+{
+  "step": 13,
+  "data": {
+    "name": "Karan",
+    "niche": "AutoCAD design",
+    "positioning": "AutoCAD Designer",
+    "audience_description": "Fellow students of mechanical engineering",
+    "audience_age_range": "19 to 25",
+    "audience_country": null,
+    "audience_fear": "Not getting a job",
+    "audience_aspiration": "They want a successful career",
+    "current_project": "Working at Bajaj Auto Limited on design engineering projects in the automobile sector.",
+    "origin_story": "I did diploma in mechanical engineering from government polytechnic beed and currently pursuing btech in mechanical engineering.\nI am struggling to get a payment raise so I am doing the job and btech simultaneously.",
+    "specific_milestones": [
+      "16,000 was my first payment",
+      "Payment raised to 18,000",
+      "Struggling to get a raise because of lacking higher education, which pushed me to pursue B.Tech"
+    ],
+    "hot_takes": [
+      "AI will not be replacing the job of a design engineer anytime soon.",
+      "I love doing my job."
+    ],
+    "voice_style": "Casual yet informative tone. I am a brief writer and I hate seeing vulgar content.",
+    "style_rules": {
+      "capitalization": "normal",
+      "em_dashes": "avoid",
+      "semicolons": "avoid",
+      "contractions": "flexible",
+      "sentence_length": "short",
+      "other_rules": [
+        "Use ellipses (...) a lot in sentences",
+        "Keep it brief and concise",
+        "No vulgar content"
+      ]
+    },
+    "posting_examples": [
+      "None yet"
+    ],
+    "platforms": [
+      "linkedin",
+      "twitter",
+      "instagram",
+      "threads",
+      "youtube"
+    ],
+    "already_posted_topics": [
+      "Nothing yet"
+    ],
+    "private_topics": [
+      "Don't mention about my age"
+    ]
+  }
+}

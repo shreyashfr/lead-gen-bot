@@ -39,16 +39,16 @@ Aim for variety across the 15 ideas:
 ```
 ## IDEAS REPORT — [Pillar Topic]
 
-**Pick 3-5 by replying with the numbers. e.g. "go with 1, 4, 7"**
+**Pick your favorites and format by replying with numbers and the format abbreviation. e.g. "1, LP" or "4, TH" (LP=LinkedIn Post, TH=Twitter Thread, XA=X Article, TW=Tweet, CA=Carousel)**
 
 ---
 
 **1. [Short idea title]**
 Hook: "[exact hook line]"
 Angle: [one sentence — what's the argument or story]
-Format: [LinkedIn post / Twitter thread / Carousel / Tweet]
-Story that fits: [which moment from Ayush's life anchors this]
+Story that fits: [which moment from the user's life anchors this]
 Why it works: [one sentence]
+Reference: [Insert exact Reddit or Twitter URL link of the scraped post inspiring this idea]
 
 ---
 

@@ -1,0 +1,33 @@
+{
+  "niche": "MCP Server Model Context Protocol AI",
+  "nicheSlug": "mcp-server-model-context-protocol-ai",
+  "runId": "2026-03-09T19-23-14-483Z",
+  "startedAt": "2026-03-09T19:23:14.483Z",
+  "keywords": [
+    "MCP Server Model Context Protocol AI"
+  ],
+  "mustInclude": [
+    "server",
+    "model",
+    "context",
+    "protocol"
+  ],
+  "search": "MCP Server Model Context Protocol AI",
+  "subAllowlist": null,
+  "config": {
+    "topN": 10,
+    "subLimit": 8,
+    "gapMs": 1200,
+    "limitPerListing": 25,
+    "time": "week",
+    "kinds": [
+      "top",
+      "hot",
+      "rising"
+    ],
+    "searchSort": "top",
+    "searchTime": null,
+    "minSubscribers": 0,
+    "sendCardsN": 5
+  }
+}

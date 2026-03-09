@@ -1,0 +1,52 @@
+[
+  {
+    "name": "iran",
+    "title": "Iran: Iranian discussion forum / message board",
+    "subscribers": 109821,
+    "over18": false,
+    "url": "https://www.reddit.com/r/iran/",
+    "discoveredBy": [
+      "Iran USA War"
+    ]
+  },
+  {
+    "name": "USIranWar",
+    "title": "USIranWar",
+    "subscribers": 3138,
+    "over18": false,
+    "url": "https://www.reddit.com/r/USIranWar/",
+    "discoveredBy": [
+      "Iran USA War"
+    ]
+  },
+  {
+    "name": "IranIsraelAlert",
+    "title": "Updates about the iran/israel war",
+    "subscribers": 235,
+    "over18": false,
+    "url": "https://www.reddit.com/r/IranIsraelAlert/",
+    "discoveredBy": [
+      "Iran USA War"
+    ]
+  },
+  {
+    "name": "USAvsIran_News",
+    "title": "USAvsIran_News",
+    "subscribers": 34,
+    "over18": false,
+    "url": "https://www.reddit.com/r/USAvsIran_News/",
+    "discoveredBy": [
+      "Iran USA War"
+    ]
+  },
+  {
+    "name": "IranIsraelWarReport",
+    "title": "IranIsraelWarReport",
+    "subscribers": 0,
+    "over18": false,
+    "url": "https://www.reddit.com/r/IranIsraelWarReport/",
+    "discoveredBy": [
+      "Iran USA War"
+    ]
+  }
+]

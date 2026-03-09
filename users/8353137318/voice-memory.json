@@ -1,0 +1,46 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-03-09",
+  "user_name": "Karan",
+  "niche": "AutoCAD design",
+  "voice_rules": {
+    "forbidden_phrases": [
+      "leverage", "utilize", "streamline", "optimize",
+      "facilitate", "enhance",
+      "I hope this message finds you well",
+      "I'd be delighted to",
+      "I'm reaching out because"
+    ],
+    "required_style": {
+      "capitalization": "normal",
+      "contractions": "flexible",
+      "sentence_length": "short",
+      "em_dashes": "avoid",
+      "semicolons": "avoid"
+    },
+    "tone_guardrails": {
+      "corporate_jargon": "reject",
+      "generic_motivational": "reject",
+      "ai_detectability": "must_fail_ai_test"
+    },
+    "private_topics": {
+      "rules": [
+        "Do not mention or imply the user's age.",
+        "Do not mention any specific salary or paycheck numbers (e.g. 16k, 18k)."
+      ]
+    }
+  },
+  "high_performers": {
+    "hooks": [],
+    "formats_by_platform": {},
+    "emotional_archetypes": [],
+    "viral_structures": []
+  },
+  "voice_lessons": [],
+  "feedback_log": [],
+  "reflection_log": [],
+  "agent_logs": {
+    "research_agent": { "last_run": null },
+    "performance_reviewer": { "last_run": null }
+  }
+}

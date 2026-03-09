@@ -1,6 +1,6 @@
 ---
 name: reddit-scout
-description: Scout Reddit niches/pillars via Reddit JSON endpoints (old.reddit.com + reddit.com *.json), compute a viral score, fetch top posts, and generate reusable idea reports + Reddit-style card images (no interactive browser automation). Use for trend/idea research and recurring niche scans.
+description: Scout Reddit niches via Reddit JSON endpoints (old.reddit.com + reddit.com *.json), compute a viral score, fetch top posts, and generate reusable idea reports + Reddit-style card images (no interactive browser automation). Use for trend/idea research and recurring niche scans.
 ---
 
 # Reddit Scout (JSON → score → ideas → cards)
