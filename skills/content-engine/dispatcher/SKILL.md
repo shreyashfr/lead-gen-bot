@@ -66,8 +66,16 @@ Look up `users[sender_id]`:
 Run the **onboarding** skill immediately — it handles workspace creation and the setup message itself. Do NOT send any message before running onboarding.
 
 **Found, `onboarding_complete: false` → onboarding in progress.**
-Read `onboarding_step` from registry.
-Run the **onboarding** skill, resuming from their current step.
+Read `{USER_WORKSPACE}onboarding-state.json` to get their current step.
+
+- If step is `awaiting_master_doc`:
+  - If the user sent a **file** (`.txt` or `.md`) → run the **onboarding** skill at STEP 1 (receive master doc)
+  - If the user sent a **text message** → remind them:
+    ```
+    I'm still waiting for your Master Doc file.
+
+    Fill in the template I sent earlier and send it back as a .txt or .md file to get started.
+    ```
 
 **Found, `onboarding_complete: true` → set up. Route their message.**
 

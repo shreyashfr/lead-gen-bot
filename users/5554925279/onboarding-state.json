@@ -1,9 +1,9 @@
 {
-  "step": 2,
+  "step": 3,
   "data": {
     "name": "Ayush",
-    "niche": null,
-    "positioning": null,
+    "niche": "AI learning and careers",
+    "positioning": "AI coach who helps people learn AI to get a job",
     "audience_description": null,
     "audience_age_range": null,
     "audience_country": null,
