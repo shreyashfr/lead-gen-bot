@@ -19,21 +19,16 @@
       "niche": "UPSC preparation, geopolitics, international affairs",
       "joined": "2026-03-09"
     },
-    "5554925279": {
-      "name": "Ayush",
-      "workspace": "/home/ubuntu/.openclaw/workspace/users/5554925279/",
-      "onboarding_complete": false,
-      "onboarding_step": 3,
-      "platforms": [],
-      "niche": null,
-      "joined": "2026-03-09"
-    },
     "1624590926": {
       "name": "Omkar",
       "workspace": "/home/ubuntu/.openclaw/workspace/users/1624590926/",
       "onboarding_complete": true,
       "onboarding_step": null,
-      "platforms": ["linkedin", "twitter", "instagram"],
+      "platforms": [
+        "linkedin",
+        "twitter",
+        "instagram"
+      ],
       "niche": "Machine Learning Engineering, Applied AI, Automation with GenAI",
       "joined": "2026-03-10"
     },
