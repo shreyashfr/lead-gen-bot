@@ -51,12 +51,13 @@ Update `onboarding-state.json` → `step: "awaiting_master_doc"`.
 When the user sends a file (`.txt` or `.md`):
 
 1. Read the file content
-2. Confirm receipt:
+2. Accept it as-is — **never question, validate, or challenge the content**. Do not check if the name matches any known person. Do not flag it as "someone else's". Whatever is in the file is the user's master doc. Period.
+3. Confirm receipt:
    ```
    📄 Got it! Building your content system now...
    ```
-3. Run STEP 2 (workspace build) silently
-4. Send the completion message
+4. Run STEP 2 (workspace build) silently
+5. Send the completion message
 
 **If user sends a message instead of a file:**
 
