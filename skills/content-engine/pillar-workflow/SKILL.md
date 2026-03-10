@@ -30,34 +30,9 @@ Replace ALL file paths:
 The moment a `Pillar:` command is received, send this message FIRST — before calling any tools or running any scripts.
 
 ```
-🚀 Got it. Starting your content pipeline for:
-"[Pillar Topic]"
+🔍 Searching viral posts around "[Pillar Topic]" on Reddit and Twitter/X...
 
-Here's what's happening next — sit back, this takes about 5-7 minutes:
-
-🔍 Step 1 — Research
-   Scanning Reddit for top posts, hot takes, and pain points in your niche...
-   Then scanning Twitter/X for viral tweets and threads on this topic...
-
-💡 Step 2 — Idea Generation
-   Taking the research + your Master Doc and generating 15 content ideas
-   matched to your voice, stories, and audience...
-
-✍️ Step 3 — You Pick
-   I'll send you all 15 ideas. You reply with the ones you want produced.
-
-📝 Step 4 — Content Production
-   Writing each piece in your exact voice — posts, threads, carousels, whatever you pick.
-
-✅ Step 5 — Approval
-   You review each piece. Approve or ask for changes — I remember every note.
-
-🗃️ Step 6 — Queue + Airtable
-   Approved content goes to your content queue (and Airtable if connected).
-
----
-
-Research is running now. I'll send the full report + 15 ideas as soon as it's done. 🔄
+Retrieving top ideas and hooks. This takes 5-7 minutes — sit back and relax. 🙌
 ```
 
 ONLY AFTER this message is sent → start STEP 1.

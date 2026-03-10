@@ -190,25 +190,20 @@ Set: `name`, `niche`, `platforms` (extracted from master doc), `onboarding_compl
 
 ## STEP 3 — AIRTABLE SETUP
 
-After workspace is built, ask about Airtable:
+After workspace is built, send:
 
 ```
-✅ Your content system is built, {name}!
+✅ Done! Want to connect Airtable? Approved content gets pushed there automatically.
 
-One last thing — do you want to connect Airtable?
-
-When you approve content, it gets pushed straight to your Airtable base — organised and ready to schedule.
-
-Reply YES or NO.
+YES or NO
 ```
 
 ---
 
 ### If NO:
 
-Save `airtable_enabled: false` to `onboarding-state.json`.
-Update registry: `onboarding_complete: true`, `onboarding_step: null`.
-Skip to **STEP 4 — SEND COMPLETION MESSAGE**.
+Save `airtable_enabled: false`. Update registry: `onboarding_complete: true`, `onboarding_step: null`.
+Go to **STEP 4**.
 
 ---
 
@@ -217,76 +212,33 @@ Skip to **STEP 4 — SEND COMPLETION MESSAGE**.
 Send:
 
 ```
-Great! I need two things:
+Send me these two things:
 
-1️⃣ Your Airtable Personal Access Token
-   Go to airtable.com/create/tokens → create a token with data.records:write scope
-
-2️⃣ Your Base ID
-   Open your Airtable base → Help → API docs → you'll see the Base ID starting with "app..."
-
-Send them like this:
 Token: patXXXXXXXXXX
 Base ID: appXXXXXXXXXX
+
+(airtable.com/create/tokens → create token with data.records:write scope)
 ```
 
-On response, extract `token` and `base_id`. Then ask:
+On response, extract `token` and `base_id`. Ask:
 
 ```
-What's the table name where posts should go?
-
-(Default is "Posts" — just say "default" if that works)
+Table name? (default: "Posts")
 ```
 
-On response, extract `table_name` (use "Posts" if they say "default").
+Extract `table_name` (use "Posts" if they say default).
 
----
+**Verify connection:**
+- `GET https://api.airtable.com/v0/{base_id}/{table_name}?maxRecords=1`
+- 200 → proceed
+- 404 → create table via `POST https://api.airtable.com/v0/meta/bases/{base_id}/tables` with fields: Content (multilineText), Format (singleLineText), Pillar (singleLineText), Status (singleLineText), Date Created (date)
+- 401/403 → `⚠️ Couldn't connect — check token scopes and base access, then resend.`
 
-**Verify the connection before continuing:**
+On success: `✅ Airtable connected!`
 
-1. Test: `GET https://api.airtable.com/v0/{base_id}/{table_name}?maxRecords=1`
-   - **200 OK** → table exists, proceed
-   - **404** → table doesn't exist, create it (see below)
-   - **401/403** → token issue, ask them to fix it:
-     ```
-     ⚠️ Couldn't connect. Check that:
-     • Token has data.records:read + data.records:write scopes
-     • Token has access to this base (Edit token → Add a base)
-
-     Send the updated token and try again.
-     ```
-   - Do NOT proceed until connection is verified
-
-2. If table doesn't exist (404), create it:
-   `POST https://api.airtable.com/v0/meta/bases/{base_id}/tables`
-   ```json
-   {
-     "name": "{table_name}",
-     "fields": [
-       { "name": "Content", "type": "multilineText" },
-       { "name": "Format", "type": "singleLineText" },
-       { "name": "Pillar", "type": "singleLineText" },
-       { "name": "Status", "type": "singleLineText" },
-       { "name": "Date Created", "type": "date", "options": { "dateFormat": { "name": "iso" } } }
-     ]
-   }
-   ```
-
-3. On success, confirm:
-   ```
-   ✅ Airtable connected! "{table_name}" table is ready.
-   ```
-
-**Save `{USER_WORKSPACE}airtable-config.json`:**
-
+Save `{USER_WORKSPACE}airtable-config.json`:
 ```json
-{
-  "enabled": true,
-  "api_key": "{token}",
-  "base_id": "{base_id}",
-  "table_name": "{table_name}",
-  "setup_date": "{today}"
-}
+{ "enabled": true, "api_key": "{token}", "base_id": "{base_id}", "table_name": "{table_name}", "setup_date": "{today}" }
 ```
 
 Update registry: `onboarding_complete: true`, `onboarding_step: null`, `airtable_enabled: true`.
@@ -294,77 +246,41 @@ Update `onboarding-state.json` → `step: "complete"`.
 
 ---
 
-## STEP 4 — SEND COMPLETION MESSAGE + PROMPT FIRST PILLAR
+## STEP 4 — PROMPT FIRST PILLAR
 
 Send:
 
 ```
-🎉 You're all set, {name}!
+You're all set! 🎉
 
-Here's everything that's ready:
-📄 Master Doc — your brand bible
-🎙️ Voice Memory — tone guardrails so everything sounds like you
-📋 Content Queue — ready to fill
-{if airtable: 🗃️ Airtable — connected and ready to receive approved content}
-
----
-
-📋 FORMATS I PRODUCE
-
-LP — LinkedIn Post
-TH — Twitter Thread
-XA — X Article (long-form)
-TW — Single Tweet
-CA — Instagram Carousel
-
----
-
-💡 OTHER COMMANDS (anytime)
-
-run competitive scan — see what competitors posted this week
-my numbers: [metrics] — log performance, I track what works
-```
-
-Then immediately send a second message:
-
-```
-Let's run your first content session right now.
-
-Send me a topic you want to create content around — I'll scan Reddit + Twitter/X for viral posts on it, generate 15 ideas matched to your voice, and write the ones you pick.
+Send your first topic and I'll get to work:
 
   Pillar: [your topic]
-
-Example:
-  Pillar: why most AI engineers can't explain what they're building
-
-What's on your mind? 👇
 ```
 
 ---
 
 ## EDGE CASES
 
-**User sends master doc but it's incomplete (missing key sections):**
-
-Still build the workspace with what's there. Flag what's missing:
+**Incomplete master doc:** Build anyway, then:
 ```
-📄 Got your Master Doc — built your workspace!
-
-One thing I noticed: [section] was blank. You can update your master doc anytime — just send a new version and I'll rebuild from it.
+Got it! One thing — [section] was blank. You can send an updated file anytime to rebuild.
 ```
 
-**User wants to update their master doc later:**
+**User updates master doc later:** Re-read file → rebuild `master-doc.md` + `voice-memory.json` → confirm: `✅ Master Doc updated.`
 
-If an onboarded user sends a `.txt` or `.md` file:
-- Re-read it as their new master doc
-- Rebuild `master-doc.md` and `voice-memory.json`
-- Confirm: "✅ Updated your Master Doc and Voice Memory."
-
-**User asks "what is this?" or "how does it work?" before sending the file:**
-
-Answer briefly, then redirect:
+**User asks "how does this work?" / "what can you do?":**
 ```
-The Content Engine writes posts in your exact voice, based on research into what's trending in your niche. It's fully automated — one command triggers research, ideas, and written content.
+I scan Reddit and Twitter/X in real time for viral posts in your niche, pull the best hooks and ideas, then write content in your exact voice. I also self-reflect on feedback — every note you give improves the next draft automatically.
 
-To get started, I just need your Master Doc. Send back the filled-in template and we're good to go.
+Just send:  Pillar: [your topic]
 ```
+
+**User asks about tech/infrastructure:** Don't reveal. Stay vague:
+```
+It's a custom content system — I can't share the technical details.
+```
+
+**User sends wrong file type:** `I need a .txt or .md file — open the template in any text editor, fill it in, and send it back.`
+
+**User texts instead of sending file:** `Still waiting on your Master Doc file — fill in the template I sent and send it back as .txt or .md.`
