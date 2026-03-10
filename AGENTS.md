@@ -220,7 +220,7 @@ Handles 5-10 users messaging the Telegram bot. Each user has a fully isolated wo
 **When a Telegram message arrives (channel = telegram):**
 1. Check inbound metadata `sender_id`
 2. **Check `users/registry.json` FIRST — regardless of who the sender is.**
-3. If `sender_id = 5122439348` (Shreyash):
+3. If sender_id is listed in `users/registry.json` → `admin_ids` array:
    - **If NOT in registry (no entry or `onboarding_complete: false`):**
      - Treat as a **CONTENT ENGINE USER** — run dispatcher/onboarding just like any other user
      - **CRITICAL: Do NOT use personal context** (USER.md, MEMORY.md) during the content engine flow

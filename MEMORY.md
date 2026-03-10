@@ -9,7 +9,7 @@
 - Timezone: **Asia/Calcutta (IST, UTC+5:30)**
 - Email: shreyash.chavan2016@gmail.com
 - Phone: +91 7499862368
-- Telegram: @shreyashfr (ID: 5122439348)
+- Telegram: @shreyashfr
 - Father's name: **Santosh Chavan**
 
 ## Preferences
