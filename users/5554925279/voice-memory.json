@@ -1,0 +1,95 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-03-10",
+  "user_name": "Ayush Singh",
+  "niche": "Tech / AI / Careers",
+  "voice_rules": {
+    "forbidden_phrases": [
+      "leverage",
+      "utilize",
+      "streamline",
+      "optimize",
+      "facilitate",
+      "enhance",
+      "professionalism",
+      "I hope this message finds you well",
+      "I'd be delighted to",
+      "I'm reaching out because",
+      "thought leader",
+      "guru",
+      "game-changer",
+      "revolutionary",
+      "hustle",
+      "I hustled hard and it paid off",
+      "enroll now",
+      "DM me for the roadmap",
+      "we 10x'd revenue"
+    ],
+    "required_style": {
+      "capitalization": "lowercase default — no mid-sentence caps unless proper name",
+      "contractions": "always_use",
+      "sentence_length": "short — 2-4 lines ideally, builds slowly then lands with data or twist",
+      "em_dashes": "never",
+      "semicolons": "never",
+      "ellipsis": "use for trailing thoughts and natural pauses",
+      "periods": "skip period on last sentence sometimes — real people do this",
+      "casual_openers": "hey, so, yeah, btw — occasionally, not every time",
+      "casual_abbreviations": "rn, tbh, ngl, btw — occasionally, naturally",
+      "x_articles_length": "2000+ words minimum, essay depth, short paragraphs per section"
+    },
+    "tone_guardrails": {
+      "corporate_jargon": "reject",
+      "generic_motivational": "reject",
+      "ai_detectability": "must_fail_ai_test",
+      "performative_helpfulness": "reject — direct, no filler",
+      "overclaiming": "reject — specifics over vague claims",
+      "course_selling_tone": "reject",
+      "bullet_points_in_dms": "reject — write in sentences like a human",
+      "over_complimenting": "reject — no 'your profile is AMAZING'",
+      "passive_ctas_on_instagram": "reject — must use 'Comment X' format",
+      "soft_hooks": "caution — observation posts reach people but don't move them",
+      "closed_satire": "caution — satirical list format needs open loop/question at end"
+    },
+    "private_topics": []
+  },
+  "high_performers": {
+    "hooks": [
+      "i worked on transformers before GPT existed. i did MLOps before MLOps was a word. (Instagram carousel — VIRAL: 1,200 comments, 20K views, +700 followers)",
+      "your company didn't lay you off because of AI. they used AI as the excuse. (LinkedIn — 24 comments, 17 reposts)",
+      "entry-level tech jobs are dying. senior tech jobs are fine. nobody's explaining why the gap exists. (X thread — biggest impression day of the week)"
+    ],
+    "formats_by_platform": {
+      "instagram": "carousel: authority stacking + insider knowledge + Comment X CTA → VIRAL",
+      "linkedin": "false consensus → data flip → counter-narrative → p.s with resource",
+      "x": "numbered thread (1/11 through 11/11), single idea per tweet, closing tweet that stands alone"
+    },
+    "emotional_archetypes": [
+      "personal authority from lived history",
+      "contrarian take backed by real data",
+      "tension between what people believe and what's actually true",
+      "early-career Indian tech worker fear + ambition"
+    ],
+    "viral_structures": [
+      "I [did thing] before [thing] existed — authority stacking",
+      "[False statement most people believe]. [Real data that contradicts it]. — debate-starter",
+      "X is dying. Y is fine. Nobody's explaining why the gap exists. — X threads",
+      "Comment [keyword] below — Instagram mandatory"
+    ]
+  },
+  "voice_lessons": [
+    "Instagram CTAs must use 'Comment X' format. No exceptions. 20x engagement gap vs passive CTAs.",
+    "Optimize for reposts on LinkedIn, not impressions. Reposts = people stamping their name on your take.",
+    "Specific data makes posts shareable. BLS stats, exact numbers, named companies get reposts. Observation posts get likes.",
+    "Personal authority > news commentary. Insider POV outperforms journalist POV.",
+    "Satirical list format needs an open loop. End with question or 'who's next?' to force response.",
+    "Comments-to-impressions ratio > likes-to-impressions ratio. 14K impressions + 24 comments beats 18K + 1 comment.",
+    "Target audience: 90.6% India, 87.8% male, 46.7% aged 18-24. Early-career Indian tech workers. Fear + ambition.",
+    "Peak engagement: Friday-Saturday, noon and evening IST."
+  ],
+  "feedback_log": [],
+  "reflection_log": [],
+  "agent_logs": {
+    "research_agent": { "last_run": null },
+    "performance_reviewer": { "last_run": null }
+  }
+}

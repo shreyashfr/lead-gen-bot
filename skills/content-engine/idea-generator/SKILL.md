@@ -37,27 +37,36 @@ Aim for variety across the 15 ideas:
 
 ## Output Format: Ideas Report
 
+Use EXACTLY this format. Do not invent alternative formats or use emoji icons as field labels.
+
 ```
 ## IDEAS REPORT — [Pillar Topic]
 
-**Pick your favorites and format by replying with numbers and the format abbreviation. e.g. "1, LP" or "4, TH" (LP=LinkedIn Post, TH=Twitter Thread, XA=X Article, TW=Tweet, CA=Carousel)**
+Pick your favorites by replying with number + format.
+e.g. "1, LP" or "4, TH"  (LP=LinkedIn Post, TH=Twitter Thread, XA=X Article, TW=Tweet, CA=Carousel)
 
----
+━━━━━━━━━━
 
-**1. [Short idea title]**
+1. [Short idea title]
 Hook: "[exact hook line]"
 Angle: [one sentence — what's the argument or story]
 Story that fits: [which moment from the user's life anchors this]
 Why it works: [one sentence]
 Reference: [exact URL of the Reddit post or Tweet that inspired this idea — REQUIRED, never leave blank]
 
----
+━━━━━━━━━━
 
-**2. [Short idea title]**
-...
+2. [Short idea title]
+Hook: ...
+Angle: ...
+Story that fits: ...
+Why it works: ...
+Reference: [URL — REQUIRED]
 
 [repeat through 15]
 ```
+
+Every single idea MUST have a Reference URL. If the research report has the post URL, use it. If not, use the Reddit permalink format: `https://reddit.com/r/{subreddit}/comments/{post_id}`
 
 ## After Ayush Selects
 Pass each approved idea to content-producer with:

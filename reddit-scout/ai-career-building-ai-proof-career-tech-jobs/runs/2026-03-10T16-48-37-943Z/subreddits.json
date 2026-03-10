@@ -1,0 +1,82 @@
+[
+  {
+    "name": "cscareerquestions",
+    "title": "Computer Science Career Questions",
+    "subscribers": 2326564,
+    "over18": false,
+    "url": "https://www.reddit.com/r/cscareerquestions/",
+    "discoveredBy": [
+      "AI career building AI-proof career tech jobs"
+    ]
+  },
+  {
+    "name": "ITCareerQuestions",
+    "title": "IT Career Questions",
+    "subscribers": 541832,
+    "over18": false,
+    "url": "https://www.reddit.com/r/ITCareerQuestions/",
+    "discoveredBy": [
+      "AI career building AI-proof career tech jobs"
+    ]
+  },
+  {
+    "name": "CyberSecurityJobs",
+    "title": "Cybersecurity Career Discussion",
+    "subscribers": 55079,
+    "over18": false,
+    "url": "https://www.reddit.com/r/CyberSecurityJobs/",
+    "discoveredBy": [
+      "AI career building AI-proof career tech jobs"
+    ]
+  },
+  {
+    "name": "AIJobs",
+    "title": "Jobs In Artificial Intelligence ",
+    "subscribers": 53909,
+    "over18": false,
+    "url": "https://www.reddit.com/r/AIJobs/",
+    "discoveredBy": [
+      "AI career building AI-proof career tech jobs"
+    ]
+  },
+  {
+    "name": "MLjobs",
+    "title": "Machine Learning Jobs",
+    "subscribers": 10017,
+    "over18": false,
+    "url": "https://www.reddit.com/r/MLjobs/",
+    "discoveredBy": [
+      "AI career building AI-proof career tech jobs"
+    ]
+  },
+  {
+    "name": "gisjobs",
+    "title": "Jobs for Geospatial People (GIS)",
+    "subscribers": 8953,
+    "over18": false,
+    "url": "https://www.reddit.com/r/gisjobs/",
+    "discoveredBy": [
+      "AI career building AI-proof career tech jobs"
+    ]
+  },
+  {
+    "name": "detroitjobs",
+    "title": "Detroit Jobs Careers Hiring [For Hire]",
+    "subscribers": 2514,
+    "over18": false,
+    "url": "https://www.reddit.com/r/detroitjobs/",
+    "discoveredBy": [
+      "AI career building AI-proof career tech jobs"
+    ]
+  },
+  {
+    "name": "FAANGJobs",
+    "title": "FAANGJobs",
+    "subscribers": 1500,
+    "over18": false,
+    "url": "https://www.reddit.com/r/FAANGJobs/",
+    "discoveredBy": [
+      "AI career building AI-proof career tech jobs"
+    ]
+  }
+]
