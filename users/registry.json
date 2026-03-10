@@ -40,6 +40,15 @@
       ],
       "niche": "AutoCAD design",
       "joined": "2026-03-09"
+    },
+    "7572846852": {
+      "name": "Fatima",
+      "workspace": "/home/ubuntu/.openclaw/workspace/users/7572846852/",
+      "onboarding_complete": false,
+      "onboarding_step": "awaiting_master_doc",
+      "platforms": [],
+      "niche": null,
+      "joined": "2026-03-10"
     }
   }
 }
