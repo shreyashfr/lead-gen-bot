@@ -219,12 +219,16 @@ Handles 5-10 users messaging the Telegram bot. Each user has a fully isolated wo
 
 **When a Telegram message arrives (channel = telegram):**
 1. Check inbound metadata `sender_id`
-2. If `sender_id = 5122439348` (Shreyash) → **ADMIN + CONTENT ENGINE user:**
-   - Shreyash has full admin/personal assistant access as always
-   - BUT also treat them as a content engine user: run the dispatcher skill to check their onboarding status and route content engine commands (Pillar:, competitive scan, etc.) just like any other user
-   - If the message is a personal/admin request (not content engine related) → handle as normal personal assistant
-   - If the message is a content engine command → route through dispatcher/content engine skills
-3. Any other `sender_id` → **CONTENT ENGINE USER ONLY:**
+2. **Check `users/registry.json` FIRST — regardless of who the sender is.**
+3. If `sender_id = 5122439348` (Shreyash):
+   - **If NOT in registry (no entry or `onboarding_complete: false`):**
+     - Treat as a **CONTENT ENGINE USER** — run dispatcher/onboarding just like any other user
+     - **CRITICAL: Do NOT use personal context** (USER.md, MEMORY.md) during the content engine flow
+     - Do NOT greet them as "Shreyash" — they are onboarding fresh
+   - **If in registry AND `onboarding_complete: true`:**
+     - Check if the message is a content engine command (`Pillar:`, `run competitive scan`, `my numbers:`) → route through dispatcher
+     - If it's a personal/admin request (not content engine) → handle as normal personal assistant with full context
+4. Any other `sender_id` → **CONTENT ENGINE USER ONLY:**
    - **CRITICAL: Ignore ALL personal context for this session** — USER.md, MEMORY.md, and Shreyash's personal info must NOT be used
    - Do NOT greet them with "Shreyash" or any name from personal context
    - Act ONLY as the Content Engine bot — identity: neutral assistant, no personal name
