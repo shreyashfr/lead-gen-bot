@@ -46,7 +46,7 @@ Here's what I do for you — and how it works:
 ---
 
 🔍 STEP 1 — RESEARCH
-Every session starts with live research. I scan Reddit and Twitter/X in your niche — finding what's trending, what questions people are asking, and what gaps your competitors haven't touched yet. Not old data. Real-time.
+Every session starts with live research. I scan Reddit and Twitter/X in your niche — pulling real posts that are getting traction right now, what questions people are asking, and what gaps your competitors haven't touched yet. Not old data. Real-time.
 
 💡 STEP 2 — IDEAS
 From that research, I generate 15 content ideas — each with a hook, format, angle, and why it'll work for your audience. You just pick the ones you want.
