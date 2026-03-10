@@ -1,0 +1,60 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-03-10",
+  "user_name": "Omkar",
+  "niche": "Machine Learning Engineering, Applied AI, Automation with GenAI",
+  "voice_rules": {
+    "forbidden_phrases": [
+      "leverage",
+      "utilize",
+      "streamline",
+      "optimize",
+      "facilitate",
+      "enhance",
+      "synergize",
+      "I hope this message finds you well",
+      "I'd be delighted to",
+      "I'm reaching out because",
+      "thought leader",
+      "guru",
+      "game-changer",
+      "revolutionary"
+    ],
+    "required_style": {
+      "capitalization": "normal",
+      "contractions": "always_use",
+      "sentence_length": "short",
+      "em_dashes": "ok",
+      "semicolons": "avoid",
+      "lists": "use numbered or bullet points when explaining concepts"
+    },
+    "tone_guardrails": {
+      "corporate_jargon": "reject",
+      "generic_motivational": "reject",
+      "ai_detectability": "must_fail_ai_test",
+      "hype_and_buzzwords": "reject — honest insights only",
+      "heavy_jargon": "reject unless necessary",
+      "theory_without_examples": "reject — always anchor to real projects or work",
+      "advice_giving": "grounded in personal experience and real work"
+    },
+    "private_topics": [
+      "salary or compensation details",
+      "confidential project details from Cognizant",
+      "client names",
+      "internal Cognizant systems"
+    ]
+  },
+  "high_performers": {
+    "hooks": [],
+    "formats_by_platform": {},
+    "emotional_archetypes": [],
+    "viral_structures": []
+  },
+  "voice_lessons": [],
+  "feedback_log": [],
+  "reflection_log": [],
+  "agent_logs": {
+    "research_agent": { "last_run": null },
+    "performance_reviewer": { "last_run": null }
+  }
+}

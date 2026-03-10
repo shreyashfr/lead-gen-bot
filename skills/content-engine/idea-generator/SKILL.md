@@ -25,7 +25,8 @@ Each idea must:
 ### Avoid
 - Repeating angles already posted (check "What You've Posted" in master-doc)
 - Generic AI/ML takes anyone could write
-- Ideas that don't connect to Ayush's actual experience
+- Ideas that don't connect to the user's actual experience
+- Leaving the Reference field blank — every idea must cite the exact Reddit or Twitter URL it was inspired by
 
 ### Angle Mix
 Aim for variety across the 15 ideas:
@@ -48,7 +49,7 @@ Hook: "[exact hook line]"
 Angle: [one sentence — what's the argument or story]
 Story that fits: [which moment from the user's life anchors this]
 Why it works: [one sentence]
-Reference: [Insert exact Reddit or Twitter URL link of the scraped post inspiring this idea]
+Reference: [exact URL of the Reddit post or Tweet that inspired this idea — REQUIRED, never leave blank]
 
 ---
 

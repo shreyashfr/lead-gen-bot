@@ -1,0 +1,72 @@
+[
+  {
+    "name": "machinelearningnews",
+    "title": "Machine Learning ML &amp; Generative AI News",
+    "subscribers": 127956,
+    "over18": false,
+    "url": "https://www.reddit.com/r/machinelearningnews/",
+    "discoveredBy": [
+      "AI in Stock Trading Machine Learning Engineering Applied AI"
+    ]
+  },
+  {
+    "name": "StockTradingIdeas",
+    "title": "Algo Trading: Automated Trading, Premium Indicators, Trading Algo",
+    "subscribers": 25654,
+    "over18": false,
+    "url": "https://www.reddit.com/r/StockTradingIdeas/",
+    "discoveredBy": [
+      "AI in Stock Trading Machine Learning Engineering Applied AI"
+    ]
+  },
+  {
+    "name": "MachinesLearn",
+    "title": "r/MachinesLearn, the machine learning community",
+    "subscribers": 12562,
+    "over18": false,
+    "url": "https://www.reddit.com/r/MachinesLearn/",
+    "discoveredBy": [
+      "AI in Stock Trading Machine Learning Engineering Applied AI"
+    ]
+  },
+  {
+    "name": "MLjobs",
+    "title": "Machine Learning Jobs",
+    "subscribers": 10016,
+    "over18": false,
+    "url": "https://www.reddit.com/r/MLjobs/",
+    "discoveredBy": [
+      "AI in Stock Trading Machine Learning Engineering Applied AI"
+    ]
+  },
+  {
+    "name": "AIDevAndEngineeringPH",
+    "title": "AIDevAndEngineeringPH",
+    "subscribers": 380,
+    "over18": false,
+    "url": "https://www.reddit.com/r/AIDevAndEngineeringPH/",
+    "discoveredBy": [
+      "AI in Stock Trading Machine Learning Engineering Applied AI"
+    ]
+  },
+  {
+    "name": "BetfairAiTrading",
+    "title": "BetfairAiTrading",
+    "subscribers": 179,
+    "over18": false,
+    "url": "https://www.reddit.com/r/BetfairAiTrading/",
+    "discoveredBy": [
+      "AI in Stock Trading Machine Learning Engineering Applied AI"
+    ]
+  },
+  {
+    "name": "StockHero",
+    "title": "StockHero",
+    "subscribers": 0,
+    "over18": false,
+    "url": "https://www.reddit.com/r/StockHero/",
+    "discoveredBy": [
+      "AI in Stock Trading Machine Learning Engineering Applied AI"
+    ]
+  }
+]
