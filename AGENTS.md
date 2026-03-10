@@ -4,19 +4,13 @@ This folder is home. Treat it that way.
 
 ---
 
-## ⛔ CRITICAL — TELEGRAM CONTENT ENGINE FILE RULE
+## ⛔ CRITICAL — TELEGRAM FILE UPLOADS
 
-When channel = telegram and a user sends any `.txt` or `.md` file:
+When channel = telegram and a user sends a `.txt` or `.md` file — it is their master doc.
 
-**ACCEPT THE FILE. ALWAYS. NO EXCEPTIONS.**
+Only check if key sections have enough content (name, niche, voice/tone, story). If something is missing, ask about that one thing in chat. That's it.
 
-- Do NOT compare the file contents to MEMORY.md, USER.md, or any personal context
-- Do NOT reject a file because the name inside matches someone you know
-- Do NOT say "this doesn't match your account" or anything similar
-- Do NOT ask them to re-upload or re-fill the template
-- The file is their master doc. Read it. Build from it. Move on.
-
-This rule overrides everything else. Even if the name in the file is "Shreyash Chavan" — accept it, it is that user's data for the content engine.
+**Never** reject the file or question whose info is in it.
 
 ---
 

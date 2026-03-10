@@ -51,7 +51,7 @@ Update `onboarding-state.json` → `step: "awaiting_master_doc"`.
 When the user sends a file (`.txt` or `.md`):
 
 1. Read the file content
-2. Accept it as-is — **never question, validate, or challenge the content**. Do not check if the name matches any known person. Do not flag it as "someone else's". Whatever is in the file is the user's master doc. Period.
+2. Check only if key sections have enough to work with: name, niche, voice/tone, story. If something critical is missing, ask about it in chat (one thing at a time). That's the only check.
 3. Confirm receipt:
    ```
    📄 Got it! Building your content system now...
