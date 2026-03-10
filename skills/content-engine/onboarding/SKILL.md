@@ -345,7 +345,7 @@ Update `onboarding-state.json` → `step: "complete"`.
 
 ---
 
-## STEP 4 — SEND COMPLETION MESSAGE
+## STEP 4 — SEND COMPLETION MESSAGE + PROMPT FIRST PILLAR
 
 Send:
 
@@ -360,26 +360,6 @@ Here's everything that's ready:
 
 ---
 
-Here's how to use it:
-
-🚀 START A CONTENT SESSION
-
-Send:
-  Pillar: [your topic]
-
-Example:
-  Pillar: why most AI engineers can't explain what they're building
-
-That triggers the full pipeline:
-1️⃣ Research — live scan of Reddit + Twitter for viral posts in your niche
-2️⃣ Ideas — 15 ideas with hooks, angles, and viral scores
-3️⃣ You pick — reply with idea numbers (e.g. "1, 3, 7")
-4️⃣ Production — written in your exact voice
-5️⃣ Approval — approve or ask for fixes; feedback is remembered
-6️⃣ Queue — approved content saved (+ pushed to Airtable if connected)
-
----
-
 📋 FORMATS I PRODUCE
 
 LP — LinkedIn Post
@@ -390,15 +370,25 @@ CA — Instagram Carousel
 
 ---
 
-💡 OTHER COMMANDS
+💡 OTHER COMMANDS (anytime)
 
 run competitive scan — see what competitors posted this week
 my numbers: [metrics] — log performance, I track what works
+```
 
----
+Then immediately send a second message:
 
-Ready when you are. Just send:
+```
+Let's run your first content session right now.
+
+Send me a topic you want to create content around — I'll scan Reddit + Twitter/X for viral posts on it, generate 15 ideas matched to your voice, and write the ones you pick.
+
   Pillar: [your topic]
+
+Example:
+  Pillar: why most AI engineers can't explain what they're building
+
+What's on your mind? 👇
 ```
 
 ---

@@ -25,36 +25,58 @@ Replace ALL file paths:
 
 ---
 
-## STEP 0 — ANNOUNCE BEFORE EVERY LONG TASK
+## STEP 0 — STATUS LOG (send immediately, before ANY work starts)
 
-Before starting any processing step, always send a heads-up message to the user. Never silently start a long task.
+The moment a `Pillar:` command is received, send this message FIRST — before calling any tools or running any scripts.
 
-**Before Research (Step 1):**
-
-Use the `message` tool to send this FIRST (before any exec/tool calls):
 ```
-🔍 Starting research on: [Pillar Topic]
+🚀 Got it. Starting your content pipeline for:
+"[Pillar Topic]"
 
-Scanning Reddit + Twitter/X for what's viral around this right now — top posts, hot takes, pain points, content gaps.
+Here's what's happening next — sit back, this takes about 5-7 minutes:
 
-This usually takes 5-7 minutes. I'll send the full report + 15 ideas when it's ready. Hang tight...
+🔍 Step 1 — Research
+   Scanning Reddit for top posts, hot takes, and pain points in your niche...
+   Then scanning Twitter/X for viral tweets and threads on this topic...
+
+💡 Step 2 — Idea Generation
+   Taking the research + your Master Doc and generating 15 content ideas
+   matched to your voice, stories, and audience...
+
+✍️ Step 3 — You Pick
+   I'll send you all 15 ideas. You reply with the ones you want produced.
+
+📝 Step 4 — Content Production
+   Writing each piece in your exact voice — posts, threads, carousels, whatever you pick.
+
+✅ Step 5 — Approval
+   You review each piece. Approve or ask for changes — I remember every note.
+
+🗃️ Step 6 — Queue + Airtable
+   Approved content goes to your content queue (and Airtable if connected).
+
+---
+
+Research is running now. I'll send the full report + 15 ideas as soon as it's done. 🔄
 ```
 
-Only AFTER this message is sent → run the Reddit Scout exec call.
-Do NOT combine the announcement and the tool call in the same turn.
+ONLY AFTER this message is sent → start STEP 1.
+Never combine the status log and any tool call in the same turn.
 
-**Before Idea Generation (Step 2):**
+---
+
+**Before Idea Generation (Step 2), send:**
 ```
-💡 Research done. Generating 15 ideas now...
+✅ Research done!
 
-Matching your voice, story, and experience against what's trending. Takes about 1-2 minutes.
+💡 Generating 15 ideas now — matching what's trending against your voice, stories, and opinions. Give me a minute...
 ```
 
-**Before Content Production (Step 4):**
+**Before Content Production (Step 4), send:**
 ```
 ✍️ Writing [Format] for idea #[n]...
 
-Drafting in your voice. Takes about 1 minute.
+Drafting in your exact voice. Takes about a minute.
 ```
 
 Always send the announcement FIRST, then run the task.
