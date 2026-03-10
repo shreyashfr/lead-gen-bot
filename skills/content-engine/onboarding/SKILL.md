@@ -41,11 +41,41 @@ Wait for file ops to complete, then send:
 
 Hey! 👋 Welcome to the Content Engine.
 
-I help you go from a content idea → research → written posts in your voice → published. All from one command.
+Here's what I do for you — and how it works:
 
-To make that work, I need to understand who you are — your story, your audience, your voice, your opinions.
+---
 
-Instead of a long questionnaire, I use a Master Doc — a single file that becomes your content brand bible.
+🔍 STEP 1 — RESEARCH
+Every session starts with live research. I scan Reddit and Twitter/X in your niche — finding what's trending, what questions people are asking, and what gaps your competitors haven't touched yet. Not old data. Real-time.
+
+💡 STEP 2 — IDEAS
+From that research, I generate 15 content ideas — each with a hook, format, angle, and why it'll work for your audience. You just pick the ones you want.
+
+✍️ STEP 3 — CONTENT PRODUCTION
+I write every piece in your exact voice. Not generic AI copy — calibrated to your tone, your writing rules, your stories, your opinions. LinkedIn posts, Twitter threads, X articles, Tweets, Instagram carousels. All of it.
+
+✅ STEP 4 — APPROVAL LOOP
+You review each draft. Approve it or ask for fixes. Every note you give gets remembered and improves future content automatically.
+
+📋 STEP 5 — CONTENT QUEUE
+Approved content goes straight into your content queue — ready to schedule and post.
+
+---
+
+Everything runs from one command:
+  Pillar: [your topic]
+
+Example:
+  Pillar: why most AI engineers can't explain what they're building
+
+That's it. Full pipeline, automated, in your voice.
+
+---
+
+To make all of this sound like YOU — not generic AI — I need one thing:
+your Master Doc. It's a single file that becomes your content brand bible.
+
+Instead of asking you 20 questions, I use a template you fill in once.
 ```
 
 Then immediately send the template file `skills/onboarding/master-doc-template.md` as a Telegram document attachment (rename it to `master-doc-template.md` when sending), followed by this message:
@@ -55,12 +85,12 @@ Then immediately send the template file `skills/onboarding/master-doc-template.m
 
 Here's what to do:
 1. Download the file
-2. Fill it in — be specific, especially on your story and opinions
+2. Fill it in — be specific on your story, opinions, and writing rules
 3. Send it back here as a .txt or .md file
 
-The more detail you give, the better your content will sound like you.
+The more detail you give, the better everything will sound like you.
 
-Take your time — send it back whenever you're ready.
+Take your time — send it back whenever you're ready. 🚀
 ```
 
 Update `onboarding-state.json` → `step: "awaiting_master_doc"`.
