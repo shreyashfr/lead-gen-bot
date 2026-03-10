@@ -77,6 +77,9 @@ Read `{USER_WORKSPACE}onboarding-state.json` to get their current step.
     Fill in the template I sent earlier and send it back as a .txt or .md file to get started.
     ```
 
+- If step is `awaiting_airtable`:
+  - Route their message to the **onboarding** skill at STEP 3 (Airtable setup) — they are answering YES/NO or providing credentials
+
 **Found, `onboarding_complete: true` → set up. Route their message.**
 
 ---

@@ -227,33 +227,140 @@ Write to `{USER_WORKSPACE}voice-memory.json`:
 
 ### 2d. Update users/registry.json
 
-Set: `name`, `niche`, `platforms` (extracted from master doc), `onboarding_complete: true`, `joined: {today}`
+Set: `name`, `niche`, `platforms` (extracted from master doc), `onboarding_complete: false`, `onboarding_step: "awaiting_airtable"`, `joined: {today}`
 
 ---
 
 ### 2e. Update onboarding-state.json
 
 ```json
-{ "step": "complete", "completed_at": "{today}" }
+{ "step": "awaiting_airtable", "data": { "name": "{name}" } }
 ```
 
 ---
 
-## STEP 3 — SEND COMPLETION MESSAGE
+## STEP 3 — AIRTABLE SETUP
 
-Extract `{name}` from the master doc, then send:
+After workspace is built, ask about Airtable:
 
 ```
-✅ Done, {name}! Your content system is live.
+✅ Your content system is built, {name}!
 
-Here's what I built from your Master Doc:
-📄 Master Doc — your brand bible (story, audience, opinions, voice)
+One last thing — do you want to connect Airtable?
+
+When you approve content, it gets pushed straight to your Airtable base — organised and ready to schedule.
+
+Reply YES or NO.
+```
+
+---
+
+### If NO:
+
+Save `airtable_enabled: false` to `onboarding-state.json`.
+Update registry: `onboarding_complete: true`, `onboarding_step: null`.
+Skip to **STEP 4 — SEND COMPLETION MESSAGE**.
+
+---
+
+### If YES:
+
+Send:
+
+```
+Great! I need two things:
+
+1️⃣ Your Airtable Personal Access Token
+   Go to airtable.com/create/tokens → create a token with data.records:write scope
+
+2️⃣ Your Base ID
+   Open your Airtable base → Help → API docs → you'll see the Base ID starting with "app..."
+
+Send them like this:
+Token: patXXXXXXXXXX
+Base ID: appXXXXXXXXXX
+```
+
+On response, extract `token` and `base_id`. Then ask:
+
+```
+What's the table name where posts should go?
+
+(Default is "Posts" — just say "default" if that works)
+```
+
+On response, extract `table_name` (use "Posts" if they say "default").
+
+---
+
+**Verify the connection before continuing:**
+
+1. Test: `GET https://api.airtable.com/v0/{base_id}/{table_name}?maxRecords=1`
+   - **200 OK** → table exists, proceed
+   - **404** → table doesn't exist, create it (see below)
+   - **401/403** → token issue, ask them to fix it:
+     ```
+     ⚠️ Couldn't connect. Check that:
+     • Token has data.records:read + data.records:write scopes
+     • Token has access to this base (Edit token → Add a base)
+
+     Send the updated token and try again.
+     ```
+   - Do NOT proceed until connection is verified
+
+2. If table doesn't exist (404), create it:
+   `POST https://api.airtable.com/v0/meta/bases/{base_id}/tables`
+   ```json
+   {
+     "name": "{table_name}",
+     "fields": [
+       { "name": "Content", "type": "multilineText" },
+       { "name": "Format", "type": "singleLineText" },
+       { "name": "Pillar", "type": "singleLineText" },
+       { "name": "Status", "type": "singleLineText" },
+       { "name": "Date Created", "type": "date", "options": { "dateFormat": { "name": "iso" } } }
+     ]
+   }
+   ```
+
+3. On success, confirm:
+   ```
+   ✅ Airtable connected! "{table_name}" table is ready.
+   ```
+
+**Save `{USER_WORKSPACE}airtable-config.json`:**
+
+```json
+{
+  "enabled": true,
+  "api_key": "{token}",
+  "base_id": "{base_id}",
+  "table_name": "{table_name}",
+  "setup_date": "{today}"
+}
+```
+
+Update registry: `onboarding_complete: true`, `onboarding_step: null`, `airtable_enabled: true`.
+Update `onboarding-state.json` → `step: "complete"`.
+
+---
+
+## STEP 4 — SEND COMPLETION MESSAGE
+
+Send:
+
+```
+🎉 You're all set, {name}!
+
+Here's everything that's ready:
+📄 Master Doc — your brand bible
 🎙️ Voice Memory — tone guardrails so everything sounds like you
 📋 Content Queue — ready to fill
+{if airtable: 🗃️ Airtable — connected and ready to receive approved content}
 
 ---
 
-Here's how the Content Engine works:
+Here's how to use it:
 
 🚀 START A CONTENT SESSION
 
@@ -264,12 +371,12 @@ Example:
   Pillar: why most AI engineers can't explain what they're building
 
 That triggers the full pipeline:
-1️⃣ Research — I scan Reddit + Twitter for what's viral in your niche right now
-2️⃣ Ideas — 15 content ideas with hooks, angles, and viral scores
+1️⃣ Research — live scan of Reddit + Twitter for viral posts in your niche
+2️⃣ Ideas — 15 ideas with hooks, angles, and viral scores
 3️⃣ You pick — reply with idea numbers (e.g. "1, 3, 7")
-4️⃣ Production — I write every piece in your exact voice
-5️⃣ Approval — approve or ask for fixes; I remember your feedback
-6️⃣ Queue — approved content goes to your content queue
+4️⃣ Production — written in your exact voice
+5️⃣ Approval — approve or ask for fixes; feedback is remembered
+6️⃣ Queue — approved content saved (+ pushed to Airtable if connected)
 
 ---
 
@@ -285,8 +392,8 @@ CA — Instagram Carousel
 
 💡 OTHER COMMANDS
 
-run competitive scan — what competitors posted this week
-my numbers: [metrics] — log performance data, I track what works
+run competitive scan — see what competitors posted this week
+my numbers: [metrics] — log performance, I track what works
 
 ---
 
