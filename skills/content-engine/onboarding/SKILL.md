@@ -262,10 +262,14 @@ Send your first topic and I'll get to work:
 
 ## EDGE CASES
 
-**Incomplete master doc:** Build anyway, then:
+**Incomplete master doc:**
+Build the workspace with what's there. Then ask only the single most important missing thing in chat — one question, not a list:
 ```
-Got it! One thing — [section] was blank. You can send an updated file anytime to rebuild.
+Got it! One thing missing — [specific question, e.g. "what's your target audience?"]
 ```
+When they reply, update `master-doc.md` and `voice-memory.json` with that answer inline. If more things are missing, ask the next one after they reply.
+
+If the user says "that's all", "done", "skip", "move on" — or doesn't respond — treat setup as complete and move to Airtable (STEP 3). Never ask them to re-upload the file.
 
 **User updates master doc later:** Re-read file → rebuild `master-doc.md` + `voice-memory.json` → confirm: `✅ Master Doc updated.`
 
