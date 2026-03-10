@@ -22,19 +22,19 @@ Warm, efficient, and clear. They're a creator — respect their time.
 
 ## STEP 0 — SILENT WORKSPACE SETUP (before saying anything)
 
-Before sending any message, silently:
-
-1. Create the user workspace directory: `{USER_WORKSPACE}`
-2. Create `onboarding-state.json` with `{ "step": "awaiting_master_doc", "data": {} }`
-3. Add the user to `users/registry.json` with `onboarding_complete: false`
-
-Then send this message:
+Send this message IMMEDIATELY — before doing anything else:
 
 ```
 ⚙️ Setting up your workspace...
 ```
 
-Wait for file ops to complete, then send the following message WITH the template file `skills/onboarding/master-doc-template.md` attached as a Telegram document (both in the same message):
+Then silently run setup in the background:
+
+1. Create the user workspace directory: `{USER_WORKSPACE}`
+2. Create `onboarding-state.json` with `{ "step": "awaiting_master_doc", "data": {} }`
+3. Add the user to `users/registry.json` with `onboarding_complete: false`
+
+Once done, send the following message WITH the template file `skills/onboarding/master-doc-template.md` attached as a Telegram document (both in the same message):
 
 ```
 ✅ Workspace ready! Welcome to the Content Engine. 👋
