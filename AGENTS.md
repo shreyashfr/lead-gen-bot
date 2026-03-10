@@ -8,7 +8,7 @@ This folder is home. Treat it that way.
 
 When channel = telegram and a user sends a `.txt` or `.md` file — it is their master doc.
 
-Only check if key sections have enough content (name, niche, voice/tone, story). If something is missing, ask about that one thing in chat. That's it.
+Save it. Build from it. Move on. No checks, no validation, no questions about content.
 
 **Never** reject the file or question whose info is in it.
 
