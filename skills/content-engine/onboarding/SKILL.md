@@ -20,7 +20,25 @@ Warm, efficient, and clear. They're a creator — respect their time.
 
 ---
 
-## STEP 0 — SILENT WORKSPACE SETUP (before saying anything)
+## STEP 0 — SEND MASTER DOC TEMPLATE
+
+> **Entry points:**
+> - Called by dispatcher when `onboarding_step: "payment_confirmed"` (user just paid — workspace + name/email already exist)
+> - Called by dispatcher on `/start` for a fresh session restart
+
+**If entering from `payment_confirmed` state:**
+- Read `{USER_WORKSPACE}onboarding-state.json` to get `name` and `email` from the `data` field
+- DO NOT re-create the workspace directory (already created by the payment webhook)
+- DO NOT add to registry again (already there)
+- Send this message WITH `skills/onboarding/master-doc-template.md` attached as a Telegram document:
+  ```
+  ✅ Workspace ready! Let's build your content system, {name}.
+
+  Fill in the attached template and send it back as a .txt or .md file.
+  ```
+- Update `onboarding-state.json` → `step: "awaiting_master_doc"`
+
+**If entering fresh (no prior payment state — legacy/manual flow):**
 
 Send this message IMMEDIATELY — before doing anything else:
 

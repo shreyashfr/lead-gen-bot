@@ -1,0 +1,4 @@
+{
+  "stripe_payment_link": "https://buy.stripe.com/REPLACE_WITH_YOUR_LINK",
+  "_note": "Replace the value above with your actual Stripe Payment Link URL. Do NOT add ?client_reference_id= — the bot appends it automatically."
+}
