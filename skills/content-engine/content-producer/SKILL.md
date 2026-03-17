@@ -30,6 +30,81 @@ Produces single pieces of content in {USER_NAME}'s voice across all 5 formats.
 - Research context (trending data, stats)
 - Which piece number this is (e.g. piece-3)
 - Output file path: `{USER_WORKSPACE}drafts/piece-[N].md`
+- **Diversity context:** List of already-generated pieces in this batch (hooks + opening lines + structures used so far)
+
+---
+
+## ⚠️ CROSS-PIECE DIVERSITY — MANDATORY BEFORE WRITING
+
+Before writing anything, read all already-generated drafts in `{USER_WORKSPACE}drafts/` for this batch.
+
+Extract from each existing piece:
+- The opening word / opening line style
+- The hook structure type (question / blunt statement / number / story drop / contrast)
+- The narrative angle (personal story / opinion / data-driven / how-to / hot take)
+- The emotional register (vulnerable / confident / angry / curious / analytical)
+- The sentence rhythm (short punchy / long flowing / mixed)
+
+Then **explicitly differ from every existing piece** on at least 3 of these 5 dimensions.
+
+### Banned if already used in this batch:
+- Same opening word (e.g. if piece-1 starts with "I", piece-2 cannot start with "I")
+- Same hook structure type
+- Same narrative angle
+- Same emotional register
+- Same sentence rhythm pattern
+
+### Diversity checklist (fill this before writing):
+```
+Existing pieces used:
+- Opening styles: [list]
+- Hook types: [list]
+- Angles: [list]
+- Emotional registers: [list]
+- Rhythms: [list]
+
+This piece will use:
+- Opening style: [DIFFERENT from above]
+- Hook type: [DIFFERENT from above]
+- Angle: [DIFFERENT from above]
+- Emotional register: [DIFFERENT from above]
+- Rhythm: [DIFFERENT from above]
+```
+
+**If you cannot find 3 dimensions to differ on → stop and flag it.** Do not produce a similar piece.
+
+---
+
+### Hook Structure Variety Reference
+
+Rotate through these — never use the same type twice in a batch:
+
+| Type | Example |
+|---|---|
+| Blunt statement | `Nobody tells you this when you start.` |
+| Number/data drop | `I spent 8 months applying and got 0 callbacks.` |
+| Story drop (in-scene) | `My manager called me into a room. No context.` |
+| Contrast/flip | `Everyone's learning AI. Nobody's learning how to be seen.` |
+| Direct question | `Why do the worst engineers get promoted first?` |
+| Confession | `I used to think working hard was enough.` |
+| Pattern interrupt | `Stop optimizing your LinkedIn. It doesn't matter.` |
+| Specific moment | `March 2024. I had ₹200 in my account and an offer letter.` |
+
+---
+
+### Angle Variety Reference
+
+Rotate through these — never repeat the same angle twice:
+
+| Angle | What it means |
+|---|---|
+| Personal story | A specific thing that happened to you |
+| Opinion / hot take | A stance you hold that others might push back on |
+| Educational | A framework, process, or breakdown |
+| Observation | Something you noticed about the industry/world |
+| Data-backed | A claim anchored in a real number or study |
+| Failure story | Something that went wrong and what you learned |
+| Behind the scenes | How something actually works vs. how it looks |
 
 ## Running as a Background Sub-Agent
 

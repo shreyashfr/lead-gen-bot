@@ -150,6 +150,18 @@ I'll send you piece #1 as soon as it's ready — and while you're reviewing it, 
 
 **4b. Spawn ALL pieces as parallel background sub-agents:**
 
+Before spawning, create `{USER_WORKSPACE}drafts/batch-manifest.json` listing all pieces in this batch:
+```json
+{
+  "pillar": "[topic]",
+  "pieces": [
+    { "n": 1, "format": "LinkedIn Post", "hook": "...", "angle": "...", "status": "pending" },
+    { "n": 2, "format": "Twitter Thread", "hook": "...", "angle": "...", "status": "pending" },
+    ...
+  ]
+}
+```
+
 For EACH piece in the production plan, immediately spawn a sub-agent:
 
 ```
@@ -158,14 +170,28 @@ sessions_spawn(
   Idea: [hook + angle + story reference]
   Master-doc: {USER_WORKSPACE}master-doc.md
   Voice memory: {USER_WORKSPACE}voice-memory.json
-  Read both files first.
-  Write the full draft.
-  Run voice checklist (no em dashes, no semicolons, no banned words, sounds human).
-  When done, save the draft to: {USER_WORKSPACE}drafts/piece-[N].md
+  Batch manifest: {USER_WORKSPACE}drafts/batch-manifest.json
+
+  CRITICAL — READ THIS FIRST:
+  1. Read the batch-manifest.json to see all other pieces in this batch
+  2. Read any already-generated draft files at {USER_WORKSPACE}drafts/piece-*.md
+  3. Extract: opening styles, hook types, angles, emotional registers, sentence rhythms used so far
+  4. Your piece MUST differ from all existing pieces on at least 3 of those 5 dimensions
+  5. Fill the diversity checklist before writing a single word
+
+  Then:
+  - Write the full draft in {USER_NAME}'s voice
+  - Run AI-humanizer checklist (no AI vocabulary, no fake importance phrases, no summary closers)
+  - Run voice checklist (no em dashes, no semicolons, no banned words, sounds human)
+  - Save the draft to: {USER_WORKSPACE}drafts/piece-[N].md
+
   File format:
   STATUS: READY
   FORMAT: [format name]
   IDEA_TITLE: [idea title]
+  HOOK_TYPE: [which hook structure was used]
+  ANGLE: [which angle was used]
+  OPENING_WORD: [first word of the post]
   ---
   [full content here]",
   label="content-piece-[N]",
@@ -173,12 +199,17 @@ sessions_spawn(
 )
 ```
 
-Spawn ALL sub-agents in one go (do not wait for one to finish before spawning the next). All pieces generate in parallel.
+Spawn ALL sub-agents in one go. All pieces generate in parallel.
+
+**Diversity is enforced at the sub-agent level** — each piece reads the manifest + existing drafts and actively avoids repeating patterns from the others.
 
 **4c. Deliver piece #1 as soon as ready:**
 
 Poll `{USER_WORKSPACE}drafts/piece-1.md` every 20 seconds until `STATUS: READY` appears.
-As soon as it's ready, read it and send it to the user using the Output Format below.
+As soon as it's ready, read it and run a quick similarity check against other ready drafts:
+- Compare HOOK_TYPE, ANGLE, OPENING_WORD from the file headers
+- If two pieces share the same hook type AND angle → flag to the sub-agent to rewrite one before delivering
+- If they differ on at least 2 dimensions → proceed and send to the user
 
 **4d. Approval loop — one piece at a time:**
 
