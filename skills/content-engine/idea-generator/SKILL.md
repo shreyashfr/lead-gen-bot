@@ -129,6 +129,18 @@ Why it works: ...
 📎 Source: [exact URL from Step 0 — REQUIRED]
 
 [repeat through 15]
+━━━━━━━━━━
+
+📅 What is your production plan for the week/day?
+
+Tell me how many pieces you want across formats:
+e.g.
+5x LinkedIn Posts
+4x Twitter Threads
+5x Twitter Posts
+5x Instagram Carousels
+
+Then pick your ideas by number (e.g. "1, 3, 7 — 2x LP, 2x TH, 1x TW") and I'll start producing them one by one.
 ```
 
 **HARD RULE: Do a final check before sending — scan all 15 ideas. If any 📎 Source is blank, invented, or not in your Step 0 list → fix it before sending. No exceptions.**
