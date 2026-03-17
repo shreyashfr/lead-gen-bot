@@ -1,14 +1,14 @@
 ---
 name: feed-intelligence
-description: 'Searches 30+ posts per platform in Ayush Singh''s niche (AI, ML, careers, founders) on X, LinkedIn, and Instagram. Not feed scrolling - active niche search. Updates feed-intelligence.md and master-doc.md with trending hooks, viral formats, content gaps. Run daily or before any pillar session.'
+description: 'Searches 30+ posts per platform in {USER_NAME}''s niche (AI, ML, careers, founders) on X, LinkedIn, and Instagram. Not feed scrolling - active niche search. Updates feed-intelligence.md and master-doc.md with trending hooks, viral formats, content gaps. Run daily or before any pillar session.'
 ---
 
 # Feed Intelligence
 
-Active niche search across X, LinkedIn, Instagram. Not scrolling Ayush's personal feed — searching the niche directly for what's working right now.
+Active niche search across X, LinkedIn, Instagram. Not scrolling {USER_NAME}'s personal feed — searching the niche directly for what's working right now.
 
 ## When to Run
-- Daily (ideally morning before Ayush starts work)
+- Daily (ideally morning before {USER_NAME} starts work)
 - Always before generating ideas for a new pillar
 - After being triggered: "run feed intelligence" or "update feed intel"
 
@@ -114,11 +114,11 @@ List the actual opening lines that got high engagement. These are ready to adapt
 What formats are dominating? Single tweets, carousels, long threads, X articles?
 
 ### 3. Content Gaps
-What is NOT being talked about that fits Ayush's niche and expertise?
+What is NOT being talked about that fits {USER_NAME}'s niche and expertise?
 Gaps = opportunities. Look for:
 - Angles everyone's avoiding (too controversial? too technical?)
 - Topics that are slightly past trend but not overdone
-- Ayush's unique angles that nobody else can cover (SBL founder story, ZenML era, etc.)
+- {USER_NAME}'s unique angles that nobody else can cover (SBL founder story, ZenML era, etc.)
 
 ### 4. Engagement Patterns
 What gets bookmarks vs likes vs comments? (These are different signals)
@@ -127,7 +127,7 @@ What gets bookmarks vs likes vs comments? (These are different signals)
 - Likes only = entertaining but forgettable
 
 ### 5. Competitor Activity
-Note what accounts similar to Ayush are posting (not copying — flagging for gap analysis)
+Note what accounts similar to {USER_NAME} are posting (not copying — flagging for gap analysis)
 
 ---
 
@@ -182,8 +182,8 @@ Write to `feed-intelligence.md`:
 **Narrative macro this week:**
 - [big narrative/debate dominating the space]
 
-**Ready-to-use angles for Ayush:**
-- [specific angle that maps to Ayush's story/expertise]
+**Ready-to-use angles for {USER_NAME}:**
+- [specific angle that maps to {USER_NAME}'s story/expertise]
 - [another angle]
 - [another angle]
 ```

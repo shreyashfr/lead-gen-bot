@@ -5,7 +5,7 @@ description: >
   Runs BOTH reddit-scout AND twitter-scout in parallel for the given topic.
   Returns a structured research report: trending topics, viral formats, hook styles
   working right now, content gaps nobody is filling.
-  Use before running idea-generator. Works for any user — replace Ayush references
+  Use before running idea-generator. Works for any user — replace {USER_NAME} references
   with the current USER_NAME and USER_WORKSPACE from dispatcher context.
 ---
 ## ⚠️ GUARDRAILS — READ BEFORE EXECUTING THIS SKILL

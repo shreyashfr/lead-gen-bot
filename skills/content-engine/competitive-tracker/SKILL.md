@@ -1,6 +1,6 @@
 ---
 name: competitive-tracker
-description: 'Tracks 5-10 competitor and peer accounts in Ayush Singh''s niche (AI, ML, careers, founder content). Weekly scan of what they are posting, what is landing, and what gaps they are missing. Output goes to competitive-gaps.md and feeds into idea generation.'
+description: 'Tracks 5-10 competitor and peer accounts in {USER_NAME}''s niche (AI, ML, careers, founder content). Weekly scan of what they are posting, what is landing, and what gaps they are missing. Output goes to competitive-gaps.md and feeds into idea generation.'
 ---
 ## ⚠️ GUARDRAILS — READ BEFORE EXECUTING THIS SKILL
 
@@ -47,7 +47,7 @@ Overwrite weekly — keep only current week's analysis plus a brief historical n
 
 Stored in: `/home/ubuntu/.openclaw/workspace/competitor-list.md`
 
-If that file doesn't exist, create it with this default list and ask Ayush to review/update:
+If that file doesn't exist, create it with this default list and ask {USER_NAME} to review/update:
 
 ```markdown
 # Competitor & Peer Accounts
@@ -71,10 +71,10 @@ If that file doesn't exist, create it with this default list and ask Ayush to re
 - @penelope_data
 - @evolving.ai
 - @askgpts
-- Any account Ayush explicitly adds
+- Any account {USER_NAME} explicitly adds
 
 ## Notes
-Update this list whenever Ayush mentions a new account worth tracking.
+Update this list whenever {USER_NAME} mentions a new account worth tracking.
 ```
 
 ---
@@ -99,7 +99,7 @@ Update this list whenever Ayush mentions a new account worth tracking.
 4. **Identify gaps:**
    - Angles they're avoiding
    - Topics they cover badly or shallowly
-   - Stories/experiences only Ayush can tell
+   - Stories/experiences only {USER_NAME} can tell
    - Their audience's comments (what are people asking for that they're not delivering?)
 
 ---
@@ -109,19 +109,19 @@ Update this list whenever Ayush mentions a new account worth tracking.
 After scanning all accounts, answer:
 
 **1. What's everyone posting about?**
-(The crowded space — Ayush should either do it far better or skip it)
+(The crowded space — {USER_NAME} should either do it far better or skip it)
 
 **2. What's nobody posting about?**
 (The gap — this is the opportunity)
 
 **3. What are they posting badly?**
-(Surface-level takes on deep topics — Ayush can own these with real expertise)
+(Surface-level takes on deep topics — {USER_NAME} can own these with real expertise)
 
-**4. What can only Ayush say?**
+**4. What can only {USER_NAME} say?**
 (SBL founder experience, ZenML before MLOps was a word, 4GB RAM laptop start, VC rejections, mental breakdown recovery — nobody else has these)
 
 **5. What format is underused in this niche?**
-(If everyone's doing lists, Ayush should do long-form stories. If everyone's posting hot takes, Ayush should post frameworks.)
+(If everyone's doing lists, {USER_NAME} should do long-form stories. If everyone's posting hot takes, {USER_NAME} should post frameworks.)
 
 ---
 
@@ -138,15 +138,15 @@ Write to `competitive-gaps.md`:
 - [topic 3]
 
 ## The Gaps (Nobody's Covering This Well)
-- [gap 1] — why it's open — how Ayush can own it
+- [gap 1] — why it's open — how {USER_NAME} can own it
 - [gap 2]
 - [gap 3]
 
-## Weak Takes (Ayush Can Do This Better)
-- [topic/angle] — [who's doing it] — [what's shallow about it] — [Ayush's better angle]
+## Weak Takes ({USER_NAME} Can Do This Better)
+- [topic/angle] — [who's doing it] — [what's shallow about it] — [{USER_NAME}'s better angle]
 
-## Ayush-Exclusive Angles (Nobody Else Can Cover These)
-- [angle] — [why only Ayush]
+## {USER_NAME}-Exclusive Angles (Nobody Else Can Cover These)
+- [angle] — [why only {USER_NAME}]
 - [angle]
 
 ## Format Opportunities
@@ -168,6 +168,6 @@ What they skip: [note]
 
 ## UPDATE competitor-list.md
 
-If Ayush mentions a new account to track during any session, add it immediately to `competitor-list.md`. Don't wait.
+If {USER_NAME} mentions a new account to track during any session, add it immediately to `competitor-list.md`. Don't wait.
 
 Note any account removals too — if someone pivots out of the niche, remove them.

@@ -1,6 +1,6 @@
 ---
 name: content-producer
-description: 'Produces content for Ayush Singh across 5 formats: LinkedIn posts, X Articles (long-form), Twitter Threads, Tweets, and Instagram Carousel copy. Use when an idea has been approved and a specific format needs to be produced. Always reads master-doc.md for voice. Produces one piece at a time.'
+description: 'Produces content for {USER_NAME} across 5 formats: LinkedIn posts, X Articles (long-form), Twitter Threads, Tweets, and Instagram Carousel copy. Use when an idea has been approved and a specific format needs to be produced. Always reads master-doc.md for voice. Produces one piece at a time.'
 ---
 ## ⚠️ GUARDRAILS — READ BEFORE EXECUTING THIS SKILL
 
@@ -16,7 +16,7 @@ Before running any step in this skill:
 
 # Content Producer
 
-Produces single pieces of content in Ayush's voice across all 5 formats.
+Produces single pieces of content in {USER_NAME}'s voice across all 5 formats.
 
 ## Always Read First (before producing ANY draft)
 1. `{USER_WORKSPACE}master-doc.md` — voice, stories, hook library, positioning
@@ -75,7 +75,7 @@ Only interact with the user if you are the main session (non-background) produce
 [CTA — optional, 1 line, never salesy]
 ```
 
-**LinkedIn Rules (Ayush's voice):**
+**LinkedIn Rules ({USER_NAME}'s voice):**
 - No em dashes. Use "—" only if user approves, otherwise rewrite
 - No semicolons
 - Never: leverage, utilize, streamline, optimize, facilitate, enhance
@@ -262,7 +262,7 @@ Fix every flagged violation before proceeding to Layer 2.
 
 ### Layer 2 — Voice Guardian Validation
 
-After writing a draft and before sending it to Ayush:
+After writing a draft and before sending it to {USER_NAME}:
 
 1. Spawn Voice Guardian agent:
 ```bash
@@ -273,7 +273,7 @@ sessions_spawn(
 ```
 
 2. Wait for Voice Guardian response
-3. If APPROVED → Send draft to Ayush in the format below
+3. If APPROVED → Send draft to {USER_NAME} in the format below
 4. If FAILED → Rewrite ONLY the flagged sections, resubmit to Voice Guardian
 
 ## OUTPUT FORMAT FOR EACH PIECE
@@ -306,7 +306,7 @@ Reply "approved" to save and get the next piece, or "fix: [what to change]" to r
 ## FEEDBACK LOOP (Composite Reflection — mandatory)
 
 ### On every revision request
-When Ayush gives feedback on a draft (anything other than "approved"):
+When {USER_NAME} gives feedback on a draft (anything other than "approved"):
 
 **DO NOT rewrite immediately.**
 

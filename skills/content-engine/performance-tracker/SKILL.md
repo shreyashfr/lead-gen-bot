@@ -1,6 +1,6 @@
 ---
 name: performance-tracker
-description: 'Tracks performance of published posts for Ayush Singh. Accepts metrics input, updates master-doc with what worked/failed, identifies content to recycle or rewrite, and feeds learnings back into the content system. Also flags underperforming content for rework and strong content for recycling.'
+description: 'Tracks performance of published posts for {USER_NAME}. Accepts metrics input, updates master-doc with what worked/failed, identifies content to recycle or rewrite, and feeds learnings back into the content system. Also flags underperforming content for rework and strong content for recycling.'
 ---
 ## ⚠️ GUARDRAILS — READ BEFORE EXECUTING THIS SKILL
 
@@ -33,7 +33,7 @@ Closes the feedback loop. Every post either teaches something or gets recycled.
 
 ## STEP 1 — INGEST METRICS
 
-Ayush will provide metrics in any format:
+{USER_NAME} will provide metrics in any format:
 - Paste from LinkedIn analytics
 - Screenshot description (e.g. "post 1 got 3.2k impressions, 47 likes, 12 comments")
 - Or just say "the traditional ML post bombed, the interview prep one did well"
@@ -113,7 +113,7 @@ Format:
 - [post description] — [why it likely failed] — [what to do differently]
 
 **Updated rules:**
-- [new rule for Ayush's content based on data]
+- [new rule for {USER_NAME}'s content based on data]
 ```
 
 Also update the Hook Library in master-doc if new hook patterns are confirmed working.
@@ -178,7 +178,7 @@ Reason: [why retiring]
 
 ## STEP 6 — WEEKLY SUMMARY TO AYUSH
 
-At the end of each performance review, send Ayush a tight summary:
+At the end of each performance review, send {USER_NAME} a tight summary:
 
 ```
 📊 WEEKLY CONTENT REVIEW — [Date Range]
@@ -205,4 +205,4 @@ As part of the weekly review, also check content-queue.md for:
 
 Flag anything that's sitting unposted for more than 5 days.
 
-If Ayush has connected a scheduling tool (Buffer, Hootsuite, native platform), note it in TOOLS.md and reference it here.
+If {USER_NAME} has connected a scheduling tool (Buffer, Hootsuite, native platform), note it in TOOLS.md and reference it here.

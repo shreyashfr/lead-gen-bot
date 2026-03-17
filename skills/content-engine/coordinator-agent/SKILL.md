@@ -78,9 +78,9 @@ This means:
 ## Trigger
 
 Spawned when `Pillar: [topic]` is received. Read these files before starting:
-- `/home/ubuntu/.openclaw/workspace/master-doc.md` — Ayush's voice, stories, positioning
+- `/home/ubuntu/.openclaw/workspace/master-doc.md` — {USER_NAME}'s voice, stories, positioning
 - `/home/ubuntu/.openclaw/workspace/voice-memory.json` — tone rules, forbidden phrases, past performance
-- `/home/ubuntu/.openclaw/workspace/content-queue.md` — what Ayush has already posted
+- `/home/ubuntu/.openclaw/workspace/content-queue.md` — what {USER_NAME} has already posted
 
 ---
 
@@ -200,7 +200,7 @@ Top trend: "[trend]"
 - What emotional angle is completely empty / not being used?
 
 **Competitive audit:**
-- Read `content-queue.md` — what has Ayush already posted on this topic?
+- Read `content-queue.md` — what has {USER_NAME} already posted on this topic?
 - What worked? What underperformed?
 - What angle is completely uncovered?
 
@@ -210,7 +210,7 @@ Top trend: "[trend]"
 Dominant emotion: [emotion]
 Most used hook structure: "[structure]"
 Biggest gap: "[angle nobody is covering]"
-Ayush's existing coverage: [N posts on this topic]
+{USER_NAME}'s existing coverage: [N posts on this topic]
 ```
 
 ---
@@ -223,7 +223,7 @@ Ayush's existing coverage: [N posts on this topic]
 ```
 
 From `voice-memory.json` + `content-queue.md`:
-- Which formats perform best for Ayush?
+- Which formats perform best for {USER_NAME}?
 - Which hook styles convert highest?
 - What should he avoid?
 
@@ -266,7 +266,7 @@ Underused: [emotion]
 Hook structures winning: [list]
 
 ### Competitive Gap
-[What angle Ayush has NOT covered that has strong signal]
+[What angle {USER_NAME} has NOT covered that has strong signal]
 
 ### Strategic Recommendation
 Format: [best format for this topic right now]
@@ -286,7 +286,7 @@ Starting idea generation — 15 ideas incoming...
 
 **Rules for generation:**
 - Every idea MUST be derived from a real source post found in Steps 1–3
-- Hook lines must be inspired by actual viral posts — adapted to Ayush's voice, not copied verbatim
+- Hook lines must be inspired by actual viral posts — adapted to {USER_NAME}'s voice, not copied verbatim
 - No generic takes. No "AI is transforming [industry]" hooks. Every hook must be specific and grounded.
 - Mix Reddit and Twitter sources freely — best signal wins
 - Sort by viral score descending

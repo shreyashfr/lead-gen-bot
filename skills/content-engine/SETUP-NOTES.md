@@ -26,7 +26,7 @@ OpenClaw, not user-controlled) and loads only that user's workspace.
 - Routes to: personal assistant mode (not content engine)
 - His personal data lives in the main workspace root
 
-### Ayush Singh (existing content engine user)
+### {USER_NAME} (existing content engine user)
 - Needs his Telegram ID to pre-register him
 - His existing master-doc.md and voice-memory.json are in the main workspace root
 - **To migrate Ayush:**
@@ -35,10 +35,10 @@ OpenClaw, not user-controlled) and loads only that user's workspace.
   3. Copy `master-doc.md` → `users/{ayush_id}/master-doc.md`
   4. Copy `voice-memory.json` → `users/{ayush_id}/voice-memory.json`
   5. Create `users/{ayush_id}/content-queue.md` (empty)
-  6. Add Ayush to `users/registry.json` with `onboarding_complete: true`
+  6. Add {USER_NAME} to `users/registry.json` with `onboarding_complete: true`
   7. He can immediately use `Pillar: [topic]` — no re-onboarding needed
 
-  OR: let Ayush go through the fresh 7-step onboarding (takes 5 min),
+  OR: let {USER_NAME} go through the fresh 7-step onboarding (takes 5 min),
   then manually enrich his master-doc with the existing detailed content.
 
 ## Telegram Bot Access

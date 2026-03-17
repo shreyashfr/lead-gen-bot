@@ -1,6 +1,6 @@
 ---
 name: voice-guardian
-description: Validates content drafts against voice-memory.json rules before they reach Ayush. Catches tone issues, forbidden phrases, AI detectability, and voice guardrails.
+description: Validates content drafts against voice-memory.json rules before they reaches {USER_NAME}. Catches tone issues, forbidden phrases, AI detectability, and voice guardrails.
 ---
 ## ⚠️ GUARDRAILS — READ BEFORE EXECUTING THIS SKILL
 
@@ -16,7 +16,7 @@ Before running any step in this skill:
 
 # Voice Guardian — Quality Gate
 
-Validates every draft produced by Content Producer before it reaches Ayush.
+Validates every draft produced by Content Producer before it reaches {USER_NAME}.
 
 ## How It's Called
 
@@ -86,7 +86,7 @@ From `voice-memory.json → voice_rules → tone_guardrails`:
 ### 4. The AI Test (Critical)
 Read the draft as if you're a human reader. Ask:
 - **Could I tell this was written by AI?**
-- Does it sound like Ayush texting a work friend?
+- Does it sound like {USER_NAME} texting a work friend?
 - Does it have real specificity or is it generic?
 - Is there personality, or is it a template?
 
@@ -94,7 +94,7 @@ If it fails the AI test: FAIL. Explain why it sounds AI.
 
 ### 5. Master-Doc Alignment (Soft Check)
 Is this consistent with:
-- Ayush's positioning (from master-doc)?
+- {USER_NAME}'s positioning (from master-doc)?
 - His storytelling style?
 - His core opinions and angles?
 - His voice lessons (from voice-memory.json)?
@@ -107,7 +107,7 @@ If misaligned: FLAG (not fail, but note).
 ```
 APPROVED ✓
 
-This draft is ready for Ayush.
+This draft is ready for {USER_NAME}.
 ```
 
 ### If ANY Hard Check Fails
@@ -130,7 +130,7 @@ This passes core checks. Minor issues flagged for awareness:
 - Paragraph at line 8 runs 4 lines (ideal max 3)
 - Could add more specificity in the data point section
 
-If Ayush approves, these can be ignored. Or rewrite for polish.
+If {USER_NAME} approves, these can be ignored. Or rewrite for polish.
 ```
 
 ## Data Logging (Self-Improvement)
@@ -166,7 +166,7 @@ Every 5 validations: Coordinator reviews patterns and updates `voice_lessons`.
 - Overall tone: must NOT sound like a blog post, must sound conversational
 
 ### Personal/Raw Content
-- If Ayush is sharing a raw story (like "I was broken in 2025")
+- If {USER_NAME} is sharing a raw story (like "I was broken in 2025")
 - Allow more emotional intensity
 - Tone guardrails can be softer (vulnerability is allowed)
 - Still enforce no forbidden phrases
@@ -175,4 +175,4 @@ Every 5 validations: Coordinator reviews patterns and updates `voice_lessons`.
 
 Content Producer gets the list of issues and rewrites ONLY those sections. Then resubmits to Voice Guardian for re-validation. Loop continues until APPROVED.
 
-This is not punishment. This is raising the floor so Ayush only sees polished, on-brand content.
+This is not punishment. This is raising the floor so {USER_NAME} only sees polished, on-brand content.

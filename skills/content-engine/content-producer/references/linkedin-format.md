@@ -11,7 +11,7 @@
 [Landing line — sharp, no call to action]
 ```
 
-## Hook Patterns That Work For Ayush
+## Hook Patterns That Work For {USER_NAME}
 - Specific number + bold claim: "I got my first job in AI/ML on a 4GB RAM PC."
 - Contrarian opener: "Traditional ML is dead. Bullshit."
 - Embarrassing admission: "I thought 3 lines of Scikit-Learn made me an ML engineer."
