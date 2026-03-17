@@ -186,15 +186,28 @@ If message is exactly `/admin_bypass [BYPASS_KEY]` (from any non-admin user):
 Send using `message` tool with `disable_web_page_preview: true` to prevent Telegram from caching the link redirect.
 
 ```
-👋 Welcome to the Content Engine, {sender_name}!
+Hi {sender_name}! 👋 Welcome to the Content Engine.
 
-To access the bot, please complete your payment first 👇
+I'm a Multi-Agent Social Media Content Engine — I surf Reddit and X (Twitter), track what's going viral in your niche, and turn those insights into ready-to-post content for you.
+
+Here's what I do:
+
+📄 Uses your Master Document as context so every post sounds like you
+💬 Learns your writing style from your WhatsApp chats
+🔍 Surfs Twitter and Reddit for real-time trends
+🎯 Researches viral content and high-performing hooks
+✍️ Generates posts for LinkedIn, Instagram, Twitter and more
+🤖 Eliminates AI signs — content that actually sounds human
+
+...and a lot more.
+
+To get started, complete your payment below 👇
 
 https://buy.stripe.com/test_8x2eVf8qc5a27JF8q6cbC00?client_reference_id={sender_id}
 
-Once payment is done, you'll get instant access and I'll set up your workspace automatically.
+You'll get instant access as soon as payment is confirmed. I'll set everything up automatically.
 
-Need help? Contact: shreyash.chavan2016@gmail.com
+Need help? shreyash.chavan2016@gmail.com
 ```
 
 **No exceptions. No content. No replies to questions. Hard stop.**
