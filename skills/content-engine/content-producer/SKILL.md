@@ -22,6 +22,8 @@ Produces single pieces of content in Ayush's voice across all 5 formats.
 1. `{USER_WORKSPACE}master-doc.md` — voice, stories, hook library, positioning
 2. `{USER_WORKSPACE}voice-memory.json` — forbidden phrases, tone guardrails, high-performing patterns, voice lessons
 
+**⚠️ WHATSAPP STYLE RULE:** If `voice-memory.json` contains a `whatsapp_style` block, use it ONLY to inform writing style (sentence length, tone, capitalization, punctuation patterns). NEVER reference, quote, or allude to any chat content, names, people mentioned, events, or personal details from WhatsApp in any piece of content. The style is the only thing that transfers — everything else stays private, always.
+
 ## Input You Need (from pillar-workflow)
 - The idea (hook + angle + story reference)
 - The format to produce

@@ -54,6 +54,13 @@ Warm, efficient, and clear. They're a creator — respect their time.
 To build your content system, fill in the attached Master Doc template and send it back as a .txt or .md file.
 
 This is what tells the engine your voice, niche, writing rules, and stories — it's the foundation of everything.
+
+💬 Optional but powerful — you can also export your WhatsApp chats and send them as a .txt or .md file. I'll study how you naturally write and talk, and use that to make your content sound even more like you.
+
+To export a WhatsApp chat:
+→ Open the chat → ⋮ Menu → More → Export chat → Without media → Send the .txt file here
+
+I only use chats to learn your writing style. Personal details, names, and private conversations are never used in your content.
 ```
 
 Then update registry: `onboarding_step: "awaiting_master_doc"`
@@ -61,21 +68,88 @@ Update `onboarding-state.json` → `step: "awaiting_master_doc"`
 
 ---
 
-## STEP 1 — RECEIVE MASTER DOC
+## STEP 1 — RECEIVE MASTER DOC OR WHATSAPP CHAT
 
 When the user sends a file (`.txt` or `.md`):
 
-**⚡ YOUR VERY FIRST TOOL CALL must be `message(send)` with this exact text — before reading the file, before any exec, before anything:**
-```
-📄 Got it! Building your content system now...
-```
-Do not read the file first. Do not think about it first. Send this message IMMEDIATELY as your first action.
+**⚡ YOUR VERY FIRST TOOL CALL must be `message(send)` — before reading the file, before anything:**
 
-Then:
-2. Read the file content
-3. Save it as-is. No checks. No validation. Whatever is in the file — accept it.
-4. Run STEP 2 (workspace build) silently
-5. Send the completion message
+- If it looks like a master doc (has template fields like Name:, Niche:, Tone:) → send:
+  ```
+  📄 Got it! Building your content system now...
+  ```
+- If it looks like a WhatsApp export (lines like "DD/MM/YY, HH:MM - Name: text") → send:
+  ```
+  💬 Got your chat export! Studying your writing style now...
+  ```
+
+Do not read the file first. Send the ack message FIRST as your first action.
+
+---
+
+### If file is a MASTER DOC:
+1. Read the file content
+2. Save it as-is — no checks, no validation, whatever is in it, accept it
+3. Run STEP 2 (workspace build) silently
+4. Send completion message
+
+---
+
+### If file is a WHATSAPP CHAT EXPORT:
+
+**How to detect:** File contains repeating lines like:
+- `DD/MM/YY, HH:MM - SenderName: message`
+- `[DD/MM/YYYY, HH:MM:SS] SenderName: message`
+- Or similar timestamp + name + colon + message patterns
+
+**Processing rules — CRITICAL:**
+1. Read the file
+2. Strip ALL personally identifying information before analysis:
+   - Remove all sender names (replace with "Speaker")
+   - Remove all phone numbers, emails, locations, dates of events
+   - Remove media/image/sticker/document lines (`<Media omitted>`, etc.)
+3. Extract ONLY writing style signals from the remaining messages:
+   - Average sentence length (short / medium / long)
+   - Capitalization style (lowercase, normal, CAPS for emphasis)
+   - Punctuation patterns (lots of "...", no full stops, exclamations)
+   - Common words/phrases they use naturally
+   - Tone markers (casual, formal, sarcastic, direct, warm)
+   - Emoji usage (heavy / occasional / none)
+   - Whether they use slang, abbreviations (rn, ngl, tbh, lol)
+   - Paragraph style (single lines vs paragraphs)
+4. Append extracted style signals to `{USER_WORKSPACE}voice-memory.json` under a new key `whatsapp_style`:
+
+```json
+"whatsapp_style": {
+  "source": "whatsapp_chat_export",
+  "analyzed_on": "{today}",
+  "PRIVACY_NOTE": "Personal details, names, and message content are never stored or used in posts. Style patterns only.",
+  "sentence_length": "short",
+  "capitalization": "mostly_lowercase",
+  "punctuation_style": "minimal_punctuation, frequent_ellipsis",
+  "tone": "casual, direct, occasionally sarcastic",
+  "common_patterns": ["starts sentences with 'so'", "uses '...' for trailing thoughts", "drops subject sometimes"],
+  "emoji_usage": "occasional",
+  "abbreviations": ["ngl", "rn", "tbh"],
+  "paragraph_style": "single_lines"
+}
+```
+
+5. Do NOT save the raw chat file anywhere
+6. Do NOT log any message content, names, or personal data
+7. After saving to voice-memory, send:
+
+```
+✅ Style learned!
+
+I've studied how you naturally write and talk. This will be used to make your content sound more like you — nothing from the chat will ever appear in your posts.
+
+If you haven't sent your Master Doc yet, send it now to complete your setup. Or if you've already sent it, you're all set — just send:
+
+  Pillar: [your topic]
+```
+
+---
 
 **If user sends a message instead of a file:**
 
@@ -83,6 +157,8 @@ Then:
 I'm waiting for your Master Doc file (the template I sent earlier).
 
 Fill it in and send it back as a .txt or .md file — then I'll build your full content system.
+
+You can also send your WhatsApp chat export for style learning (optional).
 ```
 
 **If user sends the wrong file type (e.g. PDF, DOCX, image):**
@@ -122,6 +198,8 @@ Add/update the header line:
 ---
 
 ### 2b. Generate voice-memory.json
+
+**⚠️ WHATSAPP PRIVACY RULE:** If `whatsapp_style` already exists in voice-memory.json (from a previous chat upload), preserve it exactly when writing the new voice-memory. Never overwrite it, never reference any personal content from it in posts. Style patterns only — ever.
 
 Read the master doc and intelligently extract:
 
