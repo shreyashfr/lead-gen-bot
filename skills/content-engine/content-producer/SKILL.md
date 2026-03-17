@@ -19,14 +19,34 @@ Before running any step in this skill:
 Produces single pieces of content in Ayush's voice across all 5 formats.
 
 ## Always Read First (before producing ANY draft)
-1. `/home/ubuntu/.openclaw/workspace/master-doc.md` — voice, stories, hook library, positioning
-2. `/home/ubuntu/.openclaw/workspace/voice-memory.json` — forbidden phrases, tone guardrails, high-performing patterns, voice lessons
+1. `{USER_WORKSPACE}master-doc.md` — voice, stories, hook library, positioning
+2. `{USER_WORKSPACE}voice-memory.json` — forbidden phrases, tone guardrails, high-performing patterns, voice lessons
 
 ## Input You Need (from pillar-workflow)
 - The idea (hook + angle + story reference)
 - The format to produce
 - Research context (trending data, stats)
-- Which piece number this is (e.g. "7 of 22")
+- Which piece number this is (e.g. piece-3)
+- Output file path: `{USER_WORKSPACE}drafts/piece-[N].md`
+
+## Running as a Background Sub-Agent
+
+When spawned as a background task by pillar-workflow, your job is:
+1. Read master-doc + voice-memory
+2. Produce the full draft
+3. Run voice checklist
+4. Save to the output file path with this exact header:
+
+```
+STATUS: READY
+FORMAT: [format name]
+IDEA_TITLE: [idea title]
+---
+[full content]
+```
+
+Do NOT send the content to the user directly — save it to file. The pillar-workflow orchestrator handles delivery.
+Only interact with the user if you are the main session (non-background) producer handling a revision.
 
 ---
 
@@ -242,26 +262,29 @@ sessions_spawn(
 3. If APPROVED → Send draft to Ayush in the format below
 4. If FAILED → Rewrite ONLY the flagged sections, resubmit to Voice Guardian
 
-## OUTPUT FORMAT FOR EACH PIECE (after Voice Guardian approval)
+## OUTPUT FORMAT FOR EACH PIECE
 
-Use the **Chat Format Layer** from `pillar-workflow/SKILL.md` exactly:
+### When running as background sub-agent (standard flow):
+Save to `{USER_WORKSPACE}drafts/piece-[N].md`:
+```
+STATUS: READY
+FORMAT: [format name]
+IDEA_TITLE: [idea title]
+---
+[full content here]
+```
 
+### When pillar-workflow delivers the piece to user, it uses this format:
 ```
 ✍️ [Format Name] — [Idea Title]
 
-Idea: #[n] | Source: 🔴 Reddit | Piece: [x] of 22
-
-
 [full content here]
 
-
-Voice Guardian: ✅ Passed all 4 layers
+---
+Voice Guardian: ✅ Passed
 Airtable: Ready to push on approval
 
-Reply:
-
-• "approved" → Push to Airtable, ask for next
-• "fix: [what to change]" → Revise and resubmit
+Reply "approved" to save and get the next piece, or "fix: [what to change]" to revise.
 ```
 
 ---

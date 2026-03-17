@@ -123,33 +123,77 @@ Send the IDEAS REPORT to the user.
 
 ---
 
-## STEP 3 — USER SELECTION
+## STEP 3 — PRODUCTION PLAN
 
-Wait for the user to reply with idea numbers + formats.
-e.g. "1, LP" or "3, TH, 7, TW"
+Wait for the user to reply with their production plan.
+e.g.
+5x LinkedIn Posts
+3x Twitter Threads
+2x Tweets
+
+User also tells you which idea numbers map to each format.
 
 ---
 
-## STEP 4 — CONTENT PRODUCTION
+## STEP 4 — PARALLEL CONTENT GENERATION
 
-**⚡ For each selected idea, BEFORE producing the content, send this message first:**
+This is the core pipeline change. Do NOT generate pieces one-by-one sequentially. Generate ALL pieces in parallel in the background, deliver them to the user one-by-one as they approve.
+
+### How it works:
+
+**4a. Announce immediately:**
 ```
-✍️ Writing [Format] for idea #[n]...
+✍️ Starting parallel generation of all [N] pieces.
 
-Drafting in your exact voice. Takes about a minute.
+I'll send you piece #1 as soon as it's ready — and while you're reviewing it, the rest are already generating in the background. You'll never wait long between pieces.
 ```
-Wait for that message to be sent (confirmed via tool result). THEN produce the content.
-Never send the status message and the content in the same response — they must be separate turns.
 
-Then pass to **content-producer**:
-- Hook
-- Angle
-- Format
-- Story reference
-- User's voice-memory: `{USER_WORKSPACE}voice-memory.json`
-- User's master-doc: `{USER_WORKSPACE}master-doc.md`
+**4b. Spawn ALL pieces as parallel background sub-agents:**
 
-Produce ONE piece at a time. Send to user before moving to the next.
+For EACH piece in the production plan, immediately spawn a sub-agent:
+
+```
+sessions_spawn(
+  task="You are a content producer. Produce a [Format] post based on:
+  Idea: [hook + angle + story reference]
+  Master-doc: {USER_WORKSPACE}master-doc.md
+  Voice memory: {USER_WORKSPACE}voice-memory.json
+  Read both files first.
+  Write the full draft.
+  Run voice checklist (no em dashes, no semicolons, no banned words, sounds human).
+  When done, save the draft to: {USER_WORKSPACE}drafts/piece-[N].md
+  File format:
+  STATUS: READY
+  FORMAT: [format name]
+  IDEA_TITLE: [idea title]
+  ---
+  [full content here]",
+  label="content-piece-[N]",
+  mode="run"
+)
+```
+
+Spawn ALL sub-agents in one go (do not wait for one to finish before spawning the next). All pieces generate in parallel.
+
+**4c. Deliver piece #1 as soon as ready:**
+
+Poll `{USER_WORKSPACE}drafts/piece-1.md` every 20 seconds until `STATUS: READY` appears.
+As soon as it's ready, read it and send it to the user using the Output Format below.
+
+**4d. Approval loop — one piece at a time:**
+
+Wait for user response on the current piece:
+- **"approved"** → push to Airtable, then read next piece file and send it
+- **"fix: [what to change]"** → run reflection-agent, rewrite, re-send for approval
+- Next piece is almost always already ready in its file by the time user approves
+
+**4e. Draft file location:**
+- All drafts saved to: `{USER_WORKSPACE}drafts/piece-[N].md`
+- Create the `drafts/` folder if it doesn't exist
+- After approval, move file to `{USER_WORKSPACE}drafts/approved/piece-[N].md`
+- After rejection + rewrite, overwrite the file with the revised draft
+
+**The result:** User approves piece 1, piece 2 is already waiting. No long pauses between pieces.
 
 ---
 
