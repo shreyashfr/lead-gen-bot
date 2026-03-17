@@ -208,6 +208,8 @@ https://buy.stripe.com/test_8x2eVf8qc5a27JF8q6cbC00?client_reference_id={sender_
 You'll get instant access as soon as payment is confirmed. I'll set everything up automatically.
 
 Need help? shreyash.chavan2016@gmail.com
+
+Powered by Openclaw and Claude.
 ```
 
 **No exceptions. No content. No replies to questions. Hard stop.**
