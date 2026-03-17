@@ -42,11 +42,11 @@ Orchestrates the full content pipeline: Research → Ideas → Selection → Pro
 
 This skill is user-agnostic. The dispatcher injects:
 - `{USER_NAME}` — current user's name
-- `{USER_WORKSPACE}` — `/home/ubuntu/.openclaw/workspace/users/{telegram_id}/`
+- `{USER_WORKSPACE}` — `{USER_WORKSPACE}users/{telegram_id}/`
 - `{USER_NICHE}` — from registry or master-doc
 
 Replace ALL file paths:
-- `/home/ubuntu/.openclaw/workspace/` → `{USER_WORKSPACE}`
+- `{USER_WORKSPACE}` → `{USER_WORKSPACE}`
 - Any hardcoded "Ayush" or "Ayush Singh" → `{USER_NAME}`
 
 ---
@@ -87,7 +87,7 @@ Run reddit-scout AND twitter-scout in sequence for the pillar topic.
 ```bash
 node /home/ubuntu/.openclaw/workspace/skills/reddit-scout/scripts/pipeline.js \
   --niche "[pillar topic] {USER_NICHE}" \
-  --out "/home/ubuntu/.openclaw/workspace/reddit-scout" \
+  --out "{USER_WORKSPACE}reddit-scout" \
   --topN 10 --subLimit 8 --gapMs 1200 \
   --time week --kinds top,hot,rising \
   --searchAuto 1 --printChat 1
@@ -97,7 +97,7 @@ node /home/ubuntu/.openclaw/workspace/skills/reddit-scout/scripts/pipeline.js \
 ```bash
 node /home/ubuntu/.openclaw/workspace/skills/twitter-scout/scripts/pipeline.js \
   --query "[pillar topic] 2026" \
-  --out "/home/ubuntu/.openclaw/workspace/twitter-scout" \
+  --out "{USER_WORKSPACE}twitter-scout" \
   --topN 10 \
   --printChat
 ```

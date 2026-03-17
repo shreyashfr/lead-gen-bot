@@ -38,14 +38,14 @@ Weekly scan of peer accounts. Not to copy — to find the gaps they're leaving o
 - Automatically before running idea-generator if competitive-gaps.md is more than 7 days old
 
 ## Output File
-`/home/ubuntu/.openclaw/workspace/competitive-gaps.md`
+`{USER_WORKSPACE}competitive-gaps.md`
 Overwrite weekly — keep only current week's analysis plus a brief historical note.
 
 ---
 
 ## ACCOUNTS TO TRACK
 
-Stored in: `/home/ubuntu/.openclaw/workspace/competitor-list.md`
+Stored in: `{USER_WORKSPACE}competitor-list.md`
 
 If that file doesn't exist, create it with this default list and ask {USER_NAME} to review/update:
 

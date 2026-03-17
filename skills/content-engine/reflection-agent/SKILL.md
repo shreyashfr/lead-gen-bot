@@ -42,11 +42,11 @@ You receive:
 
 ## Files to Read Before Reflecting
 
-1. `/home/ubuntu/.openclaw/workspace/voice-memory.json`
+1. `{USER_WORKSPACE}voice-memory.json`
    → `voice_lessons` — past lessons, don't repeat known mistakes
    → `reflection_log` — past reflections, look for recurring patterns
    → `last_rejection_by_format` — what failed last time in this format
-2. `/home/ubuntu/.openclaw/workspace/master-doc.md`
+2. `{USER_WORKSPACE}master-doc.md`
    → {USER_NAME}'s voice, stories, positioning, hook library
 
 Read these BEFORE generating the reflection. Context is everything.

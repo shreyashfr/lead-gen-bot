@@ -355,7 +355,7 @@ MULTI-USER CONTEXT:
 - User workspace: {USER_WORKSPACE}
 
 Replace ALL file paths in the skill:
-  /home/ubuntu/.openclaw/workspace/  →  {USER_WORKSPACE}
+  {USER_WORKSPACE}  →  {USER_WORKSPACE}
   Any mention of "Ayush" or "Ayush Singh"  →  {USER_NAME}
 
 Voice, niche, and positioning: {USER_WORKSPACE}master-doc.md

@@ -13,7 +13,7 @@ Active niche search across X, LinkedIn, Instagram. Not scrolling {USER_NAME}'s p
 - After being triggered: "run feed intelligence" or "update feed intel"
 
 ## Output File
-`/home/ubuntu/.openclaw/workspace/feed-intelligence.md`
+`{USER_WORKSPACE}feed-intelligence.md`
 Append each run with date header. Don't overwrite — this file compounds over time.
 
 ---

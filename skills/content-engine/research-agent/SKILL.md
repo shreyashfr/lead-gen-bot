@@ -28,7 +28,7 @@ Scans Reddit + Twitter/X for a given content pillar and returns a structured dua
 
 This skill is user-agnostic. When called, the dispatcher injects:
 - `{USER_NAME}` — the current user's name
-- `{USER_WORKSPACE}` — path like `/home/ubuntu/.openclaw/workspace/users/{telegram_id}/`
+- `{USER_WORKSPACE}` — path like `{USER_WORKSPACE}users/{telegram_id}/`
 - `{USER_NICHE}` — from their master-doc
 
 Always read the user's master-doc for context:
@@ -72,7 +72,7 @@ Run the reddit-scout pipeline:
 ```bash
 node /home/ubuntu/.openclaw/workspace/skills/reddit-scout/scripts/pipeline.js \
   --niche "[pillar topic + user niche keywords]" \
-  --out "/home/ubuntu/.openclaw/workspace/reddit-scout" \
+  --out "{USER_WORKSPACE}reddit-scout" \
   --topN 10 --subLimit 8 --gapMs 1200 \
   --time week --kinds top,hot,rising \
   --searchAuto 1 --printChat 1
@@ -93,7 +93,7 @@ Run the twitter-scout pipeline (Playwright + stealth + saved session):
 ```bash
 node /home/ubuntu/.openclaw/workspace/skills/twitter-scout/scripts/pipeline.js \
   --query "[pillar topic] AI 2026" \
-  --out "/home/ubuntu/.openclaw/workspace/twitter-scout" \
+  --out "{USER_WORKSPACE}twitter-scout" \
   --topN 10 \
   --printChat
 ```

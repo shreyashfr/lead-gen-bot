@@ -146,7 +146,7 @@ If a post flopped AND the topic is stale or overcrowded:
 
 ## OUTPUT TO RECYCLE-QUEUE
 
-Write to `/home/ubuntu/.openclaw/workspace/recycle-queue.md`:
+Write to `{USER_WORKSPACE}recycle-queue.md`:
 
 ```markdown
 ## Recycle Queue — [Date]
