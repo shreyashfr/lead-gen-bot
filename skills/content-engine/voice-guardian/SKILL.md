@@ -29,6 +29,32 @@ sessions_spawn(
 
 ## Validation Checklist
 
+### 0. AI-HUMANIZER CHECK (Run First — Before Everything Else)
+
+Before checking voice rules, run the full AI-Humanizer scan from `skills/ai-humanizer/SKILL.md`.
+
+This scan checks for 12 documented AI writing patterns:
+1. Banned AI vocabulary (delve, tapestry, underscore, pivotal, vibrant, meticulous, foster, garner, showcase, align with, enhance, leverage, utilize, bolster, enduring, interplay, testament, landscape, intricate, boasts...)
+2. Fake importance phrases (stands as, serves as, marks a pivotal moment, reflecting broader...)
+3. Present participle tail-ons (...highlighting its importance, ...underscoring its significance)
+4. Negative parallelisms (Not just X but Y, It's not X it's Y)
+5. Copula avoidance (serves as, stands as, marks the, represents a shift)
+6. Vague authority (Experts say, Observers note, Studies show — without specifics)
+7. Challenge/future formula (Despite its X, it faces challenges... Despite these challenges...)
+8. Rule of three padding (three generic nouns/phrases where one would do)
+9. Didactic disclaimers (It's important to note, It's worth remembering)
+10. Summarizing closers (In summary, In conclusion, Overall)
+11. Em dash overuse (2+ em dashes = rewrite)
+12. Promotional/brochure tone (nestled, vibrant, rich cultural heritage, commitment to excellence)
+
+**Scoring:**
+- 0 violations → proceed to voice checks
+- 1–3 minor → fix inline, continue
+- 4–7 → rewrite pass required before voice checks
+- 8+ → full redraft, do not patch
+
+---
+
 ### 1. Forbidden Phrases (Hard Reject)
 Check `voice-memory.json → voice_rules → forbidden_phrases` array:
 - leverage, utilize, streamline, optimize, facilitate, enhance, professionalism

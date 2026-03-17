@@ -248,7 +248,19 @@ SLIDE 8: [CTA]
 
 ---
 
-## BEFORE SENDING: Voice Guardian Validation
+## BEFORE SENDING: AI-Humanizer + Voice Guardian (Two-Layer Check)
+
+After writing a draft, run TWO checks in order before sending:
+
+### Layer 1 — AI-Humanizer (run first)
+Read `skills/ai-humanizer/SKILL.md` and run the full 12-pattern scan on the draft.
+
+Fix every flagged violation before proceeding to Layer 2.
+- If 0–3 violations: fix inline, move to Layer 2
+- If 4–7: full rewrite pass, then Layer 2
+- If 8+: scrap the draft, rewrite from scratch using only the hook + angle + core facts
+
+### Layer 2 — Voice Guardian Validation
 
 After writing a draft and before sending it to Ayush:
 
