@@ -1,0 +1,388 @@
+[
+  {
+    "id": "1958803022727061850",
+    "text": "HexStrike AI MCP Agents Automating Cybersecurity with AI \n\nHexStrike AI MCP Agents is a powerful Model Context Protocol (MCP) server that links AI agents (Claude, GPT, Copilot, and more) with 150+ cybersecurity tools.",
+    "author_name": "0b1d1",
+    "author_handle": "@_0b1d1",
+    "metrics": {
+      "likes": 783,
+      "retweets": 164,
+      "replies": 8,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/Gy8Q9ifboAAL98p?format=jpg&name=small"
+    ],
+    "viral_score": 1.1,
+    "url": "https://x.com/_0b1d1/status/1958803022727061850"
+  },
+  {
+    "id": "2031777063393243227",
+    "text": "BloFin launches the BloFin MCP Server.\n\nAn open-source Model Context Protocol implementation connecting AI agents to trading infrastructure with 40 developer tools.\n\nA step toward BloFin’s mission to build top-tier AI financial infrastructure.",
+    "author_name": "BloFin Exchange",
+    "author_handle": "@BloFin_Official",
+    "metrics": {
+      "likes": 345,
+      "retweets": 52,
+      "replies": 23,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/BloFin_Official/status/2031777063393243227"
+  },
+  {
+    "id": "2032572816449835324",
+    "text": "Nyne, founded by a father-son duo, gives AI agents the human context they’re missing",
+    "author_name": "TechCrunch",
+    "author_handle": "@TechCrunch",
+    "metrics": {
+      "likes": 31,
+      "retweets": 2,
+      "replies": 8,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/TechCrunch/status/2032572816449835324"
+  },
+  {
+    "id": "2032341760190362051",
+    "text": "Alibaba Cloud & Panasonic at AWE 2026: Jaime Xu, Alibaba Cloud Qwen model solution architect, showcased our Model Studio suite, empowering Panasonic’s new AI agents with multi-modal capabilities for personalized smart living. \n\n#AlibabaCloud #Panasonic #AWE2026 #SmartHome #Qwen",
+    "author_name": "Alibaba Cloud",
+    "author_handle": "@alibaba_cloud",
+    "metrics": {
+      "likes": 22,
+      "retweets": 6,
+      "replies": 4,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HDRUD4fXwAAyupd?format=jpg&name=small",
+      "https://pbs.twimg.com/media/HDRUD1bW8AA9tAD?format=jpg&name=360x360",
+      "https://pbs.twimg.com/media/HDRUD2GWEAAY0Wm?format=jpg&name=360x360"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/alibaba_cloud/status/2032341760190362051"
+  },
+  {
+    "id": "2031049810829005192",
+    "text": "mcp (model context protocol) integration\n\nthis is openclaw's real power... you can connect to 1000+ vehicles\n\nbut the same rule applies here: don't say \"open everything\"\n\nmcp's I recommend for starting:\n- file system (start with read-only)\n- web browsing\n- calendar integration",
+    "author_name": "buzzicra",
+    "author_handle": "@buzzicra",
+    "metrics": {
+      "likes": 10,
+      "retweets": 0,
+      "replies": 1,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/buzzicra/status/2031049810829005192"
+  },
+  {
+    "id": "2031420632739520533",
+    "text": "AI agents = Model + Harness. The harness gives memory, tools, safe execution, context management, and long-term planning, turning raw intelligence into useful work. Even as models improve, harnesses remain key for real-world autonomy.",
+    "author_name": "Inflectiv AI ⧉",
+    "author_handle": "@inflectivAI",
+    "metrics": {
+      "likes": 2,
+      "retweets": 1,
+      "replies": 1,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/inflectivAI/status/2031420632739520533"
+  },
+  {
+    "id": "2031051655006007460",
+    "text": "I built an MCP server for FlexRadio SmartSDR.\n\nNow AI agents can control a ham radio.\n\nTune frequency  \nRead signal meters  \nChange RF power  \nSwitch antennas  \n\nThis opens the door to AI-assisted DX hunting, autonomous listeners, and agent-operated stations.\n\nRepo:",
+    "author_name": "jigglebilly - K1AF",
+    "author_handle": "@the_jigglebilly",
+    "metrics": {
+      "likes": 2,
+      "retweets": 1,
+      "replies": 0,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HC-78GMWgAwqd0s?format=png&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/the_jigglebilly/status/2031051655006007460"
+  },
+  {
+    "id": "2032257372807176414",
+    "text": "The MCP is the standard that allows connecting Claude to any external system — Notion, GitHub, database — without custom code.\n\nUnderstand the architecture and see how to start using it today.\n\n\nhttps://\ntechknow.com.br/post/o-que-e-m\ncp-model-context-protocol\n…\n\n#tech #ia #mcp",
+    "author_name": "techknow",
+    "author_handle": "@techknow_blog",
+    "metrics": {
+      "likes": 2,
+      "retweets": 0,
+      "replies": 1,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/techknow_blog/status/2032257372807176414"
+  },
+  {
+    "id": "2032907097730584658",
+    "text": "What it implements:\n\n→ CAVLC + CABAC entropy decoding (460 context models)\n→ 4x4 and 8x8 inverse transforms\n→ 27 intra prediction modes\n→ Quarter-pixel motion comp for P and B frames\n→ MP4 demuxing, deblocking filter, reference picture management",
+    "author_name": "Abhik Sarkar e/acc",
+    "author_handle": "@abhiksark",
+    "metrics": {
+      "likes": 2,
+      "retweets": 0,
+      "replies": 1,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HDZWOkwbQAAkfLe?format=png&name=900x900"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/abhiksark/status/2032907097730584658"
+  },
+  {
+    "id": "2031279077718425882",
+    "text": "Here's the context:  Google and Microsoft jointly released WebMCP, the Web Model Context Protocol, in February 2026 as a W3C standard proposal.  The core idea is simple but profound:",
+    "author_name": "Tiru N",
+    "author_handle": "@tiru_n1",
+    "metrics": {
+      "likes": 2,
+      "retweets": 0,
+      "replies": 0,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/tiru_n1/status/2031279077718425882"
+  },
+  {
+    "id": "2032781530599403915",
+    "text": "Protocol won't die — it's the most efficient way for Agents to pass context when collaborating, more efficient than Browser Use or Computer Use. What's really missing\n  isn't another MCP, but Layer 0 consensus: identity authentication, Agent discovery, and capability description.",
+    "author_name": "ChangShan",
+    "author_handle": "@changgaowei",
+    "metrics": {
+      "likes": 1,
+      "retweets": 0,
+      "replies": 1,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/changgaowei/status/2032781530599403915"
+  },
+  {
+    "id": "2032910591145164856",
+    "text": "Autonomous agents paying for APIs, services, and goods raises a new problem:\n\nWho authorizes the spend?\n\nAgentic payment stacks will need programmable guardrails between intent and execution. Think card limits, but built for AI wallets and stablecoin rail",
+    "author_name": "Conto",
+    "author_handle": "@contofinance",
+    "metrics": {
+      "likes": 1,
+      "retweets": 0,
+      "replies": 0,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/contofinance/status/2032910591145164856"
+  },
+  {
+    "id": "2031225663064048076",
+    "text": "AI Wisdom: Garbage in, garbage out still applies. Agents don't fail because the model is weak — they fail because the context is thin. Role, goal, constraints, examples. Feed the agent well and it thinks well. Starve it and you get noise.",
+    "author_name": "Michael Serres",
+    "author_handle": "@michaelserres",
+    "metrics": {
+      "likes": 1,
+      "retweets": 0,
+      "replies": 0,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/michaelserres/status/2031225663064048076"
+  },
+  {
+    "id": "2031408377494986957",
+    "text": "Model Context Protocol (MCP) servers are becoming more and more popular. And as adoption grows, an important architectural question starts popping up: Where should you actually run your MCP servers?\n\nThere are many options like a hosted MCP service run by a 3rd party, self-hosted",
+    "author_name": "obots_ai",
+    "author_handle": "@Obots_ai",
+    "metrics": {
+      "likes": 1,
+      "retweets": 0,
+      "replies": 0,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HDEDJ3OXYAMHrK5?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/Obots_ai/status/2031408377494986957"
+  },
+  {
+    "id": "2031043941857193992",
+    "text": "If you're building terminal-based AI coding agents, pay attention to this\nOpenDev breaks down how modern CLI agents actually work:\n→ dual-agent architecture (planner + executor)\n→ workload-specialized model routing\n→ lazy tool discovery\n→ adaptive context compaction",
+    "author_name": "Harikant Bajaj",
+    "author_handle": "@harikantbajaj08",
+    "metrics": {
+      "likes": 1,
+      "retweets": 0,
+      "replies": 0,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HC-3sUCaMAEp5sX?format=png&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/harikantbajaj08/status/2031043941857193992"
+  },
+  {
+    "id": "2032857010513776955",
+    "text": "I wrapped LatentMAS (Zou et al., 2025) as an MCP server so AI agents can use latent-space reasoning as a tool.\n\nhttps://\ngithub.com/ArthurVigier/l\natent-relay\n…\n\ndetail below:\n\n#MultiAgent #Agents #LatentMAS #MCP\ncc \n@LingYang_PU\n \n@Alibaba_Qwen",
+    "author_name": "Arthur Vigier",
+    "author_handle": "@VigierArth79445",
+    "metrics": {
+      "likes": 1,
+      "retweets": 0,
+      "replies": 1,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/VigierArth79445/status/2032857010513776955"
+  },
+  {
+    "id": "2032486225979019691",
+    "text": "First - what is MCP?\n\nModel Context Protocol (MCP) is an open standard introduced by Anthropic.\n\nIt lets AI models connect to external tools like:\n\n• files\n• APIs\n• databases\n• apps\n\nThink of MCP as “USB-C for AI agents.”",
+    "author_name": "Jenil Soni",
+    "author_handle": "@thejenilsoni",
+    "metrics": {
+      "likes": 1,
+      "retweets": 0,
+      "replies": 1,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HDTXSrnawAAXFJG?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/thejenilsoni/status/2032486225979019691"
+  },
+  {
+    "id": "2032828984279376300",
+    "text": "Introducing the ATOM MCP Server\nIf you're building with AI agents, you now have live inference pricing data directly inside Claude, Cursor, Windsurf, or any MCP-compatible client.\n8 tools. 1,600+ SKUs. 40+ vendors.\nStop guessing at inference costs. Let your agent know the",
+    "author_name": "Steriani",
+    "author_handle": "@Steriani_K",
+    "metrics": {
+      "likes": 1,
+      "retweets": 0,
+      "replies": 0,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/Steriani_K/status/2032828984279376300"
+  },
+  {
+    "id": "2031344282812969419",
+    "text": "Big AI shift: agents hallucinating API params are a silent killer. \n\n\n@AndrewYNg\n's new 'Context Hub' fixes this by feeding agents up-to-date tool docs + schemas. \n\nThis is why boring infra > model hype. Real value = fewer hallucinations. \n\n#AI #Agents #TechStack",
+    "author_name": "Petunia Byte",
+    "author_handle": "@PetuniaByte",
+    "metrics": {
+      "likes": 1,
+      "retweets": 0,
+      "replies": 2,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/PetuniaByte/status/2031344282812969419"
+  },
+  {
+    "id": "2031947993146949656",
+    "text": "LLMs.txt: Pros - LLM-friendly site summary (background, key pages, rules) like robots.txt but for AI ingestion; boosts accuracy, respects owners. Cons - Voluntary, patchy adoption, LLMs may skip/ignore it.\n\nMCP (Model Context Protocol): Pros - Open std for dynamic, secure AI-tool",
+    "author_name": "Grok",
+    "author_handle": "@grok",
+    "metrics": {
+      "likes": 1,
+      "retweets": 1,
+      "replies": 1,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/grok/status/2031947993146949656"
+  },
+  {
+    "id": "2032426954503410101",
+    "text": "Model Context Protocol (MCP) vs. AI Agent Skills: A Deep Dive into Structured Tools and Behavioral Guidance for LLMs\nvia \nhttp://\ndataaihub.co #AI",
+    "author_name": "Tapan Sharma",
+    "author_handle": "@tapansharma04",
+    "metrics": {
+      "likes": 0,
+      "retweets": 0,
+      "replies": 1,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/tapansharma04/status/2032426954503410101"
+  },
+  {
+    "id": "2032063151974318521",
+    "text": "They sold us the Model Context Protocol (MCP) as the future of AI agents.\n\nOne year later: complete reversal.\n→ MCPs are declining\n→ APIs and CLIs are taking back control\n\nWhy this change?",
+    "author_name": "Yass —",
+    "author_handle": "@yassineabouzaid",
+    "metrics": {
+      "likes": 0,
+      "retweets": 0,
+      "replies": 1,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/yassineabouzaid/status/2032063151974318521"
+  },
+  {
+    "id": "2031293994714722503",
+    "text": "Model Context Protocol (MCP) provides a standard way for AI models to connect to enterprise systems. With MCP coming to the FME Platform, organisations can integrate AI with real operational data. Read our latest blog here: \nhttps://\nzurl.co/4ej1m #AI #FME Safe Software",
+    "author_name": "IMGS",
+    "author_handle": "@IMGS_Ireland",
+    "metrics": {
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HDCbH-MaMAUP6ec?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/IMGS_Ireland/status/2031293994714722503"
+  }
+]

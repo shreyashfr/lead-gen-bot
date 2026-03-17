@@ -1,0 +1,173 @@
+Distribution Is The New Skill
+
+the chapter they cut from every coding curriculum
+
+
+i want to start with something uncomfortable.
+
+the people who taught you to code already knew the most important skill. they just didn't teach it to you.
+
+think about every instructor who's had an impact on you. the YouTube creator who made ML click. the bootcamp teacher who broke down system design. the person who explained data structures in Hindi and actually made it make sense.
+
+they all had one thing in common beyond technical knowledge. they had an audience.
+
+a YouTube channel with 200k subscribers. a LinkedIn following of 80k. a newsletter read by 50,000 people. they'd built, over years, a group of people who trusted them and came back for more.
+
+they used that audience to sell courses. to get consulting work. to fill bootcamp cohorts. to stay relevant in a market that changes every 18 months.
+
+their distribution is the reason you paid for their course and not someone else's. someone equally qualified, maybe more qualified, with no audience, didn't get your money. because you'd never heard of them.
+
+and they never once, in any lesson, taught you how to build distribution for yourself.
+
+this essay is about why that happened. and about what you should do about it.
+
+
+---
+
+
+why instructors never teach distribution
+
+an instructor builds an audience around a specific topic. "AI for beginners." "system design for backend engineers." "ML in Python from scratch." they occupy a niche and create consistently for it until they own it.
+
+that audience is their actual business. the courses are the product but the audience is the asset. it's the thing that compounds: more subscribers means more reach means more students means more revenue.
+
+now imagine they published a lesson: "here's exactly how i built a YouTube channel in the AI niche and got to 100k subscribers."
+
+some students would follow the advice. they'd start channels. post consistently. build audiences in the same niche. and some of them would be really good. better teachers in some areas. they'd pull chunks of the audience over time.
+
+that's the tension. teaching distribution creates competition. keeping it implicit preserves the moat.
+
+most instructors probably don't think about it this consciously. but the incentive is real and the result is consistent: technical skills get taught, distribution never does.
+
+the curriculum you got was curated. not just by what the instructor knew, but by what it served them to share.
+
+the chapter on distribution got cut. silently. across every platform. from every course.
+
+
+---
+
+
+what distribution actually is
+
+before we go further i want to be clear about what i mean, cos "distribution" sounds like a marketing buzzword and i'm not using it that way.
+
+distribution is simple: it's whether the right people know you exist.
+
+that's it. do the people who could hire you, fund you, collaborate with you, or learn from you — do they know you're out there? do they have any sense of how you think? have they seen you work through a problem in public?
+
+if yes, you have some distribution. if no, you don't, and it doesn't matter how good you are.
+
+this is what i understood early, and it's what changed everything for me.
+
+i wasn't working on transformer architectures before GPT launched because i got lucky. i wasn't doing MLOps before anyone called it that because of some genius foresight. i was building in public consistently, which meant i was in rooms and conversations that most people at my level weren't in. visibility compounded into opportunities. opportunities compounded into experience that was years ahead of where i should have been by age alone.
+
+i got my first US-based job at 13 cos a founder had been watching me think out loud online. not cos i was the most technically impressive 13-year-old on the planet. cos i was findable, and i'd been putting my thinking in front of people who were looking for exactly what i was doing.
+
+by 18 i was running a B2B SaaS doing millions. distribution didn't just help me get a job. it compressed the entire timeline.
+
+
+---
+
+
+the compounding effect nobody talks about
+
+here's what people miss about distribution: it's not linear.
+
+when you start posting about your technical work, nothing happens for a while. a few views, a couple of likes from people you already know. it feels like shouting into a void. most people quit here, which is exactly why it's an advantage for the ones who don't.
+
+then at some point, one post reaches the right person. that person shares it with their network. or they DM you. or they mention you to someone who's hiring. or they remember you six months later when a problem comes up that matches exactly what you were writing about.
+
+and from that one connection, multiple things happen. you get access to information you wouldn't have had. you get opportunities you wouldn't have known existed. you get feedback that makes your next piece better. which gets more reach. which compounds again.
+
+this is the same mechanism your favourite instructors used to build their audiences over years. the difference is they started earlier, and they never told you to do the same thing.
+
+
+---
+
+
+the hidden cost of building in private
+
+most engineers build in private. they work on interesting things, solve hard problems, develop real depth in their area, and then apply for jobs when they need to. they treat their work as something between them and their employer.
+
+i understand why. there's a culture in engineering that conflates quiet focus with real seriousness. posting online feels like self-promotion, which feels uncomfortable, which feels like it's not what serious technical people do.
+
+but the cost is invisible and enormous.
+
+every month you spend building in private is a month you're not building recognition. not building the reputation that gets you the unsolicited DM from a founder. not being in the room where the interesting projects are forming. not building the trust that turns into investment, collaboration, and opportunities that never get posted publicly.
+
+technical skills compound when you use them. reputation also compounds when you build it. but unlike technical skills, reputation requires public surface area. it doesn't exist privately.
+
+the engineer who spends 3 years building excellent systems in private and the engineer who spends 3 years building excellent systems while writing about them once a week are not equally positioned at the end of those 3 years. the second engineer is vastly better positioned, even if their technical depth is identical.
+
+
+---
+
+
+why it matters more now
+
+i keep hearing people say distribution will get easier to fake with AI, so it matters less. this gets it completely backwards.
+
+AI tools have compressed the gap in technical output. the code a junior engineer submits for a take-home today, with AI assistance, looks more polished than it would have 3 years ago. the written content most people produce, with AI assistance, looks more professional. the output quality floor has risen everywhere.
+
+what that means is that output quality is less differentiating than it used to be. when everyone's code looks good, what separates people isn't the code.
+
+it's the reputation built before the opportunity arose. it's the name that a founder already recognises when they're thinking about who to reach out to. it's the months of consistent presence that AI can produce content faster than but still can't replicate, cos what you're actually building is trust with specific people over time, not content volume.
+
+distribution is the last thing that requires genuine time and genuine presence. which is exactly why it's more valuable now, not less.
+
+
+---
+
+
+what your instructors actually did
+
+i want to be concrete about this cos the dynamic is worth understanding clearly.
+
+every major technical educator you've consumed built their audience before they were famous. they posted when they had 50 followers. they made videos when nobody was watching. they wrote threads that got 12 likes. they did this consistently, for a long time, before it worked.
+
+that consistency is what created the compounding. the early posts didn't get reach, but they built the habit, refined the voice, and occasionally reached the right person who then told someone else.
+
+by the time they were selling you a $400 course, the hard work was already done. what you saw was the result of years of distribution-building that happened quietly, before they were anyone.
+
+they were doing exactly what i'm telling you to do. they just weren't telling you to do it.
+
+
+---
+
+
+what this actually looks like in practice
+
+i'm not going to tell you to post every day or build a content calendar or do any of the things that sound like being a creator and feel nothing like being an engineer.
+
+here's what actually works, based on what worked for me and what i've watched work for the students i've helped place.
+
+write about what you're actually doing. not polished retrospectives. the messy current thing. the problem you're stuck on right now. the thing that confused you this week and what you eventually figured out. the design decision you made and why, and what you're not sure about.
+
+this content is more useful to the people reading it than any tutorial, cos most tutorials assume you already know what you're doing. this content meets people where they actually are, which is also usually confused and figuring things out.
+
+once a week is enough. not once a day. once a week, consistently, for six months, will put you ahead of 95% of engineers in your niche in terms of visibility.
+
+and when you reach out to companies or founders, reach out about their problem, not about you. "i noticed this in your product, here's how i'd think about it" gets responses that "please consider my application" never will. your distribution gives you the context to do this well, cos you've been paying attention to what people in the space are actually working on.
+
+
+---
+
+
+the real reason this matters
+
+technical skills and distribution aren't in competition. the engineers who move the fastest are the ones who take both seriously.
+
+the pure technical skill without distribution stays invisible. the distribution without technical depth has no foundation.
+
+but here's the asymmetry: most engineers take technical skill seriously and treat distribution as optional. which means engineers who treat distribution as a core skill are genuinely rare. and rare things are valuable.
+
+there are maybe a few hundred engineers in India who can build real production systems and have a meaningful public presence. these are the people getting the interesting opportunities, the inbound from US companies, the invitations to be early on projects that matter.
+
+the space isn't crowded. it just requires doing something that your instructors never told you to do, and that most of your peers find uncomfortable.
+
+the chapter on distribution got cut from the curriculum. you're reading it now. what you do with it is up to you.
+
+
+---
+
+p.s. i share more of this thinking, including the exact process i use for building technical presence on LinkedIn, in a community for engineers and developers. link is in the first comment.

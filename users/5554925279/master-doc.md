@@ -1,5 +1,3 @@
-*Last updated: 2026-03-10 | Content Engine*
-
 # MASTER DOC — Ayush Singh
 *Last updated: 2026-02-22 | Maintained by Iyela*
 
@@ -8,7 +6,7 @@
 ## WHO YOU ARE
 
 **Name:** Ayush Singh
-**Age:** ~19
+**Age:** ~19 (first US job at 13, million dollar company by 18)
 **Location:** Bangalore
 **Company:** Second Brain Labs (SBL) — funded B2B SaaS, sales & marketing AI space
 **Other:** Antern (made the knowledge free, charges only for implementation)
@@ -53,7 +51,9 @@ ML engineer turned founder who built the hard way — no shortcuts, no PhD, just
 - That moment rewired everything
 
 ### Career Build
+- First US-based job at age 13
 - Worked as Data Scientist at a US-based firm — working on transformer-based architecture **before GPT was launched**
+- By age 18: running a million dollar B2B SaaS company
 - Switched to MLOps at ZenML — **before MLOps was even a word**
 - Built YouTube following + LinkedIn following in parallel
 - Ran cohort-based courses certified by MIT CS and AI Labs

@@ -1,0 +1,160 @@
+You Are The Offer
+
+how to stop applying for jobs and start getting hired
+
+
+most people think about job hunting completely wrong.
+
+they think about it as a search. i need a job, so i'll go find one. i'll look at what's available, pick the ones i want, and apply. then i'll wait and see if someone picks me.
+
+this framing puts you in the worst possible position from the start. you're a supplicant. you're asking. you're hoping someone decides you're worth their time and money. and you're doing this alongside hundreds of other people doing exactly the same thing, in exactly the same way, at exactly the same time.
+
+there's a completely different way to think about this. and once you see it, the old way looks almost absurd.
+
+
+---
+
+
+you're a product on a monthly subscription
+
+think about what a company does to get customers.
+
+they build a product. they figure out who needs it. they run ads, do outbound, build content, go to conferences, get referrals, run trials, do all of it — just to get someone to pay them monthly. the entire sales and marketing function of a company exists to find people who have a problem and convince them this product solves it.
+
+a good B2B SaaS company might spend $10,000 in sales and marketing costs to acquire a customer paying $500 a month. that's the economics of customer acquisition.
+
+now here's the thing. when a company hires you, they're paying you monthly too. you are, in the most literal sense, a product on a monthly subscription. the company is paying you every month in exchange for the problems you solve for them.
+
+and yet most engineers do absolute ZERO marketing or distribution for themselves. no content, no outreach, no presence, no nothing. they just exist, privately, and hope the right company somehow finds them and decides to buy.
+
+imagine a SaaS company that built a genuinely great product and then never told anyone about it. never ran an ad, never wrote a blog post, never did a demo, never reached out to a single potential customer. just put the product on a website and waited.
+
+that company would fail, obviously. the product being good isn't enough if nobody knows it exists.
+
+that's what most engineers are doing with their careers.
+
+
+---
+
+
+what "being the offer" actually means
+
+there's a moment i remember clearly from early in my career.
+
+i'd been applying to companies for a while. sending resumes, writing cover letters, following up, getting ignored. the standard loop. and it wasn't working well enough, fast enough.
+
+then i tried something different. instead of sending a company my resume and saying "please consider me," i spent time actually looking at their product, found a specific problem in how they were approaching something, and sent them a short note about it.
+
+not "i'm a great fit and i'd love to work with you." something more like "i noticed this issue in how your recommendation system surfaces results, and here's how i'd think about fixing it."
+
+i got a response the same day. after weeks of silence from applications going into the void.
+
+that one message worked cos it completely changed the dynamic. i wasn't asking for anything anymore. i was offering something. the company didn't have to evaluate me against 200 other candidates based on a document. i'd already shown i could think about their specific problem before they'd paid me a single rupee.
+
+that's the shift. from applicant to offer.
+
+an applicant says "here's what i've done, please give me a chance."
+an offer says "here's what i see in your situation, and here's how i'd approach it."
+
+one puts the company in charge of deciding if you're worth talking to. the other makes them want to talk to you.
+
+
+---
+
+
+the information asymmetry problem
+
+here's why the application system fails so completely for engineers.
+
+a resume is a standardised document designed to compress a human being into a format that can be evaluated at scale. hiring managers get hundreds of them. they spend an average of seven seconds on each one. they're looking for reasons to discard, not reasons to hire.
+
+in this system, you're competing on credentials, keywords, and formatting. the actual thinking you can do — the judgment, the curiosity, the way you approach hard problems — is invisible. it doesn't exist in that format.
+
+your best chance of being hired is to find a way to make that thinking visible before the evaluation happens.
+
+this is what i'd been doing without fully understanding it when i was younger. i was posting about technical problems i was working through. i was reaching out to companies with specific observations about their work. i wasn't waiting to be evaluated. i was showing how i thought in contexts where the right people could see it.
+
+the engineer who gets hired from a cold DM didn't get lucky. they made their thinking visible in a way that found the right person at the right moment.
+
+
+---
+
+
+why most people never make this shift
+
+the application system is comfortable in a specific way. you can do it without putting anything real on the line.
+
+you submit a resume and you haven't really committed to anything. if you don't hear back, that's just how the process works. it's not personal. the rejection is abstract.
+
+reaching out to a company with a specific take on their product is different. you've done the work. you've taken a position. if they don't respond or they push back, that feels more exposed.
+
+so most people stay in the safe lane. mass applications into portals, hoping something comes through, wondering why it isn't working.
+
+the discomfort of putting a real opinion in front of a real company is actually the signal that you're doing something that works. cos it's the thing most people won't do.
+
+i've run outbound at scale at Second Brain Labs. we do tens of thousands of LinkedIn messages monthly for US businesses. the single biggest difference between messages that get responses and messages that don't is specificity. a generic message about availability gets ignored. a message that demonstrates you understand their specific situation gets a conversation.
+
+this is true whether you're selling a product or selling yourself.
+
+
+---
+
+
+what distribution has to do with it
+
+this is where visibility and the offer connect.
+
+when you post consistently about your technical work, you're doing two things simultaneously.
+
+one is obvious: you're building recognition. people see your name, see how you think, start to associate you with a domain.
+
+the other is less obvious: you're learning to translate what you do into language that non-technical people can understand and care about. this is a skill that most engineers are genuinely bad at, and it's the same skill that makes your outreach work.
+
+the engineer who can write a clear, specific, non-jargon explanation of why a production system failed and what they did about it — that engineer can also write a compelling cold message to a founder about a problem they see in that founder's product. same skill, different context.
+
+distribution builds the skill. the skill enables the offer.
+
+and over time, the distribution itself becomes an asset that changes the equation entirely. after a few months of consistent posting, founders start reaching out to you. the ratio flips. you're not sending cold messages hoping for responses. people who've been watching you work are coming to you cos they need what you've been demonstrating you can do.
+
+i went from doing outreach to receiving it. not cos i got famous. cos i was consistently visible to the right people for long enough that when they had a problem, my name was already in their head.
+
+
+---
+
+
+the practical system
+
+i want to be concrete here cos "become the offer" sounds good and means nothing without specifics.
+
+there are two things you can do starting this week that change the dynamic.
+
+the first is one post about your actual work. not a finished polished project. something you're currently working through. a problem you hit, what you tried, what worked, what didn't. write it in plain language, the kind a non-ML person could follow. this builds both the visibility and the translation skill.
+
+the second is one outreach message that leads with value. pick one company you want to work for or get in front of. actually look at their product or their public technical content. find something specific you'd approach differently or something they're clearly trying to solve. send a short note about it. not a cover letter. not a pitch. just "i noticed this, here's how i'd think about it." that's it.
+
+do both of these once a week and your positioning shifts completely over 60-90 days. you build a body of public work that demonstrates how you think. you build a track record of outreach that positions you as someone who offers value rather than someone who asks for opportunities.
+
+most engineers never do either of these things consistently. which means the ones who do are immediately differentiated in a market that's otherwise extremely crowded.
+
+
+---
+
+
+the shift i'm talking about
+
+i got my first US-based job at 13. not cos i was the most technically impressive 13-year-old. cos a founder had been watching me think in public and decided i was the kind of person they wanted to bet on.
+
+by 18 i was running a B2B SaaS doing millions. the pattern held at every stage: visibility created opportunities that applications never would have.
+
+the companies i worked with, the investors who believed in us, the team we built — none of it came through a portal. all of it came through being consistently present in a way that made it easy for the right people to find me and see how i thought.
+
+you are not a candidate. you're a product with a specific set of capabilities that solves specific problems. the job is not to find someone who'll take a chance on you. the job is to make sure the people who need what you can do know that you exist and can see enough of how you work to decide they want more.
+
+that's the whole shift. from applicant to offer. from hoping to be found to being impossible to miss.
+
+the market isn't broken. the approach most people are using is.
+
+
+---
+
+p.s. i share more of this thinking, including the exact outreach frameworks i use, in a community for engineers and developers who are serious about building this way. link is in the first comment.

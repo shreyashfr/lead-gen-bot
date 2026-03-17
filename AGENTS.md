@@ -231,8 +231,8 @@ Handles 5-10 users messaging the Telegram bot. Each user has a fully isolated wo
 
 **When a Telegram message arrives (channel = telegram):**
 1. Check inbound metadata `sender_id`
-2. **Check `users/registry.json` FIRST — regardless of who the sender is.**
-3. If sender_id is listed in `users/registry.json` → `admin_ids` array:
+2. **Check `/home/ubuntu/.openclaw/workspace-ce/users/registry.json` FIRST — regardless of who the sender is. Always use this absolute path.**
+3. If sender_id is listed in `admin_ids` array:
    - **If NOT in registry (no entry or `onboarding_complete: false`):**
      - Treat as a **CONTENT ENGINE USER** — run dispatcher/onboarding just like any other user
      - **CRITICAL: Do NOT use personal context** (USER.md, MEMORY.md) during the content engine flow
@@ -245,12 +245,12 @@ Handles 5-10 users messaging the Telegram bot. Each user has a fully isolated wo
    - Do NOT greet them with "Shreyash" or any name from personal context
    - Act ONLY as the Content Engine bot — identity: neutral assistant, no personal name
    - Load `skills/dispatcher/SKILL.md` and follow it strictly
-   - Only use data from `users/{sender_id}/` workspace — never bleed Shreyash's context into other users' responses
+   - Only use data from `/home/ubuntu/.openclaw/workspace-ce/users/{sender_id}/` workspace — never bleed Shreyash's context into other users' responses
 
 **That's it. The dispatcher handles everything else.**
 
 **Key files:**
-- `skills/content-engine/dispatcher/SKILL.md` — identifies user, routes to onboarding or content engine
-- `skills/content-engine/onboarding/SKILL.md` — new user setup (collects details, builds workspace)
-- `users/registry.json` — all users index
-- `users/{telegram_id}/` — each user's isolated workspace (master-doc, voice-memory, content-queue)
+- `skills/dispatcher/SKILL.md` — identifies user, routes to payment gate, onboarding, or content engine
+- `skills/onboarding/SKILL.md` — new user setup
+- `/home/ubuntu/.openclaw/workspace-ce/users/registry.json` — all users index (always use absolute path)
+- `/home/ubuntu/.openclaw/workspace-ce/users/{telegram_id}/` — each user's isolated workspace

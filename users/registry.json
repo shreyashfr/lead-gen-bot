@@ -7,8 +7,8 @@
     "750774193": {
       "name": "Sourabh",
       "workspace": "/home/ubuntu/.openclaw/workspace/users/750774193/",
-      "onboarding_complete": true,
-      "onboarding_step": null,
+      "onboarding_complete": false,
+      "onboarding_step": "awaiting_payment",
       "platforms": [
         "linkedin",
         "twitter",
@@ -17,11 +17,57 @@
         "youtube"
       ],
       "niche": "UPSC preparation, geopolitics, international affairs",
-      "joined": "2026-03-09"
+      "joined": "2026-03-09",
+      "payment_confirmed": false
+    },
+    "999373741": {
+      "name": "Vishal Rewaskar",
+      "workspace": "/home/ubuntu/.openclaw/workspace-ce/users/999373741/",
+      "payment_confirmed": true,
+      "onboarding_complete": true,
+      "onboarding_step": null,
+      "joined": "2026-03-14",
+      "email": "vishalrewaskar91@gmail.com",
+      "stripe_customer_id": "cus_U8nckDzvzSnXW0",
+      "subscription_start": "2026-03-13",
+      "niche": "Agentic AI, LLMs, ML Engineering, Deep Learning, AI from scratch",
+      "platforms": ["linkedin"]
     },
     "1624590926": {
       "name": "Omkar",
       "workspace": "/home/ubuntu/.openclaw/workspace/users/1624590926/",
+      "onboarding_complete": false,
+      "onboarding_step": "awaiting_payment",
+      "platforms": [
+        "linkedin",
+        "twitter",
+        "instagram"
+      ],
+      "niche": "Machine Learning Engineering, Applied AI, Automation with GenAI",
+      "joined": "2026-03-10",
+      "payment_confirmed": false
+    },
+    "1912102710": {
+      "name": "Hari",
+      "workspace": "/home/ubuntu/.openclaw/workspace-ce/users/1912102710/",
+      "onboarding_complete": false,
+      "onboarding_step": "payment_confirmed",
+      "airtable_enabled": false,
+      "platforms": [
+        "linkedin",
+        "twitter",
+        "instagram"
+      ],
+      "niche": "Tech / AI / Careers",
+      "joined": "2026-03-12",
+      "payment_confirmed": true,
+      "email": "hari200@gmail.com",
+      "stripe_customer_id": "cus_U94bLc4H3C2Gr5",
+      "subscription_start": "2026-03-14"
+    },
+    "5554925279": {
+      "name": "Ayush Singh",
+      "workspace": "/home/ubuntu/.openclaw/workspace-ce/users/5554925279/",
       "onboarding_complete": true,
       "onboarding_step": null,
       "platforms": [
@@ -29,23 +75,29 @@
         "twitter",
         "instagram"
       ],
-      "niche": "Machine Learning Engineering, Applied AI, Automation with GenAI",
-      "joined": "2026-03-10"
-    },
-    "5554925279": {
-      "name": "Ayush Singh",
-      "workspace": "/home/ubuntu/.openclaw/workspace/users/5554925279/",
-      "onboarding_complete": true,
-      "onboarding_step": null,
-      "platforms": ["linkedin", "twitter", "instagram"],
       "niche": "Tech / AI / Careers",
-      "joined": "2026-03-10"
+      "joined": "2026-03-10",
+      "payment_confirmed": true,
+      "email": "rgjbjg@gmail.com",
+      "stripe_customer_id": "cus_U99bBHkdbB39PH",
+      "subscription_start": "2026-03-14"
+    },
+    "8176450202": {
+      "name": "Misal Vaibhav",
+      "workspace": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/",
+      "onboarding_complete": false,
+      "onboarding_step": "awaiting_master_doc",
+      "joined": "2026-03-12",
+      "payment_confirmed": true,
+      "email": "misalvaibhav01@gmail.com",
+      "stripe_customer_id": "cus_U8qfOOkNkdv8cq",
+      "subscription_start": "2026-03-13"
     },
     "8353137318": {
       "name": "Karan",
       "workspace": "/home/ubuntu/.openclaw/workspace/users/8353137318/",
-      "onboarding_complete": true,
-      "onboarding_step": null,
+      "onboarding_complete": false,
+      "onboarding_step": "awaiting_payment",
       "platforms": [
         "linkedin",
         "twitter",
@@ -54,7 +106,19 @@
         "youtube"
       ],
       "niche": "AutoCAD design",
-      "joined": "2026-03-09"
+      "joined": "2026-03-09",
+      "payment_confirmed": false
+    },
+    "5345086195": {
+      "name": "Manish More",
+      "workspace": "/home/ubuntu/.openclaw/workspace-ce/users/5345086195/",
+      "payment_confirmed": true,
+      "onboarding_complete": false,
+      "onboarding_step": "awaiting_master_doc",
+      "joined": "2026-03-14",
+      "email": "manishmore2006@gmail.com",
+      "stripe_customer_id": "cus_U9Eq5PMoOnoRna",
+      "subscription_start": "2026-03-14"
     }
   }
 }

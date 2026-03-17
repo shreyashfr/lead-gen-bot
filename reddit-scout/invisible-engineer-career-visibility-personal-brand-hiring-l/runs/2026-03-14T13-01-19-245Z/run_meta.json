@@ -1,0 +1,37 @@
+{
+  "niche": "invisible engineer career visibility personal brand hiring linkedin",
+  "nicheSlug": "invisible-engineer-career-visibility-personal-brand-hiring-l",
+  "runId": "2026-03-14T13-01-19-245Z",
+  "startedAt": "2026-03-14T13:01:19.246Z",
+  "keywords": [
+    "invisible engineer career visibility personal brand hiring linkedin"
+  ],
+  "mustInclude": [
+    "invisible",
+    "engineer",
+    "career",
+    "visibility",
+    "personal",
+    "brand",
+    "hiring",
+    "linkedin"
+  ],
+  "search": "invisible engineer career visibility personal brand hiring linkedin",
+  "subAllowlist": null,
+  "config": {
+    "topN": 10,
+    "subLimit": 8,
+    "gapMs": 1200,
+    "limitPerListing": 25,
+    "time": "week",
+    "kinds": [
+      "top",
+      "hot",
+      "rising"
+    ],
+    "searchSort": "top",
+    "searchTime": null,
+    "minSubscribers": 0,
+    "sendCardsN": 5
+  }
+}

@@ -1,0 +1,179 @@
+The Invisible Engineer
+
+why the best technical people in India stay unemployed — and what i did differently at 13
+
+
+i got my first job at a US-based firm at 13. not through a job portal, not through campus placement, not through a referral from someone who knew someone.
+
+the founder DM'd me.
+
+i'd been posting about what i was building. transformer architectures, attention mechanisms, gaps i was finding in the literature. not big polished posts. just technical thinking, out loud, on LinkedIn. someone saw it, decided i was the kind of person they needed, and reached out.
+
+i didn't know this was unusual at the time. i thought this was just how it worked.
+
+it's not how it works for most people. and i've spent the last couple of years watching why.
+
+
+---
+
+
+the gap i keep seeing
+
+i've helped hundreds of students get placed in ML and data science roles. the pattern is consistent enough that i've stopped being surprised by it.
+
+the most technically skilled students are often the hardest to place.
+
+not cos they can't do the work. they absolutely can. sometimes they're more capable than the people getting hired around them. i've seen students who've read the actual papers, who understand what most people just copy-paste from tutorials, who've built real production systems, spending 6-8 months applying and getting nothing back.
+
+and in the same period i've seen engineers with a couple of average projects and decent communication skills land 3-4 offers, DMs from founders, jobs they didn't even apply for.
+
+the difference isn't technical depth. it's whether the right people have seen them think.
+
+
+---
+
+
+why this happens
+
+the way most people are taught to get jobs is broken, and it's been broken for a while. nobody just didn't update the system.
+
+the model is: build skills, get a degree or certification, write a resume, apply, hope.
+
+this model worked when there were fewer engineers and more time. when a hiring manager could sit down with 40 applications and actually read through them. when the best resume actually won.
+
+that world is gone.
+
+there are now hundreds of thousands of ML and data science graduates in India alone every year. the number of roles hasn't grown proportionally. and on top of that, AI tools mean that the code someone submits in a take-home assignment tells you less and less about how they actually think, cos claude or cursor probably helped with half of it.
+
+so the old model of "be good and apply" doesn't work anymore. it wasn't a great model to begin with, and now it's been made worse by scale and AI simultaneously.
+
+what actually works is something nobody teaches in any course.
+
+
+---
+
+
+what companies are actually doing
+
+i run Second Brain Labs now. we do LinkedIn outbound at scale for US businesses. i've hired engineers myself. i've talked to a lot of founders about how they actually fill roles.
+
+here's what nobody tells you: most good roles at startups and growing companies are never posted publicly. or if they are, the decision is already basically made before the applications even open.
+
+what actually happens is this. a founder or a hiring manager has a problem. they need someone. their first move isn't to open Naukri. their first move is to think about who they've seen talking about this kind of problem recently.
+
+they go to their LinkedIn feed. they look at people who've been posting about the work. they think "that person who was writing about ML pipelines last week — i should reach out to them."
+
+the job goes to whoever's already in their head.
+
+if you've been posting consistently, there's a real chance your name comes up in that moment. if you haven't, you don't exist in that moment, no matter how technically strong you are.
+
+this isn't companies being unfair or lazy. it's just how attention works. people hire who they know, or who they feel like they know. posting is how you create that feeling at scale, with people you've never actually met.
+
+
+---
+
+
+what happened at 13
+
+when i was 13, i didn't have a degree. i didn't have a traditional network. no campus placement, no senior who could refer me, no family connections in tech.
+
+what i had was a LinkedIn feed where i'd been thinking out loud for months.
+
+i was posting about what i was learning, what confused me, what clicked when it finally did. i was working through transformer architectures at a time when most people my age were still figuring out linear regression. not cos i was trying to build a personal brand. i found the work genuinely interesting and writing about it helped me understand it better.
+
+the DM that turned into my first US job came from someone who'd been seeing those posts. he didn't know my grades. he didn't know my background. he knew how i thought about problems, cos he'd watched me work through them publicly for months.
+
+that job paid $600 a week. i initially read the email and assumed it was per month. when i realised it was weekly, something shifted in how i understood what was actually possible.
+
+none of that happens without the visibility. the skills were real, but skills alone don't get you that DM. a resume definitely doesn't. what got me noticed was being consistently present in a space where the right people were paying attention.
+
+
+---
+
+
+what visibility actually means
+
+i want to be specific here cos "be visible" is advice that sounds useful and actually does nothing.
+
+visibility doesn't mean posting every day about your morning routine or your productivity system. it doesn't mean writing motivational content. it doesn't mean chasing viral posts or optimising for likes.
+
+it means making it easy for the right person to understand how you think, in a context where they might actually be looking for someone like you.
+
+a post about a technical problem you solved this week. a short breakdown of why a production system failed and what fixed it. your honest take on a paper you read. what confused you about a concept and how you eventually got it.
+
+this kind of content does something that a resume can't do. it shows the actual thinking. it shows curiosity, depth, consistency. a hiring manager reading your post about debugging a recommendation system sees something completely different from your resume — they see how you approach problems when you're not trying to impress anyone.
+
+and the world is genuinely smaller than it feels. your audience doesn't need to be huge for this to work. you need maybe one post a week for a few months before the right person, who knows the right person, who's hiring for exactly your skillset, sees it.
+
+i've watched it happen too many times to call it coincidence.
+
+
+---
+
+
+why it matters more now, not less
+
+a lot of people hear this and think "okay but with AI, everyone can just generate content, so doesn't it all even out?"
+
+no. it's the opposite.
+
+claude can write better code than most junior engineers right now. it can review PRs, write documentation, help debug production issues. the purely technical bar is harder to clear on paper, cos every candidate has access to the same tools and can make their output look more polished than their actual thinking.
+
+the one thing AI cannot do is build a reputation. it can't be consistently present in someone's feed for six months. it can't be the person a founder remembers at 11pm when a problem comes up and they need to reach out to someone they trust.
+
+visibility is the last thing AI cannot replace. which means it's more valuable now than it was two years ago, not less.
+
+the engineers who understand this are quietly building a moat that's getting harder to replicate over time.
+
+
+---
+
+
+the students who figured it out fastest
+
+the students i've helped place who moved the fastest shared one thing: they stopped waiting to feel ready to post.
+
+there's a very common pattern where engineers feel like they need to know more before they deserve to share anything. like they need to have built something impressive before they're allowed to take up space in the feed. so they keep learning, keep building in private, keep applying on portals, and wonder why nothing is working.
+
+the ones who moved fastest were the ones who posted about the learning process, not the finished product. who wrote about what confused them, what they were figuring out, what they were building even when it was unfinished and messy.
+
+that content is actually more relatable than the polished "look what i built" posts. cos it meets people where they are, which is usually also confused and figuring things out. a junior engineer at a company sees your post about struggling with a concept and thinks "i should show this to my manager, we've been dealing with this exact thing." that's how referrals happen without anyone calling them referrals.
+
+
+---
+
+
+what i'd do starting from zero today
+
+if i was starting fresh with no network and no credentials, here's where i'd put my energy.
+
+one post a week about something i was actually working through. not a finished tutorial. the messy middle. the thing i got stuck on, what i tried, what eventually worked. people learn from that. founders remember that.
+
+alongside that, i'd apply the same principle to outreach. instead of sending my resume to companies, i'd study the specific problem they were trying to solve and reach out about that. not "please consider me." more like "i noticed this in your product, here's how i'd approach it." the response rate is completely different cos you're not asking for something, you're offering something.
+
+the combination of being visible in the feed and reaching out with relevance rather than availability changes the whole dynamic. you're not a resume in a pile. you're a person they feel they already know, telling them something useful.
+
+that's not a complicated system. it's just a different orientation. stop thinking about finding a job and start thinking about being the person the right people think of when a job opens up.
+
+
+---
+
+
+the job market isn't broken. the matching is.
+
+there are founders who can't find engineers to hire. there are engineers who can't find jobs. these two groups are looking in completely different places.
+
+the founders are looking in their feeds. the engineers are on job portals.
+
+if you're only showing up in one of those places, you're not actually in the market that matters.
+
+you don't need 10,000 followers. you don't need viral posts. you don't need to become a content creator or build a personal brand in the traditional sense. you need to be consistently findable by the kind of person who would actually hire you, in the place where they're actually looking.
+
+that's the only thing that changed how things worked for me. and it's the thing that got me my first US job at 13, before i had credentials, before i had a network, before i had anything except the habit of thinking out loud in public.
+
+by 18 i was running a B2B SaaS doing millions. i'm 19 now. visibility didn't just get me a job. it built everything that came after.
+
+
+---
+
+p.s. i share a lot more of this thinking, including the exact system i use, in a community for engineers and developers who want to build this kind of presence. link is in the first comment.

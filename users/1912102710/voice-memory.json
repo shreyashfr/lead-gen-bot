@@ -1,0 +1,93 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-03-12",
+  "user_name": "Ayush Singh",
+  "niche": "Tech / AI / Careers",
+  "voice_rules": {
+    "forbidden_phrases": [
+      "leverage",
+      "utilize",
+      "streamline",
+      "optimize",
+      "facilitate",
+      "enhance",
+      "professionalism",
+      "I hope this message finds you well",
+      "I'd be delighted to",
+      "I'm reaching out because",
+      "thought leader",
+      "guru",
+      "game-changer",
+      "revolutionary",
+      "hustle",
+      "I hustled hard",
+      "enroll now",
+      "DM me for the roadmap",
+      "we 10x'd revenue"
+    ],
+    "required_style": {
+      "capitalization": "lowercase default — no mid-sentence caps unless proper name",
+      "contractions": "always_use",
+      "sentence_length": "short — 2-4 lines max in posts, punchy",
+      "em_dashes": "avoid — never use",
+      "semicolons": "avoid — never use",
+      "ellipsis": "use for trailing thoughts naturally",
+      "periods": "skip on last sentence sometimes — real people do this",
+      "slang": "use rn, tbh, ngl, btw occasionally and naturally",
+      "openers": "start with hey / so / yeah / btw sometimes — not every time",
+      "fillers": "drop naturally: basically, honestly, just, actually, like"
+    },
+    "tone_guardrails": {
+      "corporate_jargon": "reject",
+      "generic_motivational": "reject — no hustle porn, no vague inspiration",
+      "ai_detectability": "must_fail_ai_test",
+      "performative_helpfulness": "reject — no filler, no over-complimenting",
+      "course_selling_tone": "reject — no enroll now, no DM me for the roadmap",
+      "overclaiming": "reject — no 10x'd revenue, no vague superlatives",
+      "advice_giving": "prefer sharing experiences over dispensing advice",
+      "bullet_points_in_DMs": "reject — write in sentences like a human",
+      "specificity": "required — not 'I was struggling' but '₹1,700. After 2 months of follow-ups.'",
+      "plain_language": "required — 'it writes your meeting notes' not 'AI-powered meeting summaries'"
+    },
+    "private_topics": []
+  },
+  "high_performers": {
+    "hooks": [
+      "I [did thing] before [thing] existed. — authority stacking",
+      "[False statement most people believe]. [Real data that contradicts it]. — debate-starter",
+      "X is dying. Y is fine. Nobody's explaining why the gap exists. — works on X threads",
+      "Comment [keyword] below. I'll DM you [specific thing]. — Instagram mandatory",
+      "Nobody clapped when... — vulnerability + specifics",
+      "Result → Reverse timeline: lead with outcome, reveal the hard path"
+    ],
+    "formats_by_platform": {
+      "instagram": "carousel: authority stacking + insider knowledge + comment trigger CTA → VIRAL",
+      "linkedin": "false consensus → data flip → counter-narrative → p.s with resource. Optimize for reposts.",
+      "x": "thread numbered 1/N through N/N, single idea per tweet, closing tweet that stands alone"
+    },
+    "emotional_archetypes": [
+      "makes audience feel seen ('I've been there')",
+      "contrarian + real proof",
+      "personal authority from lived history",
+      "fear + ambition for early-career Indian tech workers"
+    ],
+    "viral_structures": [
+      "Short punchy contrarian opener → simplified breakdown (3-5 bullets) → lesson",
+      "Founder story: risk everyone said was stupid → specific failure number → what I learned",
+      "Everyone thinks X. Here's why they're wrong. Here's what actually works."
+    ]
+  },
+  "voice_lessons": [
+    "Instagram CTAs must use 'Comment X' format — the gap between passive CTA and comment trigger is 20x",
+    "Optimize for reposts on LinkedIn, not impressions — 17 reposts > 18K impressions with 1 comment",
+    "Specific data makes posts shareable — BLS stats, exact numbers, named companies",
+    "Personal authority > news commentary — insider POV outperforms journalist POV",
+    "Comments-to-impressions ratio > likes-to-impressions ratio"
+  ],
+  "feedback_log": [],
+  "reflection_log": [],
+  "agent_logs": {
+    "research_agent": { "last_run": null },
+    "performance_reviewer": { "last_run": null }
+  }
+}

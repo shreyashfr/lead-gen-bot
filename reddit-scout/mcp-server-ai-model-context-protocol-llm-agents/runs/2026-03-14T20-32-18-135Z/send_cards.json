@@ -1,0 +1,35 @@
+{
+  "n": 5,
+  "cards": [
+    {
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/mcp-server-ai-model-context-protocol-llm-agents/runs/2026-03-14T20-32-18-135Z/cards/1rrisqn.png",
+      "caption": "1) I was backend lead at Manus. After building agents for 2 years, I stopped using function calling entirely. Here's what I use instead.\nr/LocalLLaMA · score 94 · 1767 ups · 378 comments\nhttps://www.reddit.com/r/LocalLLaMA/comments/1rrisqn/i_was_backend_lead_at_manus_after_building_agents/",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1rrisqn/i_was_backend_lead_at_manus_after_building_agents/",
+      "id": "1rrisqn"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/mcp-server-ai-model-context-protocol-llm-agents/runs/2026-03-14T20-32-18-135Z/cards/1rncjv3.png",
+      "caption": "2) I 3D printed a 12U server rack and stuffed $3,700 of gear inside. Here's the full build.\nr/homelab · score 17 · 1437 ups · 64 comments\nhttps://www.reddit.com/r/homelab/comments/1rncjv3/i_3d_printed_a_12u_server_rack_and_stuffed_3700/",
+      "permalink": "https://www.reddit.com/r/homelab/comments/1rncjv3/i_3d_printed_a_12u_server_rack_and_stuffed_3700/",
+      "id": "1rncjv3"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/mcp-server-ai-model-context-protocol-llm-agents/runs/2026-03-14T20-32-18-135Z/cards/1rn4j58.png",
+      "caption": "3) \"I'm running 20 agents in parallel, each with their own customized models, contexts and specialized tasks\". The agents:\nr/singularity · score 10 · 1016 ups · 46 comments\nhttps://www.reddit.com/r/singularity/comments/1rn4j58/im_running_20_agents_in_parallel_each_with_their/",
+      "permalink": "https://www.reddit.com/r/singularity/comments/1rn4j58/im_running_20_agents_in_parallel_each_with_their/",
+      "id": "1rn4j58"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/mcp-server-ai-model-context-protocol-llm-agents/runs/2026-03-14T20-32-18-135Z/cards/1pqjco1.png",
+      "caption": "4) MCP Is Becoming the Backbone of AI Agents. Here’s Why (+ Free MCP Server Access)\nr/MCPAgents · score 0 · 3 ups · 1 comments\nhttps://www.reddit.com/r/MCPAgents/comments/1pqjco1/mcp_is_becoming_the_backbone_of_ai_agents_heres/",
+      "permalink": "https://www.reddit.com/r/MCPAgents/comments/1pqjco1/mcp_is_becoming_the_backbone_of_ai_agents_heres/",
+      "id": "1pqjco1"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/mcp-server-ai-model-context-protocol-llm-agents/runs/2026-03-14T20-32-18-135Z/cards/1qi5sxf.png",
+      "caption": "5) How I Connected Claude AI to Gopher Cloud MCP Server\nr/MCPAgents · score 0 · 1 ups · 0 comments\nhttps://www.reddit.com/r/MCPAgents/comments/1qi5sxf/how_i_connected_claude_ai_to_gopher_cloud_mcp/",
+      "permalink": "https://www.reddit.com/r/MCPAgents/comments/1qi5sxf/how_i_connected_claude_ai_to_gopher_cloud_mcp/",
+      "id": "1qi5sxf"
+    }
+  ]
+}

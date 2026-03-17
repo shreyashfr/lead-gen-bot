@@ -5,9 +5,9 @@
 const { ProxyAgent, fetch: undiciFetch } = require('undici');
 
 const PROXY_HOST = 'isp.decodo.com';
-const PROXY_PORT = 10002;
-const PROXY_USER = 'sp22adtw9l';
-const PROXY_PASS = 'iifDj2fZ60XI+s6hdc';
+const PROXY_PORT = 10001;
+const PROXY_USER = 'sppvpg55cs';
+const PROXY_PASS = 'rQDiZB1vzq4qab+0d8';
 const PROXY_URL  = `http://${PROXY_USER}:${encodeURIComponent(PROXY_PASS)}@${PROXY_HOST}:${PROXY_PORT}`;
 
 const proxyDispatcher = new ProxyAgent(PROXY_URL);

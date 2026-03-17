@@ -1,0 +1,51 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-03-14",
+  "user_name": "Vishal Rewaskar",
+  "niche": "Agentic AI, LLMs, ML Engineering, Deep Learning, AI from scratch",
+  "voice_rules": {
+    "forbidden_phrases": [
+      "leverage", "utilize", "streamline", "optimize", "facilitate", "enhance",
+      "delve", "unlock",
+      "I hope this message finds you well", "I'd be delighted to",
+      "I'm reaching out because", "thought leader", "guru", "game-changer", "revolutionary",
+      "Your journey is valid", "Keep pushing"
+    ],
+    "required_style": {
+      "capitalization": "normal",
+      "contractions": "always_use",
+      "sentence_length": "short_to_medium",
+      "em_dashes": "avoid",
+      "semicolons": "avoid",
+      "ellipsis": "use for natural pauses"
+    },
+    "tone_guardrails": {
+      "corporate_jargon": "reject",
+      "generic_motivational": "reject",
+      "ai_detectability": "must_fail_ai_test",
+      "passive_voice": "reject — write in first person, active voice",
+      "motivational_fluff": "reject — replace with specifics",
+      "general_leads": "reject — lead with specific, not general (e.g. 'I built a ViT in PyTorch last week' not 'I've been working on computer vision')",
+      "performance_confidence": "reject — tone should feel grounded, not broadcasting from a stage"
+    },
+    "private_topics": [
+      "Do not speculate on or invent personal struggles not mentioned in his profile",
+      "Do not reference exact grades, ranks, or academic performance",
+      "Do not imply he has a job or income from AI work — he's a student, not yet employed in the field",
+      "Do not mention anything about family background or financial situation"
+    ]
+  },
+  "high_performers": {
+    "hooks": [],
+    "formats_by_platform": {},
+    "emotional_archetypes": [],
+    "viral_structures": []
+  },
+  "voice_lessons": [],
+  "feedback_log": [],
+  "reflection_log": [],
+  "agent_logs": {
+    "research_agent": { "last_run": null },
+    "performance_reviewer": { "last_run": null }
+  }
+}

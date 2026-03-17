@@ -1,0 +1,1288 @@
+[
+  {
+    "id": "1rrisqn",
+    "subreddit": "LocalLLaMA",
+    "title": "I was backend lead at Manus. After building agents for 2 years, I stopped using function calling entirely. Here's what I use instead.",
+    "selftext": "&gt; English is not my first language. I wrote this in Chinese and translated it with AI help. The writing may have some AI flavor, but the design decisions, the production failures, and the thinking that distilled them into principles — those are mine.\n\nI was a backend lead at Manus before the Meta acquisition. I've spent the last 2 years building AI agents — first at Manus, then on my own open-source agent runtime ([Pinix](https://github.com/epiral/pinix)) and agent ([agent-clip](https://github.com/epiral/agent-clip)). Along the way I came to a conclusion that surprised me:\n\n**A single `run(command=\"...\")` tool with Unix-style commands outperforms a catalog of typed function calls.**\n\nHere's what I learned.\n\n---\n\n## Why *nix\n\nUnix made a design decision 50 years ago: **everything is a text stream.** Programs don't exchange complex binary structures or share memory objects — they communicate through text pipes. Small tools each do one thing well, composed via `|` into powerful workflows. Programs describe themselves with `--help`, report success or failure with exit codes, and communicate errors through stderr.\n\nLLMs made an almost identical decision 50 years later: **everything is tokens.** They only understand text, only produce text. Their \"thinking\" is text, their \"actions\" are text, and the feedback they receive from the world must be text.\n\nThese two decisions, made half a century apart from completely different starting points, converge on the same interface model. The text-based system Unix designed for human terminal operators — `cat`, `grep`, `pipe`, `exit codes`, `man pages` — isn't just \"usable\" by LLMs. It's a **natural fit**. When it comes to tool use, an LLM is essentially a terminal operator — one that's faster than any human and has already seen vast amounts of shell commands and CLI patterns in its training data.\n\nThis is the core philosophy of the *nix Agent: **don't invent a new tool interface. Take what Unix has proven over 50 years and hand it directly to the LLM.**\n\n---\n\n## Why a single `run`\n\n### The single-tool hypothesis\n\nMost agent frameworks give LLMs a catalog of independent tools:\n\n```\ntools: [search_web, read_file, write_file, run_code, send_email, ...]\n```\n\nBefore each call, the LLM must make a **tool selection** — which one? What parameters? The more tools you add, the harder the selection, and accuracy drops. Cognitive load is spent on \"which tool?\" instead of \"what do I need to accomplish?\"\n\nMy approach: **one `run(command=\"...\")` tool, all capabilities exposed as CLI commands.**\n\n```\nrun(command=\"cat notes.md\")\nrun(command=\"cat log.txt | grep ERROR | wc -l\")\nrun(command=\"see screenshot.png\")\nrun(command=\"memory search 'deployment issue'\")\nrun(command=\"clip sandbox bash 'python3 analyze.py'\")\n```\n\nThe LLM still chooses which command to use, but this is fundamentally different from choosing among 15 tools with different schemas. Command selection is string composition within a unified namespace — function selection is context-switching between unrelated APIs.\n\n### LLMs already speak CLI\n\nWhy are CLI commands a better fit for LLMs than structured function calls?\n\nBecause CLI is the densest tool-use pattern in LLM training data. Billions of lines on GitHub are full of:\n\n```bash\n# README install instructions\npip install -r requirements.txt &amp;&amp; python main.py\n\n# CI/CD build scripts\nmake build &amp;&amp; make test &amp;&amp; make deploy\n\n# Stack Overflow solutions\ncat /var/log/syslog | grep \"Out of memory\" | tail -20\n```\n\nI don't need to teach the LLM how to use CLI — **it already knows.** This familiarity is probabilistic and model-dependent, but in practice it's remarkably reliable across mainstream models.\n\nCompare two approaches to the same task:\n\n```\nTask: Read a log file, count the error lines\n\nFunction-calling approach (3 tool calls):\n  1. read_file(path=\"/var/log/app.log\") → returns entire file\n  2. search_text(text=&lt;entire file&gt;, pattern=\"ERROR\") → returns matching lines\n  3. count_lines(text=&lt;matched lines&gt;) → returns number\n\nCLI approach (1 tool call):\n  run(command=\"cat /var/log/app.log | grep ERROR | wc -l\")\n  → \"42\"\n```\n\nOne call replaces three. Not because of special optimization — but because Unix pipes natively support composition.\n\n### Making pipes and chains work\n\nA single `run` isn't enough on its own. If `run` can only execute one command at a time, the LLM still needs multiple calls for composed tasks. So I make a **chain parser** (`parseChain`) in the command routing layer, supporting four Unix operators:\n\n```\n|   Pipe: stdout of previous command becomes stdin of next\n&amp;&amp;  And:  execute next only if previous succeeded\n||  Or:   execute next only if previous failed\n;   Seq:  execute next regardless of previous result\n```\n\nWith this mechanism, every tool call can be a **complete workflow**:\n\n```bash\n# One tool call: download → inspect\ncurl -sL $URL -o data.csv &amp;&amp; cat data.csv | head 5\n\n# One tool call: read → filter → sort → top 10\ncat access.log | grep \"500\" | sort | head 10\n\n# One tool call: try A, fall back to B\ncat config.yaml || echo \"config not found, using defaults\"\n```\n\nN commands × 4 operators — the composition space grows dramatically. And to the LLM, it's just a string it already knows how to write.\n\n&gt; **The command line is the LLM's native tool interface.**\n\n---\n\n## Heuristic design: making CLI guide the agent\n\nSingle-tool + CLI solves \"what to use.\" But the agent still needs to know **\"how to use it.\"** It can't Google. It can't ask a colleague. I use three progressive design techniques to make the CLI itself serve as the agent's navigation system.\n\n### Technique 1: Progressive --help discovery\n\nA well-designed CLI tool doesn't require reading documentation — because `--help` tells you everything. I apply the same principle to the agent, structured as **progressive disclosure**: the agent doesn't need to load all documentation at once, but discovers details on-demand as it goes deeper.\n\n**Level 0: Tool Description → command list injection**\n\nThe `run` tool's description is dynamically generated at the start of each conversation, listing all registered commands with one-line summaries:\n\n```\nAvailable commands:\n  cat    — Read a text file. For images use 'see'. For binary use 'cat -b'.\n  see    — View an image (auto-attaches to vision)\n  ls     — List files in current topic\n  write  — Write file. Usage: write &lt;path&gt; [content] or stdin\n  grep   — Filter lines matching a pattern (supports -i, -v, -c)\n  memory — Search or manage memory\n  clip   — Operate external environments (sandboxes, services)\n  ...\n```\n\nThe agent knows what's available from turn one, but doesn't need every parameter of every command — that would waste context.\n\n&gt; **Note:** There's an open design question here: injecting the full command list vs. on-demand discovery. As commands grow, the list itself consumes context budget. I'm still exploring the right balance. Ideas welcome.\n\n**Level 1: `command` (no args) → usage**\n\nWhen the agent is interested in a command, it just calls it. No arguments? The command returns its own usage:\n\n```\n→ run(command=\"memory\")\n[error] memory: usage: memory search|recent|store|facts|forget\n\n→ run(command=\"clip\")\n  clip list                              — list available clips\n  clip &lt;name&gt;                            — show clip details and commands\n  clip &lt;name&gt; &lt;command&gt; [args...]         — invoke a command\n  clip &lt;name&gt; pull &lt;remote-path&gt; [name]   — pull file from clip to local\n  clip &lt;name&gt; push &lt;local-path&gt; &lt;remote&gt;  — push local file to clip\n```\n\nNow the agent knows `memory` has five subcommands and `clip` supports list/pull/push. One call, no noise.\n\n**Level 2: `command subcommand` (missing args) → specific parameters**\n\nThe agent decides to use `memory search` but isn't sure about the format? It drills down:\n\n```\n→ run(command=\"memory search\")\n[error] memory: usage: memory search &lt;query&gt; [-t topic_id] [-k keyword]\n\n→ run(command=\"clip sandbox\")\n  Clip: sandbox\n  Commands:\n    clip sandbox bash &lt;script&gt;\n    clip sandbox read &lt;path&gt;\n    clip sandbox write &lt;path&gt;\n  File transfer:\n    clip sandbox pull &lt;remote-path&gt; [local-name]\n    clip sandbox push &lt;local-path&gt; &lt;remote-path&gt;\n```\n\nProgressive disclosure: **overview (injected) → usage (explored) → parameters (drilled down).** The agent discovers on-demand, each level providing just enough information for the next step.\n\nThis is fundamentally different from stuffing 3,000 words of tool documentation into the system prompt. Most of that information is irrelevant most of the time — pure context waste. Progressive help lets the agent decide when it needs more.\n\nThis also imposes a requirement on command design: **every command and subcommand must have complete help output.** It's not just for humans — it's for the agent. A good help message means one-shot success. A missing one means a blind guess.\n\n### Technique 2: Error messages as navigation\n\nAgents will make mistakes. The key isn't preventing errors — it's **making every error point to the right direction.**\n\nTraditional CLI errors are designed for humans who can Google. Agents can't Google. So I require every error to contain both \"what went wrong\" and \"what to do instead\":\n\n```\nTraditional CLI:\n  $ cat photo.png\n  cat: binary file (standard output)\n  → Human Googles \"how to view image in terminal\"\n\nMy design:\n  [error] cat: binary image file (182KB). Use: see photo.png\n  → Agent calls see directly, one-step correction\n```\n\nMore examples:\n\n```\n[error] unknown command: foo\nAvailable: cat, ls, see, write, grep, memory, clip, ...\n→ Agent immediately knows what commands exist\n\n[error] not an image file: data.csv (use cat to read text files)\n→ Agent switches from see to cat\n\n[error] clip \"sandbox\" not found. Use 'clip list' to see available clips\n→ Agent knows to list clips first\n```\n\nTechnique 1 (help) solves \"what can I do?\" Technique 2 (errors) solves \"what should I do instead?\" Together, the agent's recovery cost is minimal — usually 1-2 steps to the right path.\n\n**Real case: The cost of silent stderr**\n\nFor a while, my code silently dropped stderr when calling external sandboxes — whenever stdout was non-empty, stderr was discarded. The agent ran `pip install pymupdf`, got exit code 127. stderr contained `bash: pip: command not found`, but the agent couldn't see it. It only knew \"it failed,\" not \"why\" — and proceeded to blindly guess 10 different package managers:\n\n```\npip install         → 127  (doesn't exist)\npython3 -m pip      → 1    (module not found)\nuv pip install      → 1    (wrong usage)\npip3 install        → 127\nsudo apt install    → 127\n... 5 more attempts ...\nuv run --with pymupdf python3 script.py → 0 ✓  (10th try)\n```\n\n10 calls, ~5 seconds of inference each. If stderr had been visible the first time, one call would have been enough.\n\n&gt; **stderr is the information agents need most, precisely when commands fail. Never drop it.**\n\n### Technique 3: Consistent output format\n\nThe first two techniques handle discovery and correction. The third lets the agent **get better at using the system over time.**\n\nI append consistent metadata to every tool result:\n\n```\nfile1.txt\nfile2.txt\ndir1/\n[exit:0 | 12ms]\n```\n\nThe LLM extracts two signals:\n\n**Exit codes (Unix convention, LLMs already know these):**\n\n- `exit:0` — success\n- `exit:1` — general error\n- `exit:127` — command not found\n\n**Duration (cost awareness):**\n\n- `12ms` — cheap, call freely\n- `3.2s` — moderate\n- `45s` — expensive, use sparingly\n\nAfter seeing `[exit:N | Xs]` dozens of times in a conversation, the agent internalizes the pattern. It starts anticipating — seeing `exit:1` means check the error, seeing long duration means reduce calls.\n\n&gt; **Consistent output format makes the agent smarter over time. Inconsistency makes every call feel like the first.**\n\nThe three techniques form a progression:\n\n```\n--help       →  \"What can I do?\"        →  Proactive discovery\nError Msg    →  \"What should I do?\"     →  Reactive correction\nOutput Fmt   →  \"How did it go?\"        →  Continuous learning\n```\n\n---\n\n## Two-layer architecture: engineering the heuristic design\n\nThe section above described how CLI guides agents at the semantic level. But to make it work in practice, there's an engineering problem: **the raw output of a command and what the LLM needs to see are often very different things.**\n\n### Two hard constraints of LLMs\n\n**Constraint A: The context window is finite and expensive.** Every token costs money, attention, and inference speed. Stuffing a 10MB file into context doesn't just waste budget — it pushes earlier conversation out of the window. The agent \"forgets.\"\n\n**Constraint B: LLMs can only process text.** Binary data produces high-entropy meaningless tokens through the tokenizer. It doesn't just waste context — it **disrupts attention on surrounding valid tokens**, degrading reasoning quality.\n\nThese two constraints mean: raw command output can't go directly to the LLM — it needs a **presentation layer** for processing. But that processing can't affect command execution logic — or pipes break. Hence, two layers.\n\n### Execution layer vs. presentation layer\n\n```\n┌─────────────────────────────────────────────┐\n│  Layer 2: LLM Presentation Layer            │  ← Designed for LLM constraints\n│  Binary guard | Truncation+overflow | Meta   │\n├─────────────────────────────────────────────┤\n│  Layer 1: Unix Execution Layer              │  ← Pure Unix semantics\n│  Command routing | pipe | chain | exit code │\n└─────────────────────────────────────────────┘\n```\n\nWhen `cat bigfile.txt | grep error | head 10` executes:\n\n```\nInside Layer 1:\n  cat output → [500KB raw text] → grep input\n  grep output → [matching lines] → head input\n  head output → [first 10 lines]\n```\n\nIf you truncate `cat`'s output in Layer 1 → `grep` only searches the first 200 lines, producing incomplete results.\nIf you add `[exit:0]` in Layer 1 → it flows into `grep` as data, becoming a search target.\n\nSo Layer 1 must remain **raw, lossless, metadata-free.** Processing only happens in Layer 2 — after the pipe chain completes and the final result is ready to return to the LLM.\n\n&gt; **Layer 1 serves Unix semantics. Layer 2 serves LLM cognition. The separation isn't a design preference — it's a logical necessity.**\n\n### Layer 2's four mechanisms\n\n**Mechanism A: Binary Guard (addressing Constraint B)**\n\nBefore returning anything to the LLM, check if it's text:\n\n```\nNull byte detected → binary\nUTF-8 validation failed → binary\nControl character ratio &gt; 10% → binary\n\nIf image: [error] binary image (182KB). Use: see photo.png\nIf other: [error] binary file (1.2MB). Use: cat -b file.bin\n```\n\nThe LLM never receives data it can't process.\n\n**Mechanism B: Overflow Mode (addressing Constraint A)**\n\n```\nOutput &gt; 200 lines or &gt; 50KB?\n  → Truncate to first 200 lines (rune-safe, won't split UTF-8)\n  → Write full output to /tmp/cmd-output/cmd-{n}.txt\n  → Return to LLM:\n\n    [first 200 lines]\n\n    --- output truncated (5000 lines, 245.3KB) ---\n    Full output: /tmp/cmd-output/cmd-3.txt\n    Explore: cat /tmp/cmd-output/cmd-3.txt | grep &lt;pattern&gt;\n             cat /tmp/cmd-output/cmd-3.txt | tail 100\n    [exit:0 | 1.2s]\n```\n\nKey insight: the LLM already knows how to use `grep`, `head`, `tail` to navigate files. Overflow mode transforms \"large data exploration\" into a skill the LLM already has.\n\n**Mechanism C: Metadata Footer**\n\n```\nactual output here\n[exit:0 | 1.2s]\n```\n\nExit code + duration, appended as the last line of Layer 2. Gives the agent signals for success/failure and cost awareness, without polluting Layer 1's pipe data.\n\n**Mechanism D: stderr Attachment**\n\n```\nWhen command fails with stderr:\n  output + \"\\n[stderr] \" + stderr\n\nEnsures the agent can see why something failed, preventing blind retries.\n```\n\n---\n\n## Lessons learned: stories from production\n\n### Story 1: A PNG that caused 20 iterations of thrashing\n\nA user uploaded an architecture diagram. The agent read it with `cat`, receiving 182KB of raw PNG bytes. The LLM's tokenizer turned these bytes into thousands of meaningless tokens crammed into the context. The LLM couldn't make sense of it and started trying different read approaches — `cat -f`, `cat --format`, `cat --type image` — each time receiving the same garbage. After 20 iterations, the process was force-terminated.\n\n**Root cause:** `cat` had no binary detection, Layer 2 had no guard.\n**Fix:** `isBinary()` guard + error guidance `Use: see photo.png`.\n**Lesson:** The tool result is the agent's eyes. Return garbage = agent goes blind.\n\n### Story 2: Silent stderr and 10 blind retries\n\nThe agent needed to read a PDF. It tried `pip install pymupdf`, got exit code 127. stderr contained `bash: pip: command not found`, but the code dropped it — because there was some stdout output, and the logic was \"if stdout exists, ignore stderr.\"\n\nThe agent only knew \"it failed,\" not \"why.\" What followed was a long trial-and-error:\n\n```\npip install         → 127  (doesn't exist)\npython3 -m pip      → 1    (module not found)\nuv pip install      → 1    (wrong usage)\npip3 install        → 127\nsudo apt install    → 127\n... 5 more attempts ...\nuv run --with pymupdf python3 script.py → 0 ✓\n```\n\n10 calls, ~5 seconds of inference each. If stderr had been visible the first time, one call would have sufficed.\n\n**Root cause:** `InvokeClip` silently dropped stderr when stdout was non-empty.\n**Fix:** Always attach stderr on failure.\n**Lesson:** stderr is the information agents need most, precisely when commands fail.\n\n### Story 3: The value of overflow mode\n\nThe agent analyzed a 5,000-line log file. Without truncation, the full text (~200KB) was stuffed into context. The LLM's attention was overwhelmed, response quality dropped sharply, and earlier conversation was pushed out of the context window.\n\nWith overflow mode:\n\n```\n[first 200 lines of log content]\n\n--- output truncated (5000 lines, 198.5KB) ---\nFull output: /tmp/cmd-output/cmd-3.txt\nExplore: cat /tmp/cmd-output/cmd-3.txt | grep &lt;pattern&gt;\n         cat /tmp/cmd-output/cmd-3.txt | tail 100\n[exit:0 | 45ms]\n```\n\nThe agent saw the first 200 lines, understood the file structure, then used `grep` to pinpoint the issue — 3 calls total, under 2KB of context.\n\n**Lesson:** Giving the agent a \"map\" is far more effective than giving it the entire territory.\n\n---\n\n## Boundaries and limitations\n\nCLI isn't a silver bullet. Typed APIs may be the better choice in these scenarios:\n\n- **Strongly-typed interactions**: Database queries, GraphQL APIs, and other cases requiring structured input/output. Schema validation is more reliable than string parsing.\n- **High-security requirements**: CLI's string concatenation carries inherent injection risks. In untrusted-input scenarios, typed parameters are safer. agent-clip mitigates this through sandbox isolation.\n- **Native multimodal**: Pure audio/video processing and other binary-stream scenarios where CLI's text pipe is a bottleneck.\n\nAdditionally, \"no iteration limit\" doesn't mean \"no safety boundaries.\" Safety is ensured by external mechanisms:\n\n- **Sandbox isolation**: Commands execute inside BoxLite containers, no escape possible\n- **API budgets**: LLM calls have account-level spending caps\n- **User cancellation**: Frontend provides cancel buttons, backend supports graceful shutdown\n\n---\n\n&gt; **Hand Unix philosophy to the execution layer, hand LLM's cognitive constraints to the presentation layer, and use help, error messages, and output format as three progressive heuristic navigation techniques.**\n&gt;\n&gt; CLI is all agents need.\n\n---\n\nSource code (Go): [github.com/epiral/agent-clip](https://github.com/epiral/agent-clip)\n\nCore files: `internal/tools.go` (command routing), `internal/chain.go` (pipes), `internal/loop.go` (two-layer agentic loop), `internal/fs.go` (binary guard), `internal/clip.go` (stderr handling), `internal/browser.go` (vision auto-attach), `internal/memory.go` (semantic memory).\n\nHappy to discuss — especially if you've tried similar approaches or found cases where CLI breaks down. The command discovery problem (how much to inject vs. let the agent discover) is something I'm still actively exploring.",
+    "author": "MorroHsu",
+    "created_utc": 1773295336,
+    "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1rrisqn/i_was_backend_lead_at_manus_after_building_agents/",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1rrisqn/i_was_backend_lead_at_manus_after_building_agents/",
+    "domain": "self.LocalLLaMA",
+    "is_self": true,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 1771,
+    "score": 1771,
+    "num_comments": 378,
+    "upvote_ratio": 0.96,
+    "thumbnail": "self",
+    "media": null,
+    "post_hint": "self",
+    "listing": "search:top:week",
+    "viral_score": 93.78081546213319,
+    "detail": {
+      "post": {
+        "id": "1rrisqn",
+        "title": "I was backend lead at Manus. After building agents for 2 years, I stopped using function calling entirely. Here's what I use instead.",
+        "selftext": "&gt; English is not my first language. I wrote this in Chinese and translated it with AI help. The writing may have some AI flavor, but the design decisions, the production failures, and the thinking that distilled them into principles — those are mine.\n\nI was a backend lead at Manus before the Meta acquisition. I've spent the last 2 years building AI agents — first at Manus, then on my own open-source agent runtime ([Pinix](https://github.com/epiral/pinix)) and agent ([agent-clip](https://github.com/epiral/agent-clip)). Along the way I came to a conclusion that surprised me:\n\n**A single `run(command=\"...\")` tool with Unix-style commands outperforms a catalog of typed function calls.**\n\nHere's what I learned.\n\n---\n\n## Why *nix\n\nUnix made a design decision 50 years ago: **everything is a text stream.** Programs don't exchange complex binary structures or share memory objects — they communicate through text pipes. Small tools each do one thing well, composed via `|` into powerful workflows. Programs describe themselves with `--help`, report success or failure with exit codes, and communicate errors through stderr.\n\nLLMs made an almost identical decision 50 years later: **everything is tokens.** They only understand text, only produce text. Their \"thinking\" is text, their \"actions\" are text, and the feedback they receive from the world must be text.\n\nThese two decisions, made half a century apart from completely different starting points, converge on the same interface model. The text-based system Unix designed for human terminal operators — `cat`, `grep`, `pipe`, `exit codes`, `man pages` — isn't just \"usable\" by LLMs. It's a **natural fit**. When it comes to tool use, an LLM is essentially a terminal operator — one that's faster than any human and has already seen vast amounts of shell commands and CLI patterns in its training data.\n\nThis is the core philosophy of the *nix Agent: **don't invent a new tool interface. Take what Unix has proven over 50 years and hand it directly to the LLM.**\n\n---\n\n## Why a single `run`\n\n### The single-tool hypothesis\n\nMost agent frameworks give LLMs a catalog of independent tools:\n\n```\ntools: [search_web, read_file, write_file, run_code, send_email, ...]\n```\n\nBefore each call, the LLM must make a **tool selection** — which one? What parameters? The more tools you add, the harder the selection, and accuracy drops. Cognitive load is spent on \"which tool?\" instead of \"what do I need to accomplish?\"\n\nMy approach: **one `run(command=\"...\")` tool, all capabilities exposed as CLI commands.**\n\n```\nrun(command=\"cat notes.md\")\nrun(command=\"cat log.txt | grep ERROR | wc -l\")\nrun(command=\"see screenshot.png\")\nrun(command=\"memory search 'deployment issue'\")\nrun(command=\"clip sandbox bash 'python3 analyze.py'\")\n```\n\nThe LLM still chooses which command to use, but this is fundamentally different from choosing among 15 tools with different schemas. Command selection is string composition within a unified namespace — function selection is context-switching between unrelated APIs.\n\n### LLMs already speak CLI\n\nWhy are CLI commands a better fit for LLMs than structured function calls?\n\nBecause CLI is the densest tool-use pattern in LLM training data. Billions of lines on GitHub are full of:\n\n```bash\n# README install instructions\npip install -r requirements.txt &amp;&amp; python main.py\n\n# CI/CD build scripts\nmake build &amp;&amp; make test &amp;&amp; make deploy\n\n# Stack Overflow solutions\ncat /var/log/syslog | grep \"Out of memory\" | tail -20\n```\n\nI don't need to teach the LLM how to use CLI — **it already knows.** This familiarity is probabilistic and model-dependent, but in practice it's remarkably reliable across mainstream models.\n\nCompare two approaches to the same task:\n\n```\nTask: Read a log file, count the error lines\n\nFunction-calling approach (3 tool calls):\n  1. read_file(path=\"/var/log/app.log\") → returns entire file\n  2. search_text(text=&lt;entire file&gt;, pattern=\"ERROR\") → returns matching lines\n  3. count_lines(text=&lt;matched lines&gt;) → returns number\n\nCLI approach (1 tool call):\n  run(command=\"cat /var/log/app.log | grep ERROR | wc -l\")\n  → \"42\"\n```\n\nOne call replaces three. Not because of special optimization — but because Unix pipes natively support composition.\n\n### Making pipes and chains work\n\nA single `run` isn't enough on its own. If `run` can only execute one command at a time, the LLM still needs multiple calls for composed tasks. So I make a **chain parser** (`parseChain`) in the command routing layer, supporting four Unix operators:\n\n```\n|   Pipe: stdout of previous command becomes stdin of next\n&amp;&amp;  And:  execute next only if previous succeeded\n||  Or:   execute next only if previous failed\n;   Seq:  execute next regardless of previous result\n```\n\nWith this mechanism, every tool call can be a **complete workflow**:\n\n```bash\n# One tool call: download → inspect\ncurl -sL $URL -o data.csv &amp;&amp; cat data.csv | head 5\n\n# One tool call: read → filter → sort → top 10\ncat access.log | grep \"500\" | sort | head 10\n\n# One tool call: try A, fall back to B\ncat config.yaml || echo \"config not found, using defaults\"\n```\n\nN commands × 4 operators — the composition space grows dramatically. And to the LLM, it's just a string it already knows how to write.\n\n&gt; **The command line is the LLM's native tool interface.**\n\n---\n\n## Heuristic design: making CLI guide the agent\n\nSingle-tool + CLI solves \"what to use.\" But the agent still needs to know **\"how to use it.\"** It can't Google. It can't ask a colleague. I use three progressive design techniques to make the CLI itself serve as the agent's navigation system.\n\n### Technique 1: Progressive --help discovery\n\nA well-designed CLI tool doesn't require reading documentation — because `--help` tells you everything. I apply the same principle to the agent, structured as **progressive disclosure**: the agent doesn't need to load all documentation at once, but discovers details on-demand as it goes deeper.\n\n**Level 0: Tool Description → command list injection**\n\nThe `run` tool's description is dynamically generated at the start of each conversation, listing all registered commands with one-line summaries:\n\n```\nAvailable commands:\n  cat    — Read a text file. For images use 'see'. For binary use 'cat -b'.\n  see    — View an image (auto-attaches to vision)\n  ls     — List files in current topic\n  write  — Write file. Usage: write &lt;path&gt; [content] or stdin\n  grep   — Filter lines matching a pattern (supports -i, -v, -c)\n  memory — Search or manage memory\n  clip   — Operate external environments (sandboxes, services)\n  ...\n```\n\nThe agent knows what's available from turn one, but doesn't need every parameter of every command — that would waste context.\n\n&gt; **Note:** There's an open design question here: injecting the full command list vs. on-demand discovery. As commands grow, the list itself consumes context budget. I'm still exploring the right balance. Ideas welcome.\n\n**Level 1: `command` (no args) → usage**\n\nWhen the agent is interested in a command, it just calls it. No arguments? The command returns its own usage:\n\n```\n→ run(command=\"memory\")\n[error] memory: usage: memory search|recent|store|facts|forget\n\n→ run(command=\"clip\")\n  clip list                              — list available clips\n  clip &lt;name&gt;                            — show clip details and commands\n  clip &lt;name&gt; &lt;command&gt; [args...]         — invoke a command\n  clip &lt;name&gt; pull &lt;remote-path&gt; [name]   — pull file from clip to local\n  clip &lt;name&gt; push &lt;local-path&gt; &lt;remote&gt;  — push local file to clip\n```\n\nNow the agent knows `memory` has five subcommands and `clip` supports list/pull/push. One call, no noise.\n\n**Level 2: `command subcommand` (missing args) → specific parameters**\n\nThe agent decides to use `memory search` but isn't sure about the format? It drills down:\n\n```\n→ run(command=\"memory search\")\n[error] memory: usage: memory search &lt;query&gt; [-t topic_id] [-k keyword]\n\n→ run(command=\"clip sandbox\")\n  Clip: sandbox\n  Commands:\n    clip sandbox bash &lt;script&gt;\n    clip sandbox read &lt;path&gt;\n    clip sandbox write &lt;path&gt;\n  File transfer:\n    clip sandbox pull &lt;remote-path&gt; [local-name]\n    clip sandbox push &lt;local-path&gt; &lt;remote-path&gt;\n```\n\nProgressive disclosure: **overview (injected) → usage (explored) → parameters (drilled down).** The agent discovers on-demand, each level providing just enough information for the next step.\n\nThis is fundamentally different from stuffing 3,000 words of tool documentation into the system prompt. Most of that information is irrelevant most of the time — pure context waste. Progressive help lets the agent decide when it needs more.\n\nThis also imposes a requirement on command design: **every command and subcommand must have complete help output.** It's not just for humans — it's for the agent. A good help message means one-shot success. A missing one means a blind guess.\n\n### Technique 2: Error messages as navigation\n\nAgents will make mistakes. The key isn't preventing errors — it's **making every error point to the right direction.**\n\nTraditional CLI errors are designed for humans who can Google. Agents can't Google. So I require every error to contain both \"what went wrong\" and \"what to do instead\":\n\n```\nTraditional CLI:\n  $ cat photo.png\n  cat: binary file (standard output)\n  → Human Googles \"how to view image in terminal\"\n\nMy design:\n  [error] cat: binary image file (182KB). Use: see photo.png\n  → Agent calls see directly, one-step correction\n```\n\nMore examples:\n\n```\n[error] unknown command: foo\nAvailable: cat, ls, see, write, grep, memory, clip, ...\n→ Agent immediately knows what commands exist\n\n[error] not an image file: data.csv (use cat to read text files)\n→ Agent switches from see to cat\n\n[error] clip \"sandbox\" not found. Use 'clip list' to see available clips\n→ Agent knows to list clips first\n```\n\nTechnique 1 (help) solves \"what can I do?\" Technique 2 (errors) solves \"what should I do instead?\" Together, the agent's recovery cost is minimal — usually 1-2 steps to the right path.\n\n**Real case: The cost of silent stderr**\n\nFor a while, my code silently dropped stderr when calling external sandboxes — whenever stdout was non-empty, stderr was discarded. The agent ran `pip install pymupdf`, got exit code 127. stderr contained `bash: pip: command not found`, but the agent couldn't see it. It only knew \"it failed,\" not \"why\" — and proceeded to blindly guess 10 different package managers:\n\n```\npip install         → 127  (doesn't exist)\npython3 -m pip      → 1    (module not found)\nuv pip install      → 1    (wrong usage)\npip3 install        → 127\nsudo apt install    → 127\n... 5 more attempts ...\nuv run --with pymupdf python3 script.py → 0 ✓  (10th try)\n```\n\n10 calls, ~5 seconds of inference each. If stderr had been visible the first time, one call would have been enough.\n\n&gt; **stderr is the information agents need most, precisely when commands fail. Never drop it.**\n\n### Technique 3: Consistent output format\n\nThe first two techniques handle discovery and correction. The third lets the agent **get better at using the system over time.**\n\nI append consistent metadata to every tool result:\n\n```\nfile1.txt\nfile2.txt\ndir1/\n[exit:0 | 12ms]\n```\n\nThe LLM extracts two signals:\n\n**Exit codes (Unix convention, LLMs already know these):**\n\n- `exit:0` — success\n- `exit:1` — general error\n- `exit:127` — command not found\n\n**Duration (cost awareness):**\n\n- `12ms` — cheap, call freely\n- `3.2s` — moderate\n- `45s` — expensive, use sparingly\n\nAfter seeing `[exit:N | Xs]` dozens of times in a conversation, the agent internalizes the pattern. It starts anticipating — seeing `exit:1` means check the error, seeing long duration means reduce calls.\n\n&gt; **Consistent output format makes the agent smarter over time. Inconsistency makes every call feel like the first.**\n\nThe three techniques form a progression:\n\n```\n--help       →  \"What can I do?\"        →  Proactive discovery\nError Msg    →  \"What should I do?\"     →  Reactive correction\nOutput Fmt   →  \"How did it go?\"        →  Continuous learning\n```\n\n---\n\n## Two-layer architecture: engineering the heuristic design\n\nThe section above described how CLI guides agents at the semantic level. But to make it work in practice, there's an engineering problem: **the raw output of a command and what the LLM needs to see are often very different things.**\n\n### Two hard constraints of LLMs\n\n**Constraint A: The context window is finite and expensive.** Every token costs money, attention, and inference speed. Stuffing a 10MB file into context doesn't just waste budget — it pushes earlier conversation out of the window. The agent \"forgets.\"\n\n**Constraint B: LLMs can only process text.** Binary data produces high-entropy meaningless tokens through the tokenizer. It doesn't just waste context — it **disrupts attention on surrounding valid tokens**, degrading reasoning quality.\n\nThese two constraints mean: raw command output can't go directly to the LLM — it needs a **presentation layer** for processing. But that processing can't affect command execution logic — or pipes break. Hence, two layers.\n\n### Execution layer vs. presentation layer\n\n```\n┌─────────────────────────────────────────────┐\n│  Layer 2: LLM Presentation Layer            │  ← Designed for LLM constraints\n│  Binary guard | Truncation+overflow | Meta   │\n├─────────────────────────────────────────────┤\n│  Layer 1: Unix Execution Layer              │  ← Pure Unix semantics\n│  Command routing | pipe | chain | exit code │\n└─────────────────────────────────────────────┘\n```\n\nWhen `cat bigfile.txt | grep error | head 10` executes:\n\n```\nInside Layer 1:\n  cat output → [500KB raw text] → grep input\n  grep output → [matching lines] → head input\n  head output → [first 10 lines]\n```\n\nIf you truncate `cat`'s output in Layer 1 → `grep` only searches the first 200 lines, producing incomplete results.\nIf you add `[exit:0]` in Layer 1 → it flows into `grep` as data, becoming a search target.\n\nSo Layer 1 must remain **raw, lossless, metadata-free.** Processing only happens in Layer 2 — after the pipe chain completes and the final result is ready to return to the LLM.\n\n&gt; **Layer 1 serves Unix semantics. Layer 2 serves LLM cognition. The separation isn't a design preference — it's a logical necessity.**\n\n### Layer 2's four mechanisms\n\n**Mechanism A: Binary Guard (addressing Constraint B)**\n\nBefore returning anything to the LLM, check if it's text:\n\n```\nNull byte detected → binary\nUTF-8 validation failed → binary\nControl character ratio &gt; 10% → binary\n\nIf image: [error] binary image (182KB). Use: see photo.png\nIf other: [error] binary file (1.2MB). Use: cat -b file.bin\n```\n\nThe LLM never receives data it can't process.\n\n**Mechanism B: Overflow Mode (addressing Constraint A)**\n\n```\nOutput &gt; 200 lines or &gt; 50KB?\n  → Truncate to first 200 lines (rune-safe, won't split UTF-8)\n  → Write full output to /tmp/cmd-output/cmd-{n}.txt\n  → Return to LLM:\n\n    [first 200 lines]\n\n    --- output truncated (5000 lines, 245.3KB) ---\n    Full output: /tmp/cmd-output/cmd-3.txt\n    Explore: cat /tmp/cmd-output/cmd-3.txt | grep &lt;pattern&gt;\n             cat /tmp/cmd-output/cmd-3.txt | tail 100\n    [exit:0 | 1.2s]\n```\n\nKey insight: the LLM already knows how to use `grep`, `head`, `tail` to navigate files. Overflow mode transforms \"large data exploration\" into a skill the LLM already has.\n\n**Mechanism C: Metadata Footer**\n\n```\nactual output here\n[exit:0 | 1.2s]\n```\n\nExit code + duration, appended as the last line of Layer 2. Gives the agent signals for success/failure and cost awareness, without polluting Layer 1's pipe data.\n\n**Mechanism D: stderr Attachment**\n\n```\nWhen command fails with stderr:\n  output + \"\\n[stderr] \" + stderr\n\nEnsures the agent can see why something failed, preventing blind retries.\n```\n\n---\n\n## Lessons learned: stories from production\n\n### Story 1: A PNG that caused 20 iterations of thrashing\n\nA user uploaded an architecture diagram. The agent read it with `cat`, receiving 182KB of raw PNG bytes. The LLM's tokenizer turned these bytes into thousands of meaningless tokens crammed into the context. The LLM couldn't make sense of it and started trying different read approaches — `cat -f`, `cat --format`, `cat --type image` — each time receiving the same garbage. After 20 iterations, the process was force-terminated.\n\n**Root cause:** `cat` had no binary detection, Layer 2 had no guard.\n**Fix:** `isBinary()` guard + error guidance `Use: see photo.png`.\n**Lesson:** The tool result is the agent's eyes. Return garbage = agent goes blind.\n\n### Story 2: Silent stderr and 10 blind retries\n\nThe agent needed to read a PDF. It tried `pip install pymupdf`, got exit code 127. stderr contained `bash: pip: command not found`, but the code dropped it — because there was some stdout output, and the logic was \"if stdout exists, ignore stderr.\"\n\nThe agent only knew \"it failed,\" not \"why.\" What followed was a long trial-and-error:\n\n```\npip install         → 127  (doesn't exist)\npython3 -m pip      → 1    (module not found)\nuv pip install      → 1    (wrong usage)\npip3 install        → 127\nsudo apt install    → 127\n... 5 more attempts ...\nuv run --with pymupdf python3 script.py → 0 ✓\n```\n\n10 calls, ~5 seconds of inference each. If stderr had been visible the first time, one call would have sufficed.\n\n**Root cause:** `InvokeClip` silently dropped stderr when stdout was non-empty.\n**Fix:** Always attach stderr on failure.\n**Lesson:** stderr is the information agents need most, precisely when commands fail.\n\n### Story 3: The value of overflow mode\n\nThe agent analyzed a 5,000-line log file. Without truncation, the full text (~200KB) was stuffed into context. The LLM's attention was overwhelmed, response quality dropped sharply, and earlier conversation was pushed out of the context window.\n\nWith overflow mode:\n\n```\n[first 200 lines of log content]\n\n--- output truncated (5000 lines, 198.5KB) ---\nFull output: /tmp/cmd-output/cmd-3.txt\nExplore: cat /tmp/cmd-output/cmd-3.txt | grep &lt;pattern&gt;\n         cat /tmp/cmd-output/cmd-3.txt | tail 100\n[exit:0 | 45ms]\n```\n\nThe agent saw the first 200 lines, understood the file structure, then used `grep` to pinpoint the issue — 3 calls total, under 2KB of context.\n\n**Lesson:** Giving the agent a \"map\" is far more effective than giving it the entire territory.\n\n---\n\n## Boundaries and limitations\n\nCLI isn't a silver bullet. Typed APIs may be the better choice in these scenarios:\n\n- **Strongly-typed interactions**: Database queries, GraphQL APIs, and other cases requiring structured input/output. Schema validation is more reliable than string parsing.\n- **High-security requirements**: CLI's string concatenation carries inherent injection risks. In untrusted-input scenarios, typed parameters are safer. agent-clip mitigates this through sandbox isolation.\n- **Native multimodal**: Pure audio/video processing and other binary-stream scenarios where CLI's text pipe is a bottleneck.\n\nAdditionally, \"no iteration limit\" doesn't mean \"no safety boundaries.\" Safety is ensured by external mechanisms:\n\n- **Sandbox isolation**: Commands execute inside BoxLite containers, no escape possible\n- **API budgets**: LLM calls have account-level spending caps\n- **User cancellation**: Frontend provides cancel buttons, backend supports graceful shutdown\n\n---\n\n&gt; **Hand Unix philosophy to the execution layer, hand LLM's cognitive constraints to the presentation layer, and use help, error messages, and output format as three progressive heuristic navigation techniques.**\n&gt;\n&gt; CLI is all agents need.\n\n---\n\nSource code (Go): [github.com/epiral/agent-clip](https://github.com/epiral/agent-clip)\n\nCore files: `internal/tools.go` (command routing), `internal/chain.go` (pipes), `internal/loop.go` (two-layer agentic loop), `internal/fs.go` (binary guard), `internal/clip.go` (stderr handling), `internal/browser.go` (vision auto-attach), `internal/memory.go` (semantic memory).\n\nHappy to discuss — especially if you've tried similar approaches or found cases where CLI breaks down. The command discovery problem (how much to inject vs. let the agent discover) is something I'm still actively exploring.",
+        "author": "MorroHsu",
+        "subreddit": "LocalLLaMA",
+        "created_utc": 1773295336,
+        "ups": 1767,
+        "num_comments": 378,
+        "upvote_ratio": 0.96,
+        "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1rrisqn/i_was_backend_lead_at_manus_after_building_agents/",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1rrisqn/i_was_backend_lead_at_manus_after_building_agents/",
+        "is_self": true,
+        "post_hint": "self",
+        "thumbnail": "self",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://external-preview.redd.it/4d8S_QYK-iFc9aMn8iGqtxU9L6DeQgXBW0MJyr7is_o.png?auto=webp&amp;s=d87b4ff8bd787500d5789a2e228a98e21883f6e7",
+                "width": 1200,
+                "height": 600
+              },
+              "resolutions": [
+                {
+                  "url": "https://external-preview.redd.it/4d8S_QYK-iFc9aMn8iGqtxU9L6DeQgXBW0MJyr7is_o.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=8bc263c40eede5defa3b773c2676aa9eee6b1fc1",
+                  "width": 108,
+                  "height": 54
+                },
+                {
+                  "url": "https://external-preview.redd.it/4d8S_QYK-iFc9aMn8iGqtxU9L6DeQgXBW0MJyr7is_o.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=47ad651a5909909a0956c5e988e82a0967a76b1d",
+                  "width": 216,
+                  "height": 108
+                },
+                {
+                  "url": "https://external-preview.redd.it/4d8S_QYK-iFc9aMn8iGqtxU9L6DeQgXBW0MJyr7is_o.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=b13a683d6f8726263abad1c49f0c4a0c7b7e0dc1",
+                  "width": 320,
+                  "height": 160
+                },
+                {
+                  "url": "https://external-preview.redd.it/4d8S_QYK-iFc9aMn8iGqtxU9L6DeQgXBW0MJyr7is_o.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=264c0b919111f1722861aa8ca326c4214385ec5d",
+                  "width": 640,
+                  "height": 320
+                },
+                {
+                  "url": "https://external-preview.redd.it/4d8S_QYK-iFc9aMn8iGqtxU9L6DeQgXBW0MJyr7is_o.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=9f68ad65a162e9d3eb0d0d3c98e5d95e5949b188",
+                  "width": 960,
+                  "height": 480
+                },
+                {
+                  "url": "https://external-preview.redd.it/4d8S_QYK-iFc9aMn8iGqtxU9L6DeQgXBW0MJyr7is_o.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=cd922cc60d8a51ddc51f3d307ceec7da1cbfffc5",
+                  "width": 1080,
+                  "height": 540
+                }
+              ],
+              "variants": {},
+              "id": "4d8S_QYK-iFc9aMn8iGqtxU9L6DeQgXBW0MJyr7is_o"
+            }
+          ],
+          "enabled": false
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "spaceman_",
+          "ups": 202,
+          "body": "I can't find it anymore, but there was an experiment like this but with python code - the LLM can only use Python code eval as a tool, no other tools. The paper claimed it worked remarkably well."
+        },
+        {
+          "author": "raucousbasilisk",
+          "ups": 131,
+          "body": "JIT natural language to sed awk regex was the true superpower all along"
+        },
+        {
+          "author": "Dependent_Range9705",
+          "ups": 130,
+          "body": "OP's post a psyop to give your llm agent full rights to your terminal"
+        }
+      ]
+    },
+    "author_avatar": {
+      "user": "MorroHsu",
+      "url": "https://i.redd.it/snoovatar/avatars/a1eefbbb-0d58-4feb-a877-9ed506109dd0.png",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/mcp-server-ai-model-context-protocol-llm-agents/runs/2026-03-14T20-32-18-135Z/avatars/MorroHsu.png",
+      "fetchedAt": "2026-03-14T20:32:47.015Z"
+    }
+  },
+  {
+    "id": "1rncjv3",
+    "subreddit": "homelab",
+    "title": "I 3D printed a 12U server rack and stuffed $3,700 of gear inside. Here's the full build.",
+    "selftext": "Hey r/homelab! I finally finished my first home lab build and put together a video walking through the whole thing. Figured I'd share the details here since this community was a huge part of my research.\n\n**The Build:**\n\n\\- **Rack:** KWS Rack V2 — 12U, 10-inch, fully 3D printed (designed by Ilan Kushnir). Printed on a Bambu P1S with a 0.8mm nozzle. \\~2 full days of print time, using PETG-HF \\~$48 in filament.\n\n\\- **Compute:** 4x Lenovo ThinkCentre Tiny PCs\n\n\\- 3x M720q (i5-9500T, 32GB/16GB RAM) running Proxmox cluster\n\n\\- 1x M920q (i5-8500T, 8GB RAM) running pfSense\n\n\\- **Storage:** Terramaster D5-310 DAS (2x 12TB WD Red Plus, 1x 18TB Exos) + 3x 2TB NVMe via USB enclosures\n\n\\- **Network:** 10-port switch (8x 2.5G + 2x 10G), keystone patch panel with RJ45/USB/HDMI\n\n\\- **Extras:** Google Coral TPU, Zigbee/Bluetooth/Matter adapters, Lutron Caseta bridge\n\n**What it runs:**\n\nProxmox cluster hosting Plex, Immich (replaced Google Photos), Nextcloud (replaced Google Drive), Frigate NVR with Coral AI detection, Home Assistant, Vaultwarden, Pi-hole, and more. pfSense handles routing, firewall, DNS, DHCP, and WireGuard VPN.\n\n**Total cost: $3,737 CAD**\n\nThe network cards I bought came with full-height brackets that didn't fit the ThinkCentres, so I designed and 3D printed custom low-profile PCIe brackets in Fusion 360. One of those moments where having a 3D printer next to the lab pays for itself.\n\nThe KWS Rack is modular, you build it in sections and bolt on more as you grow. As a first-time rack builder (I'm a Red Seal Plumber &amp; Gas-fitter by trade, not IT), it was surprisingly approachable. Felt more like building Ikea furniture than a server.\n\nI collaborated with Ilan (the rack designer) throughout the build — super cool guy. This is the first full build video of the KWS Rack on YouTube as far as we know.\n\n**Video link:** [https://www.youtube.com/watch?v=5cET4sfqdlE](https://www.youtube.com/watch?v=5cET4sfqdlE)  \n**KWS Rack:** [https://makerworld.com/en/models/2139130-kws-rack-v-2-heavy-duty-10-inch-homelab-rack#profileId-2317125](https://makerworld.com/en/models/2139130-kws-rack-v-2-heavy-duty-10-inch-homelab-rack#profileId-2317125)\n\nHappy to answer any questions about the build, the rack, or the software stack. I try to read every comment.",
+    "author": "CaptainRedsLab",
+    "created_utc": 1772896836,
+    "permalink": "https://www.reddit.com/r/homelab/comments/1rncjv3/i_3d_printed_a_12u_server_rack_and_stuffed_3700/",
+    "url": "https://www.reddit.com/gallery/1rncjv3",
+    "domain": "reddit.com",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 1433,
+    "score": 1433,
+    "num_comments": 64,
+    "upvote_ratio": 0.98,
+    "thumbnail": "https://preview.redd.it/ucdezssp3nng1.jpg?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=bfa9188d1c7a4da175e81107d172f58f5df92fd1",
+    "media": null,
+    "post_hint": null,
+    "listing": "search:top:week",
+    "viral_score": 16.804125955234042,
+    "detail": {
+      "post": {
+        "id": "1rncjv3",
+        "title": "I 3D printed a 12U server rack and stuffed $3,700 of gear inside. Here's the full build.",
+        "selftext": "Hey r/homelab! I finally finished my first home lab build and put together a video walking through the whole thing. Figured I'd share the details here since this community was a huge part of my research.\n\n**The Build:**\n\n\\- **Rack:** KWS Rack V2 — 12U, 10-inch, fully 3D printed (designed by Ilan Kushnir). Printed on a Bambu P1S with a 0.8mm nozzle. \\~2 full days of print time, using PETG-HF \\~$48 in filament.\n\n\\- **Compute:** 4x Lenovo ThinkCentre Tiny PCs\n\n\\- 3x M720q (i5-9500T, 32GB/16GB RAM) running Proxmox cluster\n\n\\- 1x M920q (i5-8500T, 8GB RAM) running pfSense\n\n\\- **Storage:** Terramaster D5-310 DAS (2x 12TB WD Red Plus, 1x 18TB Exos) + 3x 2TB NVMe via USB enclosures\n\n\\- **Network:** 10-port switch (8x 2.5G + 2x 10G), keystone patch panel with RJ45/USB/HDMI\n\n\\- **Extras:** Google Coral TPU, Zigbee/Bluetooth/Matter adapters, Lutron Caseta bridge\n\n**What it runs:**\n\nProxmox cluster hosting Plex, Immich (replaced Google Photos), Nextcloud (replaced Google Drive), Frigate NVR with Coral AI detection, Home Assistant, Vaultwarden, Pi-hole, and more. pfSense handles routing, firewall, DNS, DHCP, and WireGuard VPN.\n\n**Total cost: $3,737 CAD**\n\nThe network cards I bought came with full-height brackets that didn't fit the ThinkCentres, so I designed and 3D printed custom low-profile PCIe brackets in Fusion 360. One of those moments where having a 3D printer next to the lab pays for itself.\n\nThe KWS Rack is modular, you build it in sections and bolt on more as you grow. As a first-time rack builder (I'm a Red Seal Plumber &amp; Gas-fitter by trade, not IT), it was surprisingly approachable. Felt more like building Ikea furniture than a server.\n\nI collaborated with Ilan (the rack designer) throughout the build — super cool guy. This is the first full build video of the KWS Rack on YouTube as far as we know.\n\n**Video link:** [https://www.youtube.com/watch?v=5cET4sfqdlE](https://www.youtube.com/watch?v=5cET4sfqdlE)  \n**KWS Rack:** [https://makerworld.com/en/models/2139130-kws-rack-v-2-heavy-duty-10-inch-homelab-rack#profileId-2317125](https://makerworld.com/en/models/2139130-kws-rack-v-2-heavy-duty-10-inch-homelab-rack#profileId-2317125)\n\nHappy to answer any questions about the build, the rack, or the software stack. I try to read every comment.",
+        "author": "CaptainRedsLab",
+        "subreddit": "homelab",
+        "created_utc": 1772896836,
+        "ups": 1437,
+        "num_comments": 64,
+        "upvote_ratio": 0.98,
+        "permalink": "https://www.reddit.com/r/homelab/comments/1rncjv3/i_3d_printed_a_12u_server_rack_and_stuffed_3700/",
+        "url": "https://www.reddit.com/gallery/1rncjv3",
+        "is_self": false,
+        "post_hint": null,
+        "thumbnail": "https://preview.redd.it/ucdezssp3nng1.jpg?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=bfa9188d1c7a4da175e81107d172f58f5df92fd1",
+        "is_gallery": true,
+        "gallery_data": {
+          "items": [
+            {
+              "media_id": "ucdezssp3nng1",
+              "id": 880506260
+            },
+            {
+              "media_id": "enizc9nq3nng1",
+              "id": 880506261
+            },
+            {
+              "media_id": "ff3pc7dr3nng1",
+              "id": 880506262
+            },
+            {
+              "media_id": "qkcqplhs3nng1",
+              "id": 880506263
+            },
+            {
+              "media_id": "s74qszzs3nng1",
+              "id": 880506264
+            },
+            {
+              "media_id": "155mztut3nng1",
+              "id": 880506265
+            }
+          ]
+        },
+        "media_metadata": {
+          "ff3pc7dr3nng1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/jpg",
+            "p": [
+              {
+                "y": 162,
+                "x": 108,
+                "u": "https://preview.redd.it/ff3pc7dr3nng1.jpg?width=108&amp;crop=smart&amp;auto=webp&amp;s=069f28fd64254a1422d9338cb673532fef7d46fc"
+              },
+              {
+                "y": 324,
+                "x": 216,
+                "u": "https://preview.redd.it/ff3pc7dr3nng1.jpg?width=216&amp;crop=smart&amp;auto=webp&amp;s=1327615272f859293967360ba1c2ae08a33ecf06"
+              },
+              {
+                "y": 480,
+                "x": 320,
+                "u": "https://preview.redd.it/ff3pc7dr3nng1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=bac1a7c500cdff19f94e01dd1c0260086fc0eb75"
+              },
+              {
+                "y": 960,
+                "x": 640,
+                "u": "https://preview.redd.it/ff3pc7dr3nng1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=c66cf4afca9e93d3d4a09c7021124848d66fc94b"
+              },
+              {
+                "y": 1440,
+                "x": 960,
+                "u": "https://preview.redd.it/ff3pc7dr3nng1.jpg?width=960&amp;crop=smart&amp;auto=webp&amp;s=55972d439f6c560e7209d7fd0a2a29a463a7cd96"
+              },
+              {
+                "y": 1620,
+                "x": 1080,
+                "u": "https://preview.redd.it/ff3pc7dr3nng1.jpg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=6fc247a0c1ccb8242476c145f33300d268e65f74"
+              }
+            ],
+            "s": {
+              "y": 6000,
+              "x": 4000,
+              "u": "https://preview.redd.it/ff3pc7dr3nng1.jpg?width=4000&amp;format=pjpg&amp;auto=webp&amp;s=838a908e0b43392133862c9018dda23e355b4594"
+            },
+            "id": "ff3pc7dr3nng1"
+          },
+          "enizc9nq3nng1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/jpg",
+            "p": [
+              {
+                "y": 162,
+                "x": 108,
+                "u": "https://preview.redd.it/enizc9nq3nng1.jpg?width=108&amp;crop=smart&amp;auto=webp&amp;s=7e0dfdc44708b048388b11ab10be77e03b3233dc"
+              },
+              {
+                "y": 324,
+                "x": 216,
+                "u": "https://preview.redd.it/enizc9nq3nng1.jpg?width=216&amp;crop=smart&amp;auto=webp&amp;s=2ec2697192692ccee4f8be1258ea0c79454af2ca"
+              },
+              {
+                "y": 480,
+                "x": 320,
+                "u": "https://preview.redd.it/enizc9nq3nng1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=1e5821855654579a42627bc734485e5a71b0bfbd"
+              },
+              {
+                "y": 960,
+                "x": 640,
+                "u": "https://preview.redd.it/enizc9nq3nng1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=dc17cfb5139cb1a219c4593319a8037c3261d252"
+              },
+              {
+                "y": 1440,
+                "x": 960,
+                "u": "https://preview.redd.it/enizc9nq3nng1.jpg?width=960&amp;crop=smart&amp;auto=webp&amp;s=1f4975a9b10982dcc9ebd91122464213b1e7d393"
+              },
+              {
+                "y": 1620,
+                "x": 1080,
+                "u": "https://preview.redd.it/enizc9nq3nng1.jpg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=5933e3395417ed2616069ec2b37c5b801c1c2cce"
+              }
+            ],
+            "s": {
+              "y": 6000,
+              "x": 4000,
+              "u": "https://preview.redd.it/enizc9nq3nng1.jpg?width=4000&amp;format=pjpg&amp;auto=webp&amp;s=2115339e9f59c392a0ee84f302aef124b03a5faf"
+            },
+            "id": "enizc9nq3nng1"
+          },
+          "ucdezssp3nng1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/jpg",
+            "p": [
+              {
+                "y": 162,
+                "x": 108,
+                "u": "https://preview.redd.it/ucdezssp3nng1.jpg?width=108&amp;crop=smart&amp;auto=webp&amp;s=ebceeab2aebc33f9bfcb44740cd102c8df2a22bb"
+              },
+              {
+                "y": 324,
+                "x": 216,
+                "u": "https://preview.redd.it/ucdezssp3nng1.jpg?width=216&amp;crop=smart&amp;auto=webp&amp;s=5fdab12318a8b50dd812f51683160b5fde509848"
+              },
+              {
+                "y": 480,
+                "x": 320,
+                "u": "https://preview.redd.it/ucdezssp3nng1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=2e7e6f2063e6f1ed0f4e270ccdb553e9e4ff4e40"
+              },
+              {
+                "y": 960,
+                "x": 640,
+                "u": "https://preview.redd.it/ucdezssp3nng1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=5f0bedf6e0652058ca55c5b84f3570eb58d370d9"
+              },
+              {
+                "y": 1440,
+                "x": 960,
+                "u": "https://preview.redd.it/ucdezssp3nng1.jpg?width=960&amp;crop=smart&amp;auto=webp&amp;s=c5f7cee836408d833c7a0bac8dee3b5e9155a57e"
+              },
+              {
+                "y": 1620,
+                "x": 1080,
+                "u": "https://preview.redd.it/ucdezssp3nng1.jpg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=0f3479feee285f407b07c7fbdaaa3bd92718ff77"
+              }
+            ],
+            "s": {
+              "y": 6000,
+              "x": 4000,
+              "u": "https://preview.redd.it/ucdezssp3nng1.jpg?width=4000&amp;format=pjpg&amp;auto=webp&amp;s=163876c557395c5af22d94f18a9dd5587b958135"
+            },
+            "id": "ucdezssp3nng1"
+          },
+          "155mztut3nng1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/jpg",
+            "p": [
+              {
+                "y": 143,
+                "x": 108,
+                "u": "https://preview.redd.it/155mztut3nng1.jpg?width=108&amp;crop=smart&amp;auto=webp&amp;s=4e911f89d7d65682c402e058eadf2cf3c0f52798"
+              },
+              {
+                "y": 286,
+                "x": 216,
+                "u": "https://preview.redd.it/155mztut3nng1.jpg?width=216&amp;crop=smart&amp;auto=webp&amp;s=5b0f7d6edf8a26feece548fed231c760ba6a081e"
+              },
+              {
+                "y": 425,
+                "x": 320,
+                "u": "https://preview.redd.it/155mztut3nng1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=76c7be6c636662e1f031c6ed7a7d65ef89e15069"
+              },
+              {
+                "y": 850,
+                "x": 640,
+                "u": "https://preview.redd.it/155mztut3nng1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=2582e687ee817f5577c6ea3a9ffbbf19491706f8"
+              },
+              {
+                "y": 1275,
+                "x": 960,
+                "u": "https://preview.redd.it/155mztut3nng1.jpg?width=960&amp;crop=smart&amp;auto=webp&amp;s=fe439130e85c44c9fcbb4b6b92e7681cada42b4a"
+              },
+              {
+                "y": 1434,
+                "x": 1080,
+                "u": "https://preview.redd.it/155mztut3nng1.jpg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=167046b111e1f5ac3c999cd7179c9fe36daac2a3"
+              }
+            ],
+            "s": {
+              "y": 4080,
+              "x": 3072,
+              "u": "https://preview.redd.it/155mztut3nng1.jpg?width=3072&amp;format=pjpg&amp;auto=webp&amp;s=2a2e339ba9092d8c1bb5256460d11d1b666a4bf6"
+            },
+            "id": "155mztut3nng1"
+          },
+          "s74qszzs3nng1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/jpg",
+            "p": [
+              {
+                "y": 72,
+                "x": 108,
+                "u": "https://preview.redd.it/s74qszzs3nng1.jpg?width=108&amp;crop=smart&amp;auto=webp&amp;s=43b4afd3c64bdc5cad0caf829682e6bc162419ee"
+              },
+              {
+                "y": 144,
+                "x": 216,
+                "u": "https://preview.redd.it/s74qszzs3nng1.jpg?width=216&amp;crop=smart&amp;auto=webp&amp;s=c9f4bda05cf79fb5c96469bd31b1cdb82d668cb5"
+              },
+              {
+                "y": 213,
+                "x": 320,
+                "u": "https://preview.redd.it/s74qszzs3nng1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=52b762f3ac3d7b12bd6e050cfa5dc1a55c6f1d76"
+              },
+              {
+                "y": 426,
+                "x": 640,
+                "u": "https://preview.redd.it/s74qszzs3nng1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=fecf144cb75b4eb0821abdc4defc077784e7f837"
+              },
+              {
+                "y": 640,
+                "x": 960,
+                "u": "https://preview.redd.it/s74qszzs3nng1.jpg?width=960&amp;crop=smart&amp;auto=webp&amp;s=c9508d49104381de8666e2d40c706fd2394e6e72"
+              },
+              {
+                "y": 720,
+                "x": 1080,
+                "u": "https://preview.redd.it/s74qszzs3nng1.jpg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=f377d042c6a37e4991dabf4e321bbdeb31f84c2c"
+              }
+            ],
+            "s": {
+              "y": 4000,
+              "x": 6000,
+              "u": "https://preview.redd.it/s74qszzs3nng1.jpg?width=6000&amp;format=pjpg&amp;auto=webp&amp;s=f2655dc3a6abdb18624343b7afac647f767e6da7"
+            },
+            "id": "s74qszzs3nng1"
+          },
+          "qkcqplhs3nng1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/jpg",
+            "p": [
+              {
+                "y": 72,
+                "x": 108,
+                "u": "https://preview.redd.it/qkcqplhs3nng1.jpg?width=108&amp;crop=smart&amp;auto=webp&amp;s=8f0e509e016a0dc26d8016dd5c6773538e41c983"
+              },
+              {
+                "y": 144,
+                "x": 216,
+                "u": "https://preview.redd.it/qkcqplhs3nng1.jpg?width=216&amp;crop=smart&amp;auto=webp&amp;s=52c483bf6ca0e53f5cbe55a069443b7ce0a77231"
+              },
+              {
+                "y": 213,
+                "x": 320,
+                "u": "https://preview.redd.it/qkcqplhs3nng1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=75836981c27751ba7a6e354596903c82a912cf82"
+              },
+              {
+                "y": 426,
+                "x": 640,
+                "u": "https://preview.redd.it/qkcqplhs3nng1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=11df0a6c62e33c87eea9ecb7812be8233f760911"
+              },
+              {
+                "y": 640,
+                "x": 960,
+                "u": "https://preview.redd.it/qkcqplhs3nng1.jpg?width=960&amp;crop=smart&amp;auto=webp&amp;s=c11d3321a5f24c838987335c9e076e29176d872e"
+              },
+              {
+                "y": 720,
+                "x": 1080,
+                "u": "https://preview.redd.it/qkcqplhs3nng1.jpg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=ef808ccf89149db96f1ff28aa82f2897779ffd12"
+              }
+            ],
+            "s": {
+              "y": 4000,
+              "x": 6000,
+              "u": "https://preview.redd.it/qkcqplhs3nng1.jpg?width=6000&amp;format=pjpg&amp;auto=webp&amp;s=9c03b9c7d45e5a2d27c53cbdc793d184aeb3ca63"
+            },
+            "id": "qkcqplhs3nng1"
+          }
+        },
+        "preview": null,
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "kcitsstick",
+          "ups": 36,
+          "body": "I have been seeing these on homelab for some time, but yours is a beautiful build! Nice work!"
+        },
+        {
+          "author": "FallenPhoenix_",
+          "ups": 13,
+          "body": "It’s refreshing to see a compact well thought out homelab, great job!"
+        },
+        {
+          "author": "edmillss",
+          "ups": 12,
+          "body": "3D printed rack is genius. the custom fit for your specific gear is something you cant get with off the shelf racks. plus the ability to iterate on the design and reprint specific parts when you add hardware is a massive advantage\n\nhows the structural integrity holding up? PLA can sag over time with heat from the gear, PETG or ABS might be worth considering for the load-bearing parts if you havent already\n\nfor finding monitoring and management tools for your homelab setup theres a good catalog of self-hosted options at https://www.producthunt.com/products/indiestack-4?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-indiestack-4"
+        }
+      ]
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "CaptainRedsLab",
+      "url": "https://styles.redditmedia.com/t5_gkq6ml/styles/profileIcon_mkbh1rvd9big1.jpeg?width=256&height=256&crop=256:256,smart&s=26a28f3344836883a2c1ec206e7b8bd638c47ff7",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/mcp-server-model-context-protocol-ai/runs/2026-03-09T19-23-14-483Z/avatars/CaptainRedsLab.jpeg",
+      "fetchedAt": "2026-03-09T19:23:50.981Z"
+    }
+  },
+  {
+    "id": "1rn4j58",
+    "subreddit": "singularity",
+    "title": "\"I'm running 20 agents in parallel, each with their own customized models, contexts and specialized tasks\".\nThe agents:",
+    "selftext": "",
+    "author": "reversedu",
+    "created_utc": 1772871329,
+    "permalink": "https://www.reddit.com/r/singularity/comments/1rn4j58/im_running_20_agents_in_parallel_each_with_their/",
+    "url": "https://i.redd.it/zwady8un0lng1.jpeg",
+    "domain": "i.redd.it",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 1016,
+    "score": 1016,
+    "num_comments": 46,
+    "upvote_ratio": 0.93,
+    "thumbnail": "https://preview.redd.it/zwady8un0lng1.jpeg?width=140&amp;height=57&amp;auto=webp&amp;s=640d7742bd08af5fdbee9a153b7414551b6f56ca",
+    "media": null,
+    "post_hint": "image",
+    "listing": "search:top:week",
+    "viral_score": 10.467651037656161,
+    "detail": {
+      "post": {
+        "id": "1rn4j58",
+        "title": "\"I'm running 20 agents in parallel, each with their own customized models, contexts and specialized tasks\".\nThe agents:",
+        "selftext": "",
+        "author": "reversedu",
+        "subreddit": "singularity",
+        "created_utc": 1772871329,
+        "ups": 1016,
+        "num_comments": 46,
+        "upvote_ratio": 0.93,
+        "permalink": "https://www.reddit.com/r/singularity/comments/1rn4j58/im_running_20_agents_in_parallel_each_with_their/",
+        "url": "https://i.redd.it/zwady8un0lng1.jpeg",
+        "is_self": false,
+        "post_hint": "image",
+        "thumbnail": "https://preview.redd.it/zwady8un0lng1.jpeg?width=140&amp;height=57&amp;auto=webp&amp;s=640d7742bd08af5fdbee9a153b7414551b6f56ca",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://preview.redd.it/zwady8un0lng1.jpeg?auto=webp&amp;s=0e0d7a2ff266c273c23b6bc6bed4af0635671eda",
+                "width": 1152,
+                "height": 476
+              },
+              "resolutions": [
+                {
+                  "url": "https://preview.redd.it/zwady8un0lng1.jpeg?width=108&amp;crop=smart&amp;auto=webp&amp;s=bc12cb528f0e67cbb05980f4c9bdd1f733b688ab",
+                  "width": 108,
+                  "height": 44
+                },
+                {
+                  "url": "https://preview.redd.it/zwady8un0lng1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=85709234d5b6ffb232971d4e838ae7baa0e7a428",
+                  "width": 216,
+                  "height": 89
+                },
+                {
+                  "url": "https://preview.redd.it/zwady8un0lng1.jpeg?width=320&amp;crop=smart&amp;auto=webp&amp;s=f18ce309b3e425ef3cb1732954c475d56e2b8bf2",
+                  "width": 320,
+                  "height": 132
+                },
+                {
+                  "url": "https://preview.redd.it/zwady8un0lng1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=0b4236fc05a2fa0f56112a9746d5773e0eaa20cd",
+                  "width": 640,
+                  "height": 264
+                },
+                {
+                  "url": "https://preview.redd.it/zwady8un0lng1.jpeg?width=960&amp;crop=smart&amp;auto=webp&amp;s=d28a778556b30a6f172adfa241ac2d759c850484",
+                  "width": 960,
+                  "height": 396
+                },
+                {
+                  "url": "https://preview.redd.it/zwady8un0lng1.jpeg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=65ed531423d182bd9617a784c1f2a07daa75f768",
+                  "width": 1080,
+                  "height": 446
+                }
+              ],
+              "variants": {},
+              "id": "zwady8un0lng1"
+            }
+          ],
+          "enabled": true
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "Rique_Belt",
+          "ups": 148,
+          "body": "https://preview.redd.it/xt1tov53dmng1.jpeg?width=225&amp;format=pjpg&amp;auto=webp&amp;s=a89a3fe0b96b31a65e22c3ec2c90e1f7617d5f66\n\n"
+        },
+        {
+          "author": "Dry_Incident6424",
+          "ups": 114,
+          "body": "The enshitification of r/singualrity"
+        },
+        {
+          "author": "Norseviking4",
+          "ups": 73,
+          "body": "the quality of posts in this sub is what that meme really pictures. \nyou are ruining the sub"
+        }
+      ]
+    },
+    "media_extracted": {
+      "type": "image",
+      "url": "https://i.redd.it/zwady8un0lng1.jpeg",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/mcp-server-ai-model-context-protocol-llm-agents/runs/2026-03-14T20-32-18-135Z/media/1rn4j58.jpg",
+      "contentType": "image/jpeg",
+      "bytes": 82228
+    },
+    "author_avatar": {
+      "user": "reversedu",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_6.png",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/mcp-server-model-context-protocol-ai-agents/runs/2026-03-09T19-35-32-898Z/avatars/reversedu.png",
+      "fetchedAt": "2026-03-09T19:36:17.052Z"
+    }
+  },
+  {
+    "id": "1pqjco1",
+    "subreddit": "MCPAgents",
+    "title": "MCP Is Becoming the Backbone of AI Agents. Here’s Why (+ Free MCP Server Access)",
+    "selftext": "AI alone is smart.  \nAI + real tools is transformational.\n\nThat’s the role MCP plays.\n\nModel Context Protocol gives AI agents a structured way to:\n\n* Use tools\n* Touch real data\n* Take real actions\n* Without turning your systems into a security nightmare\n\nThere’s even a free MCP server available now that you can connect directly to your agents, simple to set up and built for real use cases.\n\nIf you want access to it or want to understand what MCP enables beyond demos,  \ndrop a comment or DM.",
+    "author": "RaceInteresting3814",
+    "created_utc": 1766145597,
+    "permalink": "https://www.reddit.com/r/MCPAgents/comments/1pqjco1/mcp_is_becoming_the_backbone_of_ai_agents_heres/",
+    "url": "https://www.reddit.com/r/MCPAgents/comments/1pqjco1/mcp_is_becoming_the_backbone_of_ai_agents_heres/",
+    "domain": "self.MCPAgents",
+    "is_self": true,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 3,
+    "score": 3,
+    "num_comments": 1,
+    "upvote_ratio": 1,
+    "thumbnail": "self",
+    "media": null,
+    "post_hint": null,
+    "listing": "rising",
+    "viral_score": 0.0014516584396237855,
+    "detail": {
+      "post": {
+        "id": "1pqjco1",
+        "title": "MCP Is Becoming the Backbone of AI Agents. Here’s Why (+ Free MCP Server Access)",
+        "selftext": "AI alone is smart.  \nAI + real tools is transformational.\n\nThat’s the role MCP plays.\n\nModel Context Protocol gives AI agents a structured way to:\n\n* Use tools\n* Touch real data\n* Take real actions\n* Without turning your systems into a security nightmare\n\nThere’s even a free MCP server available now that you can connect directly to your agents, simple to set up and built for real use cases.\n\nIf you want access to it or want to understand what MCP enables beyond demos,  \ndrop a comment or DM.",
+        "author": "RaceInteresting3814",
+        "subreddit": "MCPAgents",
+        "created_utc": 1766145597,
+        "ups": 3,
+        "num_comments": 1,
+        "upvote_ratio": 1,
+        "permalink": "https://www.reddit.com/r/MCPAgents/comments/1pqjco1/mcp_is_becoming_the_backbone_of_ai_agents_heres/",
+        "url": "https://www.reddit.com/r/MCPAgents/comments/1pqjco1/mcp_is_becoming_the_backbone_of_ai_agents_heres/",
+        "is_self": true,
+        "post_hint": null,
+        "thumbnail": "self",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": null,
+        "media": null
+      },
+      "topComments": []
+    },
+    "author_avatar": {
+      "user": "RaceInteresting3814",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_0.png",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/mcp-server-ai-model-context-protocol-llm-agents/runs/2026-03-14T20-32-18-135Z/avatars/RaceInteresting3814.png",
+      "fetchedAt": "2026-03-14T20:32:48.490Z"
+    }
+  },
+  {
+    "id": "1qi5sxf",
+    "subreddit": "MCPAgents",
+    "title": "How I Connected Claude AI to Gopher Cloud MCP Server",
+    "selftext": "I’m testing a direct integration between Gopher’s Cloud MCP Server and Claude Pro.\n\nTo connect, you mainly need:\n\n\\-API Base URL  \n\\-API Schema \n\nThis setup lets Claude understand and call Gopher’s real MCP endpoints instead of relying on generic demo schemas.\n\nIf anyone needs the raw JSON schema file, let me know and I’ll share it.\n\nPosting this for others experimenting with MCP + Claude.",
+    "author": "Ok_Message7136",
+    "created_utc": 1768926650,
+    "permalink": "https://www.reddit.com/r/MCPAgents/comments/1qi5sxf/how_i_connected_claude_ai_to_gopher_cloud_mcp/",
+    "url": "https://v.redd.it/xr0ldsii6jeg1",
+    "domain": "v.redd.it",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 1,
+    "score": 1,
+    "num_comments": 0,
+    "upvote_ratio": 1,
+    "thumbnail": "https://external-preview.redd.it/b3F1Nmd6aGk2amVnMe73-poGaN05Rhp69Kjzr9zZ3RMcxNeFhVxulcn6EkeI.png?width=140&amp;height=70&amp;format=jpg&amp;auto=webp&amp;s=00b3cdd8b4f8098144f16d3ebbcb6ff6b1a499ef",
+    "media": {
+      "reddit_video": {
+        "bitrate_kbps": 2400,
+        "fallback_url": "https://v.redd.it/xr0ldsii6jeg1/CMAF_720.mp4?source=fallback",
+        "has_audio": true,
+        "height": 644,
+        "width": 1280,
+        "scrubber_media_url": "https://v.redd.it/xr0ldsii6jeg1/CMAF_96.mp4",
+        "dash_url": "https://v.redd.it/xr0ldsii6jeg1/DASHPlaylist.mpd?a=1776112345%2CNTFkODVhZTI4NDIwODIwNjI1MmI5ZTI1NjQ4YWVmNGYxMzQ3NzZmOWYzNWQ4YTE2NTUzMDIwMmRkMDJmMTYzZQ%3D%3D&amp;v=1&amp;f=sd",
+        "duration": 93,
+        "hls_url": "https://v.redd.it/xr0ldsii6jeg1/HLSPlaylist.m3u8?a=1776112345%2CNWMyZTdkMDE1Y2E5ZTMyYjE1ZmMxOTU4YzIyMTY2MmQzZGFiZDQyOTk1ZjllOTU2OWZhOGE0M2JhN2MzMDNmYg%3D%3D&amp;v=1&amp;f=sd",
+        "is_gif": false,
+        "transcoding_status": "completed"
+      }
+    },
+    "post_hint": "hosted:video",
+    "listing": "rising",
+    "viral_score": 0.0005030991127602264,
+    "detail": {
+      "post": {
+        "id": "1qi5sxf",
+        "title": "How I Connected Claude AI to Gopher Cloud MCP Server",
+        "selftext": "I’m testing a direct integration between Gopher’s Cloud MCP Server and Claude Pro.\n\nTo connect, you mainly need:\n\n\\-API Base URL  \n\\-API Schema \n\nThis setup lets Claude understand and call Gopher’s real MCP endpoints instead of relying on generic demo schemas.\n\nIf anyone needs the raw JSON schema file, let me know and I’ll share it.\n\nPosting this for others experimenting with MCP + Claude.",
+        "author": "Ok_Message7136",
+        "subreddit": "MCPAgents",
+        "created_utc": 1768926650,
+        "ups": 1,
+        "num_comments": 0,
+        "upvote_ratio": 1,
+        "permalink": "https://www.reddit.com/r/MCPAgents/comments/1qi5sxf/how_i_connected_claude_ai_to_gopher_cloud_mcp/",
+        "url": "https://v.redd.it/xr0ldsii6jeg1",
+        "is_self": false,
+        "post_hint": "hosted:video",
+        "thumbnail": "https://external-preview.redd.it/b3F1Nmd6aGk2amVnMe73-poGaN05Rhp69Kjzr9zZ3RMcxNeFhVxulcn6EkeI.png?width=140&amp;height=70&amp;format=jpg&amp;auto=webp&amp;s=00b3cdd8b4f8098144f16d3ebbcb6ff6b1a499ef",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://external-preview.redd.it/b3F1Nmd6aGk2amVnMe73-poGaN05Rhp69Kjzr9zZ3RMcxNeFhVxulcn6EkeI.png?format=pjpg&amp;auto=webp&amp;s=5e007b58471be91ba55e25c1273dc611741676e6",
+                "width": 1914,
+                "height": 962
+              },
+              "resolutions": [
+                {
+                  "url": "https://external-preview.redd.it/b3F1Nmd6aGk2amVnMe73-poGaN05Rhp69Kjzr9zZ3RMcxNeFhVxulcn6EkeI.png?width=108&amp;crop=smart&amp;format=pjpg&amp;auto=webp&amp;s=1f5718631e506d985648ebe8623c99bf89ec82bf",
+                  "width": 108,
+                  "height": 54
+                },
+                {
+                  "url": "https://external-preview.redd.it/b3F1Nmd6aGk2amVnMe73-poGaN05Rhp69Kjzr9zZ3RMcxNeFhVxulcn6EkeI.png?width=216&amp;crop=smart&amp;format=pjpg&amp;auto=webp&amp;s=8d8036dabee06f0813096664a4f18436a4682732",
+                  "width": 216,
+                  "height": 108
+                },
+                {
+                  "url": "https://external-preview.redd.it/b3F1Nmd6aGk2amVnMe73-poGaN05Rhp69Kjzr9zZ3RMcxNeFhVxulcn6EkeI.png?width=320&amp;crop=smart&amp;format=pjpg&amp;auto=webp&amp;s=934ce4354094b00781fe808f53bc48ee67af1798",
+                  "width": 320,
+                  "height": 160
+                },
+                {
+                  "url": "https://external-preview.redd.it/b3F1Nmd6aGk2amVnMe73-poGaN05Rhp69Kjzr9zZ3RMcxNeFhVxulcn6EkeI.png?width=640&amp;crop=smart&amp;format=pjpg&amp;auto=webp&amp;s=e0c7b5b3750980b304ee27677e95dfa5b4971f5e",
+                  "width": 640,
+                  "height": 321
+                },
+                {
+                  "url": "https://external-preview.redd.it/b3F1Nmd6aGk2amVnMe73-poGaN05Rhp69Kjzr9zZ3RMcxNeFhVxulcn6EkeI.png?width=960&amp;crop=smart&amp;format=pjpg&amp;auto=webp&amp;s=e07d18b5cdcc5b7ec22dfa8b11efa8f4e6841808",
+                  "width": 960,
+                  "height": 482
+                },
+                {
+                  "url": "https://external-preview.redd.it/b3F1Nmd6aGk2amVnMe73-poGaN05Rhp69Kjzr9zZ3RMcxNeFhVxulcn6EkeI.png?width=1080&amp;crop=smart&amp;format=pjpg&amp;auto=webp&amp;s=5fdb20aa9dca67d673c7b2aaca54e725ba65615c",
+                  "width": 1080,
+                  "height": 542
+                }
+              ],
+              "variants": {},
+              "id": "b3F1Nmd6aGk2amVnMe73-poGaN05Rhp69Kjzr9zZ3RMcxNeFhVxulcn6EkeI"
+            }
+          ],
+          "enabled": false
+        },
+        "media": {
+          "reddit_video": {
+            "bitrate_kbps": 2400,
+            "fallback_url": "https://v.redd.it/xr0ldsii6jeg1/CMAF_720.mp4?source=fallback",
+            "has_audio": true,
+            "height": 644,
+            "width": 1280,
+            "scrubber_media_url": "https://v.redd.it/xr0ldsii6jeg1/CMAF_96.mp4",
+            "dash_url": "https://v.redd.it/xr0ldsii6jeg1/DASHPlaylist.mpd?a=1776112357%2CZGJjYjk0ZjZkZGZhZWY0YzMwMjA3ZmU2ZTYzNTZiMzk1NDM1YWE1MGMzZjljM2Y2Y2NkZjM5NmM0YzZiOTk1OQ%3D%3D&amp;v=1&amp;f=sd",
+            "duration": 93,
+            "hls_url": "https://v.redd.it/xr0ldsii6jeg1/HLSPlaylist.m3u8?a=1776112357%2CNDA2YzljZGNhOWM4N2ZiNmE2ZDE0ZDExZWY1ZDUwNTBjNGRkNDRkNjM2OWNlMWI3Y2ZhMzIyOTBhOTY1MDc1OQ%3D%3D&amp;v=1&amp;f=sd",
+            "is_gif": false,
+            "transcoding_status": "completed"
+          }
+        }
+      },
+      "topComments": []
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "Ok_Message7136",
+      "url": "https://i.redd.it/snoovatar/avatars/c1ef6cfe-5890-4ed5-a4ee-d94eac626f2e.png",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/mcp-server-ai-model-context-protocol-llm-agents/runs/2026-03-14T20-32-18-135Z/avatars/Ok_Message7136.png",
+      "fetchedAt": "2026-03-14T20:32:50.081Z"
+    }
+  },
+  {
+    "id": "1p1lxel",
+    "subreddit": "MCPAgents",
+    "title": "PolyMCP now has a full CLI – manage MCP servers and AI agents from your terminal",
+    "selftext": "",
+    "author": "[deleted]",
+    "created_utc": 1763591142,
+    "permalink": "https://www.reddit.com/r/MCPAgents/comments/1p1lxel/polymcp_now_has_a_full_cli_manage_mcp_servers_and/",
+    "url": "https://github.com/poly-mcp/Polymcp",
+    "domain": "github.com",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 1,
+    "score": 1,
+    "num_comments": 0,
+    "upvote_ratio": 1,
+    "thumbnail": "https://external-preview.redd.it/vfQIC3e942--hfcLCwKUHjBA7lLryN65X0yF0IrcX5w.png?width=140&amp;height=70&amp;auto=webp&amp;s=1c79a72d7aa1d1dcd67e311b9ea4e2ce033ab704",
+    "media": null,
+    "post_hint": "link",
+    "listing": "rising",
+    "viral_score": 0.00021548952792402933,
+    "detail": {
+      "post": {
+        "id": "1p1lxel",
+        "title": "PolyMCP now has a full CLI – manage MCP servers and AI agents from your terminal",
+        "selftext": "",
+        "author": "[deleted]",
+        "subreddit": "MCPAgents",
+        "created_utc": 1763591142,
+        "ups": 1,
+        "num_comments": 0,
+        "upvote_ratio": 1,
+        "permalink": "https://www.reddit.com/r/MCPAgents/comments/1p1lxel/polymcp_now_has_a_full_cli_manage_mcp_servers_and/",
+        "url": "https://github.com/poly-mcp/Polymcp",
+        "is_self": false,
+        "post_hint": "link",
+        "thumbnail": "https://external-preview.redd.it/vfQIC3e942--hfcLCwKUHjBA7lLryN65X0yF0IrcX5w.png?width=140&amp;height=70&amp;auto=webp&amp;s=1c79a72d7aa1d1dcd67e311b9ea4e2ce033ab704",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://external-preview.redd.it/vfQIC3e942--hfcLCwKUHjBA7lLryN65X0yF0IrcX5w.png?auto=webp&amp;s=90248a1c7f46842c0b5e782d0d0112b8386b0ccd",
+                "width": 1200,
+                "height": 600
+              },
+              "resolutions": [
+                {
+                  "url": "https://external-preview.redd.it/vfQIC3e942--hfcLCwKUHjBA7lLryN65X0yF0IrcX5w.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=da598030729cf699faef4ac7381cda331317e192",
+                  "width": 108,
+                  "height": 54
+                },
+                {
+                  "url": "https://external-preview.redd.it/vfQIC3e942--hfcLCwKUHjBA7lLryN65X0yF0IrcX5w.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=03cb337c157941bbede10f517dea2bfb56724e2c",
+                  "width": 216,
+                  "height": 108
+                },
+                {
+                  "url": "https://external-preview.redd.it/vfQIC3e942--hfcLCwKUHjBA7lLryN65X0yF0IrcX5w.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=20823c0a76e2bfe879690659a6f5efa2f4383d72",
+                  "width": 320,
+                  "height": 160
+                },
+                {
+                  "url": "https://external-preview.redd.it/vfQIC3e942--hfcLCwKUHjBA7lLryN65X0yF0IrcX5w.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=cde4681e828e3f2e15578a22b13af4b3b6a0e0a0",
+                  "width": 640,
+                  "height": 320
+                },
+                {
+                  "url": "https://external-preview.redd.it/vfQIC3e942--hfcLCwKUHjBA7lLryN65X0yF0IrcX5w.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=6e1788c5d62568c5f91c200f8897f71da337b559",
+                  "width": 960,
+                  "height": 480
+                },
+                {
+                  "url": "https://external-preview.redd.it/vfQIC3e942--hfcLCwKUHjBA7lLryN65X0yF0IrcX5w.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=04bd80634a732f82dfde37941b3e62b89290ea4c",
+                  "width": 1080,
+                  "height": 540
+                }
+              ],
+              "variants": {},
+              "id": "vfQIC3e942--hfcLCwKUHjBA7lLryN65X0yF0IrcX5w"
+            }
+          ],
+          "enabled": false
+        },
+        "media": null
+      },
+      "topComments": []
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "deleted",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_1.png",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/fine-tuning-of-llm/runs/2026-03-05T20-51-34-391Z/avatars/deleted.png",
+      "fetchedAt": "2026-03-05T20:54:26.548Z"
+    }
+  },
+  {
+    "id": "1ou2ia2",
+    "subreddit": "MCPAgents",
+    "title": "Smarter Agents, Fewer Integrations: How PolyMCP Is Changing Multi-Tool AI Workflows",
+    "selftext": "",
+    "author": "[deleted]",
+    "created_utc": 1762843374,
+    "permalink": "https://www.reddit.com/r/MCPAgents/comments/1ou2ia2/smarter_agents_fewer_integrations_how_polymcp_is/",
+    "url": "https://github.com/llm-use/Polymcp",
+    "domain": "github.com",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 1,
+    "score": 1,
+    "num_comments": 0,
+    "upvote_ratio": 1,
+    "thumbnail": "https://external-preview.redd.it/4WW_W4p9ydeJXDr9T_Om3KiQJYlfiVcevEHUJWwfFd4.png?width=140&amp;height=70&amp;auto=webp&amp;s=72ba6646bc81fd691b23558f9093d7fdd2ec109b",
+    "media": null,
+    "post_hint": "link",
+    "listing": "rising",
+    "viral_score": 0.00019894779661582944,
+    "detail": {
+      "post": {
+        "id": "1ou2ia2",
+        "title": "Smarter Agents, Fewer Integrations: How PolyMCP Is Changing Multi-Tool AI Workflows",
+        "selftext": "",
+        "author": "[deleted]",
+        "subreddit": "MCPAgents",
+        "created_utc": 1762843374,
+        "ups": 1,
+        "num_comments": 0,
+        "upvote_ratio": 1,
+        "permalink": "https://www.reddit.com/r/MCPAgents/comments/1ou2ia2/smarter_agents_fewer_integrations_how_polymcp_is/",
+        "url": "https://github.com/llm-use/Polymcp",
+        "is_self": false,
+        "post_hint": "link",
+        "thumbnail": "https://external-preview.redd.it/4WW_W4p9ydeJXDr9T_Om3KiQJYlfiVcevEHUJWwfFd4.png?width=140&amp;height=70&amp;auto=webp&amp;s=72ba6646bc81fd691b23558f9093d7fdd2ec109b",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://external-preview.redd.it/4WW_W4p9ydeJXDr9T_Om3KiQJYlfiVcevEHUJWwfFd4.png?auto=webp&amp;s=7d46dd62d10edd66f66435ecef5d7a1896e6f045",
+                "width": 1200,
+                "height": 600
+              },
+              "resolutions": [
+                {
+                  "url": "https://external-preview.redd.it/4WW_W4p9ydeJXDr9T_Om3KiQJYlfiVcevEHUJWwfFd4.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=cad23eba40cddf994d0ef36cefc95ef988c0260c",
+                  "width": 108,
+                  "height": 54
+                },
+                {
+                  "url": "https://external-preview.redd.it/4WW_W4p9ydeJXDr9T_Om3KiQJYlfiVcevEHUJWwfFd4.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=897a11431cc1672929e9e330eb4ad4256ea3158a",
+                  "width": 216,
+                  "height": 108
+                },
+                {
+                  "url": "https://external-preview.redd.it/4WW_W4p9ydeJXDr9T_Om3KiQJYlfiVcevEHUJWwfFd4.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=0f125dcda26eaa62ae3d81d904b2d1b488e22de8",
+                  "width": 320,
+                  "height": 160
+                },
+                {
+                  "url": "https://external-preview.redd.it/4WW_W4p9ydeJXDr9T_Om3KiQJYlfiVcevEHUJWwfFd4.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=9f1c5ae24902278d025d41c1773334a9c3d6de5f",
+                  "width": 640,
+                  "height": 320
+                },
+                {
+                  "url": "https://external-preview.redd.it/4WW_W4p9ydeJXDr9T_Om3KiQJYlfiVcevEHUJWwfFd4.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=f57395f44ddf462f8915a648e7f53c336dcbab2b",
+                  "width": 960,
+                  "height": 480
+                },
+                {
+                  "url": "https://external-preview.redd.it/4WW_W4p9ydeJXDr9T_Om3KiQJYlfiVcevEHUJWwfFd4.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=a264b8cd95ba8697d4d273d448a524cb07830ca3",
+                  "width": 1080,
+                  "height": 540
+                }
+              ],
+              "variants": {},
+              "id": "4WW_W4p9ydeJXDr9T_Om3KiQJYlfiVcevEHUJWwfFd4"
+            }
+          ],
+          "enabled": false
+        },
+        "media": null
+      },
+      "topComments": []
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "deleted",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_1.png",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/fine-tuning-of-llm/runs/2026-03-05T20-51-34-391Z/avatars/deleted.png",
+      "fetchedAt": "2026-03-05T20:54:26.548Z"
+    }
+  },
+  {
+    "id": "1os200v",
+    "subreddit": "MCPAgents",
+    "title": "PolyMCP — Giving LLM Agents Real Multi-Tool Intelligence",
+    "selftext": "",
+    "author": "[deleted]",
+    "created_utc": 1762639737,
+    "permalink": "https://www.reddit.com/r/MCPAgents/comments/1os200v/polymcp_giving_llm_agents_real_multitool/",
+    "url": "https://github.com/llm-use/Polymcp",
+    "domain": "github.com",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 1,
+    "score": 1,
+    "num_comments": 0,
+    "upvote_ratio": 1,
+    "thumbnail": "https://external-preview.redd.it/d2KfIlqjbyvCdph_afaGQGgxaX2CCrJmQf4yTnzLXAo.png?width=140&amp;height=70&amp;auto=webp&amp;s=c147ae25e779566664dcbb2faaf7faae834154b6",
+    "media": null,
+    "post_hint": "link",
+    "listing": "rising",
+    "viral_score": 0.00019485588360048268,
+    "detail": {
+      "post": {
+        "id": "1os200v",
+        "title": "PolyMCP — Giving LLM Agents Real Multi-Tool Intelligence",
+        "selftext": "",
+        "author": "[deleted]",
+        "subreddit": "MCPAgents",
+        "created_utc": 1762639737,
+        "ups": 1,
+        "num_comments": 0,
+        "upvote_ratio": 1,
+        "permalink": "https://www.reddit.com/r/MCPAgents/comments/1os200v/polymcp_giving_llm_agents_real_multitool/",
+        "url": "https://github.com/llm-use/Polymcp",
+        "is_self": false,
+        "post_hint": "link",
+        "thumbnail": "https://external-preview.redd.it/d2KfIlqjbyvCdph_afaGQGgxaX2CCrJmQf4yTnzLXAo.png?width=140&amp;height=70&amp;auto=webp&amp;s=c147ae25e779566664dcbb2faaf7faae834154b6",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://external-preview.redd.it/d2KfIlqjbyvCdph_afaGQGgxaX2CCrJmQf4yTnzLXAo.png?auto=webp&amp;s=c7db6714b9ba9bd36fd9a5773adcd8d3ba33fc04",
+                "width": 1200,
+                "height": 600
+              },
+              "resolutions": [
+                {
+                  "url": "https://external-preview.redd.it/d2KfIlqjbyvCdph_afaGQGgxaX2CCrJmQf4yTnzLXAo.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=1cfceb13ccf3ee1170786a8f3e63be24ffe3c47f",
+                  "width": 108,
+                  "height": 54
+                },
+                {
+                  "url": "https://external-preview.redd.it/d2KfIlqjbyvCdph_afaGQGgxaX2CCrJmQf4yTnzLXAo.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=6a7c343d4da0d3cfbc4db71a3617cca5dc98b41e",
+                  "width": 216,
+                  "height": 108
+                },
+                {
+                  "url": "https://external-preview.redd.it/d2KfIlqjbyvCdph_afaGQGgxaX2CCrJmQf4yTnzLXAo.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=c0ba2541cd7b11fc7380e27b5f16d4d548a77f4b",
+                  "width": 320,
+                  "height": 160
+                },
+                {
+                  "url": "https://external-preview.redd.it/d2KfIlqjbyvCdph_afaGQGgxaX2CCrJmQf4yTnzLXAo.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=2314fa15303084c2cc3de61667fd1b5dd7e9cbab",
+                  "width": 640,
+                  "height": 320
+                },
+                {
+                  "url": "https://external-preview.redd.it/d2KfIlqjbyvCdph_afaGQGgxaX2CCrJmQf4yTnzLXAo.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=d00dd2b22e0a7ebe50639a7f07ac41a368ca7e7a",
+                  "width": 960,
+                  "height": 480
+                },
+                {
+                  "url": "https://external-preview.redd.it/d2KfIlqjbyvCdph_afaGQGgxaX2CCrJmQf4yTnzLXAo.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=94f6d38ff6e78f737d211190ffd5fe8553d6deb8",
+                  "width": 1080,
+                  "height": 540
+                }
+              ],
+              "variants": {},
+              "id": "d2KfIlqjbyvCdph_afaGQGgxaX2CCrJmQf4yTnzLXAo"
+            }
+          ],
+          "enabled": false
+        },
+        "media": null
+      },
+      "topComments": []
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "deleted",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_1.png",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/fine-tuning-of-llm/runs/2026-03-05T20-51-34-391Z/avatars/deleted.png",
+      "fetchedAt": "2026-03-05T20:54:26.548Z"
+    }
+  },
+  {
+    "id": "1or93c4",
+    "subreddit": "MCPAgents",
+    "title": "Building PolyMCP: Making LLM Agents Truly Multi-Tool",
+    "selftext": "",
+    "author": "[deleted]",
+    "created_utc": 1762556329,
+    "permalink": "https://www.reddit.com/r/MCPAgents/comments/1or93c4/building_polymcp_making_llm_agents_truly_multitool/",
+    "url": "https://github.com/llm-use/Polymcp",
+    "domain": "github.com",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 1,
+    "score": 1,
+    "num_comments": 0,
+    "upvote_ratio": 1,
+    "thumbnail": "https://external-preview.redd.it/9PhgIfDG7OgxENVSEd9B_RR74Abhlx-j7VBMQQ3s8Qs.png?width=140&amp;height=70&amp;auto=webp&amp;s=9b7141df14e2ef666f075b9c4756b57584a3f463",
+    "media": null,
+    "post_hint": "link",
+    "listing": "rising",
+    "viral_score": 0.00019322591739714495,
+    "detail": {
+      "post": {
+        "id": "1or93c4",
+        "title": "Building PolyMCP: Making LLM Agents Truly Multi-Tool",
+        "selftext": "",
+        "author": "[deleted]",
+        "subreddit": "MCPAgents",
+        "created_utc": 1762556329,
+        "ups": 1,
+        "num_comments": 0,
+        "upvote_ratio": 1,
+        "permalink": "https://www.reddit.com/r/MCPAgents/comments/1or93c4/building_polymcp_making_llm_agents_truly_multitool/",
+        "url": "https://github.com/llm-use/Polymcp",
+        "is_self": false,
+        "post_hint": "link",
+        "thumbnail": "https://external-preview.redd.it/9PhgIfDG7OgxENVSEd9B_RR74Abhlx-j7VBMQQ3s8Qs.png?width=140&amp;height=70&amp;auto=webp&amp;s=9b7141df14e2ef666f075b9c4756b57584a3f463",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://external-preview.redd.it/9PhgIfDG7OgxENVSEd9B_RR74Abhlx-j7VBMQQ3s8Qs.png?auto=webp&amp;s=692664f918aa4a3cf50e4f7ee232718a73ae5e06",
+                "width": 1200,
+                "height": 600
+              },
+              "resolutions": [
+                {
+                  "url": "https://external-preview.redd.it/9PhgIfDG7OgxENVSEd9B_RR74Abhlx-j7VBMQQ3s8Qs.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=8f64778024fdb2c470f320b03769d6bcadbb31c4",
+                  "width": 108,
+                  "height": 54
+                },
+                {
+                  "url": "https://external-preview.redd.it/9PhgIfDG7OgxENVSEd9B_RR74Abhlx-j7VBMQQ3s8Qs.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=542e70e5b36a30645f6dfe4b9cad8d983ae0d137",
+                  "width": 216,
+                  "height": 108
+                },
+                {
+                  "url": "https://external-preview.redd.it/9PhgIfDG7OgxENVSEd9B_RR74Abhlx-j7VBMQQ3s8Qs.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=f87508e2792d8fbeb4664ef26d7b834742dea3c6",
+                  "width": 320,
+                  "height": 160
+                },
+                {
+                  "url": "https://external-preview.redd.it/9PhgIfDG7OgxENVSEd9B_RR74Abhlx-j7VBMQQ3s8Qs.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=b7129f40951f3d7623d60683b6be461898b7d2c7",
+                  "width": 640,
+                  "height": 320
+                },
+                {
+                  "url": "https://external-preview.redd.it/9PhgIfDG7OgxENVSEd9B_RR74Abhlx-j7VBMQQ3s8Qs.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=18834ac1719b753c48bef5e2903647ed51ab47a1",
+                  "width": 960,
+                  "height": 480
+                },
+                {
+                  "url": "https://external-preview.redd.it/9PhgIfDG7OgxENVSEd9B_RR74Abhlx-j7VBMQQ3s8Qs.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=b2559e5fae0b7a3dcf98f5f12cb4de7cad875d52",
+                  "width": 1080,
+                  "height": 540
+                }
+              ],
+              "variants": {},
+              "id": "9PhgIfDG7OgxENVSEd9B_RR74Abhlx-j7VBMQQ3s8Qs"
+            }
+          ],
+          "enabled": false
+        },
+        "media": null
+      },
+      "topComments": []
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "deleted",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_1.png",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/fine-tuning-of-llm/runs/2026-03-05T20-51-34-391Z/avatars/deleted.png",
+      "fetchedAt": "2026-03-05T20:54:26.548Z"
+    }
+  },
+  {
+    "id": "1oqqwf8",
+    "subreddit": "MCPAgents",
+    "title": "PolyMCP — an intelligent agent that talks to any MCP server (and works with OpenAI, Ollama, and more)",
+    "selftext": "",
+    "author": "[deleted]",
+    "created_utc": 1762511290,
+    "permalink": "https://www.reddit.com/r/MCPAgents/comments/1oqqwf8/polymcp_an_intelligent_agent_that_talks_to_any/",
+    "url": "https://github.com/llm-use/Polymcp",
+    "domain": "github.com",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 1,
+    "score": 1,
+    "num_comments": 0,
+    "upvote_ratio": 1,
+    "thumbnail": "https://external-preview.redd.it/ERuVL0dtY_2uSVcYI9mZAd2yEO-ERibQqktAXSIVNIM.png?width=140&amp;height=70&amp;auto=webp&amp;s=85ee5c7126e3d174ce00225ba0dde0400b5ee704",
+    "media": null,
+    "post_hint": "link",
+    "listing": "rising",
+    "viral_score": 0.0001923565411846584,
+    "detail": {
+      "post": {
+        "id": "1oqqwf8",
+        "title": "PolyMCP — an intelligent agent that talks to any MCP server (and works with OpenAI, Ollama, and more)",
+        "selftext": "",
+        "author": "[deleted]",
+        "subreddit": "MCPAgents",
+        "created_utc": 1762511290,
+        "ups": 1,
+        "num_comments": 0,
+        "upvote_ratio": 1,
+        "permalink": "https://www.reddit.com/r/MCPAgents/comments/1oqqwf8/polymcp_an_intelligent_agent_that_talks_to_any/",
+        "url": "https://github.com/llm-use/Polymcp",
+        "is_self": false,
+        "post_hint": "link",
+        "thumbnail": "https://external-preview.redd.it/ERuVL0dtY_2uSVcYI9mZAd2yEO-ERibQqktAXSIVNIM.png?width=140&amp;height=70&amp;auto=webp&amp;s=85ee5c7126e3d174ce00225ba0dde0400b5ee704",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://external-preview.redd.it/ERuVL0dtY_2uSVcYI9mZAd2yEO-ERibQqktAXSIVNIM.png?auto=webp&amp;s=4ec6a0e679fc4ac7325c93fcc55b1fe3008f3f61",
+                "width": 1200,
+                "height": 600
+              },
+              "resolutions": [
+                {
+                  "url": "https://external-preview.redd.it/ERuVL0dtY_2uSVcYI9mZAd2yEO-ERibQqktAXSIVNIM.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=ec8b3a5adf1773b17b4bb03a68f9895a16d415ac",
+                  "width": 108,
+                  "height": 54
+                },
+                {
+                  "url": "https://external-preview.redd.it/ERuVL0dtY_2uSVcYI9mZAd2yEO-ERibQqktAXSIVNIM.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=bf4cf92e70a8a3a6213ea0758f078f2417d7963f",
+                  "width": 216,
+                  "height": 108
+                },
+                {
+                  "url": "https://external-preview.redd.it/ERuVL0dtY_2uSVcYI9mZAd2yEO-ERibQqktAXSIVNIM.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=e6141499e7335873c15443b743248fa415c01d00",
+                  "width": 320,
+                  "height": 160
+                },
+                {
+                  "url": "https://external-preview.redd.it/ERuVL0dtY_2uSVcYI9mZAd2yEO-ERibQqktAXSIVNIM.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=72eaae434af13b76929f4c1ed4c376f55f07d1ce",
+                  "width": 640,
+                  "height": 320
+                },
+                {
+                  "url": "https://external-preview.redd.it/ERuVL0dtY_2uSVcYI9mZAd2yEO-ERibQqktAXSIVNIM.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=dd76e7a4e1c4c1816aeaafe5506bc1bc79abec22",
+                  "width": 960,
+                  "height": 480
+                },
+                {
+                  "url": "https://external-preview.redd.it/ERuVL0dtY_2uSVcYI9mZAd2yEO-ERibQqktAXSIVNIM.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=4ba12b2775c219d8dbcee2cc2403d19a7b5ad430",
+                  "width": 1080,
+                  "height": 540
+                }
+              ],
+              "variants": {},
+              "id": "ERuVL0dtY_2uSVcYI9mZAd2yEO-ERibQqktAXSIVNIM"
+            }
+          ],
+          "enabled": false
+        },
+        "media": null
+      },
+      "topComments": []
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "deleted",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_1.png",
+      "path": "/home/ubuntu/.openclaw/workspace/reddit-scout/fine-tuning-of-llm/runs/2026-03-05T20-51-34-391Z/avatars/deleted.png",
+      "fetchedAt": "2026-03-05T20:54:26.548Z"
+    }
+  }
+]

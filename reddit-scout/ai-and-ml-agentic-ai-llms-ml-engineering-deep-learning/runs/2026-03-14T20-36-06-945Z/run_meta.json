@@ -1,0 +1,34 @@
+{
+  "niche": "AI and ML Agentic AI LLMs ML Engineering Deep Learning",
+  "nicheSlug": "ai-and-ml-agentic-ai-llms-ml-engineering-deep-learning",
+  "runId": "2026-03-14T20-36-06-945Z",
+  "startedAt": "2026-03-14T20:36:06.945Z",
+  "keywords": [
+    "AI and ML Agentic AI LLMs ML Engineering Deep Learning"
+  ],
+  "mustInclude": [
+    "agentic",
+    "llms",
+    "engineering",
+    "deep",
+    "learning"
+  ],
+  "search": "AI and ML Agentic AI LLMs ML Engineering Deep Learning",
+  "subAllowlist": null,
+  "config": {
+    "topN": 10,
+    "subLimit": 8,
+    "gapMs": 1200,
+    "limitPerListing": 25,
+    "time": "week",
+    "kinds": [
+      "top",
+      "hot",
+      "rising"
+    ],
+    "searchSort": "top",
+    "searchTime": null,
+    "minSubscribers": 0,
+    "sendCardsN": 5
+  }
+}

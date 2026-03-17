@@ -1,0 +1,8 @@
+{
+  "step": "payment_confirmed",
+  "data": {
+    "name": "Hari",
+    "email": "hari200@gmail.com",
+    "telegram_id": "1912102710"
+  }
+}

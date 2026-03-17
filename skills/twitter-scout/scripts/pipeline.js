@@ -41,9 +41,9 @@ const SESSION = JSON.parse(fs.readFileSync(SESSION_FILE, 'utf8'));
 
 // ── Decodo ISP Proxy ──────────────────────────────────────────────────────────
 const PROXY = {
-  server:   'http://isp.decodo.com:10002',
-  username: 'sp22adtw9l',
-  password: 'iifDj2fZ60XI+s6hdc',
+  server:   'http://isp.decodo.com:10001',
+  username: 'sppvpg55cs',
+  password: 'rQDiZB1vzq4qab+0d8',
 };
 
 // ── Helpers ───────────────────────────────────────────────────────────────────

@@ -1,0 +1,4 @@
+[webhook] Stripe webhook server running on port 3001
+[webhook] POST /stripe-webhook  →  Stripe events
+[webhook] GET  /health          →  health check
+[webhook] ⚠️  STRIPE_WEBHOOK_SECRET not set — signature verification disabled
