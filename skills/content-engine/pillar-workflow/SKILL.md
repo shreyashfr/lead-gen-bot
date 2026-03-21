@@ -121,8 +121,19 @@ node /home/ubuntu/.openclaw/workspace-ce/skills/google-news-scout/scripts/pipeli
   --printChat
 ```
 
-Run all 4 in parallel (background Reddit + Twitter, then YouTube, then wait).
-If Twitter session expired: continue with Reddit + YouTube only, note the gap.
+Run all 4 in parallel: background Reddit, Twitter, AND Google News with `&`; run YouTube in foreground; then `wait`.
+If Twitter session expired: continue with Reddit + YouTube + Google News, note the gap.
+
+**Exact parallel exec:**
+```bash
+node /home/ubuntu/.openclaw/workspace-ce/skills/reddit-scout/scripts/pipeline.js --niche "[topic] {USER_NICHE}" --out "{USER_WORKSPACE}reddit-scout" --topN 10 --subLimit 8 --gapMs 1200 --time week --kinds top,hot,rising --searchAuto 1 --printChat 1 2>&1 &
+node /home/ubuntu/.openclaw/workspace-ce/skills/twitter-scout/scripts/pipeline.js --query "[topic] 2026" --out "{USER_WORKSPACE}twitter-scout" --topN 10 --printChat 2>&1 &
+node /home/ubuntu/.openclaw/workspace-ce/skills/google-news-scout/scripts/pipeline.js --query "[topic] {USER_NICHE}" --out "{USER_WORKSPACE}google-news-scout" --topN 10 --daysBack 7 --printChat 2>&1 &
+node /home/ubuntu/.openclaw/workspace/skills/youtube-scout/scripts/pipeline.js --query "[topic] {USER_NICHE}" --out "{USER_WORKSPACE}youtube-scout" --topN 8 --searchN 20 --printChat 2>&1
+wait
+```
+
+**⚠️ All 4 scouts are mandatory. Never skip Google News.**
 
 After all run, feed combined output to **research-agent** to compile the Research Report.
 
@@ -137,7 +148,9 @@ Generate 15 ideas. Each must:
 - Reference a real story/opinion from the user's master-doc
 - Specify format (LP / TH / XA / TW / CA)
 - Have a "why this works" rationale
-- Include source URL from research data (Reddit, Twitter, or YouTube)
+- Include source URL from research data (Reddit, Twitter, YouTube, **or Google News**)
+
+**At least 3 of the 15 ideas must cite a Google News article URL.** If Google News scout output contains articles, use them. Do not skip Google News sources.
 
 Send the IDEAS REPORT to the user.
 

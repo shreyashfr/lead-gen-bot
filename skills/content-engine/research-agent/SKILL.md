@@ -130,15 +130,18 @@ Recency is the primary signal — newer articles rank higher.
 
 ### 5. Run All 4 in Parallel
 
-Always run ALL 3 scouts. Use `&` to background Reddit and Twitter, then run YouTube, then wait for all.
+Always run ALL 4 scouts. Background Reddit, Twitter, and Google News with `&`. Run YouTube in foreground. Then `wait`.
 
-Example exec command to run all in parallel:
+Example exec command to run all 4 in parallel:
 ```bash
 node /home/ubuntu/.openclaw/workspace-ce/skills/reddit-scout/scripts/pipeline.js --niche "QUERY" --out "OUT/reddit-scout" --topN 10 --subLimit 8 --gapMs 1200 --time week --kinds top,hot --searchAuto 1 --printChat 1 2>&1 &
 node /home/ubuntu/.openclaw/workspace-ce/skills/twitter-scout/scripts/pipeline.js --query "QUERY" --out "OUT/twitter-scout" --topN 10 --printChat 2>&1 &
+node /home/ubuntu/.openclaw/workspace-ce/skills/google-news-scout/scripts/pipeline.js --query "QUERY" --out "OUT/google-news-scout" --topN 10 --daysBack 7 --printChat 2>&1 &
 node /home/ubuntu/.openclaw/workspace/skills/youtube-scout/scripts/pipeline.js --query "QUERY" --out "OUT/youtube-scout" --topN 8 --searchN 20 --printChat 2>&1
 wait
 ```
+
+**Google News is NOT optional.** If you run only 3 scouts, you are missing sources and the report will be incomplete.
 
 ---
 
