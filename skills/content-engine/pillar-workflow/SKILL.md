@@ -126,16 +126,38 @@ If Twitter session expired: continue with Reddit + YouTube + Google News, note t
 
 **Exact parallel exec:**
 ```bash
-node /home/ubuntu/.openclaw/workspace-ce/skills/reddit-scout/scripts/pipeline.js --niche "[topic] {USER_NICHE}" --out "{USER_WORKSPACE}reddit-scout" --topN 10 --subLimit 8 --gapMs 1200 --time week --kinds top,hot,rising --searchAuto 1 --printChat 1 2>&1 &
-node /home/ubuntu/.openclaw/workspace-ce/skills/twitter-scout/scripts/pipeline.js --query "[topic] 2026" --out "{USER_WORKSPACE}twitter-scout" --topN 10 --printChat 2>&1 &
-node /home/ubuntu/.openclaw/workspace-ce/skills/google-news-scout/scripts/pipeline.js --query "[topic] {USER_NICHE}" --out "{USER_WORKSPACE}google-news-scout" --topN 10 --daysBack 7 --printChat 2>&1 &
-node /home/ubuntu/.openclaw/workspace/skills/youtube-scout/scripts/pipeline.js --query "[topic] {USER_NICHE}" --out "{USER_WORKSPACE}youtube-scout" --topN 8 --searchN 20 --printChat 2>&1
+node /home/ubuntu/.openclaw/workspace-ce/skills/reddit-scout/scripts/pipeline.js --niche "[topic] {USER_NICHE}" --out "{USER_WORKSPACE}reddit-scout" --topN 10 --subLimit 8 --gapMs 1200 --time week --kinds top,hot,rising --searchAuto 1 --printChat 1 > /tmp/reddit-scout.log 2>&1 &
+node /home/ubuntu/.openclaw/workspace-ce/skills/twitter-scout/scripts/pipeline.js --query "[topic] 2026" --out "{USER_WORKSPACE}twitter-scout" --topN 10 --printChat > /tmp/twitter-scout.log 2>&1 &
+node /home/ubuntu/.openclaw/workspace-ce/skills/google-news-scout/scripts/pipeline.js --query "[topic] {USER_NICHE}" --out "{USER_WORKSPACE}google-news-scout" --topN 10 --daysBack 7 --printChat > /tmp/google-news-scout.log 2>&1 &
+node /home/ubuntu/.openclaw/workspace/skills/youtube-scout/scripts/pipeline.js --query "[topic] {USER_NICHE}" --out "{USER_WORKSPACE}youtube-scout" --topN 8 --searchN 20 --printChat > /tmp/youtube-scout.log 2>&1
 wait
+echo "All scouts done"
 ```
+
+Redirecting to log files prevents exec stdout truncation. After exec, read the report.md files (not the log files).
 
 **⚠️ All 4 scouts are mandatory. Never skip Google News.**
 
-After all run, feed combined output to **research-agent** to compile the Research Report.
+After the exec completes, **DO NOT rely on exec stdout** — it may be truncated. Instead, explicitly read each scout's report file:
+
+```bash
+# Read each scout's report after exec completes
+cat "{USER_WORKSPACE}reddit-scout/*/runs/*/report.md" 2>/dev/null | tail -80
+cat "{USER_WORKSPACE}twitter-scout/*/runs/*/report.md" 2>/dev/null | tail -80
+cat "{USER_WORKSPACE}youtube-scout/*/runs/*/report.md" 2>/dev/null | tail -80
+cat "{USER_WORKSPACE}google-news-scout/*/runs/*/report.md" 2>/dev/null | tail -80
+```
+
+Or use `find` + `cat` to get the latest run:
+```bash
+find "{USER_WORKSPACE}google-news-scout" -name "report.md" | sort | tail -1 | xargs cat
+find "{USER_WORKSPACE}reddit-scout" -name "report.md" | sort | tail -1 | xargs cat
+find "{USER_WORKSPACE}youtube-scout" -name "report.md" | sort | tail -1 | xargs cat
+```
+
+**The Google News report.md contains the clickable URLs. You MUST read it explicitly. Do NOT skip this step.**
+
+Compile all 4 reports into the Research Report. Include all URLs from all 4 sources in the Sources section.
 
 ---
 
