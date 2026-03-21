@@ -79,87 +79,24 @@ Always send the status announcement FIRST as a standalone message, then run the 
 
 ---
 
-## STEP 1 — RESEARCH (run all 3 scouts in parallel)
+## STEP 1 — RESEARCH
 
-Run reddit-scout, twitter-scout, AND youtube-scout in parallel for the pillar topic.
-
-**Reddit Scout:**
-```bash
-node /home/ubuntu/.openclaw/workspace-ce/skills/reddit-scout/scripts/pipeline.js \
-  --niche "[pillar topic] {USER_NICHE}" \
-  --out "{USER_WORKSPACE}reddit-scout" \
-  --topN 10 --subLimit 8 --gapMs 1200 \
-  --time week --kinds top,hot,rising \
-  --searchAuto 1 --printChat 1
-```
-
-**Twitter Scout:**
-```bash
-node /home/ubuntu/.openclaw/workspace-ce/skills/twitter-scout/scripts/pipeline.js \
-  --query "[pillar topic] 2026" \
-  --out "{USER_WORKSPACE}twitter-scout" \
-  --topN 10 \
-  --printChat
-```
-
-**YouTube Scout:**
-```bash
-node /home/ubuntu/.openclaw/workspace/skills/youtube-scout/scripts/pipeline.js \
-  --query "[pillar topic] {USER_NICHE}" \
-  --out "{USER_WORKSPACE}youtube-scout" \
-  --topN 8 --searchN 20 \
-  --printChat
-```
-
-
-**Google News Scout:**
-```bash
-node /home/ubuntu/.openclaw/workspace-ce/skills/google-news-scout/scripts/pipeline.js \
-  --query "[pillar topic + user niche keywords]" \
-  --out "{USER_WORKSPACE}google-news-scout" \
-  --topN 10 --daysBack 7 \
-  --printChat
-```
-
-Run all 4 in parallel: background Reddit, Twitter, AND Google News with `&`; run YouTube in foreground; then `wait`.
-If Twitter session expired: continue with Reddit + YouTube + Google News, note the gap.
-
-**Exact parallel exec:**
-```bash
-node /home/ubuntu/.openclaw/workspace-ce/skills/reddit-scout/scripts/pipeline.js --niche "[topic] {USER_NICHE}" --out "{USER_WORKSPACE}reddit-scout" --topN 10 --subLimit 8 --gapMs 1200 --time week --kinds top,hot,rising --searchAuto 1 --printChat 1 > /tmp/reddit-scout.log 2>&1 &
-node /home/ubuntu/.openclaw/workspace-ce/skills/twitter-scout/scripts/pipeline.js --query "[topic] 2026" --out "{USER_WORKSPACE}twitter-scout" --topN 10 --printChat > /tmp/twitter-scout.log 2>&1 &
-node /home/ubuntu/.openclaw/workspace-ce/skills/google-news-scout/scripts/pipeline.js --query "[topic] {USER_NICHE}" --out "{USER_WORKSPACE}google-news-scout" --topN 10 --daysBack 7 --printChat > /tmp/google-news-scout.log 2>&1 &
-node /home/ubuntu/.openclaw/workspace/skills/youtube-scout/scripts/pipeline.js --query "[topic] {USER_NICHE}" --out "{USER_WORKSPACE}youtube-scout" --topN 8 --searchN 20 --printChat > /tmp/youtube-scout.log 2>&1
-wait
-echo "All scouts done"
-```
-
-Redirecting to log files prevents exec stdout truncation. After exec, read the report.md files (not the log files).
-
-**⚠️ All 4 scouts are mandatory. Never skip Google News.**
-
-After the exec completes, **DO NOT rely on exec stdout** — it may be truncated. Instead, explicitly read each scout's report file:
+⚠️ Run this ONE command — it handles all 4 scouts in parallel and outputs the full combined report:
 
 ```bash
-# Read each scout's report after exec completes
-cat "{USER_WORKSPACE}reddit-scout/*/runs/*/report.md" 2>/dev/null | tail -80
-cat "{USER_WORKSPACE}twitter-scout/*/runs/*/report.md" 2>/dev/null | tail -80
-cat "{USER_WORKSPACE}youtube-scout/*/runs/*/report.md" 2>/dev/null | tail -80
-cat "{USER_WORKSPACE}google-news-scout/*/runs/*/report.md" 2>/dev/null | tail -80
+bash /home/ubuntu/.openclaw/workspace-ce/skills/pillar-workflow/scripts/run_research.sh \
+  --query "[pillar topic]" \
+  --out "{USER_WORKSPACE}" \
+  --niche "{USER_NICHE}"
 ```
 
-Or use `find` + `cat` to get the latest run:
-```bash
-find "{USER_WORKSPACE}google-news-scout" -name "report.md" | sort | tail -1 | xargs cat
-find "{USER_WORKSPACE}reddit-scout" -name "report.md" | sort | tail -1 | xargs cat
-find "{USER_WORKSPACE}youtube-scout" -name "report.md" | sort | tail -1 | xargs cat
-```
+Run with `yieldMs: 120000`. The script outputs a complete combined research report for all 4 platforms (Reddit, Twitter/X, YouTube, Google News) with all URLs included.
 
-**The Google News report.md contains the clickable URLs. You MUST read it explicitly. Do NOT skip this step.**
-
-Compile all 4 reports into the Research Report. Include all URLs from all 4 sources in the Sources section.
-
----
+**RULES:**
+- NEVER run individual scout commands — always use run_research.sh
+- NEVER skip Google News — the script handles it automatically
+- After exec, the stdout contains the FULL combined report — read it completely
+- The Google News section in the output has clickable URLs — include ALL of them in the Sources section
 
 ## STEP 2 — IDEA GENERATION
 
