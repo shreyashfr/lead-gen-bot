@@ -21,9 +21,9 @@ echo "🔍 Running research: $QUERY"
 
 # Run all 4 scouts in parallel, output to log files only
 node "$SKILLS_DIR/reddit-scout/scripts/pipeline.js" \
-  --niche "$QUERY $NICHE" \
+  --niche "$QUERY" \
   --out "$OUT_DIR/reddit-scout" \
-  --topN 10 --subLimit 8 --gapMs 1200 \
+  --topN 10 --subLimit 10 --gapMs 1200 \
   --time week --kinds top,hot,rising \
   --searchAuto 1 > /tmp/reddit-scout.log 2>&1 &
 
@@ -33,9 +33,9 @@ node "$SKILLS_DIR/twitter-scout/scripts/pipeline.js" \
   --topN 10 > /tmp/twitter-scout.log 2>&1 &
 
 node "$SKILLS_DIR/google-news-scout/scripts/pipeline.js" \
-  --query "$QUERY $NICHE" \
+  --query "$QUERY" \
   --out "$OUT_DIR/google-news-scout" \
-  --topN 10 --daysBack 7 > /tmp/google-news-scout.log 2>&1 &
+  --topN 20 --daysBack 14 > /tmp/google-news-scout.log 2>&1 &
 
 node "$WORKSPACE_SKILLS/youtube-scout/scripts/pipeline.js" \
   --query "$QUERY $NICHE" \
