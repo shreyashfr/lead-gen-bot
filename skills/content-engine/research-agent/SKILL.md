@@ -3,7 +3,7 @@ name: research-agent
 description: >
   Research agent for the Content Engine. Triggers when a pillar is set.
   Runs reddit-scout, twitter-scout, AND youtube-scout in parallel for the given topic.
-  Returns a structured tri-platform report: trending topics, viral formats, hook styles
+  Returns a structured quad-platform report: trending topics, viral formats, hook styles
   working right now, content gaps nobody is filling.
   Use before running idea-generator. Works for any user — replace {USER_NAME} references
   with the current USER_NAME and USER_WORKSPACE from dispatcher context.
@@ -21,7 +21,7 @@ Before running any step in this skill:
 
 # Research Agent
 
-Scans Reddit + Twitter/X + YouTube + Google News for a given content pillar and returns a structured tri-platform report.
+Scans Reddit + Twitter/X + YouTube + Google News for a given content pillar and returns a structured quad-platform report.
 
 ## Multi-User Context
 
@@ -163,7 +163,7 @@ User: {USER_NAME} | Date: [today]
 ### 5. {USER_NAME}'s Natural Angle
 [1-2 sentences: where does this user's story/experience/opinions intersect with what's trending?]
 
-### Sources — TOP POSTS & VIDEOS (idea-generator will use these URLs)
+### Sources — TOP POSTS, VIDEOS & ARTICLES (idea-generator will use these URLs)
 
 **Reddit:**
 - [post title] — [subreddit] — [upvotes] upvotes
@@ -179,12 +179,19 @@ User: {USER_NAME} | Date: [today]
 - [video title] — [channel] — [views] views
   URL: https://www.youtube.com/watch?v=[video_id]
 - [repeat for top 5-8 videos]
+
+**Google News:**
+- [article title] — [source publication] — [recency score]/10
+  URL: [full article URL from scout output]
+- [repeat for top 5-8 articles]
 ```
 
 **CRITICAL URL RULES:**
 - Every source entry MUST have a URL on its own line starting with `URL:`
-- Copy URLs exactly from the scout script output — never invent or reconstruct them
-- If the scout script did not return a URL for a post/video, omit it entirely
+- Copy URLs exactly from the scout script stdout — never invent or reconstruct them
+- Google News URLs come from the `URL:` line in each scout result block — copy verbatim
+- If the scout script did not return a URL for a post/video/article, omit that entry entirely
 - The idea-generator will only use URLs explicitly listed here — bad/missing URLs = bad ideas
+- **ALL 4 platforms must appear in the Sources section — Reddit, Twitter, YouTube, AND Google News**
 
 After producing the report, immediately pass to idea-generator (or wait for pillar-workflow handoff).
