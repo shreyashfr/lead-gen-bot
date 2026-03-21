@@ -81,7 +81,7 @@ Always send the status announcement FIRST as a standalone message, then run the 
 
 ## STEP 1 — RESEARCH
 
-⚠️ Run this ONE command — it handles all 4 scouts in parallel and outputs the full combined report:
+Run this script — it handles all 4 scouts in parallel and writes results to a file:
 
 ```bash
 bash /home/ubuntu/.openclaw/workspace-ce/skills/pillar-workflow/scripts/run_research.sh \
@@ -90,13 +90,14 @@ bash /home/ubuntu/.openclaw/workspace-ce/skills/pillar-workflow/scripts/run_rese
   --niche "{USER_NICHE}"
 ```
 
-Run with `yieldMs: 120000`. The script outputs a complete combined research report for all 4 platforms (Reddit, Twitter/X, YouTube, Google News) with all URLs included.
+After the exec completes, **immediately read the report file**:
 
-**RULES:**
-- NEVER run individual scout commands — always use run_research.sh
-- NEVER skip Google News — the script handles it automatically
-- After exec, the stdout contains the FULL combined report — read it completely
-- The Google News section in the output has clickable URLs — include ALL of them in the Sources section
+```bash
+cat {USER_WORKSPACE}research-report.md
+```
+
+The report contains all 4 platforms with full URLs. You MUST read this file — do not skip it.
+The exec stdout only confirms completion. The actual content is in research-report.md.
 
 ## STEP 2 — IDEA GENERATION
 
