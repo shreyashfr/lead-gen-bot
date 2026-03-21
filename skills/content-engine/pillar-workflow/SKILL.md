@@ -56,9 +56,9 @@ Replace ALL file paths:
 **⚡ The moment a `Pillar:` command is received, your VERY FIRST TOOL CALL must be `message(send)` with this text — before reading any files, before any research, before anything else:**
 
 ```
-🔍 Searching viral posts around "[Pillar Topic]" on Reddit and Twitter/X...
+🔍 Searching viral posts around "[Pillar Topic]" on Reddit, Twitter/X + YouTube + Google News...
 
-Retrieving top ideas and hooks. This takes 5-7 minutes — sit back and relax. 🙌
+Retrieving top ideas, hooks and videos. This takes 8-12 minutes — sit back and relax. 🙌
 ```
 
 **Rules:**
@@ -79,13 +79,13 @@ Always send the status announcement FIRST as a standalone message, then run the 
 
 ---
 
-## STEP 1 — RESEARCH (run both scouts)
+## STEP 1 — RESEARCH (run all 3 scouts in parallel)
 
-Run reddit-scout AND twitter-scout in sequence for the pillar topic.
+Run reddit-scout, twitter-scout, AND youtube-scout in parallel for the pillar topic.
 
 **Reddit Scout:**
 ```bash
-node /home/ubuntu/.openclaw/workspace/skills/reddit-scout/scripts/pipeline.js \
+node /home/ubuntu/.openclaw/workspace-ce/skills/reddit-scout/scripts/pipeline.js \
   --niche "[pillar topic] {USER_NICHE}" \
   --out "{USER_WORKSPACE}reddit-scout" \
   --topN 10 --subLimit 8 --gapMs 1200 \
@@ -95,16 +95,36 @@ node /home/ubuntu/.openclaw/workspace/skills/reddit-scout/scripts/pipeline.js \
 
 **Twitter Scout:**
 ```bash
-node /home/ubuntu/.openclaw/workspace/skills/twitter-scout/scripts/pipeline.js \
+node /home/ubuntu/.openclaw/workspace-ce/skills/twitter-scout/scripts/pipeline.js \
   --query "[pillar topic] 2026" \
   --out "{USER_WORKSPACE}twitter-scout" \
   --topN 10 \
   --printChat
 ```
 
-If Twitter session expired: continue with Reddit only, note the gap.
+**YouTube Scout:**
+```bash
+node /home/ubuntu/.openclaw/workspace/skills/youtube-scout/scripts/pipeline.js \
+  --query "[pillar topic] {USER_NICHE}" \
+  --out "{USER_WORKSPACE}youtube-scout" \
+  --topN 8 --searchN 20 \
+  --printChat
+```
 
-After both run, feed output to **research-agent** to compile the Research Report.
+
+**Google News Scout:**
+```bash
+node /home/ubuntu/.openclaw/workspace-ce/skills/google-news-scout/scripts/pipeline.js \
+  --query "[pillar topic + user niche keywords]" \
+  --out "{USER_WORKSPACE}google-news-scout" \
+  --topN 10 --daysBack 7 \
+  --printChat
+```
+
+Run all 4 in parallel (background Reddit + Twitter, then YouTube, then wait).
+If Twitter session expired: continue with Reddit + YouTube only, note the gap.
+
+After all run, feed combined output to **research-agent** to compile the Research Report.
 
 ---
 
@@ -117,9 +137,31 @@ Generate 15 ideas. Each must:
 - Reference a real story/opinion from the user's master-doc
 - Specify format (LP / TH / XA / TW / CA)
 - Have a "why this works" rationale
-- Include source URL from Reddit or Twitter data
+- Include source URL from research data (Reddit, Twitter, or YouTube)
 
 Send the IDEAS REPORT to the user.
+
+**🔴 MANDATORY — The IDEAS REPORT must ALWAYS end with this EXACT block:**
+
+```
+━━━━━━━━━━
+
+📅 What's your production plan?
+
+Tell me:
+1. Which ideas you want to produce (pick numbers, e.g. 2, 5, 9)
+2. How many of each format you want this week:
+
+e.g.
+5x LinkedIn Posts
+4x Twitter Threads
+3x Tweets
+3x Instagram Carousels
+
+I'll start producing one at a time and send for your review before moving to the next.
+```
+
+**This block is non-negotiable. Every ideas report ends with it. No exceptions. Never summarize it differently.**
 
 ---
 

@@ -1,0 +1,17 @@
+{
+  "name": "youtube-scout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@distube/ytdl-core": "^4.16.12",
+    "youtube-transcript": "^1.3.0",
+    "youtubei.js": "^17.0.1"
+  }
+}

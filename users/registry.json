@@ -4,6 +4,17 @@
     "5122439348"
   ],
   "users": {
+    "292": {
+      "name": "Deepanshu Garg",
+      "email": "deepanshugarg743@gmail.com",
+      "stripe_customer_id": "cus_U8O5hstUZfA3Sa",
+      "workspace": "/home/ubuntu/.openclaw/workspace-ce/users/292/",
+      "payment_confirmed": true,
+      "subscription_start": "2026-03-18",
+      "onboarding_complete": false,
+      "onboarding_step": "payment_confirmed",
+      "joined": "2026-03-18"
+    },
     "750774193": {
       "name": "Sourabh",
       "workspace": "/home/ubuntu/.openclaw/workspace/users/750774193/",
@@ -31,7 +42,9 @@
       "stripe_customer_id": "cus_U8nckDzvzSnXW0",
       "subscription_start": "2026-03-13",
       "niche": "Agentic AI, LLMs, ML Engineering, Deep Learning, AI from scratch",
-      "platforms": ["linkedin"]
+      "platforms": [
+        "linkedin"
+      ]
     },
     "1624590926": {
       "name": "Omkar",

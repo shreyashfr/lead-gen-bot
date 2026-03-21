@@ -41,13 +41,23 @@ Twitter/X:
 2. https://twitter.com/...
 ...
 
-Total URLs available: [N]
+YouTube:
+1. https://www.youtube.com/watch?v=...
+2. https://www.youtube.com/watch?v=...
+...
+
+Google News:
+1. https://news.google.com/rss/articles/...
+2. https://news.google.com/rss/articles/...
+...
+
+Total URLs available: [N] (Reddit: X | Twitter: Y | YouTube: Z | Google News: W)
 ```
 
-**If you have fewer than 5 real URLs:** Do NOT proceed. Tell the user:
-> "Research report is missing source URLs. Re-run the research step first — I need real post links to generate properly referenced ideas."
+**If you have fewer than 5 real URLs across all platforms:** Do NOT proceed. Tell the user:
+> "Research report is missing source URLs. Re-run the research step first — I need real post/video links to generate properly referenced ideas."
 
-**If you have 5+ URLs:** Proceed to generation. Assign URLs across the 15 ideas. You may reuse a URL for multiple ideas if they're genuinely inspired by the same post.
+**If you have 5+ URLs:** Proceed to generation. Distribute URLs across the 15 ideas — aim to use all 3 platforms. You may reuse a URL for multiple ideas if they're genuinely inspired by the same source.
 
 **ZERO TOLERANCE: Do NOT fabricate any URL. If a URL was not in the research report, it does not exist.**
 
@@ -83,6 +93,15 @@ Aim for variety across the 15 ideas:
 - 3-4 opinion/hot-take angles (their stances on the industry)
 - 2-3 educational angles (frameworks, breakdowns, systems)
 - 1-2 wildcard / emotional angles (depression, failure, identity)
+
+### Platform Source Distribution
+Distribute the 15 ideas across all 4 research platforms:
+- ~4 ideas inspired by Reddit sources
+- ~4 ideas inspired by Twitter/X sources
+- ~4 ideas inspired by YouTube sources
+- ~3 ideas inspired by Google News articles
+
+This ensures ideas are grounded in real signals from each platform's unique audience.
 
 ---
 
@@ -132,17 +151,24 @@ Why it works: ...
 
 ━━━━━━━━━━
 
-📅 What is your production plan for the week/day?
+📅 **What's your production plan?**
 
-Tell me how many pieces you want across formats:
+Tell me:
+1. Which ideas you want to produce (pick numbers, e.g. 2, 5, 9)
+2. How many of each format you want this week:
+
 e.g.
 5x LinkedIn Posts
 4x Twitter Threads
-5x Twitter Posts
-5x Instagram Carousels
+3x Tweets
+3x Instagram Carousels
+
+I'll start producing one at a time and send for your review before moving to the next.
 ```
 
-**HARD RULE: Do a final check before sending — scan all 15 ideas. If any 📎 Source is blank, invented, or not in your Step 0 list → fix it before sending. No exceptions.**
+**HARD RULE 1: Do a final check before sending — scan all 15 ideas. If any 📎 Source is blank, invented, or not in your Step 0 list → fix it before sending. No exceptions.**
+
+**HARD RULE 2: The production plan block above is MANDATORY — it MUST be the last thing in every ideas report, every single time. Never skip it, never summarize it differently. Copy the exact format.**
 
 ---
 

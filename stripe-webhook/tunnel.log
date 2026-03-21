@@ -21,3 +21,27 @@
 2026-03-13T12:02:50Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.27
 2026/03/13 12:02:50 failed to sufficiently increase receive buffer size (was: 208 kiB, wanted: 7168 kiB, got: 416 kiB). See https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes for details.
 2026-03-13T12:02:50Z INF Registered tunnel connection connIndex=0 connection=52d7077e-a182-42d2-8040-7a97a841d143 event=0 ip=198.41.192.27 location=arn07 protocol=quic
+2026-03-18T02:24:23Z ERR failed to accept incoming stream requests error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.192.27
+2026-03-18T02:24:23Z ERR failed to run the datagram handler error="timeout: no recent network activity" connIndex=0 event=0 ip=198.41.192.27
+2026-03-18T02:24:23Z ERR failed to serve tunnel connection error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.192.27
+2026-03-18T02:24:23Z ERR Serve tunnel error error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.192.27
+2026-03-18T02:24:23Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.192.27
+2026-03-18T02:24:25Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.27
+2026-03-18T02:24:25Z INF Registered tunnel connection connIndex=0 connection=e02c6472-7c0f-4ed0-9e2f-667de6d576ce event=0 ip=198.41.192.27 location=arn07 protocol=quic
+2026-03-18T22:28:54Z ERR failed to accept incoming stream requests error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.192.27
+2026-03-18T22:28:54Z ERR failed to run the datagram handler error="timeout: no recent network activity" connIndex=0 event=0 ip=198.41.192.27
+2026-03-18T22:28:54Z WRN failed to serve tunnel connection error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.192.27
+2026-03-18T22:28:54Z ERR Serve tunnel error error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.192.27
+2026-03-18T22:28:54Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.192.27
+2026-03-18T22:28:54Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.27
+2026-03-18T22:28:59Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.192.27
+2026-03-18T22:28:59Z INF Retrying connection in up to 4s connIndex=0 event=0 ip=198.41.192.27
+2026-03-18T22:29:02Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.77
+2026-03-18T22:29:04Z INF Registered tunnel connection connIndex=0 connection=6785ae60-507a-4a41-8d91-996995d97dd3 event=0 ip=198.41.192.77 location=arn07 protocol=quic
+2026-03-19T04:25:28Z ERR failed to accept incoming stream requests error="failed to accept QUIC stream: Application error 0x0 (remote)" connIndex=0 event=0 ip=198.41.192.77
+2026-03-19T04:25:28Z ERR failed to run the datagram handler error="Application error 0x0 (remote)" connIndex=0 event=0 ip=198.41.192.77
+2026-03-19T04:25:28Z ERR failed to serve tunnel connection error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.192.77
+2026-03-19T04:25:28Z ERR Serve tunnel error error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.192.77
+2026-03-19T04:25:28Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.192.77
+2026-03-19T04:25:29Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.77
+2026-03-19T04:25:29Z INF Registered tunnel connection connIndex=0 connection=756e86c9-c07d-4f29-b1d1-49b25f7e51f1 event=0 ip=198.41.192.77 location=arn07 protocol=quic

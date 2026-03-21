@@ -735,3 +735,33 @@
 ⚠️  No user found for customer cus_TivHPbKlnwiS1L
 📩 Event received: invoice.payment_succeeded
 ⚠️  No user found for customer cus_TivHPbKlnwiS1L
+📩 Event received: invoice.payment_succeeded
+⚠️  No user found for customer cus_TivHPbKlnwiS1L
+📩 Event received: invoice.payment_failed
+⚠️  No user found for customer cus_U8O5hstUZfA3Sa
+📩 Event received: invoice.payment_failed
+⚠️  No user found for customer cus_U8O5hstUZfA3Sa
+📩 Event received: invoice.payment_failed
+⚠️  No user found for customer cus_U8O5hstUZfA3Sa
+📩 Event received: invoice.payment_failed
+⚠️  No user found for customer cus_U8O5hstUZfA3Sa
+📩 Event received: invoice.payment_failed
+⚠️  No user found for customer cus_U8O5hstUZfA3Sa
+📩 Event received: invoice.payment_failed
+⚠️  No user found for customer cus_U8O5hstUZfA3Sa
+📩 Event received: invoice.payment_failed
+⚠️  No user found for customer cus_U8O5hstUZfA3Sa
+📩 Event received: invoice.payment_failed
+⚠️  No user found for customer cus_U8O5hstUZfA3Sa
+📩 Event received: invoice.payment_failed
+⚠️  No user found for customer cus_U8O5hstUZfA3Sa
+📩 Event received: checkout.session.completed
+ℹ️  No existing session for 292 — will start fresh on next message
+📩 Event received: invoice.payment_succeeded
+✅ Payment confirmed for 292 (Deepanshu Garg)
+📩 Event received: invoice.payment_succeeded
+⚠️  No user found for customer cus_TivHPbKlnwiS1L
+📩 Event received: invoice.payment_succeeded
+⚠️  No user found for customer cus_TivHPbKlnwiS1L
+📩 Event received: invoice.payment_succeeded
+⚠️  No user found for customer cus_TivHPbKlnwiS1L
