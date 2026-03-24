@@ -250,7 +250,32 @@ cat {USER_WORKSPACE}research-report.md
 sessions_spawn(
   runtime: "subagent",
   agentId: "idea-generator",
-  task: "Read {USER_WORKSPACE}research-report.md and {USER_WORKSPACE}master-doc.md. Generate 15 ideas with hook + angle + format + story + source URL for each. Post the IDEAS REPORT directly to Telegram using channel='telegram' and target='g-agent-ce-telegram-direct-{USER_TELEGRAM_ID}'. Include the production-plan block at the end. Auto-post and stop.",
+  task: "CRITICAL — DO NOT SEND INTERMEDIATE MESSAGES
+
+Do NOT use message() tool for ANY messages except the final IDEAS REPORT.
+
+Rules:
+- ❌ Do NOT send 'processing', 'generating', 'retrying', status updates
+- ❌ Do NOT send error explanations or narration
+- ❌ Do NOT say 'Let me retry' or 'Processing data'
+- ✅ ONLY send the final IDEAS REPORT (one time, then stop)
+- ✅ If validation fails → retry silently (no message to user)
+- ✅ If generation fails → fail silently (no message to user)
+
+TASK:
+1. Read {USER_WORKSPACE}research-report.md
+2. Read {USER_WORKSPACE}master-doc.md
+3. Validate all 4 platforms have URLs (Reddit≥4, Twitter≥4, YouTube≥4, Google News≥3)
+4. If validation fails → do NOT message, just fail silently
+5. If validation passes → Generate 15 ideas (hook, angle, format, story, source URL)
+6. Scan all ideas for valid sources (no blanks, no invented URLs)
+7. Send ONLY the final IDEAS REPORT via message():
+   - channel='telegram'
+   - target='g-agent-ce-telegram-direct-{USER_TELEGRAM_ID}'
+   - Include production-plan block at end
+8. Stop immediately (no follow-up messages)
+
+If anything fails at any point → do NOT send any message.",
   mode: "run",
   timeoutSeconds: 120
 )
@@ -262,7 +287,7 @@ sessions_spawn(
 |---------|--------|
 | **Success** | Ideas posted to Telegram. You are done. STOP. Send no message. |
 | **Timeout (>120 sec)** | Send ONLY this: `⚠️ Still generating ideas — check back in 2 minutes.` Then STOP. |
-| **Error/Crash** | Send ONLY this: `⚠️ Hit a hiccup. Retrying...` Retry once. Then STOP. |
+| **Error/Crash** | Send ONLY this: `⚠️ Hit a hiccup. Try again in a moment.` Then STOP (no retry). |
 
 **RULES:**
 - Do NOT send any message other than the hard-coded error messages above
