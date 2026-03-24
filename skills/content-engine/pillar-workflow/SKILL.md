@@ -7,13 +7,37 @@ description: >
   Works for any Content Engine user — uses dispatcher-injected USER_NAME, USER_WORKSPACE, USER_NICHE.
 ---
 
-# 🔴 HARD-CODED MESSAGES (READ FIRST)
+# 🔴 STATE-BASED MESSAGING (NOT LLM MESSAGES)
 
-**ALL user-facing messages are pre-written below. Do NOT improvise, add extra text, or send messages LLM decides to send.**
+**All messages are sent by STATE MACHINE, not by LLM improvisation.**
 
-## Message 1: Pillar ACK (send immediately after user sends `Pillar: [topic]`)
+Pillar workflow tracks states via `{USER_WORKSPACE}pillar-state.json`:
 
-Replace `[TOPIC]` with the exact pillar topic from user's message:
+```json
+{
+  "pillar": "AI Scams",
+  "state": "PILLAR_RECEIVED",
+  "created_at": "2026-03-24T15:33:00Z",
+  "research_status": {
+    "reddit": "running",
+    "twitter": "running",
+    "youtube": "running",
+    "google_news": "running"
+  },
+  "message_sent": {
+    "pillar_received": true,
+    "research_done": false,
+    "ideas_ready": false
+  }
+}
+```
+
+## Hard-Coded Messages (Only 3)
+
+### Message 1: PILLAR_RECEIVED → RESEARCH_RUNNING
+**Send immediately when state changes to PILLAR_RECEIVED:**
+
+Replace `[TOPIC]` with pillar topic:
 
 ```
 🔍 Searching viral posts around "[TOPIC]" on Reddit, Twitter/X, YouTube and Google News...
@@ -21,34 +45,29 @@ Replace `[TOPIC]` with the exact pillar topic from user's message:
 Retrieving top ideas and hooks. This takes 8-12 minutes — sit back and relax. 🙌
 ```
 
-**Rules:**
-- Send ONLY this exact message, nothing else
-- Replace `[TOPIC]` with user's topic (e.g., "AI Scams" → "🔍 Searching viral posts around "AI Scams"...")
-- Do NOT add any other text before or after
-- Do NOT send narration like "Let me load X" or "Now I'll run Y"
+Then set `message_sent.pillar_received = true`
 
-## Message 2: Ideas Report (sent by idea-generator subagent — NOT by you)
+### Message 2: RESEARCH_DONE → IDEA_GENERATION
+**Send when state changes to RESEARCH_DONE (all scouts completed):**
 
-The idea-generator posts 15 ideas with hooks, formats, and sources. It includes the production-plan block.
-
-**You do NOT send this message yourself. The subagent does.**
-
-## Message 3: Error Messages (ONLY if something breaks)
-
-### 3a. Timeout (if idea-generator takes >120 sec):
 ```
-⚠️ Still generating ideas — check back in 2 minutes.
+✅ Research done!
+
+💡 Generating 15 ideas now — matching what's trending against your voice, stories, and opinions. Give me a minute...
 ```
 
-### 3b. Crash/Retry (if subagent fails):
+Then set `message_sent.research_done = true`
+
+### Message 3: ERROR (any state)
+**Send ONLY if scout fails or idea-generator crashes:**
+
 ```
-⚠️ Hit a hiccup. Retrying...
+⚠️ Hit a hiccup. Try again in a moment.
 ```
 
-**Rules:**
-- Only send these if the specific error occurs
-- Do NOT add extra text or explanation
-- Use exactly the text above
+Then set `state = "ERROR"`
+
+**NO OTHER MESSAGES are sent. Period.**
 
 ---
 
@@ -141,34 +160,70 @@ Replace ALL file paths:
 
 ---
 
-## STEP 0 — HARD-CODED ACK MESSAGE (ONLY MESSAGE UNTIL IDEAS READY)
+## WORKFLOW — STATE-BASED EXECUTION
 
-**⚡ HARD-CODED MESSAGE — Use exactly this, do NOT improvise:**
+**Do NOT send messages based on LLM thinking. Send based on STATE CHANGES ONLY.**
 
-Replace `[TOPIC]` with the pillar topic from user's message:
+### Step 0: Initialize State File
 
+When pillar command is received:
+
+```bash
+cat > {USER_WORKSPACE}pillar-state.json << 'EOF'
+{
+  "pillar": "[TOPIC]",
+  "state": "PILLAR_RECEIVED",
+  "created_at": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
+  "research_status": {
+    "reddit": "pending",
+    "twitter": "pending",
+    "youtube": "pending",
+    "google_news": "pending"
+  },
+  "message_sent": {
+    "pillar_received": false,
+    "research_done": false,
+    "ideas_ready": false
+  }
+}
+EOF
 ```
-🔍 Searching viral posts around "[TOPIC]" on Reddit, Twitter/X, YouTube and Google News...
 
-Retrieving top ideas and hooks. This takes 8-12 minutes — sit back and relax. 🙌
-```
+### Step 1: Send Message for STATE = PILLAR_RECEIVED
 
-**RULES — ABSOLUTE:**
-- Send this message FIRST, before any file reads or processing
-- Use the exact text above (do NOT add "Let me", "Now I'll", "I'm going to", etc.)
-- Replace `[TOPIC]` with the user's pillar topic only
-- Then **SILENT** — zero more messages until ideas are ready to post
-- Do NOT add any step updates, status messages, or narration
-- Do NOT say "loading", "running", "generating", "waiting"
-- Just execute. No talking.
+Check state file: if `state == "PILLAR_RECEIVED"` and `message_sent.pillar_received == false`:
+- Send Message 1 (hard-coded above)
+- Update state: `message_sent.pillar_received = true`
+- Update state: `state = "RESEARCH_RUNNING"`
 
-**If you feel the urge to send any other message → STOP. Don't send it.**
-**The ONLY messages allowed are:**
-1. This hard-coded ACK message (at start)
-2. The ideas report (when idea-generator posts it)
-3. Error-only messages (if something breaks): see STEP 2 error handling
+### Step 2: Run Scouts (SILENT)
 
-**All other messages are forbidden.**
+Execute all 4 scouts:
+- Do NOT send any messages
+- Track status in state file: `research_status.reddit = "running"` → `"done"` or `"failed"`
+- If ANY scout fails → set `state = "ERROR"` and send Message 3 (error), then STOP
+
+### Step 3: Check for STATE = RESEARCH_DONE
+
+After all scouts complete:
+- Validate research-report.md has URLs for all 4 platforms
+- If validation passes:
+  - Update state: `state = "RESEARCH_DONE"`
+  - Send Message 2 (hard-coded above)
+  - Update state: `message_sent.research_done = true`
+  - Update state: `state = "IDEA_GENERATION_RUNNING"`
+- If validation fails:
+  - Update state: `state = "ERROR"`
+  - Send Message 3 (error)
+  - STOP
+
+### Step 4: Run Idea Generation (SILENT)
+
+Spawn idea-generator subagent.
+- Do NOT send any messages
+- Monitor for completion
+- If subagent posts ideas to Telegram → state is done
+- If subagent fails → set `state = "ERROR"`, send Message 3 (error), STOP
 
 **🚨 GUARDRAILS (MANDATORY FOR EVERY LLM)**
 - The user-facing IDEAS REPORT must include 15 ideas, each with a hook, format, rationale, and a real source URL (Reddit/Twitter/YouTube/Google News). Do not send partial lists.
