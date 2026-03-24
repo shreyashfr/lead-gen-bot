@@ -1,0 +1,35 @@
+{
+  "n": 5,
+  "cards": [
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-32-11-046Z/cards/1s1kyla.png",
+      "caption": "1) Which local model we running on the overland Jeep fellas?\nr/LocalLLaMA · score 49 · 241 ups · 100 comments\nhttps://www.reddit.com/r/LocalLLaMA/comments/1s1kyla/which_local_model_we_running_on_the_overland_jeep/",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1s1kyla/which_local_model_we_running_on_the_overland_jeep/",
+      "id": "1s1kyla"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-32-11-046Z/cards/1s17afx.png",
+      "caption": "2) I came from Data Engineering stuff before jumping into LLM stuff, i am surprised that many people in this space never heard Elastic/OpenSearch\nr/LocalLLaMA · score 32 · 407 ups · 70 comments\nhttps://www.reddit.com/r/LocalLLaMA/comments/1s17afx/i_came_from_data_engineering_stuff_before_jumping/",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1s17afx/i_came_from_data_engineering_stuff_before_jumping/",
+      "id": "1s17afx"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-32-11-046Z/cards/1rzg33q.png",
+      "caption": "3) Feedback on my 256gb VRAM local setup and cluster plans. Lawyer keeping it local.\nr/LocalLLaMA · score 17 · 408 ups · 221 comments\nhttps://www.reddit.com/r/LocalLLaMA/comments/1rzg33q/feedback_on_my_256gb_vram_local_setup_and_cluster/",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1rzg33q/feedback_on_my_256gb_vram_local_setup_and_cluster/",
+      "id": "1rzg33q"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-32-11-046Z/cards/1s2181s.png",
+      "caption": "4) Lessons from building a permanent companion agent on local hardware\nr/LocalLLaMA · score 6 · 20 ups · 10 comments\nhttps://www.reddit.com/r/LocalLLaMA/comments/1s2181s/lessons_from_building_a_permanent_companion_agent/",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1s2181s/lessons_from_building_a_permanent_companion_agent/",
+      "id": "1s2181s"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-32-11-046Z/cards/1s1q5et.png",
+      "caption": "5) I feel like if they made a local model focused specifically on RP it would be god tier even if tiny\nr/LocalLLaMA · score 5 · 26 ups · 23 comments\nhttps://www.reddit.com/r/LocalLLaMA/comments/1s1q5et/i_feel_like_if_they_made_a_local_model_focused/",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1s1q5et/i_feel_like_if_they_made_a_local_model_focused/",
+      "id": "1s1q5et"
+    }
+  ]
+}

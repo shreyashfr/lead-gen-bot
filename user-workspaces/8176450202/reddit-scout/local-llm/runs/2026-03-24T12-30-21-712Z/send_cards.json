@@ -1,0 +1,35 @@
+{
+  "n": 5,
+  "cards": [
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/cards/1s1kyla.png",
+      "caption": "1) Which local model we running on the overland Jeep fellas?\nr/LocalLLaMA · score 50 · 243 ups · 100 comments\nhttps://www.reddit.com/r/LocalLLaMA/comments/1s1kyla/which_local_model_we_running_on_the_overland_jeep/",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1s1kyla/which_local_model_we_running_on_the_overland_jeep/",
+      "id": "1s1kyla"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/cards/1s2753y.png",
+      "caption": "2) I built Fox – a Rust LLM inference engine with 2x Ollama throughput and 72% lower TTFT.\nr/LocalLLM · score 36 · 29 ups · 31 comments\nhttps://www.reddit.com/r/LocalLLM/comments/1s2753y/i_built_fox_a_rust_llm_inference_engine_with_2x/",
+      "permalink": "https://www.reddit.com/r/LocalLLM/comments/1s2753y/i_built_fox_a_rust_llm_inference_engine_with_2x/",
+      "id": "1s2753y"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/cards/1s0zoyi.png",
+      "caption": "3) 7MB binary-weight LLM running in the browser, no FPU needed\nr/LocalLLM · score 10 · 144 ups · 55 comments\nhttps://www.reddit.com/r/LocalLLM/comments/1s0zoyi/7mb_binaryweight_llm_running_in_the_browser_no/",
+      "permalink": "https://www.reddit.com/r/LocalLLM/comments/1s0zoyi/7mb_binaryweight_llm_running_in_the_browser_no/",
+      "id": "1s0zoyi"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/cards/1rwlqoe.png",
+      "caption": "4) Krasis LLM Runtime - run large LLM models on a single GPU\nr/LocalLLM · score 9 · 516 ups · 199 comments\nhttps://www.reddit.com/r/LocalLLM/comments/1rwlqoe/krasis_llm_runtime_run_large_llm_models_on_a/",
+      "permalink": "https://www.reddit.com/r/LocalLLM/comments/1rwlqoe/krasis_llm_runtime_run_large_llm_models_on_a/",
+      "id": "1rwlqoe"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/cards/1s25ego.png",
+      "caption": "5) Beginner Seeking Advice On How To Get a Balanced start Between Local/Frontier AI Models in 2026\nr/LocalLLM · score 8 · 8 ups · 12 comments\nhttps://www.reddit.com/r/LocalLLM/comments/1s25ego/beginner_seeking_advice_on_how_to_get_a_balanced/",
+      "permalink": "https://www.reddit.com/r/LocalLLM/comments/1s25ego/beginner_seeking_advice_on_how_to_get_a_balanced/",
+      "id": "1s25ego"
+    }
+  ]
+}

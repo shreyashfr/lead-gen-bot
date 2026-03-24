@@ -107,6 +107,19 @@
           "body": "Apple Juice vendor predicts huge increase in Apple Juice requirements to get through the day"
         }
       ]
+    },
+    "media_extracted": {
+      "type": "image",
+      "url": "https://i.redd.it/9onmdaugitqg1.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/media/1s1kyla.png",
+      "contentType": "image/png",
+      "bytes": 1375011
+    },
+    "author_avatar": {
+      "user": "BannedGoNext",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_2.png",
+      "path": "users/8176450202/reddit-scout/llm-fine-tuning-lora-rlhf-language-model-training/runs/2026-03-24T10-35-20-769Z/avatars/BannedGoNext.png",
+      "fetchedAt": "2026-03-24T10:36:49.990Z"
     }
   },
   {
@@ -217,6 +230,12 @@
           "body": "Drop in replacement - can I use this in kilo code instead of ollama? Since kilo code only needs an endpoint and the API being correct, this should be doable, right?"
         }
       ]
+    },
+    "author_avatar": {
+      "user": "SeinSinght",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_0.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/avatars/SeinSinght.png",
+      "fetchedAt": "2026-03-24T12:31:37.636Z"
     }
   },
   {
@@ -327,6 +346,13 @@
           "body": "[https://github.com/microsoft/BitNet](https://github.com/microsoft/BitNet)  the potential of this approach is well known! Very nice!"
         }
       ]
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "Quiet-Error-",
+      "url": "https://i.redd.it/snoovatar/avatars/f81fbd63-a703-4b84-a640-05a1dd08748f.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/avatars/Quiet-Error-.png",
+      "fetchedAt": "2026-03-24T12:31:38.791Z"
     }
   },
   {
@@ -437,6 +463,19 @@
           "body": "Large Large Language Model Models"
         }
       ]
+    },
+    "media_extracted": {
+      "type": "image",
+      "url": "https://i.redd.it/kd3zrbiemopg1.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/media/1rwlqoe.png",
+      "contentType": "image/png",
+      "bytes": 177033
+    },
+    "author_avatar": {
+      "user": "mrstoatey",
+      "url": "https://i.redd.it/snoovatar/avatars/a72d1ffe-2fda-4b69-b910-8d258c9e09e4.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/avatars/mrstoatey.png",
+      "fetchedAt": "2026-03-24T12:31:39.959Z"
     }
   },
   {
@@ -502,6 +541,12 @@
           "body": "You have a macbook? Just use that to start off with for local AI if you have one. \n\nIf not, then don't bother with local AI. Just burn $20/month of API credits. If you're not burning $20+/month in API credits yet, you don't need to worry about deploying local AI. \n\nThe exception is if you need privacy or an adult-content AI girlfriend. But that's not your situation. \n\nIf you're asking about training your own AI models, then that's a different situation. In that case you need lots of money for Nvidia GPUs. \n\nBut if you're starting out, you need to burn $100 on API credits first."
         }
       ]
+    },
+    "author_avatar": {
+      "user": "Curious-Cause2445",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_1.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/avatars/Curious-Cause2445.png",
+      "fetchedAt": "2026-03-24T12:31:40.989Z"
     }
   },
   {
@@ -567,6 +612,12 @@
           "body": "5090 can run qwen3.5 27b Q_8_0 with 100k context window with q_8_0 kv. For openclaw this context window is actually ideal, since you do not want too long context as it can dilute your attention. "
         }
       ]
+    },
+    "author_avatar": {
+      "user": "Sulya_be",
+      "url": "https://i.redd.it/snoovatar/avatars/47c731c4-1400-4f65-99ec-4b475be2bded.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/avatars/Sulya_be.png",
+      "fetchedAt": "2026-03-24T12:31:42.019Z"
     }
   },
   {
@@ -632,6 +683,12 @@
           "body": "This is a solid write up beep boop"
         }
       ]
+    },
+    "author_avatar": {
+      "user": "Constant-Bonus-7168",
+      "url": "https://styles.redditmedia.com/t5_gxm1ac/styles/profileIcon_lrzax64mk2pg1.png?width=256&height=256&crop=256:256,smart&s=1b838c1137ab5982bf6a4e89e9e06f5cf1fc05c3",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/avatars/Constant-Bonus-7168.png",
+      "fetchedAt": "2026-03-24T12:31:43.171Z"
     }
   },
   {
@@ -697,6 +754,12 @@
           "body": "Depends on if the stuff you want to run uses CUDA, or has been ported to Mac\n\n(Or if you are planning to port it to metal yourself)\n\nIf you need CUDA, go Nvidia "
         }
       ]
+    },
+    "author_avatar": {
+      "user": "East_Aside_8084",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/avatars/East_Aside_8084.png",
+      "fetchedAt": "2026-03-24T12:31:44.205Z"
     }
   },
   {
@@ -762,6 +825,12 @@
           "body": "The models you chose are kinda ass and I assume you're using Ollama settings which can be quite bad as well. Your best bet would be Qwen 3.5 35B with llama.cpp or LM Studio and configure the proper temperature/settings (check Unsloth). But yeah, you won't get anything close to the paid API options."
         }
       ]
+    },
+    "author_avatar": {
+      "user": "ruleofnuts",
+      "url": "https://i.redd.it/snoovatar/avatars/06ae26ec-a0f6-4d6e-8c18-bf980080b0d8.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-28-24-725Z/avatars/ruleofnuts.png",
+      "fetchedAt": "2026-03-24T12:30:16.366Z"
     }
   },
   {
@@ -900,6 +969,13 @@
           "body": "Wow interesting. While I was doing model abliterations manually layer by layer testing, I’ll often end up finding a specific group of contiguous layers around the middle that somehow works best. Layers in the beginning and the end never worked and trying to abliterate non contiguous groups of layers don’t work as well. Your finding of a middle “reasoning cortex” lines up with this."
         }
       ]
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "Reddactor",
+      "url": "https://i.redd.it/snoovatar/avatars/64f37ba0-7ee3-4156-8fbf-194262fc9775.png",
+      "path": "users/8176450202/reddit-scout/llm-fine-tuning-lora-rlhf-language-model-training/runs/2026-03-24T10-35-20-769Z/avatars/Reddactor.png",
+      "fetchedAt": "2026-03-24T10:36:47.404Z"
     }
   },
   {
@@ -1010,6 +1086,12 @@
           "body": "So, now my operating system will think about opening the browser after I tell it to do it and give me some the good old \"nah, bro, don't think so, I'd better delete some of your old photos\"?"
         }
       ]
+    },
+    "author_avatar": {
+      "user": "Intelligent-Dig-3639",
+      "url": "https://i.redd.it/snoovatar/avatars/38807ec4-8bcf-4962-b7d7-0f72221d0d0d.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/avatars/Intelligent-Dig-3639.png",
+      "fetchedAt": "2026-03-24T12:31:45.254Z"
     }
   },
   {
@@ -1075,6 +1157,12 @@
           "body": "Also make sure the model you grab is optimized for MLX. Running models optimized for MLX vs those that aren’t is night and day performance-wise. I am on an M4 Pro with 48 GB memory. "
         }
       ]
+    },
+    "author_avatar": {
+      "user": "Outrageous_Corner181",
+      "url": "https://styles.redditmedia.com/t5_gvjtkv/styles/profileIcon_8cid9dt6geog1.jpg?width=256&height=256&crop=256:256,smart&s=311e12f739c77e4d9883889670a16e694a8e37c3",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/avatars/Outrageous_Corner181.jpg",
+      "fetchedAt": "2026-03-24T12:31:46.378Z"
     }
   },
   {
@@ -1175,6 +1263,19 @@
           "body": "I may just not have the forethought or capacity to see it, but that definition of agent is doing a lot of heavy lifting and hand waving in my opinion..."
         }
       ]
+    },
+    "media_extracted": {
+      "type": "image",
+      "url": "https://i.redd.it/tr1fw8xb8lqg1.jpeg",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/media/1s0k1g4.jpg",
+      "contentType": "image/jpeg",
+      "bytes": 174555
+    },
+    "author_avatar": {
+      "user": "exotickeystroke",
+      "url": "https://styles.redditmedia.com/t5_80w5dg/styles/profileIcon_dux4fl6h0wfg1.jpg?width=256&height=256&crop=256:256,smart&s=b545cd6334677c6b12615570a4727b79143fe0b3",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/avatars/exotickeystroke.jpg",
+      "fetchedAt": "2026-03-24T12:31:47.518Z"
     }
   },
   {
@@ -1240,6 +1341,12 @@
           "body": "I wish I had the knowledge and brain to understand your work. \n\nAny way thanks for making it open source!"
         }
       ]
+    },
+    "author_avatar": {
+      "user": "king_ftotheu",
+      "url": "https://i.redd.it/snoovatar/avatars/nftv2_bmZ0X2VpcDE1NToxMzdfM2I0NzdhNmIxYmUyMzY2MjhiMDg4MzllMWU4Y2Y4YmE4ZDkzNTg5YV8yMTM3OTUx_rare_11a72a38-5ce9-4f95-b99b-c583fb904ff0.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/avatars/king_ftotheu.png",
+      "fetchedAt": "2026-03-24T12:31:48.737Z"
     }
   },
   {
@@ -1350,6 +1457,19 @@
           "body": "Imagine misunderstanding things so much you make this post"
         }
       ]
+    },
+    "media_extracted": {
+      "type": "image",
+      "url": "https://i.redd.it/5rolok0mw9lg1.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/media/1rcmlwk.png",
+      "contentType": "image/png",
+      "bytes": 870046
+    },
+    "author_avatar": {
+      "user": "jacek2023",
+      "url": "https://i.redd.it/snoovatar/avatars/24b13e34-eb9a-43a1-86c6-f07ba6039cd3.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/avatars/jacek2023.png",
+      "fetchedAt": "2026-03-24T12:31:49.895Z"
     }
   },
   {
@@ -1415,6 +1535,12 @@
           "body": "What kind of agent are you building? Is this a personal project or something you're building within a company?"
         }
       ]
+    },
+    "author_avatar": {
+      "user": "Rough-Heart-7623",
+      "url": "https://i.redd.it/snoovatar/avatars/05c4a67a-c59e-424d-8097-4ada033f991a.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/avatars/Rough-Heart-7623.png",
+      "fetchedAt": "2026-03-24T12:31:51.070Z"
     }
   },
   {
@@ -1553,6 +1679,13 @@
           "body": "I lived under the rock for the last 2 years. This is amazing! "
         }
       ]
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "yoracale",
+      "url": "https://i.redd.it/snoovatar/avatars/d9ec52e3-67c4-4a89-9076-5a4ff0328554.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/avatars/yoracale.png",
+      "fetchedAt": "2026-03-24T12:31:52.213Z"
     }
   },
   {
@@ -1618,6 +1751,12 @@
           "body": "very interesting, actually there are sooo many new YC startups doing eval so wonder whether some target non-developer domains. and curious who will survive"
         }
       ]
+    },
+    "author_avatar": {
+      "user": "Outrageous_Hat_9852",
+      "url": "https://i.redd.it/snoovatar/avatars/754f3543-45d6-4e9f-a267-3b85e0289cc4.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/avatars/Outrageous_Hat_9852.png",
+      "fetchedAt": "2026-03-24T12:31:53.383Z"
     }
   },
   {
@@ -1728,6 +1867,19 @@
           "body": "No qwen3-coder-next in a coding leaderboard is a crime "
         }
       ]
+    },
+    "media_extracted": {
+      "type": "image",
+      "url": "https://i.redd.it/pbwec2fpsvlg1.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/media/1rfi2aq.png",
+      "contentType": "image/png",
+      "bytes": 335361
+    },
+    "author_avatar": {
+      "user": "Weves11",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_2.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/avatars/Weves11.png",
+      "fetchedAt": "2026-03-24T12:31:54.466Z"
     }
   },
   {
@@ -1828,6 +1980,12 @@
           "body": "Hey! I'm using this model daily, but different platform (DGX Spark).\n\nThat's an interesting approach you took. I get the convenience of positioning yourself as the inference engine, but maybe it'd make sense to make a lightweight proxy instead, that sits between CC and the inference engine and manages those messages touch-ups. \n\nThis way you'd have less responsibility, less dependencies (and maintenance hassle), and also it could be used by anyone encountering the same issue, whatever their platform.\n\nAnd how is this model working in CC for you? You see improvments over OpenCode or any other TUI?"
         }
       ]
+    },
+    "author_avatar": {
+      "user": "BigAnswer6892",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_2.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/avatars/BigAnswer6892.png",
+      "fetchedAt": "2026-03-24T12:31:55.500Z"
     }
   },
   {
@@ -2080,6 +2238,13 @@
           "body": "Dude you are the people’s champ"
         }
       ]
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "Tight_Fly_8824",
+      "url": "https://styles.redditmedia.com/t5_gi6roh/styles/profileIcon_wnsn820mwnlg1.png?width=256&height=256&crop=256:256,smart&s=5d3e079d28cb6838de598c96d1b1a2481812e371",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/avatars/Tight_Fly_8824.png",
+      "fetchedAt": "2026-03-24T12:31:56.967Z"
     }
   },
   {
@@ -2190,6 +2355,19 @@
           "body": "Awesome work guys. Just checking - how do you maintain these? Ie ensure they still work as expected?\n\nWhy: dependent libraries change. \n\nDo you have some kind of automation to periodically validate the notebooks in terms of at least some basic tests like ensuring the trained model performance is within expected range."
         }
       ]
+    },
+    "media_extracted": {
+      "type": "image",
+      "url": "https://i.redd.it/kwtfnxhr68og1.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/media/1rpy1p0.png",
+      "contentType": "image/png",
+      "bytes": 2113980
+    },
+    "author_avatar": {
+      "user": "yoracale",
+      "url": "https://i.redd.it/snoovatar/avatars/d9ec52e3-67c4-4a89-9076-5a4ff0328554.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/avatars/yoracale.png",
+      "fetchedAt": "2026-03-24T12:31:52.213Z"
     }
   },
   {
@@ -2300,6 +2478,19 @@
           "body": "&gt; run large LLM models\n\nRun large large language model models"
         }
       ]
+    },
+    "media_extracted": {
+      "type": "image",
+      "url": "https://i.redd.it/03o5mgu9gopg1.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/media/1rwl977.png",
+      "contentType": "image/png",
+      "bytes": 177033
+    },
+    "author_avatar": {
+      "user": "mrstoatey",
+      "url": "https://i.redd.it/snoovatar/avatars/a72d1ffe-2fda-4b69-b910-8d258c9e09e4.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/avatars/mrstoatey.png",
+      "fetchedAt": "2026-03-24T12:31:39.959Z"
     }
   },
   {
@@ -2355,6 +2546,12 @@
           "body": "My uneducated opinion is that in 3-7 years we will be self hosting good enough models that it will be a legit threat to the cloud versions. I can see a scenario where the AI architecture is built into pcs/laptops like the Mac minis. I’ve been testing a bunch, I’ve had way better results with qwen 3.5 9b running on a RTX 2070 than I thought I could based on previous gen models. All the other models in this size basically couldn’t reason well, I’ve tested with ollama, lmstudio and anything LLM."
         }
       ]
+    },
+    "author_avatar": {
+      "user": "flatacthe",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_4.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/avatars/flatacthe.png",
+      "fetchedAt": "2026-03-24T12:31:58.131Z"
     }
   },
   {
@@ -2454,6 +2651,13 @@
           "body": "Given that you can no longer purchase a 512GB RAM Mac Studio. \\[without significantly overpaying\\] your only option is the 128GB RAM M5 Max. "
         }
       ]
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "findabi",
+      "url": "https://i.redd.it/snoovatar/avatars/d53fbaec-698b-405f-8317-e22bd3076d2c.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/avatars/findabi.png",
+      "fetchedAt": "2026-03-24T12:31:59.281Z"
     }
   },
   {
@@ -2514,6 +2718,12 @@
           "body": "For structured, repetitive tables like risk matrices, LLMs are overkill for the extraction itself - use pdfplumber or camelot to pull the raw cells, then only hit Gemini for ambiguous semantic fields (e.g. normalizing free-text mitigation descriptions). We actually do something similar at kudra.ai for document pipelines and the latency difference is dramatic. Batch your LLM calls too - one API call per row instead of per document kills most timeout issues."
         }
       ]
+    },
+    "author_avatar": {
+      "user": "MeasurementDry9003",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_1.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/avatars/MeasurementDry9003.png",
+      "fetchedAt": "2026-03-24T12:32:00.311Z"
     }
   },
   {
@@ -2598,6 +2808,13 @@
           "body": "You’ll be cramped on 32gb of RAM. \n\nJust use chinese models for OpenClaw. MiniMax Kimi K2, Qwen and stuff like that. It’s very cheap, often $10 a month"
         }
       ]
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "tolozine",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_1.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/avatars/tolozine.png",
+      "fetchedAt": "2026-03-24T12:32:01.348Z"
     }
   },
   {
@@ -2663,6 +2880,12 @@
           "body": "Did you checkout huggingface? "
         }
       ]
+    },
+    "author_avatar": {
+      "user": "Legendary_Outrage",
+      "url": "https://i.redd.it/snoovatar/avatars/cb8511f3-10ad-4706-8e85-aca44c16bd97.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/avatars/Legendary_Outrage.png",
+      "fetchedAt": "2026-03-24T12:32:02.505Z"
     }
   },
   {
@@ -2723,6 +2946,12 @@
           "body": "We build ALOT of benchmarks, and run a lot of evals for Sansa, and one thing is for sure finding queries that the frontier models don’t consistently one shot is hard.\n\nSo I would imagine that the usefulness of a system that combines 3 frontier models outputs would be on a very limited set of inputs.\n\nHave you run any evals to quantify the performance increase?\n"
         }
       ]
+    },
+    "author_avatar": {
+      "user": "Dry_Carrot_912",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_0.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/avatars/Dry_Carrot_912.png",
+      "fetchedAt": "2026-03-24T12:32:03.533Z"
     }
   },
   {
@@ -2833,6 +3062,19 @@
           "body": "Completely agree. So bullish on this trend. "
         }
       ]
+    },
+    "media_extracted": {
+      "type": "image",
+      "url": "https://i.redd.it/vpc7h1tnd9ng1.jpeg",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/media/1rln3ph.jpg",
+      "contentType": "image/jpeg",
+      "bytes": 154584
+    },
+    "author_avatar": {
+      "user": "Far_Noise_5886",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_4.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/avatars/Far_Noise_5886.png",
+      "fetchedAt": "2026-03-24T12:32:04.563Z"
     }
   }
 ]
