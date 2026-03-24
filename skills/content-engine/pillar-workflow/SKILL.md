@@ -186,12 +186,17 @@ I'll start producing one at a time and send for your review before moving to the
 
 [THAT IS ALL. NO OTHER TEXT.]
 
-Post this complete report directly to Telegram:
+Save the complete IDEAS REPORT to file:
+{USER_WORKSPACE}ideas-report.md
+
+Then post to Telegram as DOCUMENT (not text message):
 - Channel: telegram
 - Target: g-agent-ce-telegram-direct-{USER_TELEGRAM_ID}
-- Message: [full ideas report with production plan]
+- Action: send document
+- File: {USER_WORKSPACE}ideas-report.md
+- Caption: (empty)
 
-Do NOT send any other messages. Do NOT narrate. Do NOT explain. Just post the report. Then STOP."
+Do NOT send any other messages. Do NOT narrate. Do NOT explain. Just post the document. Then STOP."
 
 Mode: run
 Timeout: 120

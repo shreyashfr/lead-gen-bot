@@ -556,6 +556,16 @@ fi
 1. Load performance-tracker skill
 2. **No ACK message** — just process silently
 
+#### View Report: `show report` / `view full report` / `report` / `ideas report`
+
+If user asks to see the research or ideas report:
+1. Check if `{USER_WORKSPACE}ideas-report.md` exists
+2. If YES → send as DOCUMENT (file attachment) to Telegram
+   - Do NOT say "Let me pull..."
+   - Do NOT narrate
+   - Just post the file
+3. If NO → send: "No report yet. Send `Pillar: [topic]` to start research."
+
 #### Help/Info: `how does this work` / `what can you do`
 
 Send only the HOW IT WORKS section (below). No other text.
