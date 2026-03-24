@@ -201,9 +201,9 @@ Before any processing, determine where this message should go:
 ```
 Check inbound metadata:
 1. Is sender_id in a known CE user workspace?
-   → Route to CE Agent (content-engine-agent)
+   → Route to CE Agent (agentId="ce")
 2. Is sender_id in a known SDR user workspace?
-   → Route to SDR Agent (sdr-automation-agent)
+   → Route to SDR Agent (agentId="sdr")
 3. Is sender_id in admin_ids (Shreyash)?
    → Route to MAIN (this dispatcher)
 4. Otherwise?
@@ -217,7 +217,7 @@ Check inbound metadata:
    - YES → This is a CE user → **ROUTE TO CE AGENT**
      ```
      sessions_send(
-       agentId="content-engine-agent",
+       agentId="ce",
        message=message_text,
        metadata={'sender_id': sender_id, 'original_metadata': inbound_metadata}
      )
@@ -228,7 +228,7 @@ Check inbound metadata:
    - YES → This is an SDR user → **ROUTE TO SDR AGENT**
      ```
      sessions_send(
-       agentId="sdr-automation-agent",
+       agentId="sdr",
        message=message_text,
        metadata={'sender_id': sender_id, 'original_metadata': inbound_metadata}
      )
@@ -241,6 +241,11 @@ Check inbound metadata:
 - If agent timeout (>60 sec): "Agent temporarily unavailable. Please try again."
 - If agent error: "Something went wrong. Please try again in a moment."
 - If no response: "No response from agent. This has been logged. Please try again."
+
+**NOTE:** Agent IDs are registered in OpenClaw config:
+- `ce` → Content Engine agent (workspace-ce)
+- `sdr` → SDR Automation agent (workspace-sdr)
+- These are the REGISTERED agents, not the new workspace paths
 
 ---
 
