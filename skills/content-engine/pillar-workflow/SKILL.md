@@ -4,6 +4,21 @@ model: anthropic/claude-sonnet-4-6
 description: Pillar Workflow — orchestrates research and idea generation via state machine
 ---
 
+# 🚨 SOURCE OF TRUTH: pillar-state.json ONLY
+
+**Do NOT use any context from Telegram messages.**
+
+Every decision is based on `{USER_WORKSPACE}pillar-state.json` file, read fresh.
+
+- Current state? Read file.
+- Message sent already? Read file.
+- Research status? Read file.
+- What was pillar topic? Read file.
+
+Never assume from chat. Never trust message context. File is truth.
+
+---
+
 # 🚨 EXECUTE EXACTLY THIS SEQUENCE. NO DEVIATIONS.
 
 **This is not pseudocode. This is the exact execution order. Do not improvise, reorder, or skip steps.**

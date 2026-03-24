@@ -1,0 +1,132 @@
+[
+  {
+    "name": "sports",
+    "title": "Reddit Sports",
+    "subscribers": 22003294,
+    "over18": false,
+    "url": "https://www.reddit.com/r/sports/",
+    "discoveredBy": [
+      "Sports AI"
+    ]
+  },
+  {
+    "name": "OpenAI",
+    "title": "OpenAI",
+    "subscribers": 2686714,
+    "over18": false,
+    "url": "https://www.reddit.com/r/OpenAI/",
+    "discoveredBy": [
+      "Sports AI"
+    ]
+  },
+  {
+    "name": "artificial",
+    "title": "Artificial Intelligence (AI)",
+    "subscribers": 1239534,
+    "over18": false,
+    "url": "https://www.reddit.com/r/artificial/",
+    "discoveredBy": [
+      "Sports AI"
+    ]
+  },
+  {
+    "name": "sportsbetting",
+    "title": "r/SportsBetting - The Sports Betting Forum at Reddit",
+    "subscribers": 529623,
+    "over18": false,
+    "url": "https://www.reddit.com/r/sportsbetting/",
+    "discoveredBy": [
+      "Sports AI"
+    ]
+  },
+  {
+    "name": "aivideo",
+    "title": "r/aivideo - The place for AI generated videos on reddit",
+    "subscribers": 347362,
+    "over18": false,
+    "url": "https://www.reddit.com/r/aivideo/",
+    "discoveredBy": [
+      "Sports AI"
+    ]
+  },
+  {
+    "name": "isthisAI",
+    "title": "isthisAI",
+    "subscribers": 231731,
+    "over18": false,
+    "url": "https://www.reddit.com/r/isthisAI/",
+    "discoveredBy": [
+      "Sports AI"
+    ]
+  },
+  {
+    "name": "AISportsBets",
+    "title": "AISportsBets",
+    "subscribers": 955,
+    "over18": false,
+    "url": "https://www.reddit.com/r/AISportsBets/",
+    "discoveredBy": [
+      "Sports AI"
+    ]
+  },
+  {
+    "name": "PropBet",
+    "title": "Sports Betting ai",
+    "subscribers": 899,
+    "over18": false,
+    "url": "https://www.reddit.com/r/PropBet/",
+    "discoveredBy": [
+      "Sports AI"
+    ]
+  },
+  {
+    "name": "BalliesAI",
+    "title": "Ballies Universe",
+    "subscribers": 306,
+    "over18": false,
+    "url": "https://www.reddit.com/r/BalliesAI/",
+    "discoveredBy": [
+      "Sports AI"
+    ]
+  },
+  {
+    "name": "SportsAintFun",
+    "title": "Sports Ain't Fun",
+    "subscribers": 174,
+    "over18": false,
+    "url": "https://www.reddit.com/r/SportsAintFun/",
+    "discoveredBy": [
+      "Sports AI"
+    ]
+  },
+  {
+    "name": "bettorsai",
+    "title": "Bettors.AI - Sports Bets",
+    "subscribers": 148,
+    "over18": false,
+    "url": "https://www.reddit.com/r/bettorsai/",
+    "discoveredBy": [
+      "Sports AI"
+    ]
+  },
+  {
+    "name": "OverdogBets",
+    "title": "Overdog AI Bets",
+    "subscribers": 100,
+    "over18": false,
+    "url": "https://www.reddit.com/r/OverdogBets/",
+    "discoveredBy": [
+      "Sports AI"
+    ]
+  },
+  {
+    "name": "SportsTechnologyy",
+    "title": "SportsTechnologyy",
+    "subscribers": 29,
+    "over18": false,
+    "url": "https://www.reddit.com/r/SportsTechnologyy/",
+    "discoveredBy": [
+      "Sports AI"
+    ]
+  }
+]

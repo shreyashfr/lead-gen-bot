@@ -1,0 +1,174 @@
+[
+  {
+    "id": "2031452419717210322",
+    "text": "a student took the ELO rating system from chess \n\nran it through 95,491 tennis matches over 43 years, and trained an XGBoost model that predicts winners with 85% accuracy\n\nhe tested it on the Australian Open 2025 completely outside the training data\n\n99 out of 116 matches correct",
+    "author_name": "dunik",
+    "author_handle": "@dunik_7",
+    "metrics": {
+      "likes": 6700,
+      "retweets": 346,
+      "replies": 121,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HDDmWBRWIAADHHP?format=png&name=small"
+    ],
+    "viral_score": 7.5,
+    "url": "https://x.com/dunik_7/status/2031452419717210322"
+  },
+  {
+    "id": "2033192538488627670",
+    "text": "Someone trained a swarm model on 3 years of NBA data and let it loose on Polymarket\n\nThe result: $1.49M. He didn't build a better model. He built a better crowd.\n\nHere's how the system actually works.\n\nHe takes MiroFish - an open-source engine that simulates thousands of AI",
+    "author_name": "BuBBliK",
+    "author_handle": "@k1rallik",
+    "metrics": {
+      "likes": 1800,
+      "retweets": 154,
+      "replies": 108,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HDdZE6hXsAsFje6?format=png&name=360x360",
+      "https://pbs.twimg.com/media/HDYMd6eacAAwLGK?format=jpg&name=small"
+    ],
+    "viral_score": 2.2,
+    "url": "https://x.com/k1rallik/status/2033192538488627670"
+  },
+  {
+    "id": "2028903434791854194",
+    "text": "My worst AI agent returned 218% in one week\n\n4 AI agents. 4 sports.\n\neach one watches its own sport with its own ML model\n\ngave each $500. one week results:\n\nNERVE: tennis (+540%) \n$500 → $3,200\n\nPHANTOM: NBA (+486%) \n$500 → $2,928\n\nFROST: hockey (+395%) \n$500 → $2,474\n\nSIEGE:",
+    "author_name": "Archive",
+    "author_handle": "@ArchiveExplorer",
+    "metrics": {
+      "likes": 1400,
+      "retweets": 83,
+      "replies": 96,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1.7,
+    "url": "https://x.com/ArchiveExplorer/status/2028903434791854194"
+  },
+  {
+    "id": "2029229129497723189",
+    "text": "Some guy ran 4 AI agents. 4 sports. $500 each. One week.\n\n> NERVE (tennis): $500 → $3,200 (+540%)\n> PHANTOM (NBA): $500 → $2,928 (+486%)\n> FROST (hockey): $500 → $2,474 (+395%)\n> SIEGE (soccer): $500 → $2,182 (+336%)\n\nThe edge? While ESPN shows you the score with a 15 second",
+    "author_name": "0xMarioNawfal",
+    "author_handle": "@RoundtableSpace",
+    "metrics": {
+      "likes": 1100,
+      "retweets": 97,
+      "replies": 66,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1.4,
+    "url": "https://x.com/RoundtableSpace/status/2029229129497723189"
+  },
+  {
+    "id": "2033308856550375809",
+    "text": "A GUY JUST MADE $1.5 MILLION DOLLARS ON POLYMARKET WITH 4,000 FAKE HUMANS\n\nHe doesn't have insider info.\nDoesn't have a better model than the others.\n\nHe has a swarm of 4,096 AI agents – analysts, bettors, oddsmakers – each with different reasoning.\n\nThey debate among themselves.",
+    "author_name": "Felipe Demartini",
+    "author_handle": "@namcios",
+    "metrics": {
+      "likes": 879,
+      "retweets": 83,
+      "replies": 39,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1.1,
+    "url": "https://x.com/namcios/status/2033308856550375809"
+  },
+  {
+    "id": "1846197034459525535",
+    "text": "I think it’s fair to say initial testing of the new NFL AI algorithm is going well…\n\nWe have turned $50 into $366 already.\n\nI’m working on something huge that will allow you to access the algorithms whenever you want…\n\nGet excited. It’s a game-changer.",
+    "author_name": "Dan’s AI Sports Picks",
+    "author_handle": "@DanGambleAI",
+    "metrics": {
+      "likes": 763,
+      "retweets": 15,
+      "replies": 39,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/DanGambleAI/status/1846197034459525535"
+  },
+  {
+    "id": "2031683192445423617",
+    "text": "Student built an AI that proved it mathematically\n\nThree lines towering above every player in 40 years of ATP data. The Big Three isn't a narrative - it's visible in the ELO curves.\n\nHe tested 4 algorithms on 43 years of tennis data:\n→ Decision Tree: 74%\n→ Random Forest: 76%\n→",
+    "author_name": "BuBBliK",
+    "author_handle": "@k1rallik",
+    "metrics": {
+      "likes": 536,
+      "retweets": 25,
+      "replies": 25,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HDDmWBRWIAADHHP?format=png&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/k1rallik/status/2031683192445423617"
+  },
+  {
+    "id": "2031750472395047364",
+    "text": "From 25 Years of Data to 79% Winrate on Prediction Markets\n\nIndicators [38] \n\n- Moving averages: MA10, MA20, MA30\n- RSI (overbought/oversold)\n- MACD / MACD_Signal (trend)\n- Bollinger Upper/Lower (volatility)\n- Volatility 10/20/30, OBV, momentum, sentiment, insider activity, etc",
+    "author_name": "Alex",
+    "author_handle": "@de1lymoon",
+    "metrics": {
+      "likes": 484,
+      "retweets": 43,
+      "replies": 24,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HDI1zNkWkAAj6An?format=png&name=360x360",
+      "https://pbs.twimg.com/media/HDHnebhXEAACsWn?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/de1lymoon/status/2031750472395047364"
+  },
+  {
+    "id": "1843644812953883128",
+    "text": "another great project built on top of my football AI!\n\nkey improvements made by Mihailo Radović:\n\n- ball position calculation\n- player speed estimation\n- significant processing speed optimization\n\nlink: \nhttps://\ngithub.com/mradovic38/foo\ntball_analysis\n…\n\n↓ let's take a deeper look",
+    "author_name": "SkalskiP",
+    "author_handle": "@skalskip92",
+    "metrics": {
+      "likes": 432,
+      "retweets": 45,
+      "replies": 5,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/skalskip92/status/1843644812953883128"
+  },
+  {
+    "id": "1902481515600122116",
+    "text": "March Moneyline Model\n\nI’ve run the algorithm on all 16 First Round games tomorrow, using a number of factors.\n\nThis gives a score out of 100. The higher the score, the more confident the AI is.\n\nUse these to build winning parlays.",
+    "author_name": "Dan’s AI Sports Picks",
+    "author_handle": "@DanGambleAI",
+    "metrics": {
+      "likes": 411,
+      "retweets": 13,
+      "replies": 24,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/Gmb42mwWcAASIpv?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/DanGambleAI/status/1902481515600122116"
+  }
+]

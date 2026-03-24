@@ -1,33 +1,45 @@
-# Piece #6 — Twitter Thread: Why Local LLMs Will Change How You Build Backends
+# LinkedIn Post: Live Sports Data Pipelines
 
----
+Live sports data is chaos. Here's how to handle it without losing latency.
 
-**Tweet 1:**
-Local LLMs aren't coming. They're here. And they're about to make your backend architecture decisions look outdated.
+When the scoreboard needs to update in milliseconds, traditional databases don't cut it. The data comes from multiple sources, arrives unpredictably, and can't wait in a queue.
 
-**Tweet 2:**
-You've been building APIs that depend on cloud LLMs. 200ms latency. Tokens cost money. Rate limits block you. What if your inference happened inside your database instead?
+I've built systems like this. Here's what actually matters.
 
-**Tweet 3:**
-That's the shift: LLMs moving from API calls to local inference. pgvector + open-source models. Your latency drops from 200ms to 20ms. Your costs? Cents instead of dollars per 1000 requests.
+**The Challenge**
 
-**Tweet 4:**
-I tested this. Swapped OpenAI calls with llama2 in-process. Same accuracy. 10x faster. Hosted it on a $20/month server. The math changes everything when inference is local.
+Every second, thousands of events fire simultaneously. Player stats update. Scores change. Odds shift. Your backend needs to:
 
-**Tweet 5:**
-But here's what builders miss: it's not just about speed. It's about control. No vendor lock-in. No API keys. No "sorry, we hit our limit." Your system works offline. That's power.
+Process each event instantly. Not seconds later. Not even 100ms later. Instantly.
 
-**Tweet 6:**
-The catch? You own the complexity now. Model quantization. GPU memory. Batching requests. It's backend work — real backend work. But engineers who figure this out first will have an unfair advantage.
+Handle spikes when everyone watches the same game. Same infrastructure that handles 1000 events per second must handle 10,000 with the same speed.
 
-**Tweet 7:**
-Local LLMs + Postgres + Go backend = next-gen systems. The ones that are fast, cheap, and independent. This is how we build in 2026.
+Never miss data. A dropped stat is a bad user experience. A dropped financial transaction is a lawsuit.
 
----
+This isn't theory. This is what separates systems that work from systems that break under pressure.
 
-## Notes
-- **Tweets:** 7 (under 280 chars each)
-- **Voice:** Latency obsession, cost awareness, hands-on proof ("I tested this"), backend engineer angle
-- **Tone:** Practical, slightly mentor-like, no hype
-- **No AI vocabulary:** Avoided "leverage," "synergy," "innovative" — sticks to real engineering
-- **Twitter-native:** Short lines, hooks, conversational flow
+**How We Actually Build This**
+
+1. Event Buffering. Don't process events one by one. Batch them into small windows, 10ms at a time. This lets you process 100 events together instead of context switching 100 times. Speed scales. Latency stays low.
+
+2. Streaming Architecture. Traditional request-response doesn't work here. You need streams. Events flow through the system like a river, not like cars at a tollbooth. Each component picks what it needs and passes the rest along.
+
+3. Smart Caching. Not all data needs the database. Sports data has patterns. The top 10 scorers don't change every second. Cache them. Cache hot queries. Access cached data in microseconds, not milliseconds.
+
+4. Graceful Degradation. The system will fail. A database connection drops. A service goes down. Plan for it. Show users slightly stale stats instead of an error. They're watching the game anyway. They don't need perfection.
+
+**Why This Matters**
+
+Most engineers learn system design from textbooks. They memorize concepts. Then they hit a real system under real load and panic because the textbook answer is too slow.
+
+Sports data is a perfect teacher. It forces you to think about latency from the ground up. Not as an afterthought. Not as optimization. From the beginning.
+
+The decisions you make building this scale to everything else. APIs. Real-time notifications. Stock exchanges. Anywhere speed matters.
+
+**The Insight**
+
+Latency isn't magical. It comes from deliberate choices. Every layer. Every component. Every line of code.
+
+Start thinking this way. Question every database query. Every network hop. Every cache miss.
+
+That's how you build systems that don't just work. That work fast.
