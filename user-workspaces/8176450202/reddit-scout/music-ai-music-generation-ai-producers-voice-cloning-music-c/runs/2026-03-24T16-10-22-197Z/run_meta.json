@@ -1,0 +1,64 @@
+{
+  "niche": "Music AI music generation AI producers voice cloning music creation",
+  "nicheSlug": "music-ai-music-generation-ai-producers-voice-cloning-music-c",
+  "runId": "2026-03-24T16-10-22-197Z",
+  "startedAt": "2026-03-24T16:10:22.197Z",
+  "keywords": [
+    "Music AI music generation AI producers voice cloning music creation"
+  ],
+  "mustInclude": [
+    "music",
+    "ai",
+    "music",
+    "generation",
+    "ai",
+    "producers",
+    "voice",
+    "cloning",
+    "music",
+    "creation"
+  ],
+  "search": "Music AI music generation AI producers voice cloning music creation",
+  "subAllowlist": [
+    "machinelearning",
+    "localllama",
+    "learnmachinelearning",
+    "artificial",
+    "singularity",
+    "chatgpt",
+    "openai",
+    "deeplearning",
+    "mlops",
+    "datascience",
+    "artificialintelligence",
+    "programming",
+    "softwareengineering",
+    "cscareerquestions",
+    "startupideas",
+    "technology",
+    "technews",
+    "gadgets",
+    "futurology",
+    "innovation",
+    "explainlikeimfive",
+    "music",
+    "producer",
+    "audio"
+  ],
+  "config": {
+    "topN": 20,
+    "subLimit": 20,
+    "gapMs": 800,
+    "limitPerListing": 25,
+    "time": "week",
+    "kinds": [
+      "top",
+      "hot",
+      "rising"
+    ],
+    "searchSort": "top",
+    "searchTime": null,
+    "minSubscribers": 0,
+    "sendCardsN": 5
+  }
+}

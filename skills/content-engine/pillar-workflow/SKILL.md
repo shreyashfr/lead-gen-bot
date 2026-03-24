@@ -1,121 +1,152 @@
 ---
 name: pillar-workflow
 model: anthropic/claude-sonnet-4-6
-description: >
-  Pillar Workflow: Orchestrates research and idea generation for content pillars.
-  Trigger on 'Pillar: [topic]' command. Uses state.js for all messaging.
+description: Pillar Workflow — orchestrates research and idea generation via state machine
 ---
 
-# 🚨 ORCHESTRATOR ONLY — NO IDEA GENERATION, NO NARRATION
+# 🚨 EXECUTE EXACTLY THIS SEQUENCE. NO DEVIATIONS.
 
-**Pillar-workflow ONLY:**
-- Initialize state
-- Send 2 hard-coded messages (via state.js)
-- Spawn idea-generator subagent
-- Track state
-- STOP
-
-**Pillar-workflow NEVER:**
-- Generates ideas
-- Reads research reports
-- Formats or explains anything
-- Sends arbitrary messages
-- Says "let me", "great", "I already sent"
-- Recaps, narrates, or explains
+**This is not pseudocode. This is the exact execution order. Do not improvise, reorder, or skip steps.**
 
 ---
 
-## State File: `{USER_WORKSPACE}pillar-state.json`
+## STEP 1: INITIALIZE STATE
+```
+Tool: exec
+Command: node {SKILL_BASE}/state.js init {USER_WORKSPACE} "[PILLAR_TOPIC]"
+Wait: Yes
+```
 
-```json
-{
-  "pillar": "[TOPIC]",
-  "state": "PILLAR_RECEIVED",
-  "message_sent": {
-    "pillar_received": false,
-    "research_done": false,
-    "error": false
-  }
-}
+Output creates `{USER_WORKSPACE}pillar-state.json` with `state: "PILLAR_RECEIVED"`
+
+---
+
+## STEP 2: CHECK & SEND MESSAGE (STATE 1 ONLY)
+```
+Tool: exec
+Command: node {SKILL_BASE}/state.js check {USER_WORKSPACE} "[PILLAR_TOPIC]" | jq -r '.message'
+Wait: Yes
+```
+
+If output is not empty:
+```
+Tool: message
+Channel: telegram
+Target: g-agent-ce-telegram-direct-{USER_TELEGRAM_ID}
+Message: [output from above]
+```
+
+Then:
+```
+Tool: exec
+Command: node {SKILL_BASE}/state.js mark-sent {USER_WORKSPACE} "[PILLAR_TOPIC]" "PILLAR_RECEIVED"
+Wait: Yes
+```
+
+Then:
+```
+Tool: exec
+Command: node {SKILL_BASE}/state.js set-state {USER_WORKSPACE} "[PILLAR_TOPIC]" "RESEARCH_RUNNING"
+Wait: Yes
+```
+
+**Do NOT continue until all 3 tools complete.**
+
+---
+
+## STEP 3: RUN RESEARCH (SILENT — NO MESSAGES)
+```
+Tool: exec
+Command: bash {SKILL_BASE}/run_research.sh --query "[PILLAR_TOPIC]" --out "{USER_WORKSPACE}"
+Wait: Yes
+Timeout: 900 seconds (15 minutes)
+```
+
+**Do NOT send any message while this runs. Do NOT check status. Just wait.**
+
+---
+
+## STEP 4: VALIDATE RESEARCH REPORT EXISTS
+```
+Tool: exec
+Command: [ -f "{USER_WORKSPACE}research-report.md" ] && echo "exists" || echo "missing"
+Wait: Yes
+```
+
+If output is "missing":
+```
+Tool: exec
+Command: node {SKILL_BASE}/state.js set-error {USER_WORKSPACE} "[PILLAR_TOPIC]" "research_report_missing"
+Wait: Yes
+```
+
+Then go to STEP 6 (Error Handling). STOP.
+
+If output is "exists": continue to STEP 5.
+
+---
+
+## STEP 5: UPDATE STATE & SEND MESSAGE (STATE 2)
+```
+Tool: exec
+Command: node {SKILL_BASE}/state.js set-state {USER_WORKSPACE} "[PILLAR_TOPIC]" "RESEARCH_DONE"
+Wait: Yes
+```
+
+Then:
+```
+Tool: exec
+Command: node {SKILL_BASE}/state.js check {USER_WORKSPACE} "[PILLAR_TOPIC]" | jq -r '.message'
+Wait: Yes
+```
+
+If output is not empty:
+```
+Tool: message
+Channel: telegram
+Target: g-agent-ce-telegram-direct-{USER_TELEGRAM_ID}
+Message: [output from above]
+```
+
+Then:
+```
+Tool: exec
+Command: node {SKILL_BASE}/state.js mark-sent {USER_WORKSPACE} "[PILLAR_TOPIC]" "RESEARCH_DONE"
+Wait: Yes
+```
+
+Then:
+```
+Tool: exec
+Command: node {SKILL_BASE}/state.js set-state {USER_WORKSPACE} "[PILLAR_TOPIC]" "IDEA_GENERATION"
+Wait: Yes
 ```
 
 ---
 
-## WORKFLOW
+## STEP 6: SPAWN IDEA-GENERATOR (SILENT)
 
-### Step 0: Initialize State
-```bash
-node {SKILL_BASE}/state.js init {USER_WORKSPACE} "[TOPIC]"
+Do NOT send any message before or after spawning.
+
 ```
+Tool: sessions_spawn
+Runtime: subagent
+AgentId: idea-generator
+Task: 
+"Read {USER_WORKSPACE}research-report.md and {USER_WORKSPACE}master-doc.md. 
 
-### Step 1: Check & Send Message (STATE 1)
-```bash
-MSG=$(node {SKILL_BASE}/state.js check {USER_WORKSPACE} "[TOPIC]")
+Generate 15 ideas ONLY. Do NOT explain, narrate, or add anything.
 
-if [ "$(echo $MSG | jq -r '.shouldSend')" = "true" ]; then
-  message(action=send, channel=telegram, target={USER_TELEGRAM_ID}, message="$(echo $MSG | jq -r '.message')")
-  node {SKILL_BASE}/state.js mark-sent {USER_WORKSPACE} "[TOPIC]" "PILLAR_RECEIVED"
-  node {SKILL_BASE}/state.js set-state {USER_WORKSPACE} "[TOPIC]" "RESEARCH_RUNNING"
-fi
-```
-
-**Hard-coded Message 1:**
-```
-🔍 Searching viral posts around "[TOPIC]" on Reddit, Twitter/X, YouTube and Google News...
-
-Retrieving top ideas and hooks. This takes 8-12 minutes — sit back and relax. 🙌
-```
-
-### Step 2: Run Research (SILENT)
-```bash
-bash run_research.sh --query "[TOPIC]" --out {USER_WORKSPACE}
-```
-
-No messages. No updates. Just run.
-
-### Step 3: Check Research Done
-```bash
-if [ -f {USER_WORKSPACE}research-report.md ]; then
-  node {SKILL_BASE}/state.js set-state {USER_WORKSPACE} "[TOPIC]" "RESEARCH_DONE"
-else
-  node {SKILL_BASE}/state.js set-error {USER_WORKSPACE} "[TOPIC]" "no report"
-fi
-```
-
-### Step 4: Check & Send Message (STATE 3)
-```bash
-MSG=$(node {SKILL_BASE}/state.js check {USER_WORKSPACE} "[TOPIC]")
-
-if [ "$(echo $MSG | jq -r '.shouldSend')" = "true" ]; then
-  message(action=send, channel=telegram, target={USER_TELEGRAM_ID}, message="$(echo $MSG | jq -r '.message')")
-  node {SKILL_BASE}/state.js mark-sent {USER_WORKSPACE} "[TOPIC]" "RESEARCH_DONE"
-  node {SKILL_BASE}/state.js set-state {USER_WORKSPACE} "[TOPIC]" "IDEA_GENERATION"
-fi
-```
-
-**Hard-coded Message 2:**
-```
-✅ Research done!
-
-💡 Generating 15 ideas now — matching what's trending against your voice, stories, and opinions. Give me a minute...
-```
-
-### Step 5: Spawn Idea-Generator (SILENT)
-```bash
-sessions_spawn(
-  runtime: "subagent",
-  agentId: "idea-generator",
-  task: "Read {USER_WORKSPACE}research-report.md and {USER_WORKSPACE}master-doc.md. Generate 15 ideas. Each idea must have: hook, angle, format (LinkedIn Post/Twitter Thread/X Article/Tweet/Instagram Carousel), story reference, why it works, source URL. Format exactly as:
-
+Each idea format (exact, no variations):
 [N]. [Title]
 Hook: \"[hook text]\"
 Angle: [one sentence]
-Format: [format]
+Format: [LinkedIn Post|Twitter Thread|X Article|Tweet|Instagram Carousel]
 Story: [story reference]
-Why: [one sentence]
+Why: [one sentence rationale]
 📎 Source: [full URL from research report]
 
-After all 15 ideas, include ONLY this production plan block (no variation):
+After all 15:
 
 ━━━━━━━━━━
 
@@ -133,30 +164,76 @@ e.g.
 
 I'll start producing one at a time and send for your review before moving to the next.
 
-Post directly to Telegram using message(channel='telegram', target='g-agent-ce-telegram-direct-{USER_TELEGRAM_ID}', message=[complete report]). Do NOT send any other messages. Do NOT narrate. Do NOT explain. Just the report. Then STOP.",
-  mode: "run",
-  timeoutSeconds: 120
-)
+Post this complete report directly to Telegram:
+- Channel: telegram
+- Target: g-agent-ce-telegram-direct-{USER_TELEGRAM_ID}
+- Message: [full ideas report with production plan]
+
+Do NOT send any other messages. Do NOT narrate. Do NOT explain. Just post the report. Then STOP."
+
+Mode: run
+Timeout: 120
 ```
 
-### Step 6: Error Handling
-```bash
-MSG=$(node {SKILL_BASE}/state.js check {USER_WORKSPACE} "[TOPIC]")
-
-if [ "$(echo $MSG | jq -r '.shouldSend')" = "true" ]; then
-  message(action=send, channel=telegram, target={USER_TELEGRAM_ID}, message="⚠️ Hit a hiccup. Try again in a moment.")
-  node {SKILL_BASE}/state.js mark-sent {USER_WORKSPACE} "[TOPIC]" "ERROR"
-fi
-```
+**Do NOT wait for completion. Spawn and continue.**
 
 ---
 
-## That's It
+## STEP 7: DONE
 
-No other steps. No idea generation. No narration. No recaps.
+You are finished. The idea-generator subagent:
+- Reads research report
+- Generates 15 ideas
+- Posts directly to user's Telegram
+- User reviews and requests production plan
 
-If you find yourself writing anything other than the workflow above → **STOP. Delete it.**
+You do NOT:
+- Check if ideas were posted
+- Send completion messages
+- Do anything else
 
-The idea-generator subagent is 100% responsible for generating and posting the ideas report with the correct format.
+**workflow complete.**
 
-Pillar-workflow orchestrates only.
+---
+
+## ERROR HANDLING (STEP 6 if research fails)
+
+If state is ERROR:
+```
+Tool: exec
+Command: node {SKILL_BASE}/state.js check {USER_WORKSPACE} "[PILLAR_TOPIC]" | jq -r '.message'
+Wait: Yes
+```
+
+If output is not empty:
+```
+Tool: message
+Channel: telegram
+Target: g-agent-ce-telegram-direct-{USER_TELEGRAM_ID}
+Message: [output from above]
+```
+
+Then:
+```
+Tool: exec
+Command: node {SKILL_BASE}/state.js mark-sent {USER_WORKSPACE} "[PILLAR_TOPIC]" "ERROR"
+Wait: Yes
+```
+
+**STOP. Do not continue.**
+
+---
+
+## DO NOT DEVIATE FROM THIS SEQUENCE
+
+If you think about deviating:
+- ❌ Adding narration
+- ❌ Checking status
+- ❌ Explaining steps
+- ❌ Reordering steps
+- ❌ Skipping steps
+- ❌ Sending extra messages
+
+**STOP. DO NOT DO IT.**
+
+Follow the sequence exactly. Nothing more, nothing less.
