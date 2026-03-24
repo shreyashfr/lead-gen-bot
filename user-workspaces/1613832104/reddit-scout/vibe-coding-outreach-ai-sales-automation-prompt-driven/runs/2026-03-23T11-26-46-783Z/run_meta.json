@@ -1,0 +1,36 @@
+{
+  "niche": "vibe coding outreach AI sales automation prompt-driven",
+  "nicheSlug": "vibe-coding-outreach-ai-sales-automation-prompt-driven",
+  "runId": "2026-03-23T11-26-46-783Z",
+  "startedAt": "2026-03-23T11:26:46.785Z",
+  "keywords": [
+    "vibe coding outreach AI sales automation prompt-driven"
+  ],
+  "mustInclude": [
+    "vibe",
+    "coding",
+    "outreach",
+    "sales",
+    "automation",
+    "prompt",
+    "driven"
+  ],
+  "search": "vibe coding outreach AI sales automation prompt-driven",
+  "subAllowlist": null,
+  "config": {
+    "topN": 10,
+    "subLimit": 10,
+    "gapMs": 1200,
+    "limitPerListing": 25,
+    "time": "week",
+    "kinds": [
+      "top",
+      "hot",
+      "rising"
+    ],
+    "searchSort": "top",
+    "searchTime": null,
+    "minSubscribers": 0,
+    "sendCardsN": 5
+  }
+}

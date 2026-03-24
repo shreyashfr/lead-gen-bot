@@ -1,0 +1,28 @@
+{
+  "niche": "RAG and AI",
+  "nicheSlug": "rag-and-ai",
+  "runId": "2026-03-23T15-18-44-273Z",
+  "startedAt": "2026-03-23T15:18:44.277Z",
+  "keywords": [
+    "RAG and AI"
+  ],
+  "mustInclude": [],
+  "search": "RAG and AI",
+  "subAllowlist": null,
+  "config": {
+    "topN": 10,
+    "subLimit": 8,
+    "gapMs": 1200,
+    "limitPerListing": 25,
+    "time": "week",
+    "kinds": [
+      "top",
+      "hot",
+      "rising"
+    ],
+    "searchSort": "top",
+    "searchTime": null,
+    "minSubscribers": 0,
+    "sendCardsN": 5
+  }
+}

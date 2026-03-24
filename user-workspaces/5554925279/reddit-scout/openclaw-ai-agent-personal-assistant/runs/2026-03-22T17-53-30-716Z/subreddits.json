@@ -1,0 +1,82 @@
+[
+  {
+    "name": "AgentZero",
+    "title": "AgentZero",
+    "subscribers": 426,
+    "over18": false,
+    "url": "https://www.reddit.com/r/AgentZero/",
+    "discoveredBy": [
+      "openclaw AI agent personal assistant"
+    ]
+  },
+  {
+    "name": "AIPersonalAssistant",
+    "title": "AI Personal Assistant",
+    "subscribers": 372,
+    "over18": false,
+    "url": "https://www.reddit.com/r/AIPersonalAssistant/",
+    "discoveredBy": [
+      "openclaw AI agent personal assistant"
+    ]
+  },
+  {
+    "name": "openclawhosting",
+    "title": "openclawhosting",
+    "subscribers": 237,
+    "over18": false,
+    "url": "https://www.reddit.com/r/openclawhosting/",
+    "discoveredBy": [
+      "openclaw AI agent personal assistant"
+    ]
+  },
+  {
+    "name": "PZeroAgent",
+    "title": "PZeroAgent",
+    "subscribers": 80,
+    "over18": false,
+    "url": "https://www.reddit.com/r/PZeroAgent/",
+    "discoveredBy": [
+      "openclaw AI agent personal assistant"
+    ]
+  },
+  {
+    "name": "hermesagent",
+    "title": "hermesagent",
+    "subscribers": 57,
+    "over18": false,
+    "url": "https://www.reddit.com/r/hermesagent/",
+    "discoveredBy": [
+      "openclaw AI agent personal assistant"
+    ]
+  },
+  {
+    "name": "OpenclawFounders",
+    "title": "OpenclawFounders",
+    "subscribers": 56,
+    "over18": false,
+    "url": "https://www.reddit.com/r/OpenclawFounders/",
+    "discoveredBy": [
+      "openclaw AI agent personal assistant"
+    ]
+  },
+  {
+    "name": "PersonalFinance_Agent",
+    "title": "PersonalFinance_Agent",
+    "subscribers": 18,
+    "over18": false,
+    "url": "https://www.reddit.com/r/PersonalFinance_Agent/",
+    "discoveredBy": [
+      "openclaw AI agent personal assistant"
+    ]
+  },
+  {
+    "name": "OpenClawAI",
+    "title": "OpenClawAI",
+    "subscribers": 12,
+    "over18": false,
+    "url": "https://www.reddit.com/r/OpenClawAI/",
+    "discoveredBy": [
+      "openclaw AI agent personal assistant"
+    ]
+  }
+]

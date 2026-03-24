@@ -1,0 +1,88 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-03-22",
+  "user_name": "Ayan",
+  "niche": "Agentic AI Engineering, GenAI system design, AI for Indian SMBs",
+  "voice_rules": {
+    "forbidden_phrases": [
+      "leverage", "utilize", "streamline", "optimize", "facilitate", "enhance", "delve",
+      "I hope this message finds you well", "I'd be delighted to",
+      "I'm reaching out because", "thought leader", "guru", "game-changer", "revolutionary",
+      "I'm excited to share", "in my opinion", "it seems", "hope this was helpful"
+    ],
+    "required_style": {
+      "capitalization": "normal",
+      "contractions": "always_use",
+      "sentence_length": "short_to_medium",
+      "em_dashes": "NEVER — hard ban, treat like a forbidden phrase, rewrite any sentence that uses one",
+      "semicolons": "avoid",
+      "paragraph_style": "short — no sprawling blocks",
+      "numbers": "use specific numbers wherever possible (₹15,000/month, 4 hours/day, 95%)",
+      "opinions": "state as facts, not hedged with 'I think' or 'it seems'",
+      "linkedin_links": "first comment, never post body"
+    },
+    "tone_guardrails": {
+      "corporate_jargon": "reject",
+      "generic_motivational": "reject",
+      "ai_detectability": "must_fail_ai_test",
+      "hedging": "reject — state opinions directly",
+      "hype": "reject — builder-to-builder, grounded",
+      "academic_tone": "reject — technical but accessible",
+      "advice_giving_without_specifics": "reject — show the architecture, the tradeoff, what didn't work"
+    },
+    "private_topics": [
+      "Exact revenue numbers or ARR figures for AI Employee",
+      "Specific customer names without their consent",
+      "Confidential details about technical architecture that would be premature to share"
+    ]
+  },
+  "whatsapp_style": {
+    "source": "whatsapp_chat_export",
+    "analyzed_on": "2026-03-22",
+    "PRIVACY_NOTE": "Personal details, names, and message content are never stored or used in posts. Style patterns only.",
+    "sentence_length": "very_short — often 1 line per message, sometimes 2-3 short lines",
+    "capitalization": "mixed — normal caps at sentence start, but often skips it in casual flow",
+    "punctuation_style": "minimal — no full stops at end of sentences, uses '??' for questions, occasional '...'",
+    "tone": "casual, direct, action-oriented, collaborative",
+    "common_patterns": [
+      "Gets to the point fast — no preamble",
+      "Often splits a thought across 2-3 short messages",
+      "Confirms with short affirmations like 'Okay bro', 'Sure', 'Got it'",
+      "Uses context-then-action structure for requests"
+    ],
+    "emoji_usage": "occasional — used for tone, not decoration (😅 for awkwardness, 🥳 for celebration)",
+    "abbreviations": ["bro", "bhai"],
+    "hinglish_note": "Natural code-switcher between Hindi and English — but content voice should stay in English per master doc",
+    "paragraph_style": "single lines, broken across messages"
+  },
+  "high_performers": {
+    "hooks": [],
+    "formats_by_platform": {},
+    "emotional_archetypes": [],
+    "viral_structures": []
+  },
+  "voice_lessons": [
+    {
+      "lesson": "Never use em dashes (—) in any post, any format, any platform. Ayan explicitly flagged this. If a sentence needs an em dash to work, restructure the sentence instead.",
+      "context": "Ayan rejected a post and asked to remove em dashes — 2026-03-22",
+      "first_detected": "2026-03-22",
+      "source": "direct_user_feedback",
+      "analysis_window": [0, 0]
+    }
+  ],
+  "feedback_log": [
+    {
+      "date": "2026-03-22",
+      "format": "unknown",
+      "pillar": "unknown",
+      "feedback": "Remove em dashes",
+      "action_taken": "Hard-banned em dashes in voice_rules + added to voice_lessons",
+      "rule_updated": true
+    }
+  ],
+  "reflection_log": [],
+  "agent_logs": {
+    "research_agent": { "last_run": null },
+    "performance_reviewer": { "last_run": null }
+  }
+}

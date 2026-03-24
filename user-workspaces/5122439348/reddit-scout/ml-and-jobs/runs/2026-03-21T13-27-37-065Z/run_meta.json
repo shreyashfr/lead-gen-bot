@@ -1,0 +1,30 @@
+{
+  "niche": "ML and Jobs",
+  "nicheSlug": "ml-and-jobs",
+  "runId": "2026-03-21T13-27-37-065Z",
+  "startedAt": "2026-03-21T13:27:37.065Z",
+  "keywords": [
+    "ML and Jobs"
+  ],
+  "mustInclude": [
+    "jobs"
+  ],
+  "search": "ML and Jobs",
+  "subAllowlist": null,
+  "config": {
+    "topN": 10,
+    "subLimit": 10,
+    "gapMs": 1200,
+    "limitPerListing": 25,
+    "time": "week",
+    "kinds": [
+      "top",
+      "hot",
+      "rising"
+    ],
+    "searchSort": "top",
+    "searchTime": null,
+    "minSubscribers": 0,
+    "sendCardsN": 5
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "niche": "AI fearmongering",
+  "nicheSlug": "ai-fearmongering",
+  "runId": "2026-03-23T18-22-29-797Z",
+  "startedAt": "2026-03-23T18:22:29.797Z",
+  "keywords": [
+    "AI fearmongering"
+  ],
+  "mustInclude": [
+    "fearmongering"
+  ],
+  "search": "AI fearmongering",
+  "subAllowlist": null,
+  "config": {
+    "topN": 10,
+    "subLimit": 10,
+    "gapMs": 1200,
+    "limitPerListing": 25,
+    "time": "week",
+    "kinds": [
+      "top",
+      "hot",
+      "rising"
+    ],
+    "searchSort": "top",
+    "searchTime": null,
+    "minSubscribers": 0,
+    "sendCardsN": 5
+  }
+}

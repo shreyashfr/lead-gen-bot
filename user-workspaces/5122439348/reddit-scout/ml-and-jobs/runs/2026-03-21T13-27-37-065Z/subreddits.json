@@ -1,0 +1,102 @@
+[
+  {
+    "name": "jobs",
+    "title": "Jobs",
+    "subscribers": 2581827,
+    "over18": false,
+    "url": "https://www.reddit.com/r/jobs/",
+    "discoveredBy": [
+      "ML and Jobs"
+    ]
+  },
+  {
+    "name": "WFHJobs",
+    "title": "WFHJobs",
+    "subscribers": 179829,
+    "over18": false,
+    "url": "https://www.reddit.com/r/WFHJobs/",
+    "discoveredBy": [
+      "ML and Jobs"
+    ]
+  },
+  {
+    "name": "MachineLearningJobs",
+    "title": "Machine Learning work",
+    "subscribers": 51593,
+    "over18": false,
+    "url": "https://www.reddit.com/r/MachineLearningJobs/",
+    "discoveredBy": [
+      "ML and Jobs"
+    ]
+  },
+  {
+    "name": "antarctica",
+    "title": "Antarctica News, Travel, Jobs, and Discussion",
+    "subscribers": 46343,
+    "over18": false,
+    "url": "https://www.reddit.com/r/antarctica/",
+    "discoveredBy": [
+      "ML and Jobs"
+    ]
+  },
+  {
+    "name": "GigWork",
+    "title": "💰 Real Gig Jobs, News, Tips, Resources, and More.",
+    "subscribers": 22077,
+    "over18": false,
+    "url": "https://www.reddit.com/r/GigWork/",
+    "discoveredBy": [
+      "ML and Jobs"
+    ]
+  },
+  {
+    "name": "MLjobs",
+    "title": "Machine Learning Jobs",
+    "subscribers": 10206,
+    "over18": false,
+    "url": "https://www.reddit.com/r/MLjobs/",
+    "discoveredBy": [
+      "ML and Jobs"
+    ]
+  },
+  {
+    "name": "ai_ml_jobs",
+    "title": "Jobs in AI, ML, Data Science and Big Data",
+    "subscribers": 1914,
+    "over18": false,
+    "url": "https://www.reddit.com/r/ai_ml_jobs/",
+    "discoveredBy": [
+      "ML and Jobs"
+    ]
+  },
+  {
+    "name": "ScholarshipsAndJobs",
+    "title": "Scholarships and Jobs for International Applicants ",
+    "subscribers": 749,
+    "over18": false,
+    "url": "https://www.reddit.com/r/ScholarshipsAndJobs/",
+    "discoveredBy": [
+      "ML and Jobs"
+    ]
+  },
+  {
+    "name": "Data_Science_ML_Jobs",
+    "title": "DataScienceJobs",
+    "subscribers": 478,
+    "over18": false,
+    "url": "https://www.reddit.com/r/Data_Science_ML_Jobs/",
+    "discoveredBy": [
+      "ML and Jobs"
+    ]
+  },
+  {
+    "name": "ai_ml_data_jobs",
+    "title": "AI/ML and Data Jobs",
+    "subscribers": 156,
+    "over18": false,
+    "url": "https://www.reddit.com/r/ai_ml_data_jobs/",
+    "discoveredBy": [
+      "ML and Jobs"
+    ]
+  }
+]

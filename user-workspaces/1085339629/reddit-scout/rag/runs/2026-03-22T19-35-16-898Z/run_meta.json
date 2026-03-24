@@ -1,0 +1,28 @@
+{
+  "niche": "RAG",
+  "nicheSlug": "rag",
+  "runId": "2026-03-22T19-35-16-898Z",
+  "startedAt": "2026-03-22T19:35:16.898Z",
+  "keywords": [
+    "RAG"
+  ],
+  "mustInclude": [],
+  "search": "RAG",
+  "subAllowlist": null,
+  "config": {
+    "topN": 10,
+    "subLimit": 10,
+    "gapMs": 1200,
+    "limitPerListing": 25,
+    "time": "week",
+    "kinds": [
+      "top",
+      "hot",
+      "rising"
+    ],
+    "searchSort": "top",
+    "searchTime": null,
+    "minSubscribers": 0,
+    "sendCardsN": 5
+  }
+}

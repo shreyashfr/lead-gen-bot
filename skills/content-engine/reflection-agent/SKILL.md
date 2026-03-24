@@ -111,6 +111,22 @@ Bad instructions:
 
 ---
 
+## TIER 0 — Style/Formatting Feedback → Immediate Rule Update
+
+**Before generating the full reflection**, check if the rejection is about style or formatting.
+
+Style/formatting feedback includes: removing em dashes, removing semicolons, avoiding a specific word or phrase, changing sentence length, capitalization, tone descriptor, punctuation, structure.
+
+**If it is style/formatting feedback:**
+1. Immediately update `{USER_WORKSPACE}voice-memory.json` → `voice_rules` with the hard ban
+2. Add to `voice_lessons` with `"source": "direct_user_feedback"` and today's date
+3. This update happens BEFORE the reflection is generated and BEFORE any rewrite
+4. Confirm in your output: `🔒 Rule locked: [what was banned] — applied to all future content, all formats.`
+
+This is the most important step. A style preference stated once must never require stating again.
+
+---
+
 ## After Generating the Reflection
 
 ### 1. Log it to voice-memory.json

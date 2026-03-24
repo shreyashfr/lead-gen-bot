@@ -1,0 +1,85 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-03-23",
+  "user_name": "Shubham",
+  "niche": "AI-powered sales automation, behavioral science applied to outreach, founder-led growth, practical AI (not hype)",
+  "voice_rules": {
+    "forbidden_phrases": [
+      "leverage",
+      "utilize",
+      "streamline",
+      "optimize",
+      "facilitate",
+      "enhance",
+      "groundbreaking",
+      "transformative",
+      "delve",
+      "unleash",
+      "unlock",
+      "I hope this message finds you well",
+      "I'd be delighted to",
+      "I'm reaching out because",
+      "thought leader",
+      "guru",
+      "game-changer",
+      "revolutionary",
+      "In conclusion",
+      "To summarize",
+      "Ever wonder why"
+    ],
+    "required_style": {
+      "capitalization": "normal",
+      "contractions": "always_use",
+      "sentence_length": "short_to_medium",
+      "em_dashes": "avoid",
+      "semicolons": "avoid",
+      "ellipsis": "use for natural pauses",
+      "bullet_points": "avoid if it can be a sentence",
+      "performative_questions": "avoid"
+    },
+    "tone_guardrails": {
+      "corporate_jargon": "reject",
+      "generic_motivational": "reject",
+      "ai_detectability": "must_fail_ai_test",
+      "cheerleading": "reject",
+      "performative_humility": "reject",
+      "hedging": "reject — say what you mean",
+      "preachy": "reject — direct and dry only"
+    },
+    "private_topics": [
+      "Do not mention the Infosys founding team member's name publicly",
+      "Do not name Cialdini or the Cialdini Institute — use 'the Godfather of Persuasion' or 'the top OG in persuasion science' instead",
+      "Do not reference Magillabs Technology Private Limited — use Sbl.so only",
+      "Do not reference exact revenue numbers for Sbl.so",
+      "Do not reference confidential client data from any enterprise client engagements",
+      "Do not reference internal AI agent names, system prompt details, or evaluation dataset specifics"
+    ]
+  },
+  "high_performers": {
+    "hooks": [],
+    "formats_by_platform": {},
+    "emotional_archetypes": [],
+    "viral_structures": []
+  },
+  "voice_lessons": [],
+  "feedback_log": [],
+  "reflection_log": [],
+  "last_rejection_by_format": {
+    "linkedin": null,
+    "twitter_thread": null,
+    "x_article": null,
+    "tweet": null,
+    "carousel": null
+  },
+  "batch_analysis_state": {
+    "total_reflections_logged": 0,
+    "reflections_at_last_analysis": 0,
+    "last_analyzed_at": null,
+    "analyses_run": 0,
+    "last_analysis_summary": "no analysis run yet"
+  },
+  "agent_logs": {
+    "research_agent": { "last_run": null },
+    "performance_reviewer": { "last_run": null }
+  }
+}

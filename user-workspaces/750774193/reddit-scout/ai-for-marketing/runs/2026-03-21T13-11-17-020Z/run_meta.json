@@ -1,0 +1,30 @@
+{
+  "niche": "AI for marketing",
+  "nicheSlug": "ai-for-marketing",
+  "runId": "2026-03-21T13-11-17-020Z",
+  "startedAt": "2026-03-21T13:11:17.021Z",
+  "keywords": [
+    "AI for marketing"
+  ],
+  "mustInclude": [
+    "marketing"
+  ],
+  "search": "AI for marketing",
+  "subAllowlist": null,
+  "config": {
+    "topN": 10,
+    "subLimit": 10,
+    "gapMs": 1200,
+    "limitPerListing": 25,
+    "time": "week",
+    "kinds": [
+      "top",
+      "hot",
+      "rising"
+    ],
+    "searchSort": "top",
+    "searchTime": null,
+    "minSubscribers": 0,
+    "sendCardsN": 5
+  }
+}

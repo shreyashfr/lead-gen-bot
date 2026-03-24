@@ -1,0 +1,172 @@
+[
+  {
+    "id": "2030248407324143989",
+    "text": "if you left software engineering in 2024 and came back in 2026, you would've missed:\n\nMCP/A2A\nRAG\nProompt Engineering\nAI tab complete\n\nSo basically not much because that's all irrelevant now",
+    "author_name": "Sahaj",
+    "author_handle": "@iamsahaj_xyz",
+    "metrics": {
+      "likes": 1800,
+      "retweets": 45,
+      "replies": 34,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1.9,
+    "url": "https://x.com/iamsahaj_xyz/status/2030248407324143989"
+  },
+  {
+    "id": "2030581942706725350",
+    "text": "These are the best 10 AI projects that will get you hired in 2026:\n\n1. RAG App with Real Evaluations\n\nBuild a production-grade RAG system with evals, monitoring, and feedback loops.\n\nStack: OpenAI or Claude + vector DB + evals\nGuide: \nhttps://\npinecone.io/learn/retrieva\nl-augmented-generation/\n…\n\n2. Autonomous",
+    "author_name": "Rimsha Bhardwaj",
+    "author_handle": "@heyrimsha",
+    "metrics": {
+      "likes": 860,
+      "retweets": 162,
+      "replies": 20,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HC4Tg31bcAAtuX6?format=jpg&name=360x360",
+      "https://pbs.twimg.com/media/HC4ThB2a4AAK_cv?format=jpg&name=360x360"
+    ],
+    "viral_score": 1.2,
+    "url": "https://x.com/heyrimsha/status/2030581942706725350"
+  },
+  {
+    "id": "2031488102296956993",
+    "text": "Initiate the crawl job with just a URL, and get a job ID back. Poll, or wait for results.\n\nGreat for training models, RAG, and researching/monitoring content.",
+    "author_name": "Cloudflare Developers",
+    "author_handle": "@CloudflareDev",
+    "metrics": {
+      "likes": 724,
+      "retweets": 37,
+      "replies": 10,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/CloudflareDev/status/2031488102296956993"
+  },
+  {
+    "id": "2028514380963536918",
+    "text": "You don't need to write a single line of code to build a full AI agent with RAG, memory, and tool calling in 2026.\n\nI know that sounds like a lie. But It's not.\n\nFlowise is an open source drag and drop builder for LLM apps and it's the most slept-on AI tool I've seen this year.",
+    "author_name": "Ihtesham Ali",
+    "author_handle": "@ihtesham2005",
+    "metrics": {
+      "likes": 715,
+      "retweets": 90,
+      "replies": 45,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/ihtesham2005/status/2028514380963536918"
+  },
+  {
+    "id": "2034946111694131639",
+    "text": "Learning AI engineering in 2026.\n\nWhat most people do:\n→ Jump to agents\n→ Skip foundations\n→ Ignore MLOps\n→ Wonder why nothing works\n\nWhat this roadmap shows:\n\n1. Foundation (Python, APIs, clean code)\n2. Semantic intelligence (embeddings, vector DBs)\n3. RAG (grounded outputs)",
+    "author_name": "Tech with Mak",
+    "author_handle": "@techNmak",
+    "metrics": {
+      "likes": 605,
+      "retweets": 118,
+      "replies": 13,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HD2Ur5BboAAKPD1?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/techNmak/status/2034946111694131639"
+  },
+  {
+    "id": "2033850603483631709",
+    "text": "If you want to be an AI Engineer in 2026, learn THIS:\n\n Foundations: Python, Advanced Prompting, API Integration (OpenAI, Anthropic, Gemini).\n\n The Brain (RAG): Embeddings, Vector DBs (Pinecone, Qdrant, Milvus), Advanced Chunking strategies.\n\n Orchestration & Agents:",
+    "author_name": "Ujjwal Chadha",
+    "author_handle": "@ujjwalscript",
+    "metrics": {
+      "likes": 525,
+      "retweets": 102,
+      "replies": 14,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/ujjwalscript/status/2033850603483631709"
+  },
+  {
+    "id": "2034511197576520033",
+    "text": "2026, the 5 AI Projects Easiest to Help You Land a Job\n(Recommended to bookmark directly)\n\n Implement RAG from Scratch\nNot just calling APIs, but truly understanding the principles\nGitHub: \nhttps://\ngithub.com/langchain-ai/r\nag-from-scratch\n…\n\n AI Social Media Agent\nAutomatically posts content, analyzes",
+    "author_name": "路飞  AI 研究员",
+    "author_handle": "@0xluffy_eth",
+    "metrics": {
+      "likes": 325,
+      "retweets": 85,
+      "replies": 5,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HDwJJNMbEAATUTx?format=jpg&name=360x360",
+      "https://pbs.twimg.com/media/HDwJJX0bIAAbuHX?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/0xluffy_eth/status/2034511197576520033"
+  },
+  {
+    "id": "2028003914310734116",
+    "text": "High-Demand & High Paying Tech Skills for 2026 \n\n1. Cloud Engineering (AWS | Azure | GCP)\n2. DevOps & Automation (CI/CD | IaC | GitOps)\n3. Kubernetes & Containers\n4. Cybersecurity & Cloud Security\n5. Data Engineering \n6. AI/ML Integration (LLMs, RAG, MLOps)\n7. Platform",
+    "author_name": "Edison",
+    "author_handle": "@CodeEdison",
+    "metrics": {
+      "likes": 299,
+      "retweets": 41,
+      "replies": 14,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/CodeEdison/status/2028003914310734116"
+  },
+  {
+    "id": "2031037663214485560",
+    "text": "Top AI future-proof IT certs for 2026 (cloud/dev focus):\n\n1. AWS Certified Generative AI Developer – Professional: Production RAG pipelines, agents, Bedrock deployment. New, high-demand, ties directly to that 200k+ hype.\n\n2. Google Cloud Professional Machine Learning Engineer:",
+    "author_name": "Cyber Security | Tech | AI | Crypto |",
+    "author_handle": "@XinoYaps",
+    "metrics": {
+      "likes": 252,
+      "retweets": 20,
+      "replies": 5,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/XinoYaps/status/2031037663214485560"
+  },
+  {
+    "id": "2033195072804807048",
+    "text": "Skills That Pay in the AI Era (2026)\n\n• AI/ML → Python, PyTorch, Transformers\n• AI Stack → RAG, Vector DBs, Agents\n• Backend → Node.js, Go, Rust\n• Frontend → React, Next.js\n• APIs → REST, GraphQL, gRPC\n• Databases → PostgreSQL, Redis\n• DevOps → Docker, Kubernetes\n•",
+    "author_name": "Shruti Codes",
+    "author_handle": "@Shruti_0810",
+    "metrics": {
+      "likes": 88,
+      "retweets": 23,
+      "replies": 2,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HDdcIoUaAAAJvJf?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/Shruti_0810/status/2033195072804807048"
+  }
+]

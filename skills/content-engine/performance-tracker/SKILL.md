@@ -176,7 +176,7 @@ Reason: [why retiring]
 
 ---
 
-## STEP 6 — WEEKLY SUMMARY TO AYUSH
+## STEP 6 — WEEKLY SUMMARY TO {USER_NAME}
 
 At the end of each performance review, send {USER_NAME} a tight summary:
 

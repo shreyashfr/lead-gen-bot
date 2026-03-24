@@ -1,0 +1,46 @@
+{
+  "users": {
+    "rm-rf-npr": {
+      "user": "rm-rf-npr",
+      "url": "https://i.redd.it/snoovatar/avatars/2a1bdd25-0ceb-481a-9008-4d91673d316b.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1613832104/reddit-scout/vibe-coding-outreach-ai-sales-automation-prompt-driven/runs/2026-03-23T11-26-46-783Z/avatars/rm-rf-npr.png",
+      "fetchedAt": "2026-03-23T11:27:20.938Z"
+    },
+    "alazar_tesema": {
+      "user": "alazar_tesema",
+      "url": "https://i.redd.it/snoovatar/avatars/c77d06e4-aa81-45dc-ba9f-912cb5210b5a.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1613832104/reddit-scout/vibe-coding-outreach-ai-sales-automation-prompt-driven/runs/2026-03-23T11-26-46-783Z/avatars/alazar_tesema.png",
+      "fetchedAt": "2026-03-23T11:27:22.408Z"
+    },
+    "SupermarketKey1196": {
+      "user": "SupermarketKey1196",
+      "url": "https://i.redd.it/snoovatar/avatars/2fe31c48-2a04-427b-a17f-c3aeac6c2c72.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1613832104/reddit-scout/vibe-coding-outreach-ai-sales-automation-prompt-driven/runs/2026-03-23T11-26-46-783Z/avatars/SupermarketKey1196.png",
+      "fetchedAt": "2026-03-23T11:27:23.935Z"
+    },
+    "OneClimate8489": {
+      "user": "OneClimate8489",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_6.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1613832104/reddit-scout/vibe-coding-outreach-ai-sales-automation-prompt-driven/runs/2026-03-23T11-26-46-783Z/avatars/OneClimate8489.png",
+      "fetchedAt": "2026-03-23T11:27:26.809Z"
+    },
+    "Classic-Ninja-1": {
+      "user": "Classic-Ninja-1",
+      "url": "https://i.redd.it/snoovatar/avatars/7b5ac466-9e3d-4dc1-a071-5e93663a1718.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1613832104/reddit-scout/vibe-coding-outreach-ai-sales-automation-prompt-driven/runs/2026-03-23T11-26-46-783Z/avatars/Classic-Ninja-1.png",
+      "fetchedAt": "2026-03-23T11:27:28.409Z"
+    },
+    "thlandgraf": {
+      "user": "thlandgraf",
+      "url": "https://styles.redditmedia.com/t5_2g5mms/styles/profileIcon_bqoa38dazffg1.png?width=256&height=256&crop=256:256,smart&s=42dc3a0cb7aa68b5a770cebd49f69370a3acec4c",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1613832104/reddit-scout/vibe-coding-outreach-ai-sales-automation-prompt-driven/runs/2026-03-23T11-26-46-783Z/avatars/thlandgraf.png",
+      "fetchedAt": "2026-03-23T11:27:31.404Z"
+    },
+    "harikrishnan_83": {
+      "user": "harikrishnan_83",
+      "url": "https://styles.redditmedia.com/t5_8wjd2q/styles/profileIcon_ddslcg6uegdb1.jpg?width=256&height=256&crop=256:256,smart&s=0ed195bc8932189bfbba33de38da2311ecabf063",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1613832104/reddit-scout/vibe-coding-outreach-ai-sales-automation-prompt-driven/runs/2026-03-23T11-26-46-783Z/avatars/harikrishnan_83.jpg",
+      "fetchedAt": "2026-03-23T11:27:33.078Z"
+    }
+  }
+}

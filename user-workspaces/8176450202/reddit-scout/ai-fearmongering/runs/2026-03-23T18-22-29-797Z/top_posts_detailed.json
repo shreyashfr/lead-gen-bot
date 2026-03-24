@@ -1,0 +1,180 @@
+[
+  {
+    "id": "1ruu7vb",
+    "subreddit": "skyrimmods",
+    "title": "\"Ultimate Analyzers\" - vibe-coded fearmongering mods?",
+    "selftext": "There were some people skeptical of the current flood of vibe coded mods on nexus and wanted some example. Here are some example:\n\n- [Ultimate Asset Analyzer](https://www.nexusmods.com/skyrimspecialedition/mods/174603)\n- [Ultimate Audio Analyzer](https://www.nexusmods.com/skyrimspecialedition/mods/174611)\n- [Ultimate Drawcalls Analyzer](https://www.nexusmods.com/skyrimspecialedition/mods/174631)\n- [Ultimate NPC Analyzer](https://www.nexusmods.com/skyrimspecialedition/mods/174617)\n- [Ultimate Hotkey Analyzer](https://www.nexusmods.com/skyrimspecialedition/mods/174612)\n- [NIF Performance Analyzer](https://www.nexusmods.com/skyrimspecialedition/mods/169590)\n- [NIF Performance Analyzer (Standalone version)](https://www.nexusmods.com/skyrimspecialedition/mods/170029)\n\nThese mods are currently very popular are will probably dominate the hot files within the next few days. They are marketed towards users (\"utilities for players\" tag confirmed by author) and claim to offer easy diagnostics to performance issues and easy 1-click solutions:\n\n&gt; give you total control over your modlist's performance, scripts, and assets. It replaces blind guessing with precise, ***actionable data***.\n\n---\n\n&gt; mathematically estimates the drawcall count of every object and flags the specific files destroying your CPU performance so you can ***fix them instantly***.\n\n---\n\n&gt; It replaces guesswork with precise data and ***1-click fixes*** to keep your game running smooth.\n\n---\n\n&gt; It replaces hours of tedious troubleshooting in xEdit with precise data, human-readable NPC names, and ***1-click fixes***.\n\n\"Ultimate Asset Analyzer\" also offers an easy 1-click solution directly in the app to directly \"❌ Disable Mod (Safe)\" via context menu. Every single mod is marked \"Safe\" to disable. How is it safe to just arbitrarily disable mods in your mod list?\n\nThe author tried to hide the fact that they are vibe-coded until [IconicDeath](https://www.nexusmods.com/profile/IconicDeath) pressed them on it:\n\n&gt; The author literally made a brand new drawcall analyzer in under two hours at the suggestion of a commenter, and then proceeded to assure me it was extensively tested. How do you extensively test a mod you coded with AI in under two hours? No idea. \n\n&gt; I've had several comments removed by him in the comment section. It wasn't until I pressed him about it that he actually added the AI disclaimer.\n\nAfter which the mods added this disclaimer:\n\n&gt; Created by ARKAYD and AlhimikPh using AI-assisted development tools. Logic and design by me, efficiency by modern tech.\n\n---\n\nThe \"Analyses\"\n=\n\nI think these mods causes unnecessary fearmongering. For example:\n\n\"CPU KILLERS\": Draw calls\n-\n\n&gt; Highlights \"CPU KILLERS\" (meshes with &gt;30 estimated drawcalls) in red.\n\nThere are legitimate vanilla meshes that have hundreds of shapes, but are unproblematic because they cover entire rooms, buildings or have necessary complex articulation. There are also meshes with fewer than 30 shapes that are performance bottlenecks because they show up everywhere.\n\nSome of the mods this flagged as \"🚨 SEVERE RENDER COST\":\n\n- Obscure's college of winterhold - of course these have draw calls. they are entire buildings\n- Lux - these are also entire buildings, and the partitioning is necessary to avoid light limit\n- Project AHO - again, another entire building\n\nThis also flagged \"dyndolod resources\" as \"🚨 CATASTROPHIC LOD\" for windhelm stone quarter and solitude base - no shit this is like half the city.\n\n\"Script Lag Detection\"\n-\n\n&gt; Script Lag Detection: A custom binary parser cracks open compiled .pex files on the fly to hunt for heavy polling functions (like RegisterForUpdate or QueueNiNodeUpdate ). It instantly flags mods that are likely to cause Script Lag.\n\nAmong the mods that it flagged as \"🟡 Moderate Updates (Safe if well coded)\":\n\n- skse scripts\n- unofficial skyrim special edition patch\n- creation club - fishing\n\n\"Menu Protection\"\n-\n\n&gt; Menu Protection: Tracks .swf and .gfx files to instantly warn you if crucial UI components (like SkyUI or your MCMs) are being silently overwritten and broken by random mods.\n\nThis flagged every single mod that uses [SkyUILib](https://www.nexusmods.com/skyrim/mods/57308) as \"⚠️ UI OVERWRITTEN (1 file lost)\", which is meant to be included in multiple mods and has the following on its mod description:\n\n&gt; This resource is designed to be included in mods as is. The files in this resource are NOT to be modified under any circumstance as that could cause problems when a load order includes multiple mods that use the resource and one or more mods have modified the files in this resource.\n\n&gt; Resolution &amp; Codec Scanner: Breaks down texture resolutions (8K to 512) and reads internal DDS headers on the fly to detect compression formats (BC7, DXT, or Uncompressed).\n\n\"VRAM Killer\" Detection\n-\n\nThis reported Dyndolod output as \"CRITICAL VRAM\" and xLodgen output as \"HIGH VRAM\"\n\n\"Black Face Bug Detector\"\n-\n\nthere is too much wrong here. i have no black face bugs in my game at all, but this was able to flag 977 \"CRITCAL BUGS\" in my mod list because it does not comprehend patches and asset replacers for facegen files. For example, it flagged every single vanilla npc as \"🚨 CRITICAL MISSING MESH\" because Cleaned Skyrim Textures overwrote the facetint files.\n\n\"Dynamic Hide/Unhide\"\n-\n\n&gt; Dynamic Hide/Unhide: Safely hide ( .mohidden ) dead weight files directly from the plugin interface to free up drive space. The scanner now detects hidden files, allowing you to seamlessly Unhide them via right-click without rescanning!\n\nHow does this free up drive space? .mohidden is just renaming the file. Having mods overwrite other mods' files is how MO2 is suppose to work. This just sounds like extra work when you want to uninstall mods.\n\n\"Audio Bloat &amp; RAM Usage Tracker\"\n-\n\nThis is what the mod page says:\n\n&gt; Scans your entire active modlist for uncompressed .wav files that eat up gigabytes of RAM.\n\nThis is what the author says in the comments:\n\n&gt; ​Because ***the tool flags any .wav file over 1MB as bloat***, files that are still larger than 1MB after being optimized will show up again on the next scan. If you check the files in Windows Explorer, you'll see their size has definitely decreased. \n\nAmong the mods flagged as \"🚨 RAM BLOAT (uncompressed):\n\n- Regional Sounds Expansion (SRD - Wilds Dungeons Towns Ambience Birds - Fixes)\n\n\"OAR/DAR Framework Detection\"\n-\n\n&gt; Framework Detection: Automatically detects if an animation mod uses the outdated DAR engine (flags in red) or the modern OAR.\n\nThis doesn't understand that OAR is backwards compatible with DAR file formats. It reports mods like \"Assorted Animation Fixes\" that work perfectly fine with OAR as \"🚨 OUTDATED (CONVERT TO OAR)\".\n\n---\n\nConsequences\n=\n\nUsers blaming random mods\n-\n\nThere are already reports on the mod page blaming random mods:\n\n&gt; I guess I've got some rethinking to do. I've got some really heavy mods that other ones are drawing off (according to this) like ***DrJacopo's 3D Grass Library***.That kills my Cathedral plants and grass options. \n\n&gt; Now I don't know whether to be completely depressed or thankful that you've shown me this before its \"too late\". Good thing I'm in the process of building this list and can change things.\n\n---\n\n&gt; I'm getting thousands of false reports of critical errors, like it is not reading facegeom packed in BSA archives when the facetint is a loose file. Affecting vanilla NPCs and with mods.\n\n---\n\n&gt; i have skyrim reworked installed \"https://www.nexusmods.com/skyrimspecialedition/mods/134352?tab=files\" that replaces vanilla textures bsa's with better ones. the analyzer says that 90 nps are missing face meshes because of it, but it doesn't change meshes at all and should be using the default skyrim BSA for that. idk how to fix it.\n\n---\n\n&gt;  Thanks for the mod. ***Lawless - a bandit overhaul*** is by far the heaviest of my mods according to this with a score of 21074, Is the only solution to disable it? \n\n---\n\n&gt; I honestly had no idea that ***SMIM*** is that heavy. It's presence alone makes it \"-50 FPS unplayable\".\n\n&gt; Also, ***Window Shadows Ultimate*** can be an insane performance hog.\n\n&gt; And obviously ***Veydosebrom Regions*** and ***Traverse the Ulvenwald***, no surprises here \n\n---\n\n&gt;  After analyzing the draw calls, it turns out '***arcanum - a new age of magic (fixed)***' and '***jewelry limiter***' are at the very top for me. The jewelry limiter result was quite unexpected .This analyzer was a huge help for me. Thanks for the awesome plugin. Endorsed! \n\n---\n\n&gt;  I've just re-ran this again after updating and holy.... ***Lux*** is killing my PC, I'm running the full Lux suite too. also some blending meshes which are only in my load order because they are required for Lux. I love Lux but I think its time to adjust my load order for less strain \n\n---\n\n&gt;  In my game, there were 9 files in magenta, which means the collisions are broken. I hid them all. Will this cause any problems in my game? Most of the files in question were from the ***Static Mesh Improvement Mod***. \n\nBroken games after running \"fixer\"\n-\n\nI don't have enough courage to try this myself, but the NPC face \"fixer\" is already breaking people's games:\n\n&gt; Yeah, sorry, but I’d stay away from this AI-generated tool. Using Auto Fix caused repeatable CTDs instead of fixing anything!\nRestoring/unhiding the DDS files again was the only thing that solved the problem. \n\n---\n\n&gt; I found your tool by reference and unfortunately led me to a nasty situation where all my saves of my 4 year long playthrough CTD right before game screen loads (means that my save finishes loading, and just before the game screen appears boom CTD).\n\n---\n\nFinal words\n=\n\nTo users:\n\n* don't prematurely optimize. wait until you're actually experiencing an issue before investigating or blaming random mods.\n* don't make decisions based on the promise of greatness. Actually test mods and verify claims before hitting that endorse button.\n\nTo mod authors:\n\n* I wouldn't be surprised if users start reporting random stuff on your mod pages based off of these tools.",
+    "author": "Ok_Country5134",
+    "created_utc": 1773619510,
+    "permalink": "https://www.reddit.com/r/skyrimmods/comments/1ruu7vb/ultimate_analyzers_vibecoded_fearmongering_mods/",
+    "url": "https://www.reddit.com/r/skyrimmods/comments/1ruu7vb/ultimate_analyzers_vibecoded_fearmongering_mods/",
+    "domain": "self.skyrimmods",
+    "is_self": true,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 407,
+    "score": 407,
+    "num_comments": 122,
+    "upvote_ratio": 0.97,
+    "thumbnail": "self",
+    "media": null,
+    "post_hint": null,
+    "listing": "search:top:week",
+    "viral_score": 5.901062320574936,
+    "detail": {
+      "post": {
+        "id": "1ruu7vb",
+        "title": "\"Ultimate Analyzers\" - vibe-coded fearmongering mods?",
+        "selftext": "There were some people skeptical of the current flood of vibe coded mods on nexus and wanted some example. Here are some example:\n\n- [Ultimate Asset Analyzer](https://www.nexusmods.com/skyrimspecialedition/mods/174603)\n- [Ultimate Audio Analyzer](https://www.nexusmods.com/skyrimspecialedition/mods/174611)\n- [Ultimate Drawcalls Analyzer](https://www.nexusmods.com/skyrimspecialedition/mods/174631)\n- [Ultimate NPC Analyzer](https://www.nexusmods.com/skyrimspecialedition/mods/174617)\n- [Ultimate Hotkey Analyzer](https://www.nexusmods.com/skyrimspecialedition/mods/174612)\n- [NIF Performance Analyzer](https://www.nexusmods.com/skyrimspecialedition/mods/169590)\n- [NIF Performance Analyzer (Standalone version)](https://www.nexusmods.com/skyrimspecialedition/mods/170029)\n\nThese mods are currently very popular are will probably dominate the hot files within the next few days. They are marketed towards users (\"utilities for players\" tag confirmed by author) and claim to offer easy diagnostics to performance issues and easy 1-click solutions:\n\n&gt; give you total control over your modlist's performance, scripts, and assets. It replaces blind guessing with precise, ***actionable data***.\n\n---\n\n&gt; mathematically estimates the drawcall count of every object and flags the specific files destroying your CPU performance so you can ***fix them instantly***.\n\n---\n\n&gt; It replaces guesswork with precise data and ***1-click fixes*** to keep your game running smooth.\n\n---\n\n&gt; It replaces hours of tedious troubleshooting in xEdit with precise data, human-readable NPC names, and ***1-click fixes***.\n\n\"Ultimate Asset Analyzer\" also offers an easy 1-click solution directly in the app to directly \"❌ Disable Mod (Safe)\" via context menu. Every single mod is marked \"Safe\" to disable. How is it safe to just arbitrarily disable mods in your mod list?\n\nThe author tried to hide the fact that they are vibe-coded until [IconicDeath](https://www.nexusmods.com/profile/IconicDeath) pressed them on it:\n\n&gt; The author literally made a brand new drawcall analyzer in under two hours at the suggestion of a commenter, and then proceeded to assure me it was extensively tested. How do you extensively test a mod you coded with AI in under two hours? No idea. \n\n&gt; I've had several comments removed by him in the comment section. It wasn't until I pressed him about it that he actually added the AI disclaimer.\n\nAfter which the mods added this disclaimer:\n\n&gt; Created by ARKAYD and AlhimikPh using AI-assisted development tools. Logic and design by me, efficiency by modern tech.\n\n---\n\nThe \"Analyses\"\n=\n\nI think these mods causes unnecessary fearmongering. For example:\n\n\"CPU KILLERS\": Draw calls\n-\n\n&gt; Highlights \"CPU KILLERS\" (meshes with &gt;30 estimated drawcalls) in red.\n\nThere are legitimate vanilla meshes that have hundreds of shapes, but are unproblematic because they cover entire rooms, buildings or have necessary complex articulation. There are also meshes with fewer than 30 shapes that are performance bottlenecks because they show up everywhere.\n\nSome of the mods this flagged as \"🚨 SEVERE RENDER COST\":\n\n- Obscure's college of winterhold - of course these have draw calls. they are entire buildings\n- Lux - these are also entire buildings, and the partitioning is necessary to avoid light limit\n- Project AHO - again, another entire building\n\nThis also flagged \"dyndolod resources\" as \"🚨 CATASTROPHIC LOD\" for windhelm stone quarter and solitude base - no shit this is like half the city.\n\n\"Script Lag Detection\"\n-\n\n&gt; Script Lag Detection: A custom binary parser cracks open compiled .pex files on the fly to hunt for heavy polling functions (like RegisterForUpdate or QueueNiNodeUpdate ). It instantly flags mods that are likely to cause Script Lag.\n\nAmong the mods that it flagged as \"🟡 Moderate Updates (Safe if well coded)\":\n\n- skse scripts\n- unofficial skyrim special edition patch\n- creation club - fishing\n\n\"Menu Protection\"\n-\n\n&gt; Menu Protection: Tracks .swf and .gfx files to instantly warn you if crucial UI components (like SkyUI or your MCMs) are being silently overwritten and broken by random mods.\n\nThis flagged every single mod that uses [SkyUILib](https://www.nexusmods.com/skyrim/mods/57308) as \"⚠️ UI OVERWRITTEN (1 file lost)\", which is meant to be included in multiple mods and has the following on its mod description:\n\n&gt; This resource is designed to be included in mods as is. The files in this resource are NOT to be modified under any circumstance as that could cause problems when a load order includes multiple mods that use the resource and one or more mods have modified the files in this resource.\n\n&gt; Resolution &amp; Codec Scanner: Breaks down texture resolutions (8K to 512) and reads internal DDS headers on the fly to detect compression formats (BC7, DXT, or Uncompressed).\n\n\"VRAM Killer\" Detection\n-\n\nThis reported Dyndolod output as \"CRITICAL VRAM\" and xLodgen output as \"HIGH VRAM\"\n\n\"Black Face Bug Detector\"\n-\n\nthere is too much wrong here. i have no black face bugs in my game at all, but this was able to flag 977 \"CRITCAL BUGS\" in my mod list because it does not comprehend patches and asset replacers for facegen files. For example, it flagged every single vanilla npc as \"🚨 CRITICAL MISSING MESH\" because Cleaned Skyrim Textures overwrote the facetint files.\n\n\"Dynamic Hide/Unhide\"\n-\n\n&gt; Dynamic Hide/Unhide: Safely hide ( .mohidden ) dead weight files directly from the plugin interface to free up drive space. The scanner now detects hidden files, allowing you to seamlessly Unhide them via right-click without rescanning!\n\nHow does this free up drive space? .mohidden is just renaming the file. Having mods overwrite other mods' files is how MO2 is suppose to work. This just sounds like extra work when you want to uninstall mods.\n\n\"Audio Bloat &amp; RAM Usage Tracker\"\n-\n\nThis is what the mod page says:\n\n&gt; Scans your entire active modlist for uncompressed .wav files that eat up gigabytes of RAM.\n\nThis is what the author says in the comments:\n\n&gt; ​Because ***the tool flags any .wav file over 1MB as bloat***, files that are still larger than 1MB after being optimized will show up again on the next scan. If you check the files in Windows Explorer, you'll see their size has definitely decreased. \n\nAmong the mods flagged as \"🚨 RAM BLOAT (uncompressed):\n\n- Regional Sounds Expansion (SRD - Wilds Dungeons Towns Ambience Birds - Fixes)\n\n\"OAR/DAR Framework Detection\"\n-\n\n&gt; Framework Detection: Automatically detects if an animation mod uses the outdated DAR engine (flags in red) or the modern OAR.\n\nThis doesn't understand that OAR is backwards compatible with DAR file formats. It reports mods like \"Assorted Animation Fixes\" that work perfectly fine with OAR as \"🚨 OUTDATED (CONVERT TO OAR)\".\n\n---\n\nConsequences\n=\n\nUsers blaming random mods\n-\n\nThere are already reports on the mod page blaming random mods:\n\n&gt; I guess I've got some rethinking to do. I've got some really heavy mods that other ones are drawing off (according to this) like ***DrJacopo's 3D Grass Library***.That kills my Cathedral plants and grass options. \n\n&gt; Now I don't know whether to be completely depressed or thankful that you've shown me this before its \"too late\". Good thing I'm in the process of building this list and can change things.\n\n---\n\n&gt; I'm getting thousands of false reports of critical errors, like it is not reading facegeom packed in BSA archives when the facetint is a loose file. Affecting vanilla NPCs and with mods.\n\n---\n\n&gt; i have skyrim reworked installed \"https://www.nexusmods.com/skyrimspecialedition/mods/134352?tab=files\" that replaces vanilla textures bsa's with better ones. the analyzer says that 90 nps are missing face meshes because of it, but it doesn't change meshes at all and should be using the default skyrim BSA for that. idk how to fix it.\n\n---\n\n&gt;  Thanks for the mod. ***Lawless - a bandit overhaul*** is by far the heaviest of my mods according to this with a score of 21074, Is the only solution to disable it? \n\n---\n\n&gt; I honestly had no idea that ***SMIM*** is that heavy. It's presence alone makes it \"-50 FPS unplayable\".\n\n&gt; Also, ***Window Shadows Ultimate*** can be an insane performance hog.\n\n&gt; And obviously ***Veydosebrom Regions*** and ***Traverse the Ulvenwald***, no surprises here \n\n---\n\n&gt;  After analyzing the draw calls, it turns out '***arcanum - a new age of magic (fixed)***' and '***jewelry limiter***' are at the very top for me. The jewelry limiter result was quite unexpected .This analyzer was a huge help for me. Thanks for the awesome plugin. Endorsed! \n\n---\n\n&gt;  I've just re-ran this again after updating and holy.... ***Lux*** is killing my PC, I'm running the full Lux suite too. also some blending meshes which are only in my load order because they are required for Lux. I love Lux but I think its time to adjust my load order for less strain \n\n---\n\n&gt;  In my game, there were 9 files in magenta, which means the collisions are broken. I hid them all. Will this cause any problems in my game? Most of the files in question were from the ***Static Mesh Improvement Mod***. \n\nBroken games after running \"fixer\"\n-\n\nI don't have enough courage to try this myself, but the NPC face \"fixer\" is already breaking people's games:\n\n&gt; Yeah, sorry, but I’d stay away from this AI-generated tool. Using Auto Fix caused repeatable CTDs instead of fixing anything!\nRestoring/unhiding the DDS files again was the only thing that solved the problem. \n\n---\n\n&gt; I found your tool by reference and unfortunately led me to a nasty situation where all my saves of my 4 year long playthrough CTD right before game screen loads (means that my save finishes loading, and just before the game screen appears boom CTD).\n\n---\n\nFinal words\n=\n\nTo users:\n\n* don't prematurely optimize. wait until you're actually experiencing an issue before investigating or blaming random mods.\n* don't make decisions based on the promise of greatness. Actually test mods and verify claims before hitting that endorse button.\n\nTo mod authors:\n\n* I wouldn't be surprised if users start reporting random stuff on your mod pages based off of these tools.",
+        "author": "Ok_Country5134",
+        "subreddit": "skyrimmods",
+        "created_utc": 1773619510,
+        "ups": 409,
+        "num_comments": 122,
+        "upvote_ratio": 0.97,
+        "permalink": "https://www.reddit.com/r/skyrimmods/comments/1ruu7vb/ultimate_analyzers_vibecoded_fearmongering_mods/",
+        "url": "https://www.reddit.com/r/skyrimmods/comments/1ruu7vb/ultimate_analyzers_vibecoded_fearmongering_mods/",
+        "is_self": true,
+        "post_hint": null,
+        "thumbnail": "self",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": null,
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "DFisBUSY",
+          "ups": 320,
+          "body": "Randomly jump into one of those pages and see a comment:\n\n&gt;*\"i am playing around with it, and disabled a bunch of mods as recommended. But, now MO2 tells me about missing masters\"*\n\nlol."
+        },
+        {
+          "author": "VivienneVentrue",
+          "ups": 170,
+          "body": "I hate the post-AI internet..."
+        },
+        {
+          "author": "SouthOfOz",
+          "ups": 164,
+          "body": "The comments on the mods are very strange. Have the people not actually played a game with LUX or SMIM and realized those mods are not what's killing their game? "
+        }
+      ]
+    },
+    "author_avatar": {
+      "user": "Ok_Country5134",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/ai-fearmongering/runs/2026-03-23T18-22-29-797Z/avatars/Ok_Country5134.png",
+      "fetchedAt": "2026-03-23T18:22:39.701Z"
+    }
+  },
+  {
+    "id": "1ryvb34",
+    "subreddit": "InterstellarKinetics",
+    "title": "EXCLUSIVE: Jensen Huang used Nvidia’s GTC 2026 conference to draw a sharp line between responsible AI safety warnings and fearmongering 🤖💥",
+    "selftext": "Speaking at Nvidia’s GTC 2026 conference in California, CEO Jensen Huang addressed the growing tension around AI safety rhetoric directly, stating: “The desire to warn people about the capability of the technology is really terrific. Warning is good, scaring is less good, because this technology is too important to us.”  In a separate interview with Stratechery, he sharpened the message further: “I don’t like it when doomers are out scaring people. I think there’s a difference between genuinely being concerned and warning people versus creating rhetoric that scares people.”  Huang framed alarmist AI narratives not just as intellectually excessive but as a practical threat to American competitiveness, arguing that fear-driven public discourse damages the country’s ability to lead in the global AI race.\n\n**The Anthropic-Pentagon Confrontation Behind the Comments**\n\nHuang’s remarks were a direct response to a question about how Anthropic could have better handled its contract dispute with the Pentagon, a conflict that escalated dramatically this week when the Department of Defense filed a 40-page court document declaring Anthropic’s safety constraints make it an “unacceptable risk” to national security in wartime.  The Pentagon’s core argument is that because AI models require continuous updates and can be altered by their provider, Anthropic’s insistence on maintaining its own ethical “red lines” means it could theoretically disable or modify its systems during active military operations, a risk the DOD says is operationally intolerable.  Anthropic CEO Dario Amodei has pushed back forcefully, arguing the company never sought operational control over military decisions and that its objections are specifically limited to fully autonomous lethal weapons and mass domestic surveillance, not wartime use broadly.\n\n**The Bigger Principle Being Tested**\n\nThis legal battle is the first major judicial test of a question the AI industry has been avoiding: can an AI company legally enforce ethical limits on how a government uses its technology, or does state power override those constraints in a national security context?  Anthropic argues that accepting government contracts does not strip a company of its constitutional rights or its ability to set usage boundaries, while the Pentagon counters that military AI systems cannot be operationally dependent on a vendor that retains practical power to second-guess lawful applications during combat.  The stakes extend well beyond Anthropic: a ruling against the company would effectively signal that any AI firm selling to the government must surrender control of its safety architecture entirely, reshaping how every lab from OpenAI to Google approaches government contracts going forward.",
+    "author": "InterstellarKinetics",
+    "created_utc": 1774010827,
+    "permalink": "https://www.reddit.com/r/InterstellarKinetics/comments/1ryvb34/exclusive_jensen_huang_used_nvidias_gtc_2026/",
+    "url": "https://news.bloomberglaw.com/artificial-intelligence/nvidias-jensen-huang-urges-ai-leaders-to-avoid-fearmongering",
+    "domain": "news.bloomberglaw.com",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 3,
+    "score": 3,
+    "num_comments": 1,
+    "upvote_ratio": 0.81,
+    "thumbnail": "https://external-preview.redd.it/T7uArTP0a-D0qClZEzGW_eqgzoVXoZiFroi4ey84R9M.jpeg?width=140&amp;height=73&amp;auto=webp&amp;s=047365e2e2baedb734ba1e456fe931f5758dc404",
+    "media": null,
+    "post_hint": "link",
+    "listing": "search:top:week",
+    "viral_score": 0.04476956177358039,
+    "detail": {
+      "post": {
+        "id": "1ryvb34",
+        "title": "EXCLUSIVE: Jensen Huang used Nvidia’s GTC 2026 conference to draw a sharp line between responsible AI safety warnings and fearmongering 🤖💥",
+        "selftext": "Speaking at Nvidia’s GTC 2026 conference in California, CEO Jensen Huang addressed the growing tension around AI safety rhetoric directly, stating: “The desire to warn people about the capability of the technology is really terrific. Warning is good, scaring is less good, because this technology is too important to us.”  In a separate interview with Stratechery, he sharpened the message further: “I don’t like it when doomers are out scaring people. I think there’s a difference between genuinely being concerned and warning people versus creating rhetoric that scares people.”  Huang framed alarmist AI narratives not just as intellectually excessive but as a practical threat to American competitiveness, arguing that fear-driven public discourse damages the country’s ability to lead in the global AI race.\n\n**The Anthropic-Pentagon Confrontation Behind the Comments**\n\nHuang’s remarks were a direct response to a question about how Anthropic could have better handled its contract dispute with the Pentagon, a conflict that escalated dramatically this week when the Department of Defense filed a 40-page court document declaring Anthropic’s safety constraints make it an “unacceptable risk” to national security in wartime.  The Pentagon’s core argument is that because AI models require continuous updates and can be altered by their provider, Anthropic’s insistence on maintaining its own ethical “red lines” means it could theoretically disable or modify its systems during active military operations, a risk the DOD says is operationally intolerable.  Anthropic CEO Dario Amodei has pushed back forcefully, arguing the company never sought operational control over military decisions and that its objections are specifically limited to fully autonomous lethal weapons and mass domestic surveillance, not wartime use broadly.\n\n**The Bigger Principle Being Tested**\n\nThis legal battle is the first major judicial test of a question the AI industry has been avoiding: can an AI company legally enforce ethical limits on how a government uses its technology, or does state power override those constraints in a national security context?  Anthropic argues that accepting government contracts does not strip a company of its constitutional rights or its ability to set usage boundaries, while the Pentagon counters that military AI systems cannot be operationally dependent on a vendor that retains practical power to second-guess lawful applications during combat.  The stakes extend well beyond Anthropic: a ruling against the company would effectively signal that any AI firm selling to the government must surrender control of its safety architecture entirely, reshaping how every lab from OpenAI to Google approaches government contracts going forward.",
+        "author": "InterstellarKinetics",
+        "subreddit": "InterstellarKinetics",
+        "created_utc": 1774010827,
+        "ups": 3,
+        "num_comments": 1,
+        "upvote_ratio": 0.81,
+        "permalink": "https://www.reddit.com/r/InterstellarKinetics/comments/1ryvb34/exclusive_jensen_huang_used_nvidias_gtc_2026/",
+        "url": "https://news.bloomberglaw.com/artificial-intelligence/nvidias-jensen-huang-urges-ai-leaders-to-avoid-fearmongering",
+        "is_self": false,
+        "post_hint": "link",
+        "thumbnail": "https://external-preview.redd.it/T7uArTP0a-D0qClZEzGW_eqgzoVXoZiFroi4ey84R9M.jpeg?width=140&amp;height=73&amp;auto=webp&amp;s=047365e2e2baedb734ba1e456fe931f5758dc404",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://external-preview.redd.it/T7uArTP0a-D0qClZEzGW_eqgzoVXoZiFroi4ey84R9M.jpeg?auto=webp&amp;s=d30f3aaa77cf6897d29664ee8bb97e19c2f71bb6",
+                "width": 1200,
+                "height": 628
+              },
+              "resolutions": [
+                {
+                  "url": "https://external-preview.redd.it/T7uArTP0a-D0qClZEzGW_eqgzoVXoZiFroi4ey84R9M.jpeg?width=108&amp;crop=smart&amp;auto=webp&amp;s=426efad745dcb3a5b9012b7c537b278a5bf5ec88",
+                  "width": 108,
+                  "height": 56
+                },
+                {
+                  "url": "https://external-preview.redd.it/T7uArTP0a-D0qClZEzGW_eqgzoVXoZiFroi4ey84R9M.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=220ea08eaba3c6660ec00aa60dd4691e9fd6243a",
+                  "width": 216,
+                  "height": 113
+                },
+                {
+                  "url": "https://external-preview.redd.it/T7uArTP0a-D0qClZEzGW_eqgzoVXoZiFroi4ey84R9M.jpeg?width=320&amp;crop=smart&amp;auto=webp&amp;s=65648b36afa574511f0c758978d373cd3e103628",
+                  "width": 320,
+                  "height": 167
+                },
+                {
+                  "url": "https://external-preview.redd.it/T7uArTP0a-D0qClZEzGW_eqgzoVXoZiFroi4ey84R9M.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=eb3ce98280451e6398751ca37cf8c8c160e63fc9",
+                  "width": 640,
+                  "height": 334
+                },
+                {
+                  "url": "https://external-preview.redd.it/T7uArTP0a-D0qClZEzGW_eqgzoVXoZiFroi4ey84R9M.jpeg?width=960&amp;crop=smart&amp;auto=webp&amp;s=4911ff382d6b39537a6463dee05a9de81a3dbeeb",
+                  "width": 960,
+                  "height": 502
+                },
+                {
+                  "url": "https://external-preview.redd.it/T7uArTP0a-D0qClZEzGW_eqgzoVXoZiFroi4ey84R9M.jpeg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=a80ad2af6b78d344ddd9ca5ba862c4dd6b3be398",
+                  "width": 1080,
+                  "height": 565
+                }
+              ],
+              "variants": {},
+              "id": "T7uArTP0a-D0qClZEzGW_eqgzoVXoZiFroi4ey84R9M"
+            }
+          ],
+          "enabled": false
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "InterstellarKinetics",
+          "ups": 1,
+          "body": "The most important line in the Pentagon’s filing is the one arguing that Anthropic’s ability to remotely modify or disable its models during active operations is what makes it a supply chain risk, not its ethics policies in isolation. The government is essentially saying: we cannot build military infrastructure on top of a system whose owner retains a kill switch. That framing, if it holds up in court, would apply to every AI company with remote update capabilities, which is all of them. Does Anthropic’s position make AI safety stronger by drawing a line, or weaker by proving that safety commitments are a legal liability in the most powerful procurement market in the world?"
+        }
+      ]
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "InterstellarKinetics",
+      "url": "https://i.redd.it/snoovatar/avatars/829eb4ed-ecee-41f5-be69-8d98d8c18721.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/ai-fearmongering/runs/2026-03-23T18-22-29-797Z/avatars/InterstellarKinetics.png",
+      "fetchedAt": "2026-03-23T18:22:41.316Z"
+    }
+  }
+]

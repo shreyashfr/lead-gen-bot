@@ -20,7 +20,7 @@
 ## Setup
 
 - OpenClaw running on AWS (ip-172-31-30-132)
-- Telegram bot: @Ayush_Content_Engine_bot (paired 2026-03-05)
+- Telegram bot (Content Engine): @shr488bot (paired 2026-03-05)
 - Web UI: accessible via token auth
 - Workspace has a Content Engine skill suite (built for Ayush Singh's content pipeline)
 

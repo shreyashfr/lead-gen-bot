@@ -1,0 +1,345 @@
+[
+  {
+    "id": "2030248407324143989",
+    "text": "if you left software engineering in 2024 and came back in 2026, you would've missed:\n\nMCP/A2A\nRAG\nProompt Engineering\nAI tab complete\n\nSo basically not much because that's all irrelevant now",
+    "author_name": "Sahaj",
+    "author_handle": "@iamsahaj_xyz",
+    "metrics": {
+      "likes": 1800,
+      "retweets": 45,
+      "replies": 34,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1.9,
+    "url": "https://x.com/iamsahaj_xyz/status/2030248407324143989"
+  },
+  {
+    "id": "1995108099007693206",
+    "text": "RAG was never the end goal.\n\nMemory in AI agents is where everything is heading. Let me break down this evolution in the simplest way possible.\n\nRAG (2020-2023):\n\n- Retrieve info once, generate response\n- No decision-making, just fetch and answer\n- Problem: Often retrieves",
+    "author_name": "Akshay ",
+    "author_handle": "@akshay_pachaar",
+    "metrics": {
+      "likes": 1200,
+      "retweets": 262,
+      "replies": 58,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1.8,
+    "url": "https://x.com/akshay_pachaar/status/1995108099007693206"
+  },
+  {
+    "id": "2004808423054213383",
+    "text": "Most people will still be “learning AI” in 2026.\n\nA small group will be shipping, automating, and replacing workflows with it.\n\nThese 9 skills decide which side you’re on \n\n• Prompt Engineering\n(ChatGPT, Claude, Gemini)\n\n• AI Workflow Automation\n(Zapier, Make, n8n)\n\n• AI",
+    "author_name": "Suryansh Tiwari",
+    "author_handle": "@Suryanshti777",
+    "metrics": {
+      "likes": 1000,
+      "retweets": 288,
+      "replies": 165,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G9KCnyLbgAAnxsd?format=jpg&name=small"
+    ],
+    "viral_score": 1.7,
+    "url": "https://x.com/Suryanshti777/status/2004808423054213383"
+  },
+  {
+    "id": "1864018591433294224",
+    "text": "Basic RAG \nBM25/Sparse RAG \nReRanker RAG \nHybrid RAG \n Sentence Window RAG \n Auto Merging RAG \n HyDE RAG \n Query Transformation RAG \n Self Query RAG \n RAG Fusion \n RAPTOR \n ColBERT RAG \n Graph RAG \n Agnetic RAG  \n Vision RAG",
+    "author_name": "Adithya S K",
+    "author_handle": "@adithya_s_k",
+    "metrics": {
+      "likes": 1100,
+      "retweets": 160,
+      "replies": 9,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1.4,
+    "url": "https://x.com/adithya_s_k/status/1864018591433294224"
+  },
+  {
+    "id": "2028087631268188412",
+    "text": "RAG was never the end goal.\n\nMemory in AI agents is where everything is heading. Let me break down this evolution in the simplest way possible.\n\nRAG (2020-2023):\n\n- Retrieve info once, generate response\n- No decision-making, just fetch and answer\n- Problem: Often retrieves",
+    "author_name": "Akshay ",
+    "author_handle": "@akshay_pachaar",
+    "metrics": {
+      "likes": 810,
+      "retweets": 147,
+      "replies": 50,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1.2,
+    "url": "https://x.com/akshay_pachaar/status/2028087631268188412"
+  },
+  {
+    "id": "2023978105606676821",
+    "text": "Don't pick a RAG architecture. Pick a use case.\n\nGeneral-purpose QA:\n→ Standard RAG\n\nPersonal assistants, research aids:\n→ Agentic RAG\n\nExpert systems (medicine, law, engineering):\n→ Graph RAG\n\nLarge projects with frequent updates:\n→ Modular RAG\n\nChatbots with long-term",
+    "author_name": "Tech with Mak",
+    "author_handle": "@techNmak",
+    "metrics": {
+      "likes": 766,
+      "retweets": 177,
+      "replies": 29,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HBadU1waAAAHPEa?format=jpg&name=small"
+    ],
+    "viral_score": 1.1,
+    "url": "https://x.com/techNmak/status/2023978105606676821"
+  },
+  {
+    "id": "2028514380963536918",
+    "text": "You don't need to write a single line of code to build a full AI agent with RAG, memory, and tool calling in 2026.\n\nI know that sounds like a lie. But It's not.\n\nFlowise is an open source drag and drop builder for LLM apps and it's the most slept-on AI tool I've seen this year.",
+    "author_name": "Ihtesham Ali",
+    "author_handle": "@ihtesham2005",
+    "metrics": {
+      "likes": 715,
+      "retweets": 89,
+      "replies": 45,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/ihtesham2005/status/2028514380963536918"
+  },
+  {
+    "id": "2008871243848826891",
+    "text": "How did we go from vanilla RAG to agentic RAG SO fast?\n\nJust some years ago, we were excited about basic retrieval-augmented generation. \n\nNow we're building full AI agents that can reason, plan, and use multiple tools autonomously.\n\nHere's what changed everything:",
+    "author_name": "Femke Plantinga",
+    "author_handle": "@femke_plantinga",
+    "metrics": {
+      "likes": 624,
+      "retweets": 138,
+      "replies": 25,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G-DPjrnX0AAXPH9?format=png&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/femke_plantinga/status/2008871243848826891"
+  },
+  {
+    "id": "2016038430220943679",
+    "text": "RAG was never the end goal.\n\nMemory in AI agents is where everything is heading. Let me break down this evolution in the simplest way possible.\n\nRAG (2020-2023):\n\n- Retrieve info once, generate response\n- No decision-making, just fetch and answer\n- Problem: Often retrieves",
+    "author_name": "Avi Chawla",
+    "author_handle": "@_avichawla",
+    "metrics": {
+      "likes": 562,
+      "retweets": 90,
+      "replies": 26,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/_avichawla/status/2016038430220943679"
+  },
+  {
+    "id": "2029941075817943132",
+    "text": "RAG is no longer just search + LLM\nIt’s a full AI system architecture\n\nA strong RAG pipeline depends on 5 things:\n\n1. Extraction – clean data from PDFs, Slack, Notion, databases\nGarbage in → garbage out\n\n2. Embeddings – chunk size, model choice, metadata\nSmall tweaks = big",
+    "author_name": "Vaishnavi",
+    "author_handle": "@_vmlops",
+    "metrics": {
+      "likes": 434,
+      "retweets": 99,
+      "replies": 25,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HCvMpm_b0AAAUW2?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/_vmlops/status/2029941075817943132"
+  },
+  {
+    "id": "2014325793560932483",
+    "text": "Everyone is learning ChatGPT.\n\nAlmost no one is learning how AI actually works.\nThese 12 AI skills will matter way more in 2026.  \n\n{Bookmark for later}\n\n• Prompt engineering (clear inputs = better outputs)\n\n• AI agents & multi-agent systems\n\n• Workflow automation (Zapier,",
+    "author_name": "Ejaz Bashir",
+    "author_handle": "@Ejaz_bashir1",
+    "metrics": {
+      "likes": 380,
+      "retweets": 85,
+      "replies": 59,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G_RSnsHbAAAK0P2?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/Ejaz_bashir1/status/2014325793560932483"
+  },
+  {
+    "id": "2028003914310734116",
+    "text": "High-Demand & High Paying Tech Skills for 2026 \n\n1. Cloud Engineering (AWS | Azure | GCP)\n2. DevOps & Automation (CI/CD | IaC | GitOps)\n3. Kubernetes & Containers\n4. Cybersecurity & Cloud Security\n5. Data Engineering \n6. AI/ML Integration (LLMs, RAG, MLOps)\n7. Platform",
+    "author_name": "Edison",
+    "author_handle": "@CodeEdison",
+    "metrics": {
+      "likes": 299,
+      "retweets": 41,
+      "replies": 14,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/CodeEdison/status/2028003914310734116"
+  },
+  {
+    "id": "2007066253807210600",
+    "text": "Most people will still be “learning AI” in 2026.\n\nA small group will be shipping, automating, and replacing workflows with it.\n\nThese 9 skills decide which side you’re on \n\n• Prompt Engineering\n(ChatGPT, Claude, Gemini)\n\n• AI Workflow Automation\n(Zapier, Make, n8n)\n\n• AI",
+    "author_name": "Suryansh Tiwari",
+    "author_handle": "@Suryanshti777",
+    "metrics": {
+      "likes": 269,
+      "retweets": 74,
+      "replies": 53,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G9qIHRybsAE5YaA?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/Suryanshti777/status/2007066253807210600"
+  },
+  {
+    "id": "2006635663912013975",
+    "text": "Most people will still be “learning AI” in 2026.\n\nA small group will be shipping, automating, and replacing workflows with it.\n\nThese 9 skills decide which side you’re on \n\n• Prompt Engineering\n(ChatGPT, Claude, Gemini)\n\n• AI Workflow Automation\n(Zapier, Make, n8n)\n\n• AI",
+    "author_name": "Suryansh Tiwari",
+    "author_handle": "@Suryanshti777",
+    "metrics": {
+      "likes": 269,
+      "retweets": 60,
+      "replies": 71,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G9kAfm3aMAEdZhL?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/Suryanshti777/status/2006635663912013975"
+  },
+  {
+    "id": "2000967807333491131",
+    "text": "Stop building Goldfish AI.\n\nMost RAG systems have zero memory. They retrieve, answer, and immediately forget everything. They are Stateless.\n\nTo build true Agents in 2026, we must move beyond simple retrieval. Here is the full evolution of Agent Memory:\n\n1. The Evolution of State",
+    "author_name": "Rohit",
+    "author_handle": "@rohit4verse",
+    "metrics": {
+      "likes": 257,
+      "retweets": 41,
+      "replies": 19,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G8TdhngbIAAAyvx?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/rohit4verse/status/2000967807333491131"
+  },
+  {
+    "id": "1864323934331478431",
+    "text": "A quick introduction for those who'd like a 𝗿𝗲𝗳𝗿𝗲𝘀𝗵𝗲𝗿 𝗼𝗻 𝗥𝗔𝗚 or missed THE 2024 AI hype \n\n(Since 2024 isn't over yet, I'll take my chance to explain it)\n\nMary wrote this amazing introductory blog post for \n@weaviate_io\n, and I thought, why not make a video about it?",
+    "author_name": "Femke Plantinga",
+    "author_handle": "@femke_plantinga",
+    "metrics": {
+      "likes": 223,
+      "retweets": 44,
+      "replies": 7,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/femke_plantinga/status/1864323934331478431"
+  },
+  {
+    "id": "2028795301423886352",
+    "text": "Most people will still be “learning AI” in 2026.\n\nA small group will be shipping, automating, and replacing workflows with it.\n\nThese 9 skills decide which side you’re on \n\n• Prompt Engineering\n(ChatGPT, Claude, Gemini)\n\n• AI Workflow Automation\n(Zapier, Make, n8n)\n\n• AI",
+    "author_name": "Swadesh Kumar",
+    "author_handle": "@swadeshkumar_",
+    "metrics": {
+      "likes": 208,
+      "retweets": 55,
+      "replies": 56,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HCe6kdDaEAA6mxU?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/swadeshkumar_/status/2028795301423886352"
+  },
+  {
+    "id": "2017102989065081013",
+    "text": "Everyone is learning ChatGPT\n\nAlmost no one is learning how AI actually works.\n\nThese 12 AI skills will matter more in 2026 \n\n• Prompt engineering (clear inputs = better outputs)\n\n• AI agents & multi-agent systems\n\n• Workflow automation (Zapier, Make, n8n)\n• RAG: connect",
+    "author_name": "Ejaz Bashir",
+    "author_handle": "@Ejaz_bashir1",
+    "metrics": {
+      "likes": 84,
+      "retweets": 24,
+      "replies": 23,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G_4weG1asAAmzVP?format=jpg&name=small",
+      "https://pbs.twimg.com/media/G_1-87kbUAAVy5M?format=jpg&name=240x240"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/Ejaz_bashir1/status/2017102989065081013"
+  },
+  {
+    "id": "2024442003686379912",
+    "text": "If you’re serious about AI Agents, RAG, and production LLM systems.\n\nStop watching random YouTube tutorials.\n\nHere are 12 courses that actually matter in 2026.\n\nReply “AI” and I’ll share the full list.",
+    "author_name": "Neeraj",
+    "author_handle": "@neerajjj6785",
+    "metrics": {
+      "likes": 20,
+      "retweets": 2,
+      "replies": 6,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HBhC8U-bUAAznsk?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/neerajjj6785/status/2024442003686379912"
+  },
+  {
+    "id": "2034268779132387657",
+    "text": "Let's start with this.\n\nWhat problem does RAG actually solve?\n\nLLMs are frozen in time.\n\nChatGPT, Claude, Gemini they all have a knowledge cutoff. Ask them about something that happened last week and they'll either hallucinate or admit they don't know.\n\nRAG fixes this by giving",
+    "author_name": "Ihtesham Ali",
+    "author_handle": "@ihtesham2005",
+    "metrics": {
+      "likes": 3,
+      "retweets": 0,
+      "replies": 1,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/ihtesham2005/status/2034268779132387657"
+  }
+]

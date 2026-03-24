@@ -1,0 +1,16 @@
+{
+  "pillar": "RAG",
+  "created": "2026-03-22",
+  "pieces": [
+    { "n": 1, "format": "LinkedIn Post", "hook": "'RAG is dead' — wrong take, wrong reason", "angle": "Defend RAG as infrastructure, not hype. Builders who dismiss it never served real queries at scale.", "status": "pending" },
+    { "n": 2, "format": "LinkedIn Post", "hook": "Agentic RAG is not smarter RAG. It's a different architecture.", "angle": "Classic RAG is a pipeline. Agentic RAG is a control loop. Break down the architectural difference.", "status": "pending" },
+    { "n": 3, "format": "LinkedIn Post", "hook": "Agents need vector search more than they need RAG", "angle": "Retrieval quality > generation quality for agentic systems. What changed on AI Employee.", "status": "pending" },
+    { "n": 4, "format": "LinkedIn Post", "hook": "RAG for Indian SMBs: the gap nobody is filling", "angle": "What breaks in generic RAG stacks for Indian SMB contexts — Hinglish queries, scanned PDFs, regional spelling.", "status": "pending" },
+    { "n": 5, "format": "LinkedIn Post", "hook": "The RAG security problem your deployment doesn't account for", "angle": "Adversarial hubness attacks on RAG — poisoned vectors that always get retrieved. How to defend.", "status": "pending" },
+    { "n": 6, "format": "LinkedIn Post", "hook": "Why 90% of RAG demos fail in production (it's not the model)", "angle": "Retrieval quality, chunk strategy, evaluation. Most builders skip eval entirely.", "status": "pending" },
+    { "n": 7, "format": "LinkedIn Post", "hook": "Stop building RAG prototypes. Start building RAG systems.", "angle": "The evaluation gap between 80% demo accuracy and 99% production accuracy. How to build an eval loop first.", "status": "pending" },
+    { "n": 8, "format": "LinkedIn Post", "hook": "The chunking decision that broke my RAG system (and the fix)", "angle": "Fixed vs semantic vs hierarchical chunking. When each breaks. What AI Employee's catalogue queries needed.", "status": "pending" },
+    { "n": 9, "format": "LinkedIn Post", "hook": "Why I didn't use Mem0 for AI Employee's memory layer", "angle": "Vertical memory beats horizontal. Mem0 is a building block, not a solution for Indian SMB customer service.", "status": "pending" },
+    { "n": 10, "format": "LinkedIn Post", "hook": "3 RAG failures specific to Indian SMB contexts", "angle": "Hinglish query breakdowns. Scanned PDF catalogues losing metadata. Regional spelling variation + embeddings.", "status": "pending" }
+  ]
+}

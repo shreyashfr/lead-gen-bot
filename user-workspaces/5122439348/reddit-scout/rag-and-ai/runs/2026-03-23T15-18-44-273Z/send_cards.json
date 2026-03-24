@@ -1,0 +1,35 @@
+{
+  "n": 5,
+  "cards": [
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/5122439348/reddit-scout/rag-and-ai/runs/2026-03-23T15-18-44-273Z/cards/1s15lwr.png",
+      "caption": "1) naunsa deay nis Mikyath?\nr/davao · score 89 · 85 ups · 241 comments\nhttps://www.reddit.com/r/davao/comments/1s15lwr/naunsa_deay_nis_mikyath/",
+      "permalink": "https://www.reddit.com/r/davao/comments/1s15lwr/naunsa_deay_nis_mikyath/",
+      "id": "1s15lwr"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/5122439348/reddit-scout/rag-and-ai/runs/2026-03-23T15-18-44-273Z/cards/1rzg33q.png",
+      "caption": "2) Feedback on my 256gb VRAM local setup and cluster plans. Lawyer keeping it local.\nr/LocalLLaMA · score 25 · 404 ups · 220 comments\nhttps://www.reddit.com/r/LocalLLaMA/comments/1rzg33q/feedback_on_my_256gb_vram_local_setup_and_cluster/",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1rzg33q/feedback_on_my_256gb_vram_local_setup_and_cluster/",
+      "id": "1rzg33q"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/5122439348/reddit-scout/rag-and-ai/runs/2026-03-23T15-18-44-273Z/cards/1s0x7va.png",
+      "caption": "3) LLM failure modes map surprisingly well onto ADHD cognitive science. Six parallels from independent research.\nr/ClaudeAI · score 20 · 137 ups · 32 comments\nhttps://www.reddit.com/r/ClaudeAI/comments/1s0x7va/llm_failure_modes_map_surprisingly_well_onto_adhd/",
+      "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1s0x7va/llm_failure_modes_map_surprisingly_well_onto_adhd/",
+      "id": "1s0x7va"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/5122439348/reddit-scout/rag-and-ai/runs/2026-03-23T15-18-44-273Z/cards/1s0vrxx.png",
+      "caption": "4) I spent months reading ADHD and neuroscience papers. I keep finding the same failure modes in my brain and in LLMs.\nr/ADHD_Programmers · score 10 · 64 ups · 31 comments\nhttps://www.reddit.com/r/ADHD_Programmers/comments/1s0vrxx/i_spent_months_reading_adhd_and_neuroscience/",
+      "permalink": "https://www.reddit.com/r/ADHD_Programmers/comments/1s0vrxx/i_spent_months_reading_adhd_and_neuroscience/",
+      "id": "1s0vrxx"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/5122439348/reddit-scout/rag-and-ai/runs/2026-03-23T15-18-44-273Z/cards/1s09xbp.png",
+      "caption": "5) Eight months of applying and I still have no idea if I am doing something wrong or if the market is just broken.\nr/jobhunting · score 9 · 122 ups · 30 comments\nhttps://www.reddit.com/r/jobhunting/comments/1s09xbp/eight_months_of_applying_and_i_still_have_no_idea/",
+      "permalink": "https://www.reddit.com/r/jobhunting/comments/1s09xbp/eight_months_of_applying_and_i_still_have_no_idea/",
+      "id": "1s09xbp"
+    }
+  ]
+}

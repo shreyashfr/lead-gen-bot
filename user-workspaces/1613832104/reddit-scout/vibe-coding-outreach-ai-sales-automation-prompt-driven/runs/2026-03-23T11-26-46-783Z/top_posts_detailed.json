@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "1s0vcmt",
+    "subreddit": "webdev",
+    "title": "I'm a FE lead, and a new PM in the org wants to start pushing \"vibe coded\" slop to the my codebase.",
+    "selftext": "EDIT: don't you just love when you mess up the title of your post :( \n\nSo, this new person joined our org. Great guy, very enthusiastic, super nice and eager to learn. Extremely AI oriented. Within his first month he vibe coded a tech radar, and some POCs for clients to show them examples of how their apps would look like.\n\nGreat, right? But now we're starting a new agentic type approach to building projects, and he's starting to say that his vision is that \"everybody should be able to push and commit to the codebase\". I've already said: everybody has their domain. I'm responsible for FE, the backend lead for the backend and the PMs are responsible for client communication, clear jira overviews &amp; ticket acceptation criteria.\n\nExcept he keeps pushing for this. I have a great relationship with my manager, and I'm this close to tell him I will take my hands off this project if I'm going to be forced to stop my work to review AI slop that was generated with no idea about standards, security and architecturally sound decisions. This will eat up my time by forcing me to thoroughly review this and waste my time that could be spent actually creating value.\n\nAnybody in the same boat? I'm going insane, they don't seem to understand that what they build is horrible from a dev perspective. He once made a POC and it was a hot pile of garbage.\n\nLord save me.",
+    "author": "rm-rf-npr",
+    "created_utc": 1774208971,
+    "permalink": "https://www.reddit.com/r/webdev/comments/1s0vcmt/im_a_fe_lead_and_a_new_pm_in_the_org_wants_to/",
+    "url": "https://www.reddit.com/r/webdev/comments/1s0vcmt/im_a_fe_lead_and_a_new_pm_in_the_org_wants_to/",
+    "domain": "self.webdev",
+    "is_self": true,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 464,
+    "score": 464,
+    "num_comments": 241,
+    "upvote_ratio": 0.91,
+    "thumbnail": "self",
+    "media": null,
+    "post_hint": null,
+    "listing": "search:top:week",
+    "viral_score": 136.70250697614736,
+    "detail": {
+      "post": {
+        "id": "1s0vcmt",
+        "title": "I'm a FE lead, and a new PM in the org wants to start pushing \"vibe coded\" slop to the my codebase.",
+        "selftext": "EDIT: don't you just love when you mess up the title of your post :( \n\nSo, this new person joined our org. Great guy, very enthusiastic, super nice and eager to learn. Extremely AI oriented. Within his first month he vibe coded a tech radar, and some POCs for clients to show them examples of how their apps would look like.\n\nGreat, right? But now we're starting a new agentic type approach to building projects, and he's starting to say that his vision is that \"everybody should be able to push and commit to the codebase\". I've already said: everybody has their domain. I'm responsible for FE, the backend lead for the backend and the PMs are responsible for client communication, clear jira overviews &amp; ticket acceptation criteria.\n\nExcept he keeps pushing for this. I have a great relationship with my manager, and I'm this close to tell him I will take my hands off this project if I'm going to be forced to stop my work to review AI slop that was generated with no idea about standards, security and architecturally sound decisions. This will eat up my time by forcing me to thoroughly review this and waste my time that could be spent actually creating value.\n\nAnybody in the same boat? I'm going insane, they don't seem to understand that what they build is horrible from a dev perspective. He once made a POC and it was a hot pile of garbage.\n\nLord save me.",
+        "author": "rm-rf-npr",
+        "subreddit": "webdev",
+        "created_utc": 1774208971,
+        "ups": 460,
+        "num_comments": 241,
+        "upvote_ratio": 0.91,
+        "permalink": "https://www.reddit.com/r/webdev/comments/1s0vcmt/im_a_fe_lead_and_a_new_pm_in_the_org_wants_to/",
+        "url": "https://www.reddit.com/r/webdev/comments/1s0vcmt/im_a_fe_lead_and_a_new_pm_in_the_org_wants_to/",
+        "is_self": true,
+        "post_hint": null,
+        "thumbnail": "self",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": null,
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "Dagoneth",
+          "ups": 275,
+          "body": "For me, the general rule is that the code you push, you are responsible for - ie, you better understand what is being committed. If you’ve generated your code, great, but you have to read and know exactly what it does. \n\nSo in your case, let him raise his code, then ask him a load of questions about what it does, why it does it, ensure it meets the standards etc. If he can’t do that, then after a few times, he’ll get it and back off. If he can… well, that’s a good thing, right?"
+        },
+        {
+          "author": "404IdentityNotFound",
+          "ups": 217,
+          "body": "Tell him \"sure, you can submit your code in form of a PR to the codebase. The respective developer will then do a QA pass as it has been done with every previous change to keep our products quality at the high standard it is. You are then responsible to implement potential changes based on PR comments\"."
+        },
+        {
+          "author": "codeveil_dev",
+          "ups": 141,
+          "body": "The issue isn’t who typed the code. It’s who owns the consequences. If they can push AI-generated code but engineering still has to review, secure, debug, and maintain it, that’s not leverage - that’s just outsourced mess creation."
+        }
+      ]
+    },
+    "author_avatar": {
+      "user": "rm-rf-npr",
+      "url": "https://i.redd.it/snoovatar/avatars/2a1bdd25-0ceb-481a-9008-4d91673d316b.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1613832104/reddit-scout/vibe-coding-outreach-ai-sales-automation-prompt-driven/runs/2026-03-23T11-26-46-783Z/avatars/rm-rf-npr.png",
+      "fetchedAt": "2026-03-23T11:27:20.938Z"
+    }
+  },
+  {
+    "id": "1rzmfyd",
+    "subreddit": "ClaudeAI",
+    "title": "Anthropic's research proves AI coding tools are secretly making developers worse.",
+    "selftext": "\"AI use impairs conceptual understanding, code reading, and debugging without delivering significant efficiency gains.\" -- That's the paper's actual conclusion.  \n  \n17% score drop learning new libraries with AI.   \nSub-40% scores when AI wrote everything.   \n0 measurable speed improvement.  \n  \n→ Prompting replaces thinking, not just typing   \n→ Comprehension gaps compound — you ship code you can't debug   \n→ The productivity illusion hides until something breaks in prod  \n  \nHere's why this changes everything:  \n  \nSpeed metrics look fine on a dashboard.   \nUnderstanding gaps don't show up until a critical failur and when they do the whole team is lost.  \n  \nForcing AI adoption for \"10x output\" is a slow-burning technical debt nobody is measuring.",
+    "author": "alazar_tesema",
+    "created_utc": 1774082476,
+    "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1rzmfyd/anthropics_research_proves_ai_coding_tools_are/",
+    "url": "https://i.redd.it/8pxfgqkv1dqg1.jpeg",
+    "domain": "i.redd.it",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 1491,
+    "score": 1491,
+    "num_comments": 237,
+    "upvote_ratio": 0.91,
+    "thumbnail": "https://preview.redd.it/8pxfgqkv1dqg1.jpeg?width=140&amp;height=109&amp;auto=webp&amp;s=0034e700ee3e060327711ca49cc90e6c1c8945dc",
+    "media": null,
+    "post_hint": "image",
+    "listing": "search:top:week",
+    "viral_score": 86.5125268296692,
+    "detail": {
+      "post": {
+        "id": "1rzmfyd",
+        "title": "Anthropic's research proves AI coding tools are secretly making developers worse.",
+        "selftext": "\"AI use impairs conceptual understanding, code reading, and debugging without delivering significant efficiency gains.\" -- That's the paper's actual conclusion.  \n  \n17% score drop learning new libraries with AI.   \nSub-40% scores when AI wrote everything.   \n0 measurable speed improvement.  \n  \n→ Prompting replaces thinking, not just typing   \n→ Comprehension gaps compound — you ship code you can't debug   \n→ The productivity illusion hides until something breaks in prod  \n  \nHere's why this changes everything:  \n  \nSpeed metrics look fine on a dashboard.   \nUnderstanding gaps don't show up until a critical failur and when they do the whole team is lost.  \n  \nForcing AI adoption for \"10x output\" is a slow-burning technical debt nobody is measuring.",
+        "author": "alazar_tesema",
+        "subreddit": "ClaudeAI",
+        "created_utc": 1774082476,
+        "ups": 1488,
+        "num_comments": 237,
+        "upvote_ratio": 0.91,
+        "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1rzmfyd/anthropics_research_proves_ai_coding_tools_are/",
+        "url": "https://i.redd.it/8pxfgqkv1dqg1.jpeg",
+        "is_self": false,
+        "post_hint": "image",
+        "thumbnail": "https://preview.redd.it/8pxfgqkv1dqg1.jpeg?width=140&amp;height=109&amp;auto=webp&amp;s=0034e700ee3e060327711ca49cc90e6c1c8945dc",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://preview.redd.it/8pxfgqkv1dqg1.jpeg?auto=webp&amp;s=1a5a7c54ee857c39e1a1ad324ad81bdb3bec76f5",
+                "width": 1392,
+                "height": 1092
+              },
+              "resolutions": [
+                {
+                  "url": "https://preview.redd.it/8pxfgqkv1dqg1.jpeg?width=108&amp;crop=smart&amp;auto=webp&amp;s=18b9a9945a8c1f2d45c58953036df9fe18fd3d4d",
+                  "width": 108,
+                  "height": 84
+                },
+                {
+                  "url": "https://preview.redd.it/8pxfgqkv1dqg1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=b90125a7086c77189bc0bceb978fe5d9d9adf5e6",
+                  "width": 216,
+                  "height": 169
+                },
+                {
+                  "url": "https://preview.redd.it/8pxfgqkv1dqg1.jpeg?width=320&amp;crop=smart&amp;auto=webp&amp;s=559ffda542ffdd6b0ffd2945ecc636494da31914",
+                  "width": 320,
+                  "height": 251
+                },
+                {
+                  "url": "https://preview.redd.it/8pxfgqkv1dqg1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=3e60c0e32cb9d79127379989a40cf47565cbdb84",
+                  "width": 640,
+                  "height": 502
+                },
+                {
+                  "url": "https://preview.redd.it/8pxfgqkv1dqg1.jpeg?width=960&amp;crop=smart&amp;auto=webp&amp;s=efffc2e203287375999abc06efdc6fe6c95e4093",
+                  "width": 960,
+                  "height": 753
+                },
+                {
+                  "url": "https://preview.redd.it/8pxfgqkv1dqg1.jpeg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=9c60457ecdb0f712830be758e80dee399413d30b",
+                  "width": 1080,
+                  "height": 847
+                }
+              ],
+              "variants": {},
+              "id": "8pxfgqkv1dqg1"
+            }
+          ],
+          "enabled": true
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "ryo0ka",
+          "ups": 290,
+          "body": "“Here’s why this changes everything” lol thanks Claude "
+        },
+        {
+          "author": "TrafficOk2678",
+          "ups": 270,
+          "body": "Did you think you can become a god without sacrifice?"
+        },
+        {
+          "author": "BadgeCatcher",
+          "ups": 77,
+          "body": "High level languages made people bad at assembly too... "
+        }
+      ]
+    },
+    "media_extracted": {
+      "type": "image",
+      "url": "https://i.redd.it/8pxfgqkv1dqg1.jpeg",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1613832104/reddit-scout/vibe-coding-outreach-ai-sales-automation-prompt-driven/runs/2026-03-23T11-26-46-783Z/media/1rzmfyd.jpg",
+      "contentType": "image/jpeg",
+      "bytes": 290553
+    },
+    "author_avatar": {
+      "user": "alazar_tesema",
+      "url": "https://i.redd.it/snoovatar/avatars/c77d06e4-aa81-45dc-ba9f-912cb5210b5a.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1613832104/reddit-scout/vibe-coding-outreach-ai-sales-automation-prompt-driven/runs/2026-03-23T11-26-46-783Z/avatars/alazar_tesema.png",
+      "fetchedAt": "2026-03-23T11:27:22.408Z"
+    }
+  },
+  {
+    "id": "1rz59g4",
+    "subreddit": "vibecoding",
+    "title": "My vibe coded 3D city hit 66K users and $953 revenue in 29 days. Here's what a solo dev + AI can do with $0 marketing.",
+    "selftext": "https://reddit.com/link/1rz59g4/video/glvcz06t09qg1/player\n\n24 days ago I posted here about vibe coding a 3D city with Claude, 21,000 lines, every GitHub dev is a building. That post got 701 upvotes and 106K views.\n\nSince then, the project exploded. Here's what happened.\n\n**Still 100% vibe coded with Claude.** 176 commits later, the AI handled the ad platform, payment integrations (Stripe + PIX), PvP raid system, achievement engine, daily missions, XP leveling, fly mode, a full sky ad analytics dashboard, and a VS Code extension. I focused on architecture decisions, UX direction, visual design, and performance debugging.\n\n**The numbers (29 days, Feb 19 - Mar 20):**\n\n* 66,272 developers in the city\n* 29,103 logged in with GitHub\n* 120,733 unique visitors\n* 449,436 pageviews\n* 22.8% bounce rate\n* 487 peak concurrent users\n* 4,238 GitHub stars, 200+ forks\n* 568 Discord members\n\n**Traffic sources (all organic, $0 spent):**\n\n* GitHub: 36K\n* Google: 33K\n* Twitter/X: 11K\n* LinkedIn: 3.2K\n* Instagram: 3.1K\n\nNobody asked anyone to share it. The community just started posting about their buildings on social media. Over 3M impressions from organic posts.\n\n**The part I didn't expect:**\n\nBrands started showing up wanting to advertise inside the city. So I vibe coded an ad platform where companies can run planes, blimps, billboards, and rooftop signs in the 3D world.\n\n* 40+ brands advertised\n* 2.2M ad impressions\n* \\~1% CTR (display ad average is 0.1-0.5%)\n* 43 advertiser accounts\n\nI also added sponsored landmarks — companies can have their own custom building in the city. Four companies are already doing this.\n\n**Revenue:**\n\n$953 total. I know it's not a lot, but:\n\n* Customer acquisition cost: $0\n* I'm one person + Claude\n* The ad platform and shop launched in the first weeks, sponsored landmarks just 2 days ago\n* MRR is $96 from 3 active ad subscriptions\n\n**What Claude built (that I couldn't have done alone in 29 days):**\n\n* Instanced rendering for 66K+ buildings at 60fps\n* Full PvP raid system with attack/defense scoring\n* Achievement engine (55K unlocked so far)\n* Daily mission system (33K completed)\n* XP leveling with 25 levels and 6 tiers\n* Sky ad platform with impression/click tracking and analytics dashboard\n* Stripe + AbacatePay payment integrations\n* Supabase auth + RLS policies\n* Notification system (email, push, in-app)\n* VS Code extension for live coding sessions\n\n**What I had to do:**\n\n* Architecture decisions (what to build, in what order)\n* UX flow and feature prioritization\n* Visual design direction\n* Performance debugging and optimization\n* Business decisions (pricing, what features to monetize)\n* Community management\n\n**Engagement:**\n\n* 106K building visits\n* 33K daily missions completed\n* 9,500 PvP raids\n* 55K achievements unlocked\n* 197K XP events\n* 3,472 building customizations\n\nPeople aren't just visiting once. They're playing daily, raiding each other, completing missions, and checking their streaks.",
+    "author": "SupermarketKey1196",
+    "created_utc": 1774033745,
+    "permalink": "https://www.reddit.com/r/vibecoding/comments/1rz59g4/my_vibe_coded_3d_city_hit_66k_users_and_953/",
+    "url": "https://www.reddit.com/r/vibecoding/comments/1rz59g4/my_vibe_coded_3d_city_hit_66k_users_and_953/",
+    "domain": "self.vibecoding",
+    "is_self": true,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 486,
+    "score": 486,
+    "num_comments": 125,
+    "upvote_ratio": 0.86,
+    "thumbnail": "self",
+    "media": null,
+    "post_hint": null,
+    "listing": "search:top:week",
+    "viral_score": 20.86872734203333,
+    "detail": {
+      "post": {
+        "id": "1rz59g4",
+        "title": "My vibe coded 3D city hit 66K users and $953 revenue in 29 days. Here's what a solo dev + AI can do with $0 marketing.",
+        "selftext": "https://reddit.com/link/1rz59g4/video/glvcz06t09qg1/player\n\n24 days ago I posted here about vibe coding a 3D city with Claude, 21,000 lines, every GitHub dev is a building. That post got 701 upvotes and 106K views.\n\nSince then, the project exploded. Here's what happened.\n\n**Still 100% vibe coded with Claude.** 176 commits later, the AI handled the ad platform, payment integrations (Stripe + PIX), PvP raid system, achievement engine, daily missions, XP leveling, fly mode, a full sky ad analytics dashboard, and a VS Code extension. I focused on architecture decisions, UX direction, visual design, and performance debugging.\n\n**The numbers (29 days, Feb 19 - Mar 20):**\n\n* 66,272 developers in the city\n* 29,103 logged in with GitHub\n* 120,733 unique visitors\n* 449,436 pageviews\n* 22.8% bounce rate\n* 487 peak concurrent users\n* 4,238 GitHub stars, 200+ forks\n* 568 Discord members\n\n**Traffic sources (all organic, $0 spent):**\n\n* GitHub: 36K\n* Google: 33K\n* Twitter/X: 11K\n* LinkedIn: 3.2K\n* Instagram: 3.1K\n\nNobody asked anyone to share it. The community just started posting about their buildings on social media. Over 3M impressions from organic posts.\n\n**The part I didn't expect:**\n\nBrands started showing up wanting to advertise inside the city. So I vibe coded an ad platform where companies can run planes, blimps, billboards, and rooftop signs in the 3D world.\n\n* 40+ brands advertised\n* 2.2M ad impressions\n* \\~1% CTR (display ad average is 0.1-0.5%)\n* 43 advertiser accounts\n\nI also added sponsored landmarks — companies can have their own custom building in the city. Four companies are already doing this.\n\n**Revenue:**\n\n$953 total. I know it's not a lot, but:\n\n* Customer acquisition cost: $0\n* I'm one person + Claude\n* The ad platform and shop launched in the first weeks, sponsored landmarks just 2 days ago\n* MRR is $96 from 3 active ad subscriptions\n\n**What Claude built (that I couldn't have done alone in 29 days):**\n\n* Instanced rendering for 66K+ buildings at 60fps\n* Full PvP raid system with attack/defense scoring\n* Achievement engine (55K unlocked so far)\n* Daily mission system (33K completed)\n* XP leveling with 25 levels and 6 tiers\n* Sky ad platform with impression/click tracking and analytics dashboard\n* Stripe + AbacatePay payment integrations\n* Supabase auth + RLS policies\n* Notification system (email, push, in-app)\n* VS Code extension for live coding sessions\n\n**What I had to do:**\n\n* Architecture decisions (what to build, in what order)\n* UX flow and feature prioritization\n* Visual design direction\n* Performance debugging and optimization\n* Business decisions (pricing, what features to monetize)\n* Community management\n\n**Engagement:**\n\n* 106K building visits\n* 33K daily missions completed\n* 9,500 PvP raids\n* 55K achievements unlocked\n* 197K XP events\n* 3,472 building customizations\n\nPeople aren't just visiting once. They're playing daily, raiding each other, completing missions, and checking their streaks.",
+        "author": "SupermarketKey1196",
+        "subreddit": "vibecoding",
+        "created_utc": 1774033745,
+        "ups": 487,
+        "num_comments": 125,
+        "upvote_ratio": 0.86,
+        "permalink": "https://www.reddit.com/r/vibecoding/comments/1rz59g4/my_vibe_coded_3d_city_hit_66k_users_and_953/",
+        "url": "https://www.reddit.com/r/vibecoding/comments/1rz59g4/my_vibe_coded_3d_city_hit_66k_users_and_953/",
+        "is_self": true,
+        "post_hint": null,
+        "thumbnail": "self",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": {
+          "glvcz06t09qg1": {
+            "status": "valid",
+            "e": "RedditVideo",
+            "dashUrl": "https://v.redd.it/link/1rz59g4/asset/glvcz06t09qg1/DASHPlaylist.mpd?a=1776857228%2CMmUwMzM3NjM3ZWQ1MDk4Nzg3MjI3NDJlZTM1MDg0MGRlOGI2MWY1NjVlN2MwODFkZjMwMzg4NTg4NWQ2ZGZhNg%3D%3D&amp;v=1&amp;f=sd",
+            "x": 904,
+            "y": 720,
+            "hlsUrl": "https://v.redd.it/link/1rz59g4/asset/glvcz06t09qg1/HLSPlaylist.m3u8?a=1776857228%2COTYwODkyNGEwNjgyZDVmMmVhZDU0NDcwZGFkNjc3Y2ZkOWQ1YjU5NjcwZDQ3ZjhmNjIzOTQ1YjY2MmVlMGFkOA%3D%3D&amp;v=1&amp;f=sd",
+            "id": "glvcz06t09qg1",
+            "isGif": false
+          }
+        },
+        "preview": null,
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "ginbumboom",
+          "ups": 46,
+          "body": "Congratulations on building the most interesting, unique vibe coded project I have seen on here. I signed up a few weeks ago and greatly enjoyed receiving an email notification the other day letting me know someone assaulted my building. This is an extremely cool idea, well implemented. "
+        },
+        {
+          "author": "MrAcerbic",
+          "ups": 41,
+          "body": "If doesn’t matter if it’s vibe coded. If it’s a good idea and executed well then people are still going to flock to it. "
+        },
+        {
+          "author": "CalvinBuild",
+          "ups": 17,
+          "body": "Well done."
+        }
+      ]
+    },
+    "author_avatar": {
+      "user": "SupermarketKey1196",
+      "url": "https://i.redd.it/snoovatar/avatars/2fe31c48-2a04-427b-a17f-c3aeac6c2c72.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1613832104/reddit-scout/vibe-coding-outreach-ai-sales-automation-prompt-driven/runs/2026-03-23T11-26-46-783Z/avatars/SupermarketKey1196.png",
+      "fetchedAt": "2026-03-23T11:27:23.935Z"
+    }
+  },
+  {
+    "id": "1ry4esw",
+    "subreddit": "AskVibecoders",
+    "title": "Turns your CLI into a high-performance AI coding system. Everything Claude Code. OpenSource(87k+ ⭐)",
+    "selftext": "**Everything Claude Code**\n\nToken optimization  \nSmart model selection + lean prompts = lower cost  \n  \nMemory persistence  \nAuto-save/load context across sessions  \n(No more losing the thread)  \n  \nContinuous learning  \nTurns your past work into reusable skills  \n  \nVerification loops  \nBuilt-in evals to make sure code actually works  \n  \nSubagent orchestration  \nHandles large codebases with iterative retrieval  \n\n\n[Github](https://github.com/affaan-m/everything-claude-code)",
+    "author": "Worldly_Ad_2410",
+    "created_utc": 1773936090,
+    "permalink": "https://www.reddit.com/r/AskVibecoders/comments/1ry4esw/turns_your_cli_into_a_highperformance_ai_coding/",
+    "url": "https://i.redd.it/tidxmhkcy0qg1.png",
+    "domain": "i.redd.it",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 833,
+    "score": 833,
+    "num_comments": 35,
+    "upvote_ratio": 0.98,
+    "thumbnail": "https://preview.redd.it/tidxmhkcy0qg1.png?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=006f98fd299442b062d2a6e4eb195c2dd16b5459",
+    "media": null,
+    "post_hint": "image",
+    "listing": "search:top:week",
+    "viral_score": 17.928491667888455,
+    "detail": {
+      "post": {
+        "id": "1ry4esw",
+        "title": "Turns your CLI into a high-performance AI coding system. Everything Claude Code. OpenSource(87k+ ⭐)",
+        "selftext": "**Everything Claude Code**\n\nToken optimization  \nSmart model selection + lean prompts = lower cost  \n  \nMemory persistence  \nAuto-save/load context across sessions  \n(No more losing the thread)  \n  \nContinuous learning  \nTurns your past work into reusable skills  \n  \nVerification loops  \nBuilt-in evals to make sure code actually works  \n  \nSubagent orchestration  \nHandles large codebases with iterative retrieval  \n\n\n[Github](https://github.com/affaan-m/everything-claude-code)",
+        "author": "Worldly_Ad_2410",
+        "subreddit": "AskVibecoders",
+        "created_utc": 1773936090,
+        "ups": 839,
+        "num_comments": 35,
+        "upvote_ratio": 0.98,
+        "permalink": "https://www.reddit.com/r/AskVibecoders/comments/1ry4esw/turns_your_cli_into_a_highperformance_ai_coding/",
+        "url": "https://i.redd.it/tidxmhkcy0qg1.png",
+        "is_self": false,
+        "post_hint": "image",
+        "thumbnail": "https://preview.redd.it/tidxmhkcy0qg1.png?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=006f98fd299442b062d2a6e4eb195c2dd16b5459",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://preview.redd.it/tidxmhkcy0qg1.png?auto=webp&amp;s=f0df230e7f535035070e60b09a38c97dbfe37044",
+                "width": 720,
+                "height": 900
+              },
+              "resolutions": [
+                {
+                  "url": "https://preview.redd.it/tidxmhkcy0qg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=e29e2c1c844d90c07e73615163ddd289128474bf",
+                  "width": 108,
+                  "height": 135
+                },
+                {
+                  "url": "https://preview.redd.it/tidxmhkcy0qg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=ba7889808f42e75d3a6a26bb4de9fb4eb62ff15b",
+                  "width": 216,
+                  "height": 270
+                },
+                {
+                  "url": "https://preview.redd.it/tidxmhkcy0qg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=7da9d7377aea5637bdd57a2e739df5a29e6d13ff",
+                  "width": 320,
+                  "height": 400
+                },
+                {
+                  "url": "https://preview.redd.it/tidxmhkcy0qg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=ef081401b3d465942eab9bf0c04e28b3c4ace89f",
+                  "width": 640,
+                  "height": 800
+                }
+              ],
+              "variants": {},
+              "id": "tidxmhkcy0qg1"
+            }
+          ],
+          "enabled": true
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "Imaginary-Can6136",
+          "ups": 8,
+          "body": "How can I know that installing this won’t make me subject to prompt injection, or other security issues? It it just a coin toss? Or could I get Claude to review this for security risks effectively prior to downloading?"
+        },
+        {
+          "author": "outlandishsaucer96",
+          "ups": 3,
+          "body": "Nah, Claude reviewing its own code before you install it is peak circular logic (he's literally in the system you're worried about), so just audit the repo yourself or find someone who actually knows what they're doing."
+        },
+        {
+          "author": "cold_grapefruit",
+          "ups": 1,
+          "body": "are these really useful? much better than the raw Claude Code?"
+        }
+      ]
+    },
+    "media_extracted": {
+      "type": "image",
+      "url": "https://i.redd.it/tidxmhkcy0qg1.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1613832104/reddit-scout/vibe-coding-outreach-ai-sales-automation-prompt-driven/runs/2026-03-23T11-26-46-783Z/media/1ry4esw.png",
+      "contentType": "image/png",
+      "bytes": 696996
+    }
+  },
+  {
+    "id": "1ryn86h",
+    "subreddit": "vibecoding",
+    "title": "Vibe code so hard your entire waitlist is visible in frontend",
+    "selftext": "Do this to avoid embarrassment while vibe coding\n\nToday you can build a website in hours.\n\nWebsite feels clean,\nUntil someone opens Inspect.\n\nAnd sees every waitlist email exposed on the frontend.\n\nVibe coding accelerates execution.\nBasics protect you from embarrassment.\n\nWhat’s happening right now.\n\n• People can ship UI without understanding data flow.\n• AI writes code that works, until it leaks.\n• The product looks done. The fundamentals are missing.\n\nThis is not an AI problem.\nThis is a learning order problem.\n\nThe right sequence.\n\n• Learn basics first. HTML, JS, APIs, security.\n• Understand what runs on client vs server.\n• Then use AI to move 10x faster.\n\nSkipping fundamentals does not save time.\nIt creates invisible bugs.\nAnd public ones.\n\nThe future belongs to vibe coders.\nWho also know what not to vibe.\n\nShip fast.\nBut know what you’re shipping.",
+    "author": "OneClimate8489",
+    "created_utc": 1773982704,
+    "permalink": "https://www.reddit.com/r/vibecoding/comments/1ryn86h/vibe_code_so_hard_your_entire_waitlist_is_visible/",
+    "url": "https://i.redd.it/w6xeqz5dt4qg1.png",
+    "domain": "i.redd.it",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 572,
+    "score": 572,
+    "num_comments": 51,
+    "upvote_ratio": 0.97,
+    "thumbnail": "https://preview.redd.it/w6xeqz5dt4qg1.png?width=140&amp;height=119&amp;auto=webp&amp;s=467062f58dbf618554720856b150b5a453b8c372",
+    "media": null,
+    "post_hint": "image",
+    "listing": "search:top:week",
+    "viral_score": 16.084110799953443,
+    "detail": {
+      "post": {
+        "id": "1ryn86h",
+        "title": "Vibe code so hard your entire waitlist is visible in frontend",
+        "selftext": "Do this to avoid embarrassment while vibe coding\n\nToday you can build a website in hours.\n\nWebsite feels clean,\nUntil someone opens Inspect.\n\nAnd sees every waitlist email exposed on the frontend.\n\nVibe coding accelerates execution.\nBasics protect you from embarrassment.\n\nWhat’s happening right now.\n\n• People can ship UI without understanding data flow.\n• AI writes code that works, until it leaks.\n• The product looks done. The fundamentals are missing.\n\nThis is not an AI problem.\nThis is a learning order problem.\n\nThe right sequence.\n\n• Learn basics first. HTML, JS, APIs, security.\n• Understand what runs on client vs server.\n• Then use AI to move 10x faster.\n\nSkipping fundamentals does not save time.\nIt creates invisible bugs.\nAnd public ones.\n\nThe future belongs to vibe coders.\nWho also know what not to vibe.\n\nShip fast.\nBut know what you’re shipping.",
+        "author": "OneClimate8489",
+        "subreddit": "vibecoding",
+        "created_utc": 1773982704,
+        "ups": 572,
+        "num_comments": 51,
+        "upvote_ratio": 0.97,
+        "permalink": "https://www.reddit.com/r/vibecoding/comments/1ryn86h/vibe_code_so_hard_your_entire_waitlist_is_visible/",
+        "url": "https://i.redd.it/w6xeqz5dt4qg1.png",
+        "is_self": false,
+        "post_hint": "image",
+        "thumbnail": "https://preview.redd.it/w6xeqz5dt4qg1.png?width=140&amp;height=119&amp;auto=webp&amp;s=467062f58dbf618554720856b150b5a453b8c372",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://preview.redd.it/w6xeqz5dt4qg1.png?auto=webp&amp;s=857ff1ec1d7a492a6569b95b42560cea9c32f936",
+                "width": 800,
+                "height": 682
+              },
+              "resolutions": [
+                {
+                  "url": "https://preview.redd.it/w6xeqz5dt4qg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=2f56ed76d595d3c0485b693c081c5427da1fddf2",
+                  "width": 108,
+                  "height": 92
+                },
+                {
+                  "url": "https://preview.redd.it/w6xeqz5dt4qg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=8f9ae00bed404265b327d0f776edaf801927acde",
+                  "width": 216,
+                  "height": 184
+                },
+                {
+                  "url": "https://preview.redd.it/w6xeqz5dt4qg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=b28da5978d4e305c0609e6ed3cd187f9fac8dca9",
+                  "width": 320,
+                  "height": 272
+                },
+                {
+                  "url": "https://preview.redd.it/w6xeqz5dt4qg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=88a94d699b8df61252f03a87a56839bd1cacb155",
+                  "width": 640,
+                  "height": 545
+                }
+              ],
+              "variants": {},
+              "id": "w6xeqz5dt4qg1"
+            }
+          ],
+          "enabled": true
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "Main-Lifeguard-6739",
+          "ups": 74,
+          "body": "You really need to fuck up hard for this to happen. "
+        },
+        {
+          "author": "Ok-Double-4642",
+          "ups": 52,
+          "body": "Just pure simplicity. "
+        },
+        {
+          "author": "DonChillz",
+          "ups": 24,
+          "body": "These days, building something looks so easy that the job of a software developer seems obsolete… which it isn’t "
+        }
+      ]
+    },
+    "media_extracted": {
+      "type": "image",
+      "url": "https://i.redd.it/w6xeqz5dt4qg1.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1613832104/reddit-scout/vibe-coding-outreach-ai-sales-automation-prompt-driven/runs/2026-03-23T11-26-46-783Z/media/1ryn86h.png",
+      "contentType": "image/png",
+      "bytes": 530206
+    },
+    "author_avatar": {
+      "user": "OneClimate8489",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_6.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1613832104/reddit-scout/vibe-coding-outreach-ai-sales-automation-prompt-driven/runs/2026-03-23T11-26-46-783Z/avatars/OneClimate8489.png",
+      "fetchedAt": "2026-03-23T11:27:26.809Z"
+    }
+  },
+  {
+    "id": "1rzuvuu",
+    "subreddit": "SpecDrivenDevelopment",
+    "title": "Is Specs-Driven Development actually that useful, or just another hype cycle?",
+    "selftext": "\nLately I’ve been seeing a lot of discussion around specs-driven development writing detailed specs first, breaking features into structured steps, then letting AI handle implementation.\n\nTools like Traycer and speckit etc. are built around this idea.\n\nThey are shown really good:\n- clearer structure\n- better consistency\n- easier multi-file changes\nBut in practice, what do you say these help or not ?\n\nFrom my experience so far:\nFor simple features it feels like overkill\nFor complex features it does seem to reduce confusion and rework\n\nBut there’s also a tradeoff:\n- writing specs takes time\n\nSo I’m a bit confused.\nIt feels like specs-driven development should scale better for larger systems, especially when using AI tools.\n\nCurious what others are seeing:\n\n- Is SDD actually improving your workflow?\n- Or does it feel like extra overhead?\n- Do tools built around it genuinely help, or are they just adding another layer?\n\nI want to hear real experiences.",
+    "author": "Classic-Ninja-1",
+    "created_utc": 1774108309,
+    "permalink": "https://www.reddit.com/r/SpecDrivenDevelopment/comments/1rzuvuu/is_specsdriven_development_actually_that_useful/",
+    "url": "https://www.reddit.com/r/SpecDrivenDevelopment/comments/1rzuvuu/is_specsdriven_development_actually_that_useful/",
+    "domain": "self.SpecDrivenDevelopment",
+    "is_self": true,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 23,
+    "score": 23,
+    "num_comments": 17,
+    "upvote_ratio": 0.97,
+    "thumbnail": "self",
+    "media": null,
+    "post_hint": null,
+    "listing": "rising",
+    "viral_score": 1.8852248309303985,
+    "detail": {
+      "post": {
+        "id": "1rzuvuu",
+        "title": "Is Specs-Driven Development actually that useful, or just another hype cycle?",
+        "selftext": "\nLately I’ve been seeing a lot of discussion around specs-driven development writing detailed specs first, breaking features into structured steps, then letting AI handle implementation.\n\nTools like Traycer and speckit etc. are built around this idea.\n\nThey are shown really good:\n- clearer structure\n- better consistency\n- easier multi-file changes\nBut in practice, what do you say these help or not ?\n\nFrom my experience so far:\nFor simple features it feels like overkill\nFor complex features it does seem to reduce confusion and rework\n\nBut there’s also a tradeoff:\n- writing specs takes time\n\nSo I’m a bit confused.\nIt feels like specs-driven development should scale better for larger systems, especially when using AI tools.\n\nCurious what others are seeing:\n\n- Is SDD actually improving your workflow?\n- Or does it feel like extra overhead?\n- Do tools built around it genuinely help, or are they just adding another layer?\n\nI want to hear real experiences.",
+        "author": "Classic-Ninja-1",
+        "subreddit": "SpecDrivenDevelopment",
+        "created_utc": 1774108309,
+        "ups": 25,
+        "num_comments": 17,
+        "upvote_ratio": 1,
+        "permalink": "https://www.reddit.com/r/SpecDrivenDevelopment/comments/1rzuvuu/is_specsdriven_development_actually_that_useful/",
+        "url": "https://www.reddit.com/r/SpecDrivenDevelopment/comments/1rzuvuu/is_specsdriven_development_actually_that_useful/",
+        "is_self": true,
+        "post_hint": null,
+        "thumbnail": "self",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": null,
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "Adventurous-Water-40",
+          "ups": 5,
+          "body": "You can write specs with your LLM, just chat with it about your features and let it write them down in a structured way. You need to make those thoughts anyway, only now you are doing it upfront instead of during implementation. In my commercial projects I have seen a huge speed boost by writing specs and implementing them autonomously with an agent and then reviewing the spec-based behaviour-tests."
+        },
+        {
+          "author": "cbl_lbc",
+          "ups": 1,
+          "body": "In my experience, thorough planning and specs from the start drastically reduces the back and forth with your coding agent. You’ll see results that are way closer to the final picture in your head much earlier in the dev process.\n\nIf you don’t have experience with how backend, frontend, and supplementary systems (security, monitoring, analytics, etc.) all fit together - there are tons of resources your LLM can break down into understandable concepts. And if you still feel like you’re missing context on certain components of your project, watch some YouTube videos on the areas you’re fuzzy on, then use that newly learned info to update your spec.\n\nThe key is to run your plan through reviews with your LLM until you feel confident you’ve covered all your bases and the final product matches how you envision it. There will still be some back and forth for bug fixes and tweaks along the way, of course - but because you started with a thorough, comprehensive spec, the path to the final product will be significantly shorter.\n\nI find my advice to be generally applicable to most coding agents/platforms because at the end of the day, they’re just proven software development principles and workflows used long before LLMs. Back then we just had real people writing the code and running the project meetings. Not to say those people aren’t needed for larger projects still - they’re just not needed as quickly now for solo dev/small startup projects. "
+        },
+        {
+          "author": "modelithe",
+          "ups": 1,
+          "body": "It absolutely helps to structure the requirements ; both with regards to the user experience, but also the architectural choices, design details etc that needs to be set.\n\nAnd afterwards, it's easy to go back and see how and why something was developed the way it was.\n\nIt also helps when starting a new use-case, since the specifications occupies just a fraction of the tokens while giving a huge set of information to the agent, if an agent is used to develop the code. "
+        }
+      ]
+    },
+    "author_avatar": {
+      "user": "Classic-Ninja-1",
+      "url": "https://i.redd.it/snoovatar/avatars/7b5ac466-9e3d-4dc1-a071-5e93663a1718.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1613832104/reddit-scout/vibe-coding-outreach-ai-sales-automation-prompt-driven/runs/2026-03-23T11-26-46-783Z/avatars/Classic-Ninja-1.png",
+      "fetchedAt": "2026-03-23T11:27:28.409Z"
+    }
+  },
+  {
+    "id": "1ryxly9",
+    "subreddit": "SpecDrivenDevelopment",
+    "title": "How Specs-Driven Development (SDD) Changed the Way I Think as a Developer",
+    "selftext": "I didn’t expect this, but moving toward a specs-driven approach didn’t just change how I write code it changed how I think about building software.\n\nBefore this, my default approach was pretty straightforward:\nopen editor and start coding and  fix things along the way\n\nIt worked, but I often ran into the same problems:\n\n- unclear structure\n- too much refactoring later\n- features getting messy as they grew\n\nRecently, I started slowing down and writing specs first.\n\nNot anything fancy just:\n- what the feature should do\n- constraints\n- edge cases\n- how different parts connect\n\nThat small shift made a bigger difference than I expected.\n\nNow instead of thinking “how do I write this code?” I think “what exactly should this system do?”\n\nAnd once that’s clear, the coding part becomes much easier especially with AI tools in the mix.\n\nAnother interesting change is how I approach problems.\n\nEarlier, I would jump into implementation and figure things out as I go.\nNow I spend more time upfront defining the problem properly.\n\nIt feels slower at first, but overall it actually saves time because there’s less confusion later also some tools helped me to do finish it fast like traycer and speckit.\n\nI’m still figuring it out, but it feels like specs-driven thinking scales much better, especially for larger features.\n\nCurious if others here are doing something similar or still prefer jumping straight into coding.",
+    "author": "Classic-Ninja-1",
+    "created_utc": 1774016574,
+    "permalink": "https://www.reddit.com/r/SpecDrivenDevelopment/comments/1ryxly9/how_specsdriven_development_sdd_changed_the_way_i/",
+    "url": "https://www.reddit.com/r/SpecDrivenDevelopment/comments/1ryxly9/how_specsdriven_development_sdd_changed_the_way_i/",
+    "domain": "self.SpecDrivenDevelopment",
+    "is_self": true,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 42,
+    "score": 42,
+    "num_comments": 12,
+    "upvote_ratio": 0.94,
+    "thumbnail": "self",
+    "media": null,
+    "post_hint": null,
+    "listing": "rising",
+    "viral_score": 1.3722701264394963,
+    "detail": {
+      "post": {
+        "id": "1ryxly9",
+        "title": "How Specs-Driven Development (SDD) Changed the Way I Think as a Developer",
+        "selftext": "I didn’t expect this, but moving toward a specs-driven approach didn’t just change how I write code it changed how I think about building software.\n\nBefore this, my default approach was pretty straightforward:\nopen editor and start coding and  fix things along the way\n\nIt worked, but I often ran into the same problems:\n\n- unclear structure\n- too much refactoring later\n- features getting messy as they grew\n\nRecently, I started slowing down and writing specs first.\n\nNot anything fancy just:\n- what the feature should do\n- constraints\n- edge cases\n- how different parts connect\n\nThat small shift made a bigger difference than I expected.\n\nNow instead of thinking “how do I write this code?” I think “what exactly should this system do?”\n\nAnd once that’s clear, the coding part becomes much easier especially with AI tools in the mix.\n\nAnother interesting change is how I approach problems.\n\nEarlier, I would jump into implementation and figure things out as I go.\nNow I spend more time upfront defining the problem properly.\n\nIt feels slower at first, but overall it actually saves time because there’s less confusion later also some tools helped me to do finish it fast like traycer and speckit.\n\nI’m still figuring it out, but it feels like specs-driven thinking scales much better, especially for larger features.\n\nCurious if others here are doing something similar or still prefer jumping straight into coding.",
+        "author": "Classic-Ninja-1",
+        "subreddit": "SpecDrivenDevelopment",
+        "created_utc": 1774016574,
+        "ups": 41,
+        "num_comments": 12,
+        "upvote_ratio": 0.94,
+        "permalink": "https://www.reddit.com/r/SpecDrivenDevelopment/comments/1ryxly9/how_specsdriven_development_sdd_changed_the_way_i/",
+        "url": "https://www.reddit.com/r/SpecDrivenDevelopment/comments/1ryxly9/how_specsdriven_development_sdd_changed_the_way_i/",
+        "is_self": true,
+        "post_hint": null,
+        "thumbnail": "self",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": null,
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "modelithe",
+          "ups": 4,
+          "body": "I've transitioned to SDD, and it really quickly shows where the pain-points would end up, if I would have jumped straight into coding; concepts or processes or user-flow, or UI designs that hasn't been fully thought out. \n\nWhile churning out code just for fun has its merits, but with a limited number of hours available per week, it's really important to choose where to focus. "
+        },
+        {
+          "author": "hancengiz",
+          "ups": 1,
+          "body": "Thank you for sharing your experience. Tbh I think with this popular subject of everyone is talking about autonomous agents. I expect many more people to discover spectrum development as a necessity. Because if you wanna keep stop, keep chatting and give your agents from running tasks. You need to be precise or what you want.  And specification driven development is the way now. "
+        },
+        {
+          "author": "Few_Raisin_8981",
+          "ups": 1,
+          "body": "Big assumption that the client actually knows what they want"
+        }
+      ]
+    },
+    "author_avatar": {
+      "user": "Classic-Ninja-1",
+      "url": "https://i.redd.it/snoovatar/avatars/7b5ac466-9e3d-4dc1-a071-5e93663a1718.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1613832104/reddit-scout/vibe-coding-outreach-ai-sales-automation-prompt-driven/runs/2026-03-23T11-26-46-783Z/avatars/Classic-Ninja-1.png",
+      "fetchedAt": "2026-03-23T11:27:28.409Z"
+    }
+  },
+  {
+    "id": "1rnhdqo",
+    "subreddit": "SpecDrivenDevelopment",
+    "title": "Spec-driven development in practice — from goal hierarchy to AI implementation in 7 minutes",
+    "selftext": "I made this video because I kept having the same conversation in different threads — people asking whether SDD actually works in practice or if it's just overhead that slows you down.  \n  \nThe short version: I've been running SDD on my own projects for the past several months and the difference in output quality from AI agents is significant. Not because the agents got smarter, but because the input got structured. The video walks through what that looks like concretely — a free VS Code extension I built called SPECLAN that manages specifications as Markdown files with YAML frontmatter in Git. It covers the hierarchy from goals down to acceptance criteria, how status lifecycle prevents spec drift, and how AI agents use the spec tree as context during implementation.  \n  \nFull disclosure: I'm the creator. I built it because I got tired of re-prompting Claude Code with the same context every session.  \n  \nWhat I don't cover in the video but has been on my mind lately: the discovery phase. I just finished building bidirectional integration with BMAD-METHOD and it changed how I think about where SDD starts. BMAD's agent-facilitated interviews produce remarkably structured PRDs. Importing those into a lifecycle-managed spec tree turns out to be a natural handoff point — BMAD figures out what to build, the spec tree governs the building.  \n  \nCurious what other people here use for the discovery phase before specs get written. Do you start from a PRD, from user stories, from a conversation with Claude, or something else entirely?",
+    "author": "thlandgraf",
+    "created_utc": 1772908186,
+    "permalink": "https://www.reddit.com/r/SpecDrivenDevelopment/comments/1rnhdqo/specdriven_development_in_practice_from_goal/",
+    "url": "https://v.redd.it/i544futj1ong1",
+    "domain": "v.redd.it",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 3,
+    "score": 3,
+    "num_comments": 2,
+    "upvote_ratio": 1,
+    "thumbnail": "https://external-preview.redd.it/N2hoam91dGoxb25nMfk8adEDtJIvhdEC1KgWjj0K5BBsD065sMziMZ6b5IrT.png?width=140&amp;height=78&amp;format=jpg&amp;auto=webp&amp;s=18b0516d119c24591a1d47ea9cdbd5c7b53b3a37",
+    "media": {
+      "reddit_video": {
+        "bitrate_kbps": 2400,
+        "fallback_url": "https://v.redd.it/i544futj1ong1/CMAF_720.mp4?source=fallback",
+        "has_audio": true,
+        "height": 720,
+        "width": 1280,
+        "scrubber_media_url": "https://v.redd.it/i544futj1ong1/CMAF_96.mp4",
+        "dash_url": "https://v.redd.it/i544futj1ong1/DASHPlaylist.mpd?a=1776857214%2CMTlmOTZmNzVhZTQzMTM0ZTA3ZDliMGYzZGE1NTI1YzU1YmVhMGU1YmJiZTk3NDgzOTE2NDBmYjEyMzYyM2U0ZA%3D%3D&amp;v=1&amp;f=sd",
+        "duration": 442,
+        "hls_url": "https://v.redd.it/i544futj1ong1/HLSPlaylist.m3u8?a=1776857214%2CODA4YjJiY2I3OWEzZjNkNmMwMDYyOTkwMGU1YTcxY2Y5MmYwYjI1ODNkYThjNzJkZDA0YWYyZjU5YjhkMGM5Mg%3D%3D&amp;v=1&amp;f=sd",
+        "is_gif": false,
+        "transcoding_status": "completed"
+      }
+    },
+    "post_hint": "hosted:video",
+    "listing": "rising",
+    "viral_score": 0.013460634413879817,
+    "detail": {
+      "post": {
+        "id": "1rnhdqo",
+        "title": "Spec-driven development in practice — from goal hierarchy to AI implementation in 7 minutes",
+        "selftext": "I made this video because I kept having the same conversation in different threads — people asking whether SDD actually works in practice or if it's just overhead that slows you down.  \n  \nThe short version: I've been running SDD on my own projects for the past several months and the difference in output quality from AI agents is significant. Not because the agents got smarter, but because the input got structured. The video walks through what that looks like concretely — a free VS Code extension I built called SPECLAN that manages specifications as Markdown files with YAML frontmatter in Git. It covers the hierarchy from goals down to acceptance criteria, how status lifecycle prevents spec drift, and how AI agents use the spec tree as context during implementation.  \n  \nFull disclosure: I'm the creator. I built it because I got tired of re-prompting Claude Code with the same context every session.  \n  \nWhat I don't cover in the video but has been on my mind lately: the discovery phase. I just finished building bidirectional integration with BMAD-METHOD and it changed how I think about where SDD starts. BMAD's agent-facilitated interviews produce remarkably structured PRDs. Importing those into a lifecycle-managed spec tree turns out to be a natural handoff point — BMAD figures out what to build, the spec tree governs the building.  \n  \nCurious what other people here use for the discovery phase before specs get written. Do you start from a PRD, from user stories, from a conversation with Claude, or something else entirely?",
+        "author": "thlandgraf",
+        "subreddit": "SpecDrivenDevelopment",
+        "created_utc": 1772908186,
+        "ups": 3,
+        "num_comments": 2,
+        "upvote_ratio": 1,
+        "permalink": "https://www.reddit.com/r/SpecDrivenDevelopment/comments/1rnhdqo/specdriven_development_in_practice_from_goal/",
+        "url": "https://v.redd.it/i544futj1ong1",
+        "is_self": false,
+        "post_hint": "hosted:video",
+        "thumbnail": "https://external-preview.redd.it/N2hoam91dGoxb25nMfk8adEDtJIvhdEC1KgWjj0K5BBsD065sMziMZ6b5IrT.png?width=140&amp;height=78&amp;format=jpg&amp;auto=webp&amp;s=18b0516d119c24591a1d47ea9cdbd5c7b53b3a37",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://external-preview.redd.it/N2hoam91dGoxb25nMfk8adEDtJIvhdEC1KgWjj0K5BBsD065sMziMZ6b5IrT.png?format=pjpg&amp;auto=webp&amp;s=affe3a4aa77e45ff1e1868c92eee37bc5bfcb0b4",
+                "width": 1280,
+                "height": 720
+              },
+              "resolutions": [
+                {
+                  "url": "https://external-preview.redd.it/N2hoam91dGoxb25nMfk8adEDtJIvhdEC1KgWjj0K5BBsD065sMziMZ6b5IrT.png?width=108&amp;crop=smart&amp;format=pjpg&amp;auto=webp&amp;s=16ba316aa70953a3daf4949b8215e02f1e8720c2",
+                  "width": 108,
+                  "height": 60
+                },
+                {
+                  "url": "https://external-preview.redd.it/N2hoam91dGoxb25nMfk8adEDtJIvhdEC1KgWjj0K5BBsD065sMziMZ6b5IrT.png?width=216&amp;crop=smart&amp;format=pjpg&amp;auto=webp&amp;s=fcb8c28fa0d00648db6e9a4c5cfcfd10863ef5d2",
+                  "width": 216,
+                  "height": 121
+                },
+                {
+                  "url": "https://external-preview.redd.it/N2hoam91dGoxb25nMfk8adEDtJIvhdEC1KgWjj0K5BBsD065sMziMZ6b5IrT.png?width=320&amp;crop=smart&amp;format=pjpg&amp;auto=webp&amp;s=94c17e3f1049a6d65246a0d22e77b1de1e92952d",
+                  "width": 320,
+                  "height": 180
+                },
+                {
+                  "url": "https://external-preview.redd.it/N2hoam91dGoxb25nMfk8adEDtJIvhdEC1KgWjj0K5BBsD065sMziMZ6b5IrT.png?width=640&amp;crop=smart&amp;format=pjpg&amp;auto=webp&amp;s=9f78b1efce81f4606c4f4a6019e720934fd574eb",
+                  "width": 640,
+                  "height": 360
+                },
+                {
+                  "url": "https://external-preview.redd.it/N2hoam91dGoxb25nMfk8adEDtJIvhdEC1KgWjj0K5BBsD065sMziMZ6b5IrT.png?width=960&amp;crop=smart&amp;format=pjpg&amp;auto=webp&amp;s=39d6c88d6800bd4aae877253a0905fbc68cd39f3",
+                  "width": 960,
+                  "height": 540
+                },
+                {
+                  "url": "https://external-preview.redd.it/N2hoam91dGoxb25nMfk8adEDtJIvhdEC1KgWjj0K5BBsD065sMziMZ6b5IrT.png?width=1080&amp;crop=smart&amp;format=pjpg&amp;auto=webp&amp;s=dfc276ee4d6df91eb7200558c4eb2d62432eaa1a",
+                  "width": 1080,
+                  "height": 607
+                }
+              ],
+              "variants": {},
+              "id": "N2hoam91dGoxb25nMfk8adEDtJIvhdEC1KgWjj0K5BBsD065sMziMZ6b5IrT"
+            }
+          ],
+          "enabled": false
+        },
+        "media": {
+          "reddit_video": {
+            "bitrate_kbps": 2400,
+            "fallback_url": "https://v.redd.it/i544futj1ong1/CMAF_720.mp4?source=fallback",
+            "has_audio": true,
+            "height": 720,
+            "width": 1280,
+            "scrubber_media_url": "https://v.redd.it/i544futj1ong1/CMAF_96.mp4",
+            "dash_url": "https://v.redd.it/i544futj1ong1/DASHPlaylist.mpd?a=1776857236%2COGFkYjkyMDk0ZGRkZjg4ZDBjZmI2MjZiNjc2N2YxMjkxOTU4YTM1NTMxMWJmNDc4MzhkNjVjODU1NmY2MmZiMw%3D%3D&amp;v=1&amp;f=sd",
+            "duration": 442,
+            "hls_url": "https://v.redd.it/i544futj1ong1/HLSPlaylist.m3u8?a=1776857236%2CMDIxZjYzNGI3YTZlNDY1ZTVlYjUyOGFiZjEwYmY1YTljNmFjZjFiZDRiMWE2ZGQ0YzhkODEzNWQ2NjlkYjJmMw%3D%3D&amp;v=1&amp;f=sd",
+            "is_gif": false,
+            "transcoding_status": "completed"
+          }
+        }
+      },
+      "topComments": [
+        {
+          "author": "Fine_Tie_1576",
+          "ups": 1,
+          "body": "Thanks for the video. I work as a consultant and the most common tools I see in projects are Miro, Figjam for brainstorming/capturing the initial business intent. These are very business user friendly but the output is not so structured. Other tools I have seen are Productboard, Qlerify and ChatPRD. "
+        }
+      ]
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "thlandgraf",
+      "url": "https://styles.redditmedia.com/t5_2g5mms/styles/profileIcon_bqoa38dazffg1.png?width=256&height=256&crop=256:256,smart&s=42dc3a0cb7aa68b5a770cebd49f69370a3acec4c",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1613832104/reddit-scout/vibe-coding-outreach-ai-sales-automation-prompt-driven/runs/2026-03-23T11-26-46-783Z/avatars/thlandgraf.png",
+      "fetchedAt": "2026-03-23T11:27:31.404Z"
+    }
+  },
+  {
+    "id": "1rqqwqd",
+    "subreddit": "SpecDrivenDevelopment",
+    "title": "Spec-Driven Development on Brownfield Projects",
+    "selftext": "In this video I cover what is a Brownfield project? Is Spec-Driven Development possible with such projects? If yes, how do we go about it.",
+    "author": "harikrishnan_83",
+    "created_utc": 1773227711,
+    "permalink": "https://www.reddit.com/r/SpecDrivenDevelopment/comments/1rqqwqd/specdriven_development_on_brownfield_projects/",
+    "url": "https://www.youtube.com/watch?v=gJvwn-nuSc8",
+    "domain": "youtube.com",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 3,
+    "score": 3,
+    "num_comments": 0,
+    "upvote_ratio": 0.81,
+    "thumbnail": "https://external-preview.redd.it/WkYtGRgAymX9G_FB-iQVtYgH4ZaLfYiP2s-6-FMGRIQ.jpeg?width=140&amp;height=105&amp;auto=webp&amp;s=8dda3ee19fef675a5861ea8f62cd752d39e29066",
+    "media": {
+      "type": "youtube.com",
+      "oembed": {
+        "provider_url": "https://www.youtube.com/",
+        "version": "1.0",
+        "title": "Spec-Driven Development on Brownfield Projects",
+        "type": "video",
+        "thumbnail_width": 480,
+        "height": 200,
+        "width": 356,
+        "html": "&lt;iframe width=\"356\" height=\"200\" src=\"https://www.youtube.com/embed/gJvwn-nuSc8?feature=oembed&amp;enablejsapi=1\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen title=\"Spec-Driven Development on Brownfield Projects\"&gt;&lt;/iframe&gt;",
+        "author_name": "Intent Driven Development",
+        "provider_name": "YouTube",
+        "thumbnail_url": "https://i.ytimg.com/vi/gJvwn-nuSc8/hqdefault.jpg",
+        "thumbnail_height": 360,
+        "author_url": "https://www.youtube.com/@intent-driven-development"
+      }
+    },
+    "post_hint": "rich:video",
+    "listing": "rising",
+    "viral_score": 0.006772432100958473,
+    "detail": {
+      "post": {
+        "id": "1rqqwqd",
+        "title": "Spec-Driven Development on Brownfield Projects",
+        "selftext": "In this video I cover what is a Brownfield project? Is Spec-Driven Development possible with such projects? If yes, how do we go about it.",
+        "author": "harikrishnan_83",
+        "subreddit": "SpecDrivenDevelopment",
+        "created_utc": 1773227711,
+        "ups": 4,
+        "num_comments": 0,
+        "upvote_ratio": 0.84,
+        "permalink": "https://www.reddit.com/r/SpecDrivenDevelopment/comments/1rqqwqd/specdriven_development_on_brownfield_projects/",
+        "url": "https://www.youtube.com/watch?v=gJvwn-nuSc8",
+        "is_self": false,
+        "post_hint": "rich:video",
+        "thumbnail": "https://external-preview.redd.it/WkYtGRgAymX9G_FB-iQVtYgH4ZaLfYiP2s-6-FMGRIQ.jpeg?width=140&amp;height=105&amp;auto=webp&amp;s=8dda3ee19fef675a5861ea8f62cd752d39e29066",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://external-preview.redd.it/WkYtGRgAymX9G_FB-iQVtYgH4ZaLfYiP2s-6-FMGRIQ.jpeg?auto=webp&amp;s=b45f45426a0bc481945ca9e548a6ac50495be9d6",
+                "width": 480,
+                "height": 360
+              },
+              "resolutions": [
+                {
+                  "url": "https://external-preview.redd.it/WkYtGRgAymX9G_FB-iQVtYgH4ZaLfYiP2s-6-FMGRIQ.jpeg?width=108&amp;crop=smart&amp;auto=webp&amp;s=2dec80d31538e3b14384be237b44c0e2d9d20172",
+                  "width": 108,
+                  "height": 81
+                },
+                {
+                  "url": "https://external-preview.redd.it/WkYtGRgAymX9G_FB-iQVtYgH4ZaLfYiP2s-6-FMGRIQ.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=40ae1cfd9719243eb9945586bec6ae166936d131",
+                  "width": 216,
+                  "height": 162
+                },
+                {
+                  "url": "https://external-preview.redd.it/WkYtGRgAymX9G_FB-iQVtYgH4ZaLfYiP2s-6-FMGRIQ.jpeg?width=320&amp;crop=smart&amp;auto=webp&amp;s=8361870a5e4da90d46f7090d59be0dd6221ea051",
+                  "width": 320,
+                  "height": 240
+                }
+              ],
+              "variants": {},
+              "id": "WkYtGRgAymX9G_FB-iQVtYgH4ZaLfYiP2s-6-FMGRIQ"
+            }
+          ],
+          "enabled": false
+        },
+        "media": {
+          "oembed": {
+            "provider_url": "https://www.youtube.com/",
+            "title": "Spec-Driven Development on Brownfield Projects",
+            "html": "&lt;iframe width=\"356\" height=\"200\" src=\"https://www.youtube.com/embed/gJvwn-nuSc8?feature=oembed&amp;enablejsapi=1\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen title=\"Spec-Driven Development on Brownfield Projects\"&gt;&lt;/iframe&gt;",
+            "thumbnail_width": 480,
+            "height": 200,
+            "width": 356,
+            "version": "1.0",
+            "author_name": "Intent Driven Development",
+            "provider_name": "YouTube",
+            "thumbnail_url": "https://i.ytimg.com/vi/gJvwn-nuSc8/hqdefault.jpg",
+            "type": "video",
+            "thumbnail_height": 360,
+            "author_url": "https://www.youtube.com/@intent-driven-development"
+          },
+          "type": "youtube.com"
+        }
+      },
+      "topComments": []
+    },
+    "media_extracted": {
+      "type": "thumbnail",
+      "url": "https://i.ytimg.com/vi/gJvwn-nuSc8/hqdefault.jpg",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1613832104/reddit-scout/vibe-coding-outreach-ai-sales-automation-prompt-driven/runs/2026-03-23T11-26-46-783Z/media/1rqqwqd.jpg",
+      "contentType": "image/jpeg",
+      "bytes": 17499
+    },
+    "author_avatar": {
+      "user": "harikrishnan_83",
+      "url": "https://styles.redditmedia.com/t5_8wjd2q/styles/profileIcon_ddslcg6uegdb1.jpg?width=256&height=256&crop=256:256,smart&s=0ed195bc8932189bfbba33de38da2311ecabf063",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1613832104/reddit-scout/vibe-coding-outreach-ai-sales-automation-prompt-driven/runs/2026-03-23T11-26-46-783Z/avatars/harikrishnan_83.jpg",
+      "fetchedAt": "2026-03-23T11:27:33.078Z"
+    }
+  },
+  {
+    "id": "1rahxxj",
+    "subreddit": "SpecDrivenDevelopment",
+    "title": "My InfoQ article on Spec-Driven Development at Enterprise Scale",
+    "selftext": "Long form article that talks about why Spec-Driven Development adoption at enterprise scale should not be looked at as a technical rollout, what are the short term changes that are necessary and the long term goals to aim for.",
+    "author": "harikrishnan_83",
+    "created_utc": 1771649020,
+    "permalink": "https://www.reddit.com/r/SpecDrivenDevelopment/comments/1rahxxj/my_infoq_article_on_specdriven_development_at/",
+    "url": "https://www.infoq.com/articles/enterprise-spec-driven-development/",
+    "domain": "infoq.com",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 6,
+    "score": 6,
+    "num_comments": 0,
+    "upvote_ratio": 0.88,
+    "thumbnail": "https://external-preview.redd.it/1wSdrLg8bfzm5bpC2imi4OtNFtH-Sr-v8l-gkH_dqC0.jpeg?width=140&amp;height=73&amp;auto=webp&amp;s=3b2d20f183c7600aeebfa9d81b32566f61dcb25f",
+    "media": null,
+    "post_hint": "link",
+    "listing": "rising",
+    "viral_score": 0.005158626006236362,
+    "detail": {
+      "post": {
+        "id": "1rahxxj",
+        "title": "My InfoQ article on Spec-Driven Development at Enterprise Scale",
+        "selftext": "Long form article that talks about why Spec-Driven Development adoption at enterprise scale should not be looked at as a technical rollout, what are the short term changes that are necessary and the long term goals to aim for.",
+        "author": "harikrishnan_83",
+        "subreddit": "SpecDrivenDevelopment",
+        "created_utc": 1771649020,
+        "ups": 6,
+        "num_comments": 0,
+        "upvote_ratio": 1,
+        "permalink": "https://www.reddit.com/r/SpecDrivenDevelopment/comments/1rahxxj/my_infoq_article_on_specdriven_development_at/",
+        "url": "https://www.infoq.com/articles/enterprise-spec-driven-development/",
+        "is_self": false,
+        "post_hint": "link",
+        "thumbnail": "https://external-preview.redd.it/1wSdrLg8bfzm5bpC2imi4OtNFtH-Sr-v8l-gkH_dqC0.jpeg?width=140&amp;height=73&amp;auto=webp&amp;s=3b2d20f183c7600aeebfa9d81b32566f61dcb25f",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://external-preview.redd.it/1wSdrLg8bfzm5bpC2imi4OtNFtH-Sr-v8l-gkH_dqC0.jpeg?auto=webp&amp;s=4d728a715d95c3b2e054bd75038b8d379391db34",
+                "width": 1200,
+                "height": 630
+              },
+              "resolutions": [
+                {
+                  "url": "https://external-preview.redd.it/1wSdrLg8bfzm5bpC2imi4OtNFtH-Sr-v8l-gkH_dqC0.jpeg?width=108&amp;crop=smart&amp;auto=webp&amp;s=055aabca7d29c4c0623d619ccf5fc0c2e903d6d7",
+                  "width": 108,
+                  "height": 56
+                },
+                {
+                  "url": "https://external-preview.redd.it/1wSdrLg8bfzm5bpC2imi4OtNFtH-Sr-v8l-gkH_dqC0.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=9f791c1118fa512e1f8a32563c3d10fae706cee9",
+                  "width": 216,
+                  "height": 113
+                },
+                {
+                  "url": "https://external-preview.redd.it/1wSdrLg8bfzm5bpC2imi4OtNFtH-Sr-v8l-gkH_dqC0.jpeg?width=320&amp;crop=smart&amp;auto=webp&amp;s=db396dd937dc25a86c547795321b3a08f7132cab",
+                  "width": 320,
+                  "height": 168
+                },
+                {
+                  "url": "https://external-preview.redd.it/1wSdrLg8bfzm5bpC2imi4OtNFtH-Sr-v8l-gkH_dqC0.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=e550f1c998b29589e607d10df7c1ffd53f8789de",
+                  "width": 640,
+                  "height": 336
+                },
+                {
+                  "url": "https://external-preview.redd.it/1wSdrLg8bfzm5bpC2imi4OtNFtH-Sr-v8l-gkH_dqC0.jpeg?width=960&amp;crop=smart&amp;auto=webp&amp;s=615e060a20e6b1fbd542e9a92382049e0382785e",
+                  "width": 960,
+                  "height": 504
+                },
+                {
+                  "url": "https://external-preview.redd.it/1wSdrLg8bfzm5bpC2imi4OtNFtH-Sr-v8l-gkH_dqC0.jpeg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=c1c0fd2f65c6bb0551f5ade346ec4f679e763950",
+                  "width": 1080,
+                  "height": 567
+                }
+              ],
+              "variants": {},
+              "id": "1wSdrLg8bfzm5bpC2imi4OtNFtH-Sr-v8l-gkH_dqC0"
+            }
+          ],
+          "enabled": false
+        },
+        "media": null
+      },
+      "topComments": []
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "harikrishnan_83",
+      "url": "https://styles.redditmedia.com/t5_8wjd2q/styles/profileIcon_ddslcg6uegdb1.jpg?width=256&height=256&crop=256:256,smart&s=0ed195bc8932189bfbba33de38da2311ecabf063",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1613832104/reddit-scout/vibe-coding-outreach-ai-sales-automation-prompt-driven/runs/2026-03-23T11-26-46-783Z/avatars/harikrishnan_83.jpg",
+      "fetchedAt": "2026-03-23T11:27:33.078Z"
+    }
+  }
+]

@@ -174,5 +174,5 @@ Relative Score: 2.7/10
 
 ---
 
-*Full brief: /home/ubuntu/.openclaw/workspace/strategic-brief-black-friday-ai-2026-03-06.md*
+*Full brief: content-engine/briefs/strategic-brief-black-friday-ai-2026-03-06.md*
 *Sources: reddit-scout run 2026-03-06T12-47-31 | twitter-scout run 2026-03-06T12-49-37*

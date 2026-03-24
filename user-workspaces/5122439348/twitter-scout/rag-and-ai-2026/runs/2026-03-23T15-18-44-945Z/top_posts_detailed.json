@@ -1,0 +1,172 @@
+[
+  {
+    "id": "2003594025098785145",
+    "text": "Capability overhang means too many gaps today between what the models can do and what most people actually do with them.\n\n2026 Prediction: Progress towards AGI will depend as much on helping people use AI well, in ways that directly benefit them as on progress in frontier models",
+    "author_name": "OpenAI",
+    "author_handle": "@OpenAI",
+    "metrics": {
+      "likes": 3700,
+      "retweets": 565,
+      "replies": 625,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G84yYl5bEAAE91Z.jpg"
+    ],
+    "viral_score": 5.5,
+    "url": "https://x.com/OpenAI/status/2003594025098785145"
+  },
+  {
+    "id": "2010927960006721960",
+    "text": "The capability overhang right now in AI is pretty massive. Most of the world still thinks of AI as chatbots that will answer a question on demand but not yet do real work for them.\n\nBeyond coding, almost no knowledge work has had any real agentic automation applied to it yet. The",
+    "author_name": "Aaron Levie",
+    "author_handle": "@levie",
+    "metrics": {
+      "likes": 1400,
+      "retweets": 165,
+      "replies": 125,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1.9,
+    "url": "https://x.com/levie/status/2010927960006721960"
+  },
+  {
+    "id": "1864018591433294224",
+    "text": "Basic RAG \nBM25/Sparse RAG \nReRanker RAG \nHybrid RAG \n Sentence Window RAG \n Auto Merging RAG \n HyDE RAG \n Query Transformation RAG \n Self Query RAG \n RAG Fusion \n RAPTOR \n ColBERT RAG \n Graph RAG \n Agnetic RAG  \n Vision RAG",
+    "author_name": "Adithya S K",
+    "author_handle": "@adithya_s_k",
+    "metrics": {
+      "likes": 1100,
+      "retweets": 160,
+      "replies": 9,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1.4,
+    "url": "https://x.com/adithya_s_k/status/1864018591433294224"
+  },
+  {
+    "id": "2011740250180108498",
+    "text": "Confused by all the new terminology around agents and memory? \n\n(episodic, semantic, procedural memory…) \n\nStrip away all the buzz, and the evolution from RAG to agentic RAG to agent memory is actually just about one thing: 𝗵𝗼𝘄 𝘆𝗼𝘂 𝗺𝗮𝗻𝗮𝗴𝗲 𝗱𝗮𝘁𝗮 𝗶𝗻",
+    "author_name": "Femke Plantinga",
+    "author_handle": "@femke_plantinga",
+    "metrics": {
+      "likes": 830,
+      "retweets": 150,
+      "replies": 25,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G-sjGHTWcAATC2Y?format=jpg&name=small"
+    ],
+    "viral_score": 1.2,
+    "url": "https://x.com/femke_plantinga/status/2011740250180108498"
+  },
+  {
+    "id": "2028087631268188412",
+    "text": "RAG was never the end goal.\n\nMemory in AI agents is where everything is heading. Let me break down this evolution in the simplest way possible.\n\nRAG (2020-2023):\n\n- Retrieve info once, generate response\n- No decision-making, just fetch and answer\n- Problem: Often retrieves",
+    "author_name": "Akshay ",
+    "author_handle": "@akshay_pachaar",
+    "metrics": {
+      "likes": 810,
+      "retweets": 147,
+      "replies": 50,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1.2,
+    "url": "https://x.com/akshay_pachaar/status/2028087631268188412"
+  },
+  {
+    "id": "2023978105606676821",
+    "text": "Don't pick a RAG architecture. Pick a use case.\n\nGeneral-purpose QA:\n→ Standard RAG\n\nPersonal assistants, research aids:\n→ Agentic RAG\n\nExpert systems (medicine, law, engineering):\n→ Graph RAG\n\nLarge projects with frequent updates:\n→ Modular RAG\n\nChatbots with long-term",
+    "author_name": "Tech with Mak",
+    "author_handle": "@techNmak",
+    "metrics": {
+      "likes": 766,
+      "retweets": 177,
+      "replies": 29,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HBadU1waAAAHPEa?format=jpg&name=small"
+    ],
+    "viral_score": 1.1,
+    "url": "https://x.com/techNmak/status/2023978105606676821"
+  },
+  {
+    "id": "2028514380963536918",
+    "text": "You don't need to write a single line of code to build a full AI agent with RAG, memory, and tool calling in 2026.\n\nI know that sounds like a lie. But It's not.\n\nFlowise is an open source drag and drop builder for LLM apps and it's the most slept-on AI tool I've seen this year.",
+    "author_name": "Ihtesham Ali",
+    "author_handle": "@ihtesham2005",
+    "metrics": {
+      "likes": 715,
+      "retweets": 89,
+      "replies": 45,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/ihtesham2005/status/2028514380963536918"
+  },
+  {
+    "id": "2008871243848826891",
+    "text": "How did we go from vanilla RAG to agentic RAG SO fast?\n\nJust some years ago, we were excited about basic retrieval-augmented generation. \n\nNow we're building full AI agents that can reason, plan, and use multiple tools autonomously.\n\nHere's what changed everything:",
+    "author_name": "Femke Plantinga",
+    "author_handle": "@femke_plantinga",
+    "metrics": {
+      "likes": 624,
+      "retweets": 138,
+      "replies": 25,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G-DPjrnX0AAXPH9?format=png&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/femke_plantinga/status/2008871243848826891"
+  },
+  {
+    "id": "1967963949158240485",
+    "text": "This is one of the most promising directions to improve RAG systems.\n\nIt involves combining dynamic retrieval with structured knowledge.\n\nIt helps to mitigate hallucinations and outdated information, and improves knowledge quality.\n\nPay attention to this one, AI devs!",
+    "author_name": "elvis",
+    "author_handle": "@omarsar0",
+    "metrics": {
+      "likes": 569,
+      "retweets": 115,
+      "replies": 12,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G0-cyB2aEAYBs9i?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/omarsar0/status/1967963949158240485"
+  },
+  {
+    "id": "2016038430220943679",
+    "text": "RAG was never the end goal.\n\nMemory in AI agents is where everything is heading. Let me break down this evolution in the simplest way possible.\n\nRAG (2020-2023):\n\n- Retrieve info once, generate response\n- No decision-making, just fetch and answer\n- Problem: Often retrieves",
+    "author_name": "Avi Chawla",
+    "author_handle": "@_avichawla",
+    "metrics": {
+      "likes": 561,
+      "retweets": 90,
+      "replies": 26,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/_avichawla/status/2016038430220943679"
+  }
+]

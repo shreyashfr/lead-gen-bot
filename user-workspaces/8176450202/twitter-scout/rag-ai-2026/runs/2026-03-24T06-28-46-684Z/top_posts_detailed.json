@@ -1,0 +1,168 @@
+[
+  {
+    "id": "1870446667444740444",
+    "text": "Traditional vs. Agentic RAG, clearly explained!\n\nThe future is Agentic RAG, and it's because a traditional RAG setup has some major limitations...\n\n1) Retrieve once and generate once.\n↳ This means if the retrieved context isn't enough or correct, the LLM can not dynamically",
+    "author_name": "Akshay ",
+    "author_handle": "@akshay_pachaar",
+    "metrics": {
+      "likes": 2200,
+      "retweets": 442,
+      "replies": 42,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 3.1,
+    "url": "https://x.com/akshay_pachaar/status/1870446667444740444"
+  },
+  {
+    "id": "2030248407324143989",
+    "text": "if you left software engineering in 2024 and came back in 2026, you would've missed:\n\nMCP/A2A\nRAG\nProompt Engineering\nAI tab complete\n\nSo basically not much because that's all irrelevant now",
+    "author_name": "Sahaj",
+    "author_handle": "@iamsahaj_xyz",
+    "metrics": {
+      "likes": 1800,
+      "retweets": 45,
+      "replies": 34,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1.9,
+    "url": "https://x.com/iamsahaj_xyz/status/2030248407324143989"
+  },
+  {
+    "id": "1995108099007693206",
+    "text": "RAG was never the end goal.\n\nMemory in AI agents is where everything is heading. Let me break down this evolution in the simplest way possible.\n\nRAG (2020-2023):\n\n- Retrieve info once, generate response\n- No decision-making, just fetch and answer\n- Problem: Often retrieves",
+    "author_name": "Akshay ",
+    "author_handle": "@akshay_pachaar",
+    "metrics": {
+      "likes": 1200,
+      "retweets": 262,
+      "replies": 58,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1.8,
+    "url": "https://x.com/akshay_pachaar/status/1995108099007693206"
+  },
+  {
+    "id": "2004808423054213383",
+    "text": "Most people will still be “learning AI” in 2026.\n\nA small group will be shipping, automating, and replacing workflows with it.\n\nThese 9 skills decide which side you’re on \n\n• Prompt Engineering\n(ChatGPT, Claude, Gemini)\n\n• AI Workflow Automation\n(Zapier, Make, n8n)\n\n• AI",
+    "author_name": "Suryansh Tiwari",
+    "author_handle": "@Suryanshti777",
+    "metrics": {
+      "likes": 1000,
+      "retweets": 288,
+      "replies": 165,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G9KCnyLbgAAnxsd?format=jpg&name=small"
+    ],
+    "viral_score": 1.7,
+    "url": "https://x.com/Suryanshti777/status/2004808423054213383"
+  },
+  {
+    "id": "1864018591433294224",
+    "text": "Basic RAG \nBM25/Sparse RAG \nReRanker RAG \nHybrid RAG \n Sentence Window RAG \n Auto Merging RAG \n HyDE RAG \n Query Transformation RAG \n Self Query RAG \n RAG Fusion \n RAPTOR \n ColBERT RAG \n Graph RAG \n Agnetic RAG  \n Vision RAG",
+    "author_name": "Adithya S K",
+    "author_handle": "@adithya_s_k",
+    "metrics": {
+      "likes": 1100,
+      "retweets": 160,
+      "replies": 9,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1.4,
+    "url": "https://x.com/adithya_s_k/status/1864018591433294224"
+  },
+  {
+    "id": "1991846558816522628",
+    "text": "RAG is not just one technique, it is an entire ecosystem of intelligence.\n\nFrom context-aware assistants to domain-specific systems, here are 16 types of RAG models shaping the next wave of AI innovation -\n\n1. Standard RAG\nThe foundation of all RAG systems - combines retrieval",
+    "author_name": "Shalini Goyal",
+    "author_handle": "@goyalshaliniuk",
+    "metrics": {
+      "likes": 937,
+      "retweets": 208,
+      "replies": 34,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1.4,
+    "url": "https://x.com/goyalshaliniuk/status/1991846558816522628"
+  },
+  {
+    "id": "2011740250180108498",
+    "text": "Confused by all the new terminology around agents and memory? \n\n(episodic, semantic, procedural memory…) \n\nStrip away all the buzz, and the evolution from RAG to agentic RAG to agent memory is actually just about one thing: 𝗵𝗼𝘄 𝘆𝗼𝘂 𝗺𝗮𝗻𝗮𝗴𝗲 𝗱𝗮𝘁𝗮 𝗶𝗻",
+    "author_name": "Femke Plantinga",
+    "author_handle": "@femke_plantinga",
+    "metrics": {
+      "likes": 830,
+      "retweets": 149,
+      "replies": 25,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G-sjGHTWcAATC2Y?format=jpg&name=small"
+    ],
+    "viral_score": 1.2,
+    "url": "https://x.com/femke_plantinga/status/2011740250180108498"
+  },
+  {
+    "id": "2028087631268188412",
+    "text": "RAG was never the end goal.\n\nMemory in AI agents is where everything is heading. Let me break down this evolution in the simplest way possible.\n\nRAG (2020-2023):\n\n- Retrieve info once, generate response\n- No decision-making, just fetch and answer\n- Problem: Often retrieves",
+    "author_name": "Akshay ",
+    "author_handle": "@akshay_pachaar",
+    "metrics": {
+      "likes": 810,
+      "retweets": 147,
+      "replies": 50,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1.2,
+    "url": "https://x.com/akshay_pachaar/status/2028087631268188412"
+  },
+  {
+    "id": "2028514380963536918",
+    "text": "You don't need to write a single line of code to build a full AI agent with RAG, memory, and tool calling in 2026.\n\nI know that sounds like a lie. But It's not.\n\nFlowise is an open source drag and drop builder for LLM apps and it's the most slept-on AI tool I've seen this year.",
+    "author_name": "Ihtesham Ali",
+    "author_handle": "@ihtesham2005",
+    "metrics": {
+      "likes": 715,
+      "retweets": 89,
+      "replies": 45,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/ihtesham2005/status/2028514380963536918"
+  },
+  {
+    "id": "1854554412402024495",
+    "text": "2023: RAG is all you need\n2024: AI agents are all you need\n\nNow bringing you the fusion of AI agents and RAG pipelines.\n\nIn our recent blog post @ecardenas300 and I lift the curtains of agentic RAG.\n\nWe discuss: \n• What is agentic RAG\n• Architectures of agentic RAG\n• How to",
+    "author_name": "Leonie",
+    "author_handle": "@helloiamleonie",
+    "metrics": {
+      "likes": 642,
+      "retweets": 90,
+      "replies": 20,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/Gbnm5S2WQAAFDc_?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/helloiamleonie/status/1854554412402024495"
+  }
+]

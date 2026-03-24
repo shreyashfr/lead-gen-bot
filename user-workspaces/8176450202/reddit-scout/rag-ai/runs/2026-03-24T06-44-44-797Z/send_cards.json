@@ -1,0 +1,35 @@
+{
+  "n": 5,
+  "cards": [
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/rag-ai/runs/2026-03-24T06-44-44-797Z/cards/1s1nxep.png",
+      "caption": "1) I’m a cybersecurity practitioner with 24 years of experience, Blackhat speaker and trainer. AMA about careers, building a security business, and where AI is breaking everything.\nr/cybersecurity · score 99 · 294 ups · 268 comments\nhttps://www.reddit.com/r/cybersecurity/comments/1s1nxep/im_a_cybersecurity_practitioner_with_24_years_of/",
+      "permalink": "https://www.reddit.com/r/cybersecurity/comments/1s1nxep/im_a_cybersecurity_practitioner_with_24_years_of/",
+      "id": "1s1nxep"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/rag-ai/runs/2026-03-24T06-44-44-797Z/cards/1s15lwr.png",
+      "caption": "2) naunsa deay nis Mikyath?\nr/davao · score 41 · 95 ups · 284 comments\nhttps://www.reddit.com/r/davao/comments/1s15lwr/naunsa_deay_nis_mikyath/",
+      "permalink": "https://www.reddit.com/r/davao/comments/1s15lwr/naunsa_deay_nis_mikyath/",
+      "id": "1s15lwr"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/rag-ai/runs/2026-03-24T06-44-44-797Z/cards/1rzg33q.png",
+      "caption": "3) Feedback on my 256gb VRAM local setup and cluster plans. Lawyer keeping it local.\nr/LocalLLaMA · score 20 · 405 ups · 221 comments\nhttps://www.reddit.com/r/LocalLLaMA/comments/1rzg33q/feedback_on_my_256gb_vram_local_setup_and_cluster/",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1rzg33q/feedback_on_my_256gb_vram_local_setup_and_cluster/",
+      "id": "1rzg33q"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/rag-ai/runs/2026-03-24T06-44-44-797Z/cards/1s1frm2.png",
+      "caption": "4) no-magic: 47 AI/ML algorithms implemented from scratch in single-file, zero-dependency Python\nr/learnmachinelearning · score 12 · 107 ups · 14 comments\nhttps://www.reddit.com/r/learnmachinelearning/comments/1s1frm2/nomagic_47_aiml_algorithms_implemented_from/",
+      "permalink": "https://www.reddit.com/r/learnmachinelearning/comments/1s1frm2/nomagic_47_aiml_algorithms_implemented_from/",
+      "id": "1s1frm2"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/rag-ai/runs/2026-03-24T06-44-44-797Z/cards/1s0x7va.png",
+      "caption": "5) LLM failure modes map surprisingly well onto ADHD cognitive science. Six parallels from independent research.\nr/ClaudeAI · score 11 · 146 ups · 35 comments\nhttps://www.reddit.com/r/ClaudeAI/comments/1s0x7va/llm_failure_modes_map_surprisingly_well_onto_adhd/",
+      "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1s0x7va/llm_failure_modes_map_surprisingly_well_onto_adhd/",
+      "id": "1s0x7va"
+    }
+  ]
+}

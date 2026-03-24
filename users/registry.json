@@ -16,10 +16,10 @@
       "joined": "2026-03-18"
     },
     "750774193": {
-      "name": "Sourabh",
-      "workspace": "/home/ubuntu/.openclaw/workspace/users/750774193/",
+      "name": "Saurabh",
+      "workspace": "/home/ubuntu/.openclaw/workspace-ce/users/750774193/",
       "onboarding_complete": false,
-      "onboarding_step": "awaiting_payment",
+      "onboarding_step": "payment_confirmed",
       "platforms": [
         "linkedin",
         "twitter",
@@ -29,7 +29,10 @@
       ],
       "niche": "UPSC preparation, geopolitics, international affairs",
       "joined": "2026-03-09",
-      "payment_confirmed": false
+      "payment_confirmed": true,
+      "email": "suarabhkshafah23@gmail.vom",
+      "stripe_customer_id": "cus_UBmq3hBPPtXR7d",
+      "subscription_start": "2026-03-21"
     },
     "999373741": {
       "name": "Vishal Rewaskar",
@@ -45,6 +48,34 @@
       "platforms": [
         "linkedin"
       ]
+    },
+    "1085339629": {
+      "name": "Ayan Khan",
+      "workspace": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/",
+      "payment_confirmed": true,
+      "onboarding_complete": true,
+      "onboarding_step": null,
+      "joined": "2026-03-22",
+      "email": "ayanarshad2002@gmail.com",
+      "stripe_customer_id": "cus_UCG2EfzTKPckS4",
+      "subscription_start": "2026-03-22",
+      "niche": "Agentic AI Engineering, GenAI system design, AI for Indian SMBs",
+      "platforms": [
+        "linkedin"
+      ]
+    },
+    "1613832104": {
+      "name": "Shubham",
+      "workspace": "/home/ubuntu/.openclaw/workspace-ce/users/1613832104/",
+      "payment_confirmed": true,
+      "onboarding_complete": true,
+      "onboarding_step": null,
+      "joined": "2026-03-23",
+      "email": "shubham@sbl.so",
+      "stripe_customer_id": "cus_UCTqWKeMpUOwyq",
+      "subscription_start": "2026-03-23",
+      "niche": "AI-powered sales automation, behavioral science applied to outreach, founder-led growth, practical AI (not hype)",
+      "platforms": ["linkedin", "instagram", "youtube"]
     },
     "1624590926": {
       "name": "Omkar",
@@ -98,13 +129,14 @@
     "8176450202": {
       "name": "Misal Vaibhav",
       "workspace": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/",
-      "onboarding_complete": false,
-      "onboarding_step": "awaiting_master_doc",
+      "onboarding_complete": true,
+      "onboarding_step": null,
       "joined": "2026-03-12",
       "payment_confirmed": true,
       "email": "misalvaibhav01@gmail.com",
       "stripe_customer_id": "cus_U8qfOOkNkdv8cq",
-      "subscription_start": "2026-03-13"
+      "subscription_start": "2026-03-13",
+      "airtable_enabled": false
     },
     "8353137318": {
       "name": "Karan",

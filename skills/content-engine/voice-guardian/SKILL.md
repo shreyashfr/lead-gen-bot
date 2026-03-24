@@ -55,6 +55,11 @@ This scan checks for 12 documented AI writing patterns:
 
 ---
 
+### 0.5. Voice Lessons (Hard Reject — check BEFORE forbidden phrases)
+Read `voice-memory.json → voice_lessons` array.
+Every entry with `"source": "direct_user_feedback"` is a hard rule — treat it exactly like a forbidden phrase.
+If the draft violates ANY voice lesson: FAIL immediately, list the violated lesson.
+
 ### 1. Forbidden Phrases (Hard Reject)
 Check `voice-memory.json → voice_rules → forbidden_phrases` array:
 - leverage, utilize, streamline, optimize, facilitate, enhance, professionalism
@@ -135,11 +140,11 @@ If {USER_NAME} approves, these can be ignored. Or rewrite for polish.
 
 ## Data Logging (Self-Improvement)
 
-After every validation, log to `voice-memory.json → feedback_log`:
+After every validation, append to `voice-memory.json → feedback_log`:
 
 ```json
 {
-  "date": "2026-02-22",
+  "date": "{today}",
   "format": "LinkedIn post",
   "pillar": "job loss ai",
   "validation_result": "FAILED",
@@ -148,7 +153,19 @@ After every validation, log to `voice-memory.json → feedback_log`:
 }
 ```
 
-Every 5 validations: Coordinator reviews patterns and updates `voice_lessons`.
+**Every 5 entries in feedback_log: run a pattern scan yourself** (no external coordinator needed):
+1. Read the last 5 `feedback_log` entries
+2. Find any issue that appears 3+ times (e.g. "em dash" appearing in 4/5 logs)
+3. If a pattern is found → add a new entry to `voice_lessons`:
+   ```json
+   {
+     "lesson": "[one crisp rule derived from the pattern]",
+     "context": "[e.g. 'em dash appeared in 4/5 recent validations']",
+     "first_detected": "{today}",
+     "source": "validation_pattern"
+   }
+   ```
+4. This lesson is now active — all future content producer sub-agents read voice_lessons before generating
 
 ## Special Cases
 

@@ -1,0 +1,1475 @@
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+📩 Event received: checkout.session.completed
+✅ Payment confirmed for 999373741 (Vishal Rewaskar)
+📩 Event received: invoice.payment_succeeded
+📩 Event received: checkout.session.completed
+✅ Payment confirmed for 8176450202 (Misal Vaibhav)
+📩 Event received: invoice.payment_succeeded
+📩 Event received: invoice.payment_succeeded
+⚠️  No user found for customer cus_TivHPbKlnwiS1L
+📩 Event received: checkout.session.completed
+✅ Payment confirmed for 1912102710 (Hari)
+📩 Event received: invoice.payment_succeeded
+📩 Event received: checkout.session.completed
+✅ Payment confirmed for 5554925279 (fjnnggn)
+📩 Event received: invoice.payment_succeeded
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+📩 Event received: invoice.payment_succeeded
+⚠️  No user found for customer cus_TivHPbKlnwiS1L
+📩 Event received: checkout.session.completed
+✅ Payment confirmed for 5345086195 (Manish More)
+📩 Event received: invoice.payment_succeeded
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+📩 Event received: invoice.payment_succeeded
+⚠️  No user found for customer cus_TivHPbKlnwiS1L
+📩 Event received: invoice.payment_succeeded
+⚠️  No user found for customer cus_TivHPbKlnwiS1L
+📩 Event received: invoice.payment_succeeded
+⚠️  No user found for customer cus_TivHPbKlnwiS1L
+📩 Event received: invoice.payment_failed
+⚠️  No user found for customer cus_U8O5hstUZfA3Sa
+📩 Event received: invoice.payment_failed
+⚠️  No user found for customer cus_U8O5hstUZfA3Sa
+📩 Event received: invoice.payment_failed
+⚠️  No user found for customer cus_U8O5hstUZfA3Sa
+📩 Event received: invoice.payment_failed
+⚠️  No user found for customer cus_U8O5hstUZfA3Sa
+📩 Event received: invoice.payment_failed
+⚠️  No user found for customer cus_U8O5hstUZfA3Sa
+📩 Event received: invoice.payment_failed
+⚠️  No user found for customer cus_U8O5hstUZfA3Sa
+📩 Event received: invoice.payment_failed
+⚠️  No user found for customer cus_U8O5hstUZfA3Sa
+📩 Event received: invoice.payment_failed
+⚠️  No user found for customer cus_U8O5hstUZfA3Sa
+📩 Event received: invoice.payment_failed
+⚠️  No user found for customer cus_U8O5hstUZfA3Sa
+📩 Event received: checkout.session.completed
+ℹ️  No existing session for 292 — will start fresh on next message
+📩 Event received: invoice.payment_succeeded
+✅ Payment confirmed for 292 (Deepanshu Garg)
+📩 Event received: invoice.payment_succeeded
+⚠️  No user found for customer cus_TivHPbKlnwiS1L
+📩 Event received: invoice.payment_succeeded
+⚠️  No user found for customer cus_TivHPbKlnwiS1L
+📩 Event received: invoice.payment_succeeded
+⚠️  No user found for customer cus_TivHPbKlnwiS1L
+📩 Event received: checkout.session.completed
+🔄 Session reset for 750774193 (stale payment state cleared)
+🗑️  Session entry removed from sessions.json for 750774193
+✅ Payment confirmed for 750774193 (Saurabh)
+📩 Event received: invoice.payment_succeeded
+📩 Event received: invoice.payment_succeeded
+⚠️  No user found for customer cus_TivHPbKlnwiS1L
+📩 Event received: invoice.payment_succeeded
+⚠️  No user found for customer cus_TivHPbKlnwiS1L
+📩 Event received: checkout.session.completed
+🔄 Session reset for 1085339629 (stale payment state cleared)
+🗑️  Session entry removed from sessions.json for 1085339629
+✅ Payment confirmed for 1085339629 (Ayan Khan)
+📩 Event received: invoice.payment_succeeded
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+🚀 Stripe webhook server running on port 3001
+[dotenv@17.3.1] injecting env (9) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🚀 Stripe webhook server running on port 3001
+📩 Event received: checkout.session.completed
+🔄 Session reset for 1613832104 (stale payment state cleared)
+🗑️  Session entry removed from sessions.json for 1613832104
+📩 Event received: invoice.payment_succeeded
+📄 Master doc template sent to 1613832104
+✅ Payment confirmed for 1613832104 (Shubham Kumar)
+📩 Event received: invoice.payment_succeeded
+⚠️  No user found for customer cus_TivHPbKlnwiS1L
+📩 Event received: customer.subscription.deleted
+⚠️  No user found for customer cus_T1Nwmk5WGo9CWP

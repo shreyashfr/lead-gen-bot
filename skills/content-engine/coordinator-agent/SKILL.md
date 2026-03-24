@@ -238,7 +238,7 @@ From `voice-memory.json` + `content-queue.md`:
 📋 Step 6/6: Writing strategic brief...
 ```
 
-Save to: `/home/ubuntu/.openclaw/workspace/strategic-brief-[topic-slug]-[YYYY-MM-DD].md`
+Save to: `/home/ubuntu/.openclaw/workspace/content-engine/briefs/strategic-brief-[topic-slug]-[YYYY-MM-DD].md`
 
 ```markdown
 ## STRATEGIC BRIEF — [Topic] — [Date]

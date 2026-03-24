@@ -77,6 +77,12 @@ Retrieving top ideas, hooks and videos. This takes 8-12 minutes — sit back and
 
 Always send the status announcement FIRST as a standalone message, then run the task. Never bundle the status message and the result in the same response.
 
+**🚨 GUARDRAILS (MANDATORY FOR EVERY LLM)**
+- The user-facing IDEAS REPORT must include 15 ideas, each with a hook, format, rationale, and a real source URL (Reddit/Twitter/YouTube/Google News). Do not send partial lists.
+- The IDEAS REPORT must end with the exact production-plan block shown below. Nothing else may appear after that block.
+- Never mention internal workspace paths (e.g., {USER_WORKSPACE}research-report.md) or tell the user to open files. Treat the research report as internal data only.
+- Deliver the findings directly in chat; do not ask "are you done" or prompt the user to check files.
+
 ---
 
 ## STEP 1 — RESEARCH
@@ -90,7 +96,7 @@ bash /home/ubuntu/.openclaw/workspace-ce/skills/pillar-workflow/scripts/run_rese
   --niche "{USER_NICHE}"
 ```
 
-After the exec completes, **immediately read the report file**:
+After the exec completes, **immediately read the report file** into memory so you can craft the 15 ideas. Do not mention or expose the file path when responding — treat it as internal data only.
 
 ```bash
 cat {USER_WORKSPACE}research-report.md
@@ -108,9 +114,11 @@ Generate 15 ideas. Each must:
 - Reference a real story/opinion from the user's master-doc
 - Specify format (LP / TH / XA / TW / CA)
 - Have a "why this works" rationale
-- Include source URL from research data (Reddit, Twitter, YouTube, **or Google News**)
+- **Include source URL from research data (Reddit, Twitter, YouTube, or Google News) — this is MANDATORY. Never omit source URLs. Every single idea must have a 📎 Source: line.**
 
 **At least 3 of the 15 ideas must cite a Google News article URL.** If Google News scout output contains articles, use them. Do not skip Google News sources.
+
+**⚠️ If you send ideas without source URLs, you have failed this step. Go back and add them before sending.**
 
 Send the IDEAS REPORT to the user.
 
@@ -140,13 +148,43 @@ I'll start producing one at a time and send for your review before moving to the
 
 ## STEP 3 — PRODUCTION PLAN
 
-Wait for the user to reply with their production plan.
-e.g.
-5x LinkedIn Posts
-3x Twitter Threads
-2x Tweets
+Wait for the user to reply with their production plan (e.g. "10x LinkedIn Posts", "5x LinkedIn Posts + 3x Tweets").
 
-User also tells you which idea numbers map to each format.
+**Do NOT start generating yet.**
+
+When the user's plan arrives:
+
+### 3a. Auto-assign ideas to formats
+
+Look at the 15 ideas you just generated. Map the best-fit ideas to the formats the user requested. Pick ideas that:
+- Match the requested format (or can be adapted to it)
+- Cover a range of hooks and angles — no two pieces with the same hook type
+- Are grounded in the user's stories/opinions from master-doc
+
+If the user requested more pieces than there are ideas (e.g. 15x LinkedIn Posts but only 15 ideas total), use all available ideas and note that in the plan.
+
+### 3b. Present the production plan
+
+Send the full plan to the user BEFORE doing anything else:
+
+```
+📋 *Here's your production plan:*
+
+[Format] × [N]
+──────────────────
+1. Idea #[N] — [hook/title]
+2. Idea #[N] — [hook/title]
+3. Idea #[N] — [hook/title]
+...
+
+Reply *GO* to start production, or tell me to swap any idea before I begin.
+```
+
+### 3c. Wait for confirmation
+
+- User says **"GO"** (or "yes", "start", "let's go", "proceed") → move to STEP 4
+- User says **"swap [N] for [M]"** or requests any change → update the plan, re-send it, wait for GO again
+- Do NOT begin production until the user explicitly confirms
 
 ---
 
@@ -187,12 +225,24 @@ sessions_spawn(
   Voice memory: {USER_WORKSPACE}voice-memory.json
   Batch manifest: {USER_WORKSPACE}drafts/batch-manifest.json
 
-  CRITICAL — READ THIS FIRST:
-  1. Read the batch-manifest.json to see all other pieces in this batch
-  2. Read any already-generated draft files at {USER_WORKSPACE}drafts/piece-*.md
-  3. Extract: opening styles, hook types, angles, emotional registers, sentence rhythms used so far
-  4. Your piece MUST differ from all existing pieces on at least 3 of those 5 dimensions
-  5. Fill the diversity checklist before writing a single word
+  CRITICAL — READ FEEDBACK MEMORY FIRST (before writing a single word):
+  1. Read {USER_WORKSPACE}voice-memory.json
+  2. Extract and hard-apply ALL of these — they are non-negotiable:
+     a. voice_rules → forbidden_phrases: never use any of these words/phrases, no exceptions
+     b. voice_rules → required_style: follow every rule exactly (em dashes, semicolons, caps, contractions, sentence length)
+     c. voice_lessons: every entry here is a lesson from past rejections — read each one and make sure your draft doesn't repeat that mistake
+        - Entries with "source": "direct_user_feedback" are the highest priority — treat them as hard bans
+     d. last_rejection_by_format → find the entry for [Format] — if it exists, this is what failed LAST TIME in this format. Do not repeat it.
+  3. Read the batch-manifest.json to see all other pieces in this batch
+  4. Read any already-generated draft files at {USER_WORKSPACE}drafts/piece-*.md
+  5. Extract: opening styles, hook types, angles, emotional registers, sentence rhythms used so far
+  6. Your piece MUST differ from all existing pieces on at least 3 of those 5 dimensions
+
+  SELF-CHECK before saving:
+  - Does this draft violate any voice_lesson? → rewrite if yes
+  - Does it repeat the last_rejection_by_format failure? → rewrite if yes
+  - Does it contain any forbidden phrase? → rewrite if yes
+  - Does it sound like {USER_NAME} or like an AI? → rewrite if AI
 
   Then:
   - Write the full draft in {USER_NAME}'s voice
@@ -207,6 +257,7 @@ sessions_spawn(
   HOOK_TYPE: [which hook structure was used]
   ANGLE: [which angle was used]
   OPENING_WORD: [first word of the post]
+  FEEDBACK_RULES_APPLIED: [comma-separated list of voice_lessons applied, or 'none yet']
   ---
   [full content here]",
   label="content-piece-[N]",
@@ -253,10 +304,45 @@ User reviews each piece.
 - Move to next piece
 
 **On REJECT / REQUEST CHANGES:**
-- Run **reflection-agent** to generate Composite reflection (Explanation + Solution + Instructions)
-- Apply reflection to rewrite
-- Re-send for approval
-- Log to `{USER_WORKSPACE}voice-memory.json` → feedback_log
+
+**Step 1 — Log the feedback to voice-memory.json FIRST (before any rewrite):**
+
+Read `{USER_WORKSPACE}voice-memory.json` and append to `feedback_log`:
+```json
+{
+  "date": "{today}",
+  "format": "[format of this piece]",
+  "pillar": "[current pillar]",
+  "piece_n": [N],
+  "feedback": "[exact words the user gave]",
+  "feedback_type": "[style | tone | structure | hook | content | other]",
+  "action": "rewrite_requested"
+}
+```
+
+**Step 2 — Check if it's style/formatting feedback:**
+
+Style/formatting = anything about: em dashes, semicolons, specific words/phrases to ban, sentence length, capitalization, punctuation, tone descriptor, paragraph structure.
+
+If it IS style feedback:
+1. Update `voice_rules` with the hard ban immediately
+2. Add to `voice_lessons`:
+   ```json
+   {
+     "lesson": "[the rule, e.g. 'Never use em dashes in any format']",
+     "context": "[user's exact words]",
+     "first_detected": "{today}",
+     "source": "direct_user_feedback"
+   }
+   ```
+3. Confirm to user: *"Got it — I've locked that rule. I'll never use [X] again in any future post."*
+
+**Step 3 — Run reflection-agent** to generate Composite reflection (Explanation + Solution + Instructions)
+
+**Step 4 — Rewrite using the reflection brief**, re-send for approval
+
+**⚠️ THE GOLDEN RULE: The user should never have to say the same thing twice.**
+Every piece of feedback — style, tone, structure, hook, content — goes into voice-memory.json and is read by every future content generation sub-agent before writing. This is non-negotiable.
 
 ---
 

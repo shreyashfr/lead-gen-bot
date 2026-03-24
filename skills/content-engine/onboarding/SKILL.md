@@ -259,6 +259,20 @@ Write to `{USER_WORKSPACE}voice-memory.json`:
   "voice_lessons": [],
   "feedback_log": [],
   "reflection_log": [],
+  "last_rejection_by_format": {
+    "linkedin": null,
+    "twitter_thread": null,
+    "x_article": null,
+    "tweet": null,
+    "carousel": null
+  },
+  "batch_analysis_state": {
+    "total_reflections_logged": 0,
+    "reflections_at_last_analysis": 0,
+    "last_analyzed_at": null,
+    "analyses_run": 0,
+    "last_analysis_summary": "no analysis run yet"
+  },
   "agent_logs": {
     "research_agent": { "last_run": null },
     "performance_reviewer": { "last_run": null }

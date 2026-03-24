@@ -1,0 +1,411 @@
+[
+  {
+    "id": "2030248407324143989",
+    "text": "if you left software engineering in 2024 and came back in 2026, you would've missed:\n\nMCP/A2A\nRAG\nProompt Engineering\nAI tab complete\n\nSo basically not much because that's all irrelevant now",
+    "author_name": "Sahaj",
+    "author_handle": "@iamsahaj_xyz",
+    "metrics": {
+      "likes": 1800,
+      "retweets": 45,
+      "replies": 34,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1.9,
+    "url": "https://x.com/iamsahaj_xyz/status/2030248407324143989"
+  },
+  {
+    "id": "2030581942706725350",
+    "text": "These are the best 10 AI projects that will get you hired in 2026:\n\n1. RAG App with Real Evaluations\n\nBuild a production-grade RAG system with evals, monitoring, and feedback loops.\n\nStack: OpenAI or Claude + vector DB + evals\nGuide: \nhttps://\npinecone.io/learn/retrieva\nl-augmented-generation/\n…\n\n2. Autonomous",
+    "author_name": "Rimsha Bhardwaj",
+    "author_handle": "@heyrimsha",
+    "metrics": {
+      "likes": 860,
+      "retweets": 162,
+      "replies": 20,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HC4Tg31bcAAtuX6?format=jpg&name=360x360",
+      "https://pbs.twimg.com/media/HC4ThB2a4AAK_cv?format=jpg&name=360x360"
+    ],
+    "viral_score": 1.2,
+    "url": "https://x.com/heyrimsha/status/2030581942706725350"
+  },
+  {
+    "id": "2031488102296956993",
+    "text": "Initiate the crawl job with just a URL, and get a job ID back. Poll, or wait for results.\n\nGreat for training models, RAG, and researching/monitoring content.",
+    "author_name": "Cloudflare Developers",
+    "author_handle": "@CloudflareDev",
+    "metrics": {
+      "likes": 724,
+      "retweets": 37,
+      "replies": 10,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/CloudflareDev/status/2031488102296956993"
+  },
+  {
+    "id": "2028514380963536918",
+    "text": "You don't need to write a single line of code to build a full AI agent with RAG, memory, and tool calling in 2026.\n\nI know that sounds like a lie. But It's not.\n\nFlowise is an open source drag and drop builder for LLM apps and it's the most slept-on AI tool I've seen this year.",
+    "author_name": "Ihtesham Ali",
+    "author_handle": "@ihtesham2005",
+    "metrics": {
+      "likes": 715,
+      "retweets": 90,
+      "replies": 45,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/ihtesham2005/status/2028514380963536918"
+  },
+  {
+    "id": "2034946111694131639",
+    "text": "Learning AI engineering in 2026.\n\nWhat most people do:\n→ Jump to agents\n→ Skip foundations\n→ Ignore MLOps\n→ Wonder why nothing works\n\nWhat this roadmap shows:\n\n1. Foundation (Python, APIs, clean code)\n2. Semantic intelligence (embeddings, vector DBs)\n3. RAG (grounded outputs)",
+    "author_name": "Tech with Mak",
+    "author_handle": "@techNmak",
+    "metrics": {
+      "likes": 605,
+      "retweets": 118,
+      "replies": 13,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HD2Ur5BboAAKPD1?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/techNmak/status/2034946111694131639"
+  },
+  {
+    "id": "2033850603483631709",
+    "text": "If you want to be an AI Engineer in 2026, learn THIS:\n\n Foundations: Python, Advanced Prompting, API Integration (OpenAI, Anthropic, Gemini).\n\n The Brain (RAG): Embeddings, Vector DBs (Pinecone, Qdrant, Milvus), Advanced Chunking strategies.\n\n Orchestration & Agents:",
+    "author_name": "Ujjwal Chadha",
+    "author_handle": "@ujjwalscript",
+    "metrics": {
+      "likes": 525,
+      "retweets": 102,
+      "replies": 14,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/ujjwalscript/status/2033850603483631709"
+  },
+  {
+    "id": "2034511197576520033",
+    "text": "2026, the 5 AI Projects Easiest to Help You Land a Job\n(Recommended to bookmark directly)\n\n Implement RAG from Scratch\nNot just calling APIs, but truly understanding the principles\nGitHub: \nhttps://\ngithub.com/langchain-ai/r\nag-from-scratch\n…\n\n AI Social Media Agent\nAutomatically posts content, analyzes",
+    "author_name": "路飞  AI 研究员",
+    "author_handle": "@0xluffy_eth",
+    "metrics": {
+      "likes": 325,
+      "retweets": 85,
+      "replies": 5,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HDwJJNMbEAATUTx?format=jpg&name=360x360",
+      "https://pbs.twimg.com/media/HDwJJX0bIAAbuHX?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/0xluffy_eth/status/2034511197576520033"
+  },
+  {
+    "id": "2028003914310734116",
+    "text": "High-Demand & High Paying Tech Skills for 2026 \n\n1. Cloud Engineering (AWS | Azure | GCP)\n2. DevOps & Automation (CI/CD | IaC | GitOps)\n3. Kubernetes & Containers\n4. Cybersecurity & Cloud Security\n5. Data Engineering \n6. AI/ML Integration (LLMs, RAG, MLOps)\n7. Platform",
+    "author_name": "Edison",
+    "author_handle": "@CodeEdison",
+    "metrics": {
+      "likes": 299,
+      "retweets": 41,
+      "replies": 14,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/CodeEdison/status/2028003914310734116"
+  },
+  {
+    "id": "2031037663214485560",
+    "text": "Top AI future-proof IT certs for 2026 (cloud/dev focus):\n\n1. AWS Certified Generative AI Developer – Professional: Production RAG pipelines, agents, Bedrock deployment. New, high-demand, ties directly to that 200k+ hype.\n\n2. Google Cloud Professional Machine Learning Engineer:",
+    "author_name": "Cyber Security | Tech | AI | Crypto |",
+    "author_handle": "@XinoYaps",
+    "metrics": {
+      "likes": 252,
+      "retweets": 20,
+      "replies": 5,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/XinoYaps/status/2031037663214485560"
+  },
+  {
+    "id": "2033195072804807048",
+    "text": "Skills That Pay in the AI Era (2026)\n\n• AI/ML → Python, PyTorch, Transformers\n• AI Stack → RAG, Vector DBs, Agents\n• Backend → Node.js, Go, Rust\n• Frontend → React, Next.js\n• APIs → REST, GraphQL, gRPC\n• Databases → PostgreSQL, Redis\n• DevOps → Docker, Kubernetes\n•",
+    "author_name": "Shruti Codes",
+    "author_handle": "@Shruti_0810",
+    "metrics": {
+      "likes": 88,
+      "retweets": 23,
+      "replies": 2,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HDdcIoUaAAAJvJf?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/Shruti_0810/status/2033195072804807048"
+  },
+  {
+    "id": "1998387391501861181",
+    "text": "It’s 2026  Are you actually mastering the #AgenticAI Stack your teams now rely on?\n\n #AI systems in 2026 don’t just respond, they reason, act, critique & execute.\nYet most teams still build simple RAG bots & miss the core layers that power real agentic",
+    "author_name": "Dr. Khulood Almani | د.خلود المانع@Khulood_Almani·Dec 9, 2025",
+    "author_handle": "unknown",
+    "metrics": {
+      "likes": 86,
+      "retweets": 74,
+      "replies": 18,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/Khulood_Almani/status/1998387391501861181"
+  },
+  {
+    "id": "2031304190065332388",
+    "text": "Skills That Pay in the AI Era (2026)\n\n• AI/ML → Python, PyTorch, Transformers\n• AI Stack → RAG, Vector DBs, Agents\n• Backend → Node.js, Go, Rust\n• Frontend → React, Next.js\n• APIs → REST, GraphQL, gRPC\n• Databases → PostgreSQL, Redis\n• DevOps → Docker, Kubernetes\n•",
+    "author_name": "Shruti Codes",
+    "author_handle": "@Shruti_0810",
+    "metrics": {
+      "likes": 72,
+      "retweets": 14,
+      "replies": 10,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HDCkW4WaMAEcZd3?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/Shruti_0810/status/2031304190065332388"
+  },
+  {
+    "id": "2025898997035225179",
+    "text": "9 BEST Free Resources to Learn RAG (Retrieval-Augmented Generation) in 2026:\n\n1. LangChain RAG Tutorial\n\nhttps://\npython.langchain.com/docs/tutorials\n/rag/\n…\n\n2. LlamaIndex Docs\n\nhttps://\ndocs.llamaindex.ai\n\n3. DeepLearning AI Learn: Building and Evaluating Advanced RAG\n\nhttps://\ndeeplearning.ai/short-courses/\nbuilding-evaluating-advanced-rag/\n…\n\n4. Anthropic Docs -",
+    "author_name": "Ihtesham Ali",
+    "author_handle": "@ihtesham2005",
+    "metrics": {
+      "likes": 71,
+      "retweets": 11,
+      "replies": 6,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HB1wZbibcAA-35H?format=jpg&name=360x360",
+      "https://pbs.twimg.com/media/HB1wZnza4AA-4Ho?format=jpg&name=360x360"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/ihtesham2005/status/2025898997035225179"
+  },
+  {
+    "id": "2029820747850621428",
+    "text": "Your degree gets you the interview. Your GitHub gets you the job.\n\n4 PROJECTS TO BUILD IN 2026:\n1. Deploy a multi-tier app on EKS via CI/CD\n2. Automate security scans for public repos\n3. Build an AWS Lambda cost-optimization script\n4. Create a RAG bot using local LLMs\n\nBuild.",
+    "author_name": "Tech Fusionist",
+    "author_handle": "@techyoutbe",
+    "metrics": {
+      "likes": 54,
+      "retweets": 5,
+      "replies": 6,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/techyoutbe/status/2029820747850621428"
+  },
+  {
+    "id": "2034043686993203517",
+    "text": "AI Agent Skills Era — Essential Skills for 2026\n\nThink ChatGPT is all you need? If you don't learn now, you'll get left behind...\n\nPrompt Engineering (Basics)\nAI Agent Building (CrewAI, AutoGen, LangGraph)\nWorkflow Automation (Zapier, Make, n8n)\nRAG (Retrieval-Augmented",
+    "author_name": "シュンスケ",
+    "author_handle": "@The_AGI_WAY",
+    "metrics": {
+      "likes": 32,
+      "retweets": 1,
+      "replies": 5,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/The_AGI_WAY/status/2034043686993203517"
+  },
+  {
+    "id": "2035227403690418492",
+    "text": "You've been chatting with an AI for half a year, and one day you ask it: \"How's that project I mentioned last time going?\"\n\nIt looks totally confused. Because it doesn't remember you at all.\n\nIt's 2026, and AI's biggest weakness isn't that it's not smart enough. It's that it",
+    "author_name": "Yanhua",
+    "author_handle": "@yanhua1010",
+    "metrics": {
+      "likes": 24,
+      "retweets": 6,
+      "replies": 8,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HDvr7G9bQAARTrX?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/yanhua1010/status/2035227403690418492"
+  },
+  {
+    "id": "2035543010587402640",
+    "text": "Critical: AnythingLLM Desktop XSS-to-RCE via insecure Electron config. Poisoned RAG documents or compromised LLM endpoints can achieve full host compromise. CVE-2026-32626, CVSS 9.6. Patch available.",
+    "author_name": "Nicolas Krassas",
+    "author_handle": "@Dinosn",
+    "metrics": {
+      "likes": 20,
+      "retweets": 6,
+      "replies": 1,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/Dinosn/status/2035543010587402640"
+  },
+  {
+    "id": "2034028252084461598",
+    "text": "Everyone saves these kinds of roadmaps to feel reassured, but I bet half the items on this list will be obsolete in six months.\n\nA roadmap titled \"If you want to become an AI engineer by 2026, learn this\" is going viral. Python, RAG, LangChain, LlamaIndex, LoRA fine-tuning... 500",
+    "author_name": "Tom | ドバイで生成AIやってる人",
+    "author_handle": "@0x__tom",
+    "metrics": {
+      "likes": 13,
+      "retweets": 1,
+      "replies": 0,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HDo-aPkaQAAYnU9?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/0x__tom/status/2034028252084461598"
+  },
+  {
+    "id": "2034540383363878978",
+    "text": "Save the date: April 17, in Ljubljana, Slovenia!\n\nJoin us at APEX Alpe Adria 2026 to learn about APEXLang, RAG Solutions, AI Transformations, Property Graphs and much more!\n\n\nhttps://\nsocial.ora.cl/6013B6rhR7\n\n#orclAPEX #LowCode",
+    "author_name": "Oracle APEX",
+    "author_handle": "@OracleAPEX",
+    "metrics": {
+      "likes": 11,
+      "retweets": 5,
+      "replies": 0,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HDr9IHhWwAAER-8?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/OracleAPEX/status/2034540383363878978"
+  },
+  {
+    "id": "2033015375172944000",
+    "text": "【Honeywell's On-Site RAG Agent Case Study to Be Presented at Interrupt 2026】\n\nAlpesh Desai from Honeywell is scheduled to present a case study on building a RAG (Retrieval-Augmented Generation) agent for on-site engineers at Interrupt 2026. According to LangChain's",
+    "author_name": "LangChainJP",
+    "author_handle": "@LangChainJP",
+    "metrics": {
+      "likes": 9,
+      "retweets": 0,
+      "replies": 1,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HDa4tdkXcAADLLF?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/LangChainJP/status/2033015375172944000"
+  },
+  {
+    "id": "2035071381440790823",
+    "text": "Previously on thatJeffSmith: I built a mini RAG Pipeline to get personal training advice",
+    "author_name": "SQL.ProductManager.Oracle.Databases@thatjeffsmith·Mar 20",
+    "author_handle": "unknown",
+    "metrics": {
+      "likes": 5,
+      "retweets": 1,
+      "replies": 0,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/thatjeffsmith/status/2035071381440790823"
+  },
+  {
+    "id": "2033536632838820271",
+    "text": "3. Building with the Claude API\n\nEvery serious AI product in 2026 has an API layer.\n\nThis course teaches you to build one from scratch.\n\nYou'll learn:\n→ API requests and streaming\n→ Tool calling and automation\n→ RAG pipelines and agent architectures\n\n \nhttp://\nanthropic.skilljar.com/claude-with-th\ne-anthropic-api\n…",
+    "author_name": "Guri Singh",
+    "author_handle": "@heygurisingh",
+    "metrics": {
+      "likes": 4,
+      "retweets": 0,
+      "replies": 1,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/heygurisingh/status/2033536632838820271"
+  },
+  {
+    "id": "2033448482909114418",
+    "text": "Skills That Pay in the AI Era (2026)\n\n• AI/ML → Python, PyTorch, Transformers\n• AI Stack → RAG, Vector DBs, Agents\n• Backend → Node.js, Go, Rust\n• Frontend → React, Next.js\n• APIs → REST, GraphQL, gRPC\n• Databases → PostgreSQL, Redis\n• DevOps → Docker, Kubernetes\n•",
+    "author_name": "Indu Tripathi",
+    "author_handle": "@InduTripat82427",
+    "metrics": {
+      "likes": 2,
+      "retweets": 0,
+      "replies": 0,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HDhCnGSbMAAA79P?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/InduTripat82427/status/2033448482909114418"
+  },
+  {
+    "id": "2034938580997742732",
+    "text": "3/23\nNEWAGE 2026 SPRING\n\n[Offering] Front Row S Seats ~Within 30\n\n[Seeking] Please show me\n\nPlease DM me with your price offer.\n\nReichi RAG POUND If the world were as it should be!!!SARUKANI BENNY E.V.P Def Class ADYN\nOHL Hip Line (W.H.R) NeoStella SHY Crimson Crat Clan THE FIVE",
+    "author_name": "・",
+    "author_handle": "@rnpm_t",
+    "metrics": {
+      "likes": 2,
+      "retweets": 0,
+      "replies": 1,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/rnpm_t/status/2034938580997742732"
+  }
+]

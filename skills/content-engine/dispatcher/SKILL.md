@@ -4,6 +4,8 @@ description: >
   Entry point for every Telegram message from a Content Engine user.
   Identifies the user by sender_id, loads their workspace, routes to
   payment gate (if new), onboarding (if paid), or content engine (if set up).
+
+model: anthropic/claude-sonnet-4-6
 ---
 
 # Content Engine Dispatcher
@@ -188,14 +190,14 @@ Send using `message` tool with `disable_web_page_preview: true` to prevent Teleg
 ```
 Hi {sender_name}! 👋 Welcome to the Content Engine.
 
-I'm a Multi-Agent Social Media Content Engine — I surf Reddit and X (Twitter), track what's going viral in your niche, and turn those insights into ready-to-post content for you.
+I'm a Multi-Agent Social Media Content Engine — I surf Reddit, X (Twitter), YouTube, and Google News, track what's going viral in your niche, and turn those insights into ready-to-post content for you.
 
 Here's what I do:
 
 📄 Uses your Master Document as context so every post sounds like you
 💬 Learns your writing style from your WhatsApp chats
-🔍 Surfs Twitter and Reddit for real-time trends
-🎯 Researches viral content and high-performing hooks
+🔍 Surfs Twitter, Reddit, YouTube and Google News for real-time trends
+🎯 Researches viral content and high-performing hooks across 4 platforms
 ✍️ Generates posts for LinkedIn, Instagram, Twitter and more
 🤖 Eliminates AI signs — content that actually sounds human
 
@@ -349,6 +351,7 @@ Route message:
 | `my numbers` / `update performance` | Run performance-tracker skill |
 | `how does this work` / `what can you do` | Send HOW IT WORKS reply (see below) |
 | Anything else | Answer as content engine assistant in their context |
+| Style/formatting feedback outside a pillar session (e.g. "don't use em dashes", "remove X", "never use Y again") | **Treat as a permanent voice rule update** — update `{USER_WORKSPACE}voice-memory.json` → `voice_rules` AND add to `voice_lessons`, then confirm to user |
 
 **When running any skill, inject this context:**
 ```
@@ -385,8 +388,8 @@ Always upgrade to the better name as it becomes available. Never go backwards.
 Here's what the Content Engine does, step by step:
 
 🔍 RESEARCH AGENT
-Scans Reddit and Twitter/X in real time for your niche.
-Finds what's getting traction, what gaps competitors are missing, and what questions your audience is asking.
+Scans Reddit, Twitter/X, YouTube, and Google News in real time for your niche.
+Finds what's getting traction, what gaps competitors are missing, and what questions your audience is asking — across 4 platforms simultaneously.
 
 💡 IDEA AGENT
 Generates 15 content ideas — each with a hook, angle, format, and why it'll work for you.

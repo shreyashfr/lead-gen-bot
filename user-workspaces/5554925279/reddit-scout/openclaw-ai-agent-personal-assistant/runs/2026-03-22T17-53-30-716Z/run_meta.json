@@ -1,0 +1,33 @@
+{
+  "niche": "openclaw AI agent personal assistant",
+  "nicheSlug": "openclaw-ai-agent-personal-assistant",
+  "runId": "2026-03-22T17-53-30-716Z",
+  "startedAt": "2026-03-22T17:53:30.717Z",
+  "keywords": [
+    "openclaw AI agent personal assistant"
+  ],
+  "mustInclude": [
+    "openclaw",
+    "agent",
+    "personal",
+    "assistant"
+  ],
+  "search": "openclaw AI agent personal assistant",
+  "subAllowlist": null,
+  "config": {
+    "topN": 10,
+    "subLimit": 10,
+    "gapMs": 1200,
+    "limitPerListing": 25,
+    "time": "week",
+    "kinds": [
+      "top",
+      "hot",
+      "rising"
+    ],
+    "searchSort": "top",
+    "searchTime": null,
+    "minSubscribers": 0,
+    "sendCardsN": 5
+  }
+}

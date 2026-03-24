@@ -22,6 +22,11 @@ Produces single pieces of content in {USER_NAME}'s voice across all 5 formats.
 1. `{USER_WORKSPACE}master-doc.md` — voice, stories, hook library, positioning
 2. `{USER_WORKSPACE}voice-memory.json` — forbidden phrases, tone guardrails, high-performing patterns, voice lessons
 
+**⚠️ VOICE LESSONS ARE MANDATORY — NOT OPTIONAL:**
+After reading `voice-memory.json`, explicitly extract and list every entry in `voice_lessons`. These are rules learned from past user feedback. Every single one applies to every format — LinkedIn, Twitter, Instagram, Threads, everything.
+If `voice_lessons` has entries, do not write a single word of the draft until you've read them all.
+If a lesson says "never use X", that is a hard ban — same as a forbidden phrase.
+
 **⚠️ WHATSAPP STYLE RULE:** If `voice-memory.json` contains a `whatsapp_style` block, use it ONLY to inform writing style (sentence length, tone, capitalization, punctuation patterns). NEVER reference, quote, or allude to any chat content, names, people mentioned, events, or personal details from WhatsApp in any piece of content. The style is the only thing that transfers — everything else stays private, always.
 
 ## Input You Need (from pillar-workflow)

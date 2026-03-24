@@ -1,0 +1,15 @@
+{
+  "pillar": "Vibe Outreach — prompt-driven AI sales automation like Vibe Coding but for outreach",
+  "pieces": [
+    { "n": 1, "format": "LinkedIn Post", "hook": "Vibe Coding changed how people build. Vibe Outreach is doing the same to how people sell.", "angle": "Naval's vibe coding = new PM thesis applied to sales. Describe who to reach, how to reach them, hit run — Sbl does the rest.", "status": "pending" },
+    { "n": 2, "format": "LinkedIn Post", "hook": "Built a fintech at 16. 10,000 users. Shut down by regulators.", "angle": "Crito story — what it taught about regulatory risk and why most founders treat compliance as a later-stage problem", "status": "pending" },
+    { "n": 3, "format": "LinkedIn Post", "hook": "Vibe Outreach levels — the faster you hit level 5, the more pipeline you build", "angle": "Adaptation of the viral vibe coding levels format applied to B2B outreach. Level 0 = manual cold emails. Level 5 = write a prompt, Sbl runs the campaign.", "status": "pending" },
+    { "n": 4, "format": "LinkedIn Post", "hook": "We shipped 7 features in 60 days.", "angle": "One-liner punchline post about Sbl.so product velocity — Post Engagement Leads, Fractional SDRs, ICP Filter, Smart Followups, etc.", "status": "pending" },
+    { "n": 5, "format": "Tweet", "hook": "Vibe Outreach levels", "angle": "Short punchy tweet adapting the viral vibe coding levels format for B2B outreach. Ends with Sbl.so.", "status": "pending" },
+    { "n": 6, "format": "Tweet", "hook": "Built a fintech at 16. 10,000 users. Shut down by regulators.", "angle": "Ultra-short punchy tweet version of the Crito story — one paragraph max, ends with the lesson.", "status": "pending" },
+    { "n": 7, "format": "Twitter Thread", "hook": "Vibe Coding changed how people build. Vibe Outreach is doing the same to how people sell.", "angle": "Thread format — starts with the Naval vibe coding thesis, draws the parallel to sales, walks through how Vibe Outreach works with Sbl.so, ends with a CTA.", "status": "pending" },
+    { "n": 8, "format": "Twitter Thread", "hook": "How I'd rebuild our outreach system from scratch in 2026", "angle": "Step-by-step thread — old way vs. Vibe Campaign approach. What prompt to write. What Sbl handles. What still needs human judgment.", "status": "pending" },
+    { "n": 9, "format": "Instagram Carousel", "hook": "From prompt to pipeline: the Vibe Outreach workflow", "angle": "Slide-by-slide visual breakdown — old way vs. new way. Prompt to campaign to conversations to pipeline. Final slide: Sbl.so.", "status": "pending" },
+    { "n": 10, "format": "Instagram Carousel", "hook": "Built a fintech at 16. 10,000 users. Shut down by regulators.", "angle": "Founder story carousel — each slide is a chapter: the build, the growth, the shutdown, the lesson, what it changed about how you build Sbl.so.", "status": "pending" }
+  ]
+}

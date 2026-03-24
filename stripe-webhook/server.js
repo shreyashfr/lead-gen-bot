@@ -8,7 +8,7 @@ const https = require('https');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// ─── Telegram helper ──────────────────────────────────────────────────────────
+// ─── Telegram helpers ─────────────────────────────────────────────────────────
 function sendTelegramMessage(chatId, text) {
   const token = process.env.TELEGRAM_BOT_TOKEN;
   const body = JSON.stringify({ chat_id: chatId, text, parse_mode: 'Markdown', disable_web_page_preview: true });
@@ -27,6 +27,31 @@ function sendTelegramMessage(chatId, text) {
     req.on('error', reject);
     req.write(body);
     req.end();
+  });
+}
+
+function sendTelegramDocument(chatId, filePath, caption) {
+  const token = process.env.TELEGRAM_BOT_TOKEN;
+  const FormData = require('form-data');
+  const form = new FormData();
+  form.append('chat_id', String(chatId));
+  form.append('document', fs.createReadStream(filePath), { filename: path.basename(filePath) });
+  if (caption) form.append('caption', caption);
+
+  return new Promise((resolve, reject) => {
+    const options = {
+      hostname: 'api.telegram.org',
+      path: `/bot${token}/sendDocument`,
+      method: 'POST',
+      headers: form.getHeaders()
+    };
+    const req = https.request(options, res => {
+      let data = '';
+      res.on('data', chunk => data += chunk);
+      res.on('end', () => resolve(JSON.parse(data)));
+    });
+    req.on('error', reject);
+    form.pipe(req);
   });
 }
 
@@ -134,6 +159,7 @@ app.post('/stripe-webhook', express.raw({ type: 'application/json' }), async (re
       const workspacePath = createUserWorkspace(telegramId, name, email);
 
       const registry = readRegistry();
+      const alreadyOnboarded = registry.users[telegramId]?.onboarding_complete || false;
       registry.users[telegramId] = {
         ...(registry.users[telegramId] || {}),
         name,
@@ -142,19 +168,39 @@ app.post('/stripe-webhook', express.raw({ type: 'application/json' }), async (re
         workspace: workspacePath,
         payment_confirmed: true,
         subscription_start: new Date().toISOString().split('T')[0],
-        onboarding_complete: registry.users[telegramId]?.onboarding_complete || false,
-        onboarding_step: registry.users[telegramId]?.onboarding_complete ? null : 'payment_confirmed',
+        onboarding_complete: alreadyOnboarded,
+        onboarding_step: alreadyOnboarded ? null : 'awaiting_master_doc',
         joined: registry.users[telegramId]?.joined || new Date().toISOString().split('T')[0]
       };
       writeRegistry(registry);
+
+      // Also update onboarding-state.json to match
+      if (!alreadyOnboarded) {
+        const onboardingStatePath = path.join(workspacePath, 'onboarding-state.json');
+        fs.writeFileSync(onboardingStatePath, JSON.stringify({
+          step: 'awaiting_master_doc',
+          data: { name, email, telegram_id: telegramId }
+        }, null, 2));
+      }
 
       // Reset any stale CE session so the bot doesn't use cached payment_confirmed: false
       resetCeSession(telegramId);
 
       const firstName = name.split(' ')[0];
+
+      // Send payment confirmation message
       await sendTelegramMessage(telegramId,
-        `✅ *Payment confirmed, ${firstName}!*\n\nWelcome to the Content Engine 🎉\n\nYour workspace is ready. Reply with anything to get started.`
+        `✅ *Payment confirmed, ${firstName}!*\n\nWelcome to the Content Engine 🎉\n\nYour workspace is ready. To build your content system, fill in the attached Master Doc template and send it back as a .txt or .md file.\n\nThis is what tells the engine your voice, niche, writing rules, and stories — it's the foundation of everything.\n\n💬 *Optional but powerful* — you can also export your WhatsApp chats and send them as a .txt or .md file. I'll study how you naturally write and talk, and use that to make your content sound even more like you.`
       );
+
+      // Send the master doc template file directly
+      const templatePath = '/home/ubuntu/.openclaw/workspace/skills/onboarding/master-doc-template.md';
+      if (fs.existsSync(templatePath)) {
+        await sendTelegramDocument(telegramId, templatePath, 'Fill this in and send it back as a .txt or .md file ✏️');
+        console.log(`📄 Master doc template sent to ${telegramId}`);
+      } else {
+        console.error(`⚠️  Template not found at ${templatePath}`);
+      }
 
       console.log(`✅ Payment confirmed for ${telegramId} (${name})`);
     } catch (err) {
