@@ -280,20 +280,20 @@ Reply *GO* to start production, or tell me to swap any idea before I begin.
 
 ---
 
-## STEP 4 — PARALLEL CONTENT GENERATION
+## STEP 4 — SEQUENTIAL CONTENT GENERATION (ONE AT A TIME)
 
-This is the core pipeline change. Do NOT generate pieces one-by-one sequentially. Generate ALL pieces in parallel in the background, deliver them to the user one-by-one as they approve.
+Generate pieces **ONE AT A TIME**. Each piece is generated, sent for review, and approved before moving to the next.
 
 ### How it works:
 
 **4a. Announce immediately:**
 ```
-✍️ Starting parallel generation of all [N] pieces.
+✍️ Starting production of [N] pieces.
 
-I'll send you piece #1 as soon as it's ready — and while you're reviewing it, the rest are already generating in the background. You'll never wait long between pieces.
+Piece #1 coming up — you'll review and approve each one before I move to the next.
 ```
 
-**4b. Spawn ALL pieces as parallel background sub-agents:**
+**4b. Spawn piece #1 ONLY (then wait for completion before piece #2):**
 
 Before spawning, create `{USER_WORKSPACE}drafts/batch-manifest.json` listing all pieces in this batch:
 ```json
@@ -357,46 +357,88 @@ sessions_spawn(
 )
 ```
 
-Spawn ALL sub-agents in one go. All pieces generate in parallel.
-
-**Diversity is enforced at the sub-agent level** — each piece reads the manifest + existing drafts and actively avoids repeating patterns from the others.
-
-**4c. Deliver piece #1 as soon as ready:**
-
-Poll `{USER_WORKSPACE}drafts/piece-1.md` every 20 seconds until `STATUS: READY` appears.
-As soon as it's ready, read it and run a quick similarity check against other ready drafts:
-- Compare HOOK_TYPE, ANGLE, OPENING_WORD from the file headers
-- If two pieces share the same hook type AND angle → flag to the sub-agent to rewrite one before delivering
-- If they differ on at least 2 dimensions → proceed to delivery
-
-**🚨 MANDATORY AUTO-POST TO TELEGRAM:**
-Do NOT wait, do NOT ask permission. Use the `message` tool to **automatically post the piece directly to Telegram**:
+**For EACH piece in the production plan, execute this loop ONE PIECE AT A TIME:**
 
 ```
-message(
-  action="send",
-  channel="telegram",
-  target="{USER_TELEGRAM_ID}",
-  message="📝 Piece #[N] ready for review:\n\n{full piece content}\n\n━━━━━━━━━━\n\nReply:\n✅ approved\n🔧 fix: [what to change]\n⏭️ next (skip this one)"
-)
+LOOP for each piece_n in production_plan:
+
+  Step 1: Spawn piece #N ONLY
+  sessions_spawn(
+    task="You are a content producer. Produce a [Format] post based on:
+    Idea: [hook + angle + story reference]
+    Master-doc: {USER_WORKSPACE}master-doc.md
+    Voice memory: {USER_WORKSPACE}voice-memory.json
+    Batch manifest: {USER_WORKSPACE}drafts/batch-manifest.json
+
+    [same sub-agent task as before - read voice rules, forbidden phrases, lessons, check diversity against existing drafts...]
+    
+    Save to: {USER_WORKSPACE}drafts/piece-[N].md",
+    label="content-piece-[N]",
+    mode="run"
+  )
+
+  Step 2: Wait for piece #N to complete
+  Poll {USER_WORKSPACE}drafts/piece-[N].md every 10 seconds until STATUS: READY
+
+  Step 3: Read the completed piece
+  content = read({USER_WORKSPACE}drafts/piece-[N].md)
+
+  Step 4: Send piece #N to user for review (AUTO-POST, NO WAITING)
+  message(
+    action="send",
+    channel="telegram",
+    target="{USER_TELEGRAM_ID}",
+    message="📝 Piece #[N] — {FORMAT}
+
+{full piece content}
+
+━━━━━━━━━━
+
+Reply:
+✅ approved
+🔧 fix: [what to change]
+⏭️ next (skip this one)"
+  )
+
+  Step 5: WAIT FOR USER RESPONSE
+  Listen for {USER_TELEGRAM_ID}'s reply:
+    - If "approved" → move to step 6
+    - If "fix: ..." → move to step 7
+    - If "next" or "skip" → move to step 8
+
+  Step 6: User approved
+  - Log to voice-memory.json: feedback_log entry
+  - Move file: drafts/piece-[N].md → drafts/approved/piece-[N].md
+  - Increment piece_n
+  - Go to next loop iteration (Step 1 for piece #N+1)
+
+  Step 7: User requested fix
+  - Log to voice-memory.json: feedback_log + voice_lessons + forbidden_phrases
+  - Spawn reflection-agent
+  - Wait for rewrite brief
+  - Spawn content-producer AGAIN for piece #N with rewrite brief
+  - Wait for completion
+  - Send revised piece to user
+  - Go back to Step 5 (wait for approval again)
+
+  Step 8: User skipped this piece
+  - Log to voice-memory.json: feedback_log entry (skipped)
+  - Skip this piece (don't save to approved)
+  - Increment piece_n
+  - Go to next loop iteration
+
+END LOOP
 ```
 
-Then **WAIT for user response** in Telegram before moving to next piece. Do NOT generate/show piece #2 until piece #1 is approved or rejected.
-
-**4d. Approval loop — one piece at a time:**
-
-Wait for user response on the current piece:
-- **"approved"** → push to Airtable, then read next piece file and send it
-- **"fix: [what to change]"** → run reflection-agent, rewrite, re-send for approval
-- Next piece is almost always already ready in its file by the time user approves
-
-**4e. Draft file location:**
-- All drafts saved to: `{USER_WORKSPACE}drafts/piece-[N].md`
-- Create the `drafts/` folder if it doesn't exist
-- After approval, move file to `{USER_WORKSPACE}drafts/approved/piece-[N].md`
-- After rejection + rewrite, overwrite the file with the revised draft
-
-**The result:** User approves piece 1, piece 2 is already waiting. No long pauses between pieces.
+**KEY RULES:**
+- ✅ Spawn ONE piece at a time
+- ✅ Wait for it to complete
+- ✅ Send to user
+- ✅ Wait for approval/fix/skip response
+- ✅ Only then spawn next piece
+- ❌ Do NOT spawn multiple pieces in parallel
+- ❌ Do NOT show multiple pieces at once
+- ❌ Do NOT generate piece #2 until piece #1 is approved
 
 ---
 
