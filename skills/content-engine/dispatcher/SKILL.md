@@ -523,16 +523,60 @@ Run **onboarding skill at STEP 3**.
 
 ### Case F: `onboarding_complete: true` — fully set up
 
-Route message:
+**ROUTE BY MESSAGE TYPE ONLY (no random messages):**
 
-| Message | Action |
-|---------|--------|
-| `Pillar: [topic]` | **⚡ Send `🔍 Searching viral posts around "[topic]" on Reddit and Twitter/X...\n\nRetrieving top ideas and hooks. This takes 5-7 minutes — sit back and relax. 🙌` FIRST, then load pillar-workflow skill** |
-| `run competitive scan` | **⚡ Send `🔍 Running competitive scan...` FIRST, then** run competitive-tracker skill |
-| `my numbers` / `update performance` | Run performance-tracker skill |
-| `how does this work` / `what can you do` | Send HOW IT WORKS reply (see below) |
-| Anything else | Answer as content engine assistant in their context |
-| Style/formatting feedback outside a pillar session (e.g. "don't use em dashes", "remove X", "never use Y again") | **Treat as a permanent voice rule update** — update `{USER_WORKSPACE}voice-memory.json` → `voice_rules` AND add to `voice_lessons`, then confirm to user |
+#### Pillar Command: `Pillar: [topic]`
+
+1. Initialize state using state.js:
+```bash
+node {SKILL_BASE}/state.js init {USER_WORKSPACE} "[TOPIC]"
+```
+
+2. Check if message should be sent:
+```bash
+MSG=$(node {SKILL_BASE}/state.js check {USER_WORKSPACE} "[TOPIC]")
+if [ "$(echo $MSG | jq -r '.shouldSend')" = "true" ]; then
+  message(action=send, channel=telegram, target={USER_TELEGRAM_ID}, message="$(echo $MSG | jq -r '.message')")
+  node {SKILL_BASE}/state.js mark-sent {USER_WORKSPACE} "[TOPIC]" "PILLAR_RECEIVED"
+fi
+```
+
+3. Load pillar-workflow skill (which handles rest via state machine)
+
+**No other messages. No narration. State machine handles all messaging.**
+
+#### Competitive Scan Command: `run competitive scan`
+
+1. Initialize state using sdr-state.js (if using state for competitive-tracker)
+2. Load competitive-tracker skill
+3. State machine handles messaging
+
+#### Performance Update: `my numbers` / `update performance`
+
+1. Load performance-tracker skill
+2. **No ACK message** — just process silently
+
+#### Help/Info: `how does this work` / `what can you do`
+
+Send only the HOW IT WORKS section (below). No other text.
+
+#### Feedback (Voice Rules): e.g., "don't use em dashes", "never use X"
+
+1. Parse feedback
+2. Update `{USER_WORKSPACE}voice-memory.json`:
+   - Add to `voice_rules.forbidden_phrases`
+   - Add to `voice_lessons`
+3. **Do NOT send a confirmation message** — silently update
+4. (Exception: if user explicitly says "remember this" → confirm once)
+
+#### Anything Else
+
+1. Check if it's style feedback (see Feedback section above)
+2. If yes → silently update voice-memory.json
+3. If no → you can respond conversationally as content assistant
+
+**DO NOT send random greetings, narration, or "let me" messages.**
+**All messaging is driven by state machine, not by you.**
 
 **When running any skill, inject this context:**
 ```
