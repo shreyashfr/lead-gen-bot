@@ -1,0 +1,49 @@
+[
+  {
+    "id": "1s1wczb",
+    "subreddit": "KasaneTeto",
+    "title": "\"Prompt\" engineering",
+    "ups": 1162,
+    "num_comments": 22,
+    "upvote_ratio": 0.99,
+    "viral_score": 213.23282486720285,
+    "listing": "search:top:week",
+    "permalink": "https://www.reddit.com/r/KasaneTeto/comments/1s1wczb/prompt_engineering/",
+    "image": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/llm-finetuning-vs-prompt-engineering/runs/2026-03-24T10-52-47-474Z/cards/1s1wczb.png",
+    "media": {
+      "type": "image",
+      "url": "https://i.redd.it/kpv7o35fjvqg1.jpeg",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/llm-finetuning-vs-prompt-engineering/runs/2026-03-24T10-52-47-474Z/media/1s1wczb.jpg"
+    }
+  },
+  {
+    "id": "1s0eoqi",
+    "subreddit": "ChatGPT",
+    "title": "chatgpt is way better when you give it a wall of messy context instead of a clean prompt",
+    "ups": 687,
+    "num_comments": 119,
+    "upvote_ratio": 0.92,
+    "viral_score": 36.129999444250906,
+    "listing": "search:top:week",
+    "permalink": "https://www.reddit.com/r/ChatGPT/comments/1s0eoqi/chatgpt_is_way_better_when_you_give_it_a_wall_of/",
+    "image": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/llm-finetuning-vs-prompt-engineering/runs/2026-03-24T10-52-47-474Z/cards/1s0eoqi.png",
+    "media": null
+  },
+  {
+    "id": "1rxju0h",
+    "subreddit": "QantasAirways",
+    "title": "747 vs A380. A look at the massive difference in wing area. Absolutely insane piece of engineering!!",
+    "ups": 1547,
+    "num_comments": 63,
+    "upvote_ratio": 0.99,
+    "viral_score": 24.566771909159606,
+    "listing": "search:top:week",
+    "permalink": "https://www.reddit.com/r/QantasAirways/comments/1rxju0h/747_vs_a380_a_look_at_the_massive_difference_in/",
+    "image": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/llm-finetuning-vs-prompt-engineering/runs/2026-03-24T10-52-47-474Z/cards/1rxju0h.png",
+    "media": {
+      "type": "image",
+      "url": "https://i.redd.it/188wj0i50wpg1.jpeg",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/llm-finetuning-vs-prompt-engineering/runs/2026-03-24T10-52-47-474Z/media/1rxju0h.jpg"
+    }
+  }
+]

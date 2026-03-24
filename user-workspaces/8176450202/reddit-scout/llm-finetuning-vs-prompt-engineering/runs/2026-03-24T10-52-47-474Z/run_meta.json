@@ -1,0 +1,32 @@
+{
+  "niche": "LLM Finetuning vs Prompt Engineering",
+  "nicheSlug": "llm-finetuning-vs-prompt-engineering",
+  "runId": "2026-03-24T10-52-47-474Z",
+  "startedAt": "2026-03-24T10:52:47.477Z",
+  "keywords": [
+    "LLM Finetuning vs Prompt Engineering"
+  ],
+  "mustInclude": [
+    "finetuning",
+    "prompt",
+    "engineering"
+  ],
+  "search": "LLM Finetuning vs Prompt Engineering",
+  "subAllowlist": null,
+  "config": {
+    "topN": 10,
+    "subLimit": 10,
+    "gapMs": 1200,
+    "limitPerListing": 25,
+    "time": "week",
+    "kinds": [
+      "top",
+      "hot",
+      "rising"
+    ],
+    "searchSort": "top",
+    "searchTime": null,
+    "minSubscribers": 0,
+    "sendCardsN": 5
+  }
+}

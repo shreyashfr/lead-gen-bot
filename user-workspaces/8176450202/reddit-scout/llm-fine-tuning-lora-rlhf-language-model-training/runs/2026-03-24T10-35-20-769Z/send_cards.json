@@ -1,0 +1,35 @@
+{
+  "n": 5,
+  "cards": [
+    {
+      "path": "users/8176450202/reddit-scout/llm-fine-tuning-lora-rlhf-language-model-training/runs/2026-03-24T10-35-20-769Z/cards/1s1fsi0.png",
+      "caption": "1) GPT 5.4 thinking model\nr/ChatGPT · score 142 · 1108 ups · 59 comments\nhttps://www.reddit.com/r/ChatGPT/comments/1s1fsi0/gpt_54_thinking_model/",
+      "permalink": "https://www.reddit.com/r/ChatGPT/comments/1s1fsi0/gpt_54_thinking_model/",
+      "id": "1s1fsi0"
+    },
+    {
+      "path": "users/8176450202/reddit-scout/llm-fine-tuning-lora-rlhf-language-model-training/runs/2026-03-24T10-35-20-769Z/cards/1s1t5ot.png",
+      "caption": "2) RYS II - Repeated layers with Qwen3.5 27B and some hints at a 'Universal Language'\nr/LocalLLaMA · score 99 · 399 ups · 68 comments\nhttps://www.reddit.com/r/LocalLLaMA/comments/1s1t5ot/rys_ii_repeated_layers_with_qwen35_27b_and_some/",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1s1t5ot/rys_ii_repeated_layers_with_qwen35_27b_and_some/",
+      "id": "1s1t5ot"
+    },
+    {
+      "path": "users/8176450202/reddit-scout/llm-fine-tuning-lora-rlhf-language-model-training/runs/2026-03-24T10-35-20-769Z/cards/1s1fwih.png",
+      "caption": "3) SamsungCam UltraReal - Qwen2512 LoRA\nr/StableDiffusion · score 60 · 485 ups · 58 comments\nhttps://www.reddit.com/r/StableDiffusion/comments/1s1fwih/samsungcam_ultrareal_qwen2512_lora/",
+      "permalink": "https://www.reddit.com/r/StableDiffusion/comments/1s1fwih/samsungcam_ultrareal_qwen2512_lora/",
+      "id": "1s1fwih"
+    },
+    {
+      "path": "users/8176450202/reddit-scout/llm-fine-tuning-lora-rlhf-language-model-training/runs/2026-03-24T10-35-20-769Z/cards/1s1kyla.png",
+      "caption": "4) Which local model we running on the overland Jeep fellas?\nr/LocalLLaMA · score 54 · 237 ups · 98 comments\nhttps://www.reddit.com/r/LocalLLaMA/comments/1s1kyla/which_local_model_we_running_on_the_overland_jeep/",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1s1kyla/which_local_model_we_running_on_the_overland_jeep/",
+      "id": "1s1kyla"
+    },
+    {
+      "path": "users/8176450202/reddit-scout/llm-fine-tuning-lora-rlhf-language-model-training/runs/2026-03-24T10-35-20-769Z/cards/1s19ik2.png",
+      "caption": "5) So cursor admits that Kimi K2.5 is the best open source model\nr/LocalLLaMA · score 51 · 456 ups · 78 comments\nhttps://www.reddit.com/r/LocalLLaMA/comments/1s19ik2/so_cursor_admits_that_kimi_k25_is_the_best_open/",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1s19ik2/so_cursor_admits_that_kimi_k25_is_the_best_open/",
+      "id": "1s19ik2"
+    }
+  ]
+}

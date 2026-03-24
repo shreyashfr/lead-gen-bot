@@ -1,0 +1,2741 @@
+[
+  {
+    "id": "1s1fsi0",
+    "subreddit": "ChatGPT",
+    "title": "GPT 5.4 thinking model",
+    "selftext": "I thought it was mildly funny, GPT slightly changed its stance after I asked about sources regarding a translation nuance but still pretty much stood its ground. Of course it's a complete delusion, i guess the reward function makes it try to come up with an anwser even if it lacks context.\n\nAlways make sure to double check the facts.",
+    "author": "carcatta",
+    "created_utc": 1774269768,
+    "permalink": "https://www.reddit.com/r/ChatGPT/comments/1s1fsi0/gpt_54_thinking_model/",
+    "url": "https://i.redd.it/mhjeu48mhsqg1.png",
+    "domain": "i.redd.it",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 1104,
+    "score": 1104,
+    "num_comments": 59,
+    "upvote_ratio": 0.99,
+    "thumbnail": "https://preview.redd.it/mhjeu48mhsqg1.png?width=140&amp;height=34&amp;auto=webp&amp;s=011c2ebc0c2f19f342c83c18c88bed11de6f5fd5",
+    "media": null,
+    "post_hint": "image",
+    "listing": "rising",
+    "viral_score": 142.49303940990748,
+    "detail": {
+      "post": {
+        "id": "1s1fsi0",
+        "title": "GPT 5.4 thinking model",
+        "selftext": "I thought it was mildly funny, GPT slightly changed its stance after I asked about sources regarding a translation nuance but still pretty much stood its ground. Of course it's a complete delusion, i guess the reward function makes it try to come up with an anwser even if it lacks context.\n\nAlways make sure to double check the facts.",
+        "author": "carcatta",
+        "subreddit": "ChatGPT",
+        "created_utc": 1774269768,
+        "ups": 1108,
+        "num_comments": 59,
+        "upvote_ratio": 0.99,
+        "permalink": "https://www.reddit.com/r/ChatGPT/comments/1s1fsi0/gpt_54_thinking_model/",
+        "url": "https://i.redd.it/mhjeu48mhsqg1.png",
+        "is_self": false,
+        "post_hint": "image",
+        "thumbnail": "https://preview.redd.it/mhjeu48mhsqg1.png?width=140&amp;height=34&amp;auto=webp&amp;s=011c2ebc0c2f19f342c83c18c88bed11de6f5fd5",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://preview.redd.it/mhjeu48mhsqg1.png?auto=webp&amp;s=abf1b276fba17da5e2b16c2c17ed9a5c04e2a7e7",
+                "width": 1483,
+                "height": 365
+              },
+              "resolutions": [
+                {
+                  "url": "https://preview.redd.it/mhjeu48mhsqg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=f7bd23500a66a38c3082e3f1c6b7aec2acc3214f",
+                  "width": 108,
+                  "height": 26
+                },
+                {
+                  "url": "https://preview.redd.it/mhjeu48mhsqg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=2c08f41f7fa5992fdd421c97cf2ae6ad7d38fe8a",
+                  "width": 216,
+                  "height": 53
+                },
+                {
+                  "url": "https://preview.redd.it/mhjeu48mhsqg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=3e00fcb5b449f632179ef1654581df6866fefced",
+                  "width": 320,
+                  "height": 78
+                },
+                {
+                  "url": "https://preview.redd.it/mhjeu48mhsqg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=b0fc70cad3a61345fd33ce5943604f8f918e2dbf",
+                  "width": 640,
+                  "height": 157
+                },
+                {
+                  "url": "https://preview.redd.it/mhjeu48mhsqg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=1fb5d7e6b8a19ebaaaf7f88ac3b8ea283b3c08f0",
+                  "width": 960,
+                  "height": 236
+                },
+                {
+                  "url": "https://preview.redd.it/mhjeu48mhsqg1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=18a6441e1187c6213527d826cca9c935310eee3f",
+                  "width": 1080,
+                  "height": 265
+                }
+              ],
+              "variants": {},
+              "id": "mhjeu48mhsqg1"
+            }
+          ],
+          "enabled": true
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "aptdinosaur",
+          "ups": 173,
+          "body": "good thing it thought for 59 seconds. otherwise you couldve gotten something useless"
+        },
+        {
+          "author": "midnightecho101",
+          "ups": 152,
+          "body": "Thats better than spewing nonsense"
+        },
+        {
+          "author": "TheDemonic-Forester",
+          "ups": 148,
+          "body": "https://preview.redd.it/r68epg8insqg1.png?width=640&amp;format=png&amp;auto=webp&amp;s=d32e5e652edec76aeeb15913c98e6ffa6f70f39c\n\n"
+        }
+      ]
+    },
+    "media_extracted": {
+      "type": "image",
+      "url": "https://i.redd.it/mhjeu48mhsqg1.png",
+      "path": "users/8176450202/reddit-scout/llm-fine-tuning-lora-rlhf-language-model-training/runs/2026-03-24T10-35-20-769Z/media/1s1fsi0.png",
+      "contentType": "image/png",
+      "bytes": 21743
+    },
+    "author_avatar": {
+      "user": "carcatta",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_6.png",
+      "path": "users/8176450202/reddit-scout/llm-fine-tuning-lora-rlhf-language-model-training/runs/2026-03-24T10-35-20-769Z/avatars/carcatta.png",
+      "fetchedAt": "2026-03-24T10:36:46.062Z"
+    }
+  },
+  {
+    "id": "1s1t5ot",
+    "subreddit": "LocalLLaMA",
+    "title": "RYS II - Repeated layers with Qwen3.5 27B and some hints at a 'Universal Language'",
+    "selftext": "So, I've had my H100s grind for you all, and have some interesting new results AND fresh models!\n\nSo, what did I find?  Well because my blog article are too damn long (*I know some of you are not reading the whole thing...*), here is a **TL;DR**:\n\n1. I found that LLMs seem to *think in a universal language*.  During the middle layers, the models latent representations are more similar on the same content in Chinese and English than different content in the same language.\n2. I tried a bunch of different stuff, but in the end, repeating blocks in the middle of the transformer stack works the best.\n3. You should still read the blog: [https://dnhkng.github.io/posts/rys-ii/](https://dnhkng.github.io/posts/rys-ii/)\n\n\n\nIf you still didnt read the blog, well, I guess you can just try the models?\n\n[https://huggingface.co/dnhkng/RYS-Qwen3.5-27B-FP8-S](https://huggingface.co/dnhkng/RYS-Qwen3.5-27B-FP8-S)\n\n[https://huggingface.co/dnhkng/RYS-Qwen3.5-27B-FP8-M](https://huggingface.co/dnhkng/RYS-Qwen3.5-27B-FP8-M)\n\n[https://huggingface.co/dnhkng/RYS-Qwen3.5-27B-FP8-L](https://huggingface.co/dnhkng/RYS-Qwen3.5-27B-FP8-L)\n\n[https://huggingface.co/dnhkng/RYS-Qwen3.5-27B-FP8-XL](https://huggingface.co/dnhkng/RYS-Qwen3.5-27B-FP8-XL)\n\nWen GGUF? *When someone GGUF's them I guess?*\n\nWhen you repeat layers, you benefit a lot from fine tuning. I expect the first team to fine tune RYS-Qwen3.5-27B-FP8-XL will have a new SOTA for that size range.  Lastly, Ive been chatting with TurboDerp; hopefully we can get this into a new format where you can keep the duplicated later as copies, and not use more VRAM (except for the KV cache). S***tay tuned!***",
+    "author": "Reddactor",
+    "created_utc": 1774299011,
+    "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1s1t5ot/rys_ii_repeated_layers_with_qwen35_27b_and_some/",
+    "url": "https://www.reddit.com/gallery/1s1t5ot",
+    "domain": "reddit.com",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 399,
+    "score": 399,
+    "num_comments": 68,
+    "upvote_ratio": 0.98,
+    "thumbnail": "https://preview.redd.it/8ycc38gnvuqg1.png?width=140&amp;height=120&amp;auto=webp&amp;s=18ed61da18557528bf3a550023559c8e8346cd0a",
+    "media": null,
+    "post_hint": null,
+    "listing": "rising",
+    "viral_score": 98.95039898260224,
+    "detail": {
+      "post": {
+        "id": "1s1t5ot",
+        "title": "RYS II - Repeated layers with Qwen3.5 27B and some hints at a 'Universal Language'",
+        "selftext": "So, I've had my H100s grind for you all, and have some interesting new results AND fresh models!\n\nSo, what did I find?  Well because my blog article are too damn long (*I know some of you are not reading the whole thing...*), here is a **TL;DR**:\n\n1. I found that LLMs seem to *think in a universal language*.  During the middle layers, the models latent representations are more similar on the same content in Chinese and English than different content in the same language.\n2. I tried a bunch of different stuff, but in the end, repeating blocks in the middle of the transformer stack works the best.\n3. You should still read the blog: [https://dnhkng.github.io/posts/rys-ii/](https://dnhkng.github.io/posts/rys-ii/)\n\n\n\nIf you still didnt read the blog, well, I guess you can just try the models?\n\n[https://huggingface.co/dnhkng/RYS-Qwen3.5-27B-FP8-S](https://huggingface.co/dnhkng/RYS-Qwen3.5-27B-FP8-S)\n\n[https://huggingface.co/dnhkng/RYS-Qwen3.5-27B-FP8-M](https://huggingface.co/dnhkng/RYS-Qwen3.5-27B-FP8-M)\n\n[https://huggingface.co/dnhkng/RYS-Qwen3.5-27B-FP8-L](https://huggingface.co/dnhkng/RYS-Qwen3.5-27B-FP8-L)\n\n[https://huggingface.co/dnhkng/RYS-Qwen3.5-27B-FP8-XL](https://huggingface.co/dnhkng/RYS-Qwen3.5-27B-FP8-XL)\n\nWen GGUF? *When someone GGUF's them I guess?*\n\nWhen you repeat layers, you benefit a lot from fine tuning. I expect the first team to fine tune RYS-Qwen3.5-27B-FP8-XL will have a new SOTA for that size range.  Lastly, Ive been chatting with TurboDerp; hopefully we can get this into a new format where you can keep the duplicated later as copies, and not use more VRAM (except for the KV cache). S***tay tuned!***",
+        "author": "Reddactor",
+        "subreddit": "LocalLLaMA",
+        "created_utc": 1774299011,
+        "ups": 399,
+        "num_comments": 68,
+        "upvote_ratio": 0.98,
+        "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1s1t5ot/rys_ii_repeated_layers_with_qwen35_27b_and_some/",
+        "url": "https://www.reddit.com/gallery/1s1t5ot",
+        "is_self": false,
+        "post_hint": null,
+        "thumbnail": "https://preview.redd.it/8ycc38gnvuqg1.png?width=140&amp;height=120&amp;auto=webp&amp;s=18ed61da18557528bf3a550023559c8e8346cd0a",
+        "is_gallery": true,
+        "gallery_data": {
+          "items": [
+            {
+              "media_id": "8ycc38gnvuqg1",
+              "id": 893771562
+            },
+            {
+              "media_id": "fu1np1ipvuqg1",
+              "id": 893771563
+            },
+            {
+              "media_id": "pu4k68vrvuqg1",
+              "id": 893771564
+            },
+            {
+              "media_id": "dpmrhqwvvuqg1",
+              "id": 893771565
+            }
+          ]
+        },
+        "media_metadata": {
+          "dpmrhqwvvuqg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 92,
+                "x": 108,
+                "u": "https://preview.redd.it/dpmrhqwvvuqg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=1bb3d4e19223e59b0e6e2f8b791e6d3376060ce0"
+              },
+              {
+                "y": 185,
+                "x": 216,
+                "u": "https://preview.redd.it/dpmrhqwvvuqg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=6a2629cb1abf5120bd39cd346ddc884bd5700fb1"
+              },
+              {
+                "y": 275,
+                "x": 320,
+                "u": "https://preview.redd.it/dpmrhqwvvuqg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=d999f3f3d6f861241b511163c2e7b50742ae3f38"
+              },
+              {
+                "y": 550,
+                "x": 640,
+                "u": "https://preview.redd.it/dpmrhqwvvuqg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=954a31f82d4d349031fb8db26ca3be878bb3a864"
+              },
+              {
+                "y": 825,
+                "x": 960,
+                "u": "https://preview.redd.it/dpmrhqwvvuqg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=342ddf01ab92d7bcfa622c902d6ec8fed1e901b9"
+              }
+            ],
+            "s": {
+              "y": 881,
+              "x": 1024,
+              "u": "https://preview.redd.it/dpmrhqwvvuqg1.png?width=1024&amp;format=png&amp;auto=webp&amp;s=eb91fa31dcd1d4429bb5df74572c4bb309425a03"
+            },
+            "id": "dpmrhqwvvuqg1"
+          },
+          "8ycc38gnvuqg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 92,
+                "x": 108,
+                "u": "https://preview.redd.it/8ycc38gnvuqg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=8a2408fa2d16c3466f52d8597c91073a1dffda59"
+              },
+              {
+                "y": 185,
+                "x": 216,
+                "u": "https://preview.redd.it/8ycc38gnvuqg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=177cbb6372cb1f21fd2a906696e3d6a12299e0ac"
+              },
+              {
+                "y": 274,
+                "x": 320,
+                "u": "https://preview.redd.it/8ycc38gnvuqg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=e7230b12ed24a30e42df532206ab5c3f4f906239"
+              },
+              {
+                "y": 548,
+                "x": 640,
+                "u": "https://preview.redd.it/8ycc38gnvuqg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=a3627837f07c3e3ee6fbae81f240ad688915c3e3"
+              },
+              {
+                "y": 823,
+                "x": 960,
+                "u": "https://preview.redd.it/8ycc38gnvuqg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=322d237e791ab236333c9b151fcd0cc98209c8b3"
+              },
+              {
+                "y": 926,
+                "x": 1080,
+                "u": "https://preview.redd.it/8ycc38gnvuqg1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=3f3dec360f722903263a1bf0344dfbfff25aa3d0"
+              }
+            ],
+            "s": {
+              "y": 1474,
+              "x": 1719,
+              "u": "https://preview.redd.it/8ycc38gnvuqg1.png?width=1719&amp;format=png&amp;auto=webp&amp;s=e4e56e9445c94ec8adc0155f8c9a5ac8a20e1d74"
+            },
+            "id": "8ycc38gnvuqg1"
+          },
+          "fu1np1ipvuqg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 50,
+                "x": 108,
+                "u": "https://preview.redd.it/fu1np1ipvuqg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=0277bb05cacd528d72dffb5a423ec08062946b91"
+              },
+              {
+                "y": 101,
+                "x": 216,
+                "u": "https://preview.redd.it/fu1np1ipvuqg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=bcad15d6522c4abe5d7114d641b995d646f29cce"
+              },
+              {
+                "y": 150,
+                "x": 320,
+                "u": "https://preview.redd.it/fu1np1ipvuqg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=779a7cd7551f4bdab9a58738e2d6781a60670b5c"
+              },
+              {
+                "y": 300,
+                "x": 640,
+                "u": "https://preview.redd.it/fu1np1ipvuqg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=b6a18de35d1030f37d9b9b8d524612ed99b096a5"
+              },
+              {
+                "y": 451,
+                "x": 960,
+                "u": "https://preview.redd.it/fu1np1ipvuqg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=175256331a049d27de9a9acf2f2b2063dd7823ed"
+              },
+              {
+                "y": 507,
+                "x": 1080,
+                "u": "https://preview.redd.it/fu1np1ipvuqg1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=1754fc1c94bcb810e23d167b8e022761af6a9a2e"
+              }
+            ],
+            "s": {
+              "y": 744,
+              "x": 1582,
+              "u": "https://preview.redd.it/fu1np1ipvuqg1.png?width=1582&amp;format=png&amp;auto=webp&amp;s=06f166bbcb6d8a3d90094385f80faec5c5db7939"
+            },
+            "id": "fu1np1ipvuqg1"
+          },
+          "pu4k68vrvuqg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 68,
+                "x": 108,
+                "u": "https://preview.redd.it/pu4k68vrvuqg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=e9a55f72de239fca15d9b01054afd92f9a2eb973"
+              },
+              {
+                "y": 137,
+                "x": 216,
+                "u": "https://preview.redd.it/pu4k68vrvuqg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=2aa76e970140abab88659b1df47b5b9431e322e1"
+              },
+              {
+                "y": 203,
+                "x": 320,
+                "u": "https://preview.redd.it/pu4k68vrvuqg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=71967b104dcc8f24da2856fb175809d44d087e11"
+              },
+              {
+                "y": 406,
+                "x": 640,
+                "u": "https://preview.redd.it/pu4k68vrvuqg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=b6099ebe332d98c6be36bd053de3005ef64d9260"
+              },
+              {
+                "y": 609,
+                "x": 960,
+                "u": "https://preview.redd.it/pu4k68vrvuqg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=1df56f8e9db738bd90c7cf3bf20d0ec9ae055d6e"
+              },
+              {
+                "y": 685,
+                "x": 1080,
+                "u": "https://preview.redd.it/pu4k68vrvuqg1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=1136bb7c335c5b3e44fe023b203b09a3b11db972"
+              }
+            ],
+            "s": {
+              "y": 1237,
+              "x": 1949,
+              "u": "https://preview.redd.it/pu4k68vrvuqg1.png?width=1949&amp;format=png&amp;auto=webp&amp;s=082bec627306bd782c6bdc234fc6961fc69bdfae"
+            },
+            "id": "pu4k68vrvuqg1"
+          }
+        },
+        "preview": null,
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "grumd",
+          "ups": 45,
+          "body": "I read the whole blog and it was super interesting, insane work you've done, and I really liked how rigorous the approach is, with all those different ways of finding the best configs. I wish I had enough VRAM to try 27B-S, but alas I only have 16Gb"
+        },
+        {
+          "author": "llama-impersonator",
+          "ups": 43,
+          "body": "if we get another merge craze, i feel bad for hf's storage infra."
+        },
+        {
+          "author": "Kwigg",
+          "ups": 19,
+          "body": "Getting flashbacks to the llama2 days of frankenmerging (anyone remember Goliath?) and duplicating layers en masse.\n\nI wonder how that would fare with the newer, smarter models. Especially with advancements in attention - the old frankenmerges were brutally inefficient with memory."
+        }
+      ]
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "Reddactor",
+      "url": "https://i.redd.it/snoovatar/avatars/64f37ba0-7ee3-4156-8fbf-194262fc9775.png",
+      "path": "users/8176450202/reddit-scout/llm-fine-tuning-lora-rlhf-language-model-training/runs/2026-03-24T10-35-20-769Z/avatars/Reddactor.png",
+      "fetchedAt": "2026-03-24T10:36:47.404Z"
+    }
+  },
+  {
+    "id": "1s1fwih",
+    "subreddit": "StableDiffusion",
+    "title": "SamsungCam UltraReal - Qwen2512 LoRA",
+    "selftext": "Hey everyone\n\nI recently decided to test out the new Qwen 2512 model. I previously had a Samsung-style LoRA for the older Qwen 2509, but as you might expect, using the old LoRA on the new model just doesn't hit the same. You *can* use it, but the quality is completely different now.\n\nSo, I took the latest Qwen 2512 for a spin and trained a couple of fresh LoRAs specifically for it.\n\n**SamsungCam UltraReal** This one is the main focus. It brings that specific smartphone camera aesthetic to your generations, making them look like raw, everyday photos.\n\n**NiceGirls UltraReal** I’m dropping this one alongside it as a bonus. It’s designed to improve the faces and overall look of female subjects, but honestly, it actually works with males too\n\n**A quick note on Qwen 2512:** While playing around with the new model, I noticed it seems to have some slight issues with rendering very small, fine details (this happens on the base model even without any LoRAs applied). However, the overall quality and composition are fantastic, and I really like the direction it's going.\n\n*(I shamelessly grabbed some of the sample prompts from Civitai and tweaked them a bit for the showcase images here 😅)*\n\nYou can grab the models here:\n\n**SamsungCam UltraReal:**\n\n* **Civitai:** [Link](https://civitai.com/models/1551668/samsungcam-ultrareal?modelVersionId=2792925)\n* **Hugging Face:** [Link](https://huggingface.co/Danrisi/Samsung_Qwen2512)\n\n**NiceGirls UltraReal:**\n\n* **Civitai:** [Link](https://civitai.com/models/1862761/nicegirls-ultrareal?modelVersionId=2792919)\n* **Hugging Face:** [Link](https://huggingface.co/Danrisi/Nicegirls_qwen2512)\n\n[Workflow i used](https://huggingface.co/Danrisi/Samsung_Qwen2512/resolve/main/Qwen2512_Danrisi.json)\n\n**P.S.** A quick detail on the dataset: everything was shot on a Samsung S25 Ultra in manual mode. That's why the generations are mostly noise-free. Even for night shots, I capped it at ISO 50-200 (that's why on night shots without a flash there is some motion blur). Plus, I also shot some photos using the 5x telephoto lens",
+    "author": "FortranUA",
+    "created_utc": 1774270074,
+    "permalink": "https://www.reddit.com/r/StableDiffusion/comments/1s1fwih/samsungcam_ultrareal_qwen2512_lora/",
+    "url": "https://www.reddit.com/gallery/1s1fwih",
+    "domain": "reddit.com",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 490,
+    "score": 490,
+    "num_comments": 58,
+    "upvote_ratio": 0.96,
+    "thumbnail": "https://preview.redd.it/sjgd7gzl5sqg1.png?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=13c931d68d3ac7d658e5a407dde870d218f0dcd4",
+    "media": null,
+    "post_hint": null,
+    "listing": "search:top:week",
+    "viral_score": 59.51817298176502,
+    "detail": {
+      "post": {
+        "id": "1s1fwih",
+        "title": "SamsungCam UltraReal - Qwen2512 LoRA",
+        "selftext": "Hey everyone\n\nI recently decided to test out the new Qwen 2512 model. I previously had a Samsung-style LoRA for the older Qwen 2509, but as you might expect, using the old LoRA on the new model just doesn't hit the same. You *can* use it, but the quality is completely different now.\n\nSo, I took the latest Qwen 2512 for a spin and trained a couple of fresh LoRAs specifically for it.\n\n**SamsungCam UltraReal** This one is the main focus. It brings that specific smartphone camera aesthetic to your generations, making them look like raw, everyday photos.\n\n**NiceGirls UltraReal** I’m dropping this one alongside it as a bonus. It’s designed to improve the faces and overall look of female subjects, but honestly, it actually works with males too\n\n**A quick note on Qwen 2512:** While playing around with the new model, I noticed it seems to have some slight issues with rendering very small, fine details (this happens on the base model even without any LoRAs applied). However, the overall quality and composition are fantastic, and I really like the direction it's going.\n\n*(I shamelessly grabbed some of the sample prompts from Civitai and tweaked them a bit for the showcase images here 😅)*\n\nYou can grab the models here:\n\n**SamsungCam UltraReal:**\n\n* **Civitai:** [Link](https://civitai.com/models/1551668/samsungcam-ultrareal?modelVersionId=2792925)\n* **Hugging Face:** [Link](https://huggingface.co/Danrisi/Samsung_Qwen2512)\n\n**NiceGirls UltraReal:**\n\n* **Civitai:** [Link](https://civitai.com/models/1862761/nicegirls-ultrareal?modelVersionId=2792919)\n* **Hugging Face:** [Link](https://huggingface.co/Danrisi/Nicegirls_qwen2512)\n\n[Workflow i used](https://huggingface.co/Danrisi/Samsung_Qwen2512/resolve/main/Qwen2512_Danrisi.json)\n\n**P.S.** A quick detail on the dataset: everything was shot on a Samsung S25 Ultra in manual mode. That's why the generations are mostly noise-free. Even for night shots, I capped it at ISO 50-200 (that's why on night shots without a flash there is some motion blur). Plus, I also shot some photos using the 5x telephoto lens",
+        "author": "FortranUA",
+        "subreddit": "StableDiffusion",
+        "created_utc": 1774270074,
+        "ups": 485,
+        "num_comments": 58,
+        "upvote_ratio": 0.96,
+        "permalink": "https://www.reddit.com/r/StableDiffusion/comments/1s1fwih/samsungcam_ultrareal_qwen2512_lora/",
+        "url": "https://www.reddit.com/gallery/1s1fwih",
+        "is_self": false,
+        "post_hint": null,
+        "thumbnail": "https://preview.redd.it/sjgd7gzl5sqg1.png?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=13c931d68d3ac7d658e5a407dde870d218f0dcd4",
+        "is_gallery": true,
+        "gallery_data": {
+          "items": [
+            {
+              "media_id": "sjgd7gzl5sqg1",
+              "id": 893427042
+            },
+            {
+              "media_id": "zlffqon37sqg1",
+              "id": 893427043
+            },
+            {
+              "media_id": "u1bqwv2r5sqg1",
+              "id": 893427044
+            },
+            {
+              "media_id": "mi0s12t06sqg1",
+              "id": 893427045
+            },
+            {
+              "media_id": "cj0dg5sn5sqg1",
+              "id": 893427046
+            },
+            {
+              "media_id": "4mbi2kvx7sqg1",
+              "id": 893427047
+            },
+            {
+              "media_id": "7tam993o5sqg1",
+              "id": 893427048
+            },
+            {
+              "media_id": "unn1pvop5sqg1",
+              "id": 893427049
+            },
+            {
+              "media_id": "tkg7ymtq5sqg1",
+              "id": 893427050
+            },
+            {
+              "media_id": "xahxa38ecsqg1",
+              "id": 893427051
+            },
+            {
+              "media_id": "sne90xx0csqg1",
+              "id": 893427052
+            },
+            {
+              "media_id": "qfh0e9ls7sqg1",
+              "id": 893427053
+            },
+            {
+              "media_id": "hr3szt7z7sqg1",
+              "id": 893427054
+            },
+            {
+              "media_id": "iwwi6y5rbsqg1",
+              "id": 893427055
+            },
+            {
+              "media_id": "u2z4u53lcsqg1",
+              "id": 893427056
+            },
+            {
+              "media_id": "r7ixsa3ybsqg1",
+              "id": 893427057
+            },
+            {
+              "media_id": "3b544gqybsqg1",
+              "id": 893427058
+            },
+            {
+              "media_id": "bj2rvv6b7sqg1",
+              "id": 893427059
+            },
+            {
+              "media_id": "9nacyh7u7sqg1",
+              "id": 893427060
+            }
+          ]
+        },
+        "media_metadata": {
+          "9nacyh7u7sqg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 78,
+                "x": 108,
+                "u": "https://preview.redd.it/9nacyh7u7sqg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=c0f994ccb9e717f4bffe2ce0aef1e1b01d364ba6"
+              },
+              {
+                "y": 157,
+                "x": 216,
+                "u": "https://preview.redd.it/9nacyh7u7sqg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=f8db6b042b16f9c66e664da1590b15b8f98959de"
+              },
+              {
+                "y": 233,
+                "x": 320,
+                "u": "https://preview.redd.it/9nacyh7u7sqg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=d3060a212756139d45d77cc9ec038d533a81e443"
+              },
+              {
+                "y": 467,
+                "x": 640,
+                "u": "https://preview.redd.it/9nacyh7u7sqg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=badfff6201f1af2559ead39ab7afaf71cedd24f2"
+              },
+              {
+                "y": 701,
+                "x": 960,
+                "u": "https://preview.redd.it/9nacyh7u7sqg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=3b2329e40b81786841d026ad956404546499cbdb"
+              },
+              {
+                "y": 789,
+                "x": 1080,
+                "u": "https://preview.redd.it/9nacyh7u7sqg1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=37db82e6aca22aa92c96fb658487ca91aca03ee1"
+              }
+            ],
+            "s": {
+              "y": 1216,
+              "x": 1664,
+              "u": "https://preview.redd.it/9nacyh7u7sqg1.png?width=1664&amp;format=png&amp;auto=webp&amp;s=ed14da9b1edb7b7200efd10f34d635b3807bf997"
+            },
+            "id": "9nacyh7u7sqg1"
+          },
+          "bj2rvv6b7sqg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 147,
+                "x": 108,
+                "u": "https://preview.redd.it/bj2rvv6b7sqg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=36e58431c7e2de76688788bcd3e79d63ef784fc0"
+              },
+              {
+                "y": 295,
+                "x": 216,
+                "u": "https://preview.redd.it/bj2rvv6b7sqg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=2045be4d025b2f010004edf9aac03917a8624803"
+              },
+              {
+                "y": 437,
+                "x": 320,
+                "u": "https://preview.redd.it/bj2rvv6b7sqg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=91cfb8abbbcf548cc08067d028fa9d2a4ef8a923"
+              },
+              {
+                "y": 875,
+                "x": 640,
+                "u": "https://preview.redd.it/bj2rvv6b7sqg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=bc53f4e597b997bcab91ef80e43830cd63acde4d"
+              },
+              {
+                "y": 1313,
+                "x": 960,
+                "u": "https://preview.redd.it/bj2rvv6b7sqg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=c964c4f013ce5bcee2d624aa8b8ea799ec86fca4"
+              },
+              {
+                "y": 1477,
+                "x": 1080,
+                "u": "https://preview.redd.it/bj2rvv6b7sqg1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=aee0702577fdbccf4825e795e26f71e94915741c"
+              }
+            ],
+            "s": {
+              "y": 1664,
+              "x": 1216,
+              "u": "https://preview.redd.it/bj2rvv6b7sqg1.png?width=1216&amp;format=png&amp;auto=webp&amp;s=75e78d1a0849c16b3b454c8782ac0b6b80844981"
+            },
+            "id": "bj2rvv6b7sqg1"
+          },
+          "unn1pvop5sqg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 149,
+                "x": 108,
+                "u": "https://preview.redd.it/unn1pvop5sqg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=4188b95dc80ca809e9a80dd07ec234fb457c84ab"
+              },
+              {
+                "y": 298,
+                "x": 216,
+                "u": "https://preview.redd.it/unn1pvop5sqg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=c18fdd46e31f6a571288a9d8659836a539581539"
+              },
+              {
+                "y": 441,
+                "x": 320,
+                "u": "https://preview.redd.it/unn1pvop5sqg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=3302d9b756a29dc726f93f73bfd8cf3063824ab0"
+              },
+              {
+                "y": 883,
+                "x": 640,
+                "u": "https://preview.redd.it/unn1pvop5sqg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=2b51ffab720bfff85c6931926c568b4171f066c4"
+              },
+              {
+                "y": 1325,
+                "x": 960,
+                "u": "https://preview.redd.it/unn1pvop5sqg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=06ce747bf88669425568dc2c1b794d42ede5e0b6"
+              },
+              {
+                "y": 1491,
+                "x": 1080,
+                "u": "https://preview.redd.it/unn1pvop5sqg1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=51f4fa56f082f792e27b2df340e5b262035bb87d"
+              }
+            ],
+            "s": {
+              "y": 1856,
+              "x": 1344,
+              "u": "https://preview.redd.it/unn1pvop5sqg1.png?width=1344&amp;format=png&amp;auto=webp&amp;s=319839f201b86bf8459b5dc28167dd29d6a3f4be"
+            },
+            "id": "unn1pvop5sqg1"
+          },
+          "u2z4u53lcsqg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 84,
+                "x": 108,
+                "u": "https://preview.redd.it/u2z4u53lcsqg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=3c10da6563a948c2027f18d00758dd32441f065f"
+              },
+              {
+                "y": 168,
+                "x": 216,
+                "u": "https://preview.redd.it/u2z4u53lcsqg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=5bad230f851bcc0239e8103bd517df57045b72fc"
+              },
+              {
+                "y": 248,
+                "x": 320,
+                "u": "https://preview.redd.it/u2z4u53lcsqg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=02157dc1a8e4056da29b29171cff7ceb3306d43a"
+              },
+              {
+                "y": 497,
+                "x": 640,
+                "u": "https://preview.redd.it/u2z4u53lcsqg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=b3d47996abb554b6554a6d2567a277d216692fe4"
+              },
+              {
+                "y": 746,
+                "x": 960,
+                "u": "https://preview.redd.it/u2z4u53lcsqg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=de22bfa6a40131ec9ed7a425358f6cc06b90f525"
+              },
+              {
+                "y": 840,
+                "x": 1080,
+                "u": "https://preview.redd.it/u2z4u53lcsqg1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=3a405d42a064ded18e45532ede7f4f01a62c766b"
+              }
+            ],
+            "s": {
+              "y": 896,
+              "x": 1152,
+              "u": "https://preview.redd.it/u2z4u53lcsqg1.png?width=1152&amp;format=png&amp;auto=webp&amp;s=0d58f3a89184986073d6bb085b2ea22e983ea7c8"
+            },
+            "id": "u2z4u53lcsqg1"
+          },
+          "tkg7ymtq5sqg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 162,
+                "x": 108,
+                "u": "https://preview.redd.it/tkg7ymtq5sqg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=4aea718e14a92f3da60deeeff10dbb6b98727cdc"
+              },
+              {
+                "y": 324,
+                "x": 216,
+                "u": "https://preview.redd.it/tkg7ymtq5sqg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=4347c5777822f42b0b24178a1248abc190a09db5"
+              },
+              {
+                "y": 480,
+                "x": 320,
+                "u": "https://preview.redd.it/tkg7ymtq5sqg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=8de2dfe5e5d82f483fcc4e37999784ff3f661749"
+              },
+              {
+                "y": 960,
+                "x": 640,
+                "u": "https://preview.redd.it/tkg7ymtq5sqg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=97bc7a0a37873b4b15da6c640c530e1eb3ad2bd5"
+              },
+              {
+                "y": 1440,
+                "x": 960,
+                "u": "https://preview.redd.it/tkg7ymtq5sqg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=69e12fb8ae2f609b414a56820c00729fec7c4de4"
+              },
+              {
+                "y": 1620,
+                "x": 1080,
+                "u": "https://preview.redd.it/tkg7ymtq5sqg1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=3e619a8b49ed03da9518e8985555191324dac4a3"
+              }
+            ],
+            "s": {
+              "y": 1728,
+              "x": 1152,
+              "u": "https://preview.redd.it/tkg7ymtq5sqg1.png?width=1152&amp;format=png&amp;auto=webp&amp;s=3742606dd647e6d2d0d07e89a3d1dcb2f88626ba"
+            },
+            "id": "tkg7ymtq5sqg1"
+          },
+          "mi0s12t06sqg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 184,
+                "x": 108,
+                "u": "https://preview.redd.it/mi0s12t06sqg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=2ae98d7ea3694f798a2976e99a89c6445d454770"
+              },
+              {
+                "y": 368,
+                "x": 216,
+                "u": "https://preview.redd.it/mi0s12t06sqg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=080966579d43637c689e196324a67a90e78fc755"
+              },
+              {
+                "y": 545,
+                "x": 320,
+                "u": "https://preview.redd.it/mi0s12t06sqg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=2aca9887d13d0a0d8d86a41a5c7b6b1afc8680e5"
+              },
+              {
+                "y": 1091,
+                "x": 640,
+                "u": "https://preview.redd.it/mi0s12t06sqg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=6a133472889edf0cf4c572eb6402df339bb59617"
+              },
+              {
+                "y": 1637,
+                "x": 960,
+                "u": "https://preview.redd.it/mi0s12t06sqg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=16b6ccae1781a5c8c3d484cf0530f607394ccd0c"
+              },
+              {
+                "y": 1842,
+                "x": 1080,
+                "u": "https://preview.redd.it/mi0s12t06sqg1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=a35110d0c6e78fb4cafb32713c672667e41ca60d"
+              }
+            ],
+            "s": {
+              "y": 1856,
+              "x": 1088,
+              "u": "https://preview.redd.it/mi0s12t06sqg1.png?width=1088&amp;format=png&amp;auto=webp&amp;s=1ea3d87e1f63e92277d8b2ac18a70e7a664ace4d"
+            },
+            "id": "mi0s12t06sqg1"
+          },
+          "cj0dg5sn5sqg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 162,
+                "x": 108,
+                "u": "https://preview.redd.it/cj0dg5sn5sqg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=335ff18070a4d3e76f6b48a1ae5cece528ef2189"
+              },
+              {
+                "y": 324,
+                "x": 216,
+                "u": "https://preview.redd.it/cj0dg5sn5sqg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=05174c1cdd753b0baab737deaa6b9a9bdc795cb7"
+              },
+              {
+                "y": 480,
+                "x": 320,
+                "u": "https://preview.redd.it/cj0dg5sn5sqg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=56e5653f5dd18ce9f8b559eeab37bec7515590bb"
+              },
+              {
+                "y": 960,
+                "x": 640,
+                "u": "https://preview.redd.it/cj0dg5sn5sqg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=d63a909ecf0c5c7b2ae69491e50f7f4d7773474d"
+              },
+              {
+                "y": 1440,
+                "x": 960,
+                "u": "https://preview.redd.it/cj0dg5sn5sqg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=99ee158a393777ec434bf09aab11854af38c11ac"
+              },
+              {
+                "y": 1620,
+                "x": 1080,
+                "u": "https://preview.redd.it/cj0dg5sn5sqg1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=979144a459ad9fafe408abf9bf8c273e1ece4f06"
+              }
+            ],
+            "s": {
+              "y": 1920,
+              "x": 1280,
+              "u": "https://preview.redd.it/cj0dg5sn5sqg1.png?width=1280&amp;format=png&amp;auto=webp&amp;s=9ab12f25aede0ca9f05abeb9260cd655d540a01e"
+            },
+            "id": "cj0dg5sn5sqg1"
+          },
+          "sjgd7gzl5sqg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 162,
+                "x": 108,
+                "u": "https://preview.redd.it/sjgd7gzl5sqg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=83f8ad9275f360ad2da98528d83b92b70cf81588"
+              },
+              {
+                "y": 324,
+                "x": 216,
+                "u": "https://preview.redd.it/sjgd7gzl5sqg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=8ed3b51c58ea1cf36eb2bfee9bbc46d29ceedd99"
+              },
+              {
+                "y": 480,
+                "x": 320,
+                "u": "https://preview.redd.it/sjgd7gzl5sqg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=9b90579c59c366d8c9fab2a27f054f014590b9ef"
+              },
+              {
+                "y": 960,
+                "x": 640,
+                "u": "https://preview.redd.it/sjgd7gzl5sqg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=23fb1ef33d45cd99a5dda31b8215c088d778ff58"
+              },
+              {
+                "y": 1440,
+                "x": 960,
+                "u": "https://preview.redd.it/sjgd7gzl5sqg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=734b583d3ba6e3a4761aab0265838dda937f89d1"
+              },
+              {
+                "y": 1620,
+                "x": 1080,
+                "u": "https://preview.redd.it/sjgd7gzl5sqg1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=dad3e6ef762b9ef9c86cd6777f6096d5bf473789"
+              }
+            ],
+            "s": {
+              "y": 1920,
+              "x": 1280,
+              "u": "https://preview.redd.it/sjgd7gzl5sqg1.png?width=1280&amp;format=png&amp;auto=webp&amp;s=3d0c65212d5e36852f55f19a9cd2ce5e55eb1018"
+            },
+            "id": "sjgd7gzl5sqg1"
+          },
+          "u1bqwv2r5sqg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 162,
+                "x": 108,
+                "u": "https://preview.redd.it/u1bqwv2r5sqg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=25ef3363e0463870c00c5802fef2df68f6a8af0c"
+              },
+              {
+                "y": 324,
+                "x": 216,
+                "u": "https://preview.redd.it/u1bqwv2r5sqg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=484be0c89ea6063d3a3de05d8001807f473a1a51"
+              },
+              {
+                "y": 480,
+                "x": 320,
+                "u": "https://preview.redd.it/u1bqwv2r5sqg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=6eadc64f74b79c52b9b1a8041e81aa2d9013084c"
+              },
+              {
+                "y": 960,
+                "x": 640,
+                "u": "https://preview.redd.it/u1bqwv2r5sqg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=95e17f771b96cbfccc8abbd771258c5b59f5ff4f"
+              },
+              {
+                "y": 1440,
+                "x": 960,
+                "u": "https://preview.redd.it/u1bqwv2r5sqg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=7d9eed61fce3c9a8ba30b4905680ec8d6c202a91"
+              },
+              {
+                "y": 1620,
+                "x": 1080,
+                "u": "https://preview.redd.it/u1bqwv2r5sqg1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=8f311da6d9e7054109b365e48fc5433488275e28"
+              }
+            ],
+            "s": {
+              "y": 1728,
+              "x": 1152,
+              "u": "https://preview.redd.it/u1bqwv2r5sqg1.png?width=1152&amp;format=png&amp;auto=webp&amp;s=21b6cc47ed5b626fdfb5885c47400fc6ca8a57f1"
+            },
+            "id": "u1bqwv2r5sqg1"
+          },
+          "3b544gqybsqg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 162,
+                "x": 108,
+                "u": "https://preview.redd.it/3b544gqybsqg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=73c7bbbf1d4b95f2658d934f48e2c240bd787216"
+              },
+              {
+                "y": 324,
+                "x": 216,
+                "u": "https://preview.redd.it/3b544gqybsqg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=dc313965ddcc97e649edb600568c9d103c6a8fef"
+              },
+              {
+                "y": 480,
+                "x": 320,
+                "u": "https://preview.redd.it/3b544gqybsqg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=8e3c8ae994c187df1826a0bd9d5ec9db9e975727"
+              },
+              {
+                "y": 960,
+                "x": 640,
+                "u": "https://preview.redd.it/3b544gqybsqg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=a55d74376c6ab48a12411f8d22f520dbb96c134d"
+              },
+              {
+                "y": 1440,
+                "x": 960,
+                "u": "https://preview.redd.it/3b544gqybsqg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=d997659398e1fc70cab2f9343eda540fa7c48328"
+              },
+              {
+                "y": 1620,
+                "x": 1080,
+                "u": "https://preview.redd.it/3b544gqybsqg1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=8f6a83469710a8c865cb87ba596e2774e92f9e0d"
+              }
+            ],
+            "s": {
+              "y": 1728,
+              "x": 1152,
+              "u": "https://preview.redd.it/3b544gqybsqg1.png?width=1152&amp;format=png&amp;auto=webp&amp;s=57e2d2744e6856026ca79a37f0407e5a5ae22e05"
+            },
+            "id": "3b544gqybsqg1"
+          },
+          "r7ixsa3ybsqg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 147,
+                "x": 108,
+                "u": "https://preview.redd.it/r7ixsa3ybsqg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=9215de8a20d3ec2bb87a4002d975c664a4b21b24"
+              },
+              {
+                "y": 295,
+                "x": 216,
+                "u": "https://preview.redd.it/r7ixsa3ybsqg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=1487db8668d48421db55b16106e0cdc49d7f4238"
+              },
+              {
+                "y": 437,
+                "x": 320,
+                "u": "https://preview.redd.it/r7ixsa3ybsqg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=3177f9b224056137817c987254149c52422ad1f5"
+              },
+              {
+                "y": 875,
+                "x": 640,
+                "u": "https://preview.redd.it/r7ixsa3ybsqg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=532dada8759d83496d01a5ae2c2b000f1e8b47f2"
+              },
+              {
+                "y": 1313,
+                "x": 960,
+                "u": "https://preview.redd.it/r7ixsa3ybsqg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=5709cea8659213dd634ab74be0be06c4c6ce34c8"
+              },
+              {
+                "y": 1477,
+                "x": 1080,
+                "u": "https://preview.redd.it/r7ixsa3ybsqg1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=6c53131a7fade563c13531ceeb0f5f59753e2e3e"
+              }
+            ],
+            "s": {
+              "y": 1664,
+              "x": 1216,
+              "u": "https://preview.redd.it/r7ixsa3ybsqg1.png?width=1216&amp;format=png&amp;auto=webp&amp;s=fcf259484b9e4a4c0c8372ce448d7bb9bb8ad2d3"
+            },
+            "id": "r7ixsa3ybsqg1"
+          },
+          "qfh0e9ls7sqg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 78,
+                "x": 108,
+                "u": "https://preview.redd.it/qfh0e9ls7sqg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=da40fd2210ad308921ac97e7e69e8eac4642a1a1"
+              },
+              {
+                "y": 157,
+                "x": 216,
+                "u": "https://preview.redd.it/qfh0e9ls7sqg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=e5c4892dc36a0502043aa8a4a99826b3b2013cb9"
+              },
+              {
+                "y": 233,
+                "x": 320,
+                "u": "https://preview.redd.it/qfh0e9ls7sqg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=c32b5cbe4f70b6eb9467d9f20bbf17dbeefa8cc6"
+              },
+              {
+                "y": 467,
+                "x": 640,
+                "u": "https://preview.redd.it/qfh0e9ls7sqg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=876aa587159f464399cbfdc04d23c4d5dc8b3378"
+              },
+              {
+                "y": 701,
+                "x": 960,
+                "u": "https://preview.redd.it/qfh0e9ls7sqg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=5fa35036d2589aa0402d6e28696f730f7588583a"
+              },
+              {
+                "y": 789,
+                "x": 1080,
+                "u": "https://preview.redd.it/qfh0e9ls7sqg1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=437fe2752cc1099f7381b4e34a533670bc421197"
+              }
+            ],
+            "s": {
+              "y": 1216,
+              "x": 1664,
+              "u": "https://preview.redd.it/qfh0e9ls7sqg1.png?width=1664&amp;format=png&amp;auto=webp&amp;s=25c530e494f9f1395ba86f695449102515270eeb"
+            },
+            "id": "qfh0e9ls7sqg1"
+          },
+          "sne90xx0csqg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 78,
+                "x": 108,
+                "u": "https://preview.redd.it/sne90xx0csqg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=42729d5aaef3881cb3356fd8958050333f6f06fe"
+              },
+              {
+                "y": 157,
+                "x": 216,
+                "u": "https://preview.redd.it/sne90xx0csqg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=d079fba87cfed0dd380f37e51b87ba56915fdfb3"
+              },
+              {
+                "y": 233,
+                "x": 320,
+                "u": "https://preview.redd.it/sne90xx0csqg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=492bf02b31b62d1d0efd4ca998ebc5522e7a8636"
+              },
+              {
+                "y": 467,
+                "x": 640,
+                "u": "https://preview.redd.it/sne90xx0csqg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=096115928a8e6a624c3d05a91387d0b0852d78a3"
+              },
+              {
+                "y": 701,
+                "x": 960,
+                "u": "https://preview.redd.it/sne90xx0csqg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=3e4e897d0051edd689e9c666bce05933afada78d"
+              },
+              {
+                "y": 789,
+                "x": 1080,
+                "u": "https://preview.redd.it/sne90xx0csqg1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=0b4ec12e9b3035e43a16ee0cdd2f9a4a1d14e57e"
+              }
+            ],
+            "s": {
+              "y": 1216,
+              "x": 1664,
+              "u": "https://preview.redd.it/sne90xx0csqg1.png?width=1664&amp;format=png&amp;auto=webp&amp;s=8c32842e9af00a41bbb42a0265b143308847e965"
+            },
+            "id": "sne90xx0csqg1"
+          },
+          "iwwi6y5rbsqg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 162,
+                "x": 108,
+                "u": "https://preview.redd.it/iwwi6y5rbsqg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=357a312b839ec3ee0aee698ed832049cb188fad6"
+              },
+              {
+                "y": 324,
+                "x": 216,
+                "u": "https://preview.redd.it/iwwi6y5rbsqg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=f0f8c553d343a89a910615033c605173976f509b"
+              },
+              {
+                "y": 480,
+                "x": 320,
+                "u": "https://preview.redd.it/iwwi6y5rbsqg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=b7bea4a225fbd66ffce6a5548b01b489773075f3"
+              },
+              {
+                "y": 960,
+                "x": 640,
+                "u": "https://preview.redd.it/iwwi6y5rbsqg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=e493d95ede32ceafb609f6ae8504ff73a7f3c18f"
+              },
+              {
+                "y": 1440,
+                "x": 960,
+                "u": "https://preview.redd.it/iwwi6y5rbsqg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=54800c133d57ed93204d6c34ba48d23fca62091c"
+              },
+              {
+                "y": 1620,
+                "x": 1080,
+                "u": "https://preview.redd.it/iwwi6y5rbsqg1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=c639499a41385d83e8bbdff8ce76621e37646f4d"
+              }
+            ],
+            "s": {
+              "y": 1728,
+              "x": 1152,
+              "u": "https://preview.redd.it/iwwi6y5rbsqg1.png?width=1152&amp;format=png&amp;auto=webp&amp;s=aeb34daeddb69c54c56e26f52a6b92ac7237456e"
+            },
+            "id": "iwwi6y5rbsqg1"
+          },
+          "7tam993o5sqg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 184,
+                "x": 108,
+                "u": "https://preview.redd.it/7tam993o5sqg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=9a6c6d9fe577bfff15130ca53ee449490b641165"
+              },
+              {
+                "y": 368,
+                "x": 216,
+                "u": "https://preview.redd.it/7tam993o5sqg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=fb747f5a0c365a6557d7efee410b3064fd057234"
+              },
+              {
+                "y": 545,
+                "x": 320,
+                "u": "https://preview.redd.it/7tam993o5sqg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=a5539fdb41ce38181d4cde5b5779d67ae4de57b2"
+              },
+              {
+                "y": 1091,
+                "x": 640,
+                "u": "https://preview.redd.it/7tam993o5sqg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=706b8fda79554ca040234e6ec86682576ae6104c"
+              },
+              {
+                "y": 1637,
+                "x": 960,
+                "u": "https://preview.redd.it/7tam993o5sqg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=b397d2bfa845ed9c3979dd1993d55b8e6e046618"
+              },
+              {
+                "y": 1842,
+                "x": 1080,
+                "u": "https://preview.redd.it/7tam993o5sqg1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=c40ed62f483bf7ce847ea16358a8ecfa2b814935"
+              }
+            ],
+            "s": {
+              "y": 1856,
+              "x": 1088,
+              "u": "https://preview.redd.it/7tam993o5sqg1.png?width=1088&amp;format=png&amp;auto=webp&amp;s=09dfdeb2fc5b9442f4a939756d006a8e5d0e7380"
+            },
+            "id": "7tam993o5sqg1"
+          },
+          "xahxa38ecsqg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 162,
+                "x": 108,
+                "u": "https://preview.redd.it/xahxa38ecsqg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=ac70d67a524911b5f000402f102d1daa59e78e23"
+              },
+              {
+                "y": 324,
+                "x": 216,
+                "u": "https://preview.redd.it/xahxa38ecsqg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=f1aa853e6129a82e1e6654206a0c2c3af75d5772"
+              },
+              {
+                "y": 480,
+                "x": 320,
+                "u": "https://preview.redd.it/xahxa38ecsqg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=0a02a19da5e6d1557e77ba33c2e3d826566c2958"
+              },
+              {
+                "y": 960,
+                "x": 640,
+                "u": "https://preview.redd.it/xahxa38ecsqg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=af11bd6704da94fe5f8c8957c212435ae75ce0dc"
+              },
+              {
+                "y": 1440,
+                "x": 960,
+                "u": "https://preview.redd.it/xahxa38ecsqg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=ccd4c218f915ecb68389530c4bd4dc37908ced64"
+              },
+              {
+                "y": 1620,
+                "x": 1080,
+                "u": "https://preview.redd.it/xahxa38ecsqg1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=e9393a5d84ebbb81f8081d8699b0368663b086cc"
+              }
+            ],
+            "s": {
+              "y": 1728,
+              "x": 1152,
+              "u": "https://preview.redd.it/xahxa38ecsqg1.png?width=1152&amp;format=png&amp;auto=webp&amp;s=a11f2ed013c18fe0c9cb6909b51e13c1b3445baf"
+            },
+            "id": "xahxa38ecsqg1"
+          },
+          "zlffqon37sqg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 78,
+                "x": 108,
+                "u": "https://preview.redd.it/zlffqon37sqg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=6d281075c91a33d078b95ae7601b4d1f99133fbc"
+              },
+              {
+                "y": 157,
+                "x": 216,
+                "u": "https://preview.redd.it/zlffqon37sqg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=2d743cc4667e3f844c2bf02c89c646c290e24bfb"
+              },
+              {
+                "y": 233,
+                "x": 320,
+                "u": "https://preview.redd.it/zlffqon37sqg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=d68b6805dea28d6634b2d3086f8c8f7f6594cbf0"
+              },
+              {
+                "y": 467,
+                "x": 640,
+                "u": "https://preview.redd.it/zlffqon37sqg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=e743eb341fe2ab2650514c632ceb7654b72ee60a"
+              },
+              {
+                "y": 701,
+                "x": 960,
+                "u": "https://preview.redd.it/zlffqon37sqg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=1868e8763829d0219145dda23b6c83ecfd3b1e53"
+              },
+              {
+                "y": 789,
+                "x": 1080,
+                "u": "https://preview.redd.it/zlffqon37sqg1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=342c9f0224f58e451be44281e72436b49167d4e3"
+              }
+            ],
+            "s": {
+              "y": 1216,
+              "x": 1664,
+              "u": "https://preview.redd.it/zlffqon37sqg1.png?width=1664&amp;format=png&amp;auto=webp&amp;s=a3f9671ba412388b2ab949fbb8a251e5e7de4114"
+            },
+            "id": "zlffqon37sqg1"
+          },
+          "4mbi2kvx7sqg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 78,
+                "x": 108,
+                "u": "https://preview.redd.it/4mbi2kvx7sqg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=a123ee20605dcb004791487311d7883136eb8728"
+              },
+              {
+                "y": 157,
+                "x": 216,
+                "u": "https://preview.redd.it/4mbi2kvx7sqg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=37e0c208b8007a3c7d94f214de39015992845458"
+              },
+              {
+                "y": 233,
+                "x": 320,
+                "u": "https://preview.redd.it/4mbi2kvx7sqg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=6c1e7a09b3934a945cc183cbd3809d868a0cec3a"
+              },
+              {
+                "y": 467,
+                "x": 640,
+                "u": "https://preview.redd.it/4mbi2kvx7sqg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=bc8cad94c01496ddb99563801986285931581faa"
+              },
+              {
+                "y": 701,
+                "x": 960,
+                "u": "https://preview.redd.it/4mbi2kvx7sqg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=2ca11deaa2ff0ff7743f9aefe743f47d4c50cfc5"
+              },
+              {
+                "y": 789,
+                "x": 1080,
+                "u": "https://preview.redd.it/4mbi2kvx7sqg1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=c1b8fdada01716acfb73757bd58d039dfc9af5fc"
+              }
+            ],
+            "s": {
+              "y": 1216,
+              "x": 1664,
+              "u": "https://preview.redd.it/4mbi2kvx7sqg1.png?width=1664&amp;format=png&amp;auto=webp&amp;s=b5846d60beb45dc3e30e7cffcab6950637eafadd"
+            },
+            "id": "4mbi2kvx7sqg1"
+          },
+          "hr3szt7z7sqg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 147,
+                "x": 108,
+                "u": "https://preview.redd.it/hr3szt7z7sqg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=07cf7d40aa2fbb0c35ce9d4d7b3e7f37ce32e0ed"
+              },
+              {
+                "y": 295,
+                "x": 216,
+                "u": "https://preview.redd.it/hr3szt7z7sqg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=884a08c79abf577aa244bdab6485b2930b8a130f"
+              },
+              {
+                "y": 437,
+                "x": 320,
+                "u": "https://preview.redd.it/hr3szt7z7sqg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=8f766e9462da291edc416e10b33d5094db4d17c5"
+              },
+              {
+                "y": 875,
+                "x": 640,
+                "u": "https://preview.redd.it/hr3szt7z7sqg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=86c40e646ccc2f6dfce1fcbb2b250468fed2bc3e"
+              },
+              {
+                "y": 1313,
+                "x": 960,
+                "u": "https://preview.redd.it/hr3szt7z7sqg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=03953c2f33b44b991c4964fc4af10e23d0722112"
+              },
+              {
+                "y": 1477,
+                "x": 1080,
+                "u": "https://preview.redd.it/hr3szt7z7sqg1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=e2b22d6c26369bd16cbac57c9659a964b733a841"
+              }
+            ],
+            "s": {
+              "y": 1664,
+              "x": 1216,
+              "u": "https://preview.redd.it/hr3szt7z7sqg1.png?width=1216&amp;format=png&amp;auto=webp&amp;s=5765d6bea1c8529d6870f94f05611a3220cadb07"
+            },
+            "id": "hr3szt7z7sqg1"
+          }
+        },
+        "preview": null,
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "FortranUA",
+          "ups": 31,
+          "body": "https://preview.redd.it/ytnnxon1lsqg1.png?width=1152&amp;format=png&amp;auto=webp&amp;s=6eddae753e3a961b2c59cdacce703265d5785030\n\nbonus 😏"
+        },
+        {
+          "author": "Halodri88",
+          "ups": 26,
+          "body": "Great job! \n\n![gif](giphy|z7u8nWDwpQB32)\n\n"
+        },
+        {
+          "author": "Hoodfu",
+          "ups": 25,
+          "body": "https://preview.redd.it/xnc3ofsv6tqg1.jpeg?width=2496&amp;format=pjpg&amp;auto=webp&amp;s=ac5812adfe9e62ca243214262930668d4cd311fd\n\nNeat, seems to work well."
+        }
+      ]
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "FortranUA",
+      "url": "https://i.redd.it/snoovatar/avatars/8750f54c-fae2-48ad-b425-7dc3f94ee2ea.png",
+      "path": "users/8176450202/reddit-scout/llm-fine-tuning-lora-rlhf-language-model-training/runs/2026-03-24T10-35-20-769Z/avatars/FortranUA.png",
+      "fetchedAt": "2026-03-24T10:36:48.736Z"
+    }
+  },
+  {
+    "id": "1s1kyla",
+    "subreddit": "LocalLLaMA",
+    "title": "Which local model we running on the overland Jeep fellas?",
+    "selftext": "",
+    "author": "BannedGoNext",
+    "created_utc": 1774281755,
+    "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1s1kyla/which_local_model_we_running_on_the_overland_jeep/",
+    "url": "https://i.redd.it/9onmdaugitqg1.png",
+    "domain": "i.redd.it",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 238,
+    "score": 238,
+    "num_comments": 98,
+    "upvote_ratio": 0.96,
+    "thumbnail": "https://preview.redd.it/9onmdaugitqg1.png?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=0751cfd1494181e46ca2dfd9e58e6c63f5288b27",
+    "media": null,
+    "post_hint": "image",
+    "listing": "rising",
+    "viral_score": 54.38329666185523,
+    "detail": {
+      "post": {
+        "id": "1s1kyla",
+        "title": "Which local model we running on the overland Jeep fellas?",
+        "selftext": "",
+        "author": "BannedGoNext",
+        "subreddit": "LocalLLaMA",
+        "created_utc": 1774281755,
+        "ups": 237,
+        "num_comments": 98,
+        "upvote_ratio": 0.96,
+        "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1s1kyla/which_local_model_we_running_on_the_overland_jeep/",
+        "url": "https://i.redd.it/9onmdaugitqg1.png",
+        "is_self": false,
+        "post_hint": "image",
+        "thumbnail": "https://preview.redd.it/9onmdaugitqg1.png?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=0751cfd1494181e46ca2dfd9e58e6c63f5288b27",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://preview.redd.it/9onmdaugitqg1.png?auto=webp&amp;s=262ac724d30f59afd2b8d1399d837d3d32dc764c",
+                "width": 1080,
+                "height": 2400
+              },
+              "resolutions": [
+                {
+                  "url": "https://preview.redd.it/9onmdaugitqg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=874b55ed00b1e4178bb5831bcb06cb2048550d70",
+                  "width": 108,
+                  "height": 216
+                },
+                {
+                  "url": "https://preview.redd.it/9onmdaugitqg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=17639ed86d757807d6e49cc2b24ec1336751de15",
+                  "width": 216,
+                  "height": 432
+                },
+                {
+                  "url": "https://preview.redd.it/9onmdaugitqg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=9887f348753267ac5d61c85185862384f6aca154",
+                  "width": 320,
+                  "height": 640
+                },
+                {
+                  "url": "https://preview.redd.it/9onmdaugitqg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=b96b1af23111610159ed1e192c13f0d3df1bbd39",
+                  "width": 640,
+                  "height": 1280
+                },
+                {
+                  "url": "https://preview.redd.it/9onmdaugitqg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=f00f43f5310ccaa70b7fb40fb00e7db883fac8b7",
+                  "width": 960,
+                  "height": 1920
+                },
+                {
+                  "url": "https://preview.redd.it/9onmdaugitqg1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=44ad377aea7d4452c4e8b4916a8d7d81b764c26d",
+                  "width": 1080,
+                  "height": 2160
+                }
+              ],
+              "variants": {},
+              "id": "9onmdaugitqg1"
+            }
+          ],
+          "enabled": true
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "ForsookComparison",
+          "ups": 172,
+          "body": "my car just drove me ~600 miles on 16GB of RAM. Where TF is this 300GB number coming from? Is someone assuming text-based models will be making tool-calls ???"
+        },
+        {
+          "author": "Normal_Charge_2821",
+          "ups": 59,
+          "body": "Each day, i get to understand Ted Kaczynski a little bit more. "
+        },
+        {
+          "author": "clericc--",
+          "ups": 52,
+          "body": "Apple Juice vendor predicts huge increase in Apple Juice requirements to get through the day"
+        }
+      ]
+    },
+    "media_extracted": {
+      "type": "image",
+      "url": "https://i.redd.it/9onmdaugitqg1.png",
+      "path": "users/8176450202/reddit-scout/llm-fine-tuning-lora-rlhf-language-model-training/runs/2026-03-24T10-35-20-769Z/media/1s1kyla.png",
+      "contentType": "image/png",
+      "bytes": 1375011
+    },
+    "author_avatar": {
+      "user": "BannedGoNext",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_2.png",
+      "path": "users/8176450202/reddit-scout/llm-fine-tuning-lora-rlhf-language-model-training/runs/2026-03-24T10-35-20-769Z/avatars/BannedGoNext.png",
+      "fetchedAt": "2026-03-24T10:36:49.990Z"
+    }
+  },
+  {
+    "id": "1s19ik2",
+    "subreddit": "LocalLLaMA",
+    "title": "So cursor admits that Kimi K2.5 is the best open source model",
+    "selftext": "Nothing speaks louder than recognition from your peers.",
+    "author": "Giveawayforusa",
+    "created_utc": 1774248162,
+    "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1s19ik2/so_cursor_admits_that_kimi_k25_is_the_best_open/",
+    "url": "https://i.redd.it/w55xh4ipqqqg1.png",
+    "domain": "i.redd.it",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 456,
+    "score": 456,
+    "num_comments": 78,
+    "upvote_ratio": 0.95,
+    "thumbnail": "https://preview.redd.it/w55xh4ipqqqg1.png?width=140&amp;height=82&amp;auto=webp&amp;s=d3d3e2b769bc9a20f682d7d77c06f0b9cb301180",
+    "media": null,
+    "post_hint": "image",
+    "listing": "rising",
+    "viral_score": 51.414509301279466,
+    "detail": {
+      "post": {
+        "id": "1s19ik2",
+        "title": "So cursor admits that Kimi K2.5 is the best open source model",
+        "selftext": "Nothing speaks louder than recognition from your peers.",
+        "author": "Giveawayforusa",
+        "subreddit": "LocalLLaMA",
+        "created_utc": 1774248162,
+        "ups": 456,
+        "num_comments": 78,
+        "upvote_ratio": 0.95,
+        "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1s19ik2/so_cursor_admits_that_kimi_k25_is_the_best_open/",
+        "url": "https://i.redd.it/w55xh4ipqqqg1.png",
+        "is_self": false,
+        "post_hint": "image",
+        "thumbnail": "https://preview.redd.it/w55xh4ipqqqg1.png?width=140&amp;height=82&amp;auto=webp&amp;s=d3d3e2b769bc9a20f682d7d77c06f0b9cb301180",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://preview.redd.it/w55xh4ipqqqg1.png?auto=webp&amp;s=abb6e43bcfd02f3fffe1542736505c58d8aa881d",
+                "width": 1188,
+                "height": 702
+              },
+              "resolutions": [
+                {
+                  "url": "https://preview.redd.it/w55xh4ipqqqg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=2b3bf28091171ce67289d0b9a1bbf7d2ede0e875",
+                  "width": 108,
+                  "height": 63
+                },
+                {
+                  "url": "https://preview.redd.it/w55xh4ipqqqg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=18cf3052a478bfb60697f0fdce0eb3a03188ff99",
+                  "width": 216,
+                  "height": 127
+                },
+                {
+                  "url": "https://preview.redd.it/w55xh4ipqqqg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=0a4de10a357361b180578a7c0dfda60da3b72ee7",
+                  "width": 320,
+                  "height": 189
+                },
+                {
+                  "url": "https://preview.redd.it/w55xh4ipqqqg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=1324d16b1ebb7299b955da88e2f2ed882f37dcb4",
+                  "width": 640,
+                  "height": 378
+                },
+                {
+                  "url": "https://preview.redd.it/w55xh4ipqqqg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=cb5f72726d29fc467b4d8107b5de80f0975f65a9",
+                  "width": 960,
+                  "height": 567
+                },
+                {
+                  "url": "https://preview.redd.it/w55xh4ipqqqg1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=0b930ec93a927d230967c0c3051ae3e430454c18",
+                  "width": 1080,
+                  "height": 638
+                }
+              ],
+              "variants": {},
+              "id": "w55xh4ipqqqg1"
+            }
+          ],
+          "enabled": true
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "jubilantcoffin",
+          "ups": 163,
+          "body": "You can't do perplexity based evals between models. The scores depend on dictionary size for example.\n\nI bet that tweet is going to quickly disappear. It's like plastering a sticker over your business \"We have no idea what we're doing\".\n"
+        },
+        {
+          "author": "NandaVegg",
+          "ups": 64,
+          "body": "I'm still unsure about their claim that they did 75% of training and K2 is just 25%.\n\nWorkshop Labs, who claimed they made the fastest Kimi K2 training code (within a single node), reported that Fireworks' K2 training code is not optimized at all, and that does not sound like capable of hyperscaled training. I have no experience with Fireworks personally, but reported efficacy is almost comparable (merely 2x better) to HF Transformers 4.x which used a simple for-loop for experts (no parallelism).\n\n[https://www.workshoplabs.ai/blog/post-training-50x-faster](https://www.workshoplabs.ai/blog/post-training-50x-faster)"
+        },
+        {
+          "author": "rm-rf-rm",
+          "ups": 17,
+          "body": "when they started developing composer 2 i doubt GLM 5, Qwen 3.5 , Minimax 2.5 etc were out"
+        }
+      ]
+    },
+    "media_extracted": {
+      "type": "image",
+      "url": "https://i.redd.it/w55xh4ipqqqg1.png",
+      "path": "users/8176450202/reddit-scout/llm-fine-tuning-lora-rlhf-language-model-training/runs/2026-03-24T10-35-20-769Z/media/1s19ik2.png",
+      "contentType": "image/png",
+      "bytes": 136731
+    },
+    "author_avatar": {
+      "user": "Giveawayforusa",
+      "url": "https://styles.redditmedia.com/t5_7hoe5n/styles/profileIcon_pg0fo12eiwmg1.png?width=256&height=256&crop=256:256,smart&s=8b8c83b21cc7e25f75d62dab98b30e88a2cf1c69",
+      "path": "users/8176450202/reddit-scout/llm-fine-tuning-lora-rlhf-language-model-training/runs/2026-03-24T10-35-20-769Z/avatars/Giveawayforusa.png",
+      "fetchedAt": "2026-03-24T10:36:51.246Z"
+    }
+  },
+  {
+    "id": "1s06mg7",
+    "subreddit": "ChatGPT",
+    "title": "ChatGPT: \"I don't have 7zip installed? Fine, I’ll reverse-engineer the entire 7z specification and write a bitwise parser in Python.\"",
+    "selftext": "",
+    "author": "youngChatter18",
+    "created_utc": 1774137175,
+    "permalink": "https://www.reddit.com/r/ChatGPT/comments/1s06mg7/chatgpt_i_dont_have_7zip_installed_fine_ill/",
+    "url": "https://www.reddit.com/gallery/1s06mg7",
+    "domain": "reddit.com",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 1135,
+    "score": 1135,
+    "num_comments": 144,
+    "upvote_ratio": 0.96,
+    "thumbnail": "https://preview.redd.it/znfuylnikhqg1.png?width=140&amp;height=77&amp;auto=webp&amp;s=25177e8d943b277e1d5b74a1d307d2563a6542dd",
+    "media": null,
+    "post_hint": null,
+    "listing": "top:week",
+    "viral_score": 49.43152318013168,
+    "detail": {
+      "post": {
+        "id": "1s06mg7",
+        "title": "ChatGPT: \"I don't have 7zip installed? Fine, I’ll reverse-engineer the entire 7z specification and write a bitwise parser in Python.\"",
+        "selftext": "",
+        "author": "youngChatter18",
+        "subreddit": "ChatGPT",
+        "created_utc": 1774137175,
+        "ups": 1127,
+        "num_comments": 144,
+        "upvote_ratio": 0.96,
+        "permalink": "https://www.reddit.com/r/ChatGPT/comments/1s06mg7/chatgpt_i_dont_have_7zip_installed_fine_ill/",
+        "url": "https://www.reddit.com/gallery/1s06mg7",
+        "is_self": false,
+        "post_hint": null,
+        "thumbnail": "https://preview.redd.it/znfuylnikhqg1.png?width=140&amp;height=77&amp;auto=webp&amp;s=25177e8d943b277e1d5b74a1d307d2563a6542dd",
+        "is_gallery": true,
+        "gallery_data": {
+          "items": [
+            {
+              "media_id": "znfuylnikhqg1",
+              "id": 892236786
+            },
+            {
+              "media_id": "ygtddh4jkhqg1",
+              "id": 892236787
+            },
+            {
+              "media_id": "3y5myvcjkhqg1",
+              "id": 892236788
+            }
+          ]
+        },
+        "media_metadata": {
+          "ygtddh4jkhqg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 80,
+                "x": 108,
+                "u": "https://preview.redd.it/ygtddh4jkhqg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=c962fb1c0ea9831183731baed92b85b0a2148ab0"
+              },
+              {
+                "y": 161,
+                "x": 216,
+                "u": "https://preview.redd.it/ygtddh4jkhqg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=83144f0893057274ad157ed97a312b5f91c66fd8"
+              },
+              {
+                "y": 238,
+                "x": 320,
+                "u": "https://preview.redd.it/ygtddh4jkhqg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=e6ddacf203c1fbcd730799baae72dc4e1e779573"
+              },
+              {
+                "y": 477,
+                "x": 640,
+                "u": "https://preview.redd.it/ygtddh4jkhqg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=bde39f7f13141c89cbb66f5cf0aa16d823f39c5d"
+              },
+              {
+                "y": 716,
+                "x": 960,
+                "u": "https://preview.redd.it/ygtddh4jkhqg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=55c34925a554a97ff4a2b237d1d80a102a634703"
+              },
+              {
+                "y": 806,
+                "x": 1080,
+                "u": "https://preview.redd.it/ygtddh4jkhqg1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=21559d3eae14bf358a62f38fe32c33e53b10f25a"
+              }
+            ],
+            "s": {
+              "y": 1964,
+              "x": 2631,
+              "u": "https://preview.redd.it/ygtddh4jkhqg1.png?width=2631&amp;format=png&amp;auto=webp&amp;s=e0d1044357a3df370ae84259326fc1a886857a13"
+            },
+            "id": "ygtddh4jkhqg1"
+          },
+          "3y5myvcjkhqg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 92,
+                "x": 108,
+                "u": "https://preview.redd.it/3y5myvcjkhqg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=6efe478de8dd7aebde9f984eb844b53f5f01107f"
+              },
+              {
+                "y": 185,
+                "x": 216,
+                "u": "https://preview.redd.it/3y5myvcjkhqg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=35cbaf8a28ff9bdb3959ec33d48ab6fc9b868cf3"
+              },
+              {
+                "y": 274,
+                "x": 320,
+                "u": "https://preview.redd.it/3y5myvcjkhqg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=c8ebf5bf2ec5fb102495ac6939395cdfbfb5921e"
+              },
+              {
+                "y": 549,
+                "x": 640,
+                "u": "https://preview.redd.it/3y5myvcjkhqg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=5793022e20ed2526c8f667651eb58a2fd7b63eca"
+              },
+              {
+                "y": 824,
+                "x": 960,
+                "u": "https://preview.redd.it/3y5myvcjkhqg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=e59d803f4786b1ac136ffab582867493348bae30"
+              },
+              {
+                "y": 927,
+                "x": 1080,
+                "u": "https://preview.redd.it/3y5myvcjkhqg1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=226e7b63a0ddb95ceb8273b00dae7d964a118b97"
+              }
+            ],
+            "s": {
+              "y": 1888,
+              "x": 2199,
+              "u": "https://preview.redd.it/3y5myvcjkhqg1.png?width=2199&amp;format=png&amp;auto=webp&amp;s=4d381755e9c6fc1c6eb640503dbb0365c8bc5407"
+            },
+            "id": "3y5myvcjkhqg1"
+          },
+          "znfuylnikhqg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 59,
+                "x": 108,
+                "u": "https://preview.redd.it/znfuylnikhqg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=a48e79d3d4135e55f20adb34e2ea80468a5da66a"
+              },
+              {
+                "y": 119,
+                "x": 216,
+                "u": "https://preview.redd.it/znfuylnikhqg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=2500e90459682421192ced3279cfaeda4f9d8051"
+              },
+              {
+                "y": 176,
+                "x": 320,
+                "u": "https://preview.redd.it/znfuylnikhqg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=261e1a0c12953eb26fc740fe50ee5fa524eb1daf"
+              },
+              {
+                "y": 353,
+                "x": 640,
+                "u": "https://preview.redd.it/znfuylnikhqg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=3e1c794492bb332bd9d4f730d0e942b8b388d115"
+              },
+              {
+                "y": 530,
+                "x": 960,
+                "u": "https://preview.redd.it/znfuylnikhqg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=43d04ce810cff07340d10d1a5dda5cb7893210d9"
+              }
+            ],
+            "s": {
+              "y": 533,
+              "x": 965,
+              "u": "https://preview.redd.it/znfuylnikhqg1.png?width=965&amp;format=png&amp;auto=webp&amp;s=da7c66b4f3346312ffbef61263e1e47fa21ab41a"
+            },
+            "id": "znfuylnikhqg1"
+          }
+        },
+        "preview": null,
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "youngChatter18",
+          "ups": 783,
+          "body": "I uploaded a .7z archive to ChatGPT to ask what the repo was about. Usually, if a file format is not supported in the sandbox environment, like .7z often is, the AI just says it cannot open it and asks for a .zip instead.\n\nNot this time.\n\nIt first tried the obvious options. It checked for 7z and tar, but neither was installed. It then tried to install them with apt-get, but there was no internet access. After that, it looked for py7zr, but that library was not available either.\n\nInstead of stopping there, it started reading the raw hex bytes of the archive directly. It identified the 7z file signature, found the compressed metadata near the end of the file, and worked out that it needed to decode variable-length integers.\n\nFrom there, it wrote a custom Python script, visible in the screenshots, to manually parse the PackInfo, UnPackInfo, and SubStreams structures. In effect, it built a miniature version of 7-Zip from scratch using only standard Python libraries such as lzma and struct.\n\nThat brute-force approach actually worked. It managed to open the archive, read the files inside, and produce a perfect summary of the repository."
+        },
+        {
+          "author": "rollerbase",
+          "ups": 171,
+          "body": "I kind of respect this energy "
+        },
+        {
+          "author": "piedamon",
+          "ups": 145,
+          "body": "The amount of times it encounters a barrier and just works right around it effortlessly is awesome and scary "
+        }
+      ]
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "youngChatter18",
+      "url": "https://i.redd.it/snoovatar/avatars/1460bb71-6c2b-4639-9f4a-78a2a434ae64.png",
+      "path": "users/8176450202/reddit-scout/llm-fine-tuning-lora-rlhf-language-model-training/runs/2026-03-24T10-35-20-769Z/avatars/youngChatter18.png",
+      "fetchedAt": "2026-03-24T10:36:52.595Z"
+    }
+  },
+  {
+    "id": "1s1p2jo",
+    "subreddit": "LocalLLaMA",
+    "title": "Another appreciation post for qwen3.5 27b model",
+    "selftext": "I tested qwen3.5 122b when it went out, I really liked it and for my development tests it was on pair to gemini 3 flash (my current AI tool for coding) so I was looking for hardware investing, the problem is I need a new mobo and 1 (or 2 more 3090) and the price is just too high right now.\n\nI saw a lot of posts saying that qwen3.5 27b was better than 122b it actually didn't made sense to me, then I saw nemotron 3 super 120b but people said it was not better than qwen3.5 122b, I trusted them.\n\nYesterday and today I tested all these models:\n\n&gt;\"unsloth/Qwen3.5-27B-GGUF:UD-Q4\\_K\\_XL\"  \n\"unsloth/Qwen3.5-35B-A3B-GGUF:UD-Q4\\_K\\_XL\"  \n\"unsloth/Qwen3.5-122B-A10B-GGUF\"  \n\"unsloth/Qwen3.5-27B-GGUF:UD-Q6\\_K\\_XL\"  \n\"unsloth/Qwen3.5-27B-GGUF:UD-Q8\\_K\\_XL\"  \n\"unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF:UD-IQ4\\_XS\"  \n\"unsloth/gpt-oss-120b-GGUF:F16\"\n\nI also tested against gpt-5.4 high so I can compare them better.\n\nTo my sorprise nemotron was very, very good model, on par with gpt-5.4 and also qwen3.5-25b did great as well.\n\nSadly (but also good) gpt-oss 120b and qwen3.5 122b performed worse than the other 2 models (good because they need more hardware).\n\nSo I can finally use \"Qwen3.5-27B-GGUF:UD-Q6\\_K\\_XL\" for real developing tasks locally, the best is I don't need to get more hardware (I already own 2x 3090).\n\nI am sorry for not providing too much info but I didn't save the tg/pp for all of them, nemotron ran at 80 tg and about 2000 pp, 100k context on [vast.ai](http://vast.ai) with 4 rtx 3090 and Qwen3.5-27B Q6 at 803pp, 25 tg, 256k context on [vast.ai](http://vast.ai) as well.\n\nI'll setup it locally probably next week for production use.\n\nThese are the commands I used (pretty much copied from unsloth page):\n\n    ./llama.cpp/llama-server -hf unsloth/Qwen3.5-27B-GGUF:UD-Q6_K_XL --ctx-size 262144 --temp 0.6 --top-p 0.95 --top-k 20 --min-p 0.00 -ngl 999\n\n\n\nP.D.\n\nI am so glad I can actually replace API subscriptions (at least for the daily tasks), I'll continue using CODEX for complex tasks.\n\nIf I had the hardware that nemotron-3-super 120b requires, I would use it instead, it also responded always on my own language (Spanish) while others responded on English.",
+    "author": "robertpro01",
+    "created_utc": 1774290319,
+    "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1s1p2jo/another_appreciation_post_for_qwen35_27b_model/",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1s1p2jo/another_appreciation_post_for_qwen35_27b_model/",
+    "domain": "self.LocalLLaMA",
+    "is_self": true,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 118,
+    "score": 118,
+    "num_comments": 65,
+    "upvote_ratio": 0.93,
+    "thumbnail": "self",
+    "media": null,
+    "post_hint": "self",
+    "listing": "rising",
+    "viral_score": 32.26258196824168,
+    "detail": {
+      "post": {
+        "id": "1s1p2jo",
+        "title": "Another appreciation post for qwen3.5 27b model",
+        "selftext": "I tested qwen3.5 122b when it went out, I really liked it and for my development tests it was on pair to gemini 3 flash (my current AI tool for coding) so I was looking for hardware investing, the problem is I need a new mobo and 1 (or 2 more 3090) and the price is just too high right now.\n\nI saw a lot of posts saying that qwen3.5 27b was better than 122b it actually didn't made sense to me, then I saw nemotron 3 super 120b but people said it was not better than qwen3.5 122b, I trusted them.\n\nYesterday and today I tested all these models:\n\n&gt;\"unsloth/Qwen3.5-27B-GGUF:UD-Q4\\_K\\_XL\"  \n\"unsloth/Qwen3.5-35B-A3B-GGUF:UD-Q4\\_K\\_XL\"  \n\"unsloth/Qwen3.5-122B-A10B-GGUF\"  \n\"unsloth/Qwen3.5-27B-GGUF:UD-Q6\\_K\\_XL\"  \n\"unsloth/Qwen3.5-27B-GGUF:UD-Q8\\_K\\_XL\"  \n\"unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF:UD-IQ4\\_XS\"  \n\"unsloth/gpt-oss-120b-GGUF:F16\"\n\nI also tested against gpt-5.4 high so I can compare them better.\n\nTo my sorprise nemotron was very, very good model, on par with gpt-5.4 and also qwen3.5-25b did great as well.\n\nSadly (but also good) gpt-oss 120b and qwen3.5 122b performed worse than the other 2 models (good because they need more hardware).\n\nSo I can finally use \"Qwen3.5-27B-GGUF:UD-Q6\\_K\\_XL\" for real developing tasks locally, the best is I don't need to get more hardware (I already own 2x 3090).\n\nI am sorry for not providing too much info but I didn't save the tg/pp for all of them, nemotron ran at 80 tg and about 2000 pp, 100k context on [vast.ai](http://vast.ai) with 4 rtx 3090 and Qwen3.5-27B Q6 at 803pp, 25 tg, 256k context on [vast.ai](http://vast.ai) as well.\n\nI'll setup it locally probably next week for production use.\n\nThese are the commands I used (pretty much copied from unsloth page):\n\n    ./llama.cpp/llama-server -hf unsloth/Qwen3.5-27B-GGUF:UD-Q6_K_XL --ctx-size 262144 --temp 0.6 --top-p 0.95 --top-k 20 --min-p 0.00 -ngl 999\n\n\n\nP.D.\n\nI am so glad I can actually replace API subscriptions (at least for the daily tasks), I'll continue using CODEX for complex tasks.\n\nIf I had the hardware that nemotron-3-super 120b requires, I would use it instead, it also responded always on my own language (Spanish) while others responded on English.",
+        "author": "robertpro01",
+        "subreddit": "LocalLLaMA",
+        "created_utc": 1774290319,
+        "ups": 117,
+        "num_comments": 65,
+        "upvote_ratio": 0.93,
+        "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1s1p2jo/another_appreciation_post_for_qwen35_27b_model/",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1s1p2jo/another_appreciation_post_for_qwen35_27b_model/",
+        "is_self": true,
+        "post_hint": "self",
+        "thumbnail": "self",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://external-preview.redd.it/vGLF5xg6Jo3jCqJHrDrFbkGr2Pg3TnZs3iJ6sUF5avI.png?auto=webp&amp;s=313703ad6083ced437919dfadc2dd3316ee54738",
+                "width": 1200,
+                "height": 630
+              },
+              "resolutions": [
+                {
+                  "url": "https://external-preview.redd.it/vGLF5xg6Jo3jCqJHrDrFbkGr2Pg3TnZs3iJ6sUF5avI.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=a659aa298f63a79c01aea41868ed1acd9898b90d",
+                  "width": 108,
+                  "height": 56
+                },
+                {
+                  "url": "https://external-preview.redd.it/vGLF5xg6Jo3jCqJHrDrFbkGr2Pg3TnZs3iJ6sUF5avI.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=48bc0dd2cb4984fa6acdef13aed06d11f48e261f",
+                  "width": 216,
+                  "height": 113
+                },
+                {
+                  "url": "https://external-preview.redd.it/vGLF5xg6Jo3jCqJHrDrFbkGr2Pg3TnZs3iJ6sUF5avI.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=168d378fd1d5adfea149312ec0c3b3b8ee0e1561",
+                  "width": 320,
+                  "height": 168
+                },
+                {
+                  "url": "https://external-preview.redd.it/vGLF5xg6Jo3jCqJHrDrFbkGr2Pg3TnZs3iJ6sUF5avI.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=330784e59352166e0280e3acd91593b6a20444d7",
+                  "width": 640,
+                  "height": 336
+                },
+                {
+                  "url": "https://external-preview.redd.it/vGLF5xg6Jo3jCqJHrDrFbkGr2Pg3TnZs3iJ6sUF5avI.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=b1bfb19727e569727589ed89795d589b3acc6679",
+                  "width": 960,
+                  "height": 504
+                },
+                {
+                  "url": "https://external-preview.redd.it/vGLF5xg6Jo3jCqJHrDrFbkGr2Pg3TnZs3iJ6sUF5avI.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=4ee0ed888f39450957e9ce9c1936b531f283da14",
+                  "width": 1080,
+                  "height": 567
+                }
+              ],
+              "variants": {},
+              "id": "vGLF5xg6Jo3jCqJHrDrFbkGr2Pg3TnZs3iJ6sUF5avI"
+            }
+          ],
+          "enabled": false
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "hurdurdur7",
+          "ups": 50,
+          "body": "27b is a beast and absolutely worth it for us peasant class vram people"
+        },
+        {
+          "author": "ttkciar",
+          "ups": 29,
+          "body": "If you haven't looked at the upscaled Qwen3.5-40B dense models yet, you might want to give them a shot.\n\nI'm particularly impressed by Qwen3.5-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking."
+        },
+        {
+          "author": "teleolurian",
+          "ups": 9,
+          "body": "Qwen 3.5 27b is dense, 122B is a10b. 27b has more active params = better thinking, while 122b has a greater knowledge base. tl;dr - fine tuned 122b will demolish in targeted applications, but 27b is better in many use cases and will remain better in general"
+        }
+      ]
+    },
+    "author_avatar": {
+      "user": "robertpro01",
+      "url": "https://i.redd.it/snoovatar/avatars/nftv2_bmZ0X2VpcDE1NToxMzdfNDY2YTMzMDg4N2JkZjYyZDUzZjk2OGVhODI0NzkzMTUwZjA3NzYyZV8zMjMxNTM_rare_17cf7b0f-8255-40de-9f4c-0086fecae6be.png",
+      "path": "users/8176450202/reddit-scout/llm-fine-tuning-lora-rlhf-language-model-training/runs/2026-03-24T10-35-20-769Z/avatars/robertpro01.png",
+      "fetchedAt": "2026-03-24T10:36:53.909Z"
+    }
+  },
+  {
+    "id": "1s0mmsn",
+    "subreddit": "LocalLLaMA",
+    "title": "Impressive thread from /r/ChatGPT, where after ChatGPT finds out no 7Zip, tar, py7zr, apt-get, Internet, it just manually parsed and unzipped from hex data of the .7z file. What model + prompts would be able to do this?",
+    "selftext": "",
+    "author": "jinnyjuice",
+    "created_utc": 1774188649,
+    "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1s0mmsn/impressive_thread_from_rchatgpt_where_after/",
+    "url": "https://old.reddit.com/r/ChatGPT/comments/1s06mg7/chatgpt_i_dont_have_7zip_installed_fine_ill",
+    "domain": "old.reddit.com",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 458,
+    "score": 458,
+    "num_comments": 89,
+    "upvote_ratio": 0.91,
+    "thumbnail": "https://preview.redd.it/znfuylnikhqg1.png?width=140&amp;height=77&amp;auto=webp&amp;s=25177e8d943b277e1d5b74a1d307d2563a6542dd",
+    "media": null,
+    "post_hint": null,
+    "listing": "top:week",
+    "viral_score": 26.121175487935076,
+    "detail": {
+      "post": {
+        "id": "1s0mmsn",
+        "title": "Impressive thread from /r/ChatGPT, where after ChatGPT finds out no 7Zip, tar, py7zr, apt-get, Internet, it just manually parsed and unzipped from hex data of the .7z file. What model + prompts would be able to do this?",
+        "selftext": "",
+        "author": "jinnyjuice",
+        "subreddit": "LocalLLaMA",
+        "created_utc": 1774188649,
+        "ups": 456,
+        "num_comments": 89,
+        "upvote_ratio": 0.91,
+        "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1s0mmsn/impressive_thread_from_rchatgpt_where_after/",
+        "url": "https://old.reddit.com/r/ChatGPT/comments/1s06mg7/chatgpt_i_dont_have_7zip_installed_fine_ill",
+        "is_self": false,
+        "post_hint": null,
+        "thumbnail": "https://preview.redd.it/znfuylnikhqg1.png?width=140&amp;height=77&amp;auto=webp&amp;s=25177e8d943b277e1d5b74a1d307d2563a6542dd",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": null,
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "Medium_Chemist_4032",
+          "ups": 265,
+          "body": "Opus in Claude Code does simirarily impressive things once a while. Like \"oh, you don't have the source code for your proprietary library? Fine, let's decompile the one in your gradle cache... Oh, after the update, there seems to be a new argument required\"."
+        },
+        {
+          "author": "sersoniko",
+          "ups": 214,
+          "body": "This reminds of “Son of Anton” from Silicon Valley that broke AES-256 to fix a typo\n\nEdit: it was actually P-256"
+        },
+        {
+          "author": "GroundbreakingMall54",
+          "ups": 141,
+          "body": "The fact that it just brute-forced a 7z format from raw hex without any tools is genuinely unhinged. For local models, Qwen3 or Mistral Small 4 might get close on structured data parsing, but that level of \"just figure it out\" energy is still mostly a frontier model thing."
+        }
+      ]
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "jinnyjuice",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_4.png",
+      "path": "users/8176450202/reddit-scout/llm-fine-tuning-lora-rlhf-language-model-training/runs/2026-03-24T10-35-20-769Z/avatars/jinnyjuice.png",
+      "fetchedAt": "2026-03-24T10:36:55.169Z"
+    }
+  },
+  {
+    "id": "1s1wgph",
+    "subreddit": "LocalLLaMA",
+    "title": "Run Qwen3.5 flagship model with 397 billion parameters at 5 – 9 tok/s on a $2,100 desktop! Two $500 GPUs, 32GB RAM, one NVMe drive. Uses Q4_K_M quants",
+    "selftext": "Introducing FOMOE: [Fast Opportunistic Mixture Of Experts](http://github.com/pmerolla/fomoe) (pronounced fomo).\n\nThe problem: Large Mixture of Experts (MoEs) need a lot of memory for weights (hundreds of GBs), which are typically stored in flash memory (eg NVMe). During inference, only a small fraction of these weights are needed, however you don't know which ones ahead of time. This makes inference completely impractical on consumer hardware since flash latencies are too high for random access patterns.\n\nThe solution: make most expert weight reads unnecessary.\n\nFirst store the most common experts in GPU memory (VRAM) and keep an up-to-date rolling expert cache.\n\nWith a 60% VRAM hit rate with a warm start, NVMe reads drop to 28% (other 12% served from DRAM). Add a dual GPU ping-pong architecture to overlap weight loading and compute, and you're already over 5 tok/s!\n\nCan we do better without collapsing model accuracy? The insight: if two experts score similarly, the model barely notices which one runs.\n\nAn experimental feature called Cache-Aware Routing (CAR) reduces NVMe reads down to 7% by picking the next-best scoring expert already in VRAM or DRAM cache, within an acceptable threshold.\n\nThis can get us to \\~9 tok/s with only a 3.5% drop in perplexity measured on wikitext.\n\nThe whole system is \\~15K lines of Claude-driven C/HIP (with heavy human guidance).\n\nhttps://preview.redd.it/d1th0dsbkvqg1.jpg?width=1280&amp;format=pjpg&amp;auto=webp&amp;s=6bb456c55a762fc4e57b4313c887b9a5fe6ae582\n\n",
+    "author": "Rare-Tadpole-8841",
+    "created_utc": 1774306474,
+    "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1s1wgph/run_qwen35_flagship_model_with_397_billion/",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1s1wgph/run_qwen35_flagship_model_with_397_billion/",
+    "domain": "self.LocalLLaMA",
+    "is_self": true,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 70,
+    "score": 70,
+    "num_comments": 38,
+    "upvote_ratio": 0.85,
+    "thumbnail": "https://preview.redd.it/d1th0dsbkvqg1.jpg?width=140&amp;height=105&amp;auto=webp&amp;s=67d8dd69101a1596fa7dcbfc0f0918a408b53780",
+    "media": null,
+    "post_hint": null,
+    "listing": "rising",
+    "viral_score": 23.910816785099374,
+    "detail": {
+      "post": {
+        "id": "1s1wgph",
+        "title": "Run Qwen3.5 flagship model with 397 billion parameters at 5 – 9 tok/s on a $2,100 desktop! Two $500 GPUs, 32GB RAM, one NVMe drive. Uses Q4_K_M quants",
+        "selftext": "Introducing FOMOE: [Fast Opportunistic Mixture Of Experts](http://github.com/pmerolla/fomoe) (pronounced fomo).\n\nThe problem: Large Mixture of Experts (MoEs) need a lot of memory for weights (hundreds of GBs), which are typically stored in flash memory (eg NVMe). During inference, only a small fraction of these weights are needed, however you don't know which ones ahead of time. This makes inference completely impractical on consumer hardware since flash latencies are too high for random access patterns.\n\nThe solution: make most expert weight reads unnecessary.\n\nFirst store the most common experts in GPU memory (VRAM) and keep an up-to-date rolling expert cache.\n\nWith a 60% VRAM hit rate with a warm start, NVMe reads drop to 28% (other 12% served from DRAM). Add a dual GPU ping-pong architecture to overlap weight loading and compute, and you're already over 5 tok/s!\n\nCan we do better without collapsing model accuracy? The insight: if two experts score similarly, the model barely notices which one runs.\n\nAn experimental feature called Cache-Aware Routing (CAR) reduces NVMe reads down to 7% by picking the next-best scoring expert already in VRAM or DRAM cache, within an acceptable threshold.\n\nThis can get us to \\~9 tok/s with only a 3.5% drop in perplexity measured on wikitext.\n\nThe whole system is \\~15K lines of Claude-driven C/HIP (with heavy human guidance).\n\nhttps://preview.redd.it/d1th0dsbkvqg1.jpg?width=1280&amp;format=pjpg&amp;auto=webp&amp;s=6bb456c55a762fc4e57b4313c887b9a5fe6ae582\n\n",
+        "author": "Rare-Tadpole-8841",
+        "subreddit": "LocalLLaMA",
+        "created_utc": 1774306474,
+        "ups": 70,
+        "num_comments": 38,
+        "upvote_ratio": 0.85,
+        "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1s1wgph/run_qwen35_flagship_model_with_397_billion/",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1s1wgph/run_qwen35_flagship_model_with_397_billion/",
+        "is_self": true,
+        "post_hint": null,
+        "thumbnail": "https://preview.redd.it/d1th0dsbkvqg1.jpg?width=140&amp;height=105&amp;auto=webp&amp;s=67d8dd69101a1596fa7dcbfc0f0918a408b53780",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": {
+          "d1th0dsbkvqg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/jpg",
+            "p": [
+              {
+                "y": 81,
+                "x": 108,
+                "u": "https://preview.redd.it/d1th0dsbkvqg1.jpg?width=108&amp;crop=smart&amp;auto=webp&amp;s=ebbcb7d9c2c74d488f8e1559d5bc4cc0f996072f"
+              },
+              {
+                "y": 162,
+                "x": 216,
+                "u": "https://preview.redd.it/d1th0dsbkvqg1.jpg?width=216&amp;crop=smart&amp;auto=webp&amp;s=242320ad8ecce2edccb31fbf12240cb299e89367"
+              },
+              {
+                "y": 240,
+                "x": 320,
+                "u": "https://preview.redd.it/d1th0dsbkvqg1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=22b830bf87b7496f0e365a3126149237737cb59b"
+              },
+              {
+                "y": 481,
+                "x": 640,
+                "u": "https://preview.redd.it/d1th0dsbkvqg1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=9a43693d85234adb50635ba284ad83ab3f15f20e"
+              },
+              {
+                "y": 722,
+                "x": 960,
+                "u": "https://preview.redd.it/d1th0dsbkvqg1.jpg?width=960&amp;crop=smart&amp;auto=webp&amp;s=7f35cfd162de08572b146494c21c4e52fe98eb75"
+              },
+              {
+                "y": 812,
+                "x": 1080,
+                "u": "https://preview.redd.it/d1th0dsbkvqg1.jpg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=582054f04feb5d7f3de6de8c257a37cc23372996"
+              }
+            ],
+            "s": {
+              "y": 963,
+              "x": 1280,
+              "u": "https://preview.redd.it/d1th0dsbkvqg1.jpg?width=1280&amp;format=pjpg&amp;auto=webp&amp;s=6bb456c55a762fc4e57b4313c887b9a5fe6ae582"
+            },
+            "id": "d1th0dsbkvqg1"
+          }
+        },
+        "preview": null,
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "Pristine-Woodpecker",
+          "ups": 16,
+          "body": "Note that wikitext is very easy, which means your PPL hit because of choosing the next best expert may be hugely understated. In my experience, REAP/REAM never performed very well compared to just choosing smaller quants. That said, \"next best with threshold\", i.e. what you're doing should be much better than REAP/REAM.\n\nBe curious to see how effective expert caching is on various workloads."
+        },
+        {
+          "author": "spky-dev",
+          "ups": 15,
+          "body": "What’s the pp @ 256k look like? "
+        },
+        {
+          "author": "superdariom",
+          "ups": 5,
+          "body": "How much smarter is this model Vs the 27b 4 bit version because that's the same speed I get just running that in CPU? How much faster would it be if the whole thing was cached in system ram? 32gb isn't much to make use of for paging out of vram"
+        }
+      ]
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "Rare-Tadpole-8841",
+      "url": "https://i.redd.it/snoovatar/avatars/a2fcda6e-1fe4-4a2d-ae47-f7d4ae60d338.png",
+      "path": "users/8176450202/reddit-scout/llm-fine-tuning-lora-rlhf-language-model-training/runs/2026-03-24T10-35-20-769Z/avatars/Rare-Tadpole-8841.png",
+      "fetchedAt": "2026-03-24T10:36:56.514Z"
+    }
+  },
+  {
+    "id": "1rxbtyj",
+    "subreddit": "LocalLLaMA",
+    "title": "So nobody's downloading this model huh?",
+    "selftext": "Disappointed in the performance myself too :/\n\nThe last good Mistral model I can remember was Nemo, which led to a lot of good finetunes.",
+    "author": "KvAk_AKPlaysYT",
+    "created_utc": 1773858216,
+    "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1rxbtyj/so_nobodys_downloading_this_model_huh/",
+    "url": "https://i.redd.it/zdd47t8siupg1.png",
+    "domain": "i.redd.it",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 644,
+    "score": 644,
+    "num_comments": 250,
+    "upvote_ratio": 0.93,
+    "thumbnail": "https://preview.redd.it/zdd47t8siupg1.png?width=140&amp;height=30&amp;auto=webp&amp;s=2197f82990a95cb99dbdc8465ae43a4bbf225cd0",
+    "media": null,
+    "post_hint": "image",
+    "listing": "top:week",
+    "viral_score": 14.193527526984777,
+    "detail": {
+      "post": {
+        "id": "1rxbtyj",
+        "title": "So nobody's downloading this model huh?",
+        "selftext": "Disappointed in the performance myself too :/\n\nThe last good Mistral model I can remember was Nemo, which led to a lot of good finetunes.",
+        "author": "KvAk_AKPlaysYT",
+        "subreddit": "LocalLLaMA",
+        "created_utc": 1773858216,
+        "ups": 647,
+        "num_comments": 250,
+        "upvote_ratio": 0.93,
+        "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1rxbtyj/so_nobodys_downloading_this_model_huh/",
+        "url": "https://i.redd.it/zdd47t8siupg1.png",
+        "is_self": false,
+        "post_hint": "image",
+        "thumbnail": "https://preview.redd.it/zdd47t8siupg1.png?width=140&amp;height=30&amp;auto=webp&amp;s=2197f82990a95cb99dbdc8465ae43a4bbf225cd0",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://preview.redd.it/zdd47t8siupg1.png?auto=webp&amp;s=71289282beb7d7ce3384217f438b9735aa5fc346",
+                "width": 518,
+                "height": 112
+              },
+              "resolutions": [
+                {
+                  "url": "https://preview.redd.it/zdd47t8siupg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=3013abc1ba380f1a6315dcf16697a19054c34e15",
+                  "width": 108,
+                  "height": 23
+                },
+                {
+                  "url": "https://preview.redd.it/zdd47t8siupg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=36042734cd4fb86fc8165d823d4b8dfa2ba883d1",
+                  "width": 216,
+                  "height": 46
+                },
+                {
+                  "url": "https://preview.redd.it/zdd47t8siupg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=4be32ede267964ab7db397451e390625d145bf0f",
+                  "width": 320,
+                  "height": 69
+                }
+              ],
+              "variants": {},
+              "id": "zdd47t8siupg1"
+            }
+          ],
+          "enabled": true
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "KvAk_AKPlaysYT",
+          "ups": 310,
+          "body": "https://preview.redd.it/wg302z0djupg1.png?width=652&amp;format=png&amp;auto=webp&amp;s=4581ef15a9fbd5846af4f500da5f818a2c5bccb2\n\nOuch..."
+        },
+        {
+          "author": "sleepingsysadmin",
+          "ups": 220,
+          "body": "You can run Qwne3.5 9b and get a smarter model. \n\nQwen3.5 122b is straight up superior. "
+        },
+        {
+          "author": "Thedudely1",
+          "ups": 177,
+          "body": "How we go from Small 3.2 which is 24b to Small 4 which is over 100b"
+        }
+      ]
+    },
+    "media_extracted": {
+      "type": "image",
+      "url": "https://i.redd.it/zdd47t8siupg1.png",
+      "path": "users/8176450202/reddit-scout/llm-fine-tuning-lora-rlhf-language-model-training/runs/2026-03-24T10-35-20-769Z/media/1rxbtyj.png",
+      "contentType": "image/png",
+      "bytes": 23037
+    },
+    "author_avatar": {
+      "user": "KvAk_AKPlaysYT",
+      "url": "https://i.redd.it/snoovatar/avatars/nftv2_bmZ0X2VpcDE1NToxMzdfNDY2YTMzMDg4N2JkZjYyZDUzZjk2OGVhODI0NzkzMTUwZjA3NzYyZV80NDgwOTc_rare_47e1f276-d860-4cc4-8814-896a47bab4a5.png",
+      "path": "users/8176450202/reddit-scout/llm-fine-tuning-lora-rlhf-language-model-training/runs/2026-03-24T10-35-20-769Z/avatars/KvAk_AKPlaysYT.png",
+      "fetchedAt": "2026-03-24T10:36:57.846Z"
+    }
+  },
+  {
+    "id": "1s0dk2b",
+    "subreddit": "StableDiffusion",
+    "title": "ID-LoRA with LTX-2.3 and ComfyUI custom node🎉",
+    "selftext": "**ID-LoRA** (Identity-Driven In-Context LoRA) jointly generates a subject's appearance and voice in a single model, letting a text prompt, a reference image, and a short audio clip govern both modalities together. Built on top of [LTX-2](https://github.com/Lightricks/LTX-Video), it is the first method to personalize visual appearance and voice within a single generative pass.\n\nUnlike cascaded pipelines that treat audio and video separately, ID-LoRA operates in a unified latent space where a single text prompt can simultaneously dictate the scene's visual content, environmental acoustics, and speaking style -- while preserving the subject's vocal identity and visual likeness.\n\nKey features:\n\n* 🎵 **Unified audio-video generation** \\-- voice and appearance synthesized jointly, not cascaded\n* 🗣️ **Audio identity transfer** \\-- the generated speaker sounds like the reference\n* 🌍 **Prompt-driven environment control** \\-- text prompts govern speaking style, environment sounds, and scene content\n* 🖼️ **First-frame conditioning** \\-- provide an image to control the face and scene\n* ⚡ **Zero-shot at inference** \\-- just load the LoRA weights, no per-speaker fine-tuning needed\n* 🔬 **Two-stage pipeline** \\-- high-quality output with 2x spatial upsampling\n* LORA LINK- [ID-LoRA](https://id-lora.github.io/)",
+    "author": "Turbulent_Corner9895",
+    "created_utc": 1774157836,
+    "permalink": "https://www.reddit.com/r/StableDiffusion/comments/1s0dk2b/idlora_with_ltx23_and_comfyui_custom_node/",
+    "url": "https://i.redd.it/74qvsr4u9jqg1.png",
+    "domain": "i.redd.it",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 283,
+    "score": 283,
+    "num_comments": 54,
+    "upvote_ratio": 0.99,
+    "thumbnail": "https://preview.redd.it/74qvsr4u9jqg1.png?width=140&amp;height=94&amp;auto=webp&amp;s=3c1404271b035303ceae11ca4bd7db3f53c2eecf",
+    "media": null,
+    "post_hint": "image",
+    "listing": "search:top:week",
+    "viral_score": 13.813131068568111,
+    "detail": {
+      "post": {
+        "id": "1s0dk2b",
+        "title": "ID-LoRA with LTX-2.3 and ComfyUI custom node🎉",
+        "selftext": "**ID-LoRA** (Identity-Driven In-Context LoRA) jointly generates a subject's appearance and voice in a single model, letting a text prompt, a reference image, and a short audio clip govern both modalities together. Built on top of [LTX-2](https://github.com/Lightricks/LTX-Video), it is the first method to personalize visual appearance and voice within a single generative pass.\n\nUnlike cascaded pipelines that treat audio and video separately, ID-LoRA operates in a unified latent space where a single text prompt can simultaneously dictate the scene's visual content, environmental acoustics, and speaking style -- while preserving the subject's vocal identity and visual likeness.\n\nKey features:\n\n* 🎵 **Unified audio-video generation** \\-- voice and appearance synthesized jointly, not cascaded\n* 🗣️ **Audio identity transfer** \\-- the generated speaker sounds like the reference\n* 🌍 **Prompt-driven environment control** \\-- text prompts govern speaking style, environment sounds, and scene content\n* 🖼️ **First-frame conditioning** \\-- provide an image to control the face and scene\n* ⚡ **Zero-shot at inference** \\-- just load the LoRA weights, no per-speaker fine-tuning needed\n* 🔬 **Two-stage pipeline** \\-- high-quality output with 2x spatial upsampling\n* LORA LINK- [ID-LoRA](https://id-lora.github.io/)",
+        "author": "Turbulent_Corner9895",
+        "subreddit": "StableDiffusion",
+        "created_utc": 1774157836,
+        "ups": 282,
+        "num_comments": 54,
+        "upvote_ratio": 0.99,
+        "permalink": "https://www.reddit.com/r/StableDiffusion/comments/1s0dk2b/idlora_with_ltx23_and_comfyui_custom_node/",
+        "url": "https://i.redd.it/74qvsr4u9jqg1.png",
+        "is_self": false,
+        "post_hint": "image",
+        "thumbnail": "https://preview.redd.it/74qvsr4u9jqg1.png?width=140&amp;height=94&amp;auto=webp&amp;s=3c1404271b035303ceae11ca4bd7db3f53c2eecf",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://preview.redd.it/74qvsr4u9jqg1.png?auto=webp&amp;s=bb54009a9acb57a9d7824c95c7717ac5ee0bc65d",
+                "width": 1350,
+                "height": 912
+              },
+              "resolutions": [
+                {
+                  "url": "https://preview.redd.it/74qvsr4u9jqg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=4885277fd5dd869be48f1de9047c39fb87e2fc36",
+                  "width": 108,
+                  "height": 72
+                },
+                {
+                  "url": "https://preview.redd.it/74qvsr4u9jqg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=ba25f9cf768aad8498d42bd796e7ad4dee10774f",
+                  "width": 216,
+                  "height": 145
+                },
+                {
+                  "url": "https://preview.redd.it/74qvsr4u9jqg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=f8dd5d341b6c1bf920669d5f9b431bf5b9a9f66e",
+                  "width": 320,
+                  "height": 216
+                },
+                {
+                  "url": "https://preview.redd.it/74qvsr4u9jqg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=89265ef3fbda4f85e2c8a975f10ccb5a9f553654",
+                  "width": 640,
+                  "height": 432
+                },
+                {
+                  "url": "https://preview.redd.it/74qvsr4u9jqg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=f53a74ed395b3851d3e275d5e1ba118918d48a8e",
+                  "width": 960,
+                  "height": 648
+                },
+                {
+                  "url": "https://preview.redd.it/74qvsr4u9jqg1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=a4324739559be4137b96e9fb5f71f8ab7d75ad71",
+                  "width": 1080,
+                  "height": 729
+                }
+              ],
+              "variants": {},
+              "id": "74qvsr4u9jqg1"
+            }
+          ],
+          "enabled": true
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "ucren",
+          "ups": 21,
+          "body": "a complicated wrapper node is not the way to release this, come on. just build the necessary *components* as normal comfyui nodes."
+        },
+        {
+          "author": "bossbeae",
+          "ups": 14,
+          "body": "Whoa this is exactly what I was asking about before and no one knew how to do it, I can't wait to try it out"
+        },
+        {
+          "author": "skyrimer3d",
+          "ups": 10,
+          "body": "like always, waiting for the Kijai Definitive Version of this. "
+        }
+      ]
+    },
+    "media_extracted": {
+      "type": "image",
+      "url": "https://i.redd.it/74qvsr4u9jqg1.png",
+      "path": "users/8176450202/reddit-scout/llm-fine-tuning-lora-rlhf-language-model-training/runs/2026-03-24T10-35-20-769Z/media/1s0dk2b.png",
+      "contentType": "image/png",
+      "bytes": 682694
+    },
+    "author_avatar": {
+      "user": "Turbulent_Corner9895",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png",
+      "path": "users/8176450202/reddit-scout/llm-fine-tuning-lora-rlhf-language-model-training/runs/2026-03-24T10-35-20-769Z/avatars/Turbulent_Corner9895.png",
+      "fetchedAt": "2026-03-24T10:36:59.089Z"
+    }
+  },
+  {
+    "id": "1s270px",
+    "subreddit": "LocalLLaMA",
+    "title": "Two new Qwen3.5 “Neo” fine‑tunes focused on fast, efficient reasoning",
+    "selftext": "Hey everyone,\n\nJust wanted to share two new community fine‑tunes I came across: **Qwen3.5‑4B‑Neo** by *Jackrong*.\n\n**Qwen3.5‑4B‑Neo**    \nA reasoning‑optimized fine‑tune of Qwen3.5‑4B. It focuses heavily on *efficient* chain‑of‑thought: shorter internal reasoning, lower token cost, and higher accuracy.  \nHF link: [https://huggingface.co/Jackrong/Qwen3.5-4B-Neo](https://huggingface.co/Jackrong/Qwen3.5-4B-Neo)\n\n**Qwen3.5‑9B‑Neo**    \nA larger variant fine‑tuned of Qwen3.5‑9B.  \nHF link: [https://huggingface.co/Jackrong/Qwen3.5-9B-Neo](https://huggingface.co/Jackrong/Qwen3.5-9B-Neo)\n\n**GGUF versions are also available** in the collection here: [https://huggingface.co/collections/Jackrong/qwen35-neo](https://huggingface.co/collections/Jackrong/qwen35-neo)",
+    "author": "FabbBr",
+    "created_utc": 1774336958,
+    "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1s270px/two_new_qwen35_neo_finetunes_focused_on_fast/",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1s270px/two_new_qwen35_neo_finetunes_focused_on_fast/",
+    "domain": "self.LocalLLaMA",
+    "is_self": true,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 19,
+    "score": 19,
+    "num_comments": 3,
+    "upvote_ratio": 0.92,
+    "thumbnail": "self",
+    "media": null,
+    "post_hint": "self",
+    "listing": "rising",
+    "viral_score": 12.778200778677235,
+    "detail": {
+      "post": {
+        "id": "1s270px",
+        "title": "Two new Qwen3.5 “Neo” fine‑tunes focused on fast, efficient reasoning",
+        "selftext": "Hey everyone,\n\nJust wanted to share two new community fine‑tunes I came across: **Qwen3.5‑4B‑Neo** by *Jackrong*.\n\n**Qwen3.5‑4B‑Neo**    \nA reasoning‑optimized fine‑tune of Qwen3.5‑4B. It focuses heavily on *efficient* chain‑of‑thought: shorter internal reasoning, lower token cost, and higher accuracy.  \nHF link: [https://huggingface.co/Jackrong/Qwen3.5-4B-Neo](https://huggingface.co/Jackrong/Qwen3.5-4B-Neo)\n\n**Qwen3.5‑9B‑Neo**    \nA larger variant fine‑tuned of Qwen3.5‑9B.  \nHF link: [https://huggingface.co/Jackrong/Qwen3.5-9B-Neo](https://huggingface.co/Jackrong/Qwen3.5-9B-Neo)\n\n**GGUF versions are also available** in the collection here: [https://huggingface.co/collections/Jackrong/qwen35-neo](https://huggingface.co/collections/Jackrong/qwen35-neo)",
+        "author": "FabbBr",
+        "subreddit": "LocalLLaMA",
+        "created_utc": 1774336958,
+        "ups": 20,
+        "num_comments": 3,
+        "upvote_ratio": 0.95,
+        "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1s270px/two_new_qwen35_neo_finetunes_focused_on_fast/",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1s270px/two_new_qwen35_neo_finetunes_focused_on_fast/",
+        "is_self": true,
+        "post_hint": "self",
+        "thumbnail": "self",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://external-preview.redd.it/C8BZ89WuUKKg8-shuUk4VsPjUn9IAGCRccgWlDn0Ho8.png?auto=webp&amp;s=98970d243a48e7f3b0097d64338e78b102b0791a",
+                "width": 1200,
+                "height": 648
+              },
+              "resolutions": [
+                {
+                  "url": "https://external-preview.redd.it/C8BZ89WuUKKg8-shuUk4VsPjUn9IAGCRccgWlDn0Ho8.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=8ef82d5589a05fe4bada86d5e5fa83701fb610fc",
+                  "width": 108,
+                  "height": 58
+                },
+                {
+                  "url": "https://external-preview.redd.it/C8BZ89WuUKKg8-shuUk4VsPjUn9IAGCRccgWlDn0Ho8.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=c20b51079860770b323fece95a0c06514e93d1fe",
+                  "width": 216,
+                  "height": 116
+                },
+                {
+                  "url": "https://external-preview.redd.it/C8BZ89WuUKKg8-shuUk4VsPjUn9IAGCRccgWlDn0Ho8.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=a8aa14b6c517ae35621bec8647f9a97af80f98a3",
+                  "width": 320,
+                  "height": 172
+                },
+                {
+                  "url": "https://external-preview.redd.it/C8BZ89WuUKKg8-shuUk4VsPjUn9IAGCRccgWlDn0Ho8.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=973582a3106898b881f1dddb95a6d7465083d862",
+                  "width": 640,
+                  "height": 345
+                },
+                {
+                  "url": "https://external-preview.redd.it/C8BZ89WuUKKg8-shuUk4VsPjUn9IAGCRccgWlDn0Ho8.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=ccbea40ce6cd12c2d1045d8b4b1c51b7d0a282ca",
+                  "width": 960,
+                  "height": 518
+                },
+                {
+                  "url": "https://external-preview.redd.it/C8BZ89WuUKKg8-shuUk4VsPjUn9IAGCRccgWlDn0Ho8.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=2813d1e25cb1f8051243add2a5aa76e8afbbdc03",
+                  "width": 1080,
+                  "height": 583
+                }
+              ],
+              "variants": {},
+              "id": "C8BZ89WuUKKg8-shuUk4VsPjUn9IAGCRccgWlDn0Ho8"
+            }
+          ],
+          "enabled": false
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "asraniel",
+          "ups": 2,
+          "body": "no benchmarks?"
+        },
+        {
+          "author": "spaciousabhi",
+          "ups": 0,
+          "body": "Nice to see focused fine-tunes for reasoning tasks. The base Qwen models are already solid but having variants optimized for specific workloads (code, math, reasoning) makes local deployment much more practical. Anyone benchmarked these against Llama-3.1-8B on common reasoning tasks? Curious if the 3.5B parameter count is a sweet spot for consumer GPUs."
+        }
+      ]
+    },
+    "author_avatar": {
+      "user": "FabbBr",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_0.png",
+      "path": "users/8176450202/reddit-scout/llm-fine-tuning-lora-rlhf-language-model-training/runs/2026-03-24T10-35-20-769Z/avatars/FabbBr.png",
+      "fetchedAt": "2026-03-24T10:37:00.304Z"
+    }
+  },
+  {
+    "id": "1s298y6",
+    "subreddit": "LocalLLaMA",
+    "title": "Request: Training a pretrained, MoE version of Mistral Nemo",
+    "selftext": "I converted Mistral Nemo from a dense model into a sixteen expert MoE model: https://huggingface.co/blascotobasco/Mistral-NeMoE-12B-16E  \n\n  \n\nThe core problem is that I am a student with budget constraints and can’t afford full parameter or extended fine tuning. I did my best to restore coherence, and it worked, but the model currently gets a lot of things wrong and ignores instructions half the time.  \n\n   \n\nI can’t offer anything for it but I hope someone takes interest in this model, I worked pretty hard on it but I am kinda hit the limit of what I can do with my budget and a rental GPU. The cool part is that if someone releases a trained version, I can expand the expert pool and release a version with expanded parameter capacity (it would have the same capabilities as the source model before training.)",
+    "author": "Destroy-My-Asshole",
+    "created_utc": 1774345521,
+    "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1s298y6/request_training_a_pretrained_moe_version_of/",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1s298y6/request_training_a_pretrained_moe_version_of/",
+    "domain": "self.LocalLLaMA",
+    "is_self": true,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 6,
+    "score": 6,
+    "num_comments": 0,
+    "upvote_ratio": 1,
+    "thumbnail": "self",
+    "media": null,
+    "post_hint": "self",
+    "listing": "rising",
+    "viral_score": 9.58565843508752,
+    "detail": {
+      "post": {
+        "id": "1s298y6",
+        "title": "Request: Training a pretrained, MoE version of Mistral Nemo",
+        "selftext": "I converted Mistral Nemo from a dense model into a sixteen expert MoE model: https://huggingface.co/blascotobasco/Mistral-NeMoE-12B-16E  \n\n  \n\nThe core problem is that I am a student with budget constraints and can’t afford full parameter or extended fine tuning. I did my best to restore coherence, and it worked, but the model currently gets a lot of things wrong and ignores instructions half the time.  \n\n   \n\nI can’t offer anything for it but I hope someone takes interest in this model, I worked pretty hard on it but I am kinda hit the limit of what I can do with my budget and a rental GPU. The cool part is that if someone releases a trained version, I can expand the expert pool and release a version with expanded parameter capacity (it would have the same capabilities as the source model before training.)",
+        "author": "Destroy-My-Asshole",
+        "subreddit": "LocalLLaMA",
+        "created_utc": 1774345521,
+        "ups": 7,
+        "num_comments": 0,
+        "upvote_ratio": 1,
+        "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1s298y6/request_training_a_pretrained_moe_version_of/",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1s298y6/request_training_a_pretrained_moe_version_of/",
+        "is_self": true,
+        "post_hint": "self",
+        "thumbnail": "self",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://external-preview.redd.it/loAPwkXkeGowg-NS49MdlI-0HmT9wUr6Tx2S17cE-So.png?auto=webp&amp;s=5bf7ab9c6a97d6cc3557abfb840748b23b8970f2",
+                "width": 1200,
+                "height": 648
+              },
+              "resolutions": [
+                {
+                  "url": "https://external-preview.redd.it/loAPwkXkeGowg-NS49MdlI-0HmT9wUr6Tx2S17cE-So.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=d6e2e03b0746e201de1fa2db2e82c3fa13b9b854",
+                  "width": 108,
+                  "height": 58
+                },
+                {
+                  "url": "https://external-preview.redd.it/loAPwkXkeGowg-NS49MdlI-0HmT9wUr6Tx2S17cE-So.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=a5d3e904f549af40927aab1579aa2bbe959be25c",
+                  "width": 216,
+                  "height": 116
+                },
+                {
+                  "url": "https://external-preview.redd.it/loAPwkXkeGowg-NS49MdlI-0HmT9wUr6Tx2S17cE-So.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=9b5c413bcc12c9f31a001a1fb8cb1567dae051ac",
+                  "width": 320,
+                  "height": 172
+                },
+                {
+                  "url": "https://external-preview.redd.it/loAPwkXkeGowg-NS49MdlI-0HmT9wUr6Tx2S17cE-So.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=ac1c4241dfaa2d3f3e29da00d275abf07dbacd19",
+                  "width": 640,
+                  "height": 345
+                },
+                {
+                  "url": "https://external-preview.redd.it/loAPwkXkeGowg-NS49MdlI-0HmT9wUr6Tx2S17cE-So.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=575c91e96dc22b07ec1195e5ea0c3415426f8970",
+                  "width": 960,
+                  "height": 518
+                },
+                {
+                  "url": "https://external-preview.redd.it/loAPwkXkeGowg-NS49MdlI-0HmT9wUr6Tx2S17cE-So.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=afbf196fb189e040dcbb28bc4d19f0e5dfa3f2e9",
+                  "width": 1080,
+                  "height": 583
+                }
+              ],
+              "variants": {},
+              "id": "loAPwkXkeGowg-NS49MdlI-0HmT9wUr6Tx2S17cE-So"
+            }
+          ],
+          "enabled": false
+        },
+        "media": null
+      },
+      "topComments": []
+    },
+    "author_avatar": {
+      "user": "Destroy-My-Asshole",
+      "url": "https://i.redd.it/snoovatar/avatars/nftv2_bmZ0X2VpcDE1NToxMzdfN2Q3YWFmMDNlYTUxYmMxNjU4ZTkzNWE4YWQwOWQ3N2Y4OWExZjI1MF8yNDU0MTc_rare_4e0ab74e-10c1-4207-bfd1-08275376ac12.png",
+      "path": "users/8176450202/reddit-scout/llm-fine-tuning-lora-rlhf-language-model-training/runs/2026-03-24T10-35-20-769Z/avatars/Destroy-My-Asshole.png",
+      "fetchedAt": "2026-03-24T10:37:01.630Z"
+    }
+  },
+  {
+    "id": "1s27bqf",
+    "subreddit": "deeplearning",
+    "title": "LinkedIn is training ML models to detect behavior humans literally cannot fake. automation won’t work?",
+    "selftext": "I've been researching how LinkedIn's detection actually works and it's freaking me out a little. They're not just counting clicks anymore, the system builds a behavioral baseline per account. I mean, how long your sessions run, how fast you scroll and how long you hover on a profile before hitting connect and even your typing rhythm when you write messages. When a bot takes over, that fingerprint doesn't match. And even tools with randomized delays are getting flagged, because the randomization itself has patterns that real humans never produce. So is there a durable strategy here or are we watching a slow death for this whole space?",
+    "author": "Hot_Initiative3950",
+    "created_utc": 1774338126,
+    "permalink": "https://www.reddit.com/r/deeplearning/comments/1s27bqf/linkedin_is_training_ml_models_to_detect_behavior/",
+    "url": "https://www.reddit.com/r/deeplearning/comments/1s27bqf/linkedin_is_training_ml_models_to_detect_behavior/",
+    "domain": "self.deeplearning",
+    "is_self": true,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 3,
+    "score": 3,
+    "num_comments": 9,
+    "upvote_ratio": 0.61,
+    "thumbnail": null,
+    "media": null,
+    "post_hint": null,
+    "listing": "rising",
+    "viral_score": 9.476458310724423,
+    "detail": {
+      "post": {
+        "id": "1s27bqf",
+        "title": "LinkedIn is training ML models to detect behavior humans literally cannot fake. automation won’t work?",
+        "selftext": "I've been researching how LinkedIn's detection actually works and it's freaking me out a little. They're not just counting clicks anymore, the system builds a behavioral baseline per account. I mean, how long your sessions run, how fast you scroll and how long you hover on a profile before hitting connect and even your typing rhythm when you write messages. When a bot takes over, that fingerprint doesn't match. And even tools with randomized delays are getting flagged, because the randomization itself has patterns that real humans never produce. So is there a durable strategy here or are we watching a slow death for this whole space?",
+        "author": "Hot_Initiative3950",
+        "subreddit": "deeplearning",
+        "created_utc": 1774338126,
+        "ups": 3,
+        "num_comments": 9,
+        "upvote_ratio": 0.61,
+        "permalink": "https://www.reddit.com/r/deeplearning/comments/1s27bqf/linkedin_is_training_ml_models_to_detect_behavior/",
+        "url": "https://www.reddit.com/r/deeplearning/comments/1s27bqf/linkedin_is_training_ml_models_to_detect_behavior/",
+        "is_self": true,
+        "post_hint": null,
+        "thumbnail": null,
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": null,
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "ahf95",
+          "ups": 25,
+          "body": "What do you mean? A durable strategy against what? Are you a bot trying to infiltrate LinkedIn in order to spam job applications or slop-posts, moaning about how they are able to detect you? Also, training on that behavioral data is not new. Facebook, YouTube, all social media have been doing it for like over a decade."
+        },
+        {
+          "author": "heresyforfunnprofit",
+          "ups": 8,
+          "body": "You are part of the problem. "
+        },
+        {
+          "author": "OkCount54321",
+          "ups": 2,
+          "body": "Whats the current thinking on warm-up periods after a long automation pause? like if an account hasnt been touched by automation for 60 days does the baseline reset"
+        }
+      ]
+    },
+    "author_avatar": {
+      "user": "Hot_Initiative3950",
+      "url": "https://i.redd.it/snoovatar/avatars/0a6638ad-a572-4bca-b0bd-ad211f3cfd3c.png",
+      "path": "users/8176450202/reddit-scout/llm-fine-tuning-lora-rlhf-language-model-training/runs/2026-03-24T10-35-20-769Z/avatars/Hot_Initiative3950.png",
+      "fetchedAt": "2026-03-24T10:37:02.957Z"
+    }
+  },
+  {
+    "id": "1rwgi8x",
+    "subreddit": "LocalLLaMA",
+    "title": "Hugging Face just released a one-liner that uses 𝚕𝚕𝚖𝚏𝚒𝚝 to detect your hardware and pick the best model and quant, spins up a 𝚕𝚕a𝚖𝚊.𝚌𝚙𝚙 server, and launches Pi (the agent behind OpenClaw 🦞)",
+    "selftext": "[https://github.com/huggingface/hf-agents](https://github.com/huggingface/hf-agents)",
+    "author": "clem59480",
+    "created_utc": 1773775341,
+    "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1rwgi8x/hugging_face_just_released_a_oneliner_that_uses/",
+    "url": "https://i.redd.it/eqycj7gumnpg1.png",
+    "domain": "i.redd.it",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 652,
+    "score": 652,
+    "num_comments": 80,
+    "upvote_ratio": 0.96,
+    "thumbnail": "https://preview.redd.it/eqycj7gumnpg1.png?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=b7dd88e89b145e619125fb9b2628c422992691c6",
+    "media": null,
+    "post_hint": "image",
+    "listing": "top:week",
+    "viral_score": 8.591624526354742,
+    "detail": {
+      "post": {
+        "id": "1rwgi8x",
+        "title": "Hugging Face just released a one-liner that uses 𝚕𝚕𝚖𝚏𝚒𝚝 to detect your hardware and pick the best model and quant, spins up a 𝚕𝚕a𝚖𝚊.𝚌𝚙𝚙 server, and launches Pi (the agent behind OpenClaw 🦞)",
+        "selftext": "[https://github.com/huggingface/hf-agents](https://github.com/huggingface/hf-agents)",
+        "author": "clem59480",
+        "subreddit": "LocalLLaMA",
+        "created_utc": 1773775341,
+        "ups": 646,
+        "num_comments": 80,
+        "upvote_ratio": 0.96,
+        "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1rwgi8x/hugging_face_just_released_a_oneliner_that_uses/",
+        "url": "https://i.redd.it/eqycj7gumnpg1.png",
+        "is_self": false,
+        "post_hint": "image",
+        "thumbnail": "https://preview.redd.it/eqycj7gumnpg1.png?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=b7dd88e89b145e619125fb9b2628c422992691c6",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://preview.redd.it/eqycj7gumnpg1.png?auto=webp&amp;s=641fbfe72eafa0c2e2f65f4517f2dd44106af88c",
+                "width": 952,
+                "height": 1044
+              },
+              "resolutions": [
+                {
+                  "url": "https://preview.redd.it/eqycj7gumnpg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=0caea434296e58258ab67900d22ca5e914f74039",
+                  "width": 108,
+                  "height": 118
+                },
+                {
+                  "url": "https://preview.redd.it/eqycj7gumnpg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=50960122f379e9465bd62867f16f5ef3e9271474",
+                  "width": 216,
+                  "height": 236
+                },
+                {
+                  "url": "https://preview.redd.it/eqycj7gumnpg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=c770741a1fc0d7cf5bb09c7041c6719d44188a1c",
+                  "width": 320,
+                  "height": 350
+                },
+                {
+                  "url": "https://preview.redd.it/eqycj7gumnpg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=fbb0c59f09b69ed640af4d0b1cd25c76d91e8089",
+                  "width": 640,
+                  "height": 701
+                }
+              ],
+              "variants": {},
+              "id": "eqycj7gumnpg1"
+            }
+          ],
+          "enabled": true
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "arcanemachined",
+          "ups": 121,
+          "body": "I hope it works better than the hardware estimation feature on the web UI, which still does not work properly to estimate for a multi-GPU setup."
+        },
+        {
+          "author": "Final_Ad_7431",
+          "ups": 35,
+          "body": "I want to like llmfit, I like its ui and it's nice to have it all in one place to just get a vague idea, but the score and tok/s ratings just appear to be insanely generous based on like the most ideal perfect offloading in the world for moe models, i wish i was getting 130tok/s on qwen3.5-35b, its closer to 30 (3070 8gb + 32gb system for offloading)"
+        },
+        {
+          "author": "Yorn2",
+          "ups": 29,
+          "body": "llmfit still recommends a Llama 70b DeepSeek R1 distill for me for general use and a 7b starcoder2 model for me as my best option for coding. For reference, I have two RTX Pro 6000s.\n\nAlso, when I look for a model that I'm actually running it says I can only run MiniMax-M2.5 if I run the QuantTrio AWQ version and I'll only get 1.2 tokens per second. Instead I run a different quant of it (that I can't even find in its lists) and get like 50-70 tokens/sec. I don't know if I'm running it wrong or what, but it seems very limited and wrong."
+        }
+      ]
+    },
+    "media_extracted": {
+      "type": "image",
+      "url": "https://i.redd.it/eqycj7gumnpg1.png",
+      "path": "users/8176450202/reddit-scout/llm-fine-tuning-lora-rlhf-language-model-training/runs/2026-03-24T10-35-20-769Z/media/1rwgi8x.png",
+      "contentType": "image/png",
+      "bytes": 433352
+    },
+    "author_avatar": {
+      "user": "clem59480",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png",
+      "path": "users/8176450202/reddit-scout/llm-fine-tuning-lora-rlhf-language-model-training/runs/2026-03-24T10-35-20-769Z/avatars/clem59480.png",
+      "fetchedAt": "2026-03-24T10:37:04.201Z"
+    }
+  }
+]

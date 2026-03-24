@@ -1,0 +1,30 @@
+{
+  "niche": "Love AI",
+  "nicheSlug": "love-ai",
+  "runId": "2026-03-24T08-37-01-987Z",
+  "startedAt": "2026-03-24T08:37:01.988Z",
+  "keywords": [
+    "Love AI"
+  ],
+  "mustInclude": [
+    "love"
+  ],
+  "search": "Love AI",
+  "subAllowlist": null,
+  "config": {
+    "topN": 10,
+    "subLimit": 10,
+    "gapMs": 1200,
+    "limitPerListing": 25,
+    "time": "week",
+    "kinds": [
+      "top",
+      "hot",
+      "rising"
+    ],
+    "searchSort": "top",
+    "searchTime": null,
+    "minSubscribers": 0,
+    "sendCardsN": 5
+  }
+}

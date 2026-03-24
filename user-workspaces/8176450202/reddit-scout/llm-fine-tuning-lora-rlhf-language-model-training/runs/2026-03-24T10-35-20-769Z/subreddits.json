@@ -1,0 +1,92 @@
+[
+  {
+    "name": "machinelearning",
+    "title": "machinelearning",
+    "subscribers": 0,
+    "over18": false,
+    "url": "https://www.reddit.com/r/machinelearning/",
+    "discoveredBy": [
+      "--subAllowlist"
+    ]
+  },
+  {
+    "name": "localllama",
+    "title": "localllama",
+    "subscribers": 0,
+    "over18": false,
+    "url": "https://www.reddit.com/r/localllama/",
+    "discoveredBy": [
+      "--subAllowlist"
+    ]
+  },
+  {
+    "name": "learnmachinelearning",
+    "title": "learnmachinelearning",
+    "subscribers": 0,
+    "over18": false,
+    "url": "https://www.reddit.com/r/learnmachinelearning/",
+    "discoveredBy": [
+      "--subAllowlist"
+    ]
+  },
+  {
+    "name": "artificial",
+    "title": "artificial",
+    "subscribers": 0,
+    "over18": false,
+    "url": "https://www.reddit.com/r/artificial/",
+    "discoveredBy": [
+      "--subAllowlist"
+    ]
+  },
+  {
+    "name": "chatgpt",
+    "title": "chatgpt",
+    "subscribers": 0,
+    "over18": false,
+    "url": "https://www.reddit.com/r/chatgpt/",
+    "discoveredBy": [
+      "--subAllowlist"
+    ]
+  },
+  {
+    "name": "deeplearning",
+    "title": "deeplearning",
+    "subscribers": 0,
+    "over18": false,
+    "url": "https://www.reddit.com/r/deeplearning/",
+    "discoveredBy": [
+      "--subAllowlist"
+    ]
+  },
+  {
+    "name": "mlops",
+    "title": "mlops",
+    "subscribers": 0,
+    "over18": false,
+    "url": "https://www.reddit.com/r/mlops/",
+    "discoveredBy": [
+      "--subAllowlist"
+    ]
+  },
+  {
+    "name": "datascience",
+    "title": "datascience",
+    "subscribers": 0,
+    "over18": false,
+    "url": "https://www.reddit.com/r/datascience/",
+    "discoveredBy": [
+      "--subAllowlist"
+    ]
+  },
+  {
+    "name": "artificialintelligence",
+    "title": "artificialintelligence",
+    "subscribers": 0,
+    "over18": false,
+    "url": "https://www.reddit.com/r/artificialintelligence/",
+    "discoveredBy": [
+      "--subAllowlist"
+    ]
+  }
+]

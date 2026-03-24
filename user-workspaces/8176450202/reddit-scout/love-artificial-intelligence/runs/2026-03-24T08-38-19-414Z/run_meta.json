@@ -1,0 +1,32 @@
+{
+  "niche": "Love artificial intelligence",
+  "nicheSlug": "love-artificial-intelligence",
+  "runId": "2026-03-24T08-38-19-414Z",
+  "startedAt": "2026-03-24T08:38:19.415Z",
+  "keywords": [
+    "Love artificial intelligence"
+  ],
+  "mustInclude": [
+    "love",
+    "artificial",
+    "intelligence"
+  ],
+  "search": "Love artificial intelligence",
+  "subAllowlist": null,
+  "config": {
+    "topN": 10,
+    "subLimit": 10,
+    "gapMs": 1200,
+    "limitPerListing": 25,
+    "time": "week",
+    "kinds": [
+      "top",
+      "hot",
+      "rising"
+    ],
+    "searchSort": "top",
+    "searchTime": null,
+    "minSubscribers": 0,
+    "sendCardsN": 5
+  }
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "id": "1732014719794585684",
+    "text": "Prompting vs RAGs vs Fine-tuning:\n\nAn important decision that every AI Engineer must make when building an LLM-based application.\n\nTo understand what guides the decision, let's first understand the meaning of these terms.\n\n Prompting Engineering:\n\nThe prompt is the text input",
+    "author_name": "Akshay ",
+    "author_handle": "@akshay_pachaar",
+    "metrics": {
+      "likes": 782,
+      "retweets": 205,
+      "replies": 17,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/GAlaFKkbwAAbbtK?format=jpg&name=small"
+    ],
+    "viral_score": 1.2,
+    "url": "https://x.com/akshay_pachaar/status/1732014719794585684"
+  },
+  {
+    "id": "1962908432026960086",
+    "text": "Prompt engineering is slowly dying\n\nEnter 𝗖𝗼𝗻𝘁𝗲𝘅𝘁 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿𝗶𝗻𝗴 \n\n(Maybe not quite dead — but evolving into something far more powerful)\n\nAs AI grows from simple chatbots to 𝗮𝘂𝘁𝗼𝗻𝗼𝗺𝗼𝘂𝘀 𝗮𝗴𝗲𝗻𝘁𝘀, clever prompts alone will not be enough. The real",
+    "author_name": "Femke Plantinga",
+    "author_handle": "@femke_plantinga",
+    "metrics": {
+      "likes": 718,
+      "retweets": 156,
+      "replies": 19,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/Gz2m0KhWwAAyVte?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/femke_plantinga/status/1962908432026960086"
+  },
+  {
+    "id": "1985754108616147007",
+    "text": "𝗣𝗿𝗼𝗺𝗽𝘁 𝗲𝗻𝗴𝗶𝗻𝗲𝗲𝗿𝗶𝗻𝗴 𝗶𝘀 𝗱𝗲𝗮𝗱.\nI know that sounds dramatic, but hear me out.\n\nEvery developer building with LLMs eventually hits the same wall. The model is smart, sure. But it can't access your docs. It forgets yesterday's conversation. And it makes stuff up",
+    "author_name": "Femke Plantinga",
+    "author_handle": "@femke_plantinga",
+    "metrics": {
+      "likes": 596,
+      "retweets": 109,
+      "replies": 27,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G47Q1W-W8AAB0ie?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/femke_plantinga/status/1985754108616147007"
+  },
+  {
+    "id": "2025060487168184552",
+    "text": "50 LLM Projects with Source to Become a Pro\n\nFoundations: Core LLM Engineering\n\n→ Build a GPT-style Transformer from scratch using PyTorch\n→ Implement a tokenizer (BPE / WordPiece) from scratch\n→ Train a small language model on custom dataset\n→ Build a character-level",
+    "author_name": "Dhanian ",
+    "author_handle": "@e_opore",
+    "metrics": {
+      "likes": 446,
+      "retweets": 98,
+      "replies": 20,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HBp083TX0AA224V?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/e_opore/status/2025060487168184552"
+  },
+  {
+    "id": "2026337689298153717",
+    "text": "Google Research just proved you can boost llm accuracy by up to 76 percentage points with zero extra output tokens, zero latency increase, and zero fine-tuning \n\nthe technique: paste your prompt twice.\n\nthat's it. that's the paper.\n\nbut WHY it works reveals something important",
+    "author_name": "Robert Youssef",
+    "author_handle": "@rryssf_",
+    "metrics": {
+      "likes": 362,
+      "retweets": 71,
+      "replies": 39,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HB7_Y9iaMAIcgXD?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/rryssf_/status/2026337689298153717"
+  },
+  {
+    "id": "2011113543559479541",
+    "text": "Key Prompt Engineering Techniques and Why it Makes a Big Difference in LLMs",
+    "author_name": "Alex Xu",
+    "author_handle": "@alexxubyte",
+    "metrics": {
+      "likes": 360,
+      "retweets": 82,
+      "replies": 7,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G-jpGwvXMAMrUGJ?format=png&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/alexxubyte/status/2011113543559479541"
+  },
+  {
+    "id": "1993666171447513571",
+    "text": "You can’t “prompt engineer” your way out of bad context.\n\nReal-world LLM systems need both prompt and context engineering.\n\nBut what is the actual difference between them?\n\n𝗣𝗿𝗼𝗺𝗽𝘁 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿𝗶𝗻𝗴: \nPrompt engineering is about 𝗵𝗼𝘄 𝘆𝗼𝘂 𝗽𝗵𝗿𝗮𝘀𝗲",
+    "author_name": "Femke Plantinga",
+    "author_handle": "@femke_plantinga",
+    "metrics": {
+      "likes": 357,
+      "retweets": 65,
+      "replies": 19,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G6rr8-RXIAERluA?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/femke_plantinga/status/1993666171447513571"
+  },
+  {
+    "id": "1994840043815670126",
+    "text": "Lots of LLM benchmarks are misleading us.\n\nThe problem isn't the benchmarks themselves. It has more to do with the prompts. Current evaluation frameworks use fixed prompts that systematically underestimate what models can actually do.\n\nPay attention to this one, AI devs!\n\nThis",
+    "author_name": "DAIR.AI",
+    "author_handle": "@dair_ai",
+    "metrics": {
+      "likes": 325,
+      "retweets": 63,
+      "replies": 19,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G68YcoIbEAARHi5?format=png&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/dair_ai/status/1994840043815670126"
+  },
+  {
+    "id": "1908837841267830999",
+    "text": "LLMs often generate excessively long reasoning steps (\"overthinking\").\n\nThis increases computational costs and response times.\n\nThis survey categorizes methods to make LLM reasoning shorter and faster while maintaining accuracy.\n\nSolutions optimize the model itself, modify",
+    "author_name": "Rohan Paul",
+    "author_handle": "@rohanpaul_ai",
+    "metrics": {
+      "likes": 243,
+      "retweets": 68,
+      "replies": 4,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/Gn0gCSXWsAAN5P9?format=png&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/rohanpaul_ai/status/1908837841267830999"
+  },
+  {
+    "id": "1880599343008530797",
+    "text": "Smart prompt engineering beats expensive model fine-tuning for LLM alignment\n\nA prompt optimizer framework that theoretically shows how prompt engineering can match fine-tuning's performance for LLM alignment without parameter updates.\n\n-----\n\nOriginal Problem :\n\nLLM alignment",
+    "author_name": "Rohan Paul",
+    "author_handle": "@rohanpaul_ai",
+    "metrics": {
+      "likes": 234,
+      "retweets": 39,
+      "replies": 6,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/GhkDiVXaUAAJIl3?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/rohanpaul_ai/status/1880599343008530797"
+  }
+]

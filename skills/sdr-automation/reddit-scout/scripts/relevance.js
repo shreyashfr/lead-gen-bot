@@ -11,11 +11,16 @@ function tokenize(s) {
 
 const STOP = new Set(['and','or','the','for','with','without','to','of','in','on','a','an','is','are','business','shop','store','because','due','loss','take','taking','make','making']);
 
+// Tech/domain terms that are important even if short (2-3 chars)
+const TECH_EXCEPTIONS = new Set(['rag','ai','ml','io','qa','llm','gpt','nlp','cv','sr','cr','db','etl','api','sql','dto','cli','jwt','grpc','http','json','xml','html','css','pdf','xls','csv','vpc','ecs','k8s','ci','cd','ar','vr','mr','xr','iot','5g','tp','sla','rto','rpo','qos','tcp','udp','dns','cdn','sso','mfa','dlt','nft','web3','p2p','l1','l2','dapp','defi','agg','vault','numb','num']);
+
 function buildKeywordSet({ niche, keywords = [], mustInclude = [] }) {
   const toks = new Set();
   const add = (w) => {
     if (!w) return;
-    if (w.length < 4) return; // avoid broad matches
+    // Allow: words >=4 chars, OR tech exceptions, BUT NOT stop words
+    const isTech = TECH_EXCEPTIONS.has(w.toLowerCase());
+    if (w.length < 4 && !isTech) return;
     if (STOP.has(w)) return;
     toks.add(w);
   };

@@ -1,0 +1,57 @@
+[
+  {
+    "id": "1s0akcr",
+    "subreddit": "LocalLLaMA",
+    "title": "how to finetune llm for next edit or diff apply?",
+    "selftext": "a good example of next edit or diff apply is \n\n\\* SweepAI's next edit model: [https://blog.sweep.dev/posts/oss-next-edit](https://blog.sweep.dev/posts/oss-next-edit)  \n\\* MorphLLM's fast apply model: [https://docs.morphllm.com/sdk/components/fast-apply](https://docs.morphllm.com/sdk/components/fast-apply) \n\nI’m looking to build a 'next edit' LLM for non-coding tasks (inspired by SweepAI and MorphLLM's diff-apply models). I’ve validated the logic with larger models, but for my use case, I need something much smaller and faster—ideally &lt;1B parameters.\n\nDoes anyone know of any small language models (SLMs), specific training papers, or HF checkpoints that are particularly good at following 'edit' instructions or applying diffs at that scale?",
+    "author": "Feisty_Plant4567",
+    "created_utc": 1774148235,
+    "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1s0akcr/how_to_finetune_llm_for_next_edit_or_diff_apply/",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1s0akcr/how_to_finetune_llm_for_next_edit_or_diff_apply/",
+    "domain": "self.LocalLLaMA",
+    "is_self": true,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 1,
+    "score": 1,
+    "num_comments": 0,
+    "upvote_ratio": 0.67,
+    "thumbnail": "self",
+    "media": null,
+    "post_hint": null,
+    "listing": "search:top:week",
+    "viral_score": 0.011052233293003703,
+    "detail": {
+      "post": {
+        "id": "1s0akcr",
+        "title": "how to finetune llm for next edit or diff apply?",
+        "selftext": "a good example of next edit or diff apply is \n\n\\* SweepAI's next edit model: [https://blog.sweep.dev/posts/oss-next-edit](https://blog.sweep.dev/posts/oss-next-edit)  \n\\* MorphLLM's fast apply model: [https://docs.morphllm.com/sdk/components/fast-apply](https://docs.morphllm.com/sdk/components/fast-apply) \n\nI’m looking to build a 'next edit' LLM for non-coding tasks (inspired by SweepAI and MorphLLM's diff-apply models). I’ve validated the logic with larger models, but for my use case, I need something much smaller and faster—ideally &lt;1B parameters.\n\nDoes anyone know of any small language models (SLMs), specific training papers, or HF checkpoints that are particularly good at following 'edit' instructions or applying diffs at that scale?",
+        "author": "Feisty_Plant4567",
+        "subreddit": "LocalLLaMA",
+        "created_utc": 1774148235,
+        "ups": 1,
+        "num_comments": 0,
+        "upvote_ratio": 0.67,
+        "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1s0akcr/how_to_finetune_llm_for_next_edit_or_diff_apply/",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1s0akcr/how_to_finetune_llm_for_next_edit_or_diff_apply/",
+        "is_self": true,
+        "post_hint": null,
+        "thumbnail": "self",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": null,
+        "media": null
+      },
+      "topComments": []
+    },
+    "author_avatar": {
+      "user": "Feisty_Plant4567",
+      "url": "https://i.redd.it/snoovatar/avatars/682caf32-f000-4d79-8a39-d59025285f9c.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/llm-finetune/runs/2026-03-24T10-29-24-165Z/avatars/Feisty_Plant4567.png",
+      "fetchedAt": "2026-03-24T10:29:36.010Z"
+    }
+  }
+]

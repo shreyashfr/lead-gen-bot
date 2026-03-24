@@ -1,0 +1,344 @@
+[
+  {
+    "id": "1926164620324069843",
+    "text": "Fine-tune 100+ LLMs directly from a UI!\n\nLLaMA-Factory lets you train and fine-tune open-source LLMs and VLMs without writing any code.\n\nSupports 100+ models, multimodal fine-tuning, PPO, DPO, experiment tracking, and much more!\n\n100% open-source with 50k stars!",
+    "author_name": "Avi Chawla",
+    "author_handle": "@_avichawla",
+    "metrics": {
+      "likes": 4200,
+      "retweets": 602,
+      "replies": 40,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 5.4,
+    "url": "https://x.com/_avichawla/status/1926164620324069843"
+  },
+  {
+    "id": "1971993684821647798",
+    "text": "LLM Fine-tuning techniques I’d learn if I wanted to customize them:\n\nBookmark this.\n\n1.LoRA\n2.QLoRA\n3.Prefix Tuning\n4.Adapter Tuning\n5.BitFit\n6.P-Tuning v2\n7.Soft Prompts\n8.Instruction Tuning\n9.RLHF\n10.DPO (Direct Preference Optimization)\n11.RLAIF (AI Feedback)\n12.Multi-Task",
+    "author_name": "Ashutosh Maheshwari",
+    "author_handle": "@asmah2107",
+    "metrics": {
+      "likes": 1900,
+      "retweets": 234,
+      "replies": 21,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 2.4,
+    "url": "https://x.com/asmah2107/status/1971993684821647798"
+  },
+  {
+    "id": "1996467023334039646",
+    "text": "I have been fine-tuning LLMs for over 2 years now!\n\nHere are the top 5 LLM fine-tuning techniques, explained with visuals:\n\nFirst of all, what's so different about LLM finetuning?\n\nTraditional fine‑tuning is impractical for LLMs (billions of params; 100s GB).\n\nSince this kind of",
+    "author_name": "Avi Chawla",
+    "author_handle": "@_avichawla",
+    "metrics": {
+      "likes": 1500,
+      "retweets": 331,
+      "replies": 43,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G7TgLWubUAAWrR-?format=jpg&name=small"
+    ],
+    "viral_score": 2.2,
+    "url": "https://x.com/_avichawla/status/1996467023334039646"
+  },
+  {
+    "id": "1963218045238743045",
+    "text": "Fine-tune 100+ LLMs directly from a UI!\n\nLLaMA-Factory lets you train and fine-tune open-source LLMs and VLMs without writing any code.\n\nSupports 100+ models, multimodal fine-tuning, PPO, DPO, experiment tracking, and much more!\n\n100% open-source, 57k stars!",
+    "author_name": "Akshay ",
+    "author_handle": "@akshay_pachaar",
+    "metrics": {
+      "likes": 1300,
+      "retweets": 284,
+      "replies": 20,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1.9,
+    "url": "https://x.com/akshay_pachaar/status/1963218045238743045"
+  },
+  {
+    "id": "1927496464571273720",
+    "text": "today i finetuned an LLM with RL for the first time.  i regret to inform you that it was easy. it only took a few hours to configure. even though this is a custom task and dataset. and it worked, quite well, on the first run",
+    "author_name": "dr. jack morris",
+    "author_handle": "@jxmnop",
+    "metrics": {
+      "likes": 1500,
+      "retweets": 40,
+      "replies": 43,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/Gr_WKUkXAAA48zL?format=jpg&name=small"
+    ],
+    "viral_score": 1.6,
+    "url": "https://x.com/jxmnop/status/1927496464571273720"
+  },
+  {
+    "id": "1930241985971138933",
+    "text": "Fine-tune 100+ LLMs directly from a UI!\n\nLLaMA-Factory lets you train and fine-tune open-source LLMs and VLMs without writing any code.\n\nSupports 100+ models, multimodal fine-tuning, PPO, DPO, experiment tracking, and much more!\n\n100% open-source, 51k+ stars",
+    "author_name": "Akshay ",
+    "author_handle": "@akshay_pachaar",
+    "metrics": {
+      "likes": 985,
+      "retweets": 194,
+      "replies": 21,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1.4,
+    "url": "https://x.com/akshay_pachaar/status/1930241985971138933"
+  },
+  {
+    "id": "1979919605570408553",
+    "text": "if you're looking for a comprehensive guide to  LLM finetuning, check this!\n\na free 115-page book on arxiv, covering:\n\n> fundamentals of LLM\n> peft (lora, qlora, dora, hft)\n> alignment methods (ppo, dpo, grpo)\n> mixture of experts (MoE)\n> 7-stage fine-tuning pipeline\n> multimodal",
+    "author_name": "Akshay ",
+    "author_handle": "@akshay_pachaar",
+    "metrics": {
+      "likes": 931,
+      "retweets": 205,
+      "replies": 37,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G3oWY38awAAP6If?format=png&name=small"
+    ],
+    "viral_score": 1.4,
+    "url": "https://x.com/akshay_pachaar/status/1979919605570408553"
+  },
+  {
+    "id": "2008880737018405231",
+    "text": "I have been fine-tuning LLMs for over 2 years now!\n\nHere are the top 5 LLM fine-tuning techniques, explained with visuals:\n\nFirst of all, what's so different about LLM finetuning?\n\nTraditional fine‑tuning is impractical for LLMs (billions of params; 100s GB).\n\nSince this kind of",
+    "author_name": "Akshay ",
+    "author_handle": "@akshay_pachaar",
+    "metrics": {
+      "likes": 924,
+      "retweets": 200,
+      "replies": 23,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G-D6YkxaYAA2Mu3?format=jpg&name=small"
+    ],
+    "viral_score": 1.3,
+    "url": "https://x.com/akshay_pachaar/status/2008880737018405231"
+  },
+  {
+    "id": "1898713056882127083",
+    "text": "5 techniques to fine-tune LLMs, explained visually!\n\nFine-tuning large language models traditionally involved adjusting billions of parameters, demanding significant computational power and resources.\n\nHowever, the development of some innovative methods have transformed this",
+    "author_name": "Akshay ",
+    "author_handle": "@akshay_pachaar",
+    "metrics": {
+      "likes": 857,
+      "retweets": 203,
+      "replies": 9,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1.3,
+    "url": "https://x.com/akshay_pachaar/status/1898713056882127083"
+  },
+  {
+    "id": "1841093829426139372",
+    "text": "5 techniques to fine-tune LLMs, explained visually!\n\nFine-tuning large language models traditionally involved adjusting billions of parameters, demanding significant computational power and resources. \n\nHowever, the development of some innovative methods have transformed this",
+    "author_name": "Akshay ",
+    "author_handle": "@akshay_pachaar",
+    "metrics": {
+      "likes": 792,
+      "retweets": 172,
+      "replies": 6,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1.1,
+    "url": "https://x.com/akshay_pachaar/status/1841093829426139372"
+  },
+  {
+    "id": "2021643996540678435",
+    "text": "i felt agentic engineering era is coming\n\nclaude opus 4.6 and gpt-5.3 codex got me thinking coding models have entered a new era. they’re literally building systems. \n\nlooking ahead to 2026, imo LLMs will go beyond generating text, and start executing tasks end to end. our team",
+    "author_name": "Lou",
+    "author_handle": "@louszbd",
+    "metrics": {
+      "likes": 654,
+      "retweets": 41,
+      "replies": 58,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HA5Ikg1aMAAEidm?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/louszbd/status/2021643996540678435"
+  },
+  {
+    "id": "1986727848170934519",
+    "text": "5 LLM fine-tuning techniques, explained visually:",
+    "author_name": "Daily Dose of Data Science",
+    "author_handle": "@DailyDoseOfDS_",
+    "metrics": {
+      "likes": 580,
+      "retweets": 98,
+      "replies": 5,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G5JGcxZaQAAL_tG?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/DailyDoseOfDS_/status/1986727848170934519"
+  },
+  {
+    "id": "1968739407260742069",
+    "text": "Finetune DeepSeek  with two Mac Studios + MLX \n\nWe use pipeline parallelism to split the full 671GB model across two devices connected by a single TB5 cable.\n\nLoRA reduces the number of parameters to train from 671 billion down to 37 million, reducing the memory overhead from",
+    "author_name": "Matt Beton",
+    "author_handle": "@MattBeton",
+    "metrics": {
+      "likes": 567,
+      "retweets": 85,
+      "replies": 18,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G1Jdef1XsAA4Vc_?format=jpg&name=360x360",
+      "https://pbs.twimg.com/media/G1JdefwXwAAtMDg?format=jpg&name=360x360",
+      "https://pbs.twimg.com/media/G1JdefxWwAEeQqu?format=jpg&name=360x360"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/MattBeton/status/1968739407260742069"
+  },
+  {
+    "id": "1794116619519627605",
+    "text": "I finetuned my first LLM today.\n\nIt was super easy using the code from \n@DeepLearningAI\n\n\nMy initial setup:\n• 70M param model\n• 900 row dataset from SEC filings\n• 1000 training steps\n• run on google colab\n\nThis was a test run to see how it all works.\n\nMy finetuned LLM is far",
+    "author_name": "Virat Singh",
+    "author_handle": "@virattt",
+    "metrics": {
+      "likes": 482,
+      "retweets": 47,
+      "replies": 16,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/virattt/status/1794116619519627605"
+  },
+  {
+    "id": "2034622369306710402",
+    "text": "Ultimate Guide to LLM Fine-Tuning!\n\nThis is a comprehensive 115-page guide to fine-tuning LLMs.\n\nIf you are serious about learning LLM fine-tuning, this guide is a great read.\n\nIt covers:\n\n• Task and domain-specific fine-tuning\n• Parameter-efficient methods (PEFT, LoRA, QLoRA,",
+    "author_name": "Sumanth",
+    "author_handle": "@Sumanth_077",
+    "metrics": {
+      "likes": 365,
+      "retweets": 71,
+      "replies": 3,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HDxt-pea4AAXorO?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/Sumanth_077/status/2034622369306710402"
+  },
+  {
+    "id": "2034253782444589498",
+    "text": "finetuning LLMs will never be the same!\n\nUnsloth just launched an open-source web UI to run and fine-tune 500+ LLMs without writing any code.\n\nkey features\n\n- run models locally on Mac, Windows, Linux\n- train 500+ models 2x faster with 70% less VRAM\n- supports GGUF, vision,",
+    "author_name": "Akshay ",
+    "author_handle": "@akshay_pachaar",
+    "metrics": {
+      "likes": 359,
+      "retweets": 64,
+      "replies": 21,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/akshay_pachaar/status/2034253782444589498"
+  },
+  {
+    "id": "2026228130592219299",
+    "text": "5 LLM fine-tuning techniques, explained visually:",
+    "author_name": "Daily Dose of Data Science",
+    "author_handle": "@DailyDoseOfDS_",
+    "metrics": {
+      "likes": 318,
+      "retweets": 65,
+      "replies": 5,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HB6bvz8a4AAMY0c?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/DailyDoseOfDS_/status/2026228130592219299"
+  },
+  {
+    "id": "1985369102496481680",
+    "text": "Quick Question to folks who do model finetuning\n\nOne of the trickiest parts of fine-tuning LLMs, in my experience, is retaining the original capabilities of the post-trained model.\n\nLet’s take an example\nsay you want to fine-tune a VLM for OCR, layout detection, or any other",
+    "author_name": "Adithya S K",
+    "author_handle": "@adithya_s_k",
+    "metrics": {
+      "likes": 279,
+      "retweets": 13,
+      "replies": 21,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/adithya_s_k/status/1985369102496481680"
+  },
+  {
+    "id": "1803470522455380044",
+    "text": "open-mistral-7B fine-tuning with \n@MistralAI\n fine-tuning API and LlamaIndex.\n\nFine-tuning optimizes LLMs for specific tasks by training them further on targeted datasets, enhancing performance.\n\nRecently, MistralAI released fine-tuning API to easily fine-tune all their open-source",
+    "author_name": "LlamaIndex ",
+    "author_handle": "@llama_index",
+    "metrics": {
+      "likes": 256,
+      "retweets": 54,
+      "replies": 2,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/GQc2ukKXAAA7hcL?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/llama_index/status/1803470522455380044"
+  },
+  {
+    "id": "2034527198829560165",
+    "text": "Finetune 500+ LLMs using a 100% open-source, FREE web UI.\n\n- Runs locally on Mac, Windows, Linux\n- Supports GGUF, vision, audio, embedding models",
+    "author_name": "Akshay ",
+    "author_handle": "@akshay_pachaar",
+    "metrics": {
+      "likes": 138,
+      "retweets": 22,
+      "replies": 4,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/akshay_pachaar/status/2034527198829560165"
+  }
+]

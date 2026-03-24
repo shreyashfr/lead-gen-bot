@@ -1,0 +1,176 @@
+[
+  {
+    "id": "2014586815714664698",
+    "text": "Researchers built a new RAG approach that:\n\n- does not need a vector DB.\n- does not embed data.\n- involves no chunking.\n- performs no similarity search.\n\nAnd it hit 98.7% accuracy on a financial benchmark (SOTA).\n\nHere's the core problem with RAG that this new approach solves:",
+    "author_name": "Avi Chawla",
+    "author_handle": "@_avichawla",
+    "metrics": {
+      "likes": 4400,
+      "retweets": 606,
+      "replies": 164,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 5.8,
+    "url": "https://x.com/_avichawla/status/2014586815714664698"
+  },
+  {
+    "id": "2025548705605341336",
+    "text": "Researchers built a new RAG approach that:\n\n- does not need a vector DB.\n- does not embed data.\n- involves no chunking.\n- performs no similarity search.\n\nAnd it hit 98.7% accuracy on a financial benchmark (SOTA).\n\nHere's the core problem with RAG that this new approach solves:",
+    "author_name": "Akshay ",
+    "author_handle": "@akshay_pachaar",
+    "metrics": {
+      "likes": 2600,
+      "retweets": 346,
+      "replies": 94,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 3.4,
+    "url": "https://x.com/akshay_pachaar/status/2025548705605341336"
+  },
+  {
+    "id": "1958510665217532012",
+    "text": "A simple technique makes RAG up to 40x faster & 32x memory efficient!\n\n- Perplexity uses it in its search index\n- Google uses it in Vertex RAG engine\n- Azure uses it in its search pipeline\n\nLet's understand how to use it in a RAG system (with code):",
+    "author_name": "Akshay ",
+    "author_handle": "@akshay_pachaar",
+    "metrics": {
+      "likes": 2600,
+      "retweets": 227,
+      "replies": 43,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 3.1,
+    "url": "https://x.com/akshay_pachaar/status/1958510665217532012"
+  },
+  {
+    "id": "1904504036369543464",
+    "text": "'Just do RAG' they said. But WHICH RAG?\n\nHere’s 7 different RAG Architectures you should know \n\n 𝗡𝗮𝗶𝘃𝗲 𝗥𝗔𝗚: 𝗧𝗵𝗲 𝗖𝗹𝗮𝘀𝘀𝗶𝗰 𝗔𝗽𝗽𝗿𝗼𝗮𝗰𝗵\nNaive RAG is the standard implementation with a relatively straightforward process:\n• Query comes in from the user\n•",
+    "author_name": "Victoria Slocum",
+    "author_handle": "@victorialslocum",
+    "metrics": {
+      "likes": 1200,
+      "retweets": 234,
+      "replies": 12,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/Gm3wOLZWwAALq1F?format=jpg&name=small"
+    ],
+    "viral_score": 1.7,
+    "url": "https://x.com/victorialslocum/status/1904504036369543464"
+  },
+  {
+    "id": "1999123560816685340",
+    "text": "Most RAG systems fail at retrieval.\n\nBut there's a clear path to fix all 4 stages.\n\nStart with the basics, and level up with our Advanced RAG Techniques e-book, which walks you through how to optimize each step.\n\nIt covers:\n→ 𝗜𝗻𝗱𝗲𝘅𝗶𝗻𝗴 𝗼𝗽𝘁𝗶𝗺𝗶𝘇𝗮𝘁𝗶𝗼𝗻\n→",
+    "author_name": "Femke Plantinga",
+    "author_handle": "@femke_plantinga",
+    "metrics": {
+      "likes": 1000,
+      "retweets": 201,
+      "replies": 29,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G75QLo_WMAAkVhf?format=jpg&name=small"
+    ],
+    "viral_score": 1.4,
+    "url": "https://x.com/femke_plantinga/status/1999123560816685340"
+  },
+  {
+    "id": "1988638095432888714",
+    "text": "Why do RAG systems feel like they hit a ceiling?\n\nI've been diving into \n@helloiamleonie\n's latest article on agent memory, and it provided so much clarity into the current evolution of RAG systems.\n\nThe progression from RAG → Agentic RAG → Agent Memory isn't about adding",
+    "author_name": "Victoria Slocum",
+    "author_handle": "@victorialslocum",
+    "metrics": {
+      "likes": 1000,
+      "retweets": 198,
+      "replies": 31,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G5kPw6oXYAERgi4?format=png&name=small"
+    ],
+    "viral_score": 1.4,
+    "url": "https://x.com/victorialslocum/status/1988638095432888714"
+  },
+  {
+    "id": "1743321585128521849",
+    "text": "Advanced RAG Cheat Sheet + Recipes \n\nWe’re publishing a comprehensive diagram outlining all the different components of advanced RAG, the pain points they solve, and links to LlamaIndex resources. Here’s some core concepts that motivate advanced RAGs:\n\n Success metric for RAG",
+    "author_name": "LlamaIndex ",
+    "author_handle": "@llama_index",
+    "metrics": {
+      "likes": 891,
+      "retweets": 221,
+      "replies": 12,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/GDGFnUnbQAAG0ET?format=jpg&name=small"
+    ],
+    "viral_score": 1.3,
+    "url": "https://x.com/llama_index/status/1743321585128521849"
+  },
+  {
+    "id": "2027603054170866004",
+    "text": "RAG was supposed to make LLMs smarter.\nGive them memory.\nGround them in facts.\n\nBut most RAG today is just:\n\nSearch → Paste → Pray.\n\nThat’s not intelligence.\nThat’s copy-paste with extra steps.\n\nThe real shift?\n\nAgents now control retrieval itself.\n\nThey don’t just fetch docs.",
+    "author_name": "Shraddha Bharuka",
+    "author_handle": "@BharukaShraddha",
+    "metrics": {
+      "likes": 865,
+      "retweets": 147,
+      "replies": 30,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HCN-OxEaUAAVJtb?format=jpg&name=small"
+    ],
+    "viral_score": 1.2,
+    "url": "https://x.com/BharukaShraddha/status/2027603054170866004"
+  },
+  {
+    "id": "2011740250180108498",
+    "text": "Confused by all the new terminology around agents and memory? \n\n(episodic, semantic, procedural memory…) \n\nStrip away all the buzz, and the evolution from RAG to agentic RAG to agent memory is actually just about one thing: 𝗵𝗼𝘄 𝘆𝗼𝘂 𝗺𝗮𝗻𝗮𝗴𝗲 𝗱𝗮𝘁𝗮 𝗶𝗻",
+    "author_name": "Femke Plantinga",
+    "author_handle": "@femke_plantinga",
+    "metrics": {
+      "likes": 830,
+      "retweets": 149,
+      "replies": 25,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G-sjGHTWcAATC2Y?format=jpg&name=small"
+    ],
+    "viral_score": 1.2,
+    "url": "https://x.com/femke_plantinga/status/2011740250180108498"
+  },
+  {
+    "id": "1960297539820720365",
+    "text": "Hot take: I'm tired of RAG systems that just grab the first document and call it done.\n𝗔𝗴𝗲𝗻𝘁𝗶𝗰 𝗥𝗔𝗚 is probably the only way RAG is 𝘢𝘤𝘵𝘶𝘢𝘭𝘭𝘺 going to be useful.\n\nBut what’s actually the difference?\n\n𝗧𝗵𝗲 𝗣𝗿𝗼𝗯𝗹𝗲𝗺 𝘄𝗶𝘁𝗵 𝗡𝗮𝗶𝘃𝗲 𝗥𝗔𝗚:\nTraditional",
+    "author_name": "Victoria Slocum",
+    "author_handle": "@victorialslocum",
+    "metrics": {
+      "likes": 799,
+      "retweets": 119,
+      "replies": 5,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/GzRgKmCXkAAi2wR?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/victorialslocum/status/1960297539820720365"
+  }
+]

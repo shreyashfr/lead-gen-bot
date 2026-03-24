@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2026-03-23",
+  "last_updated": "2026-03-24",
   "user_name": "Shubham",
   "niche": "AI-powered sales automation, behavioral science applied to outreach, founder-led growth, practical AI (not hype)",
   "voice_rules": {
@@ -25,7 +25,23 @@
       "revolutionary",
       "In conclusion",
       "To summarize",
-      "Ever wonder why"
+      "Ever wonder why",
+      "noise",
+      "signal",
+      "landscape",
+      "ecosystem",
+      "journey",
+      "narrative",
+      "authentic",
+      "resonate",
+      "space (as in 'in this space')",
+      "touch base",
+      "pain point",
+      "low-hanging fruit",
+      "move the needle",
+      "deep dive",
+      "unpack",
+      "double down"
     ],
     "required_style": {
       "capitalization": "normal",
@@ -61,7 +77,15 @@
     "emotional_archetypes": [],
     "viral_structures": []
   },
-  "voice_lessons": [],
+  "voice_lessons": [
+    {
+      "lesson": "Never use words that sound AI-generated or corporate: noise, signal, landscape, ecosystem, journey, narrative, resonate, unpack, deep dive",
+      "context": "User explicitly flagged these as AI-ish sounding. Hard ban on all of them.",
+      "first_detected": "2026-03-24",
+      "source": "direct_user_feedback",
+      "format_affected": "all"
+    }
+  ],
   "feedback_log": [],
   "reflection_log": [],
   "last_rejection_by_format": {
@@ -79,7 +103,11 @@
     "last_analysis_summary": "no analysis run yet"
   },
   "agent_logs": {
-    "research_agent": { "last_run": null },
-    "performance_reviewer": { "last_run": null }
+    "research_agent": {
+      "last_run": null
+    },
+    "performance_reviewer": {
+      "last_run": null
+    }
   }
 }

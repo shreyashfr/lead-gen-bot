@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2026-03-10",
+  "last_updated": "2026-03-24",
   "user_name": "Omkar",
   "niche": "Machine Learning Engineering, Applied AI, Automation with GenAI",
   "voice_rules": {
@@ -54,7 +54,23 @@
   "feedback_log": [],
   "reflection_log": [],
   "agent_logs": {
-    "research_agent": { "last_run": null },
-    "performance_reviewer": { "last_run": null }
+    "research_agent": {
+      "last_run": null
+    },
+    "performance_reviewer": {
+      "last_run": null
+    }
+  },
+  "last_rejection_by_format": {
+    "linkedin": null,
+    "twitter_thread": null,
+    "x_article": null,
+    "tweet": null,
+    "carousel": null
+  },
+  "batch_analysis_state": {
+    "total_reflections_logged": 0,
+    "last_analyzed_at": null,
+    "last_analysis_summary": "no analysis run yet"
   }
 }

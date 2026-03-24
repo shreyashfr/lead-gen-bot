@@ -170,21 +170,24 @@ async function main() {
     ? mustIncludeRaw.split(',').map(s => s.trim()).filter(Boolean)
     : [];
 
-  // Default: if user didn't specify mustInclude, use niche tokens (>=4 chars) so we don't drift to unrelated subs.
+  // Tech/domain terms that are important even if short (2-3 chars)
+  const TECH_EXCEPTIONS = new Set(['rag','ai','ml','io','qa','llm','gpt','nlp','cv','sr','cr','db','etl','api','sql','dto','cli','jwt','grpc','http','json','xml','html','css','pdf','xls','csv','vpc','ecs','k8s','ci','cd','ar','vr','mr','xr','iot','5g','tp','sla','rto','rpo','qos','tcp','udp','dns','cdn','sso','mfa','dlt','nft','web3','p2p','l1','l2','dapp','defi','agg','vault','numb','num']);
+  
+  // Default: if user didn't specify mustInclude, use niche tokens (>=4 chars OR tech exceptions) so we don't drift to unrelated subs.
   if (mustInclude.length === 0) {
-    const toks = tokenize(niche).filter(w => w.length >= 4);
+    const toks = tokenize(niche).filter(w => w.length >= 4 || TECH_EXCEPTIONS.has(w.toLowerCase()));
     mustInclude = toks.length ? toks : [];
   }
 
   const mustIncludeWords = mustInclude.map(s => s.toLowerCase());
 
-  // Title-first filter: most specific tokens from the niche (>=3 chars, not generic stop words).
+  // Title-first filter: most specific tokens from the niche (>=3 chars OR tech exceptions, not generic stop words).
   // Posts whose TITLE doesn't mention any of these are almost never relevant.
   // Minimum 3 chars to preserve short but specific tech terms (LLM, GPT, RAG, AI, etc.)
   const TITLE_STOP = new Set(['usage','using','about','their','these','those','with','from','that','this','have','data','and','for','the','of','in','on','a','an','is','are']);
   const titleMustWords = mustInclude
     .map(s => s.toLowerCase())
-    .filter(w => w.length >= 3 && !TITLE_STOP.has(w));
+    .filter(w => (w.length >= 3 || TECH_EXCEPTIONS.has(w)) && !TITLE_STOP.has(w));
 
   const keywordSet = buildKeywordSet({ niche, keywords, mustInclude });
 

@@ -1,0 +1,390 @@
+[
+  {
+    "id": "2014586815714664698",
+    "text": "Researchers built a new RAG approach that:\n\n- does not need a vector DB.\n- does not embed data.\n- involves no chunking.\n- performs no similarity search.\n\nAnd it hit 98.7% accuracy on a financial benchmark (SOTA).\n\nHere's the core problem with RAG that this new approach solves:",
+    "author_name": "Avi Chawla",
+    "author_handle": "@_avichawla",
+    "metrics": {
+      "likes": 4400,
+      "retweets": 606,
+      "replies": 164,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 5.8,
+    "url": "https://x.com/_avichawla/status/2014586815714664698"
+  },
+  {
+    "id": "2025548705605341336",
+    "text": "Researchers built a new RAG approach that:\n\n- does not need a vector DB.\n- does not embed data.\n- involves no chunking.\n- performs no similarity search.\n\nAnd it hit 98.7% accuracy on a financial benchmark (SOTA).\n\nHere's the core problem with RAG that this new approach solves:",
+    "author_name": "Akshay ",
+    "author_handle": "@akshay_pachaar",
+    "metrics": {
+      "likes": 2600,
+      "retweets": 346,
+      "replies": 94,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 3.4,
+    "url": "https://x.com/akshay_pachaar/status/2025548705605341336"
+  },
+  {
+    "id": "1958510665217532012",
+    "text": "A simple technique makes RAG up to 40x faster & 32x memory efficient!\n\n- Perplexity uses it in its search index\n- Google uses it in Vertex RAG engine\n- Azure uses it in its search pipeline\n\nLet's understand how to use it in a RAG system (with code):",
+    "author_name": "Akshay ",
+    "author_handle": "@akshay_pachaar",
+    "metrics": {
+      "likes": 2600,
+      "retweets": 227,
+      "replies": 43,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 3.1,
+    "url": "https://x.com/akshay_pachaar/status/1958510665217532012"
+  },
+  {
+    "id": "1904504036369543464",
+    "text": "'Just do RAG' they said. But WHICH RAG?\n\nHere’s 7 different RAG Architectures you should know \n\n 𝗡𝗮𝗶𝘃𝗲 𝗥𝗔𝗚: 𝗧𝗵𝗲 𝗖𝗹𝗮𝘀𝘀𝗶𝗰 𝗔𝗽𝗽𝗿𝗼𝗮𝗰𝗵\nNaive RAG is the standard implementation with a relatively straightforward process:\n• Query comes in from the user\n•",
+    "author_name": "Victoria Slocum",
+    "author_handle": "@victorialslocum",
+    "metrics": {
+      "likes": 1200,
+      "retweets": 234,
+      "replies": 12,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/Gm3wOLZWwAALq1F?format=jpg&name=small"
+    ],
+    "viral_score": 1.7,
+    "url": "https://x.com/victorialslocum/status/1904504036369543464"
+  },
+  {
+    "id": "1999123560816685340",
+    "text": "Most RAG systems fail at retrieval.\n\nBut there's a clear path to fix all 4 stages.\n\nStart with the basics, and level up with our Advanced RAG Techniques e-book, which walks you through how to optimize each step.\n\nIt covers:\n→ 𝗜𝗻𝗱𝗲𝘅𝗶𝗻𝗴 𝗼𝗽𝘁𝗶𝗺𝗶𝘇𝗮𝘁𝗶𝗼𝗻\n→",
+    "author_name": "Femke Plantinga",
+    "author_handle": "@femke_plantinga",
+    "metrics": {
+      "likes": 1000,
+      "retweets": 201,
+      "replies": 29,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G75QLo_WMAAkVhf?format=jpg&name=small"
+    ],
+    "viral_score": 1.4,
+    "url": "https://x.com/femke_plantinga/status/1999123560816685340"
+  },
+  {
+    "id": "1988638095432888714",
+    "text": "Why do RAG systems feel like they hit a ceiling?\n\nI've been diving into \n@helloiamleonie\n's latest article on agent memory, and it provided so much clarity into the current evolution of RAG systems.\n\nThe progression from RAG → Agentic RAG → Agent Memory isn't about adding",
+    "author_name": "Victoria Slocum",
+    "author_handle": "@victorialslocum",
+    "metrics": {
+      "likes": 1000,
+      "retweets": 198,
+      "replies": 31,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G5kPw6oXYAERgi4?format=png&name=small"
+    ],
+    "viral_score": 1.4,
+    "url": "https://x.com/victorialslocum/status/1988638095432888714"
+  },
+  {
+    "id": "1743321585128521849",
+    "text": "Advanced RAG Cheat Sheet + Recipes \n\nWe’re publishing a comprehensive diagram outlining all the different components of advanced RAG, the pain points they solve, and links to LlamaIndex resources. Here’s some core concepts that motivate advanced RAGs:\n\n Success metric for RAG",
+    "author_name": "LlamaIndex ",
+    "author_handle": "@llama_index",
+    "metrics": {
+      "likes": 891,
+      "retweets": 221,
+      "replies": 12,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/GDGFnUnbQAAG0ET?format=jpg&name=small"
+    ],
+    "viral_score": 1.3,
+    "url": "https://x.com/llama_index/status/1743321585128521849"
+  },
+  {
+    "id": "2027603054170866004",
+    "text": "RAG was supposed to make LLMs smarter.\nGive them memory.\nGround them in facts.\n\nBut most RAG today is just:\n\nSearch → Paste → Pray.\n\nThat’s not intelligence.\nThat’s copy-paste with extra steps.\n\nThe real shift?\n\nAgents now control retrieval itself.\n\nThey don’t just fetch docs.",
+    "author_name": "Shraddha Bharuka",
+    "author_handle": "@BharukaShraddha",
+    "metrics": {
+      "likes": 865,
+      "retweets": 147,
+      "replies": 30,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HCN-OxEaUAAVJtb?format=jpg&name=small"
+    ],
+    "viral_score": 1.2,
+    "url": "https://x.com/BharukaShraddha/status/2027603054170866004"
+  },
+  {
+    "id": "2011740250180108498",
+    "text": "Confused by all the new terminology around agents and memory? \n\n(episodic, semantic, procedural memory…) \n\nStrip away all the buzz, and the evolution from RAG to agentic RAG to agent memory is actually just about one thing: 𝗵𝗼𝘄 𝘆𝗼𝘂 𝗺𝗮𝗻𝗮𝗴𝗲 𝗱𝗮𝘁𝗮 𝗶𝗻",
+    "author_name": "Femke Plantinga",
+    "author_handle": "@femke_plantinga",
+    "metrics": {
+      "likes": 830,
+      "retweets": 149,
+      "replies": 25,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G-sjGHTWcAATC2Y?format=jpg&name=small"
+    ],
+    "viral_score": 1.2,
+    "url": "https://x.com/femke_plantinga/status/2011740250180108498"
+  },
+  {
+    "id": "1960297539820720365",
+    "text": "Hot take: I'm tired of RAG systems that just grab the first document and call it done.\n𝗔𝗴𝗲𝗻𝘁𝗶𝗰 𝗥𝗔𝗚 is probably the only way RAG is 𝘢𝘤𝘵𝘶𝘢𝘭𝘭𝘺 going to be useful.\n\nBut what’s actually the difference?\n\n𝗧𝗵𝗲 𝗣𝗿𝗼𝗯𝗹𝗲𝗺 𝘄𝗶𝘁𝗵 𝗡𝗮𝗶𝘃𝗲 𝗥𝗔𝗚:\nTraditional",
+    "author_name": "Victoria Slocum",
+    "author_handle": "@victorialslocum",
+    "metrics": {
+      "likes": 799,
+      "retweets": 119,
+      "replies": 5,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/GzRgKmCXkAAi2wR?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/victorialslocum/status/1960297539820720365"
+  },
+  {
+    "id": "1827156106449158339",
+    "text": "RAG or Long Context ??\n\nThis paper finds, when resourced sufficiently, Long Context consistently outperforms RAG in terms of average performance.\n\nHowever, RAG’s significantly lower cost remains a distinct advantage.\n\nTo solve this they propose a new 'Hybrid' method\n\n-----\n\nKey",
+    "author_name": "Rohan Paul",
+    "author_handle": "@rohanpaul_ai",
+    "metrics": {
+      "likes": 484,
+      "retweets": 103,
+      "replies": 7,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/GVtcsefXwAAiCS0?format=png&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/rohanpaul_ai/status/1827156106449158339"
+  },
+  {
+    "id": "2025777681837809825",
+    "text": "Vector databases are not the future of RAG.\n\nVectorless RAG with PageIndex just hit 98.7% accuracy on FinanceBench.  \n\nNO vector database and NO chunking. \n\n100% Opensource.",
+    "author_name": "Unwind AI",
+    "author_handle": "@unwind_ai_",
+    "metrics": {
+      "likes": 458,
+      "retweets": 57,
+      "replies": 17,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HB0Be6faMAAo_6P?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/unwind_ai_/status/2025777681837809825"
+  },
+  {
+    "id": "1848911281283338704",
+    "text": "Nice \n@GoogleDeepMind\n  Paper\n\nSolves RAG performance plateau by optimizing computation allocation with Inference scaling\n\n Achieves 58.9% performance gain over standard RAG approaches.\n\n Shows linear scaling between computation and RAG performance.\n\n**Original Problem** :",
+    "author_name": "Rohan Paul",
+    "author_handle": "@rohanpaul_ai",
+    "metrics": {
+      "likes": 412,
+      "retweets": 65,
+      "replies": 4,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/Gaim60UbUAA3upx?format=png&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/rohanpaul_ai/status/1848911281283338704"
+  },
+  {
+    "id": "2033068208824168718",
+    "text": "RAG vs. Graph RAG, explained visually!\n\nRAG has many issues.\n\nFor instance, imagine you want to summarize a biography, and each chapter of the document covers a specific accomplishment of a person (P).\n\nThis is difficult with naive RAG since it only retrieves the top-k relevant",
+    "author_name": "Avi Chawla",
+    "author_handle": "@_avichawla",
+    "metrics": {
+      "likes": 405,
+      "retweets": 80,
+      "replies": 13,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/_avichawla/status/2033068208824168718"
+  },
+  {
+    "id": "1774240631231267285",
+    "text": "Building RAG is easy, but designing it is hard \n\nThis article by \n@MichalOleszak\n in \n@TDataScience\n offers a comprehensive overview of the big and small design choices you need to build high-performing RAG systems, across 5 main pillars:\n\n Indexing: Embedding external data into",
+    "author_name": "LlamaIndex ",
+    "author_handle": "@llama_index",
+    "metrics": {
+      "likes": 390,
+      "retweets": 77,
+      "replies": 6,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/GJ9eWeCbUAAItDC?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/llama_index/status/1774240631231267285"
+  },
+  {
+    "id": "1963932983876018498",
+    "text": "The evolution of modern RAG Architectures. \n\nIn general there are so many variations you can choose from but it all eventually converges to some flavour of Agentic RAG.\n\n𝗡𝗮𝗶𝘃𝗲 𝗥𝗔𝗚: the regular “embed query -> retrieve -> inject retrieved context into prompt” type of",
+    "author_name": "Aurimas Griciūnas",
+    "author_handle": "@Aurimas_Gr",
+    "metrics": {
+      "likes": 380,
+      "retweets": 102,
+      "replies": 14,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G0FKm2VWgAAMpHs?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/Aurimas_Gr/status/1963932983876018498"
+  },
+  {
+    "id": "1743680234493476899",
+    "text": "One thing we loved about 2023 was the volume of new research around RAG from the entire community .\n\nThis survey by Gao et al. is the most comprehensive survey of this research we’ve seen yet - it covers 100+ papers, blog posts, and projects across every step of the RAG",
+    "author_name": "LlamaIndex ",
+    "author_handle": "@llama_index",
+    "metrics": {
+      "likes": 359,
+      "retweets": 56,
+      "replies": 4,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/GDLL6KzaMAAQgo-?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/llama_index/status/1743680234493476899"
+  },
+  {
+    "id": "1763729200106840548",
+    "text": "RAG for Complex PDF Comparisons ()\n\nBuilding a proper RAG system that can make comparisons on both text and tabular data across PDFs is hard.\n\nHere’s a cookbook  showing how you can compose the right components: LlamaParse, recursive retrieval over text and tabular data,",
+    "author_name": "LlamaIndex ",
+    "author_handle": "@llama_index",
+    "metrics": {
+      "likes": 356,
+      "retweets": 70,
+      "replies": 6,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/GHoGUDybMAAbe3x?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/llama_index/status/1763729200106840548"
+  },
+  {
+    "id": "1977931211998973975",
+    "text": "RAG 的讣告：死于智能体之手，葬于上下文窗口 —— 来自 \n@nicbstme\n，他在 AI 和搜索领域工作十年，是 \n@fintool\n CEO，他的观点是：RAG 技术正在走向衰落，将被基于智能体的架构和大上下文窗口所取代。\n\nRAG 的兴起与架构：从“训练轮”到主流工具\nRAG 于 2022 年底兴起，旨在解决 LLM 上下文窗口狭小（如",
+    "author_name": "meng shao",
+    "author_handle": "@shao__meng",
+    "metrics": {
+      "likes": 338,
+      "retweets": 77,
+      "replies": 15,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G3MF1cvaoAAGaXD?format=jpg&name=small",
+      "https://pbs.twimg.com/media/G2N1ZutaIAQN-cv?format=jpg&name=120x120",
+      "https://pbs.twimg.com/media/G2N1afJbkAAh21W?format=jpg&name=240x240"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/shao__meng/status/1977931211998973975"
+  },
+  {
+    "id": "1880141212365255134",
+    "text": "Traditional RAG has many issues:\n\n- It retrieves once and generates once. If the context isn't enough, it cannot dynamically search for more info.\n\n- It cannot reason through complex queries.\n\n- The system can't modify its strategy based on the problem.",
+    "author_name": "Avi Chawla",
+    "author_handle": "@_avichawla",
+    "metrics": {
+      "likes": 250,
+      "retweets": 18,
+      "replies": 4,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/_avichawla/status/1880141212365255134"
+  },
+  {
+    "id": "1758308547769913365",
+    "text": "LlamaIndex + RAGAs Cookbook \n\nThe first step to building any advanced RAG application is defining quality metrics, and RAGAs (\n@Shahules786\n) is a popular framework to comprehensively evaluate a RAG app component-wise and e2e.\n\nMetrics: Context relevance/recall/precision,",
+    "author_name": "LlamaIndex ",
+    "author_handle": "@llama_index",
+    "metrics": {
+      "likes": 202,
+      "retweets": 42,
+      "replies": 0,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/GGbESdjaoAAFLEA?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/llama_index/status/1758308547769913365"
+  },
+  {
+    "id": "2036397652879741288",
+    "text": "Why do most RAG systems fail when you ask them anything complex?\n\nMost linear pipelines lack the reasoning required for depth.\n\n→ 𝗡𝗮𝗶𝘃𝗲 𝗥𝗔𝗚 follows a fixed path of retrieval and generation. If the initial search misses the context, the entire system collapses. \n\n→",
+    "author_name": "Femke Plantinga",
+    "author_handle": "@femke_plantinga",
+    "metrics": {
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HEK83tjXEAABtC8?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/femke_plantinga/status/2036397652879741288"
+  }
+]

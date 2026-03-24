@@ -1,0 +1,376 @@
+[
+  {
+    "id": "1732014719794585684",
+    "text": "Prompting vs RAGs vs Fine-tuning:\n\nAn important decision that every AI Engineer must make when building an LLM-based application.\n\nTo understand what guides the decision, let's first understand the meaning of these terms.\n\n Prompting Engineering:\n\nThe prompt is the text input",
+    "author_name": "Akshay ",
+    "author_handle": "@akshay_pachaar",
+    "metrics": {
+      "likes": 782,
+      "retweets": 205,
+      "replies": 17,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/GAlaFKkbwAAbbtK?format=jpg&name=small"
+    ],
+    "viral_score": 1.2,
+    "url": "https://x.com/akshay_pachaar/status/1732014719794585684"
+  },
+  {
+    "id": "1962908432026960086",
+    "text": "Prompt engineering is slowly dying\n\nEnter 𝗖𝗼𝗻𝘁𝗲𝘅𝘁 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿𝗶𝗻𝗴 \n\n(Maybe not quite dead — but evolving into something far more powerful)\n\nAs AI grows from simple chatbots to 𝗮𝘂𝘁𝗼𝗻𝗼𝗺𝗼𝘂𝘀 𝗮𝗴𝗲𝗻𝘁𝘀, clever prompts alone will not be enough. The real",
+    "author_name": "Femke Plantinga",
+    "author_handle": "@femke_plantinga",
+    "metrics": {
+      "likes": 718,
+      "retweets": 156,
+      "replies": 19,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/Gz2m0KhWwAAyVte?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/femke_plantinga/status/1962908432026960086"
+  },
+  {
+    "id": "1985754108616147007",
+    "text": "𝗣𝗿𝗼𝗺𝗽𝘁 𝗲𝗻𝗴𝗶𝗻𝗲𝗲𝗿𝗶𝗻𝗴 𝗶𝘀 𝗱𝗲𝗮𝗱.\nI know that sounds dramatic, but hear me out.\n\nEvery developer building with LLMs eventually hits the same wall. The model is smart, sure. But it can't access your docs. It forgets yesterday's conversation. And it makes stuff up",
+    "author_name": "Femke Plantinga",
+    "author_handle": "@femke_plantinga",
+    "metrics": {
+      "likes": 596,
+      "retweets": 109,
+      "replies": 27,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G47Q1W-W8AAB0ie?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/femke_plantinga/status/1985754108616147007"
+  },
+  {
+    "id": "2025060487168184552",
+    "text": "50 LLM Projects with Source to Become a Pro\n\nFoundations: Core LLM Engineering\n\n→ Build a GPT-style Transformer from scratch using PyTorch\n→ Implement a tokenizer (BPE / WordPiece) from scratch\n→ Train a small language model on custom dataset\n→ Build a character-level",
+    "author_name": "Dhanian ",
+    "author_handle": "@e_opore",
+    "metrics": {
+      "likes": 446,
+      "retweets": 98,
+      "replies": 20,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HBp083TX0AA224V?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/e_opore/status/2025060487168184552"
+  },
+  {
+    "id": "2026337689298153717",
+    "text": "Google Research just proved you can boost llm accuracy by up to 76 percentage points with zero extra output tokens, zero latency increase, and zero fine-tuning \n\nthe technique: paste your prompt twice.\n\nthat's it. that's the paper.\n\nbut WHY it works reveals something important",
+    "author_name": "Robert Youssef",
+    "author_handle": "@rryssf_",
+    "metrics": {
+      "likes": 362,
+      "retweets": 71,
+      "replies": 39,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HB7_Y9iaMAIcgXD?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/rryssf_/status/2026337689298153717"
+  },
+  {
+    "id": "2011113543559479541",
+    "text": "Key Prompt Engineering Techniques and Why it Makes a Big Difference in LLMs",
+    "author_name": "Alex Xu",
+    "author_handle": "@alexxubyte",
+    "metrics": {
+      "likes": 360,
+      "retweets": 82,
+      "replies": 7,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G-jpGwvXMAMrUGJ?format=png&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/alexxubyte/status/2011113543559479541"
+  },
+  {
+    "id": "1993666171447513571",
+    "text": "You can’t “prompt engineer” your way out of bad context.\n\nReal-world LLM systems need both prompt and context engineering.\n\nBut what is the actual difference between them?\n\n𝗣𝗿𝗼𝗺𝗽𝘁 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿𝗶𝗻𝗴: \nPrompt engineering is about 𝗵𝗼𝘄 𝘆𝗼𝘂 𝗽𝗵𝗿𝗮𝘀𝗲",
+    "author_name": "Femke Plantinga",
+    "author_handle": "@femke_plantinga",
+    "metrics": {
+      "likes": 357,
+      "retweets": 65,
+      "replies": 19,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G6rr8-RXIAERluA?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/femke_plantinga/status/1993666171447513571"
+  },
+  {
+    "id": "1994840043815670126",
+    "text": "Lots of LLM benchmarks are misleading us.\n\nThe problem isn't the benchmarks themselves. It has more to do with the prompts. Current evaluation frameworks use fixed prompts that systematically underestimate what models can actually do.\n\nPay attention to this one, AI devs!\n\nThis",
+    "author_name": "DAIR.AI",
+    "author_handle": "@dair_ai",
+    "metrics": {
+      "likes": 325,
+      "retweets": 63,
+      "replies": 19,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G68YcoIbEAARHi5?format=png&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/dair_ai/status/1994840043815670126"
+  },
+  {
+    "id": "1908837841267830999",
+    "text": "LLMs often generate excessively long reasoning steps (\"overthinking\").\n\nThis increases computational costs and response times.\n\nThis survey categorizes methods to make LLM reasoning shorter and faster while maintaining accuracy.\n\nSolutions optimize the model itself, modify",
+    "author_name": "Rohan Paul",
+    "author_handle": "@rohanpaul_ai",
+    "metrics": {
+      "likes": 243,
+      "retweets": 68,
+      "replies": 4,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/Gn0gCSXWsAAN5P9?format=png&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/rohanpaul_ai/status/1908837841267830999"
+  },
+  {
+    "id": "1880599343008530797",
+    "text": "Smart prompt engineering beats expensive model fine-tuning for LLM alignment\n\nA prompt optimizer framework that theoretically shows how prompt engineering can match fine-tuning's performance for LLM alignment without parameter updates.\n\n-----\n\nOriginal Problem :\n\nLLM alignment",
+    "author_name": "Rohan Paul",
+    "author_handle": "@rohanpaul_ai",
+    "metrics": {
+      "likes": 234,
+      "retweets": 39,
+      "replies": 6,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/GhkDiVXaUAAJIl3?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/rohanpaul_ai/status/1880599343008530797"
+  },
+  {
+    "id": "1711444619576180742",
+    "text": "Harnessing LLMs to Generate Synthetic Datasets\n\nIn the context of machine learning, there's often a lack of labeled data or very little of it. This data collection and labeling process typically ends up taking a lot of effort and time.\n\nWith the advent of LLMs, the paradigm",
+    "author_name": "DAIR.AI",
+    "author_handle": "@dair_ai",
+    "metrics": {
+      "likes": 213,
+      "retweets": 55,
+      "replies": 0,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/F8BFIBmXEAAUj3E?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/dair_ai/status/1711444619576180742"
+  },
+  {
+    "id": "2035221186955669811",
+    "text": "All Paid Courses (Free for First 5000 People)\n\n LLM Mastery (GPT, Claude, Grok)\n AI Agent Building Masterclass\n Advanced Prompt Engineering\n AI Automation with Zapier & Make\n No-Code AI SaaS Building\n RAG Systems & Vector Databases\n LangChain & Agent Frameworks",
+    "author_name": "Suryansh Tiwari",
+    "author_handle": "@Suryanshti777",
+    "metrics": {
+      "likes": 171,
+      "retweets": 94,
+      "replies": 132,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HD6O4afXAAEbXFp?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/Suryanshti777/status/2035221186955669811"
+  },
+  {
+    "id": "2034962950952247606",
+    "text": "All Paid Courses (Free for First 4000 People)\n\n LLM Mastery (GPT, Claude, Grok)\n AI Agent Building Masterclass\n Advanced Prompt Engineering\n AI Automation with Zapier & Make\n No-Code AI SaaS Building\n RAG Systems & Vector Databases\n LangChain & Agent Frameworks",
+    "author_name": "Suryansh Tiwari",
+    "author_handle": "@Suryanshti777",
+    "metrics": {
+      "likes": 39,
+      "retweets": 29,
+      "replies": 19,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HD2kBOrXYAA9FjY?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/Suryanshti777/status/2034962950952247606"
+  },
+  {
+    "id": "2035326325070721029",
+    "text": "All Paid Courses (Free for First 500 People)\n\n LLM Mastery (GPT, Claude, Grok)\n AI Agent Building Masterclass\n Advanced Prompt Engineering\n AI Automation with Zapier & Make\n No-Code AI SaaS Building\n RAG Systems & Vector Databases\n LangChain & Agent Frameworks\n AI",
+    "author_name": "Suryansh Tiwari",
+    "author_handle": "@Suryanshti777",
+    "metrics": {
+      "likes": 38,
+      "retweets": 18,
+      "replies": 41,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HD7ugVSbQAATLA1?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/Suryanshti777/status/2035326325070721029"
+  },
+  {
+    "id": "2035768797005844488",
+    "text": "2020: learn python\n2022: learn machine learning\n2023: learn LLMs\n2024: learn prompt engineering\n2025: learn to build with claude\n2026: learn to manage agents doing everything for you\n& they said \"AI will reduce your workload\"\nit just moved the workload",
+    "author_name": "Vaishnavi",
+    "author_handle": "@_vmlops",
+    "metrics": {
+      "likes": 32,
+      "retweets": 3,
+      "replies": 7,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/_vmlops/status/2035768797005844488"
+  },
+  {
+    "id": "2034639554414616760",
+    "text": "All Paid Courses (Free for First 5000 People)\n\n LLM Mastery (GPT, Claude, Grok)\n AI Agent Building Masterclass\n Advanced Prompt Engineering\n AI Automation with Zapier & Make\n No-Code AI SaaS Building\n RAG Systems & Vector Databases\n LangChain & Agent Frameworks",
+    "author_name": "smrati tiwari",
+    "author_handle": "@smratitiwa86867",
+    "metrics": {
+      "likes": 31,
+      "retweets": 21,
+      "replies": 12,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HDx95GWW4AAvO_U?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/smratitiwa86867/status/2034639554414616760"
+  },
+  {
+    "id": "2034579502937043003",
+    "text": "BREAKING: Stanford researchers just published a prompting technique that makes today’s LLMs behave like better versions of themselves.\n\nIt’s called “prompt ensembling” and it runs 5 variations of the same prompt, then merges the outputs.\n\nHere’s how it works",
+    "author_name": "Spencer Baggins",
+    "author_handle": "@bigaiguy",
+    "metrics": {
+      "likes": 17,
+      "retweets": 8,
+      "replies": 4,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HDxHRrDbQAAdX0Q?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/bigaiguy/status/2034579502937043003"
+  },
+  {
+    "id": "2036274720690282833",
+    "text": "Prompt engineering is dead.\n\nWe just didn’t realize it yet.\n\nEvery image model you've been using is basically blind.\n\nDALL·E. Midjourney. Flux.\n\nThey don’t understand — they just translate words into pixels.\n\nPrompt engineering became a game of “say the magic words.”\n\nThat era",
+    "author_name": "Adarsh Chetan",
+    "author_handle": "@AdarshChetan",
+    "metrics": {
+      "likes": 8,
+      "retweets": 2,
+      "replies": 2,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HEJND8SaIAI7Y0u?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/AdarshChetan/status/2036274720690282833"
+  },
+  {
+    "id": "2036394180709326923",
+    "text": "BREAKING: This technique makes ChatGPT reason like an entire team of industry experts instead of one overconfident intern.\n\nIt’s known as Agentic Self-Reflection (or Meta-Cognitive Prompting), and it completely changes the ceiling of what standard LLMs can do.\n\nInstead of just",
+    "author_name": "Simplifying AI",
+    "author_handle": "@simplifyinAI",
+    "metrics": {
+      "likes": 2,
+      "retweets": 0,
+      "replies": 2,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HEK5j14aIAIFvFV?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/simplifyinAI/status/2036394180709326923"
+  },
+  {
+    "id": "2034672956849131530",
+    "text": "All of this is prompt engineering, not model training. The LLM gets a different system prompt every cycle with updated context. It appears to learn because the context gets richer — but\n   the model itself never changes.",
+    "author_name": "Mining helium",
+    "author_handle": "@mininghelium1",
+    "metrics": {
+      "likes": 1,
+      "retweets": 0,
+      "replies": 1,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/mininghelium1/status/2034672956849131530"
+  },
+  {
+    "id": "2034142364831265214",
+    "text": "Prompt engineering is already obsolete.  \nThe industry just hasn’t admitted it yet.  \nModels are no longer limited by token inputs — they’re limited by context design.  \nRetrieval, compression, and memory shaping are now the real leverage points.  \nThe skill isn’t writing clever",
+    "author_name": "Martin Szerment",
+    "author_handle": "@MartinSzerment",
+    "metrics": {
+      "likes": 0,
+      "retweets": 0,
+      "replies": 1,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HDq5sgOa8AAlVkR?format=png&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/MartinSzerment/status/2034142364831265214"
+  }
+]

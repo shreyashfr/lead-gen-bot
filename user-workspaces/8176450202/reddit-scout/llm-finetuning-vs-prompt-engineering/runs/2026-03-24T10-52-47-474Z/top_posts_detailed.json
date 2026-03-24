@@ -1,0 +1,309 @@
+[
+  {
+    "id": "1s1wczb",
+    "subreddit": "KasaneTeto",
+    "title": "\"Prompt\" engineering",
+    "selftext": "",
+    "author": "Catch-the-Glory",
+    "created_utc": 1774306245,
+    "permalink": "https://www.reddit.com/r/KasaneTeto/comments/1s1wczb/prompt_engineering/",
+    "url": "https://i.redd.it/kpv7o35fjvqg1.jpeg",
+    "domain": "i.redd.it",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 1166,
+    "score": 1166,
+    "num_comments": 22,
+    "upvote_ratio": 0.99,
+    "thumbnail": "https://preview.redd.it/kpv7o35fjvqg1.jpeg?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=593ce8217732c74c2908dc27926850712aafc5b4",
+    "media": null,
+    "post_hint": "image",
+    "listing": "search:top:week",
+    "viral_score": 213.23282486720285,
+    "detail": {
+      "post": {
+        "id": "1s1wczb",
+        "title": "\"Prompt\" engineering",
+        "selftext": "",
+        "author": "Catch-the-Glory",
+        "subreddit": "KasaneTeto",
+        "created_utc": 1774306245,
+        "ups": 1162,
+        "num_comments": 22,
+        "upvote_ratio": 0.99,
+        "permalink": "https://www.reddit.com/r/KasaneTeto/comments/1s1wczb/prompt_engineering/",
+        "url": "https://i.redd.it/kpv7o35fjvqg1.jpeg",
+        "is_self": false,
+        "post_hint": "image",
+        "thumbnail": "https://preview.redd.it/kpv7o35fjvqg1.jpeg?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=593ce8217732c74c2908dc27926850712aafc5b4",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://preview.redd.it/kpv7o35fjvqg1.jpeg?auto=webp&amp;s=be611adbc25788a5ff796d25b7401a03cca91d5d",
+                "width": 1008,
+                "height": 1646
+              },
+              "resolutions": [
+                {
+                  "url": "https://preview.redd.it/kpv7o35fjvqg1.jpeg?width=108&amp;crop=smart&amp;auto=webp&amp;s=52c527a16a9ca66bb3e1248211f6bbac4802b69f",
+                  "width": 108,
+                  "height": 176
+                },
+                {
+                  "url": "https://preview.redd.it/kpv7o35fjvqg1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=2be99a01073a75b0dcad1a88c716d88b4ebe431c",
+                  "width": 216,
+                  "height": 352
+                },
+                {
+                  "url": "https://preview.redd.it/kpv7o35fjvqg1.jpeg?width=320&amp;crop=smart&amp;auto=webp&amp;s=d38d5136fc4a86b3feec7a5c6c5a22077cb460b0",
+                  "width": 320,
+                  "height": 522
+                },
+                {
+                  "url": "https://preview.redd.it/kpv7o35fjvqg1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=46de4bbfc22be1dd26018a0a921e961848ec696d",
+                  "width": 640,
+                  "height": 1045
+                },
+                {
+                  "url": "https://preview.redd.it/kpv7o35fjvqg1.jpeg?width=960&amp;crop=smart&amp;auto=webp&amp;s=05dd98bee498ac61304f54a5c1310c38815bdb3a",
+                  "width": 960,
+                  "height": 1567
+                }
+              ],
+              "variants": {},
+              "id": "kpv7o35fjvqg1"
+            }
+          ],
+          "enabled": true
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "Hameru_is_cool",
+          "ups": 297,
+          "body": "i like how the quality goes up significantly when drawing yuri specifically"
+        },
+        {
+          "author": "Catch-the-Glory",
+          "ups": 171,
+          "body": "Original image for anyone who wants it\n\nhttps://preview.redd.it/6o8u7nyllvqg1.jpeg?width=770&amp;format=pjpg&amp;auto=webp&amp;s=72879e3dceea4b5b83934e83d7a5bea621b03627"
+        },
+        {
+          "author": "getsuedbyme",
+          "ups": 64,
+          "body": "Thank you, I also do this\n\nhttps://preview.redd.it/2ph1r6hprvqg1.png?width=1080&amp;format=png&amp;auto=webp&amp;s=5394dff3793de92668d55d98404bb35f24a05290"
+        }
+      ]
+    },
+    "media_extracted": {
+      "type": "image",
+      "url": "https://i.redd.it/kpv7o35fjvqg1.jpeg",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/llm-finetuning-vs-prompt-engineering/runs/2026-03-24T10-52-47-474Z/media/1s1wczb.jpg",
+      "contentType": "image/jpeg",
+      "bytes": 114030
+    },
+    "author_avatar": {
+      "user": "Catch-the-Glory",
+      "url": "https://b.thumbs.redditmedia.com/6G7On0pT-h8_zfLwvheqoVDgKnR_ImBt0p2qmovMwLs.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/llm-finetuning-vs-prompt-engineering/runs/2026-03-24T10-52-47-474Z/avatars/Catch-the-Glory.png",
+      "fetchedAt": "2026-03-24T10:52:59.073Z"
+    }
+  },
+  {
+    "id": "1s0eoqi",
+    "subreddit": "ChatGPT",
+    "title": "chatgpt is way better when you give it a wall of messy context instead of a clean prompt",
+    "selftext": "I keep seeing people post these perfectly engineered prompts and I think it gives the wrong impression that you need to be precise with your input. my experience is the opposite. the messier and more detailed the input, the better the output.\n\n\n\nexample: I manage a team of 8 and I have to write weekly updates for leadership. if I sit down and type bullet points into chatgpt like \"\"team made progress on the migration project\"\" the output is generic corporate fluff. useless.\n\n\n\nwhat works way better is giving it a huge dump of raw context. everything that happened that week, who did what, what went wrong, what conversations I had, what shifted. I'm talking like 500 words of unstructured brain dump. then I tell it to write a concise weekly update with sections for progress, blockers, and next steps.\n\n\n\nthe output is so much better. it pulls out the important stuff, organizes it, and the tone is way closer to how I actually talk because the input had my voice in it.\n\n\n\nhow I actually get that wall of context: I don't type it. friday afternoon I dictate everything I can remember from the week into willow voice, grab the transcript, and paste the whole thing into chatgpt with \"\"turn this into a weekly leadership update, 3 sections: progress, blockers, next week priorities, keep it under 200 words.\"\" takes me maybe 6 minutes total for something that used to take 30.\n\n\n\nI think the reason this works is that talking naturally forces you to include context and reasoning that you'd edit out if you were typing. and chatgpt needs that context to produce anything useful.\n\n\n\nanyone else notice that less polished inputs give better outputs? feels counterintuitive but it's been consistent for me.\n\n",
+    "author": "eboss454",
+    "created_utc": 1774161893,
+    "permalink": "https://www.reddit.com/r/ChatGPT/comments/1s0eoqi/chatgpt_is_way_better_when_you_give_it_a_wall_of/",
+    "url": "https://www.reddit.com/r/ChatGPT/comments/1s0eoqi/chatgpt_is_way_better_when_you_give_it_a_wall_of/",
+    "domain": "self.ChatGPT",
+    "is_self": true,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 690,
+    "score": 690,
+    "num_comments": 119,
+    "upvote_ratio": 0.92,
+    "thumbnail": "self",
+    "media": null,
+    "post_hint": null,
+    "listing": "search:top:week",
+    "viral_score": 36.129999444250906,
+    "detail": {
+      "post": {
+        "id": "1s0eoqi",
+        "title": "chatgpt is way better when you give it a wall of messy context instead of a clean prompt",
+        "selftext": "I keep seeing people post these perfectly engineered prompts and I think it gives the wrong impression that you need to be precise with your input. my experience is the opposite. the messier and more detailed the input, the better the output.\n\n\n\nexample: I manage a team of 8 and I have to write weekly updates for leadership. if I sit down and type bullet points into chatgpt like \"\"team made progress on the migration project\"\" the output is generic corporate fluff. useless.\n\n\n\nwhat works way better is giving it a huge dump of raw context. everything that happened that week, who did what, what went wrong, what conversations I had, what shifted. I'm talking like 500 words of unstructured brain dump. then I tell it to write a concise weekly update with sections for progress, blockers, and next steps.\n\n\n\nthe output is so much better. it pulls out the important stuff, organizes it, and the tone is way closer to how I actually talk because the input had my voice in it.\n\n\n\nhow I actually get that wall of context: I don't type it. friday afternoon I dictate everything I can remember from the week into willow voice, grab the transcript, and paste the whole thing into chatgpt with \"\"turn this into a weekly leadership update, 3 sections: progress, blockers, next week priorities, keep it under 200 words.\"\" takes me maybe 6 minutes total for something that used to take 30.\n\n\n\nI think the reason this works is that talking naturally forces you to include context and reasoning that you'd edit out if you were typing. and chatgpt needs that context to produce anything useful.\n\n\n\nanyone else notice that less polished inputs give better outputs? feels counterintuitive but it's been consistent for me.\n\n",
+        "author": "eboss454",
+        "subreddit": "ChatGPT",
+        "created_utc": 1774161893,
+        "ups": 687,
+        "num_comments": 119,
+        "upvote_ratio": 0.92,
+        "permalink": "https://www.reddit.com/r/ChatGPT/comments/1s0eoqi/chatgpt_is_way_better_when_you_give_it_a_wall_of/",
+        "url": "https://www.reddit.com/r/ChatGPT/comments/1s0eoqi/chatgpt_is_way_better_when_you_give_it_a_wall_of/",
+        "is_self": true,
+        "post_hint": null,
+        "thumbnail": "self",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": null,
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "l0_raine",
+          "ups": 213,
+          "body": "Dictating makes a world of a difference."
+        },
+        {
+          "author": "DietDoctorGoat",
+          "ups": 173,
+          "body": "100% this. When I manic brain dump, it figures out what I’m trying to accomplish more effectively. Like, give it a lot of peripheral background context. Details tangentially related or more."
+        },
+        {
+          "author": "UnsteadyEnby",
+          "ups": 86,
+          "body": "I agree. I get much better results with just a long, drawn out ramble of what I need. Especially for discussion boards."
+        }
+      ]
+    },
+    "author_avatar": {
+      "user": "eboss454",
+      "url": "https://i.redd.it/snoovatar/avatars/16ef9f88-a796-4b2c-9558-2079aca2e8fb.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/llm-finetuning-vs-prompt-engineering/runs/2026-03-24T10-52-47-474Z/avatars/eboss454.png",
+      "fetchedAt": "2026-03-24T10:53:00.618Z"
+    }
+  },
+  {
+    "id": "1rxju0h",
+    "subreddit": "QantasAirways",
+    "title": "747 vs A380. A look at the massive difference in wing area. Absolutely insane piece of engineering!!",
+    "selftext": "",
+    "author": "Ryanlion1992",
+    "created_utc": 1773876037,
+    "permalink": "https://www.reddit.com/r/QantasAirways/comments/1rxju0h/747_vs_a380_a_look_at_the_massive_difference_in/",
+    "url": "https://i.redd.it/188wj0i50wpg1.jpeg",
+    "domain": "i.redd.it",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 1545,
+    "score": 1545,
+    "num_comments": 63,
+    "upvote_ratio": 0.99,
+    "thumbnail": "https://preview.redd.it/188wj0i50wpg1.jpeg?width=140&amp;height=92&amp;auto=webp&amp;s=c761b86096a6ef259541203da59318396833628c",
+    "media": null,
+    "post_hint": "image",
+    "listing": "search:top:week",
+    "viral_score": 24.566771909159606,
+    "detail": {
+      "post": {
+        "id": "1rxju0h",
+        "title": "747 vs A380. A look at the massive difference in wing area. Absolutely insane piece of engineering!!",
+        "selftext": "",
+        "author": "Ryanlion1992",
+        "subreddit": "QantasAirways",
+        "created_utc": 1773876037,
+        "ups": 1547,
+        "num_comments": 63,
+        "upvote_ratio": 0.99,
+        "permalink": "https://www.reddit.com/r/QantasAirways/comments/1rxju0h/747_vs_a380_a_look_at_the_massive_difference_in/",
+        "url": "https://i.redd.it/188wj0i50wpg1.jpeg",
+        "is_self": false,
+        "post_hint": "image",
+        "thumbnail": "https://preview.redd.it/188wj0i50wpg1.jpeg?width=140&amp;height=92&amp;auto=webp&amp;s=c761b86096a6ef259541203da59318396833628c",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://preview.redd.it/188wj0i50wpg1.jpeg?auto=webp&amp;s=590f0a3809a5deefe20bc8a8cd1689ff5032adba",
+                "width": 1024,
+                "height": 680
+              },
+              "resolutions": [
+                {
+                  "url": "https://preview.redd.it/188wj0i50wpg1.jpeg?width=108&amp;crop=smart&amp;auto=webp&amp;s=e276dded48c494878434aa95bdae9a0f95f340ae",
+                  "width": 108,
+                  "height": 71
+                },
+                {
+                  "url": "https://preview.redd.it/188wj0i50wpg1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=9cbdb57b646fac24db895afde6878d7cc85d704e",
+                  "width": 216,
+                  "height": 143
+                },
+                {
+                  "url": "https://preview.redd.it/188wj0i50wpg1.jpeg?width=320&amp;crop=smart&amp;auto=webp&amp;s=42b4f4278ec3106d989780198048e00432440e36",
+                  "width": 320,
+                  "height": 212
+                },
+                {
+                  "url": "https://preview.redd.it/188wj0i50wpg1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=e4d46a173952722ef8f4f92fcd35fae46a90a52d",
+                  "width": 640,
+                  "height": 425
+                },
+                {
+                  "url": "https://preview.redd.it/188wj0i50wpg1.jpeg?width=960&amp;crop=smart&amp;auto=webp&amp;s=d2437818672c36e1656df9fe97e77799ce40eeeb",
+                  "width": 960,
+                  "height": 637
+                }
+              ],
+              "variants": {},
+              "id": "188wj0i50wpg1"
+            }
+          ],
+          "enabled": true
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "kernpanic",
+          "ups": 56,
+          "body": "The a380 wing was designed for the next version of the plane, longer and larger than this one.  It was just never developed.  So the wing is larger than it needs be."
+        },
+        {
+          "author": "yngrz87",
+          "ups": 12,
+          "body": "Such a shame airlines are moving away from these beasts. "
+        },
+        {
+          "author": "fakeheadlines",
+          "ups": 12,
+          "body": "This is a Japanese 747 so like all Japanese gadgets it’s made much smaller to fit in the smaller parking spaces. Like I saw a Japanese ‘van’ and it was the size of a Holden Barina. So take that into account too. "
+        }
+      ]
+    },
+    "media_extracted": {
+      "type": "image",
+      "url": "https://i.redd.it/188wj0i50wpg1.jpeg",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/llm-finetuning-vs-prompt-engineering/runs/2026-03-24T10-52-47-474Z/media/1rxju0h.jpg",
+      "contentType": "image/jpeg",
+      "bytes": 122744
+    },
+    "author_avatar": {
+      "user": "Ryanlion1992",
+      "url": "https://i.redd.it/snoovatar/avatars/3e023d23-2612-4824-b4f6-84347517e234.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/llm-finetuning-vs-prompt-engineering/runs/2026-03-24T10-52-47-474Z/avatars/Ryanlion1992.png",
+      "fetchedAt": "2026-03-24T10:53:02.186Z"
+    }
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "n": 3,
+  "cards": [
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/llm-finetuning-vs-prompt-engineering/runs/2026-03-24T10-52-47-474Z/cards/1s1wczb.png",
+      "caption": "1) \"Prompt\" engineering\nr/KasaneTeto · score 213 · 1162 ups · 22 comments\nhttps://www.reddit.com/r/KasaneTeto/comments/1s1wczb/prompt_engineering/",
+      "permalink": "https://www.reddit.com/r/KasaneTeto/comments/1s1wczb/prompt_engineering/",
+      "id": "1s1wczb"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/llm-finetuning-vs-prompt-engineering/runs/2026-03-24T10-52-47-474Z/cards/1s0eoqi.png",
+      "caption": "2) chatgpt is way better when you give it a wall of messy context instead of a clean prompt\nr/ChatGPT · score 36 · 687 ups · 119 comments\nhttps://www.reddit.com/r/ChatGPT/comments/1s0eoqi/chatgpt_is_way_better_when_you_give_it_a_wall_of/",
+      "permalink": "https://www.reddit.com/r/ChatGPT/comments/1s0eoqi/chatgpt_is_way_better_when_you_give_it_a_wall_of/",
+      "id": "1s0eoqi"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/llm-finetuning-vs-prompt-engineering/runs/2026-03-24T10-52-47-474Z/cards/1rxju0h.png",
+      "caption": "3) 747 vs A380. A look at the massive difference in wing area. Absolutely insane piece of engineering!!\nr/QantasAirways · score 25 · 1547 ups · 63 comments\nhttps://www.reddit.com/r/QantasAirways/comments/1rxju0h/747_vs_a380_a_look_at_the_massive_difference_in/",
+      "permalink": "https://www.reddit.com/r/QantasAirways/comments/1rxju0h/747_vs_a380_a_look_at_the_massive_difference_in/",
+      "id": "1rxju0h"
+    }
+  ]
+}
