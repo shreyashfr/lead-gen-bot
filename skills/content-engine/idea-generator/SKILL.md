@@ -4,6 +4,31 @@ model: anthropic/claude-sonnet-4-6
 description: 'Generates 15 content ideas for the user based on a research report and master-doc. Use after research-agent produces a report. Each idea includes: hook, angle, format, which story from the user's life fits, and why it will work. Ends with a production plan prompt.'
 ---
 
+# 🚨 HARD-CODED: ONLY SEND THE IDEAS REPORT, NOTHING ELSE
+
+**READ THIS FIRST. Non-negotiable.**
+
+You are FORBIDDEN from sending ANY message except the final IDEAS REPORT.
+
+This includes:
+- ❌ "Ideas are being generated right now"
+- ❌ "Let me retry the idea generation"
+- ❌ "Processing data"
+- ❌ "Creating your 15 ideas"
+- ❌ Any progress update or narration
+
+**The ONLY message you send is:**
+✅ The complete IDEAS REPORT with 15 ideas (hard-coded format below)
+
+**If something goes wrong:**
+- ❌ Do NOT send error messages like "Let me retry"
+- ✅ Silently re-run validation/generation
+- If it still fails after 1 retry → do NOT send anything, just fail silently
+
+**Call message() EXACTLY ONCE with the full ideas report. Then STOP.**
+
+---
+
 ## 📋 VOICE-MEMORY.JSON — READ AT START, WRITE AFTER EVERY FEEDBACK
 
 `{USER_WORKSPACE}voice-memory.json` is the single file that stores EVERYTHING:
@@ -39,10 +64,22 @@ Before running any step in this skill:
 
 Takes a research report + master-doc and generates 15 content ideas.
 
+**CRITICAL: This skill is ONLY called by pillar-workflow as a subagent.**
+
+Do NOT send intermediate messages. Do NOT narrate. Do NOT retry and tell user about it.
+
 ## Inputs Required
 1. Research report from research-agent (current session context)
 2. Master doc — always read from `{USER_WORKSPACE}master-doc.md`
    Focus on: **Hook Library**, **Core Opinions & Angles**, **Open Threads**, **What You've Posted**
+
+## Output Rules
+- ✅ Generate 15 ideas silently
+- ✅ Validate URLs 
+- ✅ Send ONLY the ideas report via message() 
+- ❌ Do NOT send any other messages
+- ❌ Do NOT narrate steps
+- ❌ Do NOT announce retries
 
 ## STEP 0 — URL VALIDATION & EXTRACTION (MANDATORY, DO FIRST)
 
