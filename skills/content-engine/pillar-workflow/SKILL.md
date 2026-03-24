@@ -137,32 +137,54 @@ Task:
 
 Generate 15 ideas ONLY. Do NOT explain, narrate, or add anything.
 
-Each idea format (exact, no variations):
-[N]. [Title]
-Hook: \"[hook text]\"
-Angle: [one sentence]
-Format: [LinkedIn Post|Twitter Thread|X Article|Tweet|Instagram Carousel]
-Story: [story reference]
-Why: [one sentence rationale]
+EXACT FORMAT FOR EACH IDEA (no variations, copy exactly):
+
+📌 Idea #[N] — \"[idea title]\"
+Format: [LP|TH|XA|TW|CA]
+Hook: \"[specific hook text]\"
+Rationale: [one sentence explaining why this works]
 📎 Source: [full URL from research report]
 
-After all 15:
+[blank line between ideas]
+
+LEGEND:
+LP = LinkedIn Post
+TH = Twitter Thread
+XA = X Article
+TW = Tweet
+CA = Instagram Carousel
+
+EXAMPLE FORMAT:
+📌 Idea #1 — \"RAG is dead\" (clickbait unpack)
+Format: TH
+Hook: \"Saw a YouTube video: 'RAG is dead.' But is it really? Let me unpack what's actually happening with retrieval-augmented generation in 2026.\"
+Rationale: Hook on trending narrative. Thoughtful rebuttal. Engages contrarian thinkers.
+📎 Source: https://www.youtube.com/watch?v=f3zHina9MTo
+
+📌 Idea #2 — [next idea...]
+...
+
+[AFTER ALL 15 IDEAS, INCLUDE EXACTLY THIS, NO VARIATION:]
 
 ━━━━━━━━━━
 
 📅 What's your production plan?
 
 Tell me:
-1. Which ideas you want (e.g. 2, 5, 9)
-2. How many of each format:
+
+1. Which ideas you want to produce (pick numbers, e.g. 2, 5, 9)
+2. How many of each format you want this week:
 
 e.g.
-5x LinkedIn Posts
-4x Twitter Threads
-3x Tweets
-3x Instagram Carousels
+
+• 5x LinkedIn Posts
+• 4x Twitter Threads
+• 3x Tweets
+• 3x Instagram Carousels
 
 I'll start producing one at a time and send for your review before moving to the next.
+
+[THAT IS ALL. NO OTHER TEXT.]
 
 Post this complete report directly to Telegram:
 - Channel: telegram
