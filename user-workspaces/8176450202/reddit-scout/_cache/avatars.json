@@ -401,6 +401,72 @@
       "url": "https://i.redd.it/snoovatar/avatars/3e023d23-2612-4824-b4f6-84347517e234.png",
       "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/llm-finetuning-vs-prompt-engineering/runs/2026-03-24T10-52-47-474Z/avatars/Ryanlion1992.png",
       "fetchedAt": "2026-03-24T10:53:02.186Z"
+    },
+    "gwern": {
+      "user": "gwern",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_5.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-11-55-523Z/avatars/gwern.png",
+      "fetchedAt": "2026-03-24T12:12:46.743Z"
+    },
+    "BusinesstoriesMedia": {
+      "user": "BusinesstoriesMedia",
+      "url": "https://styles.redditmedia.com/t5_g6hp4n/styles/profileIcon_6s2o0dnr249g1.png?width=256&height=256&crop=256:256,smart&s=4a6787bf7d30d90791802c8c727f4efe22772a17",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-11-55-523Z/avatars/BusinesstoriesMedia.png",
+      "fetchedAt": "2026-03-24T12:12:48.497Z"
+    },
+    "StartledWatermelon": {
+      "user": "StartledWatermelon",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_7.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-11-55-523Z/avatars/StartledWatermelon.png",
+      "fetchedAt": "2026-03-24T12:12:49.745Z"
+    },
+    "botirkhaltaev": {
+      "user": "botirkhaltaev",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_6.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-11-55-523Z/avatars/botirkhaltaev.png",
+      "fetchedAt": "2026-03-24T12:12:51.014Z"
+    },
+    "party-horse": {
+      "user": "party-horse",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_2.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-11-55-523Z/avatars/party-horse.png",
+      "fetchedAt": "2026-03-24T12:12:52.414Z"
+    },
+    "madstom": {
+      "user": "madstom",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_6.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-11-55-523Z/avatars/madstom.png",
+      "fetchedAt": "2026-03-24T12:12:53.794Z"
+    },
+    "InstanceSignal5153": {
+      "user": "InstanceSignal5153",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_0.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-11-55-523Z/avatars/InstanceSignal5153.png",
+      "fetchedAt": "2026-03-24T12:12:55.045Z"
+    },
+    "This_Salary_9495": {
+      "user": "This_Salary_9495",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_5.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-11-55-523Z/avatars/This_Salary_9495.png",
+      "fetchedAt": "2026-03-24T12:12:56.284Z"
+    },
+    "voguediaries": {
+      "user": "voguediaries",
+      "url": "https://i.redd.it/snoovatar/avatars/nftv2_bmZ0X2VpcDE1NToxMzdfZjgzNTNmMTAxZWNkNDQ3MjRlZjBlYTU2NGRmNDFiOTYxMWVhZDM3Nl8xMDY_rare_3528847d-3f2a-4263-b3a5-bdf22c5bb152.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-12-59-039Z/avatars/voguediaries.png",
+      "fetchedAt": "2026-03-24T12:13:49.617Z"
+    },
+    "Mundane_Reference134": {
+      "user": "Mundane_Reference134",
+      "url": "https://i.redd.it/snoovatar/avatars/15fd28ea-ddbd-4fc4-bb13-b84cbca5a3a9.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-12-59-039Z/avatars/Mundane_Reference134.png",
+      "fetchedAt": "2026-03-24T12:13:50.655Z"
+    },
+    "mgostIH": {
+      "user": "mgostIH",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_1.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-12-59-039Z/avatars/mgostIH.png",
+      "fetchedAt": "2026-03-24T12:13:51.737Z"
     }
   }
 }

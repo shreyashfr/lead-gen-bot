@@ -1,0 +1,336 @@
+[
+  {
+    "id": "2028460046510965160",
+    "text": "Introducing the Qwen 3.5 Small Model Series\nQwen3.5-0.8B · Qwen3.5-2B · Qwen3.5-4B · Qwen3.5-9B\n\n More intelligence, less compute.\nThese small models are built on the same Qwen3.5 foundation — native multimodal, improved architecture, scaled RL:\n• 0.8B / 2B → tiny, fast,",
+    "author_name": "Qwen",
+    "author_handle": "@Alibaba_Qwen",
+    "metrics": {
+      "likes": 21000,
+      "retweets": 4200,
+      "replies": 918,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HCaJnUQaoAAaMIc?format=jpg&name=small"
+    ],
+    "viral_score": 10,
+    "url": "https://x.com/Alibaba_Qwen/status/2028460046510965160"
+  },
+  {
+    "id": "2007198916073136152",
+    "text": "Much like the switch in 2025 from language models to reasoning models, we think 2026 will be all about the switch to Recursive Language Models (RLMs).\n\nIt turns out that models can be far more powerful if you allow them to treat *their own prompts* as an object in an external",
+    "author_name": "alex zhang",
+    "author_handle": "@a1zhang",
+    "metrics": {
+      "likes": 7400,
+      "retweets": 1300,
+      "replies": 252,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G9r_9C3XYAA7Psq?format=jpg&name=small"
+    ],
+    "viral_score": 10,
+    "url": "https://x.com/a1zhang/status/2007198916073136152"
+  },
+  {
+    "id": "2016519679335121263",
+    "text": "𝗨𝗣𝗗𝗔𝗧𝗘𝗗 𝗟𝗜𝗦𝗧 𝗙𝗢𝗥 𝟮𝟬𝟮𝟲\n    \n 𝗜𝗱𝗲𝗮𝘀\n• ChatGPT\n• Claude\n• Bing\n\n 𝗪𝗲𝗯𝘀𝗶𝘁𝗲\n• 10Web\n• Durable\n• Framer\n\n 𝗪𝗿𝗶𝘁𝗶𝗻𝗴\n• Rytr\n• Jasper\n• Writesonic\n\n 𝗖𝗵𝗮𝘁𝗯𝗼𝘁𝘀\n• Chatbase\n• SiteGPT\n• ChatSonic\n\n 𝗔𝘂𝘁𝗼𝗺𝗮𝘁𝗶𝗼𝗻\n• Make\n•",
+    "author_name": "Jay Bisen",
+    "author_handle": "@JayBisen473370",
+    "metrics": {
+      "likes": 3900,
+      "retweets": 1000,
+      "replies": 115,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G_wd9hMb0AEKu1w?format=jpg&name=small"
+    ],
+    "viral_score": 6,
+    "url": "https://x.com/JayBisen473370/status/2016519679335121263"
+  },
+  {
+    "id": "2023598089916051538",
+    "text": "𝗨𝗣𝗗𝗔𝗧𝗘𝗗 𝗟𝗜𝗦𝗧 𝗙𝗢𝗥 𝟮𝟬𝟮𝟲\n    \n 𝗜𝗱𝗲𝗮𝘀\n• ChatGPT\n• Claude\n• Bing\n\n 𝗪𝗲𝗯𝘀𝗶𝘁𝗲\n• 10Web\n• Durable\n• Framer\n\n 𝗪𝗿𝗶𝘁𝗶𝗻𝗴\n• Rytr\n• Jasper\n• Writesonic\n\n 𝗖𝗵𝗮𝘁𝗯𝗼𝘁𝘀\n• Chatbase\n• SiteGPT\n• ChatSonic\n\n 𝗔𝘂𝘁𝗼𝗺𝗮𝘁𝗶𝗼𝗻\n• Make\n•",
+    "author_name": "Jay Bisen",
+    "author_handle": "@JayBisen473370",
+    "metrics": {
+      "likes": 2200,
+      "retweets": 724,
+      "replies": 106,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HBVDuaybsAADHLq?format=jpg&name=small"
+    ],
+    "viral_score": 3.8,
+    "url": "https://x.com/JayBisen473370/status/2023598089916051538"
+  },
+  {
+    "id": "2007554788377145564",
+    "text": "\"Recursive Language Models\"\n\nA potentially big direction for LLMs in 2026 from MIT researchers\n\nIn their approach, a prompt isn’t “run” directly, instead it’s stored as a variable in an external Python REPL, and the language model writes code to inspect/slice/decompose that long",
+    "author_name": "alphaXiv",
+    "author_handle": "@askalphaxiv",
+    "metrics": {
+      "likes": 1500,
+      "retweets": 302,
+      "replies": 63,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G9xEGMQaMAAIbpi?format=jpg&name=small"
+    ],
+    "viral_score": 2.2,
+    "url": "https://x.com/askalphaxiv/status/2007554788377145564"
+  },
+  {
+    "id": "2008653691554001325",
+    "text": "One of the most important technological breakthroughs in 2026 is:\n\"Small Language Models\" (SLMs)\nwhich are the opposite of \"Large Language Models\" (LLMs) like ChatGPT and Gemini and the like.\n\nSmall Language Models (SLMs), in short, are like ChatGPT and Gemini but in a smaller",
+    "author_name": "عبدالعزيز الحمادي",
+    "author_handle": "@Abdulaziz_Hmadi",
+    "metrics": {
+      "likes": 870,
+      "retweets": 107,
+      "replies": 16,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G-ArotIW4AAC0xN?format=png&name=small"
+    ],
+    "viral_score": 1.1,
+    "url": "https://x.com/Abdulaziz_Hmadi/status/2008653691554001325"
+  },
+  {
+    "id": "2017212472709861455",
+    "text": "𝗨𝗣𝗗𝗔𝗧𝗘𝗗 𝗟𝗜𝗦𝗧 𝗙𝗢𝗥 𝟮𝟬𝟮𝟲\n    \n 𝗜𝗱𝗲𝗮𝘀\n• ChatGPT\n• Claude\n• Bing\n\n 𝗪𝗲𝗯𝘀𝗶𝘁𝗲\n• 10Web\n• Durable\n• Framer\n\n 𝗪𝗿𝗶𝘁𝗶𝗻𝗴\n• Rytr\n• Jasper\n• Writesonic\n\n 𝗖𝗵𝗮𝘁𝗯𝗼𝘁𝘀\n• Chatbase\n• SiteGPT\n• ChatSonic\n\n 𝗔𝘂𝘁𝗼𝗺𝗮𝘁𝗶𝗼𝗻\n• Make\n•",
+    "author_name": "Jay Bisen",
+    "author_handle": "@JayBisen473370",
+    "metrics": {
+      "likes": 394,
+      "retweets": 105,
+      "replies": 77,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G_6UDZCbEAADbvE?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/JayBisen473370/status/2017212472709861455"
+  },
+  {
+    "id": "1991824478318240191",
+    "text": "Hands-on tutorials on fine-tuning and deployment of Small Language Models.\n\nEnjoy ↓\n\nhttps://\ngithub.com/Liquid4All/coo\nkbook\n…",
+    "author_name": "Pau Labarta Bajo",
+    "author_handle": "@paulabartabajo_",
+    "metrics": {
+      "likes": 348,
+      "retweets": 61,
+      "replies": 3,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G6RhzkhXsAA7TMH?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/paulabartabajo_/status/1991824478318240191"
+  },
+  {
+    "id": "2027338929385705486",
+    "text": "𝗨𝗣𝗗𝗔𝗧𝗘𝗗 𝗟𝗜𝗦𝗧 𝗙𝗢𝗥 𝟮𝟬𝟮𝟲\n    \n 𝗜𝗱𝗲𝗮𝘀\n• ChatGPT\n• Claude\n• Bing\n\n 𝗪𝗲𝗯𝘀𝗶𝘁𝗲\n• 10Web\n• Durable\n• Framer\n\n 𝗪𝗿𝗶𝘁𝗶𝗻𝗴\n• Rytr\n• Jasper\n• Writesonic\n\n 𝗖𝗵𝗮𝘁𝗯𝗼𝘁𝘀\n• Chatbase\n• SiteGPT\n• ChatSonic\n\n 𝗔𝘂𝘁𝗼𝗺𝗮𝘁𝗶𝗼𝗻\n• Make\n•",
+    "author_name": "Jay Bisen",
+    "author_handle": "@JayBisen473370",
+    "metrics": {
+      "likes": 338,
+      "retweets": 98,
+      "replies": 70,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HCKOAFZaUAAB61c?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/JayBisen473370/status/2027338929385705486"
+  },
+  {
+    "id": "1760868783076302910",
+    "text": "TinyLLaVA\n\nA Framework of Small-scale Large Multimodal Models\n\npresent the TinyLLaVA framework that provides a unified perspective in designing and analyzing the small-scale Large Multimodal Models (LMMs). We empirically study the effects of different vision encoders, connection",
+    "author_name": "AK",
+    "author_handle": "@_akhaliq",
+    "metrics": {
+      "likes": 329,
+      "retweets": 73,
+      "replies": 6,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/GG_czEwXEAAZgcp?format=png&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/_akhaliq/status/1760868783076302910"
+  },
+  {
+    "id": "1953451750322798770",
+    "text": "这个 KittenTTS 是最近最有趣的一个模型了：\nhttps://\ngithub.com/KittenML/Kitte\nnTTS\n…\n\ntext-to-speech 的模型，超轻量级啊，大小只有 25 Mb，无需 GPU，支持在任何设备上运行，提供了四种语音选项，这里有个 Demo，使用 ONNX Runtime Web 加载模型文件，对于这样的大小，效果非常惊艳啊，大家也可以试试看。",
+    "author_name": "Viking",
+    "author_handle": "@vikingmute",
+    "metrics": {
+      "likes": 294,
+      "retweets": 61,
+      "replies": 9,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/vikingmute/status/1953451750322798770"
+  },
+  {
+    "id": "2019345434150662184",
+    "text": "𝗨𝗣𝗗𝗔𝗧𝗘𝗗 𝗟𝗜𝗦𝗧 𝗙𝗢𝗥 𝟮𝟬𝟮𝟲\n    \n 𝗜𝗱𝗲𝗮𝘀\n• ChatGPT\n• Claude\n• Bing\n\n 𝗪𝗲𝗯𝘀𝗶𝘁𝗲\n• 10Web\n• Durable\n• Framer\n\n 𝗪𝗿𝗶𝘁𝗶𝗻𝗴\n• Rytr\n• Jasper\n• Writesonic\n\n 𝗖𝗵𝗮𝘁𝗯𝗼𝘁𝘀\n• Chatbase\n• SiteGPT\n• ChatSonic\n\n 𝗔𝘂𝘁𝗼𝗺𝗮𝘁𝗶𝗼𝗻\n• Make\n•",
+    "author_name": "Jay Bisen",
+    "author_handle": "@JayBisen473370",
+    "metrics": {
+      "likes": 289,
+      "retweets": 76,
+      "replies": 79,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HAYn-IKacAMqE_G?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/JayBisen473370/status/2019345434150662184"
+  },
+  {
+    "id": "2034780991206858762",
+    "text": "TTS Models That Run on CPU: As Small as Just 25MB\n\nKittenTTS releases three lightweight speech synthesis models (15M/40M/80M parameters), with the smallest model only 25MB, capable of efficient operation on CPU.\n\n\nhttps://\ngithub.com/KittenML/Kitte\nnTTS\n…\n\nCompressing SOTA-level TTS to 25MB means",
+    "author_name": "岚叔",
+    "author_handle": "@LufzzLiz",
+    "metrics": {
+      "likes": 278,
+      "retweets": 71,
+      "replies": 8,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HDz-hRIboAETB-f?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/LufzzLiz/status/2034780991206858762"
+  },
+  {
+    "id": "1893089068197781621",
+    "text": "看到一个超小模型列表，全都小于360M，这种电子鹦鹉适合快速验证微调的场景。感兴趣的同学可以收藏了\n\n地址：\nhttp://\nhuggingface.co/collections/Fe\nlladrin/foundation-text-generation-models-below-360m-parameters-659ad9f2e1604bf996b90251\n…\n\n#AI #LLM",
+    "author_name": "karminski-牙医",
+    "author_handle": "@karminski3",
+    "metrics": {
+      "likes": 235,
+      "retweets": 44,
+      "replies": 5,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/GkWP_bCaoAAkB3n?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/karminski3/status/1893089068197781621"
+  },
+  {
+    "id": "2026898944085663883",
+    "text": "A 1.2B reasoning model.\nYour browser.\nZero data sent to any server.\n\nThis is what local AI looks like in 2026",
+    "author_name": "Pau Labarta Bajo",
+    "author_handle": "@paulabartabajo_",
+    "metrics": {
+      "likes": 232,
+      "retweets": 33,
+      "replies": 8,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/paulabartabajo_/status/2026898944085663883"
+  },
+  {
+    "id": "2019749107808849996",
+    "text": "𝗨𝗣𝗗𝗔𝗧𝗘𝗗 𝗟𝗜𝗦𝗧 𝗙𝗢𝗥 𝟮𝟬𝟮𝟲\n    \n 𝗜𝗱𝗲𝗮𝘀\n• ChatGPT\n• Claude\n• Bing\n\n 𝗪𝗲𝗯𝘀𝗶𝘁𝗲\n• 10Web\n• Durable\n• Framer\n\n 𝗪𝗿𝗶𝘁𝗶𝗻𝗴\n• Rytr\n• Jasper\n• Writesonic\n\n 𝗖𝗵𝗮𝘁𝗯𝗼𝘁𝘀\n• Chatbase\n• SiteGPT\n• ChatSonic\n\n 𝗔𝘂𝘁𝗼𝗺𝗮𝘁𝗶𝗼𝗻\n• Make\n•",
+    "author_name": "Jay Bisen",
+    "author_handle": "@JayBisen473370",
+    "metrics": {
+      "likes": 216,
+      "retweets": 57,
+      "replies": 80,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HAeXGsZbwAA5_1p?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/JayBisen473370/status/2019749107808849996"
+  },
+  {
+    "id": "2017631587878498370",
+    "text": "𝗨𝗣𝗗𝗔𝗧𝗘𝗗 𝗟𝗜𝗦𝗧 𝗙𝗢𝗥 𝟮𝟬𝟮𝟲\n    \n 𝗜𝗱𝗲𝗮𝘀\n• ChatGPT\n• Claude\n• Bing\n\n 𝗪𝗲𝗯𝘀𝗶𝘁𝗲\n• 10Web\n• Durable\n• Framer\n\n 𝗪𝗿𝗶𝘁𝗶𝗻𝗴\n• Rytr\n• Jasper\n• Writesonic\n\n 𝗖𝗵𝗮𝘁𝗯𝗼𝘁𝘀\n• Chatbase\n• SiteGPT\n• ChatSonic\n\n 𝗔𝘂𝘁𝗼𝗺𝗮𝘁𝗶𝗼𝗻\n• Make\n•",
+    "author_name": "Jay Bisen",
+    "author_handle": "@JayBisen473370",
+    "metrics": {
+      "likes": 199,
+      "retweets": 60,
+      "replies": 81,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HAARO5IbEAAXAWB?format=jpg&name=900x900"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/JayBisen473370/status/2017631587878498370"
+  },
+  {
+    "id": "2035311028070703353",
+    "text": "Tool Calling with Small Language Models.\n\nStep by step ↓\nhttps://paulabartabajo.substack.com/p/75aa2112-e925-47c2-b4de-4c9d8e825247…",
+    "author_name": "Pau Labarta Bajo@paulabartabajo_·Mar 21",
+    "author_handle": "unknown",
+    "metrics": {
+      "likes": 53,
+      "retweets": 5,
+      "replies": 2,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/paulabartabajo_/status/2035311028070703353"
+  },
+  {
+    "id": "2034888280739635441",
+    "text": "Forget moonshot AI. Real business wins come from narrow, data-driven use cases with small language models, not just LLMs. Focus on solving specific problems and integrating AI with your own data for tangible value. #AI #BusinessTech",
+    "author_name": "DavidLinthicum",
+    "author_handle": "@DavidLinthicum",
+    "metrics": {
+      "likes": 2,
+      "retweets": 1,
+      "replies": 0,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/DavidLinthicum/status/2034888280739635441"
+  }
+]

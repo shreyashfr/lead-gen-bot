@@ -1,0 +1,35 @@
+{
+  "n": 5,
+  "cards": [
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-24-52-218Z/cards/1rrts20.png",
+      "caption": "1) Conan O'Brien: \"I have incredible empathy for people who have immigrated to another country. It takes an entire lifetime to go to a country where, often, people don't speak the language. They have to spend their entire lives just getting things started for the next generation.\"\nr/Fauxmoi · score 201 · 25861 ups · 206 comments\nhttps://www.reddit.com/r/Fauxmoi/comments/1rrts20/conan_obrien_i_have_incredible_empathy_for_people/",
+      "permalink": "https://www.reddit.com/r/Fauxmoi/comments/1rrts20/conan_obrien_i_have_incredible_empathy_for_people/",
+      "id": "1rrts20"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-24-52-218Z/cards/1rl6cyy.png",
+      "caption": "2) Bentley Update – A Small Win Today\nr/GuyCry · score 20 · 4326 ups · 197 comments\nhttps://www.reddit.com/r/GuyCry/comments/1rl6cyy/bentley_update_a_small_win_today/",
+      "permalink": "https://www.reddit.com/r/GuyCry/comments/1rl6cyy/bentley_update_a_small_win_today/",
+      "id": "1rl6cyy"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-24-52-218Z/cards/1s15cd4.png",
+      "caption": "3) \"Against Time Series Foundation Models Or: My Experience in Modern Forecasting\", shako 2026\nr/mlscaling · score 1 · 19 ups · 2 comments\nhttps://www.reddit.com/r/mlscaling/comments/1s15cd4/against_time_series_foundation_models_or_my/",
+      "permalink": "https://www.reddit.com/r/mlscaling/comments/1s15cd4/against_time_series_foundation_models_or_my/",
+      "id": "1s15cd4"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-24-52-218Z/cards/1rq5y05.png",
+      "caption": "4) \"How to train the best embedding model in the world: one PhD later, I'm giving my secrets away for free\", Jack Morris (why doesn't scaling non-recommender embedding models work too well? bad gradients/optimization)\nr/mlscaling · score 0 · 18 ups · 5 comments\nhttps://www.reddit.com/r/mlscaling/comments/1rq5y05/how_to_train_the_best_embedding_model_in_the/",
+      "permalink": "https://www.reddit.com/r/mlscaling/comments/1rq5y05/how_to_train_the_best_embedding_model_in_the/",
+      "id": "1rq5y05"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-24-52-218Z/cards/1rx0rdh.png",
+      "caption": "5) What Are Large Language Models and How Do They Actually Work?\nr/LargeLanguageModels · score 0 · 4 ups · 2 comments\nhttps://www.reddit.com/r/LargeLanguageModels/comments/1rx0rdh/what_are_large_language_models_and_how_do_they/",
+      "permalink": "https://www.reddit.com/r/LargeLanguageModels/comments/1rx0rdh/what_are_large_language_models_and_how_do_they/",
+      "id": "1rx0rdh"
+    }
+  ]
+}

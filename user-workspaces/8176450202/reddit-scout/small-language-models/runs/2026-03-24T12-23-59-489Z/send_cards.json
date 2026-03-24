@@ -1,0 +1,35 @@
+{
+  "n": 5,
+  "cards": [
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-23-59-489Z/cards/1s15cd4.png",
+      "caption": "1) \"Against Time Series Foundation Models Or: My Experience in Modern Forecasting\", shako 2026\nr/mlscaling · score 1 · 19 ups · 2 comments\nhttps://www.reddit.com/r/mlscaling/comments/1s15cd4/against_time_series_foundation_models_or_my/",
+      "permalink": "https://www.reddit.com/r/mlscaling/comments/1s15cd4/against_time_series_foundation_models_or_my/",
+      "id": "1s15cd4"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-23-59-489Z/cards/1rq5y05.png",
+      "caption": "2) \"How to train the best embedding model in the world: one PhD later, I'm giving my secrets away for free\", Jack Morris (why doesn't scaling non-recommender embedding models work too well? bad gradients/optimization)\nr/mlscaling · score 0 · 19 ups · 5 comments\nhttps://www.reddit.com/r/mlscaling/comments/1rq5y05/how_to_train_the_best_embedding_model_in_the/",
+      "permalink": "https://www.reddit.com/r/mlscaling/comments/1rq5y05/how_to_train_the_best_embedding_model_in_the/",
+      "id": "1rq5y05"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-23-59-489Z/cards/1rx0rdh.png",
+      "caption": "3) What Are Large Language Models and How Do They Actually Work?\nr/LargeLanguageModels · score 0 · 3 ups · 2 comments\nhttps://www.reddit.com/r/LargeLanguageModels/comments/1rx0rdh/what_are_large_language_models_and_how_do_they/",
+      "permalink": "https://www.reddit.com/r/LargeLanguageModels/comments/1rx0rdh/what_are_large_language_models_and_how_do_they/",
+      "id": "1rx0rdh"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-23-59-489Z/cards/1rsp23c.png",
+      "caption": "4) Training Language Models via Neural Cellular Automata, Lee et al. 2026 [pre-pre-training on abstract rule-based patterns improves language modelling]\nr/mlscaling · score 0 · 9 ups · 1 comments\nhttps://www.reddit.com/r/mlscaling/comments/1rsp23c/training_language_models_via_neural_cellular/",
+      "permalink": "https://www.reddit.com/r/mlscaling/comments/1rsp23c/training_language_models_via_neural_cellular/",
+      "id": "1rsp23c"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-23-59-489Z/cards/1r1v4cs.png",
+      "caption": "5) Mixture-of-Models routing beats single LLMs on SWE-Bench via task specialization\nr/LargeLanguageModels · score 0 · 3 ups · 4 comments\nhttps://www.reddit.com/r/LargeLanguageModels/comments/1r1v4cs/mixtureofmodels_routing_beats_single_llms_on/",
+      "permalink": "https://www.reddit.com/r/LargeLanguageModels/comments/1r1v4cs/mixtureofmodels_routing_beats_single_llms_on/",
+      "id": "1r1v4cs"
+    }
+  ]
+}

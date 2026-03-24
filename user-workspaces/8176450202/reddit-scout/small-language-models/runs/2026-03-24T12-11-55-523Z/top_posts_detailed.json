@@ -1,0 +1,1012 @@
+[
+  {
+    "id": "1s15cd4",
+    "subreddit": "mlscaling",
+    "title": "\"Against Time Series Foundation Models Or: My Experience in Modern Forecasting\", shako 2026",
+    "selftext": "",
+    "author": "gwern",
+    "created_utc": 1774234383,
+    "permalink": "https://www.reddit.com/r/mlscaling/comments/1s15cd4/against_time_series_foundation_models_or_my/",
+    "url": "https://shakoist.substack.com/p/against-time-series-foundation-models",
+    "domain": "shakoist.substack.com",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 19,
+    "score": 19,
+    "num_comments": 2,
+    "upvote_ratio": 0.89,
+    "thumbnail": "https://external-preview.redd.it/ZA0e8Wu0ApjH_8oBTUXcQl29RK-y_UKlPvbWwHn36P0.jpeg?width=140&amp;height=78&amp;auto=webp&amp;s=7daa806f5bb72e0c8fb52b1b0e3e12bb37080e81",
+    "media": null,
+    "post_hint": "link",
+    "listing": "rising",
+    "viral_score": 0.8055999772325324,
+    "detail": {
+      "post": {
+        "id": "1s15cd4",
+        "title": "\"Against Time Series Foundation Models Or: My Experience in Modern Forecasting\", shako 2026",
+        "selftext": "",
+        "author": "gwern",
+        "subreddit": "mlscaling",
+        "created_utc": 1774234383,
+        "ups": 20,
+        "num_comments": 2,
+        "upvote_ratio": 0.92,
+        "permalink": "https://www.reddit.com/r/mlscaling/comments/1s15cd4/against_time_series_foundation_models_or_my/",
+        "url": "https://shakoist.substack.com/p/against-time-series-foundation-models",
+        "is_self": false,
+        "post_hint": "link",
+        "thumbnail": "https://external-preview.redd.it/ZA0e8Wu0ApjH_8oBTUXcQl29RK-y_UKlPvbWwHn36P0.jpeg?width=140&amp;height=78&amp;auto=webp&amp;s=7daa806f5bb72e0c8fb52b1b0e3e12bb37080e81",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://external-preview.redd.it/ZA0e8Wu0ApjH_8oBTUXcQl29RK-y_UKlPvbWwHn36P0.jpeg?auto=webp&amp;s=9cfdd4df61d1452e1d9764d602c771da691af86b",
+                "width": 1200,
+                "height": 675
+              },
+              "resolutions": [
+                {
+                  "url": "https://external-preview.redd.it/ZA0e8Wu0ApjH_8oBTUXcQl29RK-y_UKlPvbWwHn36P0.jpeg?width=108&amp;crop=smart&amp;auto=webp&amp;s=111e6b24ee2df7b1100474933124cb7dc799cf47",
+                  "width": 108,
+                  "height": 60
+                },
+                {
+                  "url": "https://external-preview.redd.it/ZA0e8Wu0ApjH_8oBTUXcQl29RK-y_UKlPvbWwHn36P0.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=c02e52a37107feb4d92b7170d459fa34bb2ebf8b",
+                  "width": 216,
+                  "height": 121
+                },
+                {
+                  "url": "https://external-preview.redd.it/ZA0e8Wu0ApjH_8oBTUXcQl29RK-y_UKlPvbWwHn36P0.jpeg?width=320&amp;crop=smart&amp;auto=webp&amp;s=d2c6a0be6bd99dce69269b5d2ef366e7975ec0ad",
+                  "width": 320,
+                  "height": 180
+                },
+                {
+                  "url": "https://external-preview.redd.it/ZA0e8Wu0ApjH_8oBTUXcQl29RK-y_UKlPvbWwHn36P0.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=e4ffbc52ac5807e09e2da4af33025b563d876f24",
+                  "width": 640,
+                  "height": 360
+                },
+                {
+                  "url": "https://external-preview.redd.it/ZA0e8Wu0ApjH_8oBTUXcQl29RK-y_UKlPvbWwHn36P0.jpeg?width=960&amp;crop=smart&amp;auto=webp&amp;s=906912fffb607a943391d3fd5efa939f31f48c7e",
+                  "width": 960,
+                  "height": 540
+                },
+                {
+                  "url": "https://external-preview.redd.it/ZA0e8Wu0ApjH_8oBTUXcQl29RK-y_UKlPvbWwHn36P0.jpeg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=ccf7fb4e0b65c66999d9230164428c4d4dd7a2a8",
+                  "width": 1080,
+                  "height": 607
+                }
+              ],
+              "variants": {},
+              "id": "ZA0e8Wu0ApjH_8oBTUXcQl29RK-y_UKlPvbWwHn36P0"
+            }
+          ],
+          "enabled": false
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "Repulsive_Tart3669",
+          "ups": 2,
+          "body": "I find some timeseries foundation models (TSFM) useful when the forecasting or anomaly detection in IT space (IT + facility) needs to be done at scale and long horizons. The scale here is understood in terms of amount of data and diversity of metrics. TSFM models provide pretty strong baselines, also managing one model is much more convenient compared to a large fleet of local (e.g., per-metric) models.   \nSetting a threshold on the performance metric (like MAPE) for data slices also helps. As long as the perf metric is below that threshold for a particular data slice (metric, family of metrics, use case, etc.) and forecast horizon - we are good - justifying model improvements in that regime maybe quite challenging from business perspective. For those cases where accuracy is not acceptable, we can go with other local models, or TSFM adaptors (e.g., LoRA)."
+        },
+        {
+          "author": "canbooo",
+          "ups": 2,
+          "body": "I think the premise of such models is pretty bad as there is no such manifold like the language in the case of \"all possible timeseries\" problems. Nevertheless, I practically use some as good baselines to beat. If you cannot beat them, you are probably doing it wrong (or your data is too noisy)"
+        }
+      ]
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "gwern",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_5.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-11-55-523Z/avatars/gwern.png",
+      "fetchedAt": "2026-03-24T12:12:46.743Z"
+    }
+  },
+  {
+    "id": "1rq5y05",
+    "subreddit": "mlscaling",
+    "title": "\"How to train the best embedding model in the world: one PhD later, I'm giving my secrets away for free\", Jack Morris (why doesn't scaling non-recommender embedding models work too well? bad gradients/optimization)",
+    "selftext": "",
+    "author": "gwern",
+    "created_utc": 1773169235,
+    "permalink": "https://www.reddit.com/r/mlscaling/comments/1rq5y05/how_to_train_the_best_embedding_model_in_the/",
+    "url": "https://blog.jxmo.io/p/how-to-train-the-best-embedding-model",
+    "domain": "blog.jxmo.io",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 19,
+    "score": 19,
+    "num_comments": 5,
+    "upvote_ratio": 0.83,
+    "thumbnail": "https://external-preview.redd.it/CrFENsbv9TqUs_bkoXHQfofZixbzmKqoExPotgc4kf8.jpeg?width=140&amp;height=133&amp;auto=webp&amp;s=d7c9e32d688cdf6df51ef4a9c0c86c770d452085",
+    "media": null,
+    "post_hint": "link",
+    "listing": "rising",
+    "viral_score": 0.0823879634998577,
+    "detail": {
+      "post": {
+        "id": "1rq5y05",
+        "title": "\"How to train the best embedding model in the world: one PhD later, I'm giving my secrets away for free\", Jack Morris (why doesn't scaling non-recommender embedding models work too well? bad gradients/optimization)",
+        "selftext": "",
+        "author": "gwern",
+        "subreddit": "mlscaling",
+        "created_utc": 1773169235,
+        "ups": 20,
+        "num_comments": 5,
+        "upvote_ratio": 0.83,
+        "permalink": "https://www.reddit.com/r/mlscaling/comments/1rq5y05/how_to_train_the_best_embedding_model_in_the/",
+        "url": "https://blog.jxmo.io/p/how-to-train-the-best-embedding-model",
+        "is_self": false,
+        "post_hint": "link",
+        "thumbnail": "https://external-preview.redd.it/CrFENsbv9TqUs_bkoXHQfofZixbzmKqoExPotgc4kf8.jpeg?width=140&amp;height=133&amp;auto=webp&amp;s=d7c9e32d688cdf6df51ef4a9c0c86c770d452085",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://external-preview.redd.it/CrFENsbv9TqUs_bkoXHQfofZixbzmKqoExPotgc4kf8.jpeg?auto=webp&amp;s=e73e642e753e3b13529ee922e7206f561cd14acc",
+                "width": 706,
+                "height": 675
+              },
+              "resolutions": [
+                {
+                  "url": "https://external-preview.redd.it/CrFENsbv9TqUs_bkoXHQfofZixbzmKqoExPotgc4kf8.jpeg?width=108&amp;crop=smart&amp;auto=webp&amp;s=6233f8aca74913929d02a955cc90c42f5198cac3",
+                  "width": 108,
+                  "height": 103
+                },
+                {
+                  "url": "https://external-preview.redd.it/CrFENsbv9TqUs_bkoXHQfofZixbzmKqoExPotgc4kf8.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=11f3d288c7d8178daf46bc049fd82a7a41a8c9e7",
+                  "width": 216,
+                  "height": 206
+                },
+                {
+                  "url": "https://external-preview.redd.it/CrFENsbv9TqUs_bkoXHQfofZixbzmKqoExPotgc4kf8.jpeg?width=320&amp;crop=smart&amp;auto=webp&amp;s=9998ec04837539050cc3ee14823ca50b5e8494c1",
+                  "width": 320,
+                  "height": 305
+                },
+                {
+                  "url": "https://external-preview.redd.it/CrFENsbv9TqUs_bkoXHQfofZixbzmKqoExPotgc4kf8.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=b7d8a91b59e3acc3be7f6711ac7273258de7fed2",
+                  "width": 640,
+                  "height": 611
+                }
+              ],
+              "variants": {},
+              "id": "CrFENsbv9TqUs_bkoXHQfofZixbzmKqoExPotgc4kf8"
+            }
+          ],
+          "enabled": false
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "MedicalScore3474",
+          "ups": 7,
+          "body": "It's hard to believe that we're three years into the LLM boom, and \"Look at and clean your data\" is still considered non-obvious advice."
+        }
+      ]
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "gwern",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_5.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-11-55-523Z/avatars/gwern.png",
+      "fetchedAt": "2026-03-24T12:12:46.743Z"
+    }
+  },
+  {
+    "id": "1rx0rdh",
+    "subreddit": "LargeLanguageModels",
+    "title": "What Are Large Language Models and How Do They Actually Work?",
+    "selftext": "**Large language models** aren’t magic, though they can certainly feel that way. They are, at their core, sophisticated statistical systems built on a deceptively simple idea: given some words, what word is most likely to come next? From that humble premise, scaled up to a degree that would have seemed absurd fifteen years ago, the whole phenomenon emerges.\n\n***They write code, answer questions, and hold entire conversations. But inside the machine, something surprisingly human-like is happening.*** ",
+    "author": "BusinesstoriesMedia",
+    "created_utc": 1773831676,
+    "permalink": "https://www.reddit.com/r/LargeLanguageModels/comments/1rx0rdh/what_are_large_language_models_and_how_do_they/",
+    "url": "https://i.redd.it/ic6c1x63cspg1.jpeg",
+    "domain": "i.redd.it",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 5,
+    "score": 5,
+    "num_comments": 2,
+    "upvote_ratio": 1,
+    "thumbnail": "https://preview.redd.it/ic6c1x63cspg1.jpeg?width=140&amp;height=80&amp;auto=webp&amp;s=cc2f164cea1007b5b04896f15497a8288726f80c",
+    "media": null,
+    "post_hint": "image",
+    "listing": "rising",
+    "viral_score": 0.05609438858622773,
+    "detail": {
+      "post": {
+        "id": "1rx0rdh",
+        "title": "What Are Large Language Models and How Do They Actually Work?",
+        "selftext": "**Large language models** aren’t magic, though they can certainly feel that way. They are, at their core, sophisticated statistical systems built on a deceptively simple idea: given some words, what word is most likely to come next? From that humble premise, scaled up to a degree that would have seemed absurd fifteen years ago, the whole phenomenon emerges.\n\n***They write code, answer questions, and hold entire conversations. But inside the machine, something surprisingly human-like is happening.*** ",
+        "author": "BusinesstoriesMedia",
+        "subreddit": "LargeLanguageModels",
+        "created_utc": 1773831676,
+        "ups": 3,
+        "num_comments": 2,
+        "upvote_ratio": 0.81,
+        "permalink": "https://www.reddit.com/r/LargeLanguageModels/comments/1rx0rdh/what_are_large_language_models_and_how_do_they/",
+        "url": "https://i.redd.it/ic6c1x63cspg1.jpeg",
+        "is_self": false,
+        "post_hint": "image",
+        "thumbnail": "https://preview.redd.it/ic6c1x63cspg1.jpeg?width=140&amp;height=80&amp;auto=webp&amp;s=cc2f164cea1007b5b04896f15497a8288726f80c",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://preview.redd.it/ic6c1x63cspg1.jpeg?auto=webp&amp;s=2bcfdebb2c21990c3cf00a688938851c0bd03b81",
+                "width": 700,
+                "height": 400
+              },
+              "resolutions": [
+                {
+                  "url": "https://preview.redd.it/ic6c1x63cspg1.jpeg?width=108&amp;crop=smart&amp;auto=webp&amp;s=0aecabf640ddbe25c070e5a1aae3882a9ef5c563",
+                  "width": 108,
+                  "height": 61
+                },
+                {
+                  "url": "https://preview.redd.it/ic6c1x63cspg1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=f7696a69f3ef8149054fcf199dbf169045b9ecd9",
+                  "width": 216,
+                  "height": 123
+                },
+                {
+                  "url": "https://preview.redd.it/ic6c1x63cspg1.jpeg?width=320&amp;crop=smart&amp;auto=webp&amp;s=1be59ec66875e35deba1f9dd348e8564f8464979",
+                  "width": 320,
+                  "height": 182
+                },
+                {
+                  "url": "https://preview.redd.it/ic6c1x63cspg1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=b689ea9b3b2ecc6b2ced9a0c0cdece775aaa14ed",
+                  "width": 640,
+                  "height": 365
+                }
+              ],
+              "variants": {},
+              "id": "ic6c1x63cspg1"
+            }
+          ],
+          "enabled": true
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "BusinesstoriesMedia",
+          "ups": 1,
+          "body": "[https://businesstories.com/technology/what-are-large-language-models-and-how-they-work/](https://businesstories.com/technology/what-are-large-language-models-and-how-they-work/)"
+        }
+      ]
+    },
+    "media_extracted": {
+      "type": "image",
+      "url": "https://i.redd.it/ic6c1x63cspg1.jpeg",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-11-55-523Z/media/1rx0rdh.jpg",
+      "contentType": "image/jpeg",
+      "bytes": 31635
+    },
+    "author_avatar": {
+      "user": "BusinesstoriesMedia",
+      "url": "https://styles.redditmedia.com/t5_g6hp4n/styles/profileIcon_6s2o0dnr249g1.png?width=256&height=256&crop=256:256,smart&s=4a6787bf7d30d90791802c8c727f4efe22772a17",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-11-55-523Z/avatars/BusinesstoriesMedia.png",
+      "fetchedAt": "2026-03-24T12:12:48.497Z"
+    }
+  },
+  {
+    "id": "1rsp23c",
+    "subreddit": "mlscaling",
+    "title": "Training Language Models via Neural Cellular Automata, Lee et al. 2026 [pre-pre-training on abstract rule-based patterns improves language modelling]",
+    "selftext": "Blog: [https://hanseungwook.github.io/blog/nca-pre-pre-training/](https://hanseungwook.github.io/blog/nca-pre-pre-training/)",
+    "author": "StartledWatermelon",
+    "created_utc": 1773412630,
+    "permalink": "https://www.reddit.com/r/mlscaling/comments/1rsp23c/training_language_models_via_neural_cellular/",
+    "url": "https://arxiv.org/abs/2603.10055",
+    "domain": "arxiv.org",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 8,
+    "score": 8,
+    "num_comments": 1,
+    "upvote_ratio": 0.84,
+    "thumbnail": "default",
+    "media": null,
+    "post_hint": null,
+    "listing": "rising",
+    "viral_score": 0.029747595682403552,
+    "detail": {
+      "post": {
+        "id": "1rsp23c",
+        "title": "Training Language Models via Neural Cellular Automata, Lee et al. 2026 [pre-pre-training on abstract rule-based patterns improves language modelling]",
+        "selftext": "Blog: [https://hanseungwook.github.io/blog/nca-pre-pre-training/](https://hanseungwook.github.io/blog/nca-pre-pre-training/)",
+        "author": "StartledWatermelon",
+        "subreddit": "mlscaling",
+        "created_utc": 1773412630,
+        "ups": 7,
+        "num_comments": 1,
+        "upvote_ratio": 0.82,
+        "permalink": "https://www.reddit.com/r/mlscaling/comments/1rsp23c/training_language_models_via_neural_cellular/",
+        "url": "https://arxiv.org/abs/2603.10055",
+        "is_self": false,
+        "post_hint": null,
+        "thumbnail": "default",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": null,
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "muchcharles",
+          "ups": 1,
+          "body": "Sounds like internal grounding theory:\n\nhttps://www.youtube.com/watch?v=-pb3z2w9gDg&amp;t=7135s"
+        }
+      ]
+    },
+    "author_avatar": {
+      "user": "StartledWatermelon",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_7.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-11-55-523Z/avatars/StartledWatermelon.png",
+      "fetchedAt": "2026-03-24T12:12:49.745Z"
+    }
+  },
+  {
+    "id": "1r1v4cs",
+    "subreddit": "LargeLanguageModels",
+    "title": "Mixture-of-Models routing beats single LLMs on SWE-Bench via task specialization",
+    "selftext": "I’ve been looking at per-task results on SWE-Bench Verified and noticed something that leaderboard averages hide: different models consistently solve *different* subsets of tasks.\n\nEven the top overall model on the leaderboard fails a non-trivial number of tasks that other models reliably solve, and the reverse is also true. This suggests strong task-level specialization rather than one model being strictly better.\n\nTo test this, I built a **Mixture-of-Models architecture**, which is different from traditional routing that just defaults to the strongest aggregate model most of the time. The goal isn’t to route to a single model as often as possible, but to exploit complementary strengths between models.\n\nConcretely:\n\n* The problem description is embedded\n* It’s assigned to a semantic cluster (learned from general coding data, not SWE-Bench)\n* Each cluster has learned per-model success statistics\n* The task is routed to the historically strongest model for that *type* of problem\n\nImportantly, this does **not** route the top aggregate model for the majority of tasks. Several clusters consistently route to other models where they outperform it, even though it has the highest overall score.\n\nThere’s no new foundation model, no test-time search, and no repo execution, just a lightweight gating mechanism over multiple models.\n\nUsing this Mixture-of-Models setup, the system reaches 75.6% on SWE-Bench, exceeding single-model baselines (\\~74%). The takeaway isn’t the absolute number, but the mechanism: leaderboard aggregates hide complementary strengths, and mixture architectures can capture a higher ceiling than any single model.\n\nBlog with details and methodology here: [https://nordlyslabs.com/blog/hypernova](https://nordlyslabs.com/blog/hypernova)\n\nGithub: the framework is open source ! [https://github.com/Nordlys-Labs/nordlys](https://github.com/Nordlys-Labs/nordlys)\n\nML/AI Research Community Discord: [https://discord.gg/dqW7BBrq](https://discord.gg/dqW7BBrq)",
+    "author": "botirkhaltaev",
+    "created_utc": 1770810031,
+    "permalink": "https://www.reddit.com/r/LargeLanguageModels/comments/1r1v4cs/mixtureofmodels_routing_beats_single_llms_on/",
+    "url": "https://www.reddit.com/r/LargeLanguageModels/comments/1r1v4cs/mixtureofmodels_routing_beats_single_llms_on/",
+    "domain": "self.LargeLanguageModels",
+    "is_self": true,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 3,
+    "score": 3,
+    "num_comments": 4,
+    "upvote_ratio": 1,
+    "thumbnail": "self",
+    "media": null,
+    "post_hint": "self",
+    "listing": "rising",
+    "viral_score": 0.006998086038933213,
+    "detail": {
+      "post": {
+        "id": "1r1v4cs",
+        "title": "Mixture-of-Models routing beats single LLMs on SWE-Bench via task specialization",
+        "selftext": "I’ve been looking at per-task results on SWE-Bench Verified and noticed something that leaderboard averages hide: different models consistently solve *different* subsets of tasks.\n\nEven the top overall model on the leaderboard fails a non-trivial number of tasks that other models reliably solve, and the reverse is also true. This suggests strong task-level specialization rather than one model being strictly better.\n\nTo test this, I built a **Mixture-of-Models architecture**, which is different from traditional routing that just defaults to the strongest aggregate model most of the time. The goal isn’t to route to a single model as often as possible, but to exploit complementary strengths between models.\n\nConcretely:\n\n* The problem description is embedded\n* It’s assigned to a semantic cluster (learned from general coding data, not SWE-Bench)\n* Each cluster has learned per-model success statistics\n* The task is routed to the historically strongest model for that *type* of problem\n\nImportantly, this does **not** route the top aggregate model for the majority of tasks. Several clusters consistently route to other models where they outperform it, even though it has the highest overall score.\n\nThere’s no new foundation model, no test-time search, and no repo execution, just a lightweight gating mechanism over multiple models.\n\nUsing this Mixture-of-Models setup, the system reaches 75.6% on SWE-Bench, exceeding single-model baselines (\\~74%). The takeaway isn’t the absolute number, but the mechanism: leaderboard aggregates hide complementary strengths, and mixture architectures can capture a higher ceiling than any single model.\n\nBlog with details and methodology here: [https://nordlyslabs.com/blog/hypernova](https://nordlyslabs.com/blog/hypernova)\n\nGithub: the framework is open source ! [https://github.com/Nordlys-Labs/nordlys](https://github.com/Nordlys-Labs/nordlys)\n\nML/AI Research Community Discord: [https://discord.gg/dqW7BBrq](https://discord.gg/dqW7BBrq)",
+        "author": "botirkhaltaev",
+        "subreddit": "LargeLanguageModels",
+        "created_utc": 1770810031,
+        "ups": 3,
+        "num_comments": 4,
+        "upvote_ratio": 1,
+        "permalink": "https://www.reddit.com/r/LargeLanguageModels/comments/1r1v4cs/mixtureofmodels_routing_beats_single_llms_on/",
+        "url": "https://www.reddit.com/r/LargeLanguageModels/comments/1r1v4cs/mixtureofmodels_routing_beats_single_llms_on/",
+        "is_self": true,
+        "post_hint": "self",
+        "thumbnail": "self",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://external-preview.redd.it/_Z5NZ9xNFsDXgOeezDK1qr0EixadjEFRiRMQ5AP9aOU.png?auto=webp&amp;s=14f21d095503d244074151302c13c8b8a5adde72",
+                "width": 1200,
+                "height": 630
+              },
+              "resolutions": [
+                {
+                  "url": "https://external-preview.redd.it/_Z5NZ9xNFsDXgOeezDK1qr0EixadjEFRiRMQ5AP9aOU.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=ae262667aecaf36784896fa0e8809b59bd597c24",
+                  "width": 108,
+                  "height": 56
+                },
+                {
+                  "url": "https://external-preview.redd.it/_Z5NZ9xNFsDXgOeezDK1qr0EixadjEFRiRMQ5AP9aOU.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=8a6816e9b29e44cc54ca62c235ed76f5f96981e5",
+                  "width": 216,
+                  "height": 113
+                },
+                {
+                  "url": "https://external-preview.redd.it/_Z5NZ9xNFsDXgOeezDK1qr0EixadjEFRiRMQ5AP9aOU.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=1e55790f2a1006e100ceef1cfb42a7e8db5bf6f8",
+                  "width": 320,
+                  "height": 168
+                },
+                {
+                  "url": "https://external-preview.redd.it/_Z5NZ9xNFsDXgOeezDK1qr0EixadjEFRiRMQ5AP9aOU.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=bc35ab5718411538c32c5954162f1eda483391bb",
+                  "width": 640,
+                  "height": 336
+                },
+                {
+                  "url": "https://external-preview.redd.it/_Z5NZ9xNFsDXgOeezDK1qr0EixadjEFRiRMQ5AP9aOU.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=e1396dcde02d0218f5dc343ea2535a5d37785599",
+                  "width": 960,
+                  "height": 504
+                },
+                {
+                  "url": "https://external-preview.redd.it/_Z5NZ9xNFsDXgOeezDK1qr0EixadjEFRiRMQ5AP9aOU.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=875dc1f14651223fc2017d174e66380c04e91d9e",
+                  "width": 1080,
+                  "height": 567
+                }
+              ],
+              "variants": {},
+              "id": "_Z5NZ9xNFsDXgOeezDK1qr0EixadjEFRiRMQ5AP9aOU"
+            }
+          ],
+          "enabled": false
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "VivianIto",
+          "ups": 2,
+          "body": "I did a very rudimentary version of this project months ago and the results were way better than I expected so I like this news :)"
+        },
+        {
+          "author": "[deleted]",
+          "ups": 2,
+          "body": "[removed]"
+        }
+      ]
+    },
+    "author_avatar": {
+      "user": "botirkhaltaev",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_6.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-11-55-523Z/avatars/botirkhaltaev.png",
+      "fetchedAt": "2026-03-24T12:12:51.014Z"
+    }
+  },
+  {
+    "id": "1pi93f7",
+    "subreddit": "finetuning",
+    "title": "Which small model is best for fine-tuning? We tested 12 of them by spending $10K - here's what we found",
+    "selftext": "**TL;DR:** We fine-tuned 12 small models to find which ones are most tunable and perform best after fine-tuning. Surprise finding: Llama-3.2-1B showed the biggest improvement (most tunable), while Qwen3-4B delivered the best final performance - matching a 120B teacher on 7/8 tasks and outperforming by 19 points on the SQuAD 2.0 dataset.\n\n**Setup:**\n\n12 models total - Qwen3 (8B, 4B, 1.7B, 0.6B), Llama (3.1-8B, 3.2-3B, 3.2-1B), SmolLM2 (1.7B, 135M), Gemma (1B, 270M), and Granite 8B.\n\nUsed GPT-OSS 120B as teacher to generate 10k synthetic training examples per task. Fine-tuned everything with identical settings: LoRA rank 64, 4 epochs, 5e-5 learning rate.\n\nTested on 8 benchmarks: classification tasks (TREC, Banking77, Ecommerce, Mental Health), document extraction, and QA (HotpotQA, Roman Empire, SQuAD 2.0).\n\n**Finding #1: Tunability (which models improve most)**\n\nThe smallest models showed the biggest gains from fine-tuning. Llama-3.2-1B ranked #1 for tunability, followed by Llama-3.2-3B and Qwen3-0.6B.\n\nThis pattern makes sense - smaller models start weaker but have more room to grow. Fine-tuning closed the gap hard. The 8B models ranked lowest for tunability not because they're bad, but because they started strong and had less room to improve.\n\nIf you're stuck with small models due to hardware constraints, this is good news. Fine-tuning can make a 1B model competitive with much larger models on specific tasks.\n\n**Finding #2: Best fine-tuned performance (can student match teacher?)**\n\nQwen3-4B-Instruct-2507 came out on top for final performance. After fine-tuning, it matched or exceeded the 120B teacher on 7 out of 8 benchmarks.\n\nBreakdown: TREC (+3 points), Docs (+2), Ecommerce (+3), HotpotQA (tied), Mental Health (+1), Roman Empire (+5). Only fell short on Banking77 by 3 points.\n\nSQuAD 2.0 was wild - the 4B student scored 0.71 vs teacher's 0.52. That's a 19 point gap favoring the smaller model. A model 30x smaller outperforming the one that trained it.\n\nBefore fine-tuning, the 8B models dominated everything. After fine-tuning, model size mattered way less.\n\nIf you're running stuff on your own hardware, you can get frontier-level performance from a 4B model on a single consumer GPU. No expensive cloud instances. No API rate limits.\n\nLet us know if there's a specific model you want benchmarked.\n\nFull write-up: [https://www.distillabs.ai/blog/we-benchmarked-12-small-language-models-across-8-tasks-to-find-the-best-base-model-for-fine-tuning](https://www.distillabs.ai/blog/we-benchmarked-12-small-language-models-across-8-tasks-to-find-the-best-base-model-for-fine-tuning)",
+    "author": "party-horse",
+    "created_utc": 1765291236,
+    "permalink": "https://www.reddit.com/r/finetuning/comments/1pi93f7/which_small_model_is_best_for_finetuning_we/",
+    "url": "https://i.redd.it/x6dcpd35x66g1.png",
+    "domain": "i.redd.it",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 8,
+    "score": 8,
+    "num_comments": 0,
+    "upvote_ratio": 0.91,
+    "thumbnail": "https://b.thumbs.redditmedia.com/r2NoRoo2RddErbSTgXy_ihgeUTpgYXzxcteP3qu_yrY.jpg",
+    "media": null,
+    "post_hint": "image",
+    "listing": "rising",
+    "viral_score": 0.0017916187324901794,
+    "detail": {
+      "post": {
+        "id": "1pi93f7",
+        "title": "Which small model is best for fine-tuning? We tested 12 of them by spending $10K - here's what we found",
+        "selftext": "**TL;DR:** We fine-tuned 12 small models to find which ones are most tunable and perform best after fine-tuning. Surprise finding: Llama-3.2-1B showed the biggest improvement (most tunable), while Qwen3-4B delivered the best final performance - matching a 120B teacher on 7/8 tasks and outperforming by 19 points on the SQuAD 2.0 dataset.\n\n**Setup:**\n\n12 models total - Qwen3 (8B, 4B, 1.7B, 0.6B), Llama (3.1-8B, 3.2-3B, 3.2-1B), SmolLM2 (1.7B, 135M), Gemma (1B, 270M), and Granite 8B.\n\nUsed GPT-OSS 120B as teacher to generate 10k synthetic training examples per task. Fine-tuned everything with identical settings: LoRA rank 64, 4 epochs, 5e-5 learning rate.\n\nTested on 8 benchmarks: classification tasks (TREC, Banking77, Ecommerce, Mental Health), document extraction, and QA (HotpotQA, Roman Empire, SQuAD 2.0).\n\n**Finding #1: Tunability (which models improve most)**\n\nThe smallest models showed the biggest gains from fine-tuning. Llama-3.2-1B ranked #1 for tunability, followed by Llama-3.2-3B and Qwen3-0.6B.\n\nThis pattern makes sense - smaller models start weaker but have more room to grow. Fine-tuning closed the gap hard. The 8B models ranked lowest for tunability not because they're bad, but because they started strong and had less room to improve.\n\nIf you're stuck with small models due to hardware constraints, this is good news. Fine-tuning can make a 1B model competitive with much larger models on specific tasks.\n\n**Finding #2: Best fine-tuned performance (can student match teacher?)**\n\nQwen3-4B-Instruct-2507 came out on top for final performance. After fine-tuning, it matched or exceeded the 120B teacher on 7 out of 8 benchmarks.\n\nBreakdown: TREC (+3 points), Docs (+2), Ecommerce (+3), HotpotQA (tied), Mental Health (+1), Roman Empire (+5). Only fell short on Banking77 by 3 points.\n\nSQuAD 2.0 was wild - the 4B student scored 0.71 vs teacher's 0.52. That's a 19 point gap favoring the smaller model. A model 30x smaller outperforming the one that trained it.\n\nBefore fine-tuning, the 8B models dominated everything. After fine-tuning, model size mattered way less.\n\nIf you're running stuff on your own hardware, you can get frontier-level performance from a 4B model on a single consumer GPU. No expensive cloud instances. No API rate limits.\n\nLet us know if there's a specific model you want benchmarked.\n\nFull write-up: [https://www.distillabs.ai/blog/we-benchmarked-12-small-language-models-across-8-tasks-to-find-the-best-base-model-for-fine-tuning](https://www.distillabs.ai/blog/we-benchmarked-12-small-language-models-across-8-tasks-to-find-the-best-base-model-for-fine-tuning)",
+        "author": "party-horse",
+        "subreddit": "finetuning",
+        "created_utc": 1765291236,
+        "ups": 8,
+        "num_comments": 0,
+        "upvote_ratio": 0.91,
+        "permalink": "https://www.reddit.com/r/finetuning/comments/1pi93f7/which_small_model_is_best_for_finetuning_we/",
+        "url": "https://i.redd.it/x6dcpd35x66g1.png",
+        "is_self": false,
+        "post_hint": "image",
+        "thumbnail": "https://b.thumbs.redditmedia.com/r2NoRoo2RddErbSTgXy_ihgeUTpgYXzxcteP3qu_yrY.jpg",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://preview.redd.it/x6dcpd35x66g1.png?auto=webp&amp;s=d75f2120836163209c4bd82cd627acc254ab710b",
+                "width": 6000,
+                "height": 3375
+              },
+              "resolutions": [
+                {
+                  "url": "https://preview.redd.it/x6dcpd35x66g1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=262b708f77b3bc03a9dfd114f62cce9ed8c84a80",
+                  "width": 108,
+                  "height": 60
+                },
+                {
+                  "url": "https://preview.redd.it/x6dcpd35x66g1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=66fdad82006a7c55f570a2ee59c038e172ace333",
+                  "width": 216,
+                  "height": 121
+                },
+                {
+                  "url": "https://preview.redd.it/x6dcpd35x66g1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=e8967b4c85c72c6069b66368110d23960ee7c7e6",
+                  "width": 320,
+                  "height": 180
+                },
+                {
+                  "url": "https://preview.redd.it/x6dcpd35x66g1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=ef39bf57667926d396eb194dd9b48a0dc8e94dde",
+                  "width": 640,
+                  "height": 360
+                },
+                {
+                  "url": "https://preview.redd.it/x6dcpd35x66g1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=bc3291eb63e8cfdf3c2a625388b2556d6f321636",
+                  "width": 960,
+                  "height": 540
+                },
+                {
+                  "url": "https://preview.redd.it/x6dcpd35x66g1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=edf2aacf04c817dcb34ab67bca984590242b5777",
+                  "width": 1080,
+                  "height": 607
+                }
+              ],
+              "variants": {},
+              "id": "O_LZschRkIAND2hMrsD0v9iZsLHxJLu1jLHCmnsrqWQ"
+            }
+          ],
+          "enabled": true
+        },
+        "media": null
+      },
+      "topComments": []
+    },
+    "media_extracted": {
+      "type": "image",
+      "url": "https://i.redd.it/x6dcpd35x66g1.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-11-55-523Z/media/1pi93f7.png",
+      "contentType": "image/png",
+      "bytes": 503452
+    },
+    "author_avatar": {
+      "user": "party-horse",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_2.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-11-55-523Z/avatars/party-horse.png",
+      "fetchedAt": "2026-03-24T12:12:52.414Z"
+    }
+  },
+  {
+    "id": "1qukdmu",
+    "subreddit": "LargeLanguageModels",
+    "title": "My boyfriend created an app that allows AI models to debate each other, and he's looking for all types of feedback",
+    "selftext": "Hi! As the title says, my bf was playing around with LLMs and created an app that allows you to select your AI models, assign a personality or character to each of them, and then sit back and watch them debate a prompt/question of your choosing (it's quite entertaining lol). It's still in beta though, so any feedback would be super appreciated. You can start AI debates for free, and there's an option to create an account. Let us know what you think could make it even better! Link below:\n\n[Promptheone.com](https://promptheone.com/quick-start)\n\n",
+    "author": "madstom",
+    "created_utc": 1770099559,
+    "permalink": "https://www.reddit.com/r/LargeLanguageModels/comments/1qukdmu/my_boyfriend_created_an_app_that_allows_ai_models/",
+    "url": "https://www.reddit.com/gallery/1qukdmu",
+    "domain": "reddit.com",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 0,
+    "score": 0,
+    "num_comments": 2,
+    "upvote_ratio": 0.25,
+    "thumbnail": "https://b.thumbs.redditmedia.com/8Ya7jsUE8kl1zRG8z3001bBaCQ7a4I2ZFycyHminm7k.jpg",
+    "media": null,
+    "post_hint": null,
+    "listing": "rising",
+    "viral_score": 0.0006262126456868478,
+    "detail": {
+      "post": {
+        "id": "1qukdmu",
+        "title": "My boyfriend created an app that allows AI models to debate each other, and he's looking for all types of feedback",
+        "selftext": "Hi! As the title says, my bf was playing around with LLMs and created an app that allows you to select your AI models, assign a personality or character to each of them, and then sit back and watch them debate a prompt/question of your choosing (it's quite entertaining lol). It's still in beta though, so any feedback would be super appreciated. You can start AI debates for free, and there's an option to create an account. Let us know what you think could make it even better! Link below:\n\n[Promptheone.com](https://promptheone.com/quick-start)\n\n",
+        "author": "madstom",
+        "subreddit": "LargeLanguageModels",
+        "created_utc": 1770099559,
+        "ups": 0,
+        "num_comments": 2,
+        "upvote_ratio": 0.25,
+        "permalink": "https://www.reddit.com/r/LargeLanguageModels/comments/1qukdmu/my_boyfriend_created_an_app_that_allows_ai_models/",
+        "url": "https://www.reddit.com/gallery/1qukdmu",
+        "is_self": false,
+        "post_hint": null,
+        "thumbnail": "https://b.thumbs.redditmedia.com/8Ya7jsUE8kl1zRG8z3001bBaCQ7a4I2ZFycyHminm7k.jpg",
+        "is_gallery": true,
+        "gallery_data": {
+          "items": [
+            {
+              "caption": "",
+              "media_id": "wulrbi5s28hg1",
+              "id": 855404926
+            },
+            {
+              "caption": "",
+              "media_id": "o0q2c38s28hg1",
+              "id": 855404927
+            },
+            {
+              "caption": "",
+              "media_id": "7m3wx4bs28hg1",
+              "id": 855404928
+            },
+            {
+              "caption": "",
+              "media_id": "a0npehds28hg1",
+              "id": 855404929
+            }
+          ]
+        },
+        "media_metadata": {
+          "wulrbi5s28hg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 119,
+                "x": 108,
+                "u": "https://preview.redd.it/wulrbi5s28hg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=295d823c52ac53b562d31bc733d5224944acd4e7"
+              },
+              {
+                "y": 238,
+                "x": 216,
+                "u": "https://preview.redd.it/wulrbi5s28hg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=d6453b02ad17b1721759340382e9f386e4eb4b66"
+              },
+              {
+                "y": 353,
+                "x": 320,
+                "u": "https://preview.redd.it/wulrbi5s28hg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=43aa82709a20b3e9a8b84b9a61477db6a5a1b74b"
+              },
+              {
+                "y": 707,
+                "x": 640,
+                "u": "https://preview.redd.it/wulrbi5s28hg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=c435969bb571faf20dff0ce4c61b18b81d28127a"
+              }
+            ],
+            "s": {
+              "y": 1031,
+              "x": 932,
+              "u": "https://preview.redd.it/wulrbi5s28hg1.png?width=932&amp;format=png&amp;auto=webp&amp;s=31cbf22a4877a4115973457d65e0a4fbfe892255"
+            },
+            "id": "wulrbi5s28hg1"
+          },
+          "o0q2c38s28hg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 86,
+                "x": 108,
+                "u": "https://preview.redd.it/o0q2c38s28hg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=ccc6ffed656daa14bba336cc9b69937676342a71"
+              },
+              {
+                "y": 173,
+                "x": 216,
+                "u": "https://preview.redd.it/o0q2c38s28hg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=188f32c9b332c83946b1b2a13729b780d43cb533"
+              },
+              {
+                "y": 256,
+                "x": 320,
+                "u": "https://preview.redd.it/o0q2c38s28hg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=251293f0b6345e1c97f5fc1c990fdac63155471b"
+              },
+              {
+                "y": 512,
+                "x": 640,
+                "u": "https://preview.redd.it/o0q2c38s28hg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=6f7c48d20b163279bcd1e8030774a89797e6034c"
+              }
+            ],
+            "s": {
+              "y": 767,
+              "x": 957,
+              "u": "https://preview.redd.it/o0q2c38s28hg1.png?width=957&amp;format=png&amp;auto=webp&amp;s=1c60926084afa790b8843c0b93ade4412ccc849d"
+            },
+            "id": "o0q2c38s28hg1"
+          },
+          "7m3wx4bs28hg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 135,
+                "x": 108,
+                "u": "https://preview.redd.it/7m3wx4bs28hg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=d97a728f9e11f8d862555c33fe0585512c1342f9"
+              },
+              {
+                "y": 270,
+                "x": 216,
+                "u": "https://preview.redd.it/7m3wx4bs28hg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=183f23b3cd57a0062d13c3c2d8cf37064069bc52"
+              },
+              {
+                "y": 401,
+                "x": 320,
+                "u": "https://preview.redd.it/7m3wx4bs28hg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=4ac8dc0d375943d240da57897cdf032ab04028ec"
+              }
+            ],
+            "s": {
+              "y": 603,
+              "x": 481,
+              "u": "https://preview.redd.it/7m3wx4bs28hg1.png?width=481&amp;format=png&amp;auto=webp&amp;s=004ba312d51b65ac360e8230f3a5e5c111f04fdb"
+            },
+            "id": "7m3wx4bs28hg1"
+          },
+          "a0npehds28hg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 119,
+                "x": 108,
+                "u": "https://preview.redd.it/a0npehds28hg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=19422360596f4f71507ea2eb3c299e457cfd1c97"
+              },
+              {
+                "y": 238,
+                "x": 216,
+                "u": "https://preview.redd.it/a0npehds28hg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=0b57ae6d4cbd47cc69b9ae2bd609f6f98344ee87"
+              },
+              {
+                "y": 353,
+                "x": 320,
+                "u": "https://preview.redd.it/a0npehds28hg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=c4389050b2ffecdff362a177b9dcec27987b6492"
+              },
+              {
+                "y": 707,
+                "x": 640,
+                "u": "https://preview.redd.it/a0npehds28hg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=b8d64abd31e9b36c83f52b54c66f8259d7e5fa8e"
+              }
+            ],
+            "s": {
+              "y": 1031,
+              "x": 932,
+              "u": "https://preview.redd.it/a0npehds28hg1.png?width=932&amp;format=png&amp;auto=webp&amp;s=abd55800812fb0babf04cee065fbdc5922ec9a4c"
+            },
+            "id": "a0npehds28hg1"
+          }
+        },
+        "preview": null,
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "Mundane_Ad8936",
+          "ups": 1,
+          "body": "Sorry but this is a super common beginner project. Not really much utility in them other than learning the basics."
+        }
+      ]
+    },
+    "media_extracted": {
+      "type": "thumbnail",
+      "url": "https://b.thumbs.redditmedia.com/8Ya7jsUE8kl1zRG8z3001bBaCQ7a4I2ZFycyHminm7k.jpg",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-11-55-523Z/media/1qukdmu.jpg",
+      "contentType": "image/jpeg",
+      "bytes": 4851
+    },
+    "author_avatar": {
+      "user": "madstom",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_6.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-11-55-523Z/avatars/madstom.png",
+      "fetchedAt": "2026-03-24T12:12:53.794Z"
+    }
+  },
+  {
+    "id": "1oxgnql",
+    "subreddit": "finetuning",
+    "title": "Rag-chunk: Small tool for the Python / RAG community",
+    "selftext": "",
+    "author": "InstanceSignal5153",
+    "created_utc": 1763175582,
+    "permalink": "https://www.reddit.com/r/finetuning/comments/1oxgnql/ragchunk_small_tool_for_the_python_rag_community/",
+    "url": "/r/Rag/comments/1oxfp6v/ragchunk_small_tool_for_the_python_rag_community/",
+    "domain": null,
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 2,
+    "score": 2,
+    "num_comments": 0,
+    "upvote_ratio": 1,
+    "thumbnail": "default",
+    "media": null,
+    "post_hint": "link",
+    "listing": "rising",
+    "viral_score": 0.000378293982616417,
+    "detail": {
+      "post": {
+        "id": "1oxgnql",
+        "title": "Rag-chunk: Small tool for the Python / RAG community",
+        "selftext": "",
+        "author": "InstanceSignal5153",
+        "subreddit": "finetuning",
+        "created_utc": 1763175582,
+        "ups": 2,
+        "num_comments": 0,
+        "upvote_ratio": 1,
+        "permalink": "https://www.reddit.com/r/finetuning/comments/1oxgnql/ragchunk_small_tool_for_the_python_rag_community/",
+        "url": "/r/Rag/comments/1oxfp6v/ragchunk_small_tool_for_the_python_rag_community/",
+        "is_self": false,
+        "post_hint": "link",
+        "thumbnail": "default",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://external-preview.redd.it/nHXIXg05QGhDUvB_nEeotfQK36R9s5M7sKvWPc26ilI.png?auto=webp&amp;s=6f348b5a6bf1d65d1c06ca4e06154edcf69b707b",
+                "width": 1200,
+                "height": 600
+              },
+              "resolutions": [
+                {
+                  "url": "https://external-preview.redd.it/nHXIXg05QGhDUvB_nEeotfQK36R9s5M7sKvWPc26ilI.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=7e9ada5cbc174061636c4d5049b4b5ed80e5d25b",
+                  "width": 108,
+                  "height": 54
+                },
+                {
+                  "url": "https://external-preview.redd.it/nHXIXg05QGhDUvB_nEeotfQK36R9s5M7sKvWPc26ilI.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=0272b7ec7fb119fc67ac69199f31692ea8597075",
+                  "width": 216,
+                  "height": 108
+                },
+                {
+                  "url": "https://external-preview.redd.it/nHXIXg05QGhDUvB_nEeotfQK36R9s5M7sKvWPc26ilI.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=a576a4306076f9f72d9f918e150b7d511e61fbb7",
+                  "width": 320,
+                  "height": 160
+                },
+                {
+                  "url": "https://external-preview.redd.it/nHXIXg05QGhDUvB_nEeotfQK36R9s5M7sKvWPc26ilI.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=e9cf53839dde36e8a465eef9e07f73b41926e38c",
+                  "width": 640,
+                  "height": 320
+                },
+                {
+                  "url": "https://external-preview.redd.it/nHXIXg05QGhDUvB_nEeotfQK36R9s5M7sKvWPc26ilI.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=f9c8e076b6e969d0eb1b5ff0ff6af87838533194",
+                  "width": 960,
+                  "height": 480
+                },
+                {
+                  "url": "https://external-preview.redd.it/nHXIXg05QGhDUvB_nEeotfQK36R9s5M7sKvWPc26ilI.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=da4819d97091aa7db0ebf1d8c4ccdc045dfe06a2",
+                  "width": 1080,
+                  "height": 540
+                }
+              ],
+              "variants": {},
+              "id": "nHXIXg05QGhDUvB_nEeotfQK36R9s5M7sKvWPc26ilI"
+            }
+          ],
+          "enabled": false
+        },
+        "media": null
+      },
+      "topComments": []
+    },
+    "author_avatar": {
+      "user": "InstanceSignal5153",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_0.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-11-55-523Z/avatars/InstanceSignal5153.png",
+      "fetchedAt": "2026-03-24T12:12:55.045Z"
+    }
+  },
+  {
+    "id": "1rqmctm",
+    "subreddit": "mlscaling",
+    "title": "I built a workflow engine that runs natural language as a parallel DAG",
+    "selftext": "So I got frustrated with Airflow.\n\nNot because it's bad..it's powerful. But every time I wanted to automate something small, I was writing 40 lines of Python just to define a 3-step pipeline.\n\nSo I built **Flint**. The idea is simple:\n\nflint run \"*fetch github events, filter push events, post summary to Slack*\"\n\nIt parses your description into a typed DAG, automatically finds which steps can run in parallel, and executes them concurrently.\n\n**The part I'm most proud of** is the corruption detection - it validates every task output before passing data downstream, which caught so many silent failures I didn't even know were happening.\n\n**Install it:**\n\n    pip install flint-dag\n\n**Benchmarks on M3, 10k concurrent workflows:**\n\n* 10,847 executions/min\n* p95 latency 11.8ms\n* 91.2% corruption detection\n\nReally happy with how it turned out. Would love feedback on the parsing approach or anything else...still lots of room to grow!\n\n🔗 **GitHub:** [https://github.com/puneethkotha/flint](https://github.com/puneethkotha/flint)\n\n🎛️ **Live dashboard:** [https://flint-dashboard-silk.vercel.app](https://flint-dashboard-silk.vercel.app)",
+    "author": "This_Salary_9495",
+    "created_utc": 1773211044,
+    "permalink": "https://www.reddit.com/r/mlscaling/comments/1rqmctm/i_built_a_workflow_engine_that_runs_natural/",
+    "url": "https://www.reddit.com/r/mlscaling/comments/1rqmctm/i_built_a_workflow_engine_that_runs_natural/",
+    "domain": "self.mlscaling",
+    "is_self": true,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 0,
+    "score": 0,
+    "num_comments": 0,
+    "upvote_ratio": 0.5,
+    "thumbnail": "self",
+    "media": null,
+    "post_hint": "self",
+    "listing": "hot",
+    "viral_score": 0,
+    "detail": {
+      "post": {
+        "id": "1rqmctm",
+        "title": "I built a workflow engine that runs natural language as a parallel DAG",
+        "selftext": "So I got frustrated with Airflow.\n\nNot because it's bad..it's powerful. But every time I wanted to automate something small, I was writing 40 lines of Python just to define a 3-step pipeline.\n\nSo I built **Flint**. The idea is simple:\n\nflint run \"*fetch github events, filter push events, post summary to Slack*\"\n\nIt parses your description into a typed DAG, automatically finds which steps can run in parallel, and executes them concurrently.\n\n**The part I'm most proud of** is the corruption detection - it validates every task output before passing data downstream, which caught so many silent failures I didn't even know were happening.\n\n**Install it:**\n\n    pip install flint-dag\n\n**Benchmarks on M3, 10k concurrent workflows:**\n\n* 10,847 executions/min\n* p95 latency 11.8ms\n* 91.2% corruption detection\n\nReally happy with how it turned out. Would love feedback on the parsing approach or anything else...still lots of room to grow!\n\n🔗 **GitHub:** [https://github.com/puneethkotha/flint](https://github.com/puneethkotha/flint)\n\n🎛️ **Live dashboard:** [https://flint-dashboard-silk.vercel.app](https://flint-dashboard-silk.vercel.app)",
+        "author": "This_Salary_9495",
+        "subreddit": "mlscaling",
+        "created_utc": 1773211044,
+        "ups": 0,
+        "num_comments": 0,
+        "upvote_ratio": 0.5,
+        "permalink": "https://www.reddit.com/r/mlscaling/comments/1rqmctm/i_built_a_workflow_engine_that_runs_natural/",
+        "url": "https://www.reddit.com/r/mlscaling/comments/1rqmctm/i_built_a_workflow_engine_that_runs_natural/",
+        "is_self": true,
+        "post_hint": "self",
+        "thumbnail": "self",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://external-preview.redd.it/XlpG1fgGWTquf9_SizgAsF8BqJIDvCeZc8zGPwTdeP4.png?auto=webp&amp;s=804b7651c4d7fa6362bb4ebf3b4c1d6affcb1fbf",
+                "width": 1200,
+                "height": 600
+              },
+              "resolutions": [
+                {
+                  "url": "https://external-preview.redd.it/XlpG1fgGWTquf9_SizgAsF8BqJIDvCeZc8zGPwTdeP4.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=d78ea02783f56c40ae73eb0b5833a89e3aeb48a3",
+                  "width": 108,
+                  "height": 54
+                },
+                {
+                  "url": "https://external-preview.redd.it/XlpG1fgGWTquf9_SizgAsF8BqJIDvCeZc8zGPwTdeP4.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=747b8d3f884e5d4ed27eb531ffdcf689f8ab1ed4",
+                  "width": 216,
+                  "height": 108
+                },
+                {
+                  "url": "https://external-preview.redd.it/XlpG1fgGWTquf9_SizgAsF8BqJIDvCeZc8zGPwTdeP4.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=eadb7330ad2d664c1c3d805d0d73f9d6c1b2e0ac",
+                  "width": 320,
+                  "height": 160
+                },
+                {
+                  "url": "https://external-preview.redd.it/XlpG1fgGWTquf9_SizgAsF8BqJIDvCeZc8zGPwTdeP4.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=6b97710a2bd8ce4f538e8b4924a69934cdf85070",
+                  "width": 640,
+                  "height": 320
+                },
+                {
+                  "url": "https://external-preview.redd.it/XlpG1fgGWTquf9_SizgAsF8BqJIDvCeZc8zGPwTdeP4.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=6cefb6433a6598fc47af2c5cac43083c523014ca",
+                  "width": 960,
+                  "height": 480
+                },
+                {
+                  "url": "https://external-preview.redd.it/XlpG1fgGWTquf9_SizgAsF8BqJIDvCeZc8zGPwTdeP4.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=96c0319d72df83fc9ade4eb77e72b069c4ccffb9",
+                  "width": 1080,
+                  "height": 540
+                }
+              ],
+              "variants": {},
+              "id": "XlpG1fgGWTquf9_SizgAsF8BqJIDvCeZc8zGPwTdeP4"
+            }
+          ],
+          "enabled": false
+        },
+        "media": null
+      },
+      "topComments": []
+    },
+    "author_avatar": {
+      "user": "This_Salary_9495",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_5.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-11-55-523Z/avatars/This_Salary_9495.png",
+      "fetchedAt": "2026-03-24T12:12:56.284Z"
+    }
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "niche": "Small Language Models",
+  "nicheSlug": "small-language-models",
+  "runId": "2026-03-24T12-12-59-039Z",
+  "startedAt": "2026-03-24T12:12:59.040Z",
+  "keywords": [
+    "Small Language Models"
+  ],
+  "mustInclude": [
+    "small",
+    "language",
+    "models"
+  ],
+  "search": "Small Language Models",
+  "subAllowlist": null,
+  "config": {
+    "topN": 30,
+    "subLimit": 15,
+    "gapMs": 800,
+    "limitPerListing": 25,
+    "time": "month",
+    "kinds": [
+      "top",
+      "hot",
+      "rising"
+    ],
+    "searchSort": "top",
+    "searchTime": null,
+    "minSubscribers": 0,
+    "sendCardsN": 5
+  }
+}

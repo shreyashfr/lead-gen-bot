@@ -1,0 +1,131 @@
+[
+  {
+    "id": "1s15cd4",
+    "subreddit": "mlscaling",
+    "title": "\"Against Time Series Foundation Models Or: My Experience in Modern Forecasting\", shako 2026",
+    "ups": 19,
+    "num_comments": 2,
+    "upvote_ratio": 0.91,
+    "viral_score": 0.7570263185845033,
+    "listing": "rising",
+    "permalink": "https://www.reddit.com/r/mlscaling/comments/1s15cd4/against_time_series_foundation_models_or_my/",
+    "image": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-23-59-489Z/cards/1s15cd4.png",
+    "media": null
+  },
+  {
+    "id": "1rq5y05",
+    "subreddit": "mlscaling",
+    "title": "\"How to train the best embedding model in the world: one PhD later, I'm giving my secrets away for free\", Jack Morris (why doesn't scaling non-recommender embedding models work too well? bad gradients/optimization)",
+    "ups": 19,
+    "num_comments": 5,
+    "upvote_ratio": 0.83,
+    "viral_score": 0.07703559021418904,
+    "listing": "rising",
+    "permalink": "https://www.reddit.com/r/mlscaling/comments/1rq5y05/how_to_train_the_best_embedding_model_in_the/",
+    "image": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-23-59-489Z/cards/1rq5y05.png",
+    "media": null
+  },
+  {
+    "id": "1rx0rdh",
+    "subreddit": "LargeLanguageModels",
+    "title": "What Are Large Language Models and How Do They Actually Work?",
+    "ups": 3,
+    "num_comments": 2,
+    "upvote_ratio": 0.81,
+    "viral_score": 0.04279244315063955,
+    "listing": "rising",
+    "permalink": "https://www.reddit.com/r/LargeLanguageModels/comments/1rx0rdh/what_are_large_language_models_and_how_do_they/",
+    "image": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-23-59-489Z/cards/1rx0rdh.png",
+    "media": {
+      "type": "image",
+      "url": "https://i.redd.it/ic6c1x63cspg1.jpeg",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-23-59-489Z/media/1rx0rdh.jpg"
+    }
+  },
+  {
+    "id": "1rsp23c",
+    "subreddit": "mlscaling",
+    "title": "Training Language Models via Neural Cellular Automata, Lee et al. 2026 [pre-pre-training on abstract rule-based patterns improves language modelling]",
+    "ups": 9,
+    "num_comments": 1,
+    "upvote_ratio": 0.91,
+    "viral_score": 0.03105308951881019,
+    "listing": "rising",
+    "permalink": "https://www.reddit.com/r/mlscaling/comments/1rsp23c/training_language_models_via_neural_cellular/",
+    "image": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-23-59-489Z/cards/1rsp23c.png",
+    "media": null
+  },
+  {
+    "id": "1r1v4cs",
+    "subreddit": "LargeLanguageModels",
+    "title": "Mixture-of-Models routing beats single LLMs on SWE-Bench via task specialization",
+    "ups": 3,
+    "num_comments": 4,
+    "upvote_ratio": 1,
+    "viral_score": 0.006996442450425366,
+    "listing": "rising",
+    "permalink": "https://www.reddit.com/r/LargeLanguageModels/comments/1r1v4cs/mixtureofmodels_routing_beats_single_llms_on/",
+    "image": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-23-59-489Z/cards/1r1v4cs.png",
+    "media": null
+  },
+  {
+    "id": "1pi93f7",
+    "subreddit": "finetuning",
+    "title": "Which small model is best for fine-tuning? We tested 12 of them by spending $10K - here's what we found",
+    "ups": 10,
+    "num_comments": 0,
+    "upvote_ratio": 1,
+    "viral_score": 0.002144036368926385,
+    "listing": "rising",
+    "permalink": "https://www.reddit.com/r/finetuning/comments/1pi93f7/which_small_model_is_best_for_finetuning_we/",
+    "image": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-23-59-489Z/cards/1pi93f7.png",
+    "media": {
+      "type": "image",
+      "url": "https://i.redd.it/x6dcpd35x66g1.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-23-59-489Z/media/1pi93f7.png"
+    }
+  },
+  {
+    "id": "1qukdmu",
+    "subreddit": "LargeLanguageModels",
+    "title": "My boyfriend created an app that allows AI models to debate each other, and he's looking for all types of feedback",
+    "ups": 0,
+    "num_comments": 2,
+    "upvote_ratio": 0.25,
+    "viral_score": 0.00062608493964386,
+    "listing": "rising",
+    "permalink": "https://www.reddit.com/r/LargeLanguageModels/comments/1qukdmu/my_boyfriend_created_an_app_that_allows_ai_models/",
+    "image": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-23-59-489Z/cards/1qukdmu.png",
+    "media": {
+      "type": "thumbnail",
+      "url": "https://b.thumbs.redditmedia.com/8Ya7jsUE8kl1zRG8z3001bBaCQ7a4I2ZFycyHminm7k.jpg",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-23-59-489Z/media/1qukdmu.jpg"
+    }
+  },
+  {
+    "id": "1oxgnql",
+    "subreddit": "finetuning",
+    "title": "Rag-chunk: Small tool for the Python / RAG community",
+    "ups": 2,
+    "num_comments": 0,
+    "upvote_ratio": 1,
+    "viral_score": 0.0003782670661462017,
+    "listing": "rising",
+    "permalink": "https://www.reddit.com/r/finetuning/comments/1oxgnql/ragchunk_small_tool_for_the_python_rag_community/",
+    "image": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-23-59-489Z/cards/1oxgnql.png",
+    "media": null
+  },
+  {
+    "id": "1rqmctm",
+    "subreddit": "mlscaling",
+    "title": "I built a workflow engine that runs natural language as a parallel DAG",
+    "ups": 0,
+    "num_comments": 0,
+    "upvote_ratio": 0.5,
+    "viral_score": 0,
+    "listing": "hot",
+    "permalink": "https://www.reddit.com/r/mlscaling/comments/1rqmctm/i_built_a_workflow_engine_that_runs_natural/",
+    "image": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-23-59-489Z/cards/1rqmctm.png",
+    "media": null
+  }
+]

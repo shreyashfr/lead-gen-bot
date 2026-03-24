@@ -1,0 +1,183 @@
+[
+  {
+    "id": "1rrts20",
+    "subreddit": "Fauxmoi",
+    "title": "Conan O'Brien: \"I have incredible empathy for people who have immigrated to another country. It takes an entire lifetime to go to a country where, often, people don't speak the language. They have to spend their entire lives just getting things started for the next generation.\"",
+    "ups": 25868,
+    "num_comments": 206,
+    "upvote_ratio": 0.99,
+    "viral_score": 201.32562306938826,
+    "listing": "search:top:month",
+    "permalink": "https://www.reddit.com/r/Fauxmoi/comments/1rrts20/conan_obrien_i_have_incredible_empathy_for_people/",
+    "image": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-12-59-039Z/cards/1rrts20.png",
+    "media": null
+  },
+  {
+    "id": "1rl6cyy",
+    "subreddit": "GuyCry",
+    "title": "Bentley Update – A Small Win Today",
+    "ups": 4322,
+    "num_comments": 197,
+    "upvote_ratio": 0.97,
+    "viral_score": 19.810816980371598,
+    "listing": "search:top:month",
+    "permalink": "https://www.reddit.com/r/GuyCry/comments/1rl6cyy/bentley_update_a_small_win_today/",
+    "image": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-12-59-039Z/cards/1rl6cyy.png",
+    "media": null
+  },
+  {
+    "id": "1s15cd4",
+    "subreddit": "mlscaling",
+    "title": "\"Against Time Series Foundation Models Or: My Experience in Modern Forecasting\", shako 2026",
+    "ups": 18,
+    "num_comments": 2,
+    "upvote_ratio": 0.88,
+    "viral_score": 0.8167189801451681,
+    "listing": "rising",
+    "permalink": "https://www.reddit.com/r/mlscaling/comments/1s15cd4/against_time_series_foundation_models_or_my/",
+    "image": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-12-59-039Z/cards/1s15cd4.png",
+    "media": null
+  },
+  {
+    "id": "1rq5y05",
+    "subreddit": "mlscaling",
+    "title": "\"How to train the best embedding model in the world: one PhD later, I'm giving my secrets away for free\", Jack Morris (why doesn't scaling non-recommender embedding models work too well? bad gradients/optimization)",
+    "ups": 19,
+    "num_comments": 5,
+    "upvote_ratio": 0.83,
+    "viral_score": 0.08590365158031922,
+    "listing": "rising",
+    "permalink": "https://www.reddit.com/r/mlscaling/comments/1rq5y05/how_to_train_the_best_embedding_model_in_the/",
+    "image": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-12-59-039Z/cards/1rq5y05.png",
+    "media": null
+  },
+  {
+    "id": "1rx0rdh",
+    "subreddit": "LargeLanguageModels",
+    "title": "What Are Large Language Models and How Do They Actually Work?",
+    "ups": 4,
+    "num_comments": 2,
+    "upvote_ratio": 0.84,
+    "viral_score": 0.049356644344781854,
+    "listing": "hot",
+    "permalink": "https://www.reddit.com/r/LargeLanguageModels/comments/1rx0rdh/what_are_large_language_models_and_how_do_they/",
+    "image": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-12-59-039Z/cards/1rx0rdh.png",
+    "media": {
+      "type": "image",
+      "url": "https://i.redd.it/ic6c1x63cspg1.jpeg",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-12-59-039Z/media/1rx0rdh.jpg"
+    }
+  },
+  {
+    "id": "1rsp23c",
+    "subreddit": "mlscaling",
+    "title": "Training Language Models via Neural Cellular Automata, Lee et al. 2026 [pre-pre-training on abstract rule-based patterns improves language modelling]",
+    "ups": 9,
+    "num_comments": 1,
+    "upvote_ratio": 0.91,
+    "viral_score": 0.031077288983288938,
+    "listing": "rising",
+    "permalink": "https://www.reddit.com/r/mlscaling/comments/1rsp23c/training_language_models_via_neural_cellular/",
+    "image": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-12-59-039Z/cards/1rsp23c.png",
+    "media": null
+  },
+  {
+    "id": "1rlppab",
+    "subreddit": "mlscaling",
+    "title": "Pretrained Vision-Language-Action Models are Surprisingly Resistant to Forgetting in Continual Learning",
+    "ups": 14,
+    "num_comments": 0,
+    "upvote_ratio": 1,
+    "viral_score": 0.015824590660776152,
+    "listing": "top:month",
+    "permalink": "https://www.reddit.com/r/mlscaling/comments/1rlppab/pretrained_visionlanguageaction_models_are/",
+    "image": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-12-59-039Z/cards/1rlppab.png",
+    "media": null
+  },
+  {
+    "id": "1rkxdhf",
+    "subreddit": "mlscaling",
+    "title": "\"NanoGPT Slowrun: Language Modeling with Limited Data, Infinite Compute\" competiton (5.5x data efficiency so far from proper multi-epoch training, heavier regularization, SwiGLU, &amp; ensembling)",
+    "ups": 12,
+    "num_comments": 0,
+    "upvote_ratio": 0.93,
+    "viral_score": 0.01253749524644288,
+    "listing": "top:month",
+    "permalink": "https://www.reddit.com/r/mlscaling/comments/1rkxdhf/nanogpt_slowrun_language_modeling_with_limited/",
+    "image": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-12-59-039Z/cards/1rkxdhf.png",
+    "media": null
+  },
+  {
+    "id": "1r1v4cs",
+    "subreddit": "LargeLanguageModels",
+    "title": "Mixture-of-Models routing beats single LLMs on SWE-Bench via task specialization",
+    "ups": 3,
+    "num_comments": 4,
+    "upvote_ratio": 1,
+    "viral_score": 0.006997945949004039,
+    "listing": "rising",
+    "permalink": "https://www.reddit.com/r/LargeLanguageModels/comments/1r1v4cs/mixtureofmodels_routing_beats_single_llms_on/",
+    "image": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-12-59-039Z/cards/1r1v4cs.png",
+    "media": null
+  },
+  {
+    "id": "1pi93f7",
+    "subreddit": "finetuning",
+    "title": "Which small model is best for fine-tuning? We tested 12 of them by spending $10K - here's what we found",
+    "ups": 9,
+    "num_comments": 0,
+    "upvote_ratio": 1,
+    "viral_score": 0.001791605426098527,
+    "listing": "rising",
+    "permalink": "https://www.reddit.com/r/finetuning/comments/1pi93f7/which_small_model_is_best_for_finetuning_we/",
+    "image": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-12-59-039Z/cards/1pi93f7.png",
+    "media": {
+      "type": "image",
+      "url": "https://i.redd.it/x6dcpd35x66g1.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-12-59-039Z/media/1pi93f7.png"
+    }
+  },
+  {
+    "id": "1qukdmu",
+    "subreddit": "LargeLanguageModels",
+    "title": "My boyfriend created an app that allows AI models to debate each other, and he's looking for all types of feedback",
+    "ups": 0,
+    "num_comments": 2,
+    "upvote_ratio": 0.25,
+    "viral_score": 0.0006262017610919961,
+    "listing": "rising",
+    "permalink": "https://www.reddit.com/r/LargeLanguageModels/comments/1qukdmu/my_boyfriend_created_an_app_that_allows_ai_models/",
+    "image": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-12-59-039Z/cards/1qukdmu.png",
+    "media": {
+      "type": "thumbnail",
+      "url": "https://b.thumbs.redditmedia.com/8Ya7jsUE8kl1zRG8z3001bBaCQ7a4I2ZFycyHminm7k.jpg",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-12-59-039Z/media/1qukdmu.jpg"
+    }
+  },
+  {
+    "id": "1oxgnql",
+    "subreddit": "finetuning",
+    "title": "Rag-chunk: Small tool for the Python / RAG community",
+    "ups": 2,
+    "num_comments": 0,
+    "upvote_ratio": 1,
+    "viral_score": 0.00037829170475094293,
+    "listing": "rising",
+    "permalink": "https://www.reddit.com/r/finetuning/comments/1oxgnql/ragchunk_small_tool_for_the_python_rag_community/",
+    "image": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-12-59-039Z/cards/1oxgnql.png",
+    "media": null
+  },
+  {
+    "id": "1rqmctm",
+    "subreddit": "mlscaling",
+    "title": "I built a workflow engine that runs natural language as a parallel DAG",
+    "ups": 0,
+    "num_comments": 0,
+    "upvote_ratio": 0.5,
+    "viral_score": 0,
+    "listing": "hot",
+    "permalink": "https://www.reddit.com/r/mlscaling/comments/1rqmctm/i_built_a_workflow_engine_that_runs_natural/",
+    "image": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-12-59-039Z/cards/1rqmctm.png",
+    "media": null
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "name": "mlscaling",
+    "title": "Scaling Machine Learning: Big Models/Data/Compute—More Is More",
+    "subscribers": 18008,
+    "over18": false,
+    "url": "https://www.reddit.com/r/mlscaling/",
+    "discoveredBy": [
+      "Small Language Models"
+    ]
+  },
+  {
+    "name": "LargeLanguageModels",
+    "title": "Large Language Models (LLMs)",
+    "subscribers": 9527,
+    "over18": false,
+    "url": "https://www.reddit.com/r/LargeLanguageModels/",
+    "discoveredBy": [
+      "Small Language Models"
+    ]
+  },
+  {
+    "name": "finetuning",
+    "title": "Fine-tuning Large Language Models",
+    "subscribers": 62,
+    "over18": false,
+    "url": "https://www.reddit.com/r/finetuning/",
+    "discoveredBy": [
+      "Small Language Models"
+    ]
+  },
+  {
+    "name": "smalllanguagemodels",
+    "title": "smalllanguagemodels",
+    "subscribers": 9,
+    "over18": false,
+    "url": "https://www.reddit.com/r/smalllanguagemodels/",
+    "discoveredBy": [
+      "Small Language Models"
+    ]
+  },
+  {
+    "name": "slms",
+    "title": "Small Language Models",
+    "subscribers": 0,
+    "over18": false,
+    "url": "https://www.reddit.com/r/slms/",
+    "discoveredBy": [
+      "Small Language Models"
+    ]
+  }
+]
