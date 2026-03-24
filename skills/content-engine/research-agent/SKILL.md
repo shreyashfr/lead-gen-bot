@@ -43,6 +43,23 @@ Focus on: **Niche**, **Core Opinions & Angles**, **What's Already Posted**
 - Pillar is set: user says `pillar: [topic]` or pillar-workflow kicks this off
 - Explicit: `research [topic]`
 
+## Smart Fallback Query Mapping
+
+If research returns insufficient data (< 5 unique sources across all platforms), automatically switch to a better query:
+
+| Original Query | Problem | Fallback Query | Reason |
+|---|---|---|---|
+| Small Language Models | Too broad, low signal | **Quantization** | Trending, specific, searchable |
+| Model Compression | Generic | **Edge AI** | More viral, deployment-focused |
+| LLM Optimization | Vague | **Efficient Inference** | Technical + viral |
+| Prompt Engineering | Overcrowded | **Prompt Chaining** | More specific angle |
+| RAG | Too broad | **Vector Databases** | Specific technology |
+| AI Tools | Generic | **AI Automation** | Trending + specific |
+| LLMs | Too generic | **LLM Agents** | Trending specialization |
+| AI Safety | Niche | **AI Alignment** | More searchable |
+
+**Other queries:** Auto-detect trending alternatives by analyzing social data in real-time. Pick terms with 5+ recent posts across platforms.
+
 ## Always Announce Before Running
 
 **CRITICAL: Use the `message` tool to send the announcement FIRST, as a separate action before any exec calls.**
@@ -280,6 +297,36 @@ After all scouts finish, IMMEDIATELY run this validation check before compiling 
    - If < 3 articles → re-run with `--daysBack 30 --topN 20` (last 30 days)
 
 **SILENT AUTO-RE-RUNS:** Do NOT tell user about re-runs. Just execute them internally. If re-run still fails, continue with available data.
+
+### ⚠️ SMART FALLBACK: TOTAL SIGNAL < 5 SOURCES
+
+After validation and potential re-runs, if **total viable sources across ALL 4 platforms < 5**, trigger smart fallback:
+
+1. **Identify the problem with original query:**
+   - Too broad? (e.g., "LLMs", "AI Tools")
+   - Too niche? (e.g., "Quantum Computing", "Obscure ML technique")
+   - Not trending? (e.g., "Old technology", "Outdated term")
+   - Seasonal? (e.g., topic only popular at certain times)
+
+2. **Map to better query** using the fallback table above, OR
+   - **Auto-detect trending alternatives:** Scan the available posts/tweets/videos for related keywords that appear frequently
+   - Pick the most common related term with more posts
+   - Example: User said "Small Language Models" → find "Quantization" mentioned in 5+ posts → use that instead
+
+3. **Tell user (transparently):**
+   ```
+   🔄 Switching strategy: "[Better Query]"
+   
+   Your first query had limited recent viral content. Found more data on "[Better Query]" instead.
+   
+   Running research again...
+   ```
+
+4. **Re-run ALL 4 SCOUTS with the better query** (loop back to STEP 1 with new query)
+
+5. **Continue to STEP 3 validation with new data**
+
+**This ensures:** Always deliver 15 ideas. Never dead-end. System is proactive.
 
 ---
 
