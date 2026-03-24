@@ -160,70 +160,145 @@ Replace ALL file paths:
 
 ---
 
-## WORKFLOW — STATE-BASED EXECUTION
+## WORKFLOW — STATE-BASED EXECUTION (CODE-DRIVEN)
 
-**Do NOT send messages based on LLM thinking. Send based on STATE CHANGES ONLY.**
+**Use `state.js` module to manage all state transitions and messaging.**
 
-### Step 0: Initialize State File
+All state checking is done in code, not in .md documentation.
 
-When pillar command is received:
+### Step 0: Initialize State
 
 ```bash
-cat > {USER_WORKSPACE}pillar-state.json << 'EOF'
-{
-  "pillar": "[TOPIC]",
-  "state": "PILLAR_RECEIVED",
-  "created_at": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
-  "research_status": {
-    "reddit": "pending",
-    "twitter": "pending",
-    "youtube": "pending",
-    "google_news": "pending"
-  },
-  "message_sent": {
-    "pillar_received": false,
-    "research_done": false,
-    "ideas_ready": false
-  }
-}
-EOF
+node {SKILL_BASE}/state.js init {USER_WORKSPACE} "[PILLAR_TOPIC]"
 ```
 
-### Step 1: Send Message for STATE = PILLAR_RECEIVED
+Creates `{USER_WORKSPACE}pillar-state.json` with initial state.
 
-Check state file: if `state == "PILLAR_RECEIVED"` and `message_sent.pillar_received == false`:
-- Send Message 1 (hard-coded above)
-- Update state: `message_sent.pillar_received = true`
-- Update state: `state = "RESEARCH_RUNNING"`
+### Step 1: Check and Send Message for PILLAR_RECEIVED
+
+```bash
+# Read state file and check if message should be sent
+MESSAGE_CHECK=$(node {SKILL_BASE}/state.js check {USER_WORKSPACE} "[PILLAR_TOPIC]")
+
+# Extract shouldSend, message, nextState from JSON response
+SHOULD_SEND=$(echo $MESSAGE_CHECK | jq -r '.shouldSend')
+MESSAGE=$(echo $MESSAGE_CHECK | jq -r '.message')
+NEXT_STATE=$(echo $MESSAGE_CHECK | jq -r '.nextState')
+
+if [ "$SHOULD_SEND" = "true" ]; then
+  # Send message via message() tool
+  message(action=send, channel=telegram, target={USER_TELEGRAM_ID}, message="$MESSAGE")
+  
+  # Mark message as sent in state
+  node {SKILL_BASE}/state.js mark-sent {USER_WORKSPACE} "[PILLAR_TOPIC]" "PILLAR_RECEIVED"
+  
+  # Transition state
+  node {SKILL_BASE}/state.js set-state {USER_WORKSPACE} "[PILLAR_TOPIC]" "$NEXT_STATE"
+fi
+```
 
 ### Step 2: Run Scouts (SILENT)
 
-Execute all 4 scouts:
-- Do NOT send any messages
-- Track status in state file: `research_status.reddit = "running"` → `"done"` or `"failed"`
-- If ANY scout fails → set `state = "ERROR"` and send Message 3 (error), then STOP
+Execute all 4 scouts with NO messages:
+```bash
+# Update state before running
+node {SKILL_BASE}/state.js update-scout {USER_WORKSPACE} "[PILLAR_TOPIC]" "reddit" "running"
+bash run_research.sh ...
 
-### Step 3: Check for STATE = RESEARCH_DONE
+# Update state after completion
+node {SKILL_BASE}/state.js update-scout {USER_WORKSPACE} "[PILLAR_TOPIC]" "reddit" "done"
+```
 
-After all scouts complete:
-- Validate research-report.md has URLs for all 4 platforms
-- If validation passes:
-  - Update state: `state = "RESEARCH_DONE"`
-  - Send Message 2 (hard-coded above)
-  - Update state: `message_sent.research_done = true`
-  - Update state: `state = "IDEA_GENERATION_RUNNING"`
-- If validation fails:
-  - Update state: `state = "ERROR"`
-  - Send Message 3 (error)
-  - STOP
+If ANY scout fails:
+```bash
+node {SKILL_BASE}/state.js set-error {USER_WORKSPACE} "[PILLAR_TOPIC]" "scout failed"
+# Then go to error handling (Step 5)
+```
 
-### Step 4: Run Idea Generation (SILENT)
+### Step 3: Check if All Scouts Done
 
-Spawn idea-generator subagent.
-- Do NOT send any messages
-- Monitor for completion
-- If subagent posts ideas to Telegram → state is done
-- If subagent fails → set `state = "ERROR"`, send Message 3 (error), STOP
+```bash
+# Read state
+STATE=$(node {SKILL_BASE}/state.js read {USER_WORKSPACE} "[PILLAR_TOPIC]")
+
+# Check if all done
+ALL_DONE=$(node -e "
+const state = $(echo $STATE);
+const scouts = Object.values(state.research_status);
+console.log(scouts.every(s => s === 'done' || s === 'failed'));
+")
+
+if [ "$ALL_DONE" = "true" ]; then
+  # Validate research report has URLs
+  if [ valid research-report.md ]; then
+    node {SKILL_BASE}/state.js set-state {USER_WORKSPACE} "[PILLAR_TOPIC]" "RESEARCH_DONE"
+    # Go to Step 4
+  else
+    node {SKILL_BASE}/state.js set-error {USER_WORKSPACE} "[PILLAR_TOPIC]" "research report invalid"
+    # Go to Step 5
+  fi
+fi
+```
+
+### Step 4: Check and Send Message for RESEARCH_DONE
+
+```bash
+# Check if message should be sent (same as Step 1)
+MESSAGE_CHECK=$(node {SKILL_BASE}/state.js check {USER_WORKSPACE} "[PILLAR_TOPIC]")
+
+SHOULD_SEND=$(echo $MESSAGE_CHECK | jq -r '.shouldSend')
+MESSAGE=$(echo $MESSAGE_CHECK | jq -r '.message')
+NEXT_STATE=$(echo $MESSAGE_CHECK | jq -r '.nextState')
+
+if [ "$SHOULD_SEND" = "true" ]; then
+  message(action=send, channel=telegram, target={USER_TELEGRAM_ID}, message="$MESSAGE")
+  node {SKILL_BASE}/state.js mark-sent {USER_WORKSPACE} "[PILLAR_TOPIC]" "RESEARCH_DONE"
+  node {SKILL_BASE}/state.js set-state {USER_WORKSPACE} "[PILLAR_TOPIC]" "$NEXT_STATE"
+fi
+
+# Spawn idea-generator (silent)
+sessions_spawn(...)
+```
+
+### Step 5: Error Handling
+
+```bash
+# Check if error state
+MESSAGE_CHECK=$(node {SKILL_BASE}/state.js check {USER_WORKSPACE} "[PILLAR_TOPIC]")
+
+SHOULD_SEND=$(echo $MESSAGE_CHECK | jq -r '.shouldSend')
+if [ "$SHOULD_SEND" = "true" ]; then
+  message(action=send, channel=telegram, target={USER_TELEGRAM_ID}, message="⚠️ Hit a hiccup. Try again in a moment.")
+  node {SKILL_BASE}/state.js mark-sent {USER_WORKSPACE} "[PILLAR_TOPIC]" "ERROR"
+fi
+
+# STOP
+```
+
+---
+
+## State File Reference
+
+`{USER_WORKSPACE}pillar-state.json`
+
+```json
+{
+  "pillar": "AI Scams",
+  "state": "RESEARCH_DONE",
+  "created_at": "2026-03-24T15:33:00Z",
+  "research_status": {
+    "reddit": "done",
+    "twitter": "done",
+    "youtube": "done",
+    "google_news": "done"
+  },
+  "message_sent": {
+    "pillar_received": true,
+    "research_done": false,
+    "error": false
+  }
+}
+```
 
 **🚨 GUARDRAILS (MANDATORY FOR EVERY LLM)**
 - The user-facing IDEAS REPORT must include 15 ideas, each with a hook, format, rationale, and a real source URL (Reddit/Twitter/YouTube/Google News). Do not send partial lists.
