@@ -1,784 +1,256 @@
-## RESEARCH REPORT — Low-Latency Systems
-Date: 2026-03-24
+# AI Scams: Comprehensive Research Report
+**Pillar:** AI Scams  
+**Date:** 2026-03-24  
+**Research Scope:** Reddit, Twitter/X, YouTube, Google News  
+**Target Audience:** Vaibhav Misal (Software Engineer, Backend Systems, Tech Career)
 
 ---
+
+## What People Are Talking About
+
+The "AI Scams" pillar reveals a growing and urgent conversation across all platforms about fraudsters leveraging AI to scale attacks at unprecedented speed and sophistication. The narrative is dominated by **three critical themes:**
+
+1. **Deepfakes as the Primary Weapon** — AI-generated videos, audio clones, and face swaps are the most discussed scam vector. Reddit shows people actively trying to identify whether content is real or fake. Twitter reveals crypto and security experts warning about deepfake-powered fraud in real time. YouTube features mainstream investigative journalism (Coffeezilla) exploring this threat at scale.
+
+2. **Crypto & DeFi Crime Integration** — Scammers are combining AI deepfakes with cryptocurrency fraud. They create convincing video impersonations of crypto influencers, financial advisors, and platform founders. Crypto platforms (Binance, Crypto.com, Scam Sniffer) are actively posting security alerts on Twitter.
+
+3. **Social Engineering at Scale** — Voice cloning, romance scams, job applicant fakes, and emergency scams (grandmother scams) are all amplified by AI. These hit mainstream news (BBC, CBS, UN News) because they damage trust in everyday communication channels.
+
+---
+
+## Trending Angles (What's Landing)
+
+### High-Engagement Hooks on Reddit
+- **"Help me identify"** — Reddit's r/isthisAI community has massive engagement (6K+ upvotes) when people ask "Is this AI?" with screenshots of suspicious content. People love detective work and collective problem-solving.
+- **Moral/ethical dilemmas** — Posts about family members selling AI art, or debates about whether AI-generated work should be sold, spark heated threads (1300+ comments on the brother-selling-AI-art post).
+- **Practical spotting guides** — "How to tell if X is deepfake" gets 300+ upvotes and 200+ comments. Utility = engagement.
+
+### Crypto/Security Authority on Twitter
+- **Official warnings** — Binance, Crypto.com, Bitdefender, Scam Sniffer, and other security orgs build authority by being first to warn about new scam vectors. Their tweets get 200-600 likes.
+- **Narrative + proof** — One-person threads showing "I set up a fake wallet to see how the scam works" get 300-500 retweets (like waleswoosh's thread).
+- **Contrarian takes** — Steven Bartlett's warning about deepfakes costing £140K grabs attention because it's a real case with real money.
+
+### Investigative Storytelling on YouTube
+- **Long-form trust** — Coffeezilla's 34-minute deepfake investigation (2.3M views) dominates because people want *thorough* understanding, not soundbites.
+- **Educational framing** — NOVA PBS's "How to Detect Deepfakes" (289K views) and BBC's "How to Spot AI Scams" (7K views) frame the topic as education, not fear-mongering.
+- **Breaking-news angle** — Videos titled "The New AI Fraud War: How Tech Companies Are Fighting" (143K views) position the viewer as learning about *current* defenses.
+
+### Urgency + Mainstream Credibility on Google News
+- **Recent coverage** — Most recent articles are from late Feb–Mar 2026. The newness creates urgency.
+- **Geographic specificity** — "South Africa's deepfake fraud rate highest in Africa," "Florida pastors impersonated," "UK billions lost" — localized angles drive trust and action.
+- **Institutional voice** — UN News, Washington Post, CTV News — mainstream outlets validate the threat.
+
+---
+
+## Hook Styles (What's Actually Working)
+
+### Reddit's Viral Patterns
+1. **"Is this real?" detective posts** — Photo/video + confusion + ask community = high engagement
+2. **Personal confession + huge numbers** — "My brother sells AI art for thousands and I don't know what to do" → 3,200 upvotes, 1,380 comments
+3. **Gallery/comparison posts** — "This painting at a gallery for $1200, is it AI?" → 6,400 upvotes. People love visual proof.
+
+### Twitter's Authority Patterns
+1. **Alert + specificity** — "ALERT: AI code poisoning attacks spotted! Scammers polluting training data with malicious crypto code." → 332 likes, 135 retweets
+2. **Personal narrative in threads** — "You've seen these crypto scam videos. I set up a wallet to understand how it works (1/7)" → builds trust via transparency
+3. **Celebrity/expert mention + warning** — "Martin Lewis was conned out of £140K via deepfake" → validates the urgency
+
+### YouTube's Narrative Patterns
+1. **Investigative title + timeline** — "Investigating AI Deepfakes" (34m), not "AI Deepfakes Explained"
+2. **How-to + urgency** — "How to Spot AI Scams in 2026: The Ultimate Guide"
+3. **Mainstream + authority** — BBC, NOVA PBS, CBS — not YouTube randos
+
+### Google News Patterns
+1. **Breaking news format** — "Police warn AI deepfakes driving rise in emergency scams"
+2. **Institutional source** — UN News, Washington Post, CTV
+3. **Scale + impact** — "UK billions lost to deepfake fraud"
+
+---
+
+## Content Gaps (What Nobody's Covering)
+
+1. **Technical defense tutorials for engineers** — Reddit/Twitter are full of "be aware" posts. YouTube has one IBM fraud detection video (26K views). **Gap:** Step-by-step guides for developers to *build* anti-deepfake detection into backend systems. Perfect angle for Vaibhav.
+
+2. **Backend system design for fraud prevention** — Distributed detection systems, real-time signal processing, low-latency fraud response architectures. **Gap:** Engineers don't talk about *how* to architect fraud detection at scale. This is where Vaibhav's backend + low-latency niche shines.
+
+3. **Cost of deepfake defenses** — We know deepfakes are cheap ($10 on some sites), but nobody's analyzing the *economics* of fraud prevention vs. fraud losses. What ROI do companies get? **Gap:** Business-focused technical content.
+
+4. **AI safety for code/training data** — Scam Sniffer warned about "AI code poisoning." But there's no deep technical analysis of how to secure ML pipelines. **Gap:** For Vaibhav, this connects DevOps/security/systems.
+
+5. **Regional/cultural scam variations** — Google News covered South Africa, UK, Florida, but no one's mapping how scams differ by region or platform. **Gap:** Comparative analysis piece.
+
+---
+
+## Natural Angle for Vaibhav
+
+**"How Backend Engineers Can Fight AI Scams: Building Fraud Detection Systems"**
+
+### Why This Works for Vaibhav's Brand
+- **Niche alignment:** He's a backend engineer focused on low-latency systems. Fraud detection demands both.
+- **Untapped angle:** Every other creator warns people to "be careful." Vaibhav can teach engineers *how to build the defense*.
+- **Audience overlap:** College students, early engineers, career-focused devs → want to understand real systems.
+- **Teachable moments:** DSA + system design + real-world engineering = Vaibhav's core pillars.
+
+### Potential Content Pieces from This Report
+1. **Deep dive:** "How Binance and Crypto.com detect deepfake fraud (and why backend speed matters)"
+2. **Tutorial:** "Building a real-time fraud detection system: Latency, signals, and scale"
+3. **System design post:** "Designing a distributed fraud detection backend: Trade-offs and decisions"
+4. **Case study:** "Why detecting crypto scams needs low-latency systems, not batch processing"
+5. **Thread idea:** "5 backend patterns that stop deepfake fraud (from Binance, Crypto.com, and more)"
+
+---
+
+## TOP SOURCES
+
 ### REDDIT
-# Reddit Scout — Sports AI
-
-Run: 2026-03-24T14-21-47-629Z
-Started: 2026-03-24T14:21:47.630Z
-Output dir: /home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-21-47-629Z
-
-Config: topN=30 | subLimit=10 | kinds=top,hot,rising | time=all | limitPerListing=25
-Search: Sports AI (sort=top t=auto)
-
-## Top terms (from titles + top comments)
-
-- real (5)
-- think (4)
-- looks (4)
-- like (4)
-- video (4)
-- prove (4)
-- person (4)
-- about (4)
-- people (3)
-- found (3)
-- comments (3)
-- everyone (3)
-- local (2)
-- convinced (2)
-- picture (2)
-- suspect (2)
-- photo (2)
-- does (2)
-
-## Viral content ideas (derived from these posts)
-
-**1. Personal story → timeline + receipts**
-- Hook: Hook with 1 line, then a 5-step timeline; end with the lesson and what you would do differently.
-
-**2. My real got automated: what I automated back (tools + workflow)**
-- Hook: Turn it into a before/after workflow post. Include exact tool stack + steps.
-
-**3. Checklist: how to stay valuable when think hits your team**
-- Hook: A numbered checklist (10 items). Make it practical: skills, portfolio, outreach, proof-of-work.
-
-**4. Hot take: looks isn't the problem — like is**
-- Hook: Contrarian framing. Back it with 2 examples from the top posts and 1 counterexample.
-
-**5. Debunk thread: "AI will replace video" vs what's actually happening**
-- Hook: Use 3 claims → 3 rebuttals. Cite specific post patterns: layoffs, hiring freezes, role shifts.
-
-**6. Salary/market reality: prove vs person roles in 2026 (Reddit signals)**
-- Hook: Summarize demand signals from comments: who is struggling, who is fine, why.
-
-**7. "What would you do in 30 days?" layoff recovery plan (day-by-day)**
-- Hook: 30-day plan: portfolio, interview loops, networking, mental health. Include a downloadable checklist.
-
-**8. Mini-case study: 1 resume bullet → 1 proof project using about**
-- Hook: Show how to convert a vague resume claim into a measurable project + writeup.
-
-**9. Community question: which tasks should *never* be delegated to AI?**
-- Hook: Ask + give your own top 5. Encourage replies; add a poll if your platform supports it.
-
-**10. Template post: "I used AI to do X, got Y result, here's the exact prompt"**
-- Hook: Make it reproducible: prompt, inputs, outputs, gotchas.
-
-**11. Data post: a quick scorecard of the top threads (ups, comments, ratio) + what it signals**
-- Hook: Table or bullets; then 3 takeaways.
-
-**12. Meme angle (if relevant): people vs found — job search edition**
-- Hook: If your niche is not memes, skip memes; otherwise caption the pattern you saw in comments.
-
-## Top posts (30) + cards
-
-### 1) I don’t think it is Ai but a lot of people think it is. They claim the way he fell, and the way the wheels movie is AI.
-- Subreddit: r/isthisAI
-- Viral score: 252 | Ups: 41 | Comments: 123 | Upvote ratio: 69%
-- Link: https://www.reddit.com/r/isthisAI/comments/1s2bk3w/i_dont_think_it_is_ai_but_a_lot_of_people_think/
-- Card (local): ./cards/1s2bk3w.png
-
-![reddit card](./cards/1s2bk3w.png)
-
-### 2) This Painting at a local art gallery selling for $1200. I’m convinced it’s ai.
-- Subreddit: r/isthisAI
-- Viral score: 233 | Ups: 6422 | Comments: 542 | Upvote ratio: 98%
-- Link: https://www.reddit.com/r/isthisAI/comments/1rzlqkf/this_painting_at_a_local_art_gallery_selling_for/
-- Card (local): ./cards/1rzlqkf.png
-
-![reddit card](./cards/1rzlqkf.png)
-
-### 3) This looks like AI, which would be ironic. Any ideas? Found this on UpScrolled.
-- Subreddit: r/isthisAI
-- Viral score: 168 | Ups: 3097 | Comments: 54 | Upvote ratio: 98%
-- Link: https://www.reddit.com/r/isthisAI/comments/1s10eh6/this_looks_like_ai_which_would_be_ironic_any/
-- Card (local): ./cards/1s10eh6.png
-
-![reddit card](./cards/1s10eh6.png)
-
-### 4) Is this video of a little girl riding on a carriage being pulled by a Labrador AI?
-- Subreddit: r/isthisAI
-- Viral score: 166 | Ups: 753 | Comments: 109 | Upvote ratio: 89%
-- Link: https://www.reddit.com/r/isthisAI/comments/1s1x4ru/is_this_video_of_a_little_girl_riding_on_a/
-- Card (local): ./cards/1s1x4ru.png
-
-![reddit card](./cards/1s1x4ru.png)
-
-### 5) local restaurant posted this promo picture, but i suspect that they used AI to render this photo.
-- Subreddit: r/isthisAI
-- Viral score: 132 | Ups: 249 | Comments: 169 | Upvote ratio: 82%
-- Link: https://www.reddit.com/r/isthisAI/comments/1s23ndq/local_restaurant_posted_this_promo_picture_but_i/
-- Card (local): ./cards/1s23ndq.png
-
-![reddit card](./cards/1s23ndq.png)
-
-### 6) Is this sandwich AI or just very weirdly food styled? The steak makes so sense nor does the rocket
-- Subreddit: r/isthisAI
-- Viral score: 107 | Ups: 566 | Comments: 154 | Upvote ratio: 87%
-- Link: https://www.reddit.com/r/isthisAI/comments/1s1pgws/is_this_sandwich_ai_or_just_very_weirdly_food/
-- Card (local): ./cards/1s1pgws.png
-
-![reddit card](./cards/1s1pgws.png)
-
-### 7) Help me Prove this is AI - my aunt thinks this is a real person she matched with online
-- Subreddit: r/isthisAI
-- Viral score: 97 | Ups: 12460 | Comments: 371 | Upvote ratio: 95%
-- Link: https://www.reddit.com/r/isthisAI/comments/1rtsnxz/help_me_prove_this_is_ai_my_aunt_thinks_this_is_a/
-- Card (local): ./cards/1rtsnxz.png
-
-![reddit card](./cards/1rtsnxz.png)
-
-### 8) Is this video AI? The motion on the graphics looks like it was prompted rather than manually animated
-- Subreddit: r/isthisAI
-- Viral score: 93 | Ups: 1 | Comments: 1 | Upvote ratio: 100%
-- Link: https://www.reddit.com/r/isthisAI/comments/1s2f2l1/is_this_video_ai_the_motion_on_the_graphics_looks/
-- Card (local): ./cards/1s2f2l1.png
-
-![reddit card](./cards/1s2f2l1.png)
-
-### 9) Is this Ai? I’m having a dollhouse made for my daughter’s birthday but the WIP provided does not look real. The glue bottles are unreadable/gibberish.
-- Subreddit: r/isthisAI
-- Viral score: 79 | Ups: 8951 | Comments: 1673 | Upvote ratio: 95%
-- Link: https://www.reddit.com/r/isthisAI/comments/1rqnupu/is_this_ai_im_having_a_dollhouse_made_for_my/
-- Card (local): ./cards/1rqnupu.png
-
-![reddit card](./cards/1rqnupu.png)
-
-### 10) I'm normally quite confident about recognizing AI, but this one confuses me
-- Subreddit: r/isthisAI
-- Viral score: 78 | Ups: 407 | Comments: 90 | Upvote ratio: 88%
-- Link: https://www.reddit.com/r/isthisAI/comments/1s1t1wk/im_normally_quite_confident_about_recognizing_ai/
-- Card (local): ./cards/1s1t1wk.png
-
-![reddit card](./cards/1s1t1wk.png)
-
-### 11) Stumbled upon this comic and it's making my brain itch. Comments didn't say anything about AI, but choices like giving all the deer those fawn spots, the whisker on the boar, the adult wolf's leg, and the vegetation are really suspect to me.
-- Subreddit: r/isthisAI
-- Viral score: 77 | Ups: 28 | Comments: 55 | Upvote ratio: 71%
-- Link: https://www.reddit.com/r/isthisAI/comments/1s2agvy/stumbled_upon_this_comic_and_its_making_my_brain/
-- Card (local): ./cards/1s2agvy.png
-
-![reddit card](./cards/1s2agvy.png)
-
-### 12) I’m convinced this is AI, but friends say it’s real. When I zoom in, I cant prove it’s AI. How do I prove it, or is it AI?
-- Subreddit: r/isthisAI
-- Viral score: 69 | Ups: 16887 | Comments: 806 | Upvote ratio: 83%
-- Link: https://www.reddit.com/r/isthisAI/comments/1rmghxb/im_convinced_this_is_ai_but_friends_say_its_real/
-- Card (local): ./cards/1rmghxb.png
-
-![reddit card](./cards/1rmghxb.png)
-
-### 13) Vacation advertisement image reel could be AI? The clouds on the left are super bright and theres a weird artifact in the bottom right?
-- Subreddit: r/isthisAI
-- Viral score: 67 | Ups: 1 | Comments: 3 | Upvote ratio: 60%
-- Link: https://www.reddit.com/r/isthisAI/comments/1s2ewak/vacation_advertisement_image_reel_could_be_ai_the/
-- Card (local): ./cards/1s2ewak.png
-
-![reddit card](./cards/1s2ewak.png)
-
-### 14) Is this AI? I saw this on twitter. There are a lot of identical cars and camels side by side.
-- Subreddit: r/isthisAI
-- Viral score: 67 | Ups: 4182 | Comments: 385 | Upvote ratio: 95%
-- Link: https://www.reddit.com/r/isthisAI/comments/1rxivyv/is_this_ai_i_saw_this_on_twitter_there_are_a_lot/
-- Card (local): ./cards/1rxivyv.png
-
-![reddit card](./cards/1rxivyv.png)
-
-### 15) Dog chooses owner event, found this video on tiktok, most comments think it's AI
-- Subreddit: r/isthisAI
-- Viral score: 52 | Ups: 12876 | Comments: 730 | Upvote ratio: 92%
-- Link: https://www.reddit.com/r/isthisAI/comments/1rljhcq/dog_chooses_owner_event_found_this_video_on/
-- Card (local): ./cards/1rljhcq.png
-
-![reddit card](./cards/1rljhcq.png)
-
-### 16) Need a medical person to say why this is AI. Someone is being scammed by an impersonator. They are saying he needs money for a heart transplant.
-- Subreddit: r/isthisAI
-- Viral score: 51 | Ups: 7938 | Comments: 2039 | Upvote ratio: 94%
-- Link: https://www.reddit.com/r/isthisAI/comments/1rlqm7j/need_a_medical_person_to_say_why_this_is_ai/
-- Card (local): ./cards/1rlqm7j.png
-
-![reddit card](./cards/1rlqm7j.png)
-
-### 17) Found some of his songs on Spotify and it sound like a totally diferrent person. Is this AI?
-- Subreddit: r/isthisAI
-- Viral score: 50 | Ups: 220 | Comments: 170 | Upvote ratio: 74%
-- Link: https://www.reddit.com/r/isthisAI/comments/1s1mcyv/found_some_of_his_songs_on_spotify_and_it_sound/
-- Card (local): ./cards/1s1mcyv.png
-
-![reddit card](./cards/1s1mcyv.png)
-
-### 18) Agents before AI was a thing
-- Subreddit: r/OpenAI
-- Viral score: 46 | Ups: 1563 | Comments: 63 | Upvote ratio: 94%
-- Link: https://www.reddit.com/r/OpenAI/comments/1rzxcw5/agents_before_ai_was_a_thing/
-- Card (local): ./cards/1rzxcw5.png
-
-![reddit card](./cards/1rzxcw5.png)
-
-### 19) I am 99% sure this person stole OP's art style and fed it into AI. I want to know what everyone else thinks.
-- Subreddit: r/isthisAI
-- Viral score: 44 | Ups: 133 | Comments: 42 | Upvote ratio: 91%
-- Link: https://www.reddit.com/r/isthisAI/comments/1s22zw2/i_am_99_sure_this_person_stole_ops_art_style_and/
-- Card (local): ./cards/1s22zw2.png
-
-![reddit card](./cards/1s22zw2.png)
-
-### 20) Wrong Universe LOTR vs Pawn Stars AI Mashup
-- Subreddit: r/aivideo
-- Viral score: 43 | Ups: 7474 | Comments: 197 | Upvote ratio: 90%
-- Link: https://www.reddit.com/r/aivideo/comments/1rqgolw/wrong_universe_lotr_vs_pawn_stars_ai_mashup/
-- Card (local): ./cards/1rqgolw.png
-
-![reddit card](./cards/1rqgolw.png)
-
-### 21) AI Is Quietly Becoming Infrastructure, Not a Product
-- Subreddit: r/OpenAI
-- Viral score: 42 | Ups: 32 | Comments: 28 | Upvote ratio: 80%
-- Link: https://www.reddit.com/r/OpenAI/comments/1s29stz/ai_is_quietly_becoming_infrastructure_not_a/
-- Card (local): ./cards/1s29stz.png
-
-![reddit card](./cards/1s29stz.png)
-
-### 22) The text looks off, and I can't tell if people are getting too lazy to put text on images without using AI?
-- Subreddit: r/isthisAI
-- Viral score: 42 | Ups: 1944 | Comments: 82 | Upvote ratio: 95%
-- Link: https://www.reddit.com/r/isthisAI/comments/1rzhad2/the_text_looks_off_and_i_cant_tell_if_people_are/
-- Card (local): ./cards/1rzhad2.png
-
-![reddit card](./cards/1rzhad2.png)
-
-### 23) Neil DeGrasse Tyson calls for an international treaty to ban superintelligence: "That branch of AI is lethal. We've got do something about that. Nobody should build it. And everyone needs to agree to that by treaty. Treaties are not perfect, but they are the best we have as humans."
-- Subreddit: r/OpenAI
-- Viral score: 41 | Ups: 449 | Comments: 311 | Upvote ratio: 81%
-- Link: https://www.reddit.com/r/OpenAI/comments/1s0sjty/neil_degrasse_tyson_calls_for_an_international/
-- Card (local): ./cards/1s0sjty.png
-
-![reddit card](./cards/1s0sjty.png)
-
-### 24) Is this picture that my uncle swears he took at Walmart, ai or real? I cannot figure it out
-- Subreddit: r/isthisAI
-- Viral score: 40 | Ups: 8283 | Comments: 2310 | Upvote ratio: 92%
-- Link: https://www.reddit.com/r/isthisAI/comments/1rgtpru/is_this_picture_that_my_uncle_swears_he_took_at/
-- Card (local): ./cards/1rgtpru.png
-
-![reddit card](./cards/1rgtpru.png)
-
-### 25) I don’t think this video is AI, but everyone in the comments says it is… Am I wrong??
-- Subreddit: r/isthisAI
-- Viral score: 40 | Ups: 650 | Comments: 107 | Upvote ratio: 95%
-- Link: https://www.reddit.com/r/isthisAI/comments/1s135eu/i_dont_think_this_video_is_ai_but_everyone_in_the/
-- Card (local): ./cards/1s135eu.png
-
-![reddit card](./cards/1s135eu.png)
-
-### 26) Is this fan art ai? The artist and others are jumping down people's throats over it, but something seems off to me.
-- Subreddit: r/isthisAI
-- Viral score: 36 | Ups: 1797 | Comments: 338 | Upvote ratio: 87%
-- Link: https://www.reddit.com/r/isthisAI/comments/1rygbyu/is_this_fan_art_ai_the_artist_and_others_are/
-- Card (local): ./cards/1rygbyu.png
-
-![reddit card](./cards/1rygbyu.png)
-
-### 27) Sorry guys is this AI? I love lizards but this tail looks suspiciously long. I checked with Gemini but it’s not giving me a proper answer. Thanks in advance
-- Subreddit: r/isthisAI
-- Viral score: 36 | Ups: 1 | Comments: 13 | Upvote ratio: 67%
-- Link: https://www.reddit.com/r/isthisAI/comments/1s2d9ti/sorry_guys_is_this_ai_i_love_lizards_but_this/
-- Card (local): ./cards/1s2d9ti.png
-
-![reddit card](./cards/1s2d9ti.png)
-
-### 28) This photo was labeled as AI in another sub. It’s not..can this sub prove it’s real?
-- Subreddit: r/isthisAI
-- Viral score: 32 | Ups: 7727 | Comments: 997 | Upvote ratio: 94%
-- Link: https://www.reddit.com/r/isthisAI/comments/1rhb54i/this_photo_was_labeled_as_ai_in_another_sub_its/
-- Card (local): ./cards/1rhb54i.png
-
-![reddit card](./cards/1rhb54i.png)
-
-### 29) My gut is telling me that this is definitely AI. But I can't find anything too suspicious about it.
-- Subreddit: r/isthisAI
-- Viral score: 30 | Ups: 1460 | Comments: 146 | Upvote ratio: 86%
-- Link: https://www.reddit.com/r/isthisAI/comments/1rymx6d/my_gut_is_telling_me_that_this_is_definitely_ai/
-- Card (local): ./cards/1rymx6d.png
-
-![reddit card](./cards/1rymx6d.png)
-
-### 30) "Keep Cooking", an AI Short Film by Simon Meyer
-- Subreddit: r/aivideo
-- Viral score: 28 | Ups: 1397 | Comments: 328 | Upvote ratio: 85%
-- Link: https://www.reddit.com/r/aivideo/comments/1rxqj00/keep_cooking_an_ai_short_film_by_simon_meyer/
-- Card (local): ./cards/1rxqj00.png
-
-![reddit card](./cards/1rxqj00.png)
+High-engagement community threads on AI authenticity, deepfakes, and fraud concerns:
+
+- **"Is this video of a capybara riding an Armadillo AI-generated?"** (r/isthisAI)
+  - Viral Score: 8.5/10 | 65 upvotes, 29 comments
+  - URL: https://www.reddit.com/r/isthisAI/comments/1s2gofu/is_this_video_of_a_capybara_riding_an_armadillo/
+
+- **"My Brother sells AI art for thousands and I don't know what to do"** (r/antiai)
+  - Viral Score: 6.5/10 | 3,233 upvotes, 1,380 comments
+  - URL: https://www.reddit.com/r/antiai/comments/1s1grcp/my_brother_sells_ai_art_for_thousands_and_i_dont/
+
+- **"This Painting at a local art gallery selling for $1200. I'm convinced it's ai."** (r/isthisAI)
+  - Viral Score: 2.3/10 | 6,447 upvotes, 546 comments
+  - URL: https://www.reddit.com/r/isthisAI/comments/1rzlqkf/this_painting_at_a_local_art_gallery_selling_for/
+
+- **"Help me Prove this is AI - my aunt thinks this is a real person she matched with online"** (r/isthisAI)
+  - Viral Score: 0.97/10 | 12,457 upvotes, 371 comments
+  - URL: https://www.reddit.com/r/isthisAI/comments/1rtsnxz/help_me_prove_this_is_ai_my_aunt_thinks_this_is_a/
+
+- **"Is this Ai? I'm having a dollhouse made for my daughter's birthday but the WIP provided does not look real."** (r/isthisAI)
+  - Viral Score: 0.79/10 | 8,962 upvotes, 1,673 comments
+  - URL: https://www.reddit.com/r/isthisAI/comments/1rqnupu/is_this_ai_im_having_a_dollhouse_made_for_my/
+
+- **"The ai bubble is slowly popping"** (r/antiai)
+  - Viral Score: 1.07/10 | 4,945 upvotes, 111 comments
+  - URL: https://www.reddit.com/r/antiai/comments/1ryun5n/the_ai_bubble_is_slowly_popping/
+
+- **"Anti-AI Art about 'Ragebait'"** (r/antiai)
+  - Viral Score: 1.03/10 | 14,805 upvotes, 985 comments
+  - URL: https://www.reddit.com/r/antiai/comments/1rpoktv/antiai_art_about_ragebait/
 
 ---
-### TWITTER
-# Twitter Scout Report — Sports AI 2026
-Run: 2026-03-24T14-26-08-514Z | Scanned: 20 | Top 10
 
-## 1. Alibaba Group (@AlibabaGroup)
-**Viral Score:** 9.8/10
-**Tweet:** Want to see the action from every angle? 
+### TWITTER/X
+Security alerts, crypto fraud warnings, and viral narratives from crypto platforms & security researchers:
 
-Continuing the shift to cloud-based and AI-enabled broadcasting, the system uses advanced AI algorithms to reconstruct every moment in stunning 3D for faster, more immersive replays during the Olympic Winter Games Milano Cortina 2026.
-**Metrics:** ❤️ 8700  🔁 466  💬 186  🔖 0
-**Images:** none
-**URL:** https://x.com/AlibabaGroup/status/2021918727848046890
+- **Binance: "Scams. Deepfakes. DeFi crime. Indonesia's Bareskrim is cracking down..."**
+  - Viral Score: 1.3/10 | 639 likes, 218 retweets, 195 replies
+  - URL: https://x.com/binance/status/1923921700166475938
 
-## 2. Google DeepMind (@GoogleDeepMind)
-**Viral Score:** 4.7/10
-**Tweet:** We're announcing TacticAI: an AI assistant capable of offering insights to football experts on corner kicks. 
+- **ControlAI: Voice cloning deepfake narrative** 
+  - Viral Score: 1.0/10 | 473 likes, 222 retweets
+  - URL: https://x.com/ControlAI/status/1757109466992988622
 
-Developed with 
-@LFC
-, it can help teams sample alternative player setups to evaluate possible outcomes, and achieves state-of-the-art results.
-**Metrics:** ❤️ 2800  🔁 871  💬 116  🔖 0
-**Images:** none
-**URL:** https://x.com/GoogleDeepMind/status/1770121564085707082
+- **Bitdefender: "AI is making scams more convincing..."**
+  - Viral Score: 1.0/10 | 391 likes, 40 retweets
+  - URL: https://x.com/Bitdefender/status/2031716783716266351
 
-## 3. Alibaba Group (@AlibabaGroup)
-**Viral Score:** 4.5/10
-**Tweet:** Bringing Cloud-based AI Innovation at the Olympic Winter Games Milano Cortina 2026!
+- **wale.moca (@waleswoosh): "You've seen AI crypto scam videos. I set up a wallet to see how it works..."**
+  - Viral Score: 1.0/10 | 366 likes, 29 retweets, 141 replies
+  - URL: https://x.com/waleswoosh/status/1902301591887118675
 
-Alibaba Cloud partners with OBS and the IOC to supercharge the Olympic Winter Games with next-gen cloud + AI, bringing fans closer to every thrilling moment like never before.
+- **Scam Sniffer: "ALERT: AI code poisoning attacks spotted!"**
+  - Viral Score: 1.0/10 | 332 likes, 135 retweets
+  - URL: https://x.com/realScamSniffer/status/1859765447874445714
 
+- **Steven Bartlett: "Martin Lewis was told a deepfake ad cloned his voice..."**
+  - Viral Score: 1.0/10 | 293 likes, 71 retweets
+  - URL: https://x.com/StevenBartlett/status/1920049589895205047
 
-@milanocortina26
-**Metrics:** ❤️ 3800  🔁 289  💬 113  🔖 0
-**Images:** none
-**URL:** https://x.com/AlibabaGroup/status/2028983769378800083
-
-## 4. AA (@measure_plan)
-**Viral Score:** 2.1/10
-**Tweet:** i made four sport app prototypes this week, using roboflow rapid + SAM3 + python
-
-these ideas could be taken further to make $$$
-
-example: SportRadar is a company that sells analytics to sports leagues and betting firms, with a market cap of $6 billion (!!)
-
-a few ideas
-
-- for
-**Metrics:** ❤️ 1600  🔁 192  💬 71  🔖 0
-**Images:** none
-**URL:** https://x.com/measure_plan/status/1999581903117254982
-
-## 5. Lenovo (@Lenovo)
-**Viral Score:** 1.6/10
-**Tweet:** We're making one of the world's most data-rich organizations more accessible with Football AI Pro, a customized AI assistant that can read vast amounts of 
-@FIFA
- data to deliver information to players, coaches, and fans in seconds. 
-
-Learn more:
-**Metrics:** ❤️ 1400  🔁 100  💬 36  🔖 0
-**Images:** https://pbs.twimg.com/media/G-QHfpPW0AAhwTE.jpg
-**URL:** https://x.com/Lenovo/status/2009855761929941459
-
-## 6. SkalskiP (@skalskip92)
-**Viral Score:** 1.5/10
-**Tweet:** last year, I spent most of May building football AI; this year, I'll be working on something cool with basketball
-
-among other things, I'm planning to:
-- detect and track players and the ball
-- cluster players into teams
-- calculate shot distances
-
-code: 
-https://
-github.com/roboflow/sports
-**Metrics:** ❤️ 1200  🔁 122  💬 37  🔖 0
-**Images:** none
-**URL:** https://x.com/skalskip92/status/1921929266402295983
-
-## 7. Lenovo (@Lenovo)
-**Viral Score:** 1.5/10
-**Tweet:** We're making one of the world's most data-rich organizations more accessible with Football AI Pro, a customized AI assistant that can read vast amounts of 
-@FIFA
- data to deliver information to players, coaches, and fans in seconds. 
-
-Learn more:
-**Metrics:** ❤️ 1200  🔁 130  💬 46  🔖 0
-**Images:** https://pbs.twimg.com/media/G-QHfpPW0AAhwTE.jpg
-**URL:** https://x.com/Lenovo/status/2009852112851874215
-
-## 8. Muhammad Ali (@I_Muhammadali44)
-**Viral Score:** 1.5/10
-**Tweet:** 𝗨𝗣𝗗𝗔𝗧𝗘𝗗 𝗟𝗜𝗦𝗧 𝗙𝗢𝗥 𝟮𝟬𝟮𝟲
-    
- 𝗜𝗱𝗲𝗮𝘀
-• ChatGPT
-• Claude
-• Bing
-
- 𝗪𝗲𝗯𝘀𝗶𝘁𝗲
-• 10Web
-• Durable
-• Framer
-
- 𝗪𝗿𝗶𝘁𝗶𝗻𝗴
-• Rytr
-• Jasper
-• Writesonic
-
- 𝗖𝗵𝗮𝘁𝗯𝗼𝘁𝘀
-• Chatbase
-• SiteGPT
-• ChatSonic
-
- 𝗔𝘂𝘁𝗼𝗺𝗮𝘁𝗶𝗼𝗻
-• Make
-•
-**Metrics:** ❤️ 762  🔁 246  💬 207  🔖 0
-**Images:** https://pbs.twimg.com/media/G-CWcF-aYAAJNYc?format=jpg&name=small
-**URL:** https://x.com/I_Muhammadali44/status/2008770873143291962
-
-## 9. SkalskiP (@skalskip92)
-**Viral Score:** 1.1/10
-**Tweet:** I spent the whole week working on Basketball AI
-
-- player detection and tracking with SAM2
-- jersey number detection using RF-DETR
-- number OCR with SmolVLM2
-- team clustering with timm, UMAP, and KMeans
-
-sports repo: 
-https://
-github.com/roboflow/sports
-**Metrics:** ❤️ 866  🔁 121  💬 20  🔖 0
-**Images:** none
-**URL:** https://x.com/skalskip92/status/1925966962758168665
-
-## 10. Derya Unutmaz, MD (@DeryaTR_)
-**Viral Score:** 1/10
-**Tweet:** In the age of AI, 2026 will be the year of physical intelligence & 3D AI world models, complementing today’s GenAI systems, which are now at the proto-AGI level. This will then jumpstart embodied intelligence in the form of humanoid robots, & the world will never be the same.
-**Metrics:** ❤️ 707  🔁 88  💬 79  🔖 0
-**Images:** none
-**URL:** https://x.com/DeryaTR_/status/2000442404411675051
+- **Crypto.com: "Security Alert: AI crypto scams are on the rise..."**
+  - Viral Score: 1.0/10 | 233 likes, 49 retweets
+  - URL: https://x.com/cryptocom/status/1853225657787888088
 
 ---
+
 ### YOUTUBE
-## YOUTUBE SCOUT REPORT — Sports AI Software Engineering, System Design, Backend Development, Low-Latency Systems, Tech Career Growth
-Date: 2026-03-24
-Videos analysed: 12
+Investigative journalism, educational explainers, and security tutorials:
 
-### Top Viral Videos
+- **"Investigating AI Deepfakes"** — Coffeezilla
+  - Views: 2,335K | Duration: 34m21s | Score: 6.4/10
+  - URL: https://www.youtube.com/watch?v=srr0rRgF2Fw
 
----
-Title: Backend web development - a complete overview
-Channel: SuperSimpleDev
-Views: 2,547,965 | Likes: N/A | Duration: 12m58s
-Uploaded: N/A | Viral Score: 6.4/10
-URL: https://www.youtube.com/watch?v=XBu54nfzxAQ
-Description: "We learn backend technologies we need to build a web application. We go over backend programming languages, backend web ..."
+- **"How to Detect Deepfakes: The Science of Recognizing AI Generated Content"** — NOVA PBS Official
+  - Views: 288,765 | Duration: 9m10s | Score: 5.5/10
+  - URL: https://www.youtube.com/watch?v=GMoOCKkcd_w
 
----
-Title: System Design Concepts Course and Interview Prep
-Channel: freeCodeCamp.org
-Views: 2,480,396 | Likes: N/A | Duration: 53m38s
-Uploaded: N/A | Viral Score: 6.4/10
-URL: https://www.youtube.com/watch?v=F2FmTdLtb_4
-Description: "This complete system design tutorial covers scalability, reliability, data handling, and high-level architecture with clear ..."
+- **"The New AI Fraud War: How Tech Companies Are Fighting Deepfake Scams in 2025"** — Techtonic Shift
+  - Views: 142,515 | Duration: 3m12s | Score: 5.2/10
+  - URL: https://www.youtube.com/watch?v=Yg3G9sFWb90
 
----
-Title: Amazon System Design Interview: Design Parking Garage
-Channel: Exponent
-Views: 1,665,296 | Likes: N/A | Duration: 29m59s
-Uploaded: N/A | Viral Score: 6.2/10
-URL: https://www.youtube.com/watch?v=NtMvNh0WFVM
-Description: "Don't leave your system design interview to chance. Sign up for Exponent's system design interview course today: ..."
+- **"Fraud Detection with AI: Ensemble of AI Models Improve Precision & Speed"** — IBM Technology
+  - Views: 25,760 | Duration: 10m51s | Score: 4.4/10
+  - URL: https://www.youtube.com/watch?v=Mo7JMC_oDlI
 
----
-Title: the TRUTH about C++ (is it worth your time?)
-Channel: Low Level
-Views: 1,130,059 | Likes: N/A | Duration: 3m17s
-Uploaded: N/A | Viral Score: 6.1/10
-URL: https://www.youtube.com/watch?v=q1ZmFc-sqNc
-Description: "C++ gets a lot of hate on the internet, and there may be good reason for that. I think C++ is misunderstood, and there are a few ..."
+- **"How scammers are using AI to create fake job applicants"** — CBS Mornings
+  - Views: 25,163 | Duration: 4m29s | Score: 4.4/10
+  - URL: https://www.youtube.com/watch?v=kGH9JSyp-hM
+
+- **"How to Spot AI Video & Audio Scams in 2026: The Ultimate Guide"** — floydbishop
+  - Views: 9,482 | Duration: 12m4s | Score: 4.0/10
+  - URL: https://www.youtube.com/watch?v=okVVm5jdMsk
+
+- **"AI Scams: How to SPOT them and Stay SAFE - BBC"** — BBC
+  - Views: 6,908 | Duration: 3m58s | Score: 3.8/10
+  - URL: https://www.youtube.com/watch?v=fxoQDpJbAbw
+
+- **"Recognizing DeepFakes And Voice Cloning."** — Security Researcher
+  - Views: 5,011 | Duration: 29m3s | Score: 3.7/10
+  - URL: https://www.youtube.com/watch?v=d6cH8FH95k4
 
 ---
-Title: How to Answer System Design Interview Questions (Complete Guide)
-Channel: Exponent
-Views: 560,889 | Likes: N/A | Duration: 7m10s
-Uploaded: N/A | Viral Score: 5.7/10
-URL: https://www.youtube.com/watch?v=L9TfZdODuFQ
-Description: "Make sure you're interview-ready with Exponent's system design interview prep course: https://bit.ly/3M6qTj1 Read our complete ..."
 
----
-Title: Complete System Design Roadmap 2025 | HLD & LLD by Shradha Ma'am
-Channel: Apna College
-Views: 447,300 | Likes: N/A | Duration: 20m33s
-Uploaded: N/A | Viral Score: 5.7/10
-URL: https://www.youtube.com/watch?v=CuQmQpvw04I
-Description: "Share your progress on Twitter : https://x.com/ShradhaKhapra_
-
-Want to study for Tech Placements/Internships from us :
-Our ..."
-
----
-Title: Inside a Real High-Frequency Trading System | HFT Architecture
-Channel: ByteMonk
-Views: 407,141 | Likes: N/A | Duration: 10m38s
-Uploaded: N/A | Viral Score: 5.6/10
-URL: https://www.youtube.com/watch?v=iwRaNYa8yTw
-Description: "High-Frequency Trading System (HFT) are the bleeding edge of real-time systems — HFT architecture is designed for ..."
-
----
-Title: Learn Fast API With This ONE Project
-Channel: Tech With Tim
-Views: 173,770 | Likes: N/A | Duration: 125m44s
-Uploaded: N/A | Viral Score: 5.2/10
-URL: https://www.youtube.com/watch?v=SR5NYCdzKkc
-Description: "ImageKit is an image and video API plus AI-Powered DAM that we use in this project to handle all of our image and video ..."
-
----
-Title: How to Design Large Scale Systems like TinyURL,  BookMyShow, Youtube,  Facebook,  Twitter, ....
-Channel: DevSkills
-Views: 309 | Likes: N/A | Duration: 141m11s
-Uploaded: N/A | Viral Score: 2.5/10
-URL: https://www.youtube.com/watch?v=KKJe98lXcpg
-Description: "Explore crucial concepts and gain valuable insights to enhance your skills ‍    . Show your support: Like this video if you ..."
-
----
-Title: System Design Interview: A Step-By-Step Guide
-Channel: ByteByteGo
-Views: 0 | Likes: N/A | Duration: 9m54s
-Uploaded: N/A | Viral Score: 1/10
-URL: https://www.youtube.com/watch?v=i7twT3x5yv8
-Description: "Learn something new every week by subscribing to our newsletter: https://bit.ly/3tfAlYD Checkout our bestselling System Design ..."
-
----
-Title: Distributed Systems Explained | System Design Interview Basics
-Channel: ByteMonk
-Views: 0 | Likes: N/A | Duration: 3m38s
-Uploaded: N/A | Viral Score: 1/10
-URL: https://www.youtube.com/watch?v=IJWwfMyPu1c
-Description: "Distributed systems are becoming more and more widespread. They are a complex field of study in computer science. Distributed ..."
-
----
-Title: The Truth About the Software Engineering Job Market in 2025
-Channel: Tech With Tim
-Views: 0 | Likes: N/A | Duration: 16m37s
-Uploaded: N/A | Viral Score: 1/10
-URL: https://www.youtube.com/watch?v=nokdEcqKWtA
-Description: "To learn for free on Brilliant, go to https://brilliant.org/techwithtim . Brilliant's also given our viewers 20% off an annual Premium ..."
-
-
-### SOURCE URLS (for idea-generator)
-- Backend web development - a complete overview (2548K views)
-  URL: https://www.youtube.com/watch?v=XBu54nfzxAQ
-- System Design Concepts Course and Interview Prep (2480K views)
-  URL: https://www.youtube.com/watch?v=F2FmTdLtb_4
-- Amazon System Design Interview: Design Parking Garage (1665K views)
-  URL: https://www.youtube.com/watch?v=NtMvNh0WFVM
-- the TRUTH about C++ (is it worth your time?) (1130K views)
-  URL: https://www.youtube.com/watch?v=q1ZmFc-sqNc
-- How to Answer System Design Interview Questions (Complete Guide) (561K views)
-  URL: https://www.youtube.com/watch?v=L9TfZdODuFQ
-- Complete System Design Roadmap 2025 | HLD & LLD by Shradha Ma'am (447K views)
-  URL: https://www.youtube.com/watch?v=CuQmQpvw04I
-- Inside a Real High-Frequency Trading System | HFT Architecture (407K views)
-  URL: https://www.youtube.com/watch?v=iwRaNYa8yTw
-- Learn Fast API With This ONE Project (174K views)
-  URL: https://www.youtube.com/watch?v=SR5NYCdzKkc
-- How to Design Large Scale Systems like TinyURL,  BookMyShow, Youtube,  Facebook,  Twitter, .... (0K views)
-  URL: https://www.youtube.com/watch?v=KKJe98lXcpg
-- System Design Interview: A Step-By-Step Guide (0K views)
-  URL: https://www.youtube.com/watch?v=i7twT3x5yv8
-- Distributed Systems Explained | System Design Interview Basics (0K views)
-  URL: https://www.youtube.com/watch?v=IJWwfMyPu1c
-- The Truth About the Software Engineering Job Market in 2025 (0K views)
-  URL: https://www.youtube.com/watch?v=nokdEcqKWtA
-
----
 ### GOOGLE NEWS
-## GOOGLE NEWS SCOUT REPORT — Sports AI
-Date: 2026-03-24
-Articles: 20
+Breaking news, institutional perspectives, and urgent warnings from major outlets:
 
-### Top Articles
+- **"Tackling Deepfake Scam Calls With Syntelligence AI"** — Cyber Magazine
+  - Recency: 9/10 (Mar 24, 2026)
+  - URL: https://news.google.com/rss/articles/CBMic0FVX3lxTE5vSFhZN3EyaVc5TWJ6cEJVdmVXNEl6QVFJei05VGpldkVqT2lIWHV0eDRMZENlaXpKdDV0V1hsdnRnWTVINnJHdTJpMjYzVnM1Z0UtRVZqUjFzVWNWc2hWUVJTdHRoczFVOUNIZUNzZEw4aEU?oc=5
 
----
-Title: Revolutionizing Coaching: Lynk.coach - An AI-First Platform for Skill Development - Devdiscourse
-Source: Devdiscourse
-Published: Tue, 24 Mar 2026 08:49:36 GMT
-Recency Score: 10/10
-URL: https://news.google.com/rss/articles/CBMi0wFBVV95cUxOeXhEVmxpbGFJVUJFZ1hsTFUwT1NFOWJCSmh5a3piVnBhTkxCdGlHZndzVWFiMlBQbnFSSVRaeERlcy0wZXVRYm1pTDgyMW00VnJFdFh6ZXoySjVMMEotU0FMN2txVVBQYmNDNHVlRVZOdWJMQjBpLTJJVUM5SE1KZHp2WW9tMHNrdHlhN05rbVRidHVfaFl6TUNadHZDYU0xZThMWmMyZGQ4Vk5jOEhKLUR3M2dSc0pkTVNVUlhvMkstVktvbVZaTGhIQmhncUhUOTJR0gHYAUFVX3lxTE43VzM3QzlPUkpQZXZsVVJxN1R3VG9zNnZYTUlnd00zaExYSEFtYU1GNjBtamQ2RXJCUHU3eWk2TURMRWFubXJhWTA0ZVk0bE9XM0d1SHpiRnc4T2xZOGQ1MjNRNGxQMGRWWk91bVplRkNzSjlGQ0dJTktOWEM0eFRMQ3RDUG9TWFFYV2ozd3BqaUtFMGI5dGFrazBQbFhUZElJSVA3Um13YXEyMFBxajlsSi1yWWlZREhnWlRMU1dNWDVEYUVHM3lDMXpjekFtUmpQRnczVUs0Uw?oc=5
+- **"The newest form of online scam — deepfakes-as-a-service can clone your voice and face using 10 seconds of content"** — The Irish Independent
+  - Recency: 6/10 (Mar 20, 2026)
+  - URL: https://news.google.com/rss/articles/CBMipgJBVV95cUxOT1FOZmNRcXQ2ZlgyNC1MbEdSeGtNQXNnOFM5MlVGekdaVGVsRE1VUV9nYkhIbnJXR3M0UXhnMUpDSmwxT1pmQVhqLUZVQWFLeGhuaFpFbW1saV81Mm0zSlI1NGg2NzFMaFZOaU1MRi1LNlh2Nmk0V211MmhMNkNRZGZFV3JORWszZHlibTBjVkYtb0c1Tk1HSno5UHJtSnpUVWxfLVpMQ1Nqc0lSZi04OW4xR1JreDNVblJNN3g0YUlXMWxVUTJ2S09tbTVyQ1UzcnRXR3M5XzhQVUczcm9Faklqdm1IclI0VjZ3cWtBMHRTQjZNTzF6TXROUGhZWnZxcERWeHlqcXhRd25ITkUxcmRXNW52N2ZyY2ZUVUd6aHM4YTN2Tnc?oc=5
 
----
-Title: Lyfskills launches Lynk.coach, an AI-powered coaching management platform for sports, fitness, performance arts and skill development - TheWire.in
-Source: TheWire.in
-Published: Tue, 24 Mar 2026 08:46:57 GMT
-Recency Score: 10/10
-URL: https://news.google.com/rss/articles/CBMi_gFBVV95cUxPVnZxNzkxS1RESWZnckkteDRGOE0zelFmSks4ODhfSTNzZkZDWk5kQ3ZTd1htOXhtQUNBOWdXNE5QRnFnVUt3RFZvV0JQV3BmenVZS2VVYjdGUkJFTjI3Y1NWako1T0lSUTljT1NxdjlRamNtd3lTNTVaWUFtNThCTUNVSEdpZUk2R1VBOVRscFVZQ1NfRzJxWmxZSE9abWFCbjVoSlFkWGYwUHoxUXdrTUx0d2lSWEFFMzRPbERQV01lQjBJRE1QR0lFeGZiLWtmR1Q3ZlR3eW1qSlI4bURONEgwcGUyVmJrb1RMZElYM1k2TVdPcGdDYjFPZExqUdIBgwJBVV95cUxQVEIxQmNmcmxZRlVfS05YMl9nUmp1N3c0ZWJjV3F0RTd0RGxwTGVEdzE0ODl4cy02akJQN3hPaC1QLVFjTWJyT00yOGlHai1jNXFCanBYcGxKZGFCRTMwMzlFX1pSVnBhZldMQnpTWDRGbGtjblFmcDZYaXoxUzNYd2ptekhSSnZGcnI0bEtRUk9jYTM2dlRvbnZub253OElGOHY0MXZnZ1ctRDZOQXJ0OGRSSU02UGlzdlZ4bE9CZEhUV3lIdE1zY25rdXBfOG5zZ2RIc2J0TUgzSjdROU5sa1RPTEdTT0tJTUszR3VzMEd0X0gxRTR5ZGNtT3lsY3NiSTBZ?oc=5
+- **"South Africa's Deepfake Fraud Rate Highest In Africa As Cheap AI Tools Fuel Scams"** — WeeTracker
+  - Recency: 6/10 (Mar 19, 2026)
+  - URL: https://news.google.com/rss/articles/CBMiggFBVV95cUxQMGt0MmRGaW13Y2RhUkZld3NKZTJSTlpKUjlrbG5WeFgyLXZrSzBhUXFnN2xDWFoxZmRmaTdtRkF2OFBGQngzLV8tRHZWYldQM2I1ZW9GN1pJTjduWXdQcHB2djNDNVpCYWN1UUktM3pXOU9feXFEMDZmaGwwTzVCWl9B?oc=5
 
----
-Title: Lil Wayne Returns To “Not Just Football” To Talk AI, World Cup & A Mixtape Weezy VERZUZ - LilWayneHQ
-Source: LilWayneHQ
-Published: Mon, 23 Mar 2026 20:27:23 GMT
-Recency Score: 9/10
-URL: https://news.google.com/rss/articles/CBMipAFBVV95cUxPZ2kwMUdGTnpwWVJZMWpLN1JZR0VtaTZqMExzRTZ1VUhiUEgxc3pOUWFEQ3NrcF80em1kb0U4T2diNVJTZk1WYjFSN2M2Q1B4V2FKWFhESkZ4REFjZmEtaDBZZkgtZU8tbmNJdVljT004cFBiYm1scUd5ZWdZTjVwaUpiNHBoTXZmZ1dIRnZraUxVcy0tV2dOY2cyTHc2U0hPeVFzMw?oc=5
+- **"Deepfakes, voice cloning and weaponised AI: Global wake-up call to organised fraud"** — UN News
+  - Recency: 4/10 (Mar 16, 2026)
+  - URL: https://news.google.com/rss/articles/CBMiV0FVX3lxTFBCX2JDRlpLUTNMR3FjcnhWaC13TnEyUFNfMHJVYzlJUU5tS1UtUDFoZi04b2p5anJlX01SeEszNHNoUHFZVGN4ZHZrRW05Zk5vdDkteDZnTQ?oc=5
 
----
-Title: AI Sports Betting in 2026: Tools, Picks & What’s Changing - SportsHandle
-Source: SportsHandle
-Published: Mon, 23 Mar 2026 16:04:00 GMT
-Recency Score: 9/10
-URL: https://news.google.com/rss/articles/CBMiWkFVX3lxTE96VjJpZTNfc0loSmp0Q19xTi1iTGpwY1JXcjJHcE5BYzFnWm8xdHdZd0hGRGlHWjNnVEVDQnd1MEtpQ2VTRlB2cUZoNG0yQXNXaEdmME5seFZydw?oc=5
+- **"Models Recruited as 'AI Faces' for Deepfake Scam Operations"** — The Tech Buzz
+  - Recency: 4/10 (Mar 16, 2026)
+  - URL: https://news.google.com/rss/articles/CBMilAFBVV95cUxOVU9wcjRNdllxWXFvU1lOWnlYSnZEcktVWTNweS1NQTlPdTh5dnNrTmZ4RG5rUVNNakFseTFsczZrM3JQbGhZbndyT3V0dzBHQzdQWUpjRXRPUjktTlFqMFpZV3RRcXNNM2FDQXpaejBOUVluX3hFa0ktUmNQb25QSEZQVjd0NzBfY2x0enRmMC1UYkd1?oc=5
 
----
-Title: How Infosys' AI Propels Formula E Fans to Pole Position - AI Magazine
-Source: AI Magazine
-Published: Mon, 23 Mar 2026 15:37:57 GMT
-Recency Score: 9/10
-URL: https://news.google.com/rss/articles/CBMiigFBVV95cUxQbktUdWt6cFVQckJVcmFRWTBvVnFNdlVPWmdob2NtWTVVdEN2UmJGSUJoT1hKLVpsM0p5UUF6eE5BR296cTlYb1JwSFBveTJQaUtidGUwaFBoc05fRG55V2VRVmlXNGpXZ3hyUFhxUTluWFQ3TVNOMGJoc0NlRWd0a0RJTFpOWUVDQ1E?oc=5
+- **"Opinion | Scammers are getting smarter. We must, too."** — The Washington Post
+  - Recency: 3/10 (Mar 5, 2026)
+  - URL: https://news.google.com/rss/articles/CBMimAFBVV95cUxQTnd2TUVpNHJsU001T3h2WkFTRXFpc1lYM3lrRHlTVHFoOThkeTVuRjREOE45ZWZRa3M5aW5TN2YtcV8zZ0NMemN0ZGdwTUhTVUt6bnZkVEJNbUJHeVB3X0NNYmE4OXpvYTNiclB0dmUzWlJrMTVmQ0tmX1hXWlBBUjgta1U1Vk9EZGJ4ZEgwdldWNDlSakRTTA?oc=5
 
----
-Title: Professional Baseball Players Association Signs Agreement With KTG Sports to Use AI-Based Publicity Rights - starnewskorea.com
-Source: starnewskorea.com
-Published: Mon, 23 Mar 2026 06:25:23 GMT
-Recency Score: 8/10
-URL: https://news.google.com/rss/articles/CBMiekFVX3lxTE41a3pFNUpobHdoSnpDRXN2OHBza0NPVktGU0J6OTV6N0dLSzhIUzMtOVIwc1ZQTFUzU2JOOHROam5jTUNWWnlCRlpYWVRVMzl1R2tTNzd3ZGhyMDV5N19LTldLdXBxUXBSSTQtMWZJU2xjbnpvazNPWXZB?oc=5
+- **"Police warn AI deepfakes driving rise in emergency scams"** — CTV News
+  - Recency: 3/10 (Mar 2, 2026)
+  - URL: https://news.google.com/rss/articles/CBMitAFBVV95cUxQMTJkSFJTMVZSVjhPX2ZiZmZuVmxTeFZhVnhfT2prTU5uSHpKbWdXTmtvTGlMMk81MzBnTDZMM21OX19Qd0xOcEdrRksydFpYR2cyd2gzMkhnRVo3M0MyRnVwMnFmVGwwV3EzNmpkN0lTVlNFQjNNdl9NU2RoVkQwYXN4QnZ3Q2NiY1g4NTJnX2MyeXhQMzRCUW5XbkQ5YVo5akZrRmNRQmI5YVE2TW1Qc3F3SXQ?oc=5
+
+- **"Scamming the faithful: Florida pastors impersonated in AI deepfakes"** — Tampa Bay Times
+  - Recency: 3/10 (Mar 1, 2026)
+  - URL: https://news.google.com/rss/articles/CBMihgFBVV95cUxQdlpGejNhRlFCUW5nWU1iaklTQzRXUjNnaEpsZTljMGU4NWQwQkFVSVotVGQtclJJQmNKSGhjdnh1TS0tdTdVaUdZWG1MZDF3QjdzbHVHZ2h0V0MxcnBsWkFmbGF1UUJybFh0RGF6VGVmU0kySWNlUVhCYjROU1h4elc0bTVMdw?oc=5
+
+- **"The newest church scam: AI deepfakes. Here's how to spot them"** — Miami Herald
+  - Recency: 3/10 (Feb 28, 2026)
+  - URL: https://news.google.com/rss/articles/CBMiiAFBVV95cUxPWmI0TUxpU0RQN2dNZElMYUpCbFU4eS1FR3FZZzkzdjZRRkM0VUVvN3pMbFVyUG1YdWk1WWNOX0F2S0NIV0FYUWFRUkdKXzJQVkxZU2lsZkJzNXZCWkxOS1c2Ti1qT0ppMjhENjR5REpUeFR2Wm9VMnl1ZmpfaVpkR21EaXBsRW9u0gGIAUFVX3lxTE5EYnFVUnJsRkJIeEx5V2pQSkJMMTNGeGRRZ0Z1cmticS1pUzNTVGpSQU4ydHZDWnVnQ05jeUs5V2ZZNF9UaU9ET2duVlFPeFhHaVV0TlBiY3ZiSUFWdW9iTElLZzVTYURTQXFlOFlBcVdzdkRGV1A0T2pxUVA3V0I4NUtiRnVUUV8?oc=5
+
+- **"AI deepfake scams industrialise fraud, cost UK billions"** — SecurityBrief UK
+  - Recency: 3/10 (Feb 25, 2026)
+  - URL: https://news.google.com/rss/articles/CBMikgFBVV95cUxORy1kTXhqUjhPcjlfSk1VSTNyci1VTjVOUmh5OGo1TVlieG5GNzNiNEI2eVNtNHNhaDBZZk9kcW9iR1pkcWQtWVZpUktEUWM2TnNTVnkyY0tjcFZheFFMQXkyZmpxVzN5MmlLLXBCN3lDSUxMNHBiRmhINkR2WU9SUnBXTTQxOFlubWhPRFkwbFItUQ?oc=5
 
 ---
-Title: Introducing Sports AI with Colin Cowherd on the FOX Sports App - FOX Sports
-Source: FOX Sports
-Published: Thu, 26 Feb 2026 08:00:00 GMT
-Recency Score: 3/10
-URL: https://news.google.com/rss/articles/CBMibkFVX3lxTE1kUDMzRDJJYVl6MGxhdWxBUFNVT3VOSEhHVy0xNEd0MTZqSEwyLXllTTBDbUFpcy1xLTJMRDRWbHR1dFBFT202SkZjVXpXWE94ZjJRZlZ0dVd1RXNUVWNuUDdWOFFQWF8xNWJxVUVB?oc=5
 
----
-Title: Brady Tkachuk decries White House’s AI video of him insulting Canadians after US gold - The Guardian
-Source: The Guardian
-Published: Thu, 26 Feb 2026 08:00:00 GMT
-Recency Score: 3/10
-URL: https://news.google.com/rss/articles/CBMiygFBVV95cUxPY0t0VWhuaVVmVnR1bGhwRkZUa0FtMTgyTEQ3bm1WU2lMMHZCbm1CQzhsaXFJLUgzNFpwZTkwbDhNMGlHTVdnbkgwMWFjZjFPSjB0UV9xV2lWemwwbEdsYlFrdTE5UEdUM0xNX1BLcEg5dFZHNVdVX1pDSmZZZVpKbXNvb01JQmVVd2tiU2REdENnU1k4Wi11bm5EVmJUUnJJVnNsbUF2bU52SXFxdU9hOFEzdmR6V29Cc2xnNGh0d2JJaFdfM3AweGdB?oc=5
+## Summary
 
----
-Title: AI will supercharge sports team valuations, says Arctos Partners’ Charles - CNBC
-Source: CNBC
-Published: Tue, 03 Feb 2026 08:00:00 GMT
-Recency Score: 2/10
-URL: https://news.google.com/rss/articles/CBMiiAFBVV95cUxQelAzazY1UF9kUmNoRmphaEo5NU1zS0ZzWUd4ekpqeFI5SlhUeHdRc2xZRUc5Wl9IcW5tVk9VVDg2YUhzczdwZjloc1dDNUlCUGUxT3d4d0JqbWpOTlduOHJqZENhdU4yeTJSSkJ3UE5ERzFGbFpGazVUdVc3ai16QS1jaFlqOTla0gGOAUFVX3lxTE9KNmlITFNKbnlabGZpaVRucUl0NTJYLWhVaWlIOXVnWGM4SFE0clE4Z2dOX3FsQXZCc2JWWEp3Y3RxSVVrWUtGQTFKVVhCcDg2NW9kaVhJd3ltUGEzYnVURkM0MlVMZ3N5TzN4d05TM0RPR1MxakJmSkJFVjZRUHJCTXdEZW1vODJCaFpYcmc?oc=5
+The "AI Scams" pillar is hot across all platforms, with deepfakes, voice cloning, and AI-powered fraud driving urgent conversations. Vaibhav's unique angle as a backend engineer can cut through the noise by focusing on *how systems detect and prevent* these scams—rather than just warning people about them. His strength in low-latency, high-performance systems maps perfectly to the real-time fraud detection architectures that crypto platforms and security companies are building right now.
 
----
-Title: The future of sports, powered by AI - The Washington Post
-Source: The Washington Post
-Published: Tue, 09 Dec 2025 08:00:00 GMT
-Recency Score: 2/10
-URL: https://news.google.com/rss/articles/CBMilgFBVV95cUxPSk9OTFFrdDFrRFdvZjdDVWp5VmpyWGNwZlNIZ0gzQjBmNXNUdkNYQUZodkVMbXJzYTNFNF9tQkxpYms5RC11RVBfdFVZSUFEaEZ2OVpGMGRUT1c3OHlyZW1HTFdULTdHblpFT3FoNldsNV9zcDFtQktIWUlpTVd2WTFOT0d6Q2RobFJ3TmI2aThHcmNJSEE?oc=5
-
----
-Title: Amazon’s custom AI-powered Prime Insights take fans inside the game - About Amazon
-Source: About Amazon
-Published: Tue, 25 Nov 2025 08:00:00 GMT
-Recency Score: 2/10
-URL: https://news.google.com/rss/articles/CBMifkFVX3lxTE5UNDM5dE83LTVmUUdnTUNabmt1OU9BRUpBanN6dHpnZ1dKamRQLWdkcXdVYzlVQUg0d0hhYlFrV0FkZUlpNGJBZVNHX1gyQWpHRmFONWJrUWkxMXRLSjhBZmVqX092dHVBV0tvaURJam5tdHBaSzdKeDBQZFR5dw?oc=5
-
----
-Title: Sports AI — Built for Sports Fans, Backed by Fox Sports - FOX Sports
-Source: FOX Sports
-Published: Sat, 01 Nov 2025 00:31:18 GMT
-Recency Score: 2/10
-URL: https://news.google.com/rss/articles/CBMiU0FVX3lxTFA0Q1RXZ09tTHBROGZrWm1kTDFha0dHb1NGcDdJcG1Cd09BUUF4Zzg1TXdTcXN5ZGtvbDZpSFZsNDRtZkllVW5SVkN4TmpYV1oxM0tv?oc=5
-
----
-Title: BBC Bitesize Guide to AI: How is AI transforming the world of football and sport? - BBC Bitesize - BBC
-Source: BBC
-Published: Wed, 15 Oct 2025 13:17:12 GMT
-Recency Score: 2/10
-URL: https://news.google.com/rss/articles/CBMiW0FVX3lxTE54S0RrMGNFWEtXZkJrX1gyRjdSdnIwUjRzM3VxczdseHlqdjhURXNJTWdhUWs0UlhJdGlXQzg5TnY4bHhBR280UGNnWFpsVENqMHQ5Z29jcWY2ZWs?oc=5
-
----
-Title: AI in Sports: Applications and Use Cases - appinventiv.com
-Source: appinventiv.com
-Published: Mon, 13 Oct 2025 07:00:00 GMT
-Recency Score: 2/10
-URL: https://news.google.com/rss/articles/CBMiVEFVX3lxTFBrZnl6TE9GM1Q0bnVSWURKSGhsaF9VYzF5b1Zjck02Njh6SjZPMnR3WWh1QkE5OGliSWJnS1VIXy01WVFtVkxhNmtCR0Mxd2FocDNhTQ?oc=5
-
----
-Title: Tristan Thompson on AI, Sports & Startups at Disrupt 2025 - TechCrunch
-Source: TechCrunch
-Published: Wed, 08 Oct 2025 07:00:00 GMT
-Recency Score: 2/10
-URL: https://news.google.com/rss/articles/CBMipwFBVV95cUxObVFzb01ScFAxQjlpY213c3BSWTNWcmUwdE1tLTREa003Vi1BY0FHNVZ5WDVNMW1PWkVlSnhIWjkxUmNCWUxaVGhTeUlGdG40NExYOEJwNk9xRjA0VnN3emVjUFVyWVhBcnFmMlM0LWVFdXM1ZkpfMzM5eXdQVXBvS1dqd3piSl8tYnlRNElhcTF2ZExpZDNHakNTUzNaOW5PUUl0LUFEZw?oc=5
-
----
-Title: Can AI help detect doping in sports? | Euronews Tech Talks Podcast - Euronews.com
-Source: Euronews.com
-Published: Sun, 07 Sep 2025 07:00:00 GMT
-Recency Score: 2/10
-URL: https://news.google.com/rss/articles/CBMinAFBVV95cUxNVEVQOV9OUXZxMklDSlJPRy1zbm9BbVNHSjVhcVdQLXJvcFozZWlOdk9nVFoyUkFYLVU5dXNNVGRmZnFEckFNdlY1cExKb0tDSmRmQ1ZRSXBvbUQtTURPNkxXNER2Q1k1cTItWG1xUDMxOE5XSWlsM2VYRlRQTE5ySjktTEtVQ19LR05IaHhzY25RUk1PaUlxcU5MVjI?oc=5
-
----
-Title: Meet the Guys Betting Big on AI Gambling Agents - WIRED
-Source: WIRED
-Published: Tue, 02 Sep 2025 07:00:00 GMT
-Recency Score: 2/10
-URL: https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUmFzcW5xNmZlZHo5Tm9sUVhqN0xkamNzeDBieWhBdlkzbWo5bjE4cDRHekRGXzNnN1hWbUt2NTlwOG40dWwzcUE5dnpFT2hucUdCSEJYbjl2M0ExZFEtQ1hWWDNDTS10d3pxNU9KbWtMQkJiei1PR2RTVG9KanU5dHZFTUg1M25Q?oc=5
-
----
-Title: A.I. Researchers Are Negotiating $250 Million Pay Packages. Just Like N.B.A. Stars. - The New York Times
-Source: The New York Times
-Published: Fri, 01 Aug 2025 07:00:00 GMT
-Recency Score: 2/10
-URL: https://news.google.com/rss/articles/CBMigAFBVV95cUxNbDRSaHJ2RU5ka0l4a2I5Mk8zNW5lVjNrUjBoaWV2MU85Ulo3VkxmZm5UaUhnVHM0dHh4TWVlWU5jd0pieEZSUnJXZy03d3U4TTZwQTZKbGRaajhDS21aQXVVck1MQmFOeVYzTHMtYWVUT29JX2FaV1l6U29SMVZPcg?oc=5
-
----
-Title: AI in sports: Changing the game for fans and players alike - IBM
-Source: IBM
-Published: Thu, 24 Jul 2025 06:12:15 GMT
-Recency Score: 2/10
-URL: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1CbDNVUE9MS25XTDRUMnBySkJkZXNYQ2dKYU5uSGNSRURBT3paaWhKOUhCMUEyRk9VSXpPUWdGYnpsQV9WMjBjNWhKSW0xbU1XUlp0V0N6bUVyRUE3WXFrMg?oc=5
-
----
-Title: Research on the digital transaction model of the sports industry chain based on blockchain technology - Nature
-Source: Nature
-Published: Fri, 11 Jul 2025 07:00:00 GMT
-Recency Score: 2/10
-URL: https://news.google.com/rss/articles/CBMiX0FVX3lxTE96UHR3MlpaamdMYjBlMDAxSlRRWE5EUWZIX0VyeWJCVWQ0cVp6a25MNVd5MFlBR3kwYlBRQVBLVTZQUG13YmZNckdDSU90Z2xjMjBJSWZXc1JvVkhoc3Nz?oc=5
-
-
-### SOURCE URLS (for idea-generator)
-- Revolutionizing Coaching: Lynk.coach - An AI-First Platform for Skill Development - Devdiscourse — Devdiscourse
-  URL: https://news.google.com/rss/articles/CBMi0wFBVV95cUxOeXhEVmxpbGFJVUJFZ1hsTFUwT1NFOWJCSmh5a3piVnBhTkxCdGlHZndzVWFiMlBQbnFSSVRaeERlcy0wZXVRYm1pTDgyMW00VnJFdFh6ZXoySjVMMEotU0FMN2txVVBQYmNDNHVlRVZOdWJMQjBpLTJJVUM5SE1KZHp2WW9tMHNrdHlhN05rbVRidHVfaFl6TUNadHZDYU0xZThMWmMyZGQ4Vk5jOEhKLUR3M2dSc0pkTVNVUlhvMkstVktvbVZaTGhIQmhncUhUOTJR0gHYAUFVX3lxTE43VzM3QzlPUkpQZXZsVVJxN1R3VG9zNnZYTUlnd00zaExYSEFtYU1GNjBtamQ2RXJCUHU3eWk2TURMRWFubXJhWTA0ZVk0bE9XM0d1SHpiRnc4T2xZOGQ1MjNRNGxQMGRWWk91bVplRkNzSjlGQ0dJTktOWEM0eFRMQ3RDUG9TWFFYV2ozd3BqaUtFMGI5dGFrazBQbFhUZElJSVA3Um13YXEyMFBxajlsSi1yWWlZREhnWlRMU1dNWDVEYUVHM3lDMXpjekFtUmpQRnczVUs0Uw?oc=5
-- Lyfskills launches Lynk.coach, an AI-powered coaching management platform for sports, fitness, performance arts and skill development - TheWire.in — TheWire.in
-  URL: https://news.google.com/rss/articles/CBMi_gFBVV95cUxPVnZxNzkxS1RESWZnckkteDRGOE0zelFmSks4ODhfSTNzZkZDWk5kQ3ZTd1htOXhtQUNBOWdXNE5QRnFnVUt3RFZvV0JQV3BmenVZS2VVYjdGUkJFTjI3Y1NWako1T0lSUTljT1NxdjlRamNtd3lTNTVaWUFtNThCTUNVSEdpZUk2R1VBOVRscFVZQ1NfRzJxWmxZSE9abWFCbjVoSlFkWGYwUHoxUXdrTUx0d2lSWEFFMzRPbERQV01lQjBJRE1QR0lFeGZiLWtmR1Q3ZlR3eW1qSlI4bURONEgwcGUyVmJrb1RMZElYM1k2TVdPcGdDYjFPZExqUdIBgwJBVV95cUxQVEIxQmNmcmxZRlVfS05YMl9nUmp1N3c0ZWJjV3F0RTd0RGxwTGVEdzE0ODl4cy02akJQN3hPaC1QLVFjTWJyT00yOGlHai1jNXFCanBYcGxKZGFCRTMwMzlFX1pSVnBhZldMQnpTWDRGbGtjblFmcDZYaXoxUzNYd2ptekhSSnZGcnI0bEtRUk9jYTM2dlRvbnZub253OElGOHY0MXZnZ1ctRDZOQXJ0OGRSSU02UGlzdlZ4bE9CZEhUV3lIdE1zY25rdXBfOG5zZ2RIc2J0TUgzSjdROU5sa1RPTEdTT0tJTUszR3VzMEd0X0gxRTR5ZGNtT3lsY3NiSTBZ?oc=5
-- Lil Wayne Returns To “Not Just Football” To Talk AI, World Cup & A Mixtape Weezy VERZUZ - LilWayneHQ — LilWayneHQ
-  URL: https://news.google.com/rss/articles/CBMipAFBVV95cUxPZ2kwMUdGTnpwWVJZMWpLN1JZR0VtaTZqMExzRTZ1VUhiUEgxc3pOUWFEQ3NrcF80em1kb0U4T2diNVJTZk1WYjFSN2M2Q1B4V2FKWFhESkZ4REFjZmEtaDBZZkgtZU8tbmNJdVljT004cFBiYm1scUd5ZWdZTjVwaUpiNHBoTXZmZ1dIRnZraUxVcy0tV2dOY2cyTHc2U0hPeVFzMw?oc=5
-- AI Sports Betting in 2026: Tools, Picks & What’s Changing - SportsHandle — SportsHandle
-  URL: https://news.google.com/rss/articles/CBMiWkFVX3lxTE96VjJpZTNfc0loSmp0Q19xTi1iTGpwY1JXcjJHcE5BYzFnWm8xdHdZd0hGRGlHWjNnVEVDQnd1MEtpQ2VTRlB2cUZoNG0yQXNXaEdmME5seFZydw?oc=5
-- How Infosys' AI Propels Formula E Fans to Pole Position - AI Magazine — AI Magazine
-  URL: https://news.google.com/rss/articles/CBMiigFBVV95cUxQbktUdWt6cFVQckJVcmFRWTBvVnFNdlVPWmdob2NtWTVVdEN2UmJGSUJoT1hKLVpsM0p5UUF6eE5BR296cTlYb1JwSFBveTJQaUtidGUwaFBoc05fRG55V2VRVmlXNGpXZ3hyUFhxUTluWFQ3TVNOMGJoc0NlRWd0a0RJTFpOWUVDQ1E?oc=5
-- Professional Baseball Players Association Signs Agreement With KTG Sports to Use AI-Based Publicity Rights - starnewskorea.com — starnewskorea.com
-  URL: https://news.google.com/rss/articles/CBMiekFVX3lxTE41a3pFNUpobHdoSnpDRXN2OHBza0NPVktGU0J6OTV6N0dLSzhIUzMtOVIwc1ZQTFUzU2JOOHROam5jTUNWWnlCRlpYWVRVMzl1R2tTNzd3ZGhyMDV5N19LTldLdXBxUXBSSTQtMWZJU2xjbnpvazNPWXZB?oc=5
-- Introducing Sports AI with Colin Cowherd on the FOX Sports App - FOX Sports — FOX Sports
-  URL: https://news.google.com/rss/articles/CBMibkFVX3lxTE1kUDMzRDJJYVl6MGxhdWxBUFNVT3VOSEhHVy0xNEd0MTZqSEwyLXllTTBDbUFpcy1xLTJMRDRWbHR1dFBFT202SkZjVXpXWE94ZjJRZlZ0dVd1RXNUVWNuUDdWOFFQWF8xNWJxVUVB?oc=5
-- Brady Tkachuk decries White House’s AI video of him insulting Canadians after US gold - The Guardian — The Guardian
-  URL: https://news.google.com/rss/articles/CBMiygFBVV95cUxPY0t0VWhuaVVmVnR1bGhwRkZUa0FtMTgyTEQ3bm1WU2lMMHZCbm1CQzhsaXFJLUgzNFpwZTkwbDhNMGlHTVdnbkgwMWFjZjFPSjB0UV9xV2lWemwwbEdsYlFrdTE5UEdUM0xNX1BLcEg5dFZHNVdVX1pDSmZZZVpKbXNvb01JQmVVd2tiU2REdENnU1k4Wi11bm5EVmJUUnJJVnNsbUF2bU52SXFxdU9hOFEzdmR6V29Cc2xnNGh0d2JJaFdfM3AweGdB?oc=5
-- AI will supercharge sports team valuations, says Arctos Partners’ Charles - CNBC — CNBC
-  URL: https://news.google.com/rss/articles/CBMiiAFBVV95cUxQelAzazY1UF9kUmNoRmphaEo5NU1zS0ZzWUd4ekpqeFI5SlhUeHdRc2xZRUc5Wl9IcW5tVk9VVDg2YUhzczdwZjloc1dDNUlCUGUxT3d4d0JqbWpOTlduOHJqZENhdU4yeTJSSkJ3UE5ERzFGbFpGazVUdVc3ai16QS1jaFlqOTla0gGOAUFVX3lxTE9KNmlITFNKbnlabGZpaVRucUl0NTJYLWhVaWlIOXVnWGM4SFE0clE4Z2dOX3FsQXZCc2JWWEp3Y3RxSVVrWUtGQTFKVVhCcDg2NW9kaVhJd3ltUGEzYnVURkM0MlVMZ3N5TzN4d05TM0RPR1MxakJmSkJFVjZRUHJCTXdEZW1vODJCaFpYcmc?oc=5
-- The future of sports, powered by AI - The Washington Post — The Washington Post
-  URL: https://news.google.com/rss/articles/CBMilgFBVV95cUxPSk9OTFFrdDFrRFdvZjdDVWp5VmpyWGNwZlNIZ0gzQjBmNXNUdkNYQUZodkVMbXJzYTNFNF9tQkxpYms5RC11RVBfdFVZSUFEaEZ2OVpGMGRUT1c3OHlyZW1HTFdULTdHblpFT3FoNldsNV9zcDFtQktIWUlpTVd2WTFOT0d6Q2RobFJ3TmI2aThHcmNJSEE?oc=5
-- Amazon’s custom AI-powered Prime Insights take fans inside the game - About Amazon — About Amazon
-  URL: https://news.google.com/rss/articles/CBMifkFVX3lxTE5UNDM5dE83LTVmUUdnTUNabmt1OU9BRUpBanN6dHpnZ1dKamRQLWdkcXdVYzlVQUg0d0hhYlFrV0FkZUlpNGJBZVNHX1gyQWpHRmFONWJrUWkxMXRLSjhBZmVqX092dHVBV0tvaURJam5tdHBaSzdKeDBQZFR5dw?oc=5
-- Sports AI — Built for Sports Fans, Backed by Fox Sports - FOX Sports — FOX Sports
-  URL: https://news.google.com/rss/articles/CBMiU0FVX3lxTFA0Q1RXZ09tTHBROGZrWm1kTDFha0dHb1NGcDdJcG1Cd09BUUF4Zzg1TXdTcXN5ZGtvbDZpSFZsNDRtZkllVW5SVkN4TmpYV1oxM0tv?oc=5
-- BBC Bitesize Guide to AI: How is AI transforming the world of football and sport? - BBC Bitesize - BBC — BBC
-  URL: https://news.google.com/rss/articles/CBMiW0FVX3lxTE54S0RrMGNFWEtXZkJrX1gyRjdSdnIwUjRzM3VxczdseHlqdjhURXNJTWdhUWs0UlhJdGlXQzg5TnY4bHhBR280UGNnWFpsVENqMHQ5Z29jcWY2ZWs?oc=5
-- AI in Sports: Applications and Use Cases - appinventiv.com — appinventiv.com
-  URL: https://news.google.com/rss/articles/CBMiVEFVX3lxTFBrZnl6TE9GM1Q0bnVSWURKSGhsaF9VYzF5b1Zjck02Njh6SjZPMnR3WWh1QkE5OGliSWJnS1VIXy01WVFtVkxhNmtCR0Mxd2FocDNhTQ?oc=5
-- Tristan Thompson on AI, Sports & Startups at Disrupt 2025 - TechCrunch — TechCrunch
-  URL: https://news.google.com/rss/articles/CBMipwFBVV95cUxObVFzb01ScFAxQjlpY213c3BSWTNWcmUwdE1tLTREa003Vi1BY0FHNVZ5WDVNMW1PWkVlSnhIWjkxUmNCWUxaVGhTeUlGdG40NExYOEJwNk9xRjA0VnN3emVjUFVyWVhBcnFmMlM0LWVFdXM1ZkpfMzM5eXdQVXBvS1dqd3piSl8tYnlRNElhcTF2ZExpZDNHakNTUzNaOW5PUUl0LUFEZw?oc=5
-- Can AI help detect doping in sports? | Euronews Tech Talks Podcast - Euronews.com — Euronews.com
-  URL: https://news.google.com/rss/articles/CBMinAFBVV95cUxNVEVQOV9OUXZxMklDSlJPRy1zbm9BbVNHSjVhcVdQLXJvcFozZWlOdk9nVFoyUkFYLVU5dXNNVGRmZnFEckFNdlY1cExKb0tDSmRmQ1ZRSXBvbUQtTURPNkxXNER2Q1k1cTItWG1xUDMxOE5XSWlsM2VYRlRQTE5ySjktTEtVQ19LR05IaHhzY25RUk1PaUlxcU5MVjI?oc=5
-- Meet the Guys Betting Big on AI Gambling Agents - WIRED — WIRED
-  URL: https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUmFzcW5xNmZlZHo5Tm9sUVhqN0xkamNzeDBieWhBdlkzbWo5bjE4cDRHekRGXzNnN1hWbUt2NTlwOG40dWwzcUE5dnpFT2hucUdCSEJYbjl2M0ExZFEtQ1hWWDNDTS10d3pxNU9KbWtMQkJiei1PR2RTVG9KanU5dHZFTUg1M25Q?oc=5
-- A.I. Researchers Are Negotiating $250 Million Pay Packages. Just Like N.B.A. Stars. - The New York Times — The New York Times
-  URL: https://news.google.com/rss/articles/CBMigAFBVV95cUxNbDRSaHJ2RU5ka0l4a2I5Mk8zNW5lVjNrUjBoaWV2MU85Ulo3VkxmZm5UaUhnVHM0dHh4TWVlWU5jd0pieEZSUnJXZy03d3U4TTZwQTZKbGRaajhDS21aQXVVck1MQmFOeVYzTHMtYWVUT29JX2FaV1l6U29SMVZPcg?oc=5
-- AI in sports: Changing the game for fans and players alike - IBM — IBM
-  URL: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1CbDNVUE9MS25XTDRUMnBySkJkZXNYQ2dKYU5uSGNSRURBT3paaWhKOUhCMUEyRk9VSXpPUWdGYnpsQV9WMjBjNWhKSW0xbU1XUlp0V0N6bUVyRUE3WXFrMg?oc=5
-- Research on the digital transaction model of the sports industry chain based on blockchain technology - Nature — Nature
-  URL: https://news.google.com/rss/articles/CBMiX0FVX3lxTE96UHR3MlpaamdMYjBlMDAxSlRRWE5EUWZIX0VyeWJCVWQ0cVp6a25MNVd5MFlBR3kwYlBRQVBLVTZQUG13YmZNckdDSU90Z2xjMjBJSWZXc1JvVkhoc3Nz?oc=5
-
+**Next Step:** Use these sources and angles to feed the idea-generator and content-producer for specific content pieces.

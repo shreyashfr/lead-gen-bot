@@ -61,27 +61,28 @@ If research returns insufficient data (< 8 unique sources across all platforms),
 
 **Other queries:** Auto-detect trending alternatives by analyzing social data in real-time. Scan posts for terms appearing 3+ times, pick top 2-3 options, try them in order.
 
-## Always Announce Before Running
+## Silent Execution (No Messages)
 
-**CRITICAL: Use the `message` tool to send the announcement FIRST, as a separate action before any exec calls.**
+**DO NOT send any messages to user. Research-agent is silent.**
 
-Correct order:
-1. `message(action=send)` → send the announcement
-2. `exec(...)` → run Reddit Scout (background)
-3. `exec(...)` → run Twitter Scout (background)
-4. `exec(...)` → run YouTube Scout (background)
-5. Wait for all 3 to finish
-6. `message(action=send)` → "✅ All 3 scouts done. Compiling report + ideas now..."
-7. Compile and send the full report
+The pillar-workflow dispatcher handles ALL user-facing messages:
+- ✅ Initial ACK: "🔍 Searching viral posts..." (sent at START)
+- ✅ Ideas report: (sent at END by idea-generator)
 
-Announcement message:
-```
-🔍 Starting research on: [Pillar Topic]
+Research-agent does NOT send:
+- ❌ "Starting research"
+- ❌ "All 3 scouts done"
+- ❌ "Compiling report"
+- ❌ Any progress updates
 
-Scanning Reddit + Twitter/X + YouTube + Google News for what's viral around this right now — top posts, videos, hot takes, pain points, and gaps.
-
-This usually takes 8-12 minutes. I'll send the full report + 15 ideas when it's ready. Hang tight...
-```
+**Just execute silently:**
+1. `exec(...)` → run Reddit Scout (background)
+2. `exec(...)` → run Twitter Scout (background)
+3. `exec(...)` → run YouTube Scout (background)
+4. `exec(...)` → run Google News Scout (background)
+5. Wait for all 4 to finish
+6. Compile report
+7. Return result (no message)
 
 ---
 
@@ -328,20 +329,17 @@ After all scouts finish, IMMEDIATELY run this validation check before compiling 
    - Google News: Last 30 days, no filter
 
 2. **If total sources < 8 after first pass:**
-   ```
-   ⏳ Found only [X] sources on first pass. Searching deeper...
-   
-   Expanding search to:
-   - Broader Reddit subreddits
-   - Related keywords on Twitter
-   - More YouTube channels
-   - International news sources
-   ```
+   - Silently re-run with expanded parameters
+   - Expanding search to:
+     - Broader Reddit subreddits
+     - Related keywords on Twitter
+     - More YouTube channels
+     - International news sources
 
 3. **Keep searching until you have:**
    - Minimum 3 sources total (will accept lower signal)
    - OR 10 minutes elapsed (whichever comes first)
-   - Then DELIVER with what you have
+   - Then deliver with what you have
 
 4. **NO AUTO-PIVOTING.** If user said "Music AI":
    - Search for "Music AI" first
@@ -349,12 +347,9 @@ After all scouts finish, IMMEDIATELY run this validation check before compiling 
    - But ONLY on user request to pivot
    - Default: deliver ideas on the original topic, even with 3-5 sources
 
-5. **Always announce:**
-   ```
-   ✅ Research done (found [X] sources across all platforms)
-   
-   💡 Generating 15 ideas based on what's trending...
-   ```
+5. **NO ANNOUNCEMENT MESSAGE** - Do not send "Research done" or "Generating ideas"
+   - The dispatcher and idea-generator handle all user messages
+   - You are silent
 
 6. **Deliver 15 ideas ALWAYS** - even if sources are limited
    - Use what you have
@@ -363,9 +358,10 @@ After all scouts finish, IMMEDIATELY run this validation check before compiling 
 
 **This ensures:** 
 - User gets ideas for ANY query
-- Transparency on what was found
+- Transparency on what was found (visible in the report URLs)
 - No silent failures
 - Fast turnaround
+- Zero narration
 
 ---
 
