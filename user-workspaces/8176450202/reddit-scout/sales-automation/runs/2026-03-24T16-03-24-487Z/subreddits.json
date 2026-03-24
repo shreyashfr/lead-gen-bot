@@ -1,0 +1,102 @@
+[
+  {
+    "name": "homeautomation",
+    "title": "HomeAutomation",
+    "subscribers": 4566398,
+    "over18": false,
+    "url": "https://www.reddit.com/r/homeautomation/",
+    "discoveredBy": [
+      "Sales Automation"
+    ]
+  },
+  {
+    "name": "sales",
+    "title": "Sales and Selling",
+    "subscribers": 559772,
+    "over18": false,
+    "url": "https://www.reddit.com/r/sales/",
+    "discoveredBy": [
+      "Sales Automation"
+    ]
+  },
+  {
+    "name": "n8n",
+    "title": "n8n: Powerfully Easy Automation",
+    "subscribers": 227867,
+    "over18": false,
+    "url": "https://www.reddit.com/r/n8n/",
+    "discoveredBy": [
+      "Sales Automation"
+    ]
+  },
+  {
+    "name": "automation",
+    "title": "ChatGPT, Artificial Intelligence and Automation",
+    "subscribers": 194271,
+    "over18": false,
+    "url": "https://www.reddit.com/r/automation/",
+    "discoveredBy": [
+      "Sales Automation"
+    ]
+  },
+  {
+    "name": "Automate",
+    "title": "Automation (GenAI)",
+    "subscribers": 152984,
+    "over18": false,
+    "url": "https://www.reddit.com/r/Automate/",
+    "discoveredBy": [
+      "Sales Automation"
+    ]
+  },
+  {
+    "name": "MarketingAutomation",
+    "title": "Marketing Automation",
+    "subscribers": 66416,
+    "over18": false,
+    "url": "https://www.reddit.com/r/MarketingAutomation/",
+    "discoveredBy": [
+      "Sales Automation"
+    ]
+  },
+  {
+    "name": "AiAutomations",
+    "title": "AiAutomations",
+    "subscribers": 42064,
+    "over18": false,
+    "url": "https://www.reddit.com/r/AiAutomations/",
+    "discoveredBy": [
+      "Sales Automation"
+    ]
+  },
+  {
+    "name": "b2b_sales",
+    "title": "B2B sales tips, techniques and discussion.",
+    "subscribers": 21963,
+    "over18": false,
+    "url": "https://www.reddit.com/r/b2b_sales/",
+    "discoveredBy": [
+      "Sales Automation"
+    ]
+  },
+  {
+    "name": "SalesOperations",
+    "title": "Sales Operations",
+    "subscribers": 12850,
+    "over18": false,
+    "url": "https://www.reddit.com/r/SalesOperations/",
+    "discoveredBy": [
+      "Sales Automation"
+    ]
+  },
+  {
+    "name": "VoiceAI_Automation",
+    "title": "VoiceAI_Automation",
+    "subscribers": 662,
+    "over18": false,
+    "url": "https://www.reddit.com/r/VoiceAI_Automation/",
+    "discoveredBy": [
+      "Sales Automation"
+    ]
+  }
+]

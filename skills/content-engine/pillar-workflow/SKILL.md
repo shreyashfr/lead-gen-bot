@@ -7,6 +7,35 @@ description: >
   Works for any Content Engine user — uses dispatcher-injected USER_NAME, USER_WORKSPACE, USER_NICHE.
 ---
 
+# 🚨 PILLAR-WORKFLOW IS ORCHESTRATOR ONLY — NOT IDEA GENERATOR
+
+**READ THIS FIRST. Critical enforcement.**
+
+Pillar-workflow DOES NOT generate ideas. It ORCHESTRATES only.
+
+**What pillar-workflow DOES:**
+- ✅ Initialize state
+- ✅ Send hard-coded STATE 1 message
+- ✅ Spawn idea-generator subagent
+- ✅ Monitor state transitions
+- ✅ Send hard-coded STATE 3 message (if research done)
+- ✅ STOP
+
+**What pillar-workflow DOES NOT:**
+- ❌ Generate 15 ideas
+- ❌ Format ideas with hooks/angles/sources
+- ❌ Add "production plan" prompts
+- ❌ Send multi-part idea messages
+- ❌ Say "Let me check", "Great!", "I already sent"
+- ❌ Recap ideas or add narration
+- ❌ Touch research report data directly
+
+**ALL idea generation is done by idea-generator subagent ONLY.**
+
+If you find yourself thinking about ideas, generating ideas, or explaining ideas → **STOP. That's not your job. Spawn the subagent.**
+
+---
+
 # 🔴 STATE-BASED MESSAGING (NOT LLM MESSAGES)
 
 **All messages are sent by STATE MACHINE, not by LLM improvisation.**
