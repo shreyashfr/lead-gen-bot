@@ -1,0 +1,31 @@
+{
+  "niche": "Music AI",
+  "nicheSlug": "music-ai",
+  "runId": "2026-03-24T15-19-23-102Z",
+  "startedAt": "2026-03-24T15:19:23.102Z",
+  "keywords": [
+    "Music AI"
+  ],
+  "mustInclude": [
+    "music",
+    "ai"
+  ],
+  "search": "Music AI",
+  "subAllowlist": null,
+  "config": {
+    "topN": 20,
+    "subLimit": 12,
+    "gapMs": 1000,
+    "limitPerListing": 25,
+    "time": "week",
+    "kinds": [
+      "top",
+      "hot",
+      "rising"
+    ],
+    "searchSort": "top",
+    "searchTime": null,
+    "minSubscribers": 0,
+    "sendCardsN": 5
+  }
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Music",
+    "title": "r/Music",
+    "subscribers": 38333493,
+    "over18": false,
+    "url": "https://www.reddit.com/r/Music/",
+    "discoveredBy": [
+      "Music AI"
+    ]
+  },
+  {
+    "name": "OpenAI",
+    "title": "OpenAI",
+    "subscribers": 2686661,
+    "over18": false,
+    "url": "https://www.reddit.com/r/OpenAI/",
+    "discoveredBy": [
+      "Music AI"
+    ]
+  },
+  {
+    "name": "CharacterAI",
+    "title": "Character.AI",
+    "subscribers": 2585939,
+    "over18": false,
+    "url": "https://www.reddit.com/r/CharacterAI/",
+    "discoveredBy": [
+      "Music AI"
+    ]
+  },
+  {
+    "name": "artificial",
+    "title": "Artificial Intelligence (AI)",
+    "subscribers": 1239517,
+    "over18": false,
+    "url": "https://www.reddit.com/r/artificial/",
+    "discoveredBy": [
+      "Music AI"
+    ]
+  },
+  {
+    "name": "aiArt",
+    "title": "Welcome to ai Art!",
+    "subscribers": 663613,
+    "over18": false,
+    "url": "https://www.reddit.com/r/aiArt/",
+    "discoveredBy": [
+      "Music AI"
+    ]
+  },
+  {
+    "name": "aivideo",
+    "title": "r/aivideo - The place for AI generated videos on reddit",
+    "subscribers": 347352,
+    "over18": false,
+    "url": "https://www.reddit.com/r/aivideo/",
+    "discoveredBy": [
+      "Music AI"
+    ]
+  },
+  {
+    "name": "AppleMusic",
+    "title": "Apple Music | Reddit Community",
+    "subscribers": 291452,
+    "over18": false,
+    "url": "https://www.reddit.com/r/AppleMusic/",
+    "discoveredBy": [
+      "Music AI"
+    ]
+  },
+  {
+    "name": "isthisAI",
+    "title": "isthisAI",
+    "subscribers": 231699,
+    "over18": false,
+    "url": "https://www.reddit.com/r/isthisAI/",
+    "discoveredBy": [
+      "Music AI"
+    ]
+  },
+  {
+    "name": "musicians",
+    "title": "musicians subreddit",
+    "subscribers": 183910,
+    "over18": false,
+    "url": "https://www.reddit.com/r/musicians/",
+    "discoveredBy": [
+      "Music AI"
+    ]
+  },
+  {
+    "name": "antiai",
+    "title": "Anti AI",
+    "subscribers": 143112,
+    "over18": false,
+    "url": "https://www.reddit.com/r/antiai/",
+    "discoveredBy": [
+      "Music AI"
+    ]
+  },
+  {
+    "name": "SunoAI",
+    "title": "Suno",
+    "subscribers": 85209,
+    "over18": false,
+    "url": "https://www.reddit.com/r/SunoAI/",
+    "discoveredBy": [
+      "Music AI"
+    ]
+  },
+  {
+    "name": "aiMusic",
+    "title": "aiMusic",
+    "subscribers": 10510,
+    "over18": false,
+    "url": "https://www.reddit.com/r/aiMusic/",
+    "discoveredBy": [
+      "Music AI"
+    ]
+  }
+]

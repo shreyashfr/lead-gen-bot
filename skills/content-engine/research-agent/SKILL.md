@@ -317,56 +317,55 @@ After all scouts finish, IMMEDIATELY run this validation check before compiling 
 
 **SILENT AUTO-RE-RUNS:** Do NOT tell user about re-runs. Just execute them internally. If re-run still fails, continue with available data.
 
-### ⚠️ SMART FALLBACK: TOTAL SIGNAL < 8 SOURCES (was < 5)
+### ✅ NO FALLBACK - ALWAYS DELIVER IDEAS
 
-After validation and potential re-runs, if **total viable sources across ALL 4 platforms < 8**, trigger smart fallback:
+**NEW POLICY: Never reject a query. Always search harder, always deliver.**
 
-**CRITICAL: ANNOUNCE BEFORE SWITCHING**
+1. **Search EVERYWHERE - ALL 4 PLATFORMS in parallel:**
+   - Reddit: 30+ subreddits, no min upvotes filter
+   - Twitter/X: Recent + trending + all-time
+   - YouTube: Top videos, any view count
+   - Google News: Last 30 days, no filter
 
-1. **Count total viable sources:**
-   - Reddit: posts with upvotes > 50
-   - Twitter: tweets with likes > 100
-   - YouTube: videos with views > 50K
-   - Google News: articles (any)
-   - Total = sum of all viable across 4 platforms
-
-2. **If total < 8, send user announcement FIRST (use message tool):**
+2. **If total sources < 8 after first pass:**
    ```
-   ⚠️ Low signal on "[Original Query]"
-
-   Found only [X] posts/videos/articles across all platforms. That's not enough to generate strong ideas.
-
-   Let me try a broader/related search that's trending better...
-
-   🔄 Switching to: "[Better Query]"
-
-   Running research again now...
+   ⏳ Found only [X] sources on first pass. Searching deeper...
+   
+   Expanding search to:
+   - Broader Reddit subreddits
+   - Related keywords on Twitter
+   - More YouTube channels
+   - International news sources
    ```
 
-3. **Identify better query:**
-   - Too broad? (e.g., "LLMs", "AI Tools") → use specific tech: "LLM Agents", "RAG Systems"
-   - Too niche? (e.g., "Quantum Computing") → broaden: "Quantum AI" or "Quantum Algorithms"
-   - Not trending? → scan available posts for related keywords appearing 3+ times
-   - Example: User said "Sports AI" → found "Sports analytics", "AI predictions", "athlete tracking" in posts → use "AI Sports Analytics" instead
+3. **Keep searching until you have:**
+   - Minimum 3 sources total (will accept lower signal)
+   - OR 10 minutes elapsed (whichever comes first)
+   - Then DELIVER with what you have
 
-4. **Use the fallback table to map:**
-   | Original | Better Query |
-   | Small Language Models | Quantization, Edge AI |
-   | Model Compression | Efficient Inference, ONNX |
-   | Sports AI | AI Sports Analytics, Athlete AI, Sports Technology |
-   | Niche Topic | [Most common related term in found posts] |
+4. **NO AUTO-PIVOTING.** If user said "Music AI":
+   - Search for "Music AI" first
+   - If low, search "AI Music", "Music Production AI", "AI Instruments"
+   - But ONLY on user request to pivot
+   - Default: deliver ideas on the original topic, even with 3-5 sources
 
-5. **Re-run ALL 4 SCOUTS with better query** (loop back to STEP 1)
+5. **Always announce:**
+   ```
+   ✅ Research done (found [X] sources across all platforms)
+   
+   💡 Generating 15 ideas based on what's trending...
+   ```
 
-6. **Validate again → if still < 8, re-run once more with even broader terms**
-
-7. **If still < 8 after 2 retries: deliver with available data** (don't loop infinitely)
+6. **Deliver 15 ideas ALWAYS** - even if sources are limited
+   - Use what you have
+   - Blend with general knowledge of the topic
+   - Mark sources clearly (Source: Reddit / Twitter / YouTube / Google News)
 
 **This ensures:** 
-- User always knows why switch happened
-- System tries hard to get signal
-- Never silent pivots
-- Always transparent communication
+- User gets ideas for ANY query
+- Transparency on what was found
+- No silent failures
+- Fast turnaround
 
 ---
 
