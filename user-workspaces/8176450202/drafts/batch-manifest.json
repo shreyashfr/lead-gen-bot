@@ -1,0 +1,131 @@
+{
+  "pillar": "Local LLM",
+  "batch_id": "local-llm-batch-001",
+  "created": "2026-03-24T12:41:00Z",
+  "production_plan": {
+    "linkedin_posts": 5,
+    "twitter_threads": 3,
+    "tweets": 2,
+    "instagram_carousels": 3,
+    "total": 13
+  },
+  "pieces": [
+    {
+      "n": 1,
+      "format": "LinkedIn Post",
+      "idea_num": 2,
+      "hook": "Can you really run ChatGPT on your laptop? (spoiler: better)",
+      "angle": "relatable for Indian students, misconception that big = better",
+      "status": "pending",
+      "source_url": "https://x.com/Abdulaziz_Hmadi/status/2008653691554001325"
+    },
+    {
+      "n": 2,
+      "format": "LinkedIn Post",
+      "idea_num": 7,
+      "hook": "Why power consumption matters for local models (and your DevOps bill)",
+      "angle": "practical concerns, DevOps angle, real engineering trade-off",
+      "status": "pending",
+      "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQOS1zWXNKdklxWmVHS09ZRWp6czg1aURualh2T2dRWlZYY3hReDVvRFBuQm1YdVVXTUFsRllEVF9scnB1TFc5QlA1Sml0ZmlOVmljQ2VrQzZMWU1CVXFWTHZ2OERKRktsQkJlRmxaRjFXSkdTYzg0V2ltQWUwQXJfZlZzdW8"
+    },
+    {
+      "n": 3,
+      "format": "LinkedIn Post",
+      "idea_num": 10,
+      "hook": "What Mistral's Small 4 teaches us about model architecture",
+      "angle": "architecture interest, industry validation, forward-thinking",
+      "status": "pending",
+      "source_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQRkxla1M0eV9xazVobHB6NV91RUFJalNXUGM3NnZ5bV9Fa3lRbFhwM3R0STZDbjhKV0RjTWxQY2MwYlY2V1dWSENtVkdQanVYT1JZd1dGYVZnLTlzdnNnMUxGZGxWSy12OUwxaGhSR29TWlF1NVQ1X3M2V0JMb0N6eXVPU2dtMzE3WVZUYzJrWkNIYkJrSEQ0dEZoVjhEdnVTSVJJX0Z0Zi14bGFRZVI0"
+    },
+    {
+      "n": 4,
+      "format": "LinkedIn Post",
+      "idea_num": 12,
+      "hook": "Latency vs accuracy: the trade-off local models are winning",
+      "angle": "challenges dogma, systems thinking, practical for engineers",
+      "status": "pending",
+      "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQeGVBM0hybmpMT3dHem1URndrMm9BenA2bDdEV2oxalNTcmIxem1Jb0N4eFJXd04wYjBTRU5Wb0lydzdFNXBWMUxQUzlIcndrMVVUbGtWamk4cnpQaEFzTF82UE95TXhpSk1fcjI3SFUzbTh1RlpXM0ZRekZIc3JodVhNS1F1ekxTTnQ5SGlvVWMwbkIzQ2lhb1ljV2RvaDVmWVE"
+    },
+    {
+      "n": 5,
+      "format": "LinkedIn Post",
+      "idea_num": 14,
+      "hook": "Enterprise is adopting SLMs. Students are sleeping on them. Big mistake.",
+      "angle": "FOMO for students, urgency, motivates action",
+      "status": "pending",
+      "source_url": "https://news.google.com/rss/articles/CBMid0FVV3lxTE5fRTlvYjJWc0tmZFczME81b3VQZFR1aF9IQ1V3N19EcEx6U0tiX09pVVJqRmp6VV9COEh4Z293RWpMdExpYXhIUEYySkwyamRkanI1a3RneTk2bVdsY3JSTkVQaUxLZ2VPcVpLaU5GcmhXZlYwakFB"
+    },
+    {
+      "n": 6,
+      "format": "Twitter Thread",
+      "idea_num": 1,
+      "hook": "Why local LLMs will change how you build backends",
+      "angle": "latency obsession, cost awareness, hands-on proof",
+      "status": "pending",
+      "source_url": "https://x.com/Alibaba_Qwen/status/2028460046510965160"
+    },
+    {
+      "n": 7,
+      "format": "Twitter Thread",
+      "idea_num": 5,
+      "hook": "Recursive Language Models: what MIT just figured out",
+      "angle": "technical curiosity, reads research, real trend",
+      "status": "pending",
+      "source_url": "https://x.com/a1zhang/status/2007198916073136152"
+    },
+    {
+      "n": 8,
+      "format": "Twitter Thread",
+      "idea_num": 9,
+      "hook": "RAG + Local LLMs = your PDF search engine",
+      "angle": "solves real problem, practical tutorial, high engagement",
+      "status": "pending",
+      "source_url": "https://www.youtube.com/watch?v=2TJxpyO3ei4"
+    },
+    {
+      "n": 9,
+      "format": "Tweet",
+      "idea_num": 4,
+      "hook": "The cost saving nobody is talking about",
+      "angle": "numbers-driven, attracts founders, easy share",
+      "status": "pending",
+      "source_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOX3VGM2dyczViVVFRWmdMbV82Yk9CVlV2ZTlFQTN3M1NNcUx2dklaUnVkY1ZTTmQ2bmFHREtId2R1MHZnbkNhcjBmUmFKLVNQQ0pqVFlLS0VPVS1lallMUERucjdGU08zbFgtLUU4M1k1MVViQnAwem4yaVNhcjc0RkZTeGE5VGtlNlhIdHZIMjI5TlRWcXJqY2dLQ2I1eldCMzJTREVZUHhJcmFVTUlhQUFkS0FYbEU"
+    },
+    {
+      "n": 10,
+      "format": "Tweet",
+      "idea_num": 8,
+      "hook": "Fine-tuning small models costs less than your Starbucks habit",
+      "angle": "numbers catch attention, practical for startups",
+      "status": "pending",
+      "source_url": "https://www.reddit.com/r/finetuning/comments/1pi93f7/which_small_model_is_best_for_finetuning_we/"
+    },
+    {
+      "n": 11,
+      "format": "Instagram Carousel",
+      "idea_num": 6,
+      "hook": "Your first local LLM project (with working code)",
+      "angle": "visual format, practical, drives traffic",
+      "status": "pending",
+      "source_url": "https://www.youtube.com/watch?v=2TJxpyO3ei4"
+    },
+    {
+      "n": 12,
+      "format": "Instagram Carousel",
+      "idea_num": 11,
+      "hook": "India's AI strategy is betting on small models",
+      "angle": "localizes narrative, policy angle, career-relevant",
+      "status": "pending",
+      "source_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNNnBWMjBDQUdpZGJTQ01Wb1V4cy1NVEFSVERwRnZMUl9CUWQ5WWgxa0xRXzRWX2locFo2azBrXzJNRTFJQUlhbTNodDRfMFFkR01feUJyVkFpSWJtMmFTb2VfaGNtVllqbDQ5VGg1NEVIUDhYOFlnTEdnaEdTNDlRZlJpT1VPcU9rbHlFd2UycUpNNjcxSUFjaTd0Nmx4TnhnVnh2cXZ6ZEFHMnozUE01ZUJqZ3Z0STRfOTBoZ2EwdVhLZWhmek1HNUFyVEdqYjRrTGM2QUJjZzI3WUFjN0JN0gHkAUFVX3lxTFBON0F0UmZZTjB5SFBHREJ2Y01uNTdaTmF4M1VHN25tMVgzQnpBZmNTd2dBV0d1UkRGbl9hZmdTTkJVZm9EdGhXLUFHZzdCQXkyVEkzZ2tPU1FYbVpLRGkwX3lkbWFyUzg3SHE5OVduT3dvc1I2QVMtQU1kSlRScThxSF84MzdzTzBNalFvY2xGZXZjMGpXdUtVQnI0MDZvT1VDemhkY1Nfa0x2T3hUZzI5S2RqRWxnRTRXNm92YzhpSTBCRG1yMTB6bmNXaGNsRzNzUUFMMmZiZE1Cd1VndHVGQi1HQw"
+    },
+    {
+      "n": 13,
+      "format": "Instagram Carousel",
+      "idea_num": 13,
+      "hook": "Vector databases + local LLMs: the combo nobody is talking about",
+      "angle": "taps vector DB hype, local model trend, system design",
+      "status": "pending",
+      "source_url": "https://www.youtube.com/watch?v=dN0lsF2cvm4"
+    }
+  ]
+}
