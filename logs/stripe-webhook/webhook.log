@@ -1473,3 +1473,5 @@
 ⚠️  No user found for customer cus_TivHPbKlnwiS1L
 📩 Event received: customer.subscription.deleted
 ⚠️  No user found for customer cus_T1Nwmk5WGo9CWP
+📩 Event received: invoice.payment_succeeded
+⚠️  No user found for customer cus_TivHPbKlnwiS1L
