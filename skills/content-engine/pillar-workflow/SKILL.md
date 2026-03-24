@@ -105,9 +105,11 @@ Always send the status announcement FIRST as a standalone message, then run the 
 
 ---
 
-## STEP 1 — RESEARCH (WITH SMART FALLBACK)
+## STEP 1 — RESEARCH (WITH SMART FALLBACK & COMPLETION CHECK)
 
-Run this script — it handles all 4 scouts in parallel and writes results to a file:
+**1a. Send ACK message immediately** (already done at Step 0, but confirm it was sent)
+
+**1b. Run research script:**
 
 ```bash
 bash /home/ubuntu/.openclaw/workspace-ce/skills/pillar-workflow/scripts/run_research.sh \
@@ -116,14 +118,16 @@ bash /home/ubuntu/.openclaw/workspace-ce/skills/pillar-workflow/scripts/run_rese
   --niche "{USER_NICHE}"
 ```
 
-After the exec completes, **immediately read the report file** into memory so you can craft the 15 ideas. Do not mention or expose the file path when responding — treat it as internal data only.
+**1c. Wait for completion & validate output:**
 
-```bash
-cat {USER_WORKSPACE}research-report.md
-```
+After the exec completes:
+1. Check if `{USER_WORKSPACE}research-report.md` exists
+2. Read it: `cat {USER_WORKSPACE}research-report.md`
+3. Verify it has content (not empty, contains URLs from all 4 platforms)
+4. If missing or empty → go to SMART FALLBACK below
 
-The report contains all 4 platforms with full URLs. You MUST read this file — do not skip it.
-The exec stdout only confirms completion. The actual content is in research-report.md.
+**The report contains all 4 platforms with full URLs. You MUST read this file — do not skip it.**
+**The exec stdout only confirms completion. The actual content is in research-report.md.**
 
 ### ⚠️ SMART FALLBACK: INSUFFICIENT DATA DETECTED
 
@@ -163,9 +167,18 @@ The exec stdout only confirms completion. The actual content is in research-repo
 - ✅ Content is fresher (uses trending alternatives)
 - ✅ User knows what happened (transparent message)
 
-## STEP 2 — IDEA GENERATION
+## STEP 2 — IDEA GENERATION (WITH DELIVERY GUARANTEE)
 
-**🚨 MANDATORY FIRST STEP — DO THIS BEFORE ANYTHING ELSE IN STEP 2:**
+**🚨 MANDATORY SETUP — EXTRACT USER ID FIRST:**
+
+Before spawning the subagent, you MUST have:
+- `{USER_TELEGRAM_ID}` — The sender's Telegram numeric ID (from inbound metadata or context)
+- `{USER_WORKSPACE}` — Full path to user's workspace
+- `{USER_NAME}` — User's name (from master-doc or registry)
+
+**If any of these are missing, STOP and request them before proceeding.**
+
+**🚨 MANDATORY SPAWN — DO THIS BEFORE ANYTHING ELSE IN STEP 2:**
 
 You MUST immediately execute this tool call RIGHT NOW (before reading any other part of STEP 2):
 
@@ -173,24 +186,53 @@ You MUST immediately execute this tool call RIGHT NOW (before reading any other 
 sessions_spawn(
   runtime: "subagent",
   agentId: "idea-generator",
-  task: "Read {USER_WORKSPACE}research-report.md and {USER_WORKSPACE}master-doc.md. Generate 15 content ideas with format+hook+source URL for each. Post the complete IDEAS REPORT directly to Telegram (format + hook + 📎 Source: [URL] + production plan block). Do NOT ask for approval, do NOT reference files, just auto-post to user {USER_TELEGRAM_ID}."
+  task: "You are the Idea Generator. Your job:
+1. Read {USER_WORKSPACE}research-report.md 
+2. Read {USER_WORKSPACE}master-doc.md
+3. Generate 15 content ideas (hook + angle + format + story + source URL for each)
+4. Use the message tool to AUTO-POST the complete IDEAS REPORT directly to Telegram
+5. Use channel='telegram' and target='g-agent-ce-telegram-direct-{USER_TELEGRAM_ID}'
+6. Post the full report (format + hook + 📎 Source: [URL] + production plan block)
+7. Do NOT ask for approval, do NOT reference files
+8. Send the message and STOP
+
+User context:
+- Telegram ID: {USER_TELEGRAM_ID}
+- Name: {USER_NAME}
+- Workspace: {USER_WORKSPACE}",
+  mode: "run",
+  timeoutSeconds: 120
 )
 ```
 
-**This is your ONLY job in STEP 2. Nothing else. No additional steps. No generating ideas yourself. Just spawn and stop.**
+**Wait for the spawn to complete. Monitor for these outcomes:**
 
-After you execute `sessions_spawn` above, you are DONE with this skill. The subagent handles everything else.
+1. **SUCCESS:** Subagent posts ideas to Telegram
+   - The user should see a new message in Telegram with all 15 ideas
+   - If yes → you are DONE. STOP here. The subagent handled everything.
+
+2. **TIMEOUT (>120 sec):** Subagent took too long
+   - Send fallback message to user: `⚠️ Idea generation is taking longer than usual. I'm still working on it — check back in 2 minutes.`
+   - STOP (subagent will complete in background)
+
+3. **FAILED/ERROR:** Subagent crashed or returned an error
+   - Check `{USER_WORKSPACE}research-report.md` to see if it exists and has content
+   - If report is empty or malformed → send: `🔄 Research data incomplete. Re-running research...` then go back to STEP 1
+   - If report exists but subagent failed → send: `⚠️ Idea generation hit an issue. Retrying...` then spawn idea-generator AGAIN (max 1 retry)
 
 **DO NOT:**
 - Read the research report yourself
 - Generate ideas yourself
 - Try to post anything yourself
 - Ask the user anything
-- Continue with any other steps
+- Continue with any other steps after spawn completes
 
 **DO:**
 - Execute `sessions_spawn` with the exact parameters above
-- Wait for it to complete
+- Extract user ID from inbound metadata or context FIRST
+- Wait for it to complete (max 120 sec)
+- Check for errors/timeouts
+- Retry once if needed
 - Then STOP
 
 ---

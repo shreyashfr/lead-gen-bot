@@ -917,6 +917,42 @@
       "url": "https://styles.redditmedia.com/t5_aqi236/styles/profileIcon_e6xw18wdtfqc1.jpeg?width=256&height=256&crop=256:256,smart&s=5897516ffd85e131e72514e9742e65749202dc35",
       "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/music-ai/runs/2026-03-24T15-19-23-102Z/avatars/BringBackForChan.jpeg",
       "fetchedAt": "2026-03-24T15:21:19.277Z"
+    },
+    "deleted": {
+      "user": "deleted",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_1.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/vibe-outreach/runs/2026-03-24T15-27-12-664Z/avatars/deleted.png",
+      "fetchedAt": "2026-03-24T15:27:25.734Z"
+    },
+    "DistinctWindow1862": {
+      "user": "DistinctWindow1862",
+      "url": "https://i.redd.it/snoovatar/avatars/d1d3d5e7-0498-4828-9f23-bf2310a85a15.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/vibe-outreach/runs/2026-03-24T15-27-12-664Z/avatars/DistinctWindow1862.png",
+      "fetchedAt": "2026-03-24T15:27:27.225Z"
+    },
+    "hatkinson1000": {
+      "user": "hatkinson1000",
+      "url": "https://i.redd.it/snoovatar/avatars/8d70f04c-958f-42dd-8c6a-8c7860471df0.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/vibe-outreach/runs/2026-03-24T15-27-28-285Z/avatars/hatkinson1000.png",
+      "fetchedAt": "2026-03-24T15:27:44.133Z"
+    },
+    "Plenty-Dog-167": {
+      "user": "Plenty-Dog-167",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_2.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/vibe-outreach/runs/2026-03-24T15-27-28-285Z/avatars/Plenty-Dog-167.png",
+      "fetchedAt": "2026-03-24T15:27:45.291Z"
+    },
+    "Tiny-Celery4942": {
+      "user": "Tiny-Celery4942",
+      "url": "https://styles.redditmedia.com/t5_eycyxi/styles/profileIcon_g3hkpux2grdf1.png?width=256&height=256&crop=256:256,smart&s=8ba774164dda13d7f5a0247986ebaf91794e6ba5",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/vibe-outreach/runs/2026-03-24T15-27-28-285Z/avatars/Tiny-Celery4942.png",
+      "fetchedAt": "2026-03-24T15:27:46.568Z"
+    },
+    "bebo117722": {
+      "user": "bebo117722",
+      "url": "https://i.redd.it/snoovatar/avatars/2a904adc-2699-4802-a4d6-46f49e184149.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/vibe-outreach/runs/2026-03-24T15-27-28-285Z/avatars/bebo117722.png",
+      "fetchedAt": "2026-03-24T15:27:48.026Z"
     }
   }
 }
