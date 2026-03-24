@@ -45,20 +45,21 @@ Focus on: **Niche**, **Core Opinions & Angles**, **What's Already Posted**
 
 ## Smart Fallback Query Mapping
 
-If research returns insufficient data (< 5 unique sources across all platforms), automatically switch to a better query:
+If research returns insufficient data (< 8 unique sources across all platforms), automatically switch to a better query:
 
-| Original Query | Problem | Fallback Query | Reason |
+| Original Query | Problem | Fallback Options | Reason |
 |---|---|---|---|
-| Small Language Models | Too broad, low signal | **Quantization** | Trending, specific, searchable |
-| Model Compression | Generic | **Edge AI** | More viral, deployment-focused |
-| LLM Optimization | Vague | **Efficient Inference** | Technical + viral |
-| Prompt Engineering | Overcrowded | **Prompt Chaining** | More specific angle |
-| RAG | Too broad | **Vector Databases** | Specific technology |
-| AI Tools | Generic | **AI Automation** | Trending + specific |
-| LLMs | Too generic | **LLM Agents** | Trending specialization |
-| AI Safety | Niche | **AI Alignment** | More searchable |
+| Sports AI | Too narrow niche | **AI Sports Analytics** or **Athlete AI** or **Sports Technology** | Broader trending angle, more posts |
+| Small Language Models | Too broad, low signal | **Quantization** or **Edge AI** | Trending, specific, searchable |
+| Model Compression | Generic | **Edge AI** or **Mobile AI** | More viral, deployment-focused |
+| LLM Optimization | Vague | **Efficient Inference** or **Model Distillation** | Technical + viral |
+| Prompt Engineering | Overcrowded | **Prompt Chaining** or **Chain-of-Thought** | More specific angle |
+| RAG | Too broad | **Vector Databases** or **Retrieval Systems** | Specific technology |
+| AI Tools | Generic | **AI Automation** or **AI Agents** | Trending + specific |
+| LLMs | Too generic | **LLM Agents** or **LLM Fine-tuning** | Trending specialization |
+| AI Safety | Niche | **AI Alignment** or **AI Risk** | More searchable |
 
-**Other queries:** Auto-detect trending alternatives by analyzing social data in real-time. Pick terms with 5+ recent posts across platforms.
+**Other queries:** Auto-detect trending alternatives by analyzing social data in real-time. Scan posts for terms appearing 3+ times, pick top 2-3 options, try them in order.
 
 ## Always Announce Before Running
 
@@ -90,37 +91,51 @@ This usually takes 8-12 minutes. I'll send the full report + 15 ideas when it's 
 
 **Before running Reddit scout, determine relevant subreddits from user's niche:**
 
-If user niche = AI / ML / backend engineering / system design / LLM / fine-tuning → always include:
-`--subAllowlist "MachineLearning,LocalLLaMA,learnmachinelearning,artificial,singularity,ChatGPT,OpenAI,deeplearning,mlops,datascience,ArtificialIntelligence,programming,softwareengineering,cscareerquestions"`
+**STRATEGY:** Always use BROAD + NICHE subreddits. Don't restrict to exact topic — get relatable + adjacent content.
 
-If user niche = marketing / content / growth → always include:
-`--subAllowlist "marketing,digital_marketing,content_marketing,socialmedia,startups,entrepreneur,Entrepreneur,SEO,copywriting"`
+If pillar contains AI / ML / tech keywords → **ALWAYS include all of these:**
+`--subAllowlist "MachineLearning,LocalLLaMA,learnmachinelearning,artificial,singularity,ChatGPT,OpenAI,deeplearning,mlops,datascience,ArtificialIntelligence,programming,softwareengineering,cscareerquestions,StartupIdeas,technology,technews,gadgets,Futurology,innovation,explainlikeimfive"`
 
-If user niche = sales / SDR / outreach → always include:
-`--subAllowlist "sales,b2b,SalesandMarketing,startups,Entrepreneur,smallbusiness"`
+If pillar contains sports keywords → **ALWAYS include all of these:**
+`--subAllowlist "sports,nfl,nba,soccer,baseball,hockey,tennis,gaming,esports,technology,singularity,MachineLearning,data,statistics,predictions,startup,innovation,AskReddit"`
 
-Also add `--minSubscribers 10000` to avoid tiny irrelevant subs.
+If pillar is a **combination** (e.g., "Sports AI") → **merge the lists above**, use FULL combined allowlist:
+`--subAllowlist "sports,nfl,nba,soccer,baseball,hockey,tennis,gaming,esports,MachineLearning,LocalLLaMA,learnmachinelearning,artificial,singularity,ChatGPT,OpenAI,deeplearning,mlops,datascience,ArtificialIntelligence,programming,technology,data,statistics,predictions,StartupIdeas,innovation,explainlikeimfive,AskReddit"`
+
+If user niche = marketing / content / growth → **ALWAYS include all of these:**
+`--subAllowlist "marketing,digital_marketing,content_marketing,socialmedia,startups,entrepreneur,Entrepreneur,SEO,copywriting,advertising,business,GetMotivated,productivity,WritingCommunity,storytelling,communication"`
+
+If user niche = sales / SDR / outreach → **ALWAYS include all of these:**
+`--subAllowlist "sales,b2b,SalesandMarketing,startups,Entrepreneur,smallbusiness,business,sales_jobs,business_coaching,communication,negotiation,GetMotivated"`
+
+**CRITICAL:** Remove `--minSubscribers 10000` filter entirely. Use default behavior:
+```bash
+--subAllowlist "[FULL COMBINED LIST]"
+```
+
+No min subscribers limit — this blocks niche subreddits with good signal but smaller audiences.
 
 ```bash
 node {SKILL_BASE}/reddit-scout/scripts/pipeline.js \
   --niche "[pillar topic + user niche keywords]" \
   --out "{USER_WORKSPACE}reddit-scout" \
-  --topN 15 --subLimit 12 --gapMs 1000 \
+  --topN 20 --subLimit 20 --gapMs 800 \
   --time week --kinds top,hot,rising \
   --searchAuto 1 --printChat 1 \
-  --subAllowlist "[niche-specific subreddits from above]" \
-  --minSubscribers 10000
+  --subAllowlist "[FULL COMBINED ALLOWLIST FROM ABOVE]"
   
 NOTE: {SKILL_BASE} resolves to the skill directory containing reddit-scout
 For CE: {SKILL_BASE} (via symlink from workspace-ce)
 For other users: Automatically resolved at runtime
+
+NO --minSubscribers flag — allows niche subreddits with good content
 ```
 
 **After running, check result count immediately:**
-- If `top_posts_detailed.json` has fewer than 4 posts → re-run with `--time month` and broader keywords
-- If still fewer than 4 → try `--time all` and drop `--minSubscribers` filter
+- If `top_posts_detailed.json` has fewer than 6 posts → re-run with `--time month --topN 30 --subLimit 30`
+- If still fewer than 6 → try `--time all --topN 50 --subLimit 50`
 
-Look for: posts with 100+ upvotes, threads with debate, pain points people vent about.
+Look for: posts with 50+ upvotes (lower threshold for niche subs), threads with debate, pain points people vent about, related discussions.
 
 ---
 
@@ -302,35 +317,56 @@ After all scouts finish, IMMEDIATELY run this validation check before compiling 
 
 **SILENT AUTO-RE-RUNS:** Do NOT tell user about re-runs. Just execute them internally. If re-run still fails, continue with available data.
 
-### ⚠️ SMART FALLBACK: TOTAL SIGNAL < 5 SOURCES
+### ⚠️ SMART FALLBACK: TOTAL SIGNAL < 8 SOURCES (was < 5)
 
-After validation and potential re-runs, if **total viable sources across ALL 4 platforms < 5**, trigger smart fallback:
+After validation and potential re-runs, if **total viable sources across ALL 4 platforms < 8**, trigger smart fallback:
 
-1. **Identify the problem with original query:**
-   - Too broad? (e.g., "LLMs", "AI Tools")
-   - Too niche? (e.g., "Quantum Computing", "Obscure ML technique")
-   - Not trending? (e.g., "Old technology", "Outdated term")
-   - Seasonal? (e.g., topic only popular at certain times)
+**CRITICAL: ANNOUNCE BEFORE SWITCHING**
 
-2. **Map to better query** using the fallback table above, OR
-   - **Auto-detect trending alternatives:** Scan the available posts/tweets/videos for related keywords that appear frequently
-   - Pick the most common related term with more posts
-   - Example: User said "Small Language Models" → find "Quantization" mentioned in 5+ posts → use that instead
+1. **Count total viable sources:**
+   - Reddit: posts with upvotes > 50
+   - Twitter: tweets with likes > 100
+   - YouTube: videos with views > 50K
+   - Google News: articles (any)
+   - Total = sum of all viable across 4 platforms
 
-3. **Tell user (transparently):**
+2. **If total < 8, send user announcement FIRST (use message tool):**
    ```
-   🔄 Switching strategy: "[Better Query]"
-   
-   Your first query had limited recent viral content. Found more data on "[Better Query]" instead.
-   
-   Running research again...
+   ⚠️ Low signal on "[Original Query]"
+
+   Found only [X] posts/videos/articles across all platforms. That's not enough to generate strong ideas.
+
+   Let me try a broader/related search that's trending better...
+
+   🔄 Switching to: "[Better Query]"
+
+   Running research again now...
    ```
 
-4. **Re-run ALL 4 SCOUTS with the better query** (loop back to STEP 1 with new query)
+3. **Identify better query:**
+   - Too broad? (e.g., "LLMs", "AI Tools") → use specific tech: "LLM Agents", "RAG Systems"
+   - Too niche? (e.g., "Quantum Computing") → broaden: "Quantum AI" or "Quantum Algorithms"
+   - Not trending? → scan available posts for related keywords appearing 3+ times
+   - Example: User said "Sports AI" → found "Sports analytics", "AI predictions", "athlete tracking" in posts → use "AI Sports Analytics" instead
 
-5. **Continue to STEP 3 validation with new data**
+4. **Use the fallback table to map:**
+   | Original | Better Query |
+   | Small Language Models | Quantization, Edge AI |
+   | Model Compression | Efficient Inference, ONNX |
+   | Sports AI | AI Sports Analytics, Athlete AI, Sports Technology |
+   | Niche Topic | [Most common related term in found posts] |
 
-**This ensures:** Always deliver 15 ideas. Never dead-end. System is proactive.
+5. **Re-run ALL 4 SCOUTS with better query** (loop back to STEP 1)
+
+6. **Validate again → if still < 8, re-run once more with even broader terms**
+
+7. **If still < 8 after 2 retries: deliver with available data** (don't loop infinitely)
+
+**This ensures:** 
+- User always knows why switch happened
+- System tries hard to get signal
+- Never silent pivots
+- Always transparent communication
 
 ---
 

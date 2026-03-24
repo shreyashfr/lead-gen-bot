@@ -1,0 +1,31 @@
+{
+  "niche": "Sports AI",
+  "nicheSlug": "sports-ai",
+  "runId": "2026-03-24T14-21-47-629Z",
+  "startedAt": "2026-03-24T14:21:47.630Z",
+  "keywords": [
+    "Sports AI"
+  ],
+  "mustInclude": [
+    "sports",
+    "ai"
+  ],
+  "search": "Sports AI",
+  "subAllowlist": null,
+  "config": {
+    "topN": 30,
+    "subLimit": 10,
+    "gapMs": 800,
+    "limitPerListing": 25,
+    "time": "all",
+    "kinds": [
+      "top",
+      "hot",
+      "rising"
+    ],
+    "searchSort": "top",
+    "searchTime": null,
+    "minSubscribers": 0,
+    "sendCardsN": 5
+  }
+}

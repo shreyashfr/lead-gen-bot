@@ -1,5 +1,11 @@
 {
   "users": {
+    "64788": {
+      "user": "64788",
+      "url": "https://i.redd.it/snoovatar/avatars/3c916ac6-3c57-4c57-9a1a-9b0b2b571aed.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-16-56-421Z/avatars/64788.png",
+      "fetchedAt": "2026-03-24T14:18:58.944Z"
+    },
     "Ok_Country5134": {
       "user": "Ok_Country5134",
       "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png",
@@ -647,6 +653,210 @@
       "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_4.png",
       "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/avatars/Far_Noise_5886.png",
       "fetchedAt": "2026-03-24T12:32:04.563Z"
+    },
+    "Perfecshionism": {
+      "user": "Perfecshionism",
+      "url": "https://styles.redditmedia.com/t5_bq3eh5/styles/profileIcon_2n157olj09af1.png?width=256&height=256&crop=256:256,smart&s=e71fefc8d9e738287b1e1327c61783fd0af8c64d",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-16-56-421Z/avatars/Perfecshionism.png",
+      "fetchedAt": "2026-03-24T14:18:41.569Z"
+    },
+    "Left-Primary1339": {
+      "user": "Left-Primary1339",
+      "url": "https://i.redd.it/snoovatar/avatars/da0229a5-f884-4628-b65b-8ba3ade355c2.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-16-56-421Z/avatars/Left-Primary1339.png",
+      "fetchedAt": "2026-03-24T14:18:43.121Z"
+    },
+    "4rtlight": {
+      "user": "4rtlight",
+      "url": "https://styles.redditmedia.com/t5_2kbl4j/styles/profileIcon_qjyk0u4dsuef1.png?width=256&height=256&crop=256:256,smart&s=603f49b6226f128d976db517cb8eebf7a9dcb75c",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-16-56-421Z/avatars/4rtlight.png",
+      "fetchedAt": "2026-03-24T14:18:44.493Z"
+    },
+    "ThatMassholeInBawstn": {
+      "user": "ThatMassholeInBawstn",
+      "url": "https://styles.redditmedia.com/t5_7utwb5/styles/profileIcon_ad7l1asowrkg1.png?width=256&height=256&crop=256:256,smart&s=f717f6591d721e442dec6c3c5df8c0650b0afb11",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-16-56-421Z/avatars/ThatMassholeInBawstn.png",
+      "fetchedAt": "2026-03-24T14:18:45.848Z"
+    },
+    "bensch02854": {
+      "user": "bensch02854",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_5.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-16-56-421Z/avatars/bensch02854.png",
+      "fetchedAt": "2026-03-24T14:18:47.285Z"
+    },
+    "serendipitous_fairy": {
+      "user": "serendipitous_fairy",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-16-56-421Z/avatars/serendipitous_fairy.png",
+      "fetchedAt": "2026-03-24T14:18:48.517Z"
+    },
+    "gayjay-jpg": {
+      "user": "gayjay-jpg",
+      "url": "https://i.redd.it/snoovatar/avatars/57adef8e-03d4-4cf3-bacc-ab24e8ce81a5.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-16-56-421Z/avatars/gayjay-jpg.png",
+      "fetchedAt": "2026-03-24T14:18:49.760Z"
+    },
+    "zweimer99": {
+      "user": "zweimer99",
+      "url": "https://i.redd.it/snoovatar/avatars/5dd0e4a6-e4ce-4ea6-b44b-000d0713b955.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-16-56-421Z/avatars/zweimer99.png",
+      "fetchedAt": "2026-03-24T14:18:51.025Z"
+    },
+    "Tux-the-Pengu1n": {
+      "user": "Tux-the-Pengu1n",
+      "url": "https://i.redd.it/snoovatar/avatars/65230cb3-7b74-4e6d-b301-fb01225ecc91.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-16-56-421Z/avatars/Tux-the-Pengu1n.png",
+      "fetchedAt": "2026-03-24T14:18:52.358Z"
+    },
+    "SilenceOfTheLambs_": {
+      "user": "SilenceOfTheLambs_",
+      "url": "https://styles.redditmedia.com/t5_fyt7nc/styles/profileIcon_eoagcp8a01qg1.jpg?width=256&height=256&crop=256:256,smart&s=92981600ab93f02cf71d8280dac1693dd69144e3",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-16-56-421Z/avatars/SilenceOfTheLambs_.jpg",
+      "fetchedAt": "2026-03-24T14:18:53.730Z"
+    },
+    "Elador27": {
+      "user": "Elador27",
+      "url": "https://styles.redditmedia.com/t5_kxjo9/styles/profileIcon_aini4k0npllg1.jpeg?width=256&height=256&crop=256:256,smart&s=a09525c22dd1691ca50a81b5f680f362a7a82ddd",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-16-56-421Z/avatars/Elador27.jpeg",
+      "fetchedAt": "2026-03-24T14:18:55.071Z"
+    },
+    "GarysPlate": {
+      "user": "GarysPlate",
+      "url": "https://i.redd.it/snoovatar/avatars/a432448e-b23c-4bfa-b4e8-b7d914ab20a9.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-16-56-421Z/avatars/GarysPlate.png",
+      "fetchedAt": "2026-03-24T14:18:56.316Z"
+    },
+    "awizzo": {
+      "user": "awizzo",
+      "url": "https://i.redd.it/snoovatar/avatars/65f271ec-e1d8-421a-9784-adfb754ff5dd.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-16-56-421Z/avatars/awizzo.png",
+      "fetchedAt": "2026-03-24T14:18:57.702Z"
+    },
+    "Abhinav_108": {
+      "user": "Abhinav_108",
+      "url": "https://styles.redditmedia.com/t5_e55q5t/styles/profileIcon_hvm98jdu0acg1.jpeg?width=256&height=256&crop=256:256,smart&s=12408de1142b31b753285416b2bd29bbc0477fab",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-16-56-421Z/avatars/Abhinav_108.jpeg",
+      "fetchedAt": "2026-03-24T14:19:00.306Z"
+    },
+    "the_humble_intellect": {
+      "user": "the_humble_intellect",
+      "url": "https://i.redd.it/snoovatar/avatars/242c4ac5-47c6-41b3-9372-9a38d56491e2.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-16-56-421Z/avatars/the_humble_intellect.png",
+      "fetchedAt": "2026-03-24T14:19:01.645Z"
+    },
+    "FinnFarrow": {
+      "user": "FinnFarrow",
+      "url": "https://i.redd.it/snoovatar/avatars/3372cbb6-9204-40bc-b03e-905801b12278.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-16-56-421Z/avatars/FinnFarrow.png",
+      "fetchedAt": "2026-03-24T14:19:02.883Z"
+    },
+    "Linda_goddesss": {
+      "user": "Linda_goddesss",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_2.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-16-56-421Z/avatars/Linda_goddesss.png",
+      "fetchedAt": "2026-03-24T14:19:04.143Z"
+    },
+    "AuroraArcenciel": {
+      "user": "AuroraArcenciel",
+      "url": "https://i.redd.it/snoovatar/avatars/7bd10e20-f719-4ef9-ac34-e7b19592293c.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-16-56-421Z/avatars/AuroraArcenciel.png",
+      "fetchedAt": "2026-03-24T14:19:05.597Z"
+    },
+    "Distinct-Advice9076": {
+      "user": "Distinct-Advice9076",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_0.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-16-56-421Z/avatars/Distinct-Advice9076.png",
+      "fetchedAt": "2026-03-24T14:19:06.829Z"
+    },
+    "OkHeat6599": {
+      "user": "OkHeat6599",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_1.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-19-16-542Z/avatars/OkHeat6599.png",
+      "fetchedAt": "2026-03-24T14:21:16.604Z"
+    },
+    "cowgirl_lawyer_0328": {
+      "user": "cowgirl_lawyer_0328",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_1.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-19-16-542Z/avatars/cowgirl_lawyer_0328.png",
+      "fetchedAt": "2026-03-24T14:21:17.879Z"
+    },
+    "daiszay": {
+      "user": "daiszay",
+      "url": "https://i.redd.it/snoovatar/avatars/cf197ac2-a5c1-44f2-8605-974f29933dc4.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-19-16-542Z/avatars/daiszay.png",
+      "fetchedAt": "2026-03-24T14:21:19.086Z"
+    },
+    "Content_Ad_9327": {
+      "user": "Content_Ad_9327",
+      "url": "https://styles.redditmedia.com/t5_685zrd/styles/profileIcon_v96glfiuwv7f1.png?width=256&height=256&crop=256:256,smart&s=67e92b77730f8d3386585a1266e67dedc6378015",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-19-16-542Z/avatars/Content_Ad_9327.png",
+      "fetchedAt": "2026-03-24T14:21:20.273Z"
+    },
+    "idk2715": {
+      "user": "idk2715",
+      "url": "https://i.redd.it/snoovatar/avatars/nftv2_bmZ0X2VpcDE1NToxMzdfNmFjYjhmYjgyODgwZDM5YzJiODQ0NmY4Nzc4YTE0ZDM0ZWU2Y2ZiN180NTQ5MzA_rare_86281229-9768-4a3a-9fd7-e609d9bf6954.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-19-16-542Z/avatars/idk2715.png",
+      "fetchedAt": "2026-03-24T14:21:21.454Z"
+    },
+    "Fit_Egg5574": {
+      "user": "Fit_Egg5574",
+      "url": "https://i.redd.it/snoovatar/avatars/512d877f-686f-460f-a6d6-fec4d852eca6.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-19-16-542Z/avatars/Fit_Egg5574.png",
+      "fetchedAt": "2026-03-24T14:21:22.842Z"
+    },
+    "YouAreNowDUM": {
+      "user": "YouAreNowDUM",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_0.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-19-16-542Z/avatars/YouAreNowDUM.png",
+      "fetchedAt": "2026-03-24T14:21:23.947Z"
+    },
+    "drn88__": {
+      "user": "drn88__",
+      "url": "https://styles.redditmedia.com/t5_560ol0/styles/profileIcon_wbp03lkllpdf1.png?width=256&height=256&crop=256:256,smart&s=197da8b1ef29dce439f7df8b697371020441c668",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-19-16-542Z/avatars/drn88__.png",
+      "fetchedAt": "2026-03-24T14:21:25.091Z"
+    },
+    "OG-demosthenes": {
+      "user": "OG-demosthenes",
+      "url": "https://i.redd.it/snoovatar/avatars/bc69ca9d-10b4-4e6a-ac32-eb779ef8acb9.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-19-16-542Z/avatars/OG-demosthenes.png",
+      "fetchedAt": "2026-03-24T14:21:26.373Z"
+    },
+    "MoxxiFortune": {
+      "user": "MoxxiFortune",
+      "url": "https://i.redd.it/snoovatar/avatars/c58f8613-3092-4591-b8ed-cc74addee677.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-19-16-542Z/avatars/MoxxiFortune.png",
+      "fetchedAt": "2026-03-24T14:21:27.524Z"
+    },
+    "EchoOfOppenheimer": {
+      "user": "EchoOfOppenheimer",
+      "url": "https://styles.redditmedia.com/t5_fo8vbd/styles/profileIcon_240x3exlajog1.jpg?width=256&height=256&crop=256:256,smart&s=c458a8831677ca9dc53a991a4012e359124a5394",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-19-16-542Z/avatars/EchoOfOppenheimer.jpg",
+      "fetchedAt": "2026-03-24T14:21:28.549Z"
+    },
+    "EfficiencySecret7906": {
+      "user": "EfficiencySecret7906",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_5.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-19-16-542Z/avatars/EfficiencySecret7906.png",
+      "fetchedAt": "2026-03-24T14:21:29.596Z"
+    },
+    "tekz": {
+      "user": "tekz",
+      "url": "https://styles.redditmedia.com/t5_1w0z2c/styles/profileIcon_m0mpgo1plf2e1.jpg?width=256&height=256&crop=256:256,smart&s=be888708db5440cfce82f41c3e825e18f89c55ae",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-19-16-542Z/avatars/tekz.jpg",
+      "fetchedAt": "2026-03-24T14:21:30.744Z"
+    },
+    "SenseVarious9506": {
+      "user": "SenseVarious9506",
+      "url": "https://i.redd.it/snoovatar/avatars/e023a00a-4252-405a-b2cb-a021571dbb07.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-19-16-542Z/avatars/SenseVarious9506.png",
+      "fetchedAt": "2026-03-24T14:21:31.802Z"
+    },
+    "esporx": {
+      "user": "esporx",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_1.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-19-16-542Z/avatars/esporx.png",
+      "fetchedAt": "2026-03-24T14:21:32.828Z"
     }
   }
 }

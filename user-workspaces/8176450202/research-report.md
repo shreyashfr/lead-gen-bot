@@ -1,62 +1,62 @@
-## RESEARCH REPORT — Local LLM
+## RESEARCH REPORT — Low-Latency Systems
 Date: 2026-03-24
 
 ---
 ### REDDIT
-# Reddit Scout — Small Language Models
+# Reddit Scout — Sports AI
 
-Run: 2026-03-24T12-24-52-218Z
-Started: 2026-03-24T12:24:52.218Z
-Output dir: /home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-24-52-218Z
+Run: 2026-03-24T14-21-47-629Z
+Started: 2026-03-24T14:21:47.630Z
+Output dir: /home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/sports-ai/runs/2026-03-24T14-21-47-629Z
 
-Config: topN=30 | subLimit=15 | kinds=top,hot,rising | time=month | limitPerListing=25
-Search: Small Language Models (sort=top t=auto)
+Config: topN=30 | subLimit=10 | kinds=top,hot,rising | time=all | limitPerListing=25
+Search: Sports AI (sort=top t=auto)
 
 ## Top terms (from titles + top comments)
 
-- models (14)
-- language (10)
-- data (7)
-- what (5)
-- model (4)
-- work (4)
-- large (4)
-- https (4)
-- metric (4)
+- real (5)
+- think (4)
+- looks (4)
 - like (4)
-- have (3)
-- small (3)
-- training (3)
-- them (3)
-- other (3)
-- tsfm (3)
-- people (2)
-- country (2)
+- video (4)
+- prove (4)
+- person (4)
+- about (4)
+- people (3)
+- found (3)
+- comments (3)
+- everyone (3)
+- local (2)
+- convinced (2)
+- picture (2)
+- suspect (2)
+- photo (2)
+- does (2)
 
 ## Viral content ideas (derived from these posts)
 
 **1. Personal story → timeline + receipts**
 - Hook: Hook with 1 line, then a 5-step timeline; end with the lesson and what you would do differently.
 
-**2. My models got automated: what I automated back (tools + workflow)**
+**2. My real got automated: what I automated back (tools + workflow)**
 - Hook: Turn it into a before/after workflow post. Include exact tool stack + steps.
 
-**3. Checklist: how to stay valuable when language hits your team**
+**3. Checklist: how to stay valuable when think hits your team**
 - Hook: A numbered checklist (10 items). Make it practical: skills, portfolio, outreach, proof-of-work.
 
-**4. Hot take: data isn't the problem — what is**
+**4. Hot take: looks isn't the problem — like is**
 - Hook: Contrarian framing. Back it with 2 examples from the top posts and 1 counterexample.
 
-**5. Debunk thread: "AI will replace model" vs what's actually happening**
+**5. Debunk thread: "AI will replace video" vs what's actually happening**
 - Hook: Use 3 claims → 3 rebuttals. Cite specific post patterns: layoffs, hiring freezes, role shifts.
 
-**6. Salary/market reality: work vs large roles in 2026 (Reddit signals)**
+**6. Salary/market reality: prove vs person roles in 2026 (Reddit signals)**
 - Hook: Summarize demand signals from comments: who is struggling, who is fine, why.
 
 **7. "What would you do in 30 days?" layoff recovery plan (day-by-day)**
 - Hook: 30-day plan: portfolio, interview loops, networking, mental health. Include a downloadable checklist.
 
-**8. Mini-case study: 1 resume bullet → 1 proof project using https**
+**8. Mini-case study: 1 resume bullet → 1 proof project using about**
 - Hook: Show how to convert a vague resume claim into a measurable project + writeup.
 
 **9. Community question: which tasks should *never* be delegated to AI?**
@@ -68,272 +68,343 @@ Search: Small Language Models (sort=top t=auto)
 **11. Data post: a quick scorecard of the top threads (ups, comments, ratio) + what it signals**
 - Hook: Table or bullets; then 3 takeaways.
 
-**12. Meme angle (if relevant): metric vs like — job search edition**
+**12. Meme angle (if relevant): people vs found — job search edition**
 - Hook: If your niche is not memes, skip memes; otherwise caption the pattern you saw in comments.
 
-## Top posts (13) + cards
+## Top posts (30) + cards
 
-### 1) Conan O'Brien: "I have incredible empathy for people who have immigrated to another country. It takes an entire lifetime to go to a country where, often, people don't speak the language. They have to spend their entire lives just getting things started for the next generation."
-- Subreddit: r/Fauxmoi
-- Viral score: 201 | Ups: 25861 | Comments: 206 | Upvote ratio: 99%
-- Link: https://www.reddit.com/r/Fauxmoi/comments/1rrts20/conan_obrien_i_have_incredible_empathy_for_people/
-- Card (local): ./cards/1rrts20.png
+### 1) I don’t think it is Ai but a lot of people think it is. They claim the way he fell, and the way the wheels movie is AI.
+- Subreddit: r/isthisAI
+- Viral score: 252 | Ups: 41 | Comments: 123 | Upvote ratio: 69%
+- Link: https://www.reddit.com/r/isthisAI/comments/1s2bk3w/i_dont_think_it_is_ai_but_a_lot_of_people_think/
+- Card (local): ./cards/1s2bk3w.png
 
-![reddit card](./cards/1rrts20.png)
+![reddit card](./cards/1s2bk3w.png)
 
-### 2) Bentley Update – A Small Win Today
-- Subreddit: r/GuyCry
-- Viral score: 20 | Ups: 4326 | Comments: 197 | Upvote ratio: 97%
-- Link: https://www.reddit.com/r/GuyCry/comments/1rl6cyy/bentley_update_a_small_win_today/
-- Card (local): ./cards/1rl6cyy.png
+### 2) This Painting at a local art gallery selling for $1200. I’m convinced it’s ai.
+- Subreddit: r/isthisAI
+- Viral score: 233 | Ups: 6422 | Comments: 542 | Upvote ratio: 98%
+- Link: https://www.reddit.com/r/isthisAI/comments/1rzlqkf/this_painting_at_a_local_art_gallery_selling_for/
+- Card (local): ./cards/1rzlqkf.png
 
-![reddit card](./cards/1rl6cyy.png)
+![reddit card](./cards/1rzlqkf.png)
 
-### 3) "Against Time Series Foundation Models Or: My Experience in Modern Forecasting", shako 2026
-- Subreddit: r/mlscaling
-- Viral score: 1 | Ups: 19 | Comments: 2 | Upvote ratio: 89%
-- Link: https://www.reddit.com/r/mlscaling/comments/1s15cd4/against_time_series_foundation_models_or_my/
-- Card (local): ./cards/1s15cd4.png
+### 3) This looks like AI, which would be ironic. Any ideas? Found this on UpScrolled.
+- Subreddit: r/isthisAI
+- Viral score: 168 | Ups: 3097 | Comments: 54 | Upvote ratio: 98%
+- Link: https://www.reddit.com/r/isthisAI/comments/1s10eh6/this_looks_like_ai_which_would_be_ironic_any/
+- Card (local): ./cards/1s10eh6.png
 
-![reddit card](./cards/1s15cd4.png)
+![reddit card](./cards/1s10eh6.png)
 
-### 4) "How to train the best embedding model in the world: one PhD later, I'm giving my secrets away for free", Jack Morris (why doesn't scaling non-recommender embedding models work too well? bad gradients/optimization)
-- Subreddit: r/mlscaling
-- Viral score: 0 | Ups: 18 | Comments: 5 | Upvote ratio: 80%
-- Link: https://www.reddit.com/r/mlscaling/comments/1rq5y05/how_to_train_the_best_embedding_model_in_the/
-- Card (local): ./cards/1rq5y05.png
+### 4) Is this video of a little girl riding on a carriage being pulled by a Labrador AI?
+- Subreddit: r/isthisAI
+- Viral score: 166 | Ups: 753 | Comments: 109 | Upvote ratio: 89%
+- Link: https://www.reddit.com/r/isthisAI/comments/1s1x4ru/is_this_video_of_a_little_girl_riding_on_a/
+- Card (local): ./cards/1s1x4ru.png
 
-![reddit card](./cards/1rq5y05.png)
+![reddit card](./cards/1s1x4ru.png)
 
-### 5) What Are Large Language Models and How Do They Actually Work?
-- Subreddit: r/LargeLanguageModels
-- Viral score: 0 | Ups: 4 | Comments: 2 | Upvote ratio: 100%
-- Link: https://www.reddit.com/r/LargeLanguageModels/comments/1rx0rdh/what_are_large_language_models_and_how_do_they/
-- Card (local): ./cards/1rx0rdh.png
+### 5) local restaurant posted this promo picture, but i suspect that they used AI to render this photo.
+- Subreddit: r/isthisAI
+- Viral score: 132 | Ups: 249 | Comments: 169 | Upvote ratio: 82%
+- Link: https://www.reddit.com/r/isthisAI/comments/1s23ndq/local_restaurant_posted_this_promo_picture_but_i/
+- Card (local): ./cards/1s23ndq.png
 
-![reddit card](./cards/1rx0rdh.png)
+![reddit card](./cards/1s23ndq.png)
 
-### 6) Training Language Models via Neural Cellular Automata, Lee et al. 2026 [pre-pre-training on abstract rule-based patterns improves language modelling]
-- Subreddit: r/mlscaling
-- Viral score: 0 | Ups: 8 | Comments: 1 | Upvote ratio: 90%
-- Link: https://www.reddit.com/r/mlscaling/comments/1rsp23c/training_language_models_via_neural_cellular/
-- Card (local): ./cards/1rsp23c.png
+### 6) Is this sandwich AI or just very weirdly food styled? The steak makes so sense nor does the rocket
+- Subreddit: r/isthisAI
+- Viral score: 107 | Ups: 566 | Comments: 154 | Upvote ratio: 87%
+- Link: https://www.reddit.com/r/isthisAI/comments/1s1pgws/is_this_sandwich_ai_or_just_very_weirdly_food/
+- Card (local): ./cards/1s1pgws.png
 
-![reddit card](./cards/1rsp23c.png)
+![reddit card](./cards/1s1pgws.png)
 
-### 7) Pretrained Vision-Language-Action Models are Surprisingly Resistant to Forgetting in Continual Learning
-- Subreddit: r/mlscaling
-- Viral score: 0 | Ups: 13 | Comments: 0 | Upvote ratio: 94%
-- Link: https://www.reddit.com/r/mlscaling/comments/1rlppab/pretrained_visionlanguageaction_models_are/
-- Card (local): ./cards/1rlppab.png
+### 7) Help me Prove this is AI - my aunt thinks this is a real person she matched with online
+- Subreddit: r/isthisAI
+- Viral score: 97 | Ups: 12460 | Comments: 371 | Upvote ratio: 95%
+- Link: https://www.reddit.com/r/isthisAI/comments/1rtsnxz/help_me_prove_this_is_ai_my_aunt_thinks_this_is_a/
+- Card (local): ./cards/1rtsnxz.png
 
-![reddit card](./cards/1rlppab.png)
+![reddit card](./cards/1rtsnxz.png)
 
-### 8) "NanoGPT Slowrun: Language Modeling with Limited Data, Infinite Compute" competiton (5.5x data efficiency so far from proper multi-epoch training, heavier regularization, SwiGLU, &amp; ensembling)
-- Subreddit: r/mlscaling
-- Viral score: 0 | Ups: 11 | Comments: 0 | Upvote ratio: 87%
-- Link: https://www.reddit.com/r/mlscaling/comments/1rkxdhf/nanogpt_slowrun_language_modeling_with_limited/
-- Card (local): ./cards/1rkxdhf.png
+### 8) Is this video AI? The motion on the graphics looks like it was prompted rather than manually animated
+- Subreddit: r/isthisAI
+- Viral score: 93 | Ups: 1 | Comments: 1 | Upvote ratio: 100%
+- Link: https://www.reddit.com/r/isthisAI/comments/1s2f2l1/is_this_video_ai_the_motion_on_the_graphics_looks/
+- Card (local): ./cards/1s2f2l1.png
 
-![reddit card](./cards/1rkxdhf.png)
+![reddit card](./cards/1s2f2l1.png)
 
-### 9) Mixture-of-Models routing beats single LLMs on SWE-Bench via task specialization
-- Subreddit: r/LargeLanguageModels
-- Viral score: 0 | Ups: 3 | Comments: 4 | Upvote ratio: 100%
-- Link: https://www.reddit.com/r/LargeLanguageModels/comments/1r1v4cs/mixtureofmodels_routing_beats_single_llms_on/
-- Card (local): ./cards/1r1v4cs.png
+### 9) Is this Ai? I’m having a dollhouse made for my daughter’s birthday but the WIP provided does not look real. The glue bottles are unreadable/gibberish.
+- Subreddit: r/isthisAI
+- Viral score: 79 | Ups: 8951 | Comments: 1673 | Upvote ratio: 95%
+- Link: https://www.reddit.com/r/isthisAI/comments/1rqnupu/is_this_ai_im_having_a_dollhouse_made_for_my/
+- Card (local): ./cards/1rqnupu.png
 
-![reddit card](./cards/1r1v4cs.png)
+![reddit card](./cards/1rqnupu.png)
 
-### 10) Which small model is best for fine-tuning? We tested 12 of them by spending $10K - here's what we found
-- Subreddit: r/finetuning
-- Viral score: 0 | Ups: 9 | Comments: 0 | Upvote ratio: 92%
-- Link: https://www.reddit.com/r/finetuning/comments/1pi93f7/which_small_model_is_best_for_finetuning_we/
-- Card (local): ./cards/1pi93f7.png
+### 10) I'm normally quite confident about recognizing AI, but this one confuses me
+- Subreddit: r/isthisAI
+- Viral score: 78 | Ups: 407 | Comments: 90 | Upvote ratio: 88%
+- Link: https://www.reddit.com/r/isthisAI/comments/1s1t1wk/im_normally_quite_confident_about_recognizing_ai/
+- Card (local): ./cards/1s1t1wk.png
 
-![reddit card](./cards/1pi93f7.png)
+![reddit card](./cards/1s1t1wk.png)
 
-### 11) My boyfriend created an app that allows AI models to debate each other, and he's looking for all types of feedback
-- Subreddit: r/LargeLanguageModels
-- Viral score: 0 | Ups: 0 | Comments: 2 | Upvote ratio: 25%
-- Link: https://www.reddit.com/r/LargeLanguageModels/comments/1qukdmu/my_boyfriend_created_an_app_that_allows_ai_models/
-- Card (local): ./cards/1qukdmu.png
+### 11) Stumbled upon this comic and it's making my brain itch. Comments didn't say anything about AI, but choices like giving all the deer those fawn spots, the whisker on the boar, the adult wolf's leg, and the vegetation are really suspect to me.
+- Subreddit: r/isthisAI
+- Viral score: 77 | Ups: 28 | Comments: 55 | Upvote ratio: 71%
+- Link: https://www.reddit.com/r/isthisAI/comments/1s2agvy/stumbled_upon_this_comic_and_its_making_my_brain/
+- Card (local): ./cards/1s2agvy.png
 
-![reddit card](./cards/1qukdmu.png)
+![reddit card](./cards/1s2agvy.png)
 
-### 12) Rag-chunk: Small tool for the Python / RAG community
-- Subreddit: r/finetuning
-- Viral score: 0 | Ups: 2 | Comments: 0 | Upvote ratio: 100%
-- Link: https://www.reddit.com/r/finetuning/comments/1oxgnql/ragchunk_small_tool_for_the_python_rag_community/
-- Card (local): ./cards/1oxgnql.png
+### 12) I’m convinced this is AI, but friends say it’s real. When I zoom in, I cant prove it’s AI. How do I prove it, or is it AI?
+- Subreddit: r/isthisAI
+- Viral score: 69 | Ups: 16887 | Comments: 806 | Upvote ratio: 83%
+- Link: https://www.reddit.com/r/isthisAI/comments/1rmghxb/im_convinced_this_is_ai_but_friends_say_its_real/
+- Card (local): ./cards/1rmghxb.png
 
-![reddit card](./cards/1oxgnql.png)
+![reddit card](./cards/1rmghxb.png)
 
-### 13) I built a workflow engine that runs natural language as a parallel DAG
-- Subreddit: r/mlscaling
-- Viral score: 0 | Ups: 0 | Comments: 0 | Upvote ratio: 50%
-- Link: https://www.reddit.com/r/mlscaling/comments/1rqmctm/i_built_a_workflow_engine_that_runs_natural/
-- Card (local): ./cards/1rqmctm.png
+### 13) Vacation advertisement image reel could be AI? The clouds on the left are super bright and theres a weird artifact in the bottom right?
+- Subreddit: r/isthisAI
+- Viral score: 67 | Ups: 1 | Comments: 3 | Upvote ratio: 60%
+- Link: https://www.reddit.com/r/isthisAI/comments/1s2ewak/vacation_advertisement_image_reel_could_be_ai_the/
+- Card (local): ./cards/1s2ewak.png
 
-![reddit card](./cards/1rqmctm.png)
+![reddit card](./cards/1s2ewak.png)
+
+### 14) Is this AI? I saw this on twitter. There are a lot of identical cars and camels side by side.
+- Subreddit: r/isthisAI
+- Viral score: 67 | Ups: 4182 | Comments: 385 | Upvote ratio: 95%
+- Link: https://www.reddit.com/r/isthisAI/comments/1rxivyv/is_this_ai_i_saw_this_on_twitter_there_are_a_lot/
+- Card (local): ./cards/1rxivyv.png
+
+![reddit card](./cards/1rxivyv.png)
+
+### 15) Dog chooses owner event, found this video on tiktok, most comments think it's AI
+- Subreddit: r/isthisAI
+- Viral score: 52 | Ups: 12876 | Comments: 730 | Upvote ratio: 92%
+- Link: https://www.reddit.com/r/isthisAI/comments/1rljhcq/dog_chooses_owner_event_found_this_video_on/
+- Card (local): ./cards/1rljhcq.png
+
+![reddit card](./cards/1rljhcq.png)
+
+### 16) Need a medical person to say why this is AI. Someone is being scammed by an impersonator. They are saying he needs money for a heart transplant.
+- Subreddit: r/isthisAI
+- Viral score: 51 | Ups: 7938 | Comments: 2039 | Upvote ratio: 94%
+- Link: https://www.reddit.com/r/isthisAI/comments/1rlqm7j/need_a_medical_person_to_say_why_this_is_ai/
+- Card (local): ./cards/1rlqm7j.png
+
+![reddit card](./cards/1rlqm7j.png)
+
+### 17) Found some of his songs on Spotify and it sound like a totally diferrent person. Is this AI?
+- Subreddit: r/isthisAI
+- Viral score: 50 | Ups: 220 | Comments: 170 | Upvote ratio: 74%
+- Link: https://www.reddit.com/r/isthisAI/comments/1s1mcyv/found_some_of_his_songs_on_spotify_and_it_sound/
+- Card (local): ./cards/1s1mcyv.png
+
+![reddit card](./cards/1s1mcyv.png)
+
+### 18) Agents before AI was a thing
+- Subreddit: r/OpenAI
+- Viral score: 46 | Ups: 1563 | Comments: 63 | Upvote ratio: 94%
+- Link: https://www.reddit.com/r/OpenAI/comments/1rzxcw5/agents_before_ai_was_a_thing/
+- Card (local): ./cards/1rzxcw5.png
+
+![reddit card](./cards/1rzxcw5.png)
+
+### 19) I am 99% sure this person stole OP's art style and fed it into AI. I want to know what everyone else thinks.
+- Subreddit: r/isthisAI
+- Viral score: 44 | Ups: 133 | Comments: 42 | Upvote ratio: 91%
+- Link: https://www.reddit.com/r/isthisAI/comments/1s22zw2/i_am_99_sure_this_person_stole_ops_art_style_and/
+- Card (local): ./cards/1s22zw2.png
+
+![reddit card](./cards/1s22zw2.png)
+
+### 20) Wrong Universe LOTR vs Pawn Stars AI Mashup
+- Subreddit: r/aivideo
+- Viral score: 43 | Ups: 7474 | Comments: 197 | Upvote ratio: 90%
+- Link: https://www.reddit.com/r/aivideo/comments/1rqgolw/wrong_universe_lotr_vs_pawn_stars_ai_mashup/
+- Card (local): ./cards/1rqgolw.png
+
+![reddit card](./cards/1rqgolw.png)
+
+### 21) AI Is Quietly Becoming Infrastructure, Not a Product
+- Subreddit: r/OpenAI
+- Viral score: 42 | Ups: 32 | Comments: 28 | Upvote ratio: 80%
+- Link: https://www.reddit.com/r/OpenAI/comments/1s29stz/ai_is_quietly_becoming_infrastructure_not_a/
+- Card (local): ./cards/1s29stz.png
+
+![reddit card](./cards/1s29stz.png)
+
+### 22) The text looks off, and I can't tell if people are getting too lazy to put text on images without using AI?
+- Subreddit: r/isthisAI
+- Viral score: 42 | Ups: 1944 | Comments: 82 | Upvote ratio: 95%
+- Link: https://www.reddit.com/r/isthisAI/comments/1rzhad2/the_text_looks_off_and_i_cant_tell_if_people_are/
+- Card (local): ./cards/1rzhad2.png
+
+![reddit card](./cards/1rzhad2.png)
+
+### 23) Neil DeGrasse Tyson calls for an international treaty to ban superintelligence: "That branch of AI is lethal. We've got do something about that. Nobody should build it. And everyone needs to agree to that by treaty. Treaties are not perfect, but they are the best we have as humans."
+- Subreddit: r/OpenAI
+- Viral score: 41 | Ups: 449 | Comments: 311 | Upvote ratio: 81%
+- Link: https://www.reddit.com/r/OpenAI/comments/1s0sjty/neil_degrasse_tyson_calls_for_an_international/
+- Card (local): ./cards/1s0sjty.png
+
+![reddit card](./cards/1s0sjty.png)
+
+### 24) Is this picture that my uncle swears he took at Walmart, ai or real? I cannot figure it out
+- Subreddit: r/isthisAI
+- Viral score: 40 | Ups: 8283 | Comments: 2310 | Upvote ratio: 92%
+- Link: https://www.reddit.com/r/isthisAI/comments/1rgtpru/is_this_picture_that_my_uncle_swears_he_took_at/
+- Card (local): ./cards/1rgtpru.png
+
+![reddit card](./cards/1rgtpru.png)
+
+### 25) I don’t think this video is AI, but everyone in the comments says it is… Am I wrong??
+- Subreddit: r/isthisAI
+- Viral score: 40 | Ups: 650 | Comments: 107 | Upvote ratio: 95%
+- Link: https://www.reddit.com/r/isthisAI/comments/1s135eu/i_dont_think_this_video_is_ai_but_everyone_in_the/
+- Card (local): ./cards/1s135eu.png
+
+![reddit card](./cards/1s135eu.png)
+
+### 26) Is this fan art ai? The artist and others are jumping down people's throats over it, but something seems off to me.
+- Subreddit: r/isthisAI
+- Viral score: 36 | Ups: 1797 | Comments: 338 | Upvote ratio: 87%
+- Link: https://www.reddit.com/r/isthisAI/comments/1rygbyu/is_this_fan_art_ai_the_artist_and_others_are/
+- Card (local): ./cards/1rygbyu.png
+
+![reddit card](./cards/1rygbyu.png)
+
+### 27) Sorry guys is this AI? I love lizards but this tail looks suspiciously long. I checked with Gemini but it’s not giving me a proper answer. Thanks in advance
+- Subreddit: r/isthisAI
+- Viral score: 36 | Ups: 1 | Comments: 13 | Upvote ratio: 67%
+- Link: https://www.reddit.com/r/isthisAI/comments/1s2d9ti/sorry_guys_is_this_ai_i_love_lizards_but_this/
+- Card (local): ./cards/1s2d9ti.png
+
+![reddit card](./cards/1s2d9ti.png)
+
+### 28) This photo was labeled as AI in another sub. It’s not..can this sub prove it’s real?
+- Subreddit: r/isthisAI
+- Viral score: 32 | Ups: 7727 | Comments: 997 | Upvote ratio: 94%
+- Link: https://www.reddit.com/r/isthisAI/comments/1rhb54i/this_photo_was_labeled_as_ai_in_another_sub_its/
+- Card (local): ./cards/1rhb54i.png
+
+![reddit card](./cards/1rhb54i.png)
+
+### 29) My gut is telling me that this is definitely AI. But I can't find anything too suspicious about it.
+- Subreddit: r/isthisAI
+- Viral score: 30 | Ups: 1460 | Comments: 146 | Upvote ratio: 86%
+- Link: https://www.reddit.com/r/isthisAI/comments/1rymx6d/my_gut_is_telling_me_that_this_is_definitely_ai/
+- Card (local): ./cards/1rymx6d.png
+
+![reddit card](./cards/1rymx6d.png)
+
+### 30) "Keep Cooking", an AI Short Film by Simon Meyer
+- Subreddit: r/aivideo
+- Viral score: 28 | Ups: 1397 | Comments: 328 | Upvote ratio: 85%
+- Link: https://www.reddit.com/r/aivideo/comments/1rxqj00/keep_cooking_an_ai_short_film_by_simon_meyer/
+- Card (local): ./cards/1rxqj00.png
+
+![reddit card](./cards/1rxqj00.png)
 
 ---
 ### TWITTER
-# Twitter Scout Report — Small Language Models 2026
-Run: 2026-03-24T12-15-36-146Z | Scanned: 19 | Top 10
+# Twitter Scout Report — Sports AI 2026
+Run: 2026-03-24T14-26-08-514Z | Scanned: 20 | Top 10
 
-## 1. Qwen (@Alibaba_Qwen)
-**Viral Score:** 10/10
-**Tweet:** Introducing the Qwen 3.5 Small Model Series
-Qwen3.5-0.8B · Qwen3.5-2B · Qwen3.5-4B · Qwen3.5-9B
+## 1. Alibaba Group (@AlibabaGroup)
+**Viral Score:** 9.8/10
+**Tweet:** Want to see the action from every angle? 
 
- More intelligence, less compute.
-These small models are built on the same Qwen3.5 foundation — native multimodal, improved architecture, scaled RL:
-• 0.8B / 2B → tiny, fast,
-**Metrics:** ❤️ 21000  🔁 4200  💬 918  🔖 0
-**Images:** https://pbs.twimg.com/media/HCaJnUQaoAAaMIc?format=jpg&name=small
-**URL:** https://x.com/Alibaba_Qwen/status/2028460046510965160
+Continuing the shift to cloud-based and AI-enabled broadcasting, the system uses advanced AI algorithms to reconstruct every moment in stunning 3D for faster, more immersive replays during the Olympic Winter Games Milano Cortina 2026.
+**Metrics:** ❤️ 8700  🔁 466  💬 186  🔖 0
+**Images:** none
+**URL:** https://x.com/AlibabaGroup/status/2021918727848046890
 
-## 2. alex zhang (@a1zhang)
-**Viral Score:** 10/10
-**Tweet:** Much like the switch in 2025 from language models to reasoning models, we think 2026 will be all about the switch to Recursive Language Models (RLMs).
+## 2. Google DeepMind (@GoogleDeepMind)
+**Viral Score:** 4.7/10
+**Tweet:** We're announcing TacticAI: an AI assistant capable of offering insights to football experts on corner kicks. 
 
-It turns out that models can be far more powerful if you allow them to treat *their own prompts* as an object in an external
-**Metrics:** ❤️ 7400  🔁 1300  💬 252  🔖 0
-**Images:** https://pbs.twimg.com/media/G9r_9C3XYAA7Psq?format=jpg&name=small
-**URL:** https://x.com/a1zhang/status/2007198916073136152
+Developed with 
+@LFC
+, it can help teams sample alternative player setups to evaluate possible outcomes, and achieves state-of-the-art results.
+**Metrics:** ❤️ 2800  🔁 871  💬 116  🔖 0
+**Images:** none
+**URL:** https://x.com/GoogleDeepMind/status/1770121564085707082
 
-## 3. Jay Bisen (@JayBisen473370)
-**Viral Score:** 6/10
-**Tweet:** 𝗨𝗣𝗗𝗔𝗧𝗘𝗗 𝗟𝗜𝗦𝗧 𝗙𝗢𝗥 𝟮𝟬𝟮𝟲
-    
- 𝗜𝗱𝗲𝗮𝘀
-• ChatGPT
-• Claude
-• Bing
+## 3. Alibaba Group (@AlibabaGroup)
+**Viral Score:** 4.5/10
+**Tweet:** Bringing Cloud-based AI Innovation at the Olympic Winter Games Milano Cortina 2026!
 
- 𝗪𝗲𝗯𝘀𝗶𝘁𝗲
-• 10Web
-• Durable
-• Framer
+Alibaba Cloud partners with OBS and the IOC to supercharge the Olympic Winter Games with next-gen cloud + AI, bringing fans closer to every thrilling moment like never before.
 
- 𝗪𝗿𝗶𝘁𝗶𝗻𝗴
-• Rytr
-• Jasper
-• Writesonic
 
- 𝗖𝗵𝗮𝘁𝗯𝗼𝘁𝘀
-• Chatbase
-• SiteGPT
-• ChatSonic
+@milanocortina26
+**Metrics:** ❤️ 3800  🔁 289  💬 113  🔖 0
+**Images:** none
+**URL:** https://x.com/AlibabaGroup/status/2028983769378800083
 
- 𝗔𝘂𝘁𝗼𝗺𝗮𝘁𝗶𝗼𝗻
-• Make
-•
-**Metrics:** ❤️ 3900  🔁 1000  💬 115  🔖 0
-**Images:** https://pbs.twimg.com/media/G_wd9hMb0AEKu1w?format=jpg&name=small
-**URL:** https://x.com/JayBisen473370/status/2016519679335121263
+## 4. AA (@measure_plan)
+**Viral Score:** 2.1/10
+**Tweet:** i made four sport app prototypes this week, using roboflow rapid + SAM3 + python
 
-## 4. Jay Bisen (@JayBisen473370)
-**Viral Score:** 3.8/10
-**Tweet:** 𝗨𝗣𝗗𝗔𝗧𝗘𝗗 𝗟𝗜𝗦𝗧 𝗙𝗢𝗥 𝟮𝟬𝟮𝟲
-    
- 𝗜𝗱𝗲𝗮𝘀
-• ChatGPT
-• Claude
-• Bing
+these ideas could be taken further to make $$$
 
- 𝗪𝗲𝗯𝘀𝗶𝘁𝗲
-• 10Web
-• Durable
-• Framer
+example: SportRadar is a company that sells analytics to sports leagues and betting firms, with a market cap of $6 billion (!!)
 
- 𝗪𝗿𝗶𝘁𝗶𝗻𝗴
-• Rytr
-• Jasper
-• Writesonic
+a few ideas
 
- 𝗖𝗵𝗮𝘁𝗯𝗼𝘁𝘀
-• Chatbase
-• SiteGPT
-• ChatSonic
+- for
+**Metrics:** ❤️ 1600  🔁 192  💬 71  🔖 0
+**Images:** none
+**URL:** https://x.com/measure_plan/status/1999581903117254982
 
- 𝗔𝘂𝘁𝗼𝗺𝗮𝘁𝗶𝗼𝗻
-• Make
-•
-**Metrics:** ❤️ 2200  🔁 724  💬 106  🔖 0
-**Images:** https://pbs.twimg.com/media/HBVDuaybsAADHLq?format=jpg&name=small
-**URL:** https://x.com/JayBisen473370/status/2023598089916051538
+## 5. Lenovo (@Lenovo)
+**Viral Score:** 1.6/10
+**Tweet:** We're making one of the world's most data-rich organizations more accessible with Football AI Pro, a customized AI assistant that can read vast amounts of 
+@FIFA
+ data to deliver information to players, coaches, and fans in seconds. 
 
-## 5. alphaXiv (@askalphaxiv)
-**Viral Score:** 2.2/10
-**Tweet:** "Recursive Language Models"
+Learn more:
+**Metrics:** ❤️ 1400  🔁 100  💬 36  🔖 0
+**Images:** https://pbs.twimg.com/media/G-QHfpPW0AAhwTE.jpg
+**URL:** https://x.com/Lenovo/status/2009855761929941459
 
-A potentially big direction for LLMs in 2026 from MIT researchers
+## 6. SkalskiP (@skalskip92)
+**Viral Score:** 1.5/10
+**Tweet:** last year, I spent most of May building football AI; this year, I'll be working on something cool with basketball
 
-In their approach, a prompt isn’t “run” directly, instead it’s stored as a variable in an external Python REPL, and the language model writes code to inspect/slice/decompose that long
-**Metrics:** ❤️ 1500  🔁 302  💬 63  🔖 0
-**Images:** https://pbs.twimg.com/media/G9xEGMQaMAAIbpi?format=jpg&name=small
-**URL:** https://x.com/askalphaxiv/status/2007554788377145564
+among other things, I'm planning to:
+- detect and track players and the ball
+- cluster players into teams
+- calculate shot distances
 
-## 6. عبدالعزيز الحمادي (@Abdulaziz_Hmadi)
-**Viral Score:** 1.1/10
-**Tweet:** One of the most important technological breakthroughs in 2026 is:
-"Small Language Models" (SLMs)
-which are the opposite of "Large Language Models" (LLMs) like ChatGPT and Gemini and the like.
-
-Small Language Models (SLMs), in short, are like ChatGPT and Gemini but in a smaller
-**Metrics:** ❤️ 870  🔁 107  💬 16  🔖 0
-**Images:** https://pbs.twimg.com/media/G-ArotIW4AAC0xN?format=png&name=small
-**URL:** https://x.com/Abdulaziz_Hmadi/status/2008653691554001325
-
-## 7. Jay Bisen (@JayBisen473370)
-**Viral Score:** 1/10
-**Tweet:** 𝗨𝗣𝗗𝗔𝗧𝗘𝗗 𝗟𝗜𝗦𝗧 𝗙𝗢𝗥 𝟮𝟬𝟮𝟲
-    
- 𝗜𝗱𝗲𝗮𝘀
-• ChatGPT
-• Claude
-• Bing
-
- 𝗪𝗲𝗯𝘀𝗶𝘁𝗲
-• 10Web
-• Durable
-• Framer
-
- 𝗪𝗿𝗶𝘁𝗶𝗻𝗴
-• Rytr
-• Jasper
-• Writesonic
-
- 𝗖𝗵𝗮𝘁𝗯𝗼𝘁𝘀
-• Chatbase
-• SiteGPT
-• ChatSonic
-
- 𝗔𝘂𝘁𝗼𝗺𝗮𝘁𝗶𝗼𝗻
-• Make
-•
-**Metrics:** ❤️ 394  🔁 105  💬 77  🔖 0
-**Images:** https://pbs.twimg.com/media/G_6UDZCbEAADbvE?format=jpg&name=small
-**URL:** https://x.com/JayBisen473370/status/2017212472709861455
-
-## 8. Pau Labarta Bajo (@paulabartabajo_)
-**Viral Score:** 1/10
-**Tweet:** Hands-on tutorials on fine-tuning and deployment of Small Language Models.
-
-Enjoy ↓
-
+code: 
 https://
-github.com/Liquid4All/coo
-kbook
-…
-**Metrics:** ❤️ 348  🔁 61  💬 3  🔖 0
-**Images:** https://pbs.twimg.com/media/G6RhzkhXsAA7TMH?format=jpg&name=small
-**URL:** https://x.com/paulabartabajo_/status/1991824478318240191
+github.com/roboflow/sports
+**Metrics:** ❤️ 1200  🔁 122  💬 37  🔖 0
+**Images:** none
+**URL:** https://x.com/skalskip92/status/1921929266402295983
 
-## 9. Jay Bisen (@JayBisen473370)
-**Viral Score:** 1/10
+## 7. Lenovo (@Lenovo)
+**Viral Score:** 1.5/10
+**Tweet:** We're making one of the world's most data-rich organizations more accessible with Football AI Pro, a customized AI assistant that can read vast amounts of 
+@FIFA
+ data to deliver information to players, coaches, and fans in seconds. 
+
+Learn more:
+**Metrics:** ❤️ 1200  🔁 130  💬 46  🔖 0
+**Images:** https://pbs.twimg.com/media/G-QHfpPW0AAhwTE.jpg
+**URL:** https://x.com/Lenovo/status/2009852112851874215
+
+## 8. Muhammad Ali (@I_Muhammadali44)
+**Viral Score:** 1.5/10
 **Tweet:** 𝗨𝗣𝗗𝗔𝗧𝗘𝗗 𝗟𝗜𝗦𝗧 𝗙𝗢𝗥 𝟮𝟬𝟮𝟲
     
  𝗜𝗱𝗲𝗮𝘀
@@ -359,290 +430,355 @@ kbook
  𝗔𝘂𝘁𝗼𝗺𝗮𝘁𝗶𝗼𝗻
 • Make
 •
-**Metrics:** ❤️ 338  🔁 98  💬 70  🔖 0
-**Images:** https://pbs.twimg.com/media/HCKOAFZaUAAB61c?format=jpg&name=small
-**URL:** https://x.com/JayBisen473370/status/2027338929385705486
+**Metrics:** ❤️ 762  🔁 246  💬 207  🔖 0
+**Images:** https://pbs.twimg.com/media/G-CWcF-aYAAJNYc?format=jpg&name=small
+**URL:** https://x.com/I_Muhammadali44/status/2008770873143291962
 
-## 10. AK (@_akhaliq)
+## 9. SkalskiP (@skalskip92)
+**Viral Score:** 1.1/10
+**Tweet:** I spent the whole week working on Basketball AI
+
+- player detection and tracking with SAM2
+- jersey number detection using RF-DETR
+- number OCR with SmolVLM2
+- team clustering with timm, UMAP, and KMeans
+
+sports repo: 
+https://
+github.com/roboflow/sports
+**Metrics:** ❤️ 866  🔁 121  💬 20  🔖 0
+**Images:** none
+**URL:** https://x.com/skalskip92/status/1925966962758168665
+
+## 10. Derya Unutmaz, MD (@DeryaTR_)
 **Viral Score:** 1/10
-**Tweet:** TinyLLaVA
-
-A Framework of Small-scale Large Multimodal Models
-
-present the TinyLLaVA framework that provides a unified perspective in designing and analyzing the small-scale Large Multimodal Models (LMMs). We empirically study the effects of different vision encoders, connection
-**Metrics:** ❤️ 329  🔁 73  💬 6  🔖 0
-**Images:** https://pbs.twimg.com/media/GG_czEwXEAAZgcp?format=png&name=small
-**URL:** https://x.com/_akhaliq/status/1760868783076302910
+**Tweet:** In the age of AI, 2026 will be the year of physical intelligence & 3D AI world models, complementing today’s GenAI systems, which are now at the proto-AGI level. This will then jumpstart embodied intelligence in the form of humanoid robots, & the world will never be the same.
+**Metrics:** ❤️ 707  🔁 88  💬 79  🔖 0
+**Images:** none
+**URL:** https://x.com/DeryaTR_/status/2000442404411675051
 
 ---
 ### YOUTUBE
-## YOUTUBE SCOUT REPORT — RAG vs PageIndex Backend Engineering, System Design
+## YOUTUBE SCOUT REPORT — Sports AI Software Engineering, System Design, Backend Development, Low-Latency Systems, Tech Career Growth
 Date: 2026-03-24
-Videos analysed: 7
+Videos analysed: 12
 
 ### Top Viral Videos
 
 ---
-Title: Vector Databases simply explained! (Embeddings & Indexes)
-Channel: AssemblyAI
-Views: 636,204 | Likes: N/A | Duration: 4m23s
-Uploaded: N/A | Viral Score: 5.8/10
-URL: https://www.youtube.com/watch?v=dN0lsF2cvm4
-Description: "Vector Databases simply explained. Learn what vector databases and vector embeddings are and how they work. Then I'll go ..."
+Title: Backend web development - a complete overview
+Channel: SuperSimpleDev
+Views: 2,547,965 | Likes: N/A | Duration: 12m58s
+Uploaded: N/A | Viral Score: 6.4/10
+URL: https://www.youtube.com/watch?v=XBu54nfzxAQ
+Description: "We learn backend technologies we need to build a web application. We go over backend programming languages, backend web ..."
 
 ---
-Title: Python RAG Tutorial (with Local LLMs): AI For Your PDFs
-Channel: pixegami
-Views: 610,342 | Likes: N/A | Duration: 21m33s
-Uploaded: N/A | Viral Score: 5.8/10
-URL: https://www.youtube.com/watch?v=2TJxpyO3ei4
-Description: "Learn how to build a RAG (Retrieval Augmented Generation) app in Python that can let you query/chat with your PDFs using ..."
+Title: System Design Concepts Course and Interview Prep
+Channel: freeCodeCamp.org
+Views: 2,480,396 | Likes: N/A | Duration: 53m38s
+Uploaded: N/A | Viral Score: 6.4/10
+URL: https://www.youtube.com/watch?v=F2FmTdLtb_4
+Description: "This complete system design tutorial covers scalability, reliability, data handling, and high-level architecture with clear ..."
 
 ---
-Title: What are MCP servers | Explained in Hindi
-Channel: Chai aur Code
-Views: 428,110 | Likes: N/A | Duration: 26m58s
+Title: Amazon System Design Interview: Design Parking Garage
+Channel: Exponent
+Views: 1,665,296 | Likes: N/A | Duration: 29m59s
+Uploaded: N/A | Viral Score: 6.2/10
+URL: https://www.youtube.com/watch?v=NtMvNh0WFVM
+Description: "Don't leave your system design interview to chance. Sign up for Exponent's system design interview course today: ..."
+
+---
+Title: the TRUTH about C++ (is it worth your time?)
+Channel: Low Level
+Views: 1,130,059 | Likes: N/A | Duration: 3m17s
+Uploaded: N/A | Viral Score: 6.1/10
+URL: https://www.youtube.com/watch?v=q1ZmFc-sqNc
+Description: "C++ gets a lot of hate on the internet, and there may be good reason for that. I think C++ is misunderstood, and there are a few ..."
+
+---
+Title: How to Answer System Design Interview Questions (Complete Guide)
+Channel: Exponent
+Views: 560,889 | Likes: N/A | Duration: 7m10s
+Uploaded: N/A | Viral Score: 5.7/10
+URL: https://www.youtube.com/watch?v=L9TfZdODuFQ
+Description: "Make sure you're interview-ready with Exponent's system design interview prep course: https://bit.ly/3M6qTj1 Read our complete ..."
+
+---
+Title: Complete System Design Roadmap 2025 | HLD & LLD by Shradha Ma'am
+Channel: Apna College
+Views: 447,300 | Likes: N/A | Duration: 20m33s
+Uploaded: N/A | Viral Score: 5.7/10
+URL: https://www.youtube.com/watch?v=CuQmQpvw04I
+Description: "Share your progress on Twitter : https://x.com/ShradhaKhapra_
+
+Want to study for Tech Placements/Internships from us :
+Our ..."
+
+---
+Title: Inside a Real High-Frequency Trading System | HFT Architecture
+Channel: ByteMonk
+Views: 407,141 | Likes: N/A | Duration: 10m38s
 Uploaded: N/A | Viral Score: 5.6/10
-URL: https://www.youtube.com/watch?v=dZyQNy3-HjU
-Description: "https://hitesh.ai/cohort Welcome to chai aur code, a coding/programming dedicated channel in Hindi language. Now you can learn ..."
+URL: https://www.youtube.com/watch?v=iwRaNYa8yTw
+Description: "High-Frequency Trading System (HFT) are the bleeding edge of real-time systems — HFT architecture is designed for ..."
 
 ---
-Title: Complete RAG Crash Course With Langchain In 2 Hours
-Channel: Krish Naik
-Views: 232,112 | Likes: N/A | Duration: 128m9s
-Uploaded: N/A | Viral Score: 5.4/10
-URL: https://www.youtube.com/watch?v=o126p1QN_RI
-Description: "github: https://github.com/krishnaik06/RAG-Tutorials Retrieval-Augmented Generation (RAG) is the process of optimizing the ..."
+Title: Learn Fast API With This ONE Project
+Channel: Tech With Tim
+Views: 173,770 | Likes: N/A | Duration: 125m44s
+Uploaded: N/A | Viral Score: 5.2/10
+URL: https://www.youtube.com/watch?v=SR5NYCdzKkc
+Description: "ImageKit is an image and video API plus AI-Powered DAM that we use in this project to handle all of our image and video ..."
 
 ---
-Title: Chunking Strategies in RAG: Optimising Data for Advanced AI Responses
-Channel: Mervin Praison
-Views: 109,866 | Likes: N/A | Duration: 14m2s
-Uploaded: N/A | Viral Score: 5/10
-URL: https://www.youtube.com/watch?v=pIGRwMjhMaQ
-Description: "Dive deep into the world of RAG applications with our comprehensive guide on chunking strategies! Advanced Chunking ..."
+Title: How to Design Large Scale Systems like TinyURL,  BookMyShow, Youtube,  Facebook,  Twitter, ....
+Channel: DevSkills
+Views: 309 | Likes: N/A | Duration: 141m11s
+Uploaded: N/A | Viral Score: 2.5/10
+URL: https://www.youtube.com/watch?v=KKJe98lXcpg
+Description: "Explore crucial concepts and gain valuable insights to enhance your skills ‍    . Show your support: Like this video if you ..."
 
 ---
-Title: RAG is Dead - Introduction to Vectorless RAG
-Channel: Piyush Garg
-Views: 67,467 | Likes: N/A | Duration: 30m18s
-Uploaded: N/A | Viral Score: 4.8/10
-URL: https://www.youtube.com/watch?v=f3zHina9MTo
-Description: "Hey everyone, In this video, we are going to talk about PageIndex which is a Vectorless RAG Pipeline. Traditional RAG pipeline ..."
-
----
-Title: RAG + Langchain Python Project: Easy AI/Chat For Your Docs
-Channel: pixegami
-Views: 0 | Likes: N/A | Duration: 16m42s
+Title: System Design Interview: A Step-By-Step Guide
+Channel: ByteByteGo
+Views: 0 | Likes: N/A | Duration: 9m54s
 Uploaded: N/A | Viral Score: 1/10
-URL: https://www.youtube.com/watch?v=tcqEUSNCn8I
-Description: "Learn how to build a "retrieval augmented generation" (RAG) app with Langchain and OpenAI in Python. You can use this to ..."
+URL: https://www.youtube.com/watch?v=i7twT3x5yv8
+Description: "Learn something new every week by subscribing to our newsletter: https://bit.ly/3tfAlYD Checkout our bestselling System Design ..."
+
+---
+Title: Distributed Systems Explained | System Design Interview Basics
+Channel: ByteMonk
+Views: 0 | Likes: N/A | Duration: 3m38s
+Uploaded: N/A | Viral Score: 1/10
+URL: https://www.youtube.com/watch?v=IJWwfMyPu1c
+Description: "Distributed systems are becoming more and more widespread. They are a complex field of study in computer science. Distributed ..."
+
+---
+Title: The Truth About the Software Engineering Job Market in 2025
+Channel: Tech With Tim
+Views: 0 | Likes: N/A | Duration: 16m37s
+Uploaded: N/A | Viral Score: 1/10
+URL: https://www.youtube.com/watch?v=nokdEcqKWtA
+Description: "To learn for free on Brilliant, go to https://brilliant.org/techwithtim . Brilliant's also given our viewers 20% off an annual Premium ..."
 
 
 ### SOURCE URLS (for idea-generator)
-- Vector Databases simply explained! (Embeddings & Indexes) (636K views)
-  URL: https://www.youtube.com/watch?v=dN0lsF2cvm4
-- Python RAG Tutorial (with Local LLMs): AI For Your PDFs (610K views)
-  URL: https://www.youtube.com/watch?v=2TJxpyO3ei4
-- What are MCP servers | Explained in Hindi (428K views)
-  URL: https://www.youtube.com/watch?v=dZyQNy3-HjU
-- Complete RAG Crash Course With Langchain In 2 Hours (232K views)
-  URL: https://www.youtube.com/watch?v=o126p1QN_RI
-- Chunking Strategies in RAG: Optimising Data for Advanced AI Responses (110K views)
-  URL: https://www.youtube.com/watch?v=pIGRwMjhMaQ
-- RAG is Dead - Introduction to Vectorless RAG (67K views)
-  URL: https://www.youtube.com/watch?v=f3zHina9MTo
-- RAG + Langchain Python Project: Easy AI/Chat For Your Docs (0K views)
-  URL: https://www.youtube.com/watch?v=tcqEUSNCn8I
+- Backend web development - a complete overview (2548K views)
+  URL: https://www.youtube.com/watch?v=XBu54nfzxAQ
+- System Design Concepts Course and Interview Prep (2480K views)
+  URL: https://www.youtube.com/watch?v=F2FmTdLtb_4
+- Amazon System Design Interview: Design Parking Garage (1665K views)
+  URL: https://www.youtube.com/watch?v=NtMvNh0WFVM
+- the TRUTH about C++ (is it worth your time?) (1130K views)
+  URL: https://www.youtube.com/watch?v=q1ZmFc-sqNc
+- How to Answer System Design Interview Questions (Complete Guide) (561K views)
+  URL: https://www.youtube.com/watch?v=L9TfZdODuFQ
+- Complete System Design Roadmap 2025 | HLD & LLD by Shradha Ma'am (447K views)
+  URL: https://www.youtube.com/watch?v=CuQmQpvw04I
+- Inside a Real High-Frequency Trading System | HFT Architecture (407K views)
+  URL: https://www.youtube.com/watch?v=iwRaNYa8yTw
+- Learn Fast API With This ONE Project (174K views)
+  URL: https://www.youtube.com/watch?v=SR5NYCdzKkc
+- How to Design Large Scale Systems like TinyURL,  BookMyShow, Youtube,  Facebook,  Twitter, .... (0K views)
+  URL: https://www.youtube.com/watch?v=KKJe98lXcpg
+- System Design Interview: A Step-By-Step Guide (0K views)
+  URL: https://www.youtube.com/watch?v=i7twT3x5yv8
+- Distributed Systems Explained | System Design Interview Basics (0K views)
+  URL: https://www.youtube.com/watch?v=IJWwfMyPu1c
+- The Truth About the Software Engineering Job Market in 2025 (0K views)
+  URL: https://www.youtube.com/watch?v=nokdEcqKWtA
 
 ---
 ### GOOGLE NEWS
-## GOOGLE NEWS SCOUT REPORT — Small Language Models
+## GOOGLE NEWS SCOUT REPORT — Sports AI
 Date: 2026-03-24
 Articles: 20
 
 ### Top Articles
 
 ---
-Title: Rubrik says its AI watchdog ran 5x faster than GPT-5.2 - Stock Titan
-Source: Stock Titan
-Published: Mon, 23 Mar 2026 12:00:00 GMT
+Title: Revolutionizing Coaching: Lynk.coach - An AI-First Platform for Skill Development - Devdiscourse
+Source: Devdiscourse
+Published: Tue, 24 Mar 2026 08:49:36 GMT
+Recency Score: 10/10
+URL: https://news.google.com/rss/articles/CBMi0wFBVV95cUxOeXhEVmxpbGFJVUJFZ1hsTFUwT1NFOWJCSmh5a3piVnBhTkxCdGlHZndzVWFiMlBQbnFSSVRaeERlcy0wZXVRYm1pTDgyMW00VnJFdFh6ZXoySjVMMEotU0FMN2txVVBQYmNDNHVlRVZOdWJMQjBpLTJJVUM5SE1KZHp2WW9tMHNrdHlhN05rbVRidHVfaFl6TUNadHZDYU0xZThMWmMyZGQ4Vk5jOEhKLUR3M2dSc0pkTVNVUlhvMkstVktvbVZaTGhIQmhncUhUOTJR0gHYAUFVX3lxTE43VzM3QzlPUkpQZXZsVVJxN1R3VG9zNnZYTUlnd00zaExYSEFtYU1GNjBtamQ2RXJCUHU3eWk2TURMRWFubXJhWTA0ZVk0bE9XM0d1SHpiRnc4T2xZOGQ1MjNRNGxQMGRWWk91bVplRkNzSjlGQ0dJTktOWEM0eFRMQ3RDUG9TWFFYV2ozd3BqaUtFMGI5dGFrazBQbFhUZElJSVA3Um13YXEyMFBxajlsSi1yWWlZREhnWlRMU1dNWDVEYUVHM3lDMXpjekFtUmpQRnczVUs0Uw?oc=5
+
+---
+Title: Lyfskills launches Lynk.coach, an AI-powered coaching management platform for sports, fitness, performance arts and skill development - TheWire.in
+Source: TheWire.in
+Published: Tue, 24 Mar 2026 08:46:57 GMT
+Recency Score: 10/10
+URL: https://news.google.com/rss/articles/CBMi_gFBVV95cUxPVnZxNzkxS1RESWZnckkteDRGOE0zelFmSks4ODhfSTNzZkZDWk5kQ3ZTd1htOXhtQUNBOWdXNE5QRnFnVUt3RFZvV0JQV3BmenVZS2VVYjdGUkJFTjI3Y1NWako1T0lSUTljT1NxdjlRamNtd3lTNTVaWUFtNThCTUNVSEdpZUk2R1VBOVRscFVZQ1NfRzJxWmxZSE9abWFCbjVoSlFkWGYwUHoxUXdrTUx0d2lSWEFFMzRPbERQV01lQjBJRE1QR0lFeGZiLWtmR1Q3ZlR3eW1qSlI4bURONEgwcGUyVmJrb1RMZElYM1k2TVdPcGdDYjFPZExqUdIBgwJBVV95cUxQVEIxQmNmcmxZRlVfS05YMl9nUmp1N3c0ZWJjV3F0RTd0RGxwTGVEdzE0ODl4cy02akJQN3hPaC1QLVFjTWJyT00yOGlHai1jNXFCanBYcGxKZGFCRTMwMzlFX1pSVnBhZldMQnpTWDRGbGtjblFmcDZYaXoxUzNYd2ptekhSSnZGcnI0bEtRUk9jYTM2dlRvbnZub253OElGOHY0MXZnZ1ctRDZOQXJ0OGRSSU02UGlzdlZ4bE9CZEhUV3lIdE1zY25rdXBfOG5zZ2RIc2J0TUgzSjdROU5sa1RPTEdTT0tJTUszR3VzMEd0X0gxRTR5ZGNtT3lsY3NiSTBZ?oc=5
+
+---
+Title: Lil Wayne Returns To “Not Just Football” To Talk AI, World Cup & A Mixtape Weezy VERZUZ - LilWayneHQ
+Source: LilWayneHQ
+Published: Mon, 23 Mar 2026 20:27:23 GMT
+Recency Score: 9/10
+URL: https://news.google.com/rss/articles/CBMipAFBVV95cUxPZ2kwMUdGTnpwWVJZMWpLN1JZR0VtaTZqMExzRTZ1VUhiUEgxc3pOUWFEQ3NrcF80em1kb0U4T2diNVJTZk1WYjFSN2M2Q1B4V2FKWFhESkZ4REFjZmEtaDBZZkgtZU8tbmNJdVljT004cFBiYm1scUd5ZWdZTjVwaUpiNHBoTXZmZ1dIRnZraUxVcy0tV2dOY2cyTHc2U0hPeVFzMw?oc=5
+
+---
+Title: AI Sports Betting in 2026: Tools, Picks & What’s Changing - SportsHandle
+Source: SportsHandle
+Published: Mon, 23 Mar 2026 16:04:00 GMT
+Recency Score: 9/10
+URL: https://news.google.com/rss/articles/CBMiWkFVX3lxTE96VjJpZTNfc0loSmp0Q19xTi1iTGpwY1JXcjJHcE5BYzFnWm8xdHdZd0hGRGlHWjNnVEVDQnd1MEtpQ2VTRlB2cUZoNG0yQXNXaEdmME5seFZydw?oc=5
+
+---
+Title: How Infosys' AI Propels Formula E Fans to Pole Position - AI Magazine
+Source: AI Magazine
+Published: Mon, 23 Mar 2026 15:37:57 GMT
+Recency Score: 9/10
+URL: https://news.google.com/rss/articles/CBMiigFBVV95cUxQbktUdWt6cFVQckJVcmFRWTBvVnFNdlVPWmdob2NtWTVVdEN2UmJGSUJoT1hKLVpsM0p5UUF6eE5BR296cTlYb1JwSFBveTJQaUtidGUwaFBoc05fRG55V2VRVmlXNGpXZ3hyUFhxUTluWFQ3TVNOMGJoc0NlRWd0a0RJTFpOWUVDQ1E?oc=5
+
+---
+Title: Professional Baseball Players Association Signs Agreement With KTG Sports to Use AI-Based Publicity Rights - starnewskorea.com
+Source: starnewskorea.com
+Published: Mon, 23 Mar 2026 06:25:23 GMT
 Recency Score: 8/10
-URL: https://news.google.com/rss/articles/CBMisAFBVV95cUxNS2wtUUhzaTlISVRXajR0c0Z3ZlhkR1ptSTRoVEkzNWRFWXJaNFFMOXNRdm9wUGF0enFMb0NZWW5UaFpQeU1yTFViSXRsVVpSak02R2k3dVJUS0VERlFsV0tQV1ZaMVNDempfTV82VnE1TE5iMFZXZ3VoQ1prcUFjMlYwS0trZTNVSThFcEF5VWdJS2l0ckQ1V04zcWpEbHltSWFPRFJhNzhpY0RzVGRzMA?oc=5
+URL: https://news.google.com/rss/articles/CBMiekFVX3lxTE41a3pFNUpobHdoSnpDRXN2OHBza0NPVktGU0J6OTV6N0dLSzhIUzMtOVIwc1ZQTFUzU2JOOHROam5jTUNWWnlCRlpYWVRVMzl1R2tTNzd3ZGhyMDV5N19LTldLdXBxUXBSSTQtMWZJU2xjbnpvazNPWXZB?oc=5
 
 ---
-Title: Mistral's Small 4 consolidates reasoning, vision and coding into one model — at a fraction of the inference cost - Venturebeat
-Source: Venturebeat
-Published: Fri, 20 Mar 2026 19:21:28 GMT
-Recency Score: 6/10
-URL: https://news.google.com/rss/articles/CBMirwFBVV95cUxQRkxla1M0eV9xazVobHB6NV91RUFJalNXUGM3NnZ5bV9Fa3lRbFhwM3R0STZDbjhKV0RjTWxQY2MwYlY2V1dWSENtVkdQanVYT1JZd1dGYVZnLTlzdnNnMUxGZGxWSy12OUwxaGhSR29TWlF1NVQ1X3M2V0JMb0N6eXVPU2dtMzE3WVZUYzJrWkNIYkJrSEQ0dEZoVjhEdnVTSVJJX0Z0Zi14bGFRZVI0?oc=5
-
----
-Title: Why small language models may be the greener path for applied AI - TNGlobal
-Source: TNGlobal
-Published: Fri, 20 Mar 2026 08:36:23 GMT
-Recency Score: 6/10
-URL: https://news.google.com/rss/articles/CBMiogFBVV95cUxQeGVBM0hybmpMT3dHem1URndrMm9BenA2bDdEV2oxalNTcmIxem1Jb0N4eFJXd04wYjBTRU5Wb0lydzdFNXBWMUxQUzlIcndrMVVUbGtWamk4cnpQaEFzTF82UE95TXhpSk1fcjI3SFUzbTh1RlpXM0ZRekZIc3JodVhNS1F1ekxTTnQ5SGlvVWMwbkIzQ2lhb1ljV2RvaDVmWVE?oc=5
-
----
-Title: Are small language models finally having their moment? - IT Pro
-Source: IT Pro
-Published: Tue, 17 Mar 2026 17:50:10 GMT
-Recency Score: 5/10
-URL: https://news.google.com/rss/articles/CBMirwFBVV95cUxNZ3dXQTliVXFaTkQ1VERRUVRYd2dxUlpWbXFCRDZwV2w0ZGNJWThzTFRMR0VoV1F3SlJTOHNDblhGWUI1UnlkcWhyZ0FzcFp2LWhjdWw2em50M0hDS2tRSEJrU1YyU0x1bGFzOG5sV2FtMmtZbURoR2xZaGh5dVFVTVJzck1vX2JKTzBPUjJXYkk0OTlyT1RtcDlCd0tvUlNmbUl2QnpZQXpmMnhVd1N3?oc=5
-
----
-Title: Personal AI’s Memory-Based Small Language Models Deliver - GlobeNewswire
-Source: GlobeNewswire
-Published: Tue, 17 Mar 2026 12:00:00 GMT
-Recency Score: 4/10
-URL: https://news.google.com/rss/articles/CBMipAJBVV95cUxNRW5yeUstaWFBUjBncTcxd0QxaEpTVEJ5RVJzS3Naa19TdUNiUndkTkllTzVWal9ibnl3VWtjZmpVS0Vqc0FiX0lxMkRldjFFd2RVMjVEQ1R1blV5RnlWbklpODFlV2l5N0ZSSmFQYUtUaXE2dGZBVi1lNWU4UFg4X1J4NTVFR29LcTQyZ0RRYlYwWGZlZXB0cHJ6NHBJQXdaVl9lQk9UZXNmWmlwZjFJa2ZrNFJkSkRLOHVYUHFFaEpDanQtU0dBTG9ub202WWVfVW9BOUNkRVlMU1lPVDRjUW8yR3c1Z05pLXBLTC1tM2lLQzlMMEZTRUg4Q2ZMT3ZXanlPMWc0N2gyclZXR0psWjRleEhrNlpGeHlQREI1LTUzdFRF?oc=5
-
----
-Title: India’s AI strategy backs smaller language models alongside frontier systems, says policy white paper - Storyboard18
-Source: Storyboard18
-Published: Mon, 16 Mar 2026 06:08:28 GMT
-Recency Score: 4/10
-URL: https://news.google.com/rss/articles/CBMi3wFBVV95cUxNNnBWMjBDQUdpZGJTQ01Wb1V4cy1NVEFSVERwRnZMUl9CUWQ5WWgxa0xRXzRWX2locFo2azBrXzJNRTFJQUlhbTNodDRfMFFkR01feUJyVkFpSWJtMmFTb2VfaGNtVllqbDQ5VGg1NEVIUDhYOFlnTEdnaEdTNDlRZlJpT1VPcU9rbHlFd2UycUpNNjcxSUFjaTd0Nmx4TnhnVnh2cXZ6ZEFHMnozUE01ZUJqZ3Z0STRfOTBoZ2EwdVhLZWhmek1HNUFyVEdqYjRrTGM2QUJjZzI3WUFjN0JN0gHkAUFVX3lxTFBON0F0UmZZTjB5SFBHREJ2Y01uNTdaTmF4M1VHN25tMVgzQnpBZmNTd2dBV0d1UkRGbl9hZmdTTkJVZm9EdGhXLUFHZzdCQXkyVEkzZ2tPU1FYbVpLRGkwX3lkbWFyUzg3SHE5OVduT3dvc1I2QVMtQU1kSlRScThxSF84MzdzTzBNalFvY2xGZXZjMGpXdUtVQnI0MDZvT1VDemhkY1Nfa0x2T3hUZzI5S2RqRWxnRTRXNm92YzhpSTBCRG1yMTB6bmNXaGNsRzNzUUFMMmZiZE1Cd1VndHVGQi1HQw?oc=5
-
----
-Title: Explained: Why India’s AI strategy is focusing on smaller language models alongside frontier systems - Storyboard18
-Source: Storyboard18
-Published: Sun, 15 Mar 2026 05:37:50 GMT
-Recency Score: 4/10
-URL: https://news.google.com/rss/articles/CBMi5AFBVV95cUxPXzhoZ2JJODgzZTB5d3l6em9VTkM2WVVWNUctSHlYbzRRYnBmMTFWd2dTc0JTblpfRUFhb09GbmVtamFUQXg2eVV2UmlUc3dqUW5kdlgzWUFFRGg5SkJ6UTE1RnZVWlFjSjRZT3k4anRvOWJZOFU0WGxxLTBmbTNjSVNva1dnV2Z6X2hCcGtKSTRPaXJHd2plUjJjS2c0Mk82bzBvLVY5TXM2QmF4UjNDLUdVQjdEd3JJa3AzMEVyNHFSXzdZazRnUkcwTFlueHpwQXhMQzZucGItVjNqQjk5RVo4b3LSAeoBQVVfeXFMT1VCdzdxaHpFenEtd2tUS1VaSDc2RlZFaTRnYm51aVhfeDJoRXJtcTdMb3FBenVGejFYZWhEek5FUHJhMThjN1g4V3lNeTRMY19ad0FlU1JzeTEyMzBGem93cmwzRFlad1AycWN2NWZvNF81dFA4UkUtMlNUYkVEaS04eFlyaUlGano5bWFYNWZwTFlVSHgza050MlpkWWR4Z0ZRT2o3dURqajlhaHp2aGp0X1haVzU3SDQzeWpSaDZtdjhqdjE3UzZtcGhJTkkyWWxRZ191TUo4NmtXMGVoam42WkNnTHVLNFZ3?oc=5
-
----
-Title: Top 50+ Large Language Models (LLMs) in 2026 - Exploding Topics
-Source: Exploding Topics
-Published: Fri, 06 Mar 2026 08:00:00 GMT
+Title: Introducing Sports AI with Colin Cowherd on the FOX Sports App - FOX Sports
+Source: FOX Sports
+Published: Thu, 26 Feb 2026 08:00:00 GMT
 Recency Score: 3/10
-URL: https://news.google.com/rss/articles/CBMiWEFVX3lxTE9uRkJrcGdQY3NXTVFoaHY3NDI5anlaZFZVU1JOcUdXSUV2a2FTaG5zdWdfbFpoZFk0RjhHdExreUttUm9Jb0wtSmNtZGFLaUo4WHhuLXIwODE?oc=5
+URL: https://news.google.com/rss/articles/CBMibkFVX3lxTE1kUDMzRDJJYVl6MGxhdWxBUFNVT3VOSEhHVy0xNEd0MTZqSEwyLXllTTBDbUFpcy1xLTJMRDRWbHR1dFBFT202SkZjVXpXWE94ZjJRZlZ0dVd1RXNUVWNuUDdWOFFQWF8xNWJxVUVB?oc=5
 
 ---
-Title: Teaching small language models to think like optimization experts with OptiMind - Microsoft
-Source: Microsoft
-Published: Tue, 03 Mar 2026 08:30:00 GMT
+Title: Brady Tkachuk decries White House’s AI video of him insulting Canadians after US gold - The Guardian
+Source: The Guardian
+Published: Thu, 26 Feb 2026 08:00:00 GMT
 Recency Score: 3/10
-URL: https://news.google.com/rss/articles/CBMixgFBVV95cUxQZUVMN3NQLVJDZkQwT1RXVW01TDBfb1FjYUozd3pXdnBxYkVtekM3cTk5ZFNvZERwS3VnQUY0akxXdkxaQmxpNFBKUGN6dWZNa1c1YzhXQjRlTVVybXZvWlZFUVc2bU1Uc2hVWEoxbXlhVFpPMWkzOE9uZ28xWjl3YjRQM1dVYWp4SDg3elhMQWFMVUV2UDZ3Njl2Z1cxcGhRZFd3YlpmZlUwUUtYSVFaejY0T1I1X0U4TFdEczhCQ25KTlNublE?oc=5
+URL: https://news.google.com/rss/articles/CBMiygFBVV95cUxPY0t0VWhuaVVmVnR1bGhwRkZUa0FtMTgyTEQ3bm1WU2lMMHZCbm1CQzhsaXFJLUgzNFpwZTkwbDhNMGlHTVdnbkgwMWFjZjFPSjB0UV9xV2lWemwwbEdsYlFrdTE5UEdUM0xNX1BLcEg5dFZHNVdVX1pDSmZZZVpKbXNvb01JQmVVd2tiU2REdENnU1k4Wi11bm5EVmJUUnJJVnNsbUF2bU52SXFxdU9hOFEzdmR6V29Cc2xnNGh0d2JJaFdfM3AweGdB?oc=5
 
 ---
-Title: AT&T Slashes AI Costs 90% by Swapping Large Models for Small Ones - PYMNTS.com
-Source: PYMNTS.com
-Published: Fri, 27 Feb 2026 08:00:00 GMT
-Recency Score: 3/10
-URL: https://news.google.com/rss/articles/CBMitwFBVV95cUxOX3VGM2dyczViVVFRWmdMbV82Yk9CVlV2ZTlFQTN3M1NNcUx2dklaUnVkY1ZTTmQ2bmFHREtId2R1MHZnbkNhcjBmUmFKLVNQQ0pqVFlLS0VPVS1lallMUERucjdGU08zbFgtLUU4M1k1MVViQnAwem4yaVNhcjc0RkZTeGE5VGtlNlhIdHZIMjI5TlRWcXJqY2dLQ2I1eldCMzJTREVZUHhJcmFVTUlhQUFkS0FYbEU?oc=5
-
----
-Title: How Small Language Models Will Solve The AI Power Problem - The AI Journal
-Source: The AI Journal
-Published: Tue, 24 Feb 2026 08:38:46 GMT
-Recency Score: 3/10
-URL: https://news.google.com/rss/articles/CBMihAFBVV95cUxQOS1zWXNKdklxWmVHS09ZRWp6czg1aURualh2T2dRWlZYY3hReDVvRFBuQm1YdVVXTUFsRllEVF9scnB1TFc5QlA1Sml0ZmlOVmljQ2VrQzZMWU1CVXFWTHZ2OERKRktsQkJlRmxaRjFXSkdTYzg0V2ltQWUwQXJfZlZzdW8?oc=5
-
----
-Title: Forget ‘Bigger is Better’: Why Small Language Models are the Future of Enterprise AI - appinventiv.com
-Source: appinventiv.com
-Published: Fri, 20 Feb 2026 08:00:00 GMT
-Recency Score: 2/10
-URL: https://news.google.com/rss/articles/CBMid0FVX3lxTE5fRTlvYjJWc0tmZFczME81b3VQZFR1aF9IQ1V3N19EcEx6U0tiX09pVVJqRmp6VV9COEh4Z293RWpMdExpYXhIUEYySkwyamRkanI1a3RneTk2bVdsY3JSTkVQaUxLZ2VPcVpLaU5GcmhXZlYwakFB?oc=5
-
----
-Title: AI in India: The world's 'AI back office' is betting on small language models to bring big impact to smallholder farming - AgFunderNews
-Source: AgFunderNews
-Published: Tue, 17 Feb 2026 08:00:00 GMT
-Recency Score: 2/10
-URL: https://news.google.com/rss/articles/CBMi2AFBVV95cUxQb2Z3SHNWcjlZRmhQODhnTmVoUWVvTEs0eE9DbXZvcjM4MnhaN0tLSVpjMzM0LU1Hd0tRZDhncThoaUxoM2EtTU9ZQ1piU2FyWldSMU1QVmlyREFRc3p0YjdnNk5DY29rbEtabnY1cGtYQlZ5LW1BcVNYRUdZZnZIRE9QdFEzT3lycW80LVpqQnBlOVAwZGNjeFRzSmV0Q0YzYUVvRlFvRG5BV19GSl9tWlZldzRJNm5hYWJuZy1meGI5cVRuYXZPbXVVWTZzYXVRcnl6LTZlcng?oc=5
-
----
-Title: Easy FunctionGemma finetuning with Tunix on Google TPUs - blog.google
-Source: blog.google
+Title: AI will supercharge sports team valuations, says Arctos Partners’ Charles - CNBC
+Source: CNBC
 Published: Tue, 03 Feb 2026 08:00:00 GMT
 Recency Score: 2/10
-URL: https://news.google.com/rss/articles/CBMilAFBVV95cUxORFZUQVpOZG5XejhfWDE3blhJUDJXS3phcTdEQ05BZEZzOGQ4dXdkWUZfTlVJU3M4ZHJKVl9xS2xSdzVrT1dsNVhkRkhIZ3Y1UkhzZ3JKci1ZN3dvWl92Y1dSa0x6UkVWUDhpVHluVWNMSGNyQzZuUDltX2d0NjU1MGd6Rm1nVmE3Mlc4SGplYWdwQzQ5?oc=5
+URL: https://news.google.com/rss/articles/CBMiiAFBVV95cUxQelAzazY1UF9kUmNoRmphaEo5NU1zS0ZzWUd4ekpqeFI5SlhUeHdRc2xZRUc5Wl9IcW5tVk9VVDg2YUhzczdwZjloc1dDNUlCUGUxT3d4d0JqbWpOTlduOHJqZENhdU4yeTJSSkJ3UE5ERzFGbFpGazVUdVc3ai16QS1jaFlqOTla0gGOAUFVX3lxTE9KNmlITFNKbnlabGZpaVRucUl0NTJYLWhVaWlIOXVnWGM4SFE0clE4Z2dOX3FsQXZCc2JWWEp3Y3RxSVVrWUtGQTFKVVhCcDg2NW9kaVhJd3ltUGEzYnVURkM0MlVMZ3N5TzN4d05TM0RPR1MxakJmSkJFVjZRUHJCTXdEZW1vODJCaFpYcmc?oc=5
 
 ---
-Title: NJIT AI Researcher Makes Small Language Models Accessible - NJIT News
-Source: NJIT News
-Published: Thu, 29 Jan 2026 08:00:00 GMT
+Title: The future of sports, powered by AI - The Washington Post
+Source: The Washington Post
+Published: Tue, 09 Dec 2025 08:00:00 GMT
 Recency Score: 2/10
-URL: https://news.google.com/rss/articles/CBMihgFBVV95cUxNcFpoX1I2ZkJlTjhEalVwZUhfWTVGMlhvNWxQMnk4a1lNdG9qUG9FdElWV3Y0THRiMklDa2x6dmRFaFo3aWFncXUyQWpBcVpmNlhJTFJ5UG5ndTZlY2FIMXlJdDJRck1zMi1HTF85TEZCcFUtS3d4MXRHX01NMjAyYjFxV0hlQQ?oc=5
+URL: https://news.google.com/rss/articles/CBMilgFBVV95cUxPSk9OTFFrdDFrRFdvZjdDVWp5VmpyWGNwZlNIZ0gzQjBmNXNUdkNYQUZodkVMbXJzYTNFNF9tQkxpYms5RC11RVBfdFVZSUFEaEZ2OVpGMGRUT1c3OHlyZW1HTFdULTdHblpFT3FoNldsNV9zcDFtQktIWUlpTVd2WTFOT0d6Q2RobFJ3TmI2aThHcmNJSEE?oc=5
 
 ---
-Title: Small Language Models (SLMs) for resource-efficient personalised AI - Orange.com
-Source: Orange.com
-Published: Thu, 29 Jan 2026 08:00:00 GMT
+Title: Amazon’s custom AI-powered Prime Insights take fans inside the game - About Amazon
+Source: About Amazon
+Published: Tue, 25 Nov 2025 08:00:00 GMT
 Recency Score: 2/10
-URL: https://news.google.com/rss/articles/CBMiswFBVV95cUxPV2xpcG0wTzB2ZG9NbElEUVBVem1UaTdQVjA1TFJ0TE5YZWw1eWFuMmdmdGd2OHZiOUJEQ2pZa3BwZVVGTXdPWHhsNkJSb2MtMkU1X2l4Wl90T295ZTFFb1Buc2R0dGk3VU9FbVJGMjRJVEdvZlpJOXkxLXhDY0JTZVNPTE9oZ2hYcGZWVnl4NnZwYnlaWFBjX1ZWQndQSDFaM3BNUkFYZDh4QUtJU3BrNF9PRQ?oc=5
+URL: https://news.google.com/rss/articles/CBMifkFVX3lxTE5UNDM5dE83LTVmUUdnTUNabmt1OU9BRUpBanN6dHpnZ1dKamRQLWdkcXdVYzlVQUg0d0hhYlFrV0FkZUlpNGJBZVNHX1gyQWpHRmFONWJrUWkxMXRLSjhBZmVqX092dHVBV0tvaURJam5tdHBaSzdKeDBQZFR5dw?oc=5
 
 ---
-Title: Growing the business with small language models - FutureCIO
-Source: FutureCIO
-Published: Mon, 26 Jan 2026 08:00:00 GMT
+Title: Sports AI — Built for Sports Fans, Backed by Fox Sports - FOX Sports
+Source: FOX Sports
+Published: Sat, 01 Nov 2025 00:31:18 GMT
 Recency Score: 2/10
-URL: https://news.google.com/rss/articles/CBMie0FVX3lxTE9Bemw0SzEtVTk0SjF4S3BkZl85ZjdOck5OSUF2WGxvUEN4em15dzdlQk5WMTR5dzJKYmQtN3J2ZmFtaVhyQ1hSWlpTMWlRX3hDRC0zOENBcUJOQkVib3lOSUx6dThqNzV4c1h6bVU5WXJzTDc3UElSdEl0NA?oc=5
+URL: https://news.google.com/rss/articles/CBMiU0FVX3lxTFA0Q1RXZ09tTHBROGZrWm1kTDFha0dHb1NGcDdJcG1Cd09BUUF4Zzg1TXdTcXN5ZGtvbDZpSFZsNDRtZkllVW5SVkN4TmpYV1oxM0tv?oc=5
 
 ---
-Title: Small language models will take centre stage in 2026 - verdict.co.uk
-Source: verdict.co.uk
-Published: Mon, 26 Jan 2026 08:00:00 GMT
+Title: BBC Bitesize Guide to AI: How is AI transforming the world of football and sport? - BBC Bitesize - BBC
+Source: BBC
+Published: Wed, 15 Oct 2025 13:17:12 GMT
 Recency Score: 2/10
-URL: https://news.google.com/rss/articles/CBMiigFBVV95cUxQOVd2V05QUTcxSlo3LUlBZTVjUnNJZUs3T2U3YVVlWVd2amFaNDl0OXJONVV2Wkw0c1hCOF9KazVPdHV5bW56OEpCSGVVUHRwdjNpa3FqeEhOZGpWa2lhMl9WTWx0Z3htd0VJYzlvSFYxczFsaUZNdVpQN0xUX2lTWVgtV3Y2RGluVlE?oc=5
+URL: https://news.google.com/rss/articles/CBMiW0FVX3lxTE54S0RrMGNFWEtXZkJrX1gyRjdSdnIwUjRzM3VxczdseHlqdjhURXNJTWdhUWs0UlhJdGlXQzg5TnY4bHhBR280UGNnWFpsVENqMHQ5Z29jcWY2ZWs?oc=5
 
 ---
-Title: Small Language Models are Closing the Gap on Large Models - HackerNoon
-Source: HackerNoon
-Published: Sat, 24 Jan 2026 08:00:00 GMT
+Title: AI in Sports: Applications and Use Cases - appinventiv.com
+Source: appinventiv.com
+Published: Mon, 13 Oct 2025 07:00:00 GMT
 Recency Score: 2/10
-URL: https://news.google.com/rss/articles/CBMihwFBVV95cUxOMjA3a0hpTG9KYkFRWGlaaU5aYVpidHRNT2NnVUJjUGI3Zy1wWEJCNHF3Y2xRVnBPY0dtWGZWN1VOZGRzejAxQzV6NW9KaS02YnlsbGdqbVBBeFFKdnRla0VCS1ZvTnNDeXVZcXE2aVV5MU5uYnFTaFJBa25KbjE1cGIwRXdMbUE?oc=5
+URL: https://news.google.com/rss/articles/CBMiVEFVX3lxTFBrZnl6TE9GM1Q0bnVSWURKSGhsaF9VYzF5b1Zjck02Njh6SjZPMnR3WWh1QkE5OGliSWJnS1VIXy01WVFtVkxhNmtCR0Mxd2FocDNhTQ?oc=5
 
 ---
-Title: Using Secure Small Language Models to Navigate Big Data Sets - GovTech
-Source: GovTech
-Published: Wed, 21 Jan 2026 08:00:00 GMT
+Title: Tristan Thompson on AI, Sports & Startups at Disrupt 2025 - TechCrunch
+Source: TechCrunch
+Published: Wed, 08 Oct 2025 07:00:00 GMT
 Recency Score: 2/10
-URL: https://news.google.com/rss/articles/CBMilgFBVV95cUxPU2x5R24yVWdXeklHcmUxcGNMa1JaU0VhMWZFbkE2MGNraEVNRG9OaGhNSEl6T091Vm9XWTQ5TVFTcjBRbEhiNlQweXU2dlYyUFRfVzN6elpQalBGaTktZ2phNXNseUNobTNnWFJ6aUhoYm5DLWxYMmNwWnFhQmZJeVpzM3BLU1luMFo5TWRadXU4dGc1X2c?oc=5
+URL: https://news.google.com/rss/articles/CBMipwFBVV95cUxObVFzb01ScFAxQjlpY213c3BSWTNWcmUwdE1tLTREa003Vi1BY0FHNVZ5WDVNMW1PWkVlSnhIWjkxUmNCWUxaVGhTeUlGdG40NExYOEJwNk9xRjA0VnN3emVjUFVyWVhBcnFmMlM0LWVFdXM1ZkpfMzM5eXdQVXBvS1dqd3piSl8tYnlRNElhcTF2ZExpZDNHakNTUzNaOW5PUUl0LUFEZw?oc=5
+
+---
+Title: Can AI help detect doping in sports? | Euronews Tech Talks Podcast - Euronews.com
+Source: Euronews.com
+Published: Sun, 07 Sep 2025 07:00:00 GMT
+Recency Score: 2/10
+URL: https://news.google.com/rss/articles/CBMinAFBVV95cUxNVEVQOV9OUXZxMklDSlJPRy1zbm9BbVNHSjVhcVdQLXJvcFozZWlOdk9nVFoyUkFYLVU5dXNNVGRmZnFEckFNdlY1cExKb0tDSmRmQ1ZRSXBvbUQtTURPNkxXNER2Q1k1cTItWG1xUDMxOE5XSWlsM2VYRlRQTE5ySjktTEtVQ19LR05IaHhzY25RUk1PaUlxcU5MVjI?oc=5
+
+---
+Title: Meet the Guys Betting Big on AI Gambling Agents - WIRED
+Source: WIRED
+Published: Tue, 02 Sep 2025 07:00:00 GMT
+Recency Score: 2/10
+URL: https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUmFzcW5xNmZlZHo5Tm9sUVhqN0xkamNzeDBieWhBdlkzbWo5bjE4cDRHekRGXzNnN1hWbUt2NTlwOG40dWwzcUE5dnpFT2hucUdCSEJYbjl2M0ExZFEtQ1hWWDNDTS10d3pxNU9KbWtMQkJiei1PR2RTVG9KanU5dHZFTUg1M25Q?oc=5
+
+---
+Title: A.I. Researchers Are Negotiating $250 Million Pay Packages. Just Like N.B.A. Stars. - The New York Times
+Source: The New York Times
+Published: Fri, 01 Aug 2025 07:00:00 GMT
+Recency Score: 2/10
+URL: https://news.google.com/rss/articles/CBMigAFBVV95cUxNbDRSaHJ2RU5ka0l4a2I5Mk8zNW5lVjNrUjBoaWV2MU85Ulo3VkxmZm5UaUhnVHM0dHh4TWVlWU5jd0pieEZSUnJXZy03d3U4TTZwQTZKbGRaajhDS21aQXVVck1MQmFOeVYzTHMtYWVUT29JX2FaV1l6U29SMVZPcg?oc=5
+
+---
+Title: AI in sports: Changing the game for fans and players alike - IBM
+Source: IBM
+Published: Thu, 24 Jul 2025 06:12:15 GMT
+Recency Score: 2/10
+URL: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1CbDNVUE9MS25XTDRUMnBySkJkZXNYQ2dKYU5uSGNSRURBT3paaWhKOUhCMUEyRk9VSXpPUWdGYnpsQV9WMjBjNWhKSW0xbU1XUlp0V0N6bUVyRUE3WXFrMg?oc=5
+
+---
+Title: Research on the digital transaction model of the sports industry chain based on blockchain technology - Nature
+Source: Nature
+Published: Fri, 11 Jul 2025 07:00:00 GMT
+Recency Score: 2/10
+URL: https://news.google.com/rss/articles/CBMiX0FVX3lxTE96UHR3MlpaamdMYjBlMDAxSlRRWE5EUWZIX0VyeWJCVWQ0cVp6a25MNVd5MFlBR3kwYlBRQVBLVTZQUG13YmZNckdDSU90Z2xjMjBJSWZXc1JvVkhoc3Nz?oc=5
 
 
 ### SOURCE URLS (for idea-generator)
-- Rubrik says its AI watchdog ran 5x faster than GPT-5.2 - Stock Titan — Stock Titan
-  URL: https://news.google.com/rss/articles/CBMisAFBVV95cUxNS2wtUUhzaTlISVRXajR0c0Z3ZlhkR1ptSTRoVEkzNWRFWXJaNFFMOXNRdm9wUGF0enFMb0NZWW5UaFpQeU1yTFViSXRsVVpSak02R2k3dVJUS0VERlFsV0tQV1ZaMVNDempfTV82VnE1TE5iMFZXZ3VoQ1prcUFjMlYwS0trZTNVSThFcEF5VWdJS2l0ckQ1V04zcWpEbHltSWFPRFJhNzhpY0RzVGRzMA?oc=5
-- Mistral's Small 4 consolidates reasoning, vision and coding into one model — at a fraction of the inference cost - Venturebeat — Venturebeat
-  URL: https://news.google.com/rss/articles/CBMirwFBVV95cUxQRkxla1M0eV9xazVobHB6NV91RUFJalNXUGM3NnZ5bV9Fa3lRbFhwM3R0STZDbjhKV0RjTWxQY2MwYlY2V1dWSENtVkdQanVYT1JZd1dGYVZnLTlzdnNnMUxGZGxWSy12OUwxaGhSR29TWlF1NVQ1X3M2V0JMb0N6eXVPU2dtMzE3WVZUYzJrWkNIYkJrSEQ0dEZoVjhEdnVTSVJJX0Z0Zi14bGFRZVI0?oc=5
-- Why small language models may be the greener path for applied AI - TNGlobal — TNGlobal
-  URL: https://news.google.com/rss/articles/CBMiogFBVV95cUxQeGVBM0hybmpMT3dHem1URndrMm9BenA2bDdEV2oxalNTcmIxem1Jb0N4eFJXd04wYjBTRU5Wb0lydzdFNXBWMUxQUzlIcndrMVVUbGtWamk4cnpQaEFzTF82UE95TXhpSk1fcjI3SFUzbTh1RlpXM0ZRekZIc3JodVhNS1F1ekxTTnQ5SGlvVWMwbkIzQ2lhb1ljV2RvaDVmWVE?oc=5
-- Are small language models finally having their moment? - IT Pro — IT Pro
-  URL: https://news.google.com/rss/articles/CBMirwFBVV95cUxNZ3dXQTliVXFaTkQ1VERRUVRYd2dxUlpWbXFCRDZwV2w0ZGNJWThzTFRMR0VoV1F3SlJTOHNDblhGWUI1UnlkcWhyZ0FzcFp2LWhjdWw2em50M0hDS2tRSEJrU1YyU0x1bGFzOG5sV2FtMmtZbURoR2xZaGh5dVFVTVJzck1vX2JKTzBPUjJXYkk0OTlyT1RtcDlCd0tvUlNmbUl2QnpZQXpmMnhVd1N3?oc=5
-- Personal AI’s Memory-Based Small Language Models Deliver - GlobeNewswire — GlobeNewswire
-  URL: https://news.google.com/rss/articles/CBMipAJBVV95cUxNRW5yeUstaWFBUjBncTcxd0QxaEpTVEJ5RVJzS3Naa19TdUNiUndkTkllTzVWal9ibnl3VWtjZmpVS0Vqc0FiX0lxMkRldjFFd2RVMjVEQ1R1blV5RnlWbklpODFlV2l5N0ZSSmFQYUtUaXE2dGZBVi1lNWU4UFg4X1J4NTVFR29LcTQyZ0RRYlYwWGZlZXB0cHJ6NHBJQXdaVl9lQk9UZXNmWmlwZjFJa2ZrNFJkSkRLOHVYUHFFaEpDanQtU0dBTG9ub202WWVfVW9BOUNkRVlMU1lPVDRjUW8yR3c1Z05pLXBLTC1tM2lLQzlMMEZTRUg4Q2ZMT3ZXanlPMWc0N2gyclZXR0psWjRleEhrNlpGeHlQREI1LTUzdFRF?oc=5
-- India’s AI strategy backs smaller language models alongside frontier systems, says policy white paper - Storyboard18 — Storyboard18
-  URL: https://news.google.com/rss/articles/CBMi3wFBVV95cUxNNnBWMjBDQUdpZGJTQ01Wb1V4cy1NVEFSVERwRnZMUl9CUWQ5WWgxa0xRXzRWX2locFo2azBrXzJNRTFJQUlhbTNodDRfMFFkR01feUJyVkFpSWJtMmFTb2VfaGNtVllqbDQ5VGg1NEVIUDhYOFlnTEdnaEdTNDlRZlJpT1VPcU9rbHlFd2UycUpNNjcxSUFjaTd0Nmx4TnhnVnh2cXZ6ZEFHMnozUE01ZUJqZ3Z0STRfOTBoZ2EwdVhLZWhmek1HNUFyVEdqYjRrTGM2QUJjZzI3WUFjN0JN0gHkAUFVX3lxTFBON0F0UmZZTjB5SFBHREJ2Y01uNTdaTmF4M1VHN25tMVgzQnpBZmNTd2dBV0d1UkRGbl9hZmdTTkJVZm9EdGhXLUFHZzdCQXkyVEkzZ2tPU1FYbVpLRGkwX3lkbWFyUzg3SHE5OVduT3dvc1I2QVMtQU1kSlRScThxSF84MzdzTzBNalFvY2xGZXZjMGpXdUtVQnI0MDZvT1VDemhkY1Nfa0x2T3hUZzI5S2RqRWxnRTRXNm92YzhpSTBCRG1yMTB6bmNXaGNsRzNzUUFMMmZiZE1Cd1VndHVGQi1HQw?oc=5
-- Explained: Why India’s AI strategy is focusing on smaller language models alongside frontier systems - Storyboard18 — Storyboard18
-  URL: https://news.google.com/rss/articles/CBMi5AFBVV95cUxPXzhoZ2JJODgzZTB5d3l6em9VTkM2WVVWNUctSHlYbzRRYnBmMTFWd2dTc0JTblpfRUFhb09GbmVtamFUQXg2eVV2UmlUc3dqUW5kdlgzWUFFRGg5SkJ6UTE1RnZVWlFjSjRZT3k4anRvOWJZOFU0WGxxLTBmbTNjSVNva1dnV2Z6X2hCcGtKSTRPaXJHd2plUjJjS2c0Mk82bzBvLVY5TXM2QmF4UjNDLUdVQjdEd3JJa3AzMEVyNHFSXzdZazRnUkcwTFlueHpwQXhMQzZucGItVjNqQjk5RVo4b3LSAeoBQVVfeXFMT1VCdzdxaHpFenEtd2tUS1VaSDc2RlZFaTRnYm51aVhfeDJoRXJtcTdMb3FBenVGejFYZWhEek5FUHJhMThjN1g4V3lNeTRMY19ad0FlU1JzeTEyMzBGem93cmwzRFlad1AycWN2NWZvNF81dFA4UkUtMlNUYkVEaS04eFlyaUlGano5bWFYNWZwTFlVSHgza050MlpkWWR4Z0ZRT2o3dURqajlhaHp2aGp0X1haVzU3SDQzeWpSaDZtdjhqdjE3UzZtcGhJTkkyWWxRZ191TUo4NmtXMGVoam42WkNnTHVLNFZ3?oc=5
-- Top 50+ Large Language Models (LLMs) in 2026 - Exploding Topics — Exploding Topics
-  URL: https://news.google.com/rss/articles/CBMiWEFVX3lxTE9uRkJrcGdQY3NXTVFoaHY3NDI5anlaZFZVU1JOcUdXSUV2a2FTaG5zdWdfbFpoZFk0RjhHdExreUttUm9Jb0wtSmNtZGFLaUo4WHhuLXIwODE?oc=5
-- Teaching small language models to think like optimization experts with OptiMind - Microsoft — Microsoft
-  URL: https://news.google.com/rss/articles/CBMixgFBVV95cUxQZUVMN3NQLVJDZkQwT1RXVW01TDBfb1FjYUozd3pXdnBxYkVtekM3cTk5ZFNvZERwS3VnQUY0akxXdkxaQmxpNFBKUGN6dWZNa1c1YzhXQjRlTVVybXZvWlZFUVc2bU1Uc2hVWEoxbXlhVFpPMWkzOE9uZ28xWjl3YjRQM1dVYWp4SDg3elhMQWFMVUV2UDZ3Njl2Z1cxcGhRZFd3YlpmZlUwUUtYSVFaejY0T1I1X0U4TFdEczhCQ25KTlNublE?oc=5
-- AT&T Slashes AI Costs 90% by Swapping Large Models for Small Ones - PYMNTS.com — PYMNTS.com
-  URL: https://news.google.com/rss/articles/CBMitwFBVV95cUxOX3VGM2dyczViVVFRWmdMbV82Yk9CVlV2ZTlFQTN3M1NNcUx2dklaUnVkY1ZTTmQ2bmFHREtId2R1MHZnbkNhcjBmUmFKLVNQQ0pqVFlLS0VPVS1lallMUERucjdGU08zbFgtLUU4M1k1MVViQnAwem4yaVNhcjc0RkZTeGE5VGtlNlhIdHZIMjI5TlRWcXJqY2dLQ2I1eldCMzJTREVZUHhJcmFVTUlhQUFkS0FYbEU?oc=5
-- How Small Language Models Will Solve The AI Power Problem - The AI Journal — The AI Journal
-  URL: https://news.google.com/rss/articles/CBMihAFBVV95cUxQOS1zWXNKdklxWmVHS09ZRWp6czg1aURualh2T2dRWlZYY3hReDVvRFBuQm1YdVVXTUFsRllEVF9scnB1TFc5QlA1Sml0ZmlOVmljQ2VrQzZMWU1CVXFWTHZ2OERKRktsQkJlRmxaRjFXSkdTYzg0V2ltQWUwQXJfZlZzdW8?oc=5
-- Forget ‘Bigger is Better’: Why Small Language Models are the Future of Enterprise AI - appinventiv.com — appinventiv.com
-  URL: https://news.google.com/rss/articles/CBMid0FVX3lxTE5fRTlvYjJWc0tmZFczME81b3VQZFR1aF9IQ1V3N19EcEx6U0tiX09pVVJqRmp6VV9COEh4Z293RWpMdExpYXhIUEYySkwyamRkanI1a3RneTk2bVdsY3JSTkVQaUxLZ2VPcVpLaU5GcmhXZlYwakFB?oc=5
-- AI in India: The world's 'AI back office' is betting on small language models to bring big impact to smallholder farming - AgFunderNews — AgFunderNews
-  URL: https://news.google.com/rss/articles/CBMi2AFBVV95cUxQb2Z3SHNWcjlZRmhQODhnTmVoUWVvTEs0eE9DbXZvcjM4MnhaN0tLSVpjMzM0LU1Hd0tRZDhncThoaUxoM2EtTU9ZQ1piU2FyWldSMU1QVmlyREFRc3p0YjdnNk5DY29rbEtabnY1cGtYQlZ5LW1BcVNYRUdZZnZIRE9QdFEzT3lycW80LVpqQnBlOVAwZGNjeFRzSmV0Q0YzYUVvRlFvRG5BV19GSl9tWlZldzRJNm5hYWJuZy1meGI5cVRuYXZPbXVVWTZzYXVRcnl6LTZlcng?oc=5
-- Easy FunctionGemma finetuning with Tunix on Google TPUs - blog.google — blog.google
-  URL: https://news.google.com/rss/articles/CBMilAFBVV95cUxORFZUQVpOZG5XejhfWDE3blhJUDJXS3phcTdEQ05BZEZzOGQ4dXdkWUZfTlVJU3M4ZHJKVl9xS2xSdzVrT1dsNVhkRkhIZ3Y1UkhzZ3JKci1ZN3dvWl92Y1dSa0x6UkVWUDhpVHluVWNMSGNyQzZuUDltX2d0NjU1MGd6Rm1nVmE3Mlc4SGplYWdwQzQ5?oc=5
-- NJIT AI Researcher Makes Small Language Models Accessible - NJIT News — NJIT News
-  URL: https://news.google.com/rss/articles/CBMihgFBVV95cUxNcFpoX1I2ZkJlTjhEalVwZUhfWTVGMlhvNWxQMnk4a1lNdG9qUG9FdElWV3Y0THRiMklDa2x6dmRFaFo3aWFncXUyQWpBcVpmNlhJTFJ5UG5ndTZlY2FIMXlJdDJRck1zMi1HTF85TEZCcFUtS3d4MXRHX01NMjAyYjFxV0hlQQ?oc=5
-- Small Language Models (SLMs) for resource-efficient personalised AI - Orange.com — Orange.com
-  URL: https://news.google.com/rss/articles/CBMiswFBVV95cUxPV2xpcG0wTzB2ZG9NbElEUVBVem1UaTdQVjA1TFJ0TE5YZWw1eWFuMmdmdGd2OHZiOUJEQ2pZa3BwZVVGTXdPWHhsNkJSb2MtMkU1X2l4Wl90T295ZTFFb1Buc2R0dGk3VU9FbVJGMjRJVEdvZlpJOXkxLXhDY0JTZVNPTE9oZ2hYcGZWVnl4NnZwYnlaWFBjX1ZWQndQSDFaM3BNUkFYZDh4QUtJU3BrNF9PRQ?oc=5
-- Growing the business with small language models - FutureCIO — FutureCIO
-  URL: https://news.google.com/rss/articles/CBMie0FVX3lxTE9Bemw0SzEtVTk0SjF4S3BkZl85ZjdOck5OSUF2WGxvUEN4em15dzdlQk5WMTR5dzJKYmQtN3J2ZmFtaVhyQ1hSWlpTMWlRX3hDRC0zOENBcUJOQkVib3lOSUx6dThqNzV4c1h6bVU5WXJzTDc3UElSdEl0NA?oc=5
-- Small language models will take centre stage in 2026 - verdict.co.uk — verdict.co.uk
-  URL: https://news.google.com/rss/articles/CBMiigFBVV95cUxQOVd2V05QUTcxSlo3LUlBZTVjUnNJZUs3T2U3YVVlWVd2amFaNDl0OXJONVV2Wkw0c1hCOF9KazVPdHV5bW56OEpCSGVVUHRwdjNpa3FqeEhOZGpWa2lhMl9WTWx0Z3htd0VJYzlvSFYxczFsaUZNdVpQN0xUX2lTWVgtV3Y2RGluVlE?oc=5
-- Small Language Models are Closing the Gap on Large Models - HackerNoon — HackerNoon
-  URL: https://news.google.com/rss/articles/CBMihwFBVV95cUxOMjA3a0hpTG9KYkFRWGlaaU5aYVpidHRNT2NnVUJjUGI3Zy1wWEJCNHF3Y2xRVnBPY0dtWGZWN1VOZGRzejAxQzV6NW9KaS02YnlsbGdqbVBBeFFKdnRla0VCS1ZvTnNDeXVZcXE2aVV5MU5uYnFTaFJBa25KbjE1cGIwRXdMbUE?oc=5
-- Using Secure Small Language Models to Navigate Big Data Sets - GovTech — GovTech
-  URL: https://news.google.com/rss/articles/CBMilgFBVV95cUxPU2x5R24yVWdXeklHcmUxcGNMa1JaU0VhMWZFbkE2MGNraEVNRG9OaGhNSEl6T091Vm9XWTQ5TVFTcjBRbEhiNlQweXU2dlYyUFRfVzN6elpQalBGaTktZ2phNXNseUNobTNnWFJ6aUhoYm5DLWxYMmNwWnFhQmZJeVpzM3BLU1luMFo5TWRadXU4dGc1X2c?oc=5
+- Revolutionizing Coaching: Lynk.coach - An AI-First Platform for Skill Development - Devdiscourse — Devdiscourse
+  URL: https://news.google.com/rss/articles/CBMi0wFBVV95cUxOeXhEVmxpbGFJVUJFZ1hsTFUwT1NFOWJCSmh5a3piVnBhTkxCdGlHZndzVWFiMlBQbnFSSVRaeERlcy0wZXVRYm1pTDgyMW00VnJFdFh6ZXoySjVMMEotU0FMN2txVVBQYmNDNHVlRVZOdWJMQjBpLTJJVUM5SE1KZHp2WW9tMHNrdHlhN05rbVRidHVfaFl6TUNadHZDYU0xZThMWmMyZGQ4Vk5jOEhKLUR3M2dSc0pkTVNVUlhvMkstVktvbVZaTGhIQmhncUhUOTJR0gHYAUFVX3lxTE43VzM3QzlPUkpQZXZsVVJxN1R3VG9zNnZYTUlnd00zaExYSEFtYU1GNjBtamQ2RXJCUHU3eWk2TURMRWFubXJhWTA0ZVk0bE9XM0d1SHpiRnc4T2xZOGQ1MjNRNGxQMGRWWk91bVplRkNzSjlGQ0dJTktOWEM0eFRMQ3RDUG9TWFFYV2ozd3BqaUtFMGI5dGFrazBQbFhUZElJSVA3Um13YXEyMFBxajlsSi1yWWlZREhnWlRMU1dNWDVEYUVHM3lDMXpjekFtUmpQRnczVUs0Uw?oc=5
+- Lyfskills launches Lynk.coach, an AI-powered coaching management platform for sports, fitness, performance arts and skill development - TheWire.in — TheWire.in
+  URL: https://news.google.com/rss/articles/CBMi_gFBVV95cUxPVnZxNzkxS1RESWZnckkteDRGOE0zelFmSks4ODhfSTNzZkZDWk5kQ3ZTd1htOXhtQUNBOWdXNE5QRnFnVUt3RFZvV0JQV3BmenVZS2VVYjdGUkJFTjI3Y1NWako1T0lSUTljT1NxdjlRamNtd3lTNTVaWUFtNThCTUNVSEdpZUk2R1VBOVRscFVZQ1NfRzJxWmxZSE9abWFCbjVoSlFkWGYwUHoxUXdrTUx0d2lSWEFFMzRPbERQV01lQjBJRE1QR0lFeGZiLWtmR1Q3ZlR3eW1qSlI4bURONEgwcGUyVmJrb1RMZElYM1k2TVdPcGdDYjFPZExqUdIBgwJBVV95cUxQVEIxQmNmcmxZRlVfS05YMl9nUmp1N3c0ZWJjV3F0RTd0RGxwTGVEdzE0ODl4cy02akJQN3hPaC1QLVFjTWJyT00yOGlHai1jNXFCanBYcGxKZGFCRTMwMzlFX1pSVnBhZldMQnpTWDRGbGtjblFmcDZYaXoxUzNYd2ptekhSSnZGcnI0bEtRUk9jYTM2dlRvbnZub253OElGOHY0MXZnZ1ctRDZOQXJ0OGRSSU02UGlzdlZ4bE9CZEhUV3lIdE1zY25rdXBfOG5zZ2RIc2J0TUgzSjdROU5sa1RPTEdTT0tJTUszR3VzMEd0X0gxRTR5ZGNtT3lsY3NiSTBZ?oc=5
+- Lil Wayne Returns To “Not Just Football” To Talk AI, World Cup & A Mixtape Weezy VERZUZ - LilWayneHQ — LilWayneHQ
+  URL: https://news.google.com/rss/articles/CBMipAFBVV95cUxPZ2kwMUdGTnpwWVJZMWpLN1JZR0VtaTZqMExzRTZ1VUhiUEgxc3pOUWFEQ3NrcF80em1kb0U4T2diNVJTZk1WYjFSN2M2Q1B4V2FKWFhESkZ4REFjZmEtaDBZZkgtZU8tbmNJdVljT004cFBiYm1scUd5ZWdZTjVwaUpiNHBoTXZmZ1dIRnZraUxVcy0tV2dOY2cyTHc2U0hPeVFzMw?oc=5
+- AI Sports Betting in 2026: Tools, Picks & What’s Changing - SportsHandle — SportsHandle
+  URL: https://news.google.com/rss/articles/CBMiWkFVX3lxTE96VjJpZTNfc0loSmp0Q19xTi1iTGpwY1JXcjJHcE5BYzFnWm8xdHdZd0hGRGlHWjNnVEVDQnd1MEtpQ2VTRlB2cUZoNG0yQXNXaEdmME5seFZydw?oc=5
+- How Infosys' AI Propels Formula E Fans to Pole Position - AI Magazine — AI Magazine
+  URL: https://news.google.com/rss/articles/CBMiigFBVV95cUxQbktUdWt6cFVQckJVcmFRWTBvVnFNdlVPWmdob2NtWTVVdEN2UmJGSUJoT1hKLVpsM0p5UUF6eE5BR296cTlYb1JwSFBveTJQaUtidGUwaFBoc05fRG55V2VRVmlXNGpXZ3hyUFhxUTluWFQ3TVNOMGJoc0NlRWd0a0RJTFpOWUVDQ1E?oc=5
+- Professional Baseball Players Association Signs Agreement With KTG Sports to Use AI-Based Publicity Rights - starnewskorea.com — starnewskorea.com
+  URL: https://news.google.com/rss/articles/CBMiekFVX3lxTE41a3pFNUpobHdoSnpDRXN2OHBza0NPVktGU0J6OTV6N0dLSzhIUzMtOVIwc1ZQTFUzU2JOOHROam5jTUNWWnlCRlpYWVRVMzl1R2tTNzd3ZGhyMDV5N19LTldLdXBxUXBSSTQtMWZJU2xjbnpvazNPWXZB?oc=5
+- Introducing Sports AI with Colin Cowherd on the FOX Sports App - FOX Sports — FOX Sports
+  URL: https://news.google.com/rss/articles/CBMibkFVX3lxTE1kUDMzRDJJYVl6MGxhdWxBUFNVT3VOSEhHVy0xNEd0MTZqSEwyLXllTTBDbUFpcy1xLTJMRDRWbHR1dFBFT202SkZjVXpXWE94ZjJRZlZ0dVd1RXNUVWNuUDdWOFFQWF8xNWJxVUVB?oc=5
+- Brady Tkachuk decries White House’s AI video of him insulting Canadians after US gold - The Guardian — The Guardian
+  URL: https://news.google.com/rss/articles/CBMiygFBVV95cUxPY0t0VWhuaVVmVnR1bGhwRkZUa0FtMTgyTEQ3bm1WU2lMMHZCbm1CQzhsaXFJLUgzNFpwZTkwbDhNMGlHTVdnbkgwMWFjZjFPSjB0UV9xV2lWemwwbEdsYlFrdTE5UEdUM0xNX1BLcEg5dFZHNVdVX1pDSmZZZVpKbXNvb01JQmVVd2tiU2REdENnU1k4Wi11bm5EVmJUUnJJVnNsbUF2bU52SXFxdU9hOFEzdmR6V29Cc2xnNGh0d2JJaFdfM3AweGdB?oc=5
+- AI will supercharge sports team valuations, says Arctos Partners’ Charles - CNBC — CNBC
+  URL: https://news.google.com/rss/articles/CBMiiAFBVV95cUxQelAzazY1UF9kUmNoRmphaEo5NU1zS0ZzWUd4ekpqeFI5SlhUeHdRc2xZRUc5Wl9IcW5tVk9VVDg2YUhzczdwZjloc1dDNUlCUGUxT3d4d0JqbWpOTlduOHJqZENhdU4yeTJSSkJ3UE5ERzFGbFpGazVUdVc3ai16QS1jaFlqOTla0gGOAUFVX3lxTE9KNmlITFNKbnlabGZpaVRucUl0NTJYLWhVaWlIOXVnWGM4SFE0clE4Z2dOX3FsQXZCc2JWWEp3Y3RxSVVrWUtGQTFKVVhCcDg2NW9kaVhJd3ltUGEzYnVURkM0MlVMZ3N5TzN4d05TM0RPR1MxakJmSkJFVjZRUHJCTXdEZW1vODJCaFpYcmc?oc=5
+- The future of sports, powered by AI - The Washington Post — The Washington Post
+  URL: https://news.google.com/rss/articles/CBMilgFBVV95cUxPSk9OTFFrdDFrRFdvZjdDVWp5VmpyWGNwZlNIZ0gzQjBmNXNUdkNYQUZodkVMbXJzYTNFNF9tQkxpYms5RC11RVBfdFVZSUFEaEZ2OVpGMGRUT1c3OHlyZW1HTFdULTdHblpFT3FoNldsNV9zcDFtQktIWUlpTVd2WTFOT0d6Q2RobFJ3TmI2aThHcmNJSEE?oc=5
+- Amazon’s custom AI-powered Prime Insights take fans inside the game - About Amazon — About Amazon
+  URL: https://news.google.com/rss/articles/CBMifkFVX3lxTE5UNDM5dE83LTVmUUdnTUNabmt1OU9BRUpBanN6dHpnZ1dKamRQLWdkcXdVYzlVQUg0d0hhYlFrV0FkZUlpNGJBZVNHX1gyQWpHRmFONWJrUWkxMXRLSjhBZmVqX092dHVBV0tvaURJam5tdHBaSzdKeDBQZFR5dw?oc=5
+- Sports AI — Built for Sports Fans, Backed by Fox Sports - FOX Sports — FOX Sports
+  URL: https://news.google.com/rss/articles/CBMiU0FVX3lxTFA0Q1RXZ09tTHBROGZrWm1kTDFha0dHb1NGcDdJcG1Cd09BUUF4Zzg1TXdTcXN5ZGtvbDZpSFZsNDRtZkllVW5SVkN4TmpYV1oxM0tv?oc=5
+- BBC Bitesize Guide to AI: How is AI transforming the world of football and sport? - BBC Bitesize - BBC — BBC
+  URL: https://news.google.com/rss/articles/CBMiW0FVX3lxTE54S0RrMGNFWEtXZkJrX1gyRjdSdnIwUjRzM3VxczdseHlqdjhURXNJTWdhUWs0UlhJdGlXQzg5TnY4bHhBR280UGNnWFpsVENqMHQ5Z29jcWY2ZWs?oc=5
+- AI in Sports: Applications and Use Cases - appinventiv.com — appinventiv.com
+  URL: https://news.google.com/rss/articles/CBMiVEFVX3lxTFBrZnl6TE9GM1Q0bnVSWURKSGhsaF9VYzF5b1Zjck02Njh6SjZPMnR3WWh1QkE5OGliSWJnS1VIXy01WVFtVkxhNmtCR0Mxd2FocDNhTQ?oc=5
+- Tristan Thompson on AI, Sports & Startups at Disrupt 2025 - TechCrunch — TechCrunch
+  URL: https://news.google.com/rss/articles/CBMipwFBVV95cUxObVFzb01ScFAxQjlpY213c3BSWTNWcmUwdE1tLTREa003Vi1BY0FHNVZ5WDVNMW1PWkVlSnhIWjkxUmNCWUxaVGhTeUlGdG40NExYOEJwNk9xRjA0VnN3emVjUFVyWVhBcnFmMlM0LWVFdXM1ZkpfMzM5eXdQVXBvS1dqd3piSl8tYnlRNElhcTF2ZExpZDNHakNTUzNaOW5PUUl0LUFEZw?oc=5
+- Can AI help detect doping in sports? | Euronews Tech Talks Podcast - Euronews.com — Euronews.com
+  URL: https://news.google.com/rss/articles/CBMinAFBVV95cUxNVEVQOV9OUXZxMklDSlJPRy1zbm9BbVNHSjVhcVdQLXJvcFozZWlOdk9nVFoyUkFYLVU5dXNNVGRmZnFEckFNdlY1cExKb0tDSmRmQ1ZRSXBvbUQtTURPNkxXNER2Q1k1cTItWG1xUDMxOE5XSWlsM2VYRlRQTE5ySjktTEtVQ19LR05IaHhzY25RUk1PaUlxcU5MVjI?oc=5
+- Meet the Guys Betting Big on AI Gambling Agents - WIRED — WIRED
+  URL: https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUmFzcW5xNmZlZHo5Tm9sUVhqN0xkamNzeDBieWhBdlkzbWo5bjE4cDRHekRGXzNnN1hWbUt2NTlwOG40dWwzcUE5dnpFT2hucUdCSEJYbjl2M0ExZFEtQ1hWWDNDTS10d3pxNU9KbWtMQkJiei1PR2RTVG9KanU5dHZFTUg1M25Q?oc=5
+- A.I. Researchers Are Negotiating $250 Million Pay Packages. Just Like N.B.A. Stars. - The New York Times — The New York Times
+  URL: https://news.google.com/rss/articles/CBMigAFBVV95cUxNbDRSaHJ2RU5ka0l4a2I5Mk8zNW5lVjNrUjBoaWV2MU85Ulo3VkxmZm5UaUhnVHM0dHh4TWVlWU5jd0pieEZSUnJXZy03d3U4TTZwQTZKbGRaajhDS21aQXVVck1MQmFOeVYzTHMtYWVUT29JX2FaV1l6U29SMVZPcg?oc=5
+- AI in sports: Changing the game for fans and players alike - IBM — IBM
+  URL: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1CbDNVUE9MS25XTDRUMnBySkJkZXNYQ2dKYU5uSGNSRURBT3paaWhKOUhCMUEyRk9VSXpPUWdGYnpsQV9WMjBjNWhKSW0xbU1XUlp0V0N6bUVyRUE3WXFrMg?oc=5
+- Research on the digital transaction model of the sports industry chain based on blockchain technology - Nature — Nature
+  URL: https://news.google.com/rss/articles/CBMiX0FVX3lxTE96UHR3MlpaamdMYjBlMDAxSlRRWE5EUWZIX0VyeWJCVWQ0cVp6a25MNVd5MFlBR3kwYlBRQVBLVTZQUG13YmZNckdDSU90Z2xjMjBJSWZXc1JvVkhoc3Nz?oc=5
 
