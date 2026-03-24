@@ -1,0 +1,35 @@
+{
+  "n": 5,
+  "cards": [
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-28-24-725Z/cards/1ryoaub.png",
+      "caption": "1) MacBook M5 Pro + Qwen3.5 = Fully Local AI Security System — 93.8% Accuracy, 25 tok/s, No Cloud Needed (96-Test Benchmark vs GPT-5.4)\nr/Qwen_AI · score 7 · 287 ups · 54 comments\nhttps://www.reddit.com/r/Qwen_AI/comments/1ryoaub/macbook_m5_pro_qwen35_fully_local_ai_security/",
+      "permalink": "https://www.reddit.com/r/Qwen_AI/comments/1ryoaub/macbook_m5_pro_qwen35_fully_local_ai_security/",
+      "id": "1ryoaub"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-28-24-725Z/cards/1rz20yj.png",
+      "caption": "2) I don't think Local LLM is for me, or am I doing something wrong?\nr/LocalLLM · score 6 · 112 ups · 127 comments\nhttps://www.reddit.com/r/LocalLLM/comments/1rz20yj/i_dont_think_local_llm_is_for_me_or_am_i_doing/",
+      "permalink": "https://www.reddit.com/r/LocalLLM/comments/1rz20yj/i_dont_think_local_llm_is_for_me_or_am_i_doing/",
+      "id": "1rz20yj"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-28-24-725Z/cards/1rx1w7d.png",
+      "caption": "3) I got tired of manually prompting every single clip for my AI music videos, so I built a 100% local open-source (LTX Video desktop + Gradio) app to automate it, meet - Synesthesia\nr/StableDiffusion · score 3 · 191 ups · 71 comments\nhttps://www.reddit.com/r/StableDiffusion/comments/1rx1w7d/i_got_tired_of_manually_prompting_every_single/",
+      "permalink": "https://www.reddit.com/r/StableDiffusion/comments/1rx1w7d/i_got_tired_of_manually_prompting_every_single/",
+      "id": "1rx1w7d"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-28-24-725Z/cards/1rxo4fp.png",
+      "caption": "4) I built a free open-source tool that fine-tunes any LLM on your own documents and exports a GGUF no coding required\nr/AIDeveloperNews · score 1 · 91 ups · 19 comments\nhttps://www.reddit.com/r/AIDeveloperNews/comments/1rxo4fp/i_built_a_free_opensource_tool_that_finetunes_any/",
+      "permalink": "https://www.reddit.com/r/AIDeveloperNews/comments/1rxo4fp/i_built_a_free_opensource_tool_that_finetunes_any/",
+      "id": "1rxo4fp"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-28-24-725Z/cards/1l9oo08.png",
+      "caption": "5) LLM efficiency passes from compression &amp; reconstruct Prompts?\nr/webllm · score 0 · 1 ups · 0 comments\nhttps://www.reddit.com/r/webllm/comments/1l9oo08/llm_efficiency_passes_from_compression/",
+      "permalink": "https://www.reddit.com/r/webllm/comments/1l9oo08/llm_efficiency_passes_from_compression/",
+      "id": "1l9oo08"
+    }
+  ]
+}

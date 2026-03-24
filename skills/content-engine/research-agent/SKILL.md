@@ -102,7 +102,7 @@ If user niche = sales / SDR / outreach → always include:
 Also add `--minSubscribers 10000` to avoid tiny irrelevant subs.
 
 ```bash
-node /home/ubuntu/.openclaw/workspace-ce/skills/reddit-scout/scripts/pipeline.js \
+node {SKILL_BASE}/reddit-scout/scripts/pipeline.js \
   --niche "[pillar topic + user niche keywords]" \
   --out "{USER_WORKSPACE}reddit-scout" \
   --topN 15 --subLimit 12 --gapMs 1000 \
@@ -110,6 +110,10 @@ node /home/ubuntu/.openclaw/workspace-ce/skills/reddit-scout/scripts/pipeline.js
   --searchAuto 1 --printChat 1 \
   --subAllowlist "[niche-specific subreddits from above]" \
   --minSubscribers 10000
+  
+NOTE: {SKILL_BASE} resolves to the skill directory containing reddit-scout
+For CE: {SKILL_BASE} (via symlink from workspace-ce)
+For other users: Automatically resolved at runtime
 ```
 
 **After running, check result count immediately:**
@@ -123,14 +127,14 @@ Look for: posts with 100+ upvotes, threads with debate, pain points people vent 
 ### 2. Twitter Scout
 
 ```bash
-node /home/ubuntu/.openclaw/workspace-ce/skills/twitter-scout/scripts/pipeline.js \
+node {SKILL_BASE}/twitter-scout/scripts/pipeline.js \
   --query "[pillar topic] AI 2026" \
   --out "{USER_WORKSPACE}twitter-scout" \
   --topN 10 \
   --printChat
 ```
 
-Session file: `/home/ubuntu/.openclaw/workspace-ce/skills/twitter-scout/session.json`
+Session file: `{SKILL_BASE}/twitter-scout/session.json`
 
 If session expired → notify user, continue with Reddit + YouTube only.
 
@@ -139,7 +143,7 @@ If session expired → notify user, continue with Reddit + YouTube only.
 ### 3. YouTube Scout
 
 ```bash
-node /home/ubuntu/.openclaw/workspace/skills/youtube-scout/scripts/pipeline.js \
+node {SKILL_BASE}/youtube-scout/scripts/pipeline.js \
   --query "[pillar topic + user niche keywords]" \
   --out "{USER_WORKSPACE}youtube-scout" \
   --topN 8 \
@@ -158,7 +162,7 @@ Transcripts will be fetched automatically for top videos.
 ### 4. Google News Scout
 
 ```bash
-node /home/ubuntu/.openclaw/workspace-ce/skills/google-news-scout/scripts/pipeline.js \
+node {SKILL_BASE}/google-news-scout/scripts/pipeline.js \
   --query "[pillar topic + user niche keywords]" \
   --out "{USER_WORKSPACE}google-news-scout" \
   --topN 10 \
@@ -175,10 +179,10 @@ Always run ALL 4 scouts. Background Reddit, Twitter, and Google News with `&`. R
 
 Example exec command to run all 4 in parallel:
 ```bash
-node /home/ubuntu/.openclaw/workspace-ce/skills/reddit-scout/scripts/pipeline.js --niche "QUERY" --out "OUT/reddit-scout" --topN 10 --subLimit 8 --gapMs 1200 --time week --kinds top,hot --searchAuto 1 --printChat 1 2>&1 &
-node /home/ubuntu/.openclaw/workspace-ce/skills/twitter-scout/scripts/pipeline.js --query "QUERY" --out "OUT/twitter-scout" --topN 10 --printChat 2>&1 &
-node /home/ubuntu/.openclaw/workspace-ce/skills/google-news-scout/scripts/pipeline.js --query "QUERY" --out "OUT/google-news-scout" --topN 10 --daysBack 7 --printChat 2>&1 &
-node /home/ubuntu/.openclaw/workspace/skills/youtube-scout/scripts/pipeline.js --query "QUERY" --out "OUT/youtube-scout" --topN 8 --searchN 20 --printChat 2>&1
+node {SKILL_BASE}/reddit-scout/scripts/pipeline.js --niche "QUERY" --out "OUT/reddit-scout" --topN 10 --subLimit 8 --gapMs 1200 --time week --kinds top,hot --searchAuto 1 --printChat 1 2>&1 &
+node {SKILL_BASE}/twitter-scout/scripts/pipeline.js --query "QUERY" --out "OUT/twitter-scout" --topN 10 --printChat 2>&1 &
+node {SKILL_BASE}/google-news-scout/scripts/pipeline.js --query "QUERY" --out "OUT/google-news-scout" --topN 10 --daysBack 7 --printChat 2>&1 &
+node {SKILL_BASE}/youtube-scout/scripts/pipeline.js --query "QUERY" --out "OUT/youtube-scout" --topN 8 --searchN 20 --printChat 2>&1
 wait
 ```
 
@@ -391,28 +395,28 @@ Before you mark research as "complete", you MUST validate:
 
 **For Reddit (need 4+ posts with permalinks):**
 ```bash
-node /home/ubuntu/.openclaw/workspace-ce/skills/reddit-scout/scripts/pipeline.js \
+node {SKILL_BASE}/reddit-scout/scripts/pipeline.js \
   --niche "[query]" --out "{USER_WORKSPACE}reddit-scout" --topN 20 --subLimit 10 --time week --kinds top,hot,rising
 ```
 Then extract from: `top_posts_detailed.json` → read `permalink` field for each post
 
 **For Twitter (need 4+ tweets with URLs):**
 ```bash
-node /home/ubuntu/.openclaw/workspace-ce/skills/twitter-scout/scripts/pipeline.js \
+node {SKILL_BASE}/twitter-scout/scripts/pipeline.js \
   --query "[query]" --out "{USER_WORKSPACE}twitter-scout" --topN 20
 ```
 Then extract from stdout or output JSON → copy exact URLs
 
 **For YouTube (need 4+ videos with IDs):**
 ```bash
-node /home/ubuntu/.openclaw/workspace/skills/youtube-scout/scripts/pipeline.js \
+node {SKILL_BASE}/youtube-scout/scripts/pipeline.js \
   --query "[query]" --out "{USER_WORKSPACE}youtube-scout" --topN 20 --searchN 50
 ```
 Then extract from: video data → build URL format: `https://www.youtube.com/watch?v=[video_id]`
 
 **For Google News (need 3+ articles with URLs):**
 ```bash
-node /home/ubuntu/.openclaw/workspace-ce/skills/google-news-scout/scripts/pipeline.js \
+node {SKILL_BASE}/google-news-scout/scripts/pipeline.js \
   --query "[query]" --out "{USER_WORKSPACE}google-news-scout" --topN 15 --daysBack 7
 ```
 Then extract from: article entries → copy exact URL field

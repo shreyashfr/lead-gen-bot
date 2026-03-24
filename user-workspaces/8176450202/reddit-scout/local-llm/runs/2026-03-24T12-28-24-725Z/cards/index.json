@@ -1,0 +1,80 @@
+[
+  {
+    "id": "1ryoaub",
+    "subreddit": "Qwen_AI",
+    "title": "MacBook M5 Pro + Qwen3.5 = Fully Local AI Security System — 93.8% Accuracy, 25 tok/s, No Cloud Needed (96-Test Benchmark vs GPT-5.4)",
+    "ups": 287,
+    "num_comments": 54,
+    "upvote_ratio": 0.99,
+    "viral_score": 6.671139231134218,
+    "listing": "search:top:week",
+    "permalink": "https://www.reddit.com/r/Qwen_AI/comments/1ryoaub/macbook_m5_pro_qwen35_fully_local_ai_security/",
+    "image": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-28-24-725Z/cards/1ryoaub.png",
+    "media": null
+  },
+  {
+    "id": "1rz20yj",
+    "subreddit": "LocalLLM",
+    "title": "I don't think Local LLM is for me, or am I doing something wrong?",
+    "ups": 112,
+    "num_comments": 127,
+    "upvote_ratio": 0.88,
+    "viral_score": 5.622693593027742,
+    "listing": "search:top:week",
+    "permalink": "https://www.reddit.com/r/LocalLLM/comments/1rz20yj/i_dont_think_local_llm_is_for_me_or_am_i_doing/",
+    "image": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-28-24-725Z/cards/1rz20yj.png",
+    "media": null
+  },
+  {
+    "id": "1rx1w7d",
+    "subreddit": "StableDiffusion",
+    "title": "I got tired of manually prompting every single clip for my AI music videos, so I built a 100% local open-source (LTX Video desktop + Gradio) app to automate it, meet - Synesthesia",
+    "ups": 191,
+    "num_comments": 71,
+    "upvote_ratio": 0.89,
+    "viral_score": 3.417882785491857,
+    "listing": "search:top:week",
+    "permalink": "https://www.reddit.com/r/StableDiffusion/comments/1rx1w7d/i_got_tired_of_manually_prompting_every_single/",
+    "image": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-28-24-725Z/cards/1rx1w7d.png",
+    "media": null
+  },
+  {
+    "id": "1rxo4fp",
+    "subreddit": "AIDeveloperNews",
+    "title": "I built a free open-source tool that fine-tunes any LLM on your own documents and exports a GGUF no coding required",
+    "ups": 91,
+    "num_comments": 19,
+    "upvote_ratio": 1,
+    "viral_score": 1.384452977212387,
+    "listing": "search:top:week",
+    "permalink": "https://www.reddit.com/r/AIDeveloperNews/comments/1rxo4fp/i_built_a_free_opensource_tool_that_finetunes_any/",
+    "image": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-28-24-725Z/cards/1rxo4fp.png",
+    "media": null
+  },
+  {
+    "id": "1l9oo08",
+    "subreddit": "webllm",
+    "title": "LLM efficiency passes from compression &amp; reconstruct Prompts?",
+    "ups": 1,
+    "num_comments": 0,
+    "upvote_ratio": 1,
+    "viral_score": 0.00007938028601682435,
+    "listing": "rising",
+    "permalink": "https://www.reddit.com/r/webllm/comments/1l9oo08/llm_efficiency_passes_from_compression/",
+    "image": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-28-24-725Z/cards/1l9oo08.png",
+    "media": null
+  },
+  {
+    "id": "1is8n67",
+    "subreddit": "webllm",
+    "title": "Optimizing local WebLLM",
+    "ups": 1,
+    "num_comments": 0,
+    "upvote_ratio": 1,
+    "viral_score": 0.00005478122330339087,
+    "listing": "rising",
+    "permalink": "https://www.reddit.com/r/webllm/comments/1is8n67/optimizing_local_webllm/",
+    "image": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-28-24-725Z/cards/1is8n67.png",
+    "media": null
+  }
+]

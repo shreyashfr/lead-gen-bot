@@ -467,6 +467,48 @@
       "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_1.png",
       "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/small-language-models/runs/2026-03-24T12-12-59-039Z/avatars/mgostIH.png",
       "fetchedAt": "2026-03-24T12:13:51.737Z"
+    },
+    "solderzzc": {
+      "user": "solderzzc",
+      "url": "https://i.redd.it/snoovatar/avatars/ce388888-d5b4-425e-a28d-abdf1c8fb2dc.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-28-24-725Z/avatars/solderzzc.png",
+      "fetchedAt": "2026-03-24T12:30:15.020Z"
+    },
+    "ruleofnuts": {
+      "user": "ruleofnuts",
+      "url": "https://i.redd.it/snoovatar/avatars/06ae26ec-a0f6-4d6e-8c18-bf980080b0d8.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-28-24-725Z/avatars/ruleofnuts.png",
+      "fetchedAt": "2026-03-24T12:30:16.366Z"
+    },
+    "jacobpederson": {
+      "user": "jacobpederson",
+      "url": "https://styles.redditmedia.com/t5_bmuog/styles/profileIcon_j4f90bbvyvn51.png?width=256&height=256&crop=256:256,smart&s=6f2322d15ab8323dc8db329a2e478c193fb933d2",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-28-24-725Z/avatars/jacobpederson.png",
+      "fetchedAt": "2026-03-24T12:30:17.718Z"
+    },
+    "pranav_kingop": {
+      "user": "pranav_kingop",
+      "url": "https://i.redd.it/snoovatar/avatars/325202bc-f5c0-45c3-9a18-321b11e6476c.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-28-24-725Z/avatars/pranav_kingop.png",
+      "fetchedAt": "2026-03-24T12:30:19.206Z"
+    },
+    "Vinserello": {
+      "user": "Vinserello",
+      "url": "https://styles.redditmedia.com/t5_sc6b8/styles/profileIcon_m45ukggn8iyd1.png?width=256&height=256&crop=256:256,smart&s=af9ba55fd43241cdcfbc6e279b7a4c2048f3d208",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-28-24-725Z/avatars/Vinserello.png",
+      "fetchedAt": "2026-03-24T12:30:20.620Z"
+    },
+    "SeinSinght": {
+      "user": "SeinSinght",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_0.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/avatars/SeinSinght.png",
+      "fetchedAt": "2026-03-24T12:31:37.636Z"
+    },
+    "Quiet-Error-": {
+      "user": "Quiet-Error-",
+      "url": "https://i.redd.it/snoovatar/avatars/f81fbd63-a703-4b84-a640-05a1dd08748f.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/local-llm/runs/2026-03-24T12-30-21-712Z/avatars/Quiet-Error-.png",
+      "fetchedAt": "2026-03-24T12:31:38.791Z"
     }
   }
 }
