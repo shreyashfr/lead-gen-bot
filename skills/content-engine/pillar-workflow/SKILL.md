@@ -7,6 +7,51 @@ description: >
   Works for any Content Engine user — uses dispatcher-injected USER_NAME, USER_WORKSPACE, USER_NICHE.
 ---
 
+# 🔴 HARD-CODED MESSAGES (READ FIRST)
+
+**ALL user-facing messages are pre-written below. Do NOT improvise, add extra text, or send messages LLM decides to send.**
+
+## Message 1: Pillar ACK (send immediately after user sends `Pillar: [topic]`)
+
+Replace `[TOPIC]` with the exact pillar topic from user's message:
+
+```
+🔍 Searching viral posts around "[TOPIC]" on Reddit, Twitter/X, YouTube and Google News...
+
+Retrieving top ideas and hooks. This takes 8-12 minutes — sit back and relax. 🙌
+```
+
+**Rules:**
+- Send ONLY this exact message, nothing else
+- Replace `[TOPIC]` with user's topic (e.g., "AI Scams" → "🔍 Searching viral posts around "AI Scams"...")
+- Do NOT add any other text before or after
+- Do NOT send narration like "Let me load X" or "Now I'll run Y"
+
+## Message 2: Ideas Report (sent by idea-generator subagent — NOT by you)
+
+The idea-generator posts 15 ideas with hooks, formats, and sources. It includes the production-plan block.
+
+**You do NOT send this message yourself. The subagent does.**
+
+## Message 3: Error Messages (ONLY if something breaks)
+
+### 3a. Timeout (if idea-generator takes >120 sec):
+```
+⚠️ Still generating ideas — check back in 2 minutes.
+```
+
+### 3b. Crash/Retry (if subagent fails):
+```
+⚠️ Hit a hiccup. Retrying...
+```
+
+**Rules:**
+- Only send these if the specific error occurs
+- Do NOT add extra text or explanation
+- Use exactly the text above
+
+---
+
 ## 📋 VOICE-MEMORY.JSON — READ AT START, WRITE AFTER EVERY FEEDBACK
 
 `{USER_WORKSPACE}voice-memory.json` is the single file that stores EVERYTHING:
@@ -52,6 +97,31 @@ Before starting the pillar pipeline:
 ---
 
 
+# 🚨 ENFORCEMENT: NO IMPROVISED MESSAGES
+
+**READ THIS FIRST. This is non-negotiable.**
+
+You are FORBIDDEN from sending ANY message except the hard-coded ones above.
+
+This includes:
+- ❌ "Let me load the research-agent"
+- ❌ "Now I'm running research"
+- ❌ "Spawning the idea-generator"
+- ❌ "Waiting for ideas..."
+- ❌ "Almost done!"
+- ❌ Any variation or explanation you think of
+
+**If you think about sending a message that's not in the hard-coded section → DO NOT SEND IT.**
+
+The ONLY messages you are allowed to send:
+1. Message 1: Pillar ACK (from above)
+2. Message 3a: Timeout error (from above, only if timeout happens)
+3. Message 3b: Crash error (from above, only if crash happens)
+
+**Everything else is handled by subagents. Your job is to execute silently.**
+
+---
+
 # PILLAR WORKFLOW
 
 Orchestrates the full content pipeline: Research → Ideas → Selection → Production → Approval → Airtable.
@@ -71,22 +141,34 @@ Replace ALL file paths:
 
 ---
 
-## STEP 0 — STATUS LOG (ONE MESSAGE, THEN SILENT)
+## STEP 0 — HARD-CODED ACK MESSAGE (ONLY MESSAGE UNTIL IDEAS READY)
 
-**⚡ The ONLY message sent to user during Steps 0-2 (until ideas are ready):**
+**⚡ HARD-CODED MESSAGE — Use exactly this, do NOT improvise:**
+
+Replace `[TOPIC]` with the pillar topic from user's message:
 
 ```
-🔍 Searching viral posts around "[Pillar Topic]" on Reddit, Twitter/X + YouTube + Google News...
+🔍 Searching viral posts around "[TOPIC]" on Reddit, Twitter/X, YouTube and Google News...
 
-Retrieving top ideas, hooks and videos. This takes 8-12 minutes — sit back and relax. 🙌
+Retrieving top ideas and hooks. This takes 8-12 minutes — sit back and relax. 🙌
 ```
 
-**Rules:**
+**RULES — ABSOLUTE:**
 - Send this message FIRST, before any file reads or processing
-- Then **go silent** — no more messages until ideas are ready
-- Do NOT narrate steps, do NOT say "loading X", do NOT update user mid-process
-- Just work. Silently. For 8-12 minutes.
-- When ideas are ready → send them directly (no "ideas coming" message)
+- Use the exact text above (do NOT add "Let me", "Now I'll", "I'm going to", etc.)
+- Replace `[TOPIC]` with the user's pillar topic only
+- Then **SILENT** — zero more messages until ideas are ready to post
+- Do NOT add any step updates, status messages, or narration
+- Do NOT say "loading", "running", "generating", "waiting"
+- Just execute. No talking.
+
+**If you feel the urge to send any other message → STOP. Don't send it.**
+**The ONLY messages allowed are:**
+1. This hard-coded ACK message (at start)
+2. The ideas report (when idea-generator posts it)
+3. Error-only messages (if something breaks): see STEP 2 error handling
+
+**All other messages are forbidden.**
 
 **🚨 GUARDRAILS (MANDATORY FOR EVERY LLM)**
 - The user-facing IDEAS REPORT must include 15 ideas, each with a hook, format, rationale, and a real source URL (Reddit/Twitter/YouTube/Google News). Do not send partial lists.
@@ -96,11 +178,13 @@ Retrieving top ideas, hooks and videos. This takes 8-12 minutes — sit back and
 
 ---
 
-## STEP 1 — RESEARCH (SILENT EXECUTION)
+## STEP 1 — RESEARCH (ZERO MESSAGES. EXECUTE ONLY.)
 
-**Execute silently. No narration. No "Let me load X" messages.**
+**NO MESSAGES. NO NARRATION. NO UPDATES.**
 
-1. Run research script:
+Just execute:
+
+1. Run research:
 ```bash
 bash /home/ubuntu/.openclaw/workspace-ce/skills/pillar-workflow/scripts/run_research.sh \
   --query "[pillar topic]" \
@@ -108,16 +192,17 @@ bash /home/ubuntu/.openclaw/workspace-ce/skills/pillar-workflow/scripts/run_rese
   --niche "{USER_NICHE}"
 ```
 
-2. Wait for completion, then read the report:
+2. Read result:
 ```bash
 cat {USER_WORKSPACE}research-report.md
 ```
 
-3. Verify the report has content (not empty, contains URLs)
-   - If empty or missing → go to SMART FALLBACK below
-   - Otherwise → continue to STEP 2
+3. Check if report has content
+   - Empty? → go to SMART FALLBACK
+   - Has content? → go to STEP 2
 
-**No messages to user. Just work.**
+**Do not send any message to user. Not one.**
+**If you think about sending a message → don't.**
 
 ### ⚠️ SMART FALLBACK: INSUFFICIENT DATA DETECTED
 
@@ -157,9 +242,9 @@ cat {USER_WORKSPACE}research-report.md
 - ✅ Content is fresher (uses trending alternatives)
 - ✅ User knows what happened (transparent message)
 
-## STEP 2 — IDEA GENERATION (SPAWN & WAIT, THEN SILENT)
+## STEP 2 — IDEA GENERATION (SPAWN ONLY. NO MESSAGES EXCEPT ON ERROR.)
 
-**Extract user ID and workspace path. Then spawn subagent. Then stop talking.**
+**Spawn the subagent. Then wait. Then stop.**
 
 ```
 sessions_spawn(
@@ -171,12 +256,20 @@ sessions_spawn(
 )
 ```
 
-**After spawn completes:**
-- If success → subagent posted ideas to user's Telegram. You are done. STOP.
-- If timeout (>120 sec) → send: `⚠️ Still generating ideas. Check back in 2 minutes.` then STOP
-- If error → send: `⚠️ Hit an issue. Retrying...` then retry ONCE, then STOP
+**After spawn completes — check outcome:**
 
-**No narration. No "Let me spawn X". No step-by-step updates. Just execute and let the subagent handle Telegram delivery.**
+| Outcome | Action |
+|---------|--------|
+| **Success** | Ideas posted to Telegram. You are done. STOP. Send no message. |
+| **Timeout (>120 sec)** | Send ONLY this: `⚠️ Still generating ideas — check back in 2 minutes.` Then STOP. |
+| **Error/Crash** | Send ONLY this: `⚠️ Hit a hiccup. Retrying...` Retry once. Then STOP. |
+
+**RULES:**
+- Do NOT send any message other than the hard-coded error messages above
+- Do NOT narrate ("Let me spawn", "Now waiting", "Spawning idea generator")
+- Do NOT update user ("Getting ideas ready", "Almost done", "Generating 15 ideas")
+- The subagent handles Telegram delivery. Your job is spawn and verify.
+- If you think of sending another message → don't send it.
 
 ---
 

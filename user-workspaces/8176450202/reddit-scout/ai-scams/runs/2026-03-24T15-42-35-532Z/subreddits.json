@@ -1,0 +1,102 @@
+[
+  {
+    "name": "OpenAI",
+    "title": "OpenAI",
+    "subscribers": 2686690,
+    "over18": false,
+    "url": "https://www.reddit.com/r/OpenAI/",
+    "discoveredBy": [
+      "AI Scams"
+    ]
+  },
+  {
+    "name": "Scams",
+    "title": "/r/Scams",
+    "subscribers": 1318098,
+    "over18": false,
+    "url": "https://www.reddit.com/r/Scams/",
+    "discoveredBy": [
+      "AI Scams"
+    ]
+  },
+  {
+    "name": "artificial",
+    "title": "Artificial Intelligence (AI)",
+    "subscribers": 1239523,
+    "over18": false,
+    "url": "https://www.reddit.com/r/artificial/",
+    "discoveredBy": [
+      "AI Scams"
+    ]
+  },
+  {
+    "name": "BackYardChickens",
+    "title": "Raising Chickens or Other Poultry for Eggs, Meat, or as Pets",
+    "subscribers": 1005924,
+    "over18": false,
+    "url": "https://www.reddit.com/r/BackYardChickens/",
+    "discoveredBy": [
+      "AI Scams"
+    ]
+  },
+  {
+    "name": "aiArt",
+    "title": "Welcome to ai Art!",
+    "subscribers": 663615,
+    "over18": false,
+    "url": "https://www.reddit.com/r/aiArt/",
+    "discoveredBy": [
+      "AI Scams"
+    ]
+  },
+  {
+    "name": "isthisAI",
+    "title": "isthisAI",
+    "subscribers": 231716,
+    "over18": false,
+    "url": "https://www.reddit.com/r/isthisAI/",
+    "discoveredBy": [
+      "AI Scams"
+    ]
+  },
+  {
+    "name": "antiai",
+    "title": "Anti AI",
+    "subscribers": 143124,
+    "over18": false,
+    "url": "https://www.reddit.com/r/antiai/",
+    "discoveredBy": [
+      "AI Scams"
+    ]
+  },
+  {
+    "name": "CryptoScams",
+    "title": "Crypto Scams",
+    "subscribers": 113811,
+    "over18": false,
+    "url": "https://www.reddit.com/r/CryptoScams/",
+    "discoveredBy": [
+      "AI Scams"
+    ]
+  },
+  {
+    "name": "AITrepreneurs",
+    "title": "AITrepreneurs",
+    "subscribers": 3251,
+    "over18": false,
+    "url": "https://www.reddit.com/r/AITrepreneurs/",
+    "discoveredBy": [
+      "AI Scams"
+    ]
+  },
+  {
+    "name": "Viainti",
+    "title": "Viainti",
+    "subscribers": 48,
+    "over18": false,
+    "url": "https://www.reddit.com/r/Viainti/",
+    "discoveredBy": [
+      "AI Scams"
+    ]
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "niche": "AI Scams",
+  "nicheSlug": "ai-scams",
+  "runId": "2026-03-24T15-42-35-532Z",
+  "startedAt": "2026-03-24T15:42:35.533Z",
+  "keywords": [
+    "AI Scams"
+  ],
+  "mustInclude": [
+    "ai",
+    "scams"
+  ],
+  "search": "AI Scams",
+  "subAllowlist": null,
+  "config": {
+    "topN": 15,
+    "subLimit": 10,
+    "gapMs": 1200,
+    "limitPerListing": 25,
+    "time": "all",
+    "kinds": [
+      "top",
+      "hot",
+      "rising"
+    ],
+    "searchSort": "top",
+    "searchTime": null,
+    "minSubscribers": 0,
+    "sendCardsN": 5
+  }
+}
