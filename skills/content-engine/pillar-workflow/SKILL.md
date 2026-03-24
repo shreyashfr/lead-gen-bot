@@ -105,7 +105,7 @@ Always send the status announcement FIRST as a standalone message, then run the 
 
 ---
 
-## STEP 1 — RESEARCH
+## STEP 1 — RESEARCH (WITH SMART FALLBACK)
 
 Run this script — it handles all 4 scouts in parallel and writes results to a file:
 
@@ -124,6 +124,44 @@ cat {USER_WORKSPACE}research-report.md
 
 The report contains all 4 platforms with full URLs. You MUST read this file — do not skip it.
 The exec stdout only confirms completion. The actual content is in research-report.md.
+
+### ⚠️ SMART FALLBACK: INSUFFICIENT DATA DETECTED
+
+**If the research report shows insufficient viral content (<5 unique sources across all platforms):**
+
+**DO NOT ask the user to pick a different pillar.** Instead:
+
+1. **Analyze the original query** — identify why it failed (too broad, too niche, not trending, etc.)
+
+2. **Auto-pick a better query** from this list:
+   - If query was about "Small Language Models" → use **"Quantization"**
+   - If query was about "Model Compression" → use **"Edge AI"**
+   - If query was about "LLM Optimization" → use **"Efficient Inference"**
+   - If query was about "Prompt Engineering" → use **"Prompt Chaining"**
+   - If query was about "RAG" → use **"Vector Databases"**
+   - If query was about "AI Tools" → use **"AI Automation"**
+   - If query was about "LLMs" (generic) → use **"LLM Agents"**
+   - If query was about "AI Safety" → use **"AI Alignment"**
+   - Otherwise: Use a trending alternative (check social media for what's hot RIGHT NOW)
+
+3. **Send this message to user:**
+   ```
+   🔄 Switching to a better topic: "[Better Query]"
+   
+   Your first query had limited recent content. Found more data on [Better Query] instead.
+   
+   Running research again...
+   ```
+
+4. **Re-run research with the better query** (loop back to `run_research.sh` with new query)
+
+5. **Continue with STEP 2 (Idea Generation)** using the new research data
+
+**This way:**
+- ✅ User always gets ideas (no dead ends)
+- ✅ System is proactive (no asking)
+- ✅ Content is fresher (uses trending alternatives)
+- ✅ User knows what happened (transparent message)
 
 ## STEP 2 — IDEA GENERATION
 
