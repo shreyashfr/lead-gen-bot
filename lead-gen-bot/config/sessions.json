@@ -1,10 +1,10 @@
 {
   "linkedin": {
-    "li_at": "AQEFAREBAAAAABysXW0AAAGdG1jsuQAAAZ0_ZXdoTQAA...", 
+    "li_at": "AQEFAREBAAAAABzJpdkAAAGdMCNAmgAAAZ1UMAjATQAAtHVybjpsaTplbnRlcnByaXNlQXV0aFRva2VuOmVKeGpaQUFDS1ZtWlh5QmFhMjRObU5ib3V0SEZDR0pVNnI1U0JETmkzYTlvTURBQ0FNQzRDUFE9XnVybjpsaTplbnRlcnByaXNlUHJvZmlsZToodXJuOmxpOmVudGVycHJpc2VBY2NvdW50OjQzODExNTU3OCw3MTQ5NjQyMTgpXnVybjpsaTptZW1iZXI6MTMxODgwOTY4MztbUG8ZJs_UU0SvmjsAfq5sdpS4uG1kyJ4wOyupO0zC3eovflV3hu-rMMf77RnO0gW_9MsWHdnf2klRtmx3rr5ANZKiBQD61eAQNlJlmqfl0-7kow1IT4ZKjSP1AkshNuB9rNf2f9E842ET6VRMjpJxCKenKYpA32Hf6p6DChQ6DLklTkuRuq9vOfjZ1d_w6Nz0MIM",
     "JSESSIONID": "ajax:2689896008412439311"
   },
   "salesnav": {
-    "li_a": "AQEFAREBAAAAABysXW0AAAGdG1jsuQAAAZ0_ZXdoTQAA...",
+    "li_a": "AQJ2PTEmc2FsZXNfY2lkPTY4MDE4ODA0MiUzQSUzQTY4MDIxNDU3MCUzQSUzQXRpZXIyJTNBJTNBNDM4MTE1NTc4EiTa35mv7xiqV1umBEexnFlJY6w",
     "JSESSIONID": "ajax:2689896008412439311"
   },
   "glassdoor": {
@@ -22,11 +22,11 @@
     ]
   },
   "proxy": {
-    "server": "http://proxy-10003.useragent.decodo.com:10003",
-    "username": "decodo_username", 
-    "password": "decodo_password"
+    "server": "http://isp.decodo.com:10003",
+    "username": "sppvpg55cs",
+    "password": "rQDiZB1vzq4qab+0d8"
   },
   "serper": {
-    "apiKey": "your_serper_api_key_here"
+    "apiKey": "60435c4ef22fb2c4eeaef8f9d7778817813169ae"
   }
 }

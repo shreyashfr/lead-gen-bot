@@ -3,6 +3,7 @@ const cheerio = require('cheerio');
 
 async function scrape(params, count) {
   const { role = 'marketing', location = 'USA', industry = '', titles = '' } = params;
+  const config = require('../config/sessions.json');
   const searchQuery = `${industry} ${role} jobs`.trim();
   
   try {
@@ -11,11 +12,11 @@ async function scrape(params, count) {
     const response = await axios.get('https://www.ycombinator.com/companies?category=marketing', {
       proxy: {
         protocol: 'http',
-        host: 'proxy-10003.useragent.decodo.com',
-        port: 10003,
+        host: config.proxy.server.split('://')[1].split(':')[0],
+        port: parseInt(config.proxy.server.split(':').pop()),
         auth: {
-          username: 'decodo_username',
-          password: 'decodo_password'
+          username: config.proxy.username,
+          password: config.proxy.password
         }
       },
       timeout: 30000
