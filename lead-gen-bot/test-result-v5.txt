@@ -1,0 +1,90 @@
+
+====================================================================================================
+🧪 FULL SCAN TEST V2 - Direct Script Execution
+====================================================================================================
+
+Query: Decision makers at companies hiring 20+ engineers from USA
+Expected: VPs, CTOs, Engineering Directors, Heads of Engineering
+
+Step 1: 🚀 RUNNING SCRAPERS IN PARALLEL
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  ⏳ linkedin     - Running...
+  ⏳ salesnav     - Running...
+  ⏳ dice         - Running...
+  ⏳ yc           - Running...
+  ⏳ glassdoor    - Running...
+  ⏳ indeed       - Running...
+  ⏳ wellfound    - Running...
+LinkedIn Voyager API error: Request failed with status code 403
+  ⚠️  linkedin     - No leads in 0.34s
+Wellfound Serper scrape error: Request failed with status code 400
+  ⚠️  wellfound    - No leads in 0.43s
+  ⚠️  yc           - No leads in 0.64s
+⚠️ SalesNav: All API attempts failed. Using fallback.
+Glassdoor scrape error: net::ERR_INVALID_AUTH_CREDENTIALS at https://www.glassdoor.com/Job/jobs.htm?sc.keyword=VP%20Engineering%20Technology%20jobs%20USA&locT=C&locId=1&jobType=all
+Indeed scrape error: net::ERR_INVALID_AUTH_CREDENTIALS at https://www.indeed.com/jobs?q=VP%20Engineering%20Technology%20jobs%20USA&l=USA
+LinkedIn Voyager API error: Request failed with status code 403
+  ⚠️  salesnav     - No leads in 1.30s
+  ⚠️  glassdoor    - No leads in 1.33s
+  ⚠️  indeed       - No leads in 1.33s
+  ⚠️  dice         - No leads in 2.01s
+
+✅ All scrapers completed in 2.04s
+
+Step 2: 📊 RESULTS SUMMARY
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Total leads found: 0/20
+Time taken: 2.04s
+Expected: 20 leads in 20-25s
+
+Results by Source:
+  ⚠️ linkedin     -  0 leads (0.34s)
+  ⚠️ wellfound    -  0 leads (0.43s)
+  ⚠️ yc           -  0 leads (0.64s)
+  ⚠️ salesnav     -  0 leads (1.30s)
+  ⚠️ glassdoor    -  0 leads (1.33s)
+  ⚠️ indeed       -  0 leads (1.33s)
+  ⚠️ dice         -  0 leads (2.01s)
+
+Step 3: 🎯 DECISION MAKER ANALYSIS
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Decision makers: 0/0 (0%)
+Expected: ~40% (8 per 20 leads)
+
+Seniority Breakdown:
+
+Step 4: 🔄 SOURCE DIVERSITY
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Sources represented: 0
+Expected: 5-7 sources
+
+Leads by Source:
+
+Step 5: 📋 SAMPLE LEADS
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Step 6: 🔍 ISSUE DETECTION
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Issues Found:
+
+❌ CRITICAL: No leads found at all
+⚠️  LOW QUALITY: Only 0% are decision makers, expected ~40%
+⚠️  SOURCE DIVERSITY: Only 0 sources, expected 5-7
+
+====================================================================================================
+📊 FINAL SUMMARY
+====================================================================================================
+
+Leads Returned:        0/20
+Decision Makers:       0 (0%)
+Sources Active:        0/7
+Execution Time:        2.04s
+Status:                ❌ POOR
+
+====================================================================================================
+
