@@ -1,0 +1,66 @@
+{
+  "timestamp": "2026-03-27T16:24:21.080Z",
+  "summary": {
+    "totalSources": 7,
+    "successful": 7,
+    "failed": 0,
+    "totalLeads": 0,
+    "totalTime": "1.33",
+    "averageTime": "0.19"
+  },
+  "results": {
+    "wellfound": {
+      "status": "success",
+      "count": 0,
+      "time": "0.01",
+      "leads": [],
+      "sample": null
+    },
+    "yc": {
+      "status": "success",
+      "count": 0,
+      "time": "0.07",
+      "leads": [],
+      "sample": null
+    },
+    "dice": {
+      "status": "success",
+      "count": 0,
+      "time": "0.07",
+      "leads": [],
+      "sample": null
+    },
+    "linkedin": {
+      "status": "success",
+      "count": 0,
+      "time": "0.38",
+      "leads": [],
+      "sample": null
+    },
+    "salesnav": {
+      "status": "success",
+      "count": 0,
+      "time": "0.92",
+      "leads": [],
+      "sample": null
+    },
+    "glassdoor": {
+      "status": "success",
+      "count": 0,
+      "time": "1.25",
+      "leads": [],
+      "sample": null
+    },
+    "indeed": {
+      "status": "success",
+      "count": 0,
+      "time": "1.29",
+      "leads": [],
+      "sample": null
+    }
+  },
+  "query": {
+    "role": "marketing",
+    "location": "USA"
+  }
+}
