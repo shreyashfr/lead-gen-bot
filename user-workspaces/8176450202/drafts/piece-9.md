@@ -1,19 +1,33 @@
-# Piece #9 - Tweet (Idea #4: "The cost saving nobody is talking about")
+# Piece #9: Serving ML Models in Production
 
-## Draft
+You have a model. Now make it predict 10,000 games per second without melting.
 
-AT&T just cut AI inference costs by 90% swapping GPT-4 for smaller models.
+This is the real problem nobody talks about.
 
-Nobody's talking about this.
+In your Jupyter notebook, your model runs fine. 50ms per prediction. Cool. But move it to production and suddenly you're serving thousands of requests per second. Your GPU melts. Your CPU maxes out. Your inference costs explode.
 
-Most startups are still brute-forcing GPT-4 for everything. The smart move? Use the smallest model that works. Save 10x. Scale faster.
+The gap between "model works" and "model scales" is bigger than most people realize.
 
----
+Here's what actually matters:
 
-## Meta
-- **Format:** Tweet
-- **Idea:** #4 - "The cost saving nobody is talking about"
-- **Character count:** ~240/280
-- **Voice check:** ✅ Numbers-driven, practical, mentor-like, no jargon
-- **Audience:** Founders, backend engineers, startups
-- **Status:** Ready for review
+**Batching is your best friend.**
+Don't predict one game at a time. Collect requests for 64 or 128 games, then run them together. A single forward pass on 128 samples is way faster per-sample than 128 separate passes. This is the difference between serving 100 req/s and 10,000 req/s.
+
+**Quantization cuts your memory in half.**
+Your model probably uses float32. Convert to int8. You lose 1-2% accuracy but gain massive speed and cut memory usage. On a GPU with limited VRAM, this is the difference between possible and impossible.
+
+**Caching is underrated.**
+If the same game position appears twice, you don't re-compute it. Build a fast cache layer in front of your model. Memcached or Redis. You'll be surprised how many duplicate requests you get.
+
+**Choose the right hardware.**
+A Tesla T4 might be cheap, but an RTX 4090 or TPU serves 10x faster. Sometimes you spend more on hardware and save money on inference costs. Do the math.
+
+Most people start with one model and one server. Then it breaks under load. Then they panic.
+
+Instead, think about this upfront. How will 10,000 requests per second actually look? Will you batch? Quantize? Cache? Run multiple servers? Use a serving framework like TensorFlow Serving or ONNX Runtime.
+
+The engineers building real systems start here. Not after it breaks.
+
+System design isn't just databases and caches. It includes your model serving layer too.
+
+What's your approach? Batching? Quantization? Or do you have a different trick?

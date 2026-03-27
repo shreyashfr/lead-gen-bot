@@ -1,0 +1,36 @@
+{
+  "niche": "Apple vs Android iOS development Swift Kotlin mobile architecture",
+  "nicheSlug": "apple-vs-android-ios-development-swift-kotlin-mobile-archite",
+  "runId": "2026-03-24T21-36-07-467Z",
+  "startedAt": "2026-03-24T21:36:07.468Z",
+  "keywords": [
+    "Apple vs Android iOS development Swift Kotlin mobile architecture"
+  ],
+  "mustInclude": [
+    "apple",
+    "android",
+    "development",
+    "swift",
+    "kotlin",
+    "mobile",
+    "architecture"
+  ],
+  "search": "Apple vs Android iOS development Swift Kotlin mobile architecture",
+  "subAllowlist": null,
+  "config": {
+    "topN": 15,
+    "subLimit": 10,
+    "gapMs": 1200,
+    "limitPerListing": 25,
+    "time": "all",
+    "kinds": [
+      "top",
+      "hot",
+      "rising"
+    ],
+    "searchSort": "top",
+    "searchTime": null,
+    "minSubscribers": 0,
+    "sendCardsN": 0
+  }
+}

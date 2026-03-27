@@ -1,0 +1,102 @@
+[
+  {
+    "name": "jobs",
+    "title": "Jobs",
+    "subscribers": 2584695,
+    "over18": false,
+    "url": "https://www.reddit.com/r/jobs/",
+    "discoveredBy": [
+      "Sales jobs"
+    ]
+  },
+  {
+    "name": "sales",
+    "title": "Sales and Selling",
+    "subscribers": 559949,
+    "over18": false,
+    "url": "https://www.reddit.com/r/sales/",
+    "discoveredBy": [
+      "Sales jobs"
+    ]
+  },
+  {
+    "name": "RemoteJobs",
+    "title": "Remote Jobs",
+    "subscribers": 460354,
+    "over18": false,
+    "url": "https://www.reddit.com/r/RemoteJobs/",
+    "discoveredBy": [
+      "Sales jobs"
+    ]
+  },
+  {
+    "name": "jobsearchhacks",
+    "title": "Job Search Hacks",
+    "subscribers": 410215,
+    "over18": false,
+    "url": "https://www.reddit.com/r/jobsearchhacks/",
+    "discoveredBy": [
+      "Sales jobs"
+    ]
+  },
+  {
+    "name": "askcarsales",
+    "title": "Ask a Car Salesman, Managers, or Finance managers anything!",
+    "subscribers": 280101,
+    "over18": false,
+    "url": "https://www.reddit.com/r/askcarsales/",
+    "discoveredBy": [
+      "Sales jobs"
+    ]
+  },
+  {
+    "name": "salestechniques",
+    "title": "Sales Techniques ",
+    "subscribers": 56621,
+    "over18": false,
+    "url": "https://www.reddit.com/r/salestechniques/",
+    "discoveredBy": [
+      "Sales jobs"
+    ]
+  },
+  {
+    "name": "techsales",
+    "title": "Tech Sales",
+    "subscribers": 51094,
+    "over18": false,
+    "url": "https://www.reddit.com/r/techsales/",
+    "discoveredBy": [
+      "Sales jobs"
+    ]
+  },
+  {
+    "name": "salesengineers",
+    "title": "for solutions engineers, pre-sales engineers, solution architects and all pre-sales technical folks",
+    "subscribers": 27213,
+    "over18": false,
+    "url": "https://www.reddit.com/r/salesengineers/",
+    "discoveredBy": [
+      "Sales jobs"
+    ]
+  },
+  {
+    "name": "techsalesjobs",
+    "title": "techsalesjobs",
+    "subscribers": 6658,
+    "over18": false,
+    "url": "https://www.reddit.com/r/techsalesjobs/",
+    "discoveredBy": [
+      "Sales jobs"
+    ]
+  },
+  {
+    "name": "highticket_sales",
+    "title": "High Ticket Sales",
+    "subscribers": 4194,
+    "over18": false,
+    "url": "https://www.reddit.com/r/highticket_sales/",
+    "discoveredBy": [
+      "Sales jobs"
+    ]
+  }
+]

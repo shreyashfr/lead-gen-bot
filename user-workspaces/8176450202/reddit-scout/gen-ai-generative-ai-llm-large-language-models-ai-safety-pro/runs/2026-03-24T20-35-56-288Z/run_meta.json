@@ -1,0 +1,40 @@
+{
+  "niche": "Gen AI, Generative AI, LLM, Large Language Models, AI Safety, Prompt Engineering",
+  "nicheSlug": "gen-ai-generative-ai-llm-large-language-models-ai-safety-pro",
+  "runId": "2026-03-24T20-35-56-288Z",
+  "startedAt": "2026-03-24T20:35:56.289Z",
+  "keywords": [
+    "Gen AI, Generative AI, LLM, Large Language Models, AI Safety, Prompt Engineering"
+  ],
+  "mustInclude": [
+    "ai",
+    "generative",
+    "ai",
+    "llm",
+    "large",
+    "language",
+    "models",
+    "ai",
+    "safety",
+    "prompt",
+    "engineering"
+  ],
+  "search": "Gen AI, Generative AI, LLM, Large Language Models, AI Safety, Prompt Engineering",
+  "subAllowlist": null,
+  "config": {
+    "topN": 12,
+    "subLimit": 10,
+    "gapMs": 1200,
+    "limitPerListing": 25,
+    "time": "all",
+    "kinds": [
+      "top",
+      "hot",
+      "rising"
+    ],
+    "searchSort": "top",
+    "searchTime": null,
+    "minSubscribers": 0,
+    "sendCardsN": 5
+  }
+}

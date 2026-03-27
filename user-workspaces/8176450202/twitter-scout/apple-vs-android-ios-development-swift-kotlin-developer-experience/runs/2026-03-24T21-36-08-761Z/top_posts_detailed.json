@@ -1,0 +1,173 @@
+[
+  {
+    "id": "2023648625432330411",
+    "text": "Kotlin Multiplatform can bridge things, and you can get the same effect on iOS, but getting the exact same thing on Android is way more difficult",
+    "author_name": "Ranbir Singh",
+    "author_handle": "@android_poet",
+    "metrics": {
+      "likes": 2400,
+      "retweets": 77,
+      "replies": 27,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 2.6,
+    "url": "https://x.com/android_poet/status/2023648625432330411"
+  },
+  {
+    "id": "1854522978652058081",
+    "text": "I made this in SwiftUI with Cursor and Xcode\n\nSo Claude AI is actually great at iOS development. Prompt in Cursor and preview/build in Xcode. SwiftUI makes it incredibly easy to apply custom styling and animations on top of it.\n\nIf you're starting out, it's really fun. There is",
+    "author_name": "Meng To",
+    "author_handle": "@MengTo",
+    "metrics": {
+      "likes": 2000,
+      "retweets": 147,
+      "replies": 48,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 2.3,
+    "url": "https://x.com/MengTo/status/1854522978652058081"
+  },
+  {
+    "id": "1919804324940550540",
+    "text": "Compose Multiplatform for iOS is Stable and Production-Ready! \n\nBuild mobile apps faster with shared UI code, full control over native experiences, and the confidence to ship at scale.\n\nExplore all the updates in Compose Multiplatform 1.8.0:",
+    "author_name": "Kotlin by JetBrains",
+    "author_handle": "@kotlin",
+    "metrics": {
+      "likes": 794,
+      "retweets": 313,
+      "replies": 20,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1.4,
+    "url": "https://x.com/kotlin/status/1919804324940550540"
+  },
+  {
+    "id": "2011806324401541528",
+    "text": "In the past week, I've built a project in:\n- React Native\n- Native Swift, Native Kotlin\n- Flutter\n\nMy conclusion is that:\n- React Native takes forever to build from a clean slate\n- Native Swift and Kotlin are better, but can also take time\n- Flutter is surprisingly fast, no",
+    "author_name": "Filip Kowalski",
+    "author_handle": "@filippkowalski",
+    "metrics": {
+      "likes": 445,
+      "retweets": 26,
+      "replies": 59,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/filippkowalski/status/2011806324401541528"
+  },
+  {
+    "id": "1998075206271926408",
+    "text": "Hot take: Building a native Swift iOs app might now be easier than building a website.\n\nBefore AI, websites won. HTML/CSS/JS was more forgiving than Swift and Xcode.\n\nBut with Opus 4.5, vibe coding works great for Swift. And here's the thing: when you build a native app, that's",
+    "author_name": "Kieran Klaassen",
+    "author_handle": "@kieranklaassen",
+    "metrics": {
+      "likes": 343,
+      "retweets": 15,
+      "replies": 60,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/kieranklaassen/status/1998075206271926408"
+  },
+  {
+    "id": "2034259990513320018",
+    "text": "Swift Package Manager support is now available in Kotlin Multiplatform.\n\nTry importing iOS dependencies from Swift packages or migrating from CocoaPods.\n\nSee how to try out this experimental feature  \nhttps://\nkotl.in/kmp-swiftpm-im\nport\n…\n\nShare your feedback",
+    "author_name": "Kotlin by JetBrains",
+    "author_handle": "@kotlin",
+    "metrics": {
+      "likes": 305,
+      "retweets": 86,
+      "replies": 9,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/kotlin/status/2034259990513320018"
+  },
+  {
+    "id": "1938633540159045744",
+    "text": "“Compose Multiplatform for iOS: Ready for Production Use” \n\nIn this KotlinConf’25 talk, \n@sebi_io\n shares what’s new, what’s under the hood, and what’s next.\n\n Now available on Kotlin YouTube: \nhttps://\nkotl.in/conf-compose-f\nor-ios\n…",
+    "author_name": "Kotlin by JetBrains",
+    "author_handle": "@kotlin",
+    "metrics": {
+      "likes": 255,
+      "retweets": 38,
+      "replies": 2,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/Gudo6dNWgAIHPEK.jpg"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/kotlin/status/1938633540159045744"
+  },
+  {
+    "id": "1922916519391944888",
+    "text": "WOAH!  This is the first time I have developed and released an iOS application in my life.\n\nAs an Android developer, I was never motivated to jump into the iOS ecosystem and build something. However, to grow a product, covering at least both mobile platforms is essential.\n\nI",
+    "author_name": "Chris Krueger",
+    "author_handle": "@ChrisKruegerDev",
+    "metrics": {
+      "likes": 224,
+      "retweets": 16,
+      "replies": 23,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/Gq-PE4dWsAAP34M?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/ChrisKruegerDev/status/1922916519391944888"
+  },
+  {
+    "id": "2035007575364657486",
+    "text": "Claude gives a pretty interesting perspective of \"why SwiftUI List performs worse than AppKit equivalents\", after reading the assembly",
+    "author_name": "Oskar Groth",
+    "author_handle": "@oskargroth",
+    "metrics": {
+      "likes": 173,
+      "retweets": 18,
+      "replies": 5,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HD3L7SsWgAA-iR0?format=jpg&name=360x360",
+      "https://pbs.twimg.com/media/HD3MfoMXkAAdg08?format=jpg&name=small",
+      "https://pbs.twimg.com/media/HD2WvKAXEAAdDuk?format=jpg&name=120x120",
+      "https://pbs.twimg.com/media/HD2Wvp5WoAAIWvp?format=jpg&name=120x120",
+      "https://pbs.twimg.com/media/HD2WvIoXgAAZRpD?format=jpg&name=120x120",
+      "https://pbs.twimg.com/media/HD2WvOoWEAAyfua?format=jpg&name=120x120"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/oskargroth/status/2035007575364657486"
+  },
+  {
+    "id": "2034314304250335247",
+    "text": "Swift has more keywords than all those languages combined \nGo: 25 keywords.\nKotlin: 72 keywords.\nC++: an insane 95 keywords.",
+    "author_name": "Jacob Bartlett",
+    "author_handle": "@jacobtechtavern",
+    "metrics": {
+      "likes": 76,
+      "retweets": 2,
+      "replies": 10,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/jacobtechtavern/status/2034314304250335247"
+  }
+]

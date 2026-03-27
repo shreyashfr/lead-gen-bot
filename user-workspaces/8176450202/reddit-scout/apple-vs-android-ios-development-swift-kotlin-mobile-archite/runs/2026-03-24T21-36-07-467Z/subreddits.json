@@ -1,0 +1,42 @@
+[
+  {
+    "name": "MobileGamingNews",
+    "title": "Mobile Gaming News",
+    "subscribers": 1151,
+    "over18": false,
+    "url": "https://www.reddit.com/r/MobileGamingNews/",
+    "discoveredBy": [
+      "Apple vs Android iOS development Swift Kotlin mobile architecture"
+    ]
+  },
+  {
+    "name": "battleheart",
+    "title": "All things relating to Mika Mobile's Battleheart and Battleheart Legacy games for Android and iOS.",
+    "subscribers": 271,
+    "over18": false,
+    "url": "https://www.reddit.com/r/battleheart/",
+    "discoveredBy": [
+      "Apple vs Android iOS development Swift Kotlin mobile architecture"
+    ]
+  },
+  {
+    "name": "MobileAppDevHQ",
+    "title": "MobileAppDevHQ",
+    "subscribers": 270,
+    "over18": false,
+    "url": "https://www.reddit.com/r/MobileAppDevHQ/",
+    "discoveredBy": [
+      "Apple vs Android iOS development Swift Kotlin mobile architecture"
+    ]
+  },
+  {
+    "name": "YangyangMobile",
+    "title": "We make games that make you smile",
+    "subscribers": 0,
+    "over18": false,
+    "url": "https://www.reddit.com/r/YangyangMobile/",
+    "discoveredBy": [
+      "Apple vs Android iOS development Swift Kotlin mobile architecture"
+    ]
+  }
+]

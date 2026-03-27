@@ -1,0 +1,182 @@
+[
+  {
+    "id": "1754558231802769857",
+    "text": "RAG is one of the best (and easiest) ways to specialize an LLM over your own data, but successfully applying RAG in practice involves more than just stitching together pretrained models…\n\nWhat is RAG? At the highest level, RAG is a combination of a pretrained LLM with an",
+    "author_name": "Cameron R. Wolfe, Ph.D.",
+    "author_handle": "@cwolferesearch",
+    "metrics": {
+      "likes": 1300,
+      "retweets": 275,
+      "replies": 16,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/GFlw_2eXsAEadDS?format=jpg&name=small"
+    ],
+    "viral_score": 1.9,
+    "url": "https://x.com/cwolferesearch/status/1754558231802769857"
+  },
+  {
+    "id": "1988638095432888714",
+    "text": "Why do RAG systems feel like they hit a ceiling?\n\nI've been diving into @helloiamleonie's latest article on agent memory, and it provided so much clarity into the current evolution of RAG systems.\n\nThe progression from RAG → Agentic RAG → Agent Memory isn't about adding",
+    "author_name": "Victoria Slocum@victorialslocum·Nov 12, 2025",
+    "author_handle": "unknown",
+    "metrics": {
+      "likes": 1000,
+      "retweets": 198,
+      "replies": 31,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G5kPw6oXYAERgi4?format=png&name=small"
+    ],
+    "viral_score": 1.4,
+    "url": "https://x.com/victorialslocum/status/1988638095432888714"
+  },
+  {
+    "id": "2011740250180108498",
+    "text": "Confused by all the new terminology around agents and memory? \n\n(episodic, semantic, procedural memory…) \n\nStrip away all the buzz, and the evolution from RAG to agentic RAG to agent memory is actually just about one thing: 𝗵𝗼𝘄 𝘆𝗼𝘂 𝗺𝗮𝗻𝗮𝗴𝗲 𝗱𝗮𝘁𝗮 𝗶𝗻",
+    "author_name": "Femke Plantinga",
+    "author_handle": "@femke_plantinga",
+    "metrics": {
+      "likes": 830,
+      "retweets": 150,
+      "replies": 25,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G-sjGHTWcAATC2Y?format=jpg&name=small"
+    ],
+    "viral_score": 1.2,
+    "url": "https://x.com/femke_plantinga/status/2011740250180108498"
+  },
+  {
+    "id": "2025832304900473311",
+    "text": "RAG isn’t just embeddings + vector DB\n\nProduction-ready RAG requires:\n• Smart chunking\n• Efficient embeddings\n• Scalable vector storage\n• Hybrid retrieval + re-ranking\n• Proper document versioning & access control\n\nRAG is not a feature\nIt’s infrastructure",
+    "author_name": "Vaishnavi",
+    "author_handle": "@_vmlops",
+    "metrics": {
+      "likes": 809,
+      "retweets": 122,
+      "replies": 26,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HB0zvO7aYAAHPr-?format=jpg&name=small"
+    ],
+    "viral_score": 1.1,
+    "url": "https://x.com/_vmlops/status/2025832304900473311"
+  },
+  {
+    "id": "1960297539820720365",
+    "text": "Hot take: I'm tired of RAG systems that just grab the first document and call it done.\n𝗔𝗴𝗲𝗻𝘁𝗶𝗰 𝗥𝗔𝗚 is probably the only way RAG is 𝘢𝘤𝘵𝘶𝘢𝘭𝘭𝘺 going to be useful.\n\nBut what’s actually the difference?\n\n𝗧𝗵𝗲 𝗣𝗿𝗼𝗯𝗹𝗲𝗺 𝘄𝗶𝘁𝗵 𝗡𝗮𝗶𝘃𝗲 𝗥𝗔𝗚:\nTraditional",
+    "author_name": "Victoria Slocum",
+    "author_handle": "@victorialslocum",
+    "metrics": {
+      "likes": 799,
+      "retweets": 119,
+      "replies": 5,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/GzRgKmCXkAAi2wR?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/victorialslocum/status/1960297539820720365"
+  },
+  {
+    "id": "2008871243848826891",
+    "text": "How did we go from vanilla RAG to agentic RAG SO fast?\n\nJust some years ago, we were excited about basic retrieval-augmented generation. \n\nNow we're building full AI agents that can reason, plan, and use multiple tools autonomously.\n\nHere's what changed everything:",
+    "author_name": "Femke Plantinga",
+    "author_handle": "@femke_plantinga",
+    "metrics": {
+      "likes": 623,
+      "retweets": 138,
+      "replies": 25,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G-DPjrnX0AAXPH9?format=png&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/femke_plantinga/status/2008871243848826891"
+  },
+  {
+    "id": "2028900581084131420",
+    "text": "RAG is dead.\n\nI just tested Modular RAG and it’s making AI systems 30-40% more accurate on real production tasks.\n\nThe accuracy gains made me question everything I thought I knew about retrieval.\n\nAnd the core insight destroyed my mental model in the best way possible.\n\nNaive RAG",
+    "author_name": "Ihtesham Ali",
+    "author_handle": "@ihtesham2005",
+    "metrics": {
+      "likes": 570,
+      "retweets": 101,
+      "replies": 29,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HCgaUXra0AAQbyr?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/ihtesham2005/status/2028900581084131420"
+  },
+  {
+    "id": "1827156106449158339",
+    "text": "RAG or Long Context ??\n\nThis paper finds, when resourced sufficiently, Long Context consistently outperforms RAG in terms of average performance.\n\nHowever, RAG’s significantly lower cost remains a distinct advantage.\n\nTo solve this they propose a new 'Hybrid' method\n\n-----\n\nKey",
+    "author_name": "Rohan Paul",
+    "author_handle": "@rohanpaul_ai",
+    "metrics": {
+      "likes": 485,
+      "retweets": 103,
+      "replies": 7,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/GVtcsefXwAAiCS0?format=png&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/rohanpaul_ai/status/1827156106449158339"
+  },
+  {
+    "id": "2021162395746345393",
+    "text": "Your RAG system isn’t hallucinating, it’s just lazy.\n\nHere’s what separates basic vector search from agentic retrieval:\n\nLet’s say you want to find: “𝘢𝘧𝘧𝘰𝘳𝘥𝘢𝘣𝘭𝘦 𝘦𝘤𝘰-𝘧𝘳𝘪𝘦𝘯𝘥𝘭𝘺 𝘴𝘮𝘢𝘳𝘵𝘱𝘩𝘰𝘯𝘦𝘴 𝘶𝘯𝘥𝘦𝘳 $500 𝘸𝘪𝘵𝘩 𝘩𝘪𝘨𝘩 𝘳𝘢𝘵𝘪𝘯𝘨𝘴” \n\nyou get",
+    "author_name": "Femke Plantinga",
+    "author_handle": "@femke_plantinga",
+    "metrics": {
+      "likes": 465,
+      "retweets": 84,
+      "replies": 17,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HAycfGcWYAAaflF?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/femke_plantinga/status/2021162395746345393"
+  },
+  {
+    "id": "1954516058854826490",
+    "text": "Building even a simple 𝗽𝗿𝗼𝗱𝘂𝗰𝘁𝗶𝗼𝗻 𝗴𝗿𝗮𝗱𝗲 𝗥𝗲𝘁𝗿𝗶𝗲𝘃𝗮𝗹 𝗔𝘂𝗴𝗺𝗲𝗻𝘁𝗲𝗱 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗶𝗼𝗻 (𝗥𝗔𝗚) 𝗯𝗮𝘀𝗲𝗱 𝗔𝗜 𝘀𝘆𝘀𝘁𝗲𝗺 is a challenging task. Read until the end to understand why \n\nHere are some of the moving parts in the RAG based systems that",
+    "author_name": "Aurimas Griciūnas",
+    "author_handle": "@Aurimas_Gr",
+    "metrics": {
+      "likes": 402,
+      "retweets": 89,
+      "replies": 7,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/Gx_V_LwXIAAlmPt?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/Aurimas_Gr/status/1954516058854826490"
+  }
+]

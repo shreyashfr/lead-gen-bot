@@ -59,6 +59,258 @@
       "url": "https://styles.redditmedia.com/t5_84709b/styles/profileIcon_l596zpi4o9qg1.jpeg?width=256&height=256&crop=256:256,smart&s=122dd5b0a85ed283b22d02176a3137f12d174767",
       "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/rag/runs/2026-03-22T19-35-16-898Z/avatars/punkcooldude.jpeg",
       "fetchedAt": "2026-03-22T19:36:00.068Z"
+    },
+    "20Timely-Focus20": {
+      "user": "20Timely-Focus20",
+      "url": "https://i.redd.it/snoovatar/avatars/cbd4d6ef-6c16-4c91-a3f6-b87e1f26934b.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/rag-in-production-real-architectural-decisions-failure-modes/runs/2026-03-26T06-02-43-070Z/avatars/20Timely-Focus20.png",
+      "fetchedAt": "2026-03-26T06:03:20.483Z"
+    },
+    "Batwaffel": {
+      "user": "Batwaffel",
+      "url": "https://i.redd.it/snoovatar/avatars/b97fb7aa-6dd2-488f-9d3d-fec1eb624644.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/rag-in-production-real-architectural-decisions-failure-modes/runs/2026-03-26T06-02-43-070Z/avatars/Batwaffel.png",
+      "fetchedAt": "2026-03-26T06:03:21.728Z"
+    },
+    "tarrasquetamer": {
+      "user": "tarrasquetamer",
+      "url": "https://styles.redditmedia.com/t5_ukamw/styles/profileIcon_9ou3jrgo353d1.jpg?width=256&height=256&crop=256:256,smart&s=0e6cf35d4c6c71476d870ecc92495d685e01e9ce",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/rag-in-production-real-architectural-decisions-failure-modes/runs/2026-03-26T06-02-43-070Z/avatars/tarrasquetamer.jpg",
+      "fetchedAt": "2026-03-26T06:03:23.098Z"
+    },
+    "Somn_rec": {
+      "user": "Somn_rec",
+      "url": "https://styles.redditmedia.com/t5_d2i0l/styles/profileIcon_z68e1i7rkgb01.jpg?width=256&height=256&crop=256:256,smart&s=7939c245c5d51d0f624a9d2ed603c5fad194d349",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/rag-in-production-real-architectural-decisions-failure-modes/runs/2026-03-26T06-02-43-070Z/avatars/Somn_rec.jpg",
+      "fetchedAt": "2026-03-26T06:03:24.446Z"
+    },
+    "IsThisNameGoodEnough": {
+      "user": "IsThisNameGoodEnough",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_6.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/rag-in-production-real-architectural-decisions-failure-modes/runs/2026-03-26T06-02-43-070Z/avatars/IsThisNameGoodEnough.png",
+      "fetchedAt": "2026-03-26T06:03:25.729Z"
+    },
+    "SignatureLabel": {
+      "user": "SignatureLabel",
+      "url": "https://i.redd.it/snoovatar/avatars/nftv2_bmZ0X2VpcDE1NToxMzdfZDE1ZTNiYWMyMjM4OTUyNDVkMWM0MzQ1YjVhNGMyMzc1OGVmZTQyZV8xMw_rare_f8e0cb0a-d60f-44e5-985a-30e7b0c0745f.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/rag-in-production-real-architectural-decisions-failure-modes/runs/2026-03-26T06-03-28-853Z/avatars/SignatureLabel.png",
+      "fetchedAt": "2026-03-26T06:04:02.179Z"
+    },
+    "obeliskspork": {
+      "user": "obeliskspork",
+      "url": "https://i.redd.it/snoovatar/avatars/fbee49f6-cff4-4da6-97c5-86afdecd53f5.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/rag-in-production-real-architectural-decisions-failure-modes/runs/2026-03-26T06-03-28-853Z/avatars/obeliskspork.png",
+      "fetchedAt": "2026-03-26T06:04:03.668Z"
+    },
+    "Beginning-Willow-801": {
+      "user": "Beginning-Willow-801",
+      "url": "https://styles.redditmedia.com/t5_dw8f0r/styles/profileIcon_p3738d9gmz5f1.jpg?width=256&height=256&crop=256:256,smart&s=adbdc7bab5fc0bde042f8b2193fa7c39052b4a26",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/system-design-for-ai-genai-llm-infrastructure-scalability-fa/runs/2026-03-26T07-16-14-953Z/avatars/Beginning-Willow-801.jpg",
+      "fetchedAt": "2026-03-26T07:16:27.821Z"
+    },
+    "AmericanPurposeMag": {
+      "user": "AmericanPurposeMag",
+      "url": "https://styles.redditmedia.com/t5_8aenpa/styles/profileIcon_pbbro1bty1wa1.png?width=256&height=256&crop=256:256,smart&s=9bd7d38b0783b2dbbdbe9966168a018e4ffd218f",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/system-design-for-ai-genai-llm-infrastructure-scalability-fa/runs/2026-03-26T07-16-14-953Z/avatars/AmericanPurposeMag.png",
+      "fetchedAt": "2026-03-26T07:16:29.163Z"
+    },
+    "Salty-Asparagus-4751": {
+      "user": "Salty-Asparagus-4751",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_1.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/system-design-for-ai-genai-llm-infrastructure-scalability-fa/runs/2026-03-26T07-16-14-953Z/avatars/Salty-Asparagus-4751.png",
+      "fetchedAt": "2026-03-26T07:16:30.394Z"
+    },
+    "RandomWalkAu": {
+      "user": "RandomWalkAu",
+      "url": "https://i.redd.it/snoovatar/avatars/530aa388-5d3f-4ba7-8c65-6c739879e81e.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/system-design-for-ai-genai-llm-infrastructure-scalability-fa/runs/2026-03-26T07-16-14-953Z/avatars/RandomWalkAu.png",
+      "fetchedAt": "2026-03-26T07:16:31.980Z"
+    },
+    "OpenClawInstall": {
+      "user": "OpenClawInstall",
+      "url": "https://styles.redditmedia.com/t5_gjbqmm/styles/profileIcon_dh6qq1oclhog1.png?width=256&height=256&crop=256:256,smart&s=efd8d8129f29860d284db41365aad0dcc2c79f8a",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/system-design-for-ai-genai-llm-infrastructure-scalability-fa/runs/2026-03-26T07-16-14-953Z/avatars/OpenClawInstall.png",
+      "fetchedAt": "2026-03-26T07:16:33.338Z"
+    },
+    "Much_Delay1880": {
+      "user": "Much_Delay1880",
+      "url": "https://styles.redditmedia.com/t5_8wsm25/styles/profileIcon_jc8p2eguyfmg1.jpg?width=256&height=256&crop=256:256,smart&s=4b4a90a5a3b17df5fad02709a38dbfe8c72713bb",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/system-design-for-ai-genai-llm-infrastructure-scalability-fa/runs/2026-03-26T07-16-34-917Z/avatars/Much_Delay1880.jpg",
+      "fetchedAt": "2026-03-26T07:16:51.814Z"
+    },
+    "PositionJournal": {
+      "user": "PositionJournal",
+      "url": "https://styles.redditmedia.com/t5_gr471d/styles/profileIcon_8rydwe4rovmg1.jpg?width=256&height=256&crop=256:256,smart&s=36c83d286525780b577cbf5b2212c727171bf2a8",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/system-design-for-ai-genai-llm-infrastructure-scalability-fa/runs/2026-03-26T07-16-34-917Z/avatars/PositionJournal.jpg",
+      "fetchedAt": "2026-03-26T07:16:52.861Z"
+    },
+    "Techie_Talent": {
+      "user": "Techie_Talent",
+      "url": "https://i.redd.it/snoovatar/avatars/c8b0b6dd-efce-44c2-b825-55287699eb15.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/system-design-for-ai-genai-llm-infrastructure-scalability-fa/runs/2026-03-26T07-16-34-917Z/avatars/Techie_Talent.png",
+      "fetchedAt": "2026-03-26T07:16:54.054Z"
+    },
+    "SnooWoofers7340": {
+      "user": "SnooWoofers7340",
+      "url": "https://styles.redditmedia.com/t5_33pubb/styles/profileIcon_sehhsrov6gue1.png?width=256&height=256&crop=256:256,smart&s=5062fd2459b5155245df7e46470e1ddc42d94455",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/system-design-for-ai-genai-llm-infrastructure-scalability-fa/runs/2026-03-26T07-16-34-917Z/avatars/SnooWoofers7340.png",
+      "fetchedAt": "2026-03-26T07:16:55.208Z"
+    },
+    "username-is-teken": {
+      "user": "username-is-teken",
+      "url": "https://i.redd.it/snoovatar/avatars/nftv2_bmZ0X2VpcDE1NToxMzdfZjMzYWQ4NmJiNTRhMjc4YTZjOWY5YzA3NmY0ZWQ1YTM0YzUzMTk2N18xODczMzE_rare_f4b19a79-537a-4a6a-9766-59af85ba40ce.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/system-design-for-ai-genai-llm-infrastructure-scalability-fa/runs/2026-03-26T07-16-34-917Z/avatars/username-is-teken.png",
+      "fetchedAt": "2026-03-26T07:16:56.473Z"
+    },
+    "Project-Emily": {
+      "user": "Project-Emily",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_7.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/system-design-for-ai-genai-llm-infrastructure-scalability-fa/runs/2026-03-26T07-16-34-917Z/avatars/Project-Emily.png",
+      "fetchedAt": "2026-03-26T07:16:57.644Z"
+    },
+    "laddermanUS": {
+      "user": "laddermanUS",
+      "url": "https://i.redd.it/snoovatar/avatars/e07db4c2-3d18-42df-a877-567e88963193.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/system-design-for-ai-genai-llm-infrastructure-scalability-fa/runs/2026-03-26T07-16-59-494Z/avatars/laddermanUS.png",
+      "fetchedAt": "2026-03-26T07:17:11.535Z"
+    },
+    "ny92": {
+      "user": "ny92",
+      "url": "https://i.redd.it/snoovatar/avatars/nftv2_bmZ0X2VpcDE1NToxMzdfYzhkM2EzYTgzYmRlNWRhZDA2ZDQzNjY5NGUzZTIyYWMzZTY0ZDU3N18xNDk3NTY5_rare_a0676d5f-de1a-4622-a3a3-cad954be01b6.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/system-design-for-ai-genai-llm-infrastructure-scalability-fa/runs/2026-03-26T07-16-59-494Z/avatars/ny92.png",
+      "fetchedAt": "2026-03-26T07:17:12.665Z"
+    },
+    "lostlifon": {
+      "user": "lostlifon",
+      "url": "https://styles.redditmedia.com/t5_hnuxb/styles/profileIcon_kmkjgu5t6ewc1.png?width=256&height=256&crop=256:256,smart&s=7f1a8e7e58c22708dbb3aeb360df8806a4de4887",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/system-design-for-ai-genai-llm-infrastructure-scalability-fa/runs/2026-03-26T07-16-59-494Z/avatars/lostlifon.png",
+      "fetchedAt": "2026-03-26T07:17:13.805Z"
+    },
+    "Shontayyoustay": {
+      "user": "Shontayyoustay",
+      "url": "https://i.redd.it/snoovatar/avatars/d28d5666-1b7a-49ff-b92a-313595591eb7.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/genai-engineer-career-hiring-ai-startup-what-ctos-look-for-p/runs/2026-03-26T09-25-58-142Z/avatars/Shontayyoustay.png",
+      "fetchedAt": "2026-03-26T09:26:17.427Z"
+    },
+    "crua9": {
+      "user": "crua9",
+      "url": "https://i.redd.it/snoovatar/avatars/nftv2_bmZ0X2VpcDE1NToxMzdfNDY2YTMzMDg4N2JkZjYyZDUzZjk2OGVhODI0NzkzMTUwZjA3NzYyZV85MDkz_rare_5ac56924-ac2e-4bec-8a20-a4213c641fcd.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/genai-engineer-career-hiring-ai-startup-what-ctos-look-for-p/runs/2026-03-26T09-25-58-142Z/avatars/crua9.png",
+      "fetchedAt": "2026-03-26T09:26:18.775Z"
+    },
+    "yaoz889": {
+      "user": "yaoz889",
+      "url": "https://i.redd.it/snoovatar/avatars/nftv2_bmZ0X2VpcDE1NToxMzdfYzhkM2EzYTgzYmRlNWRhZDA2ZDQzNjY5NGUzZTIyYWMzZTY0ZDU3N180NjMzMzk1_rare_59b645ea-51b8-417d-a129-5b829bed0d2c.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/genai-engineer-career-hiring-ai-startup-what-ctos-look-for-p/runs/2026-03-26T09-25-58-142Z/avatars/yaoz889.png",
+      "fetchedAt": "2026-03-26T09:26:20.214Z"
+    },
+    "mistic192": {
+      "user": "mistic192",
+      "url": "https://i.redd.it/snoovatar/avatars/6e6a091d-fcc1-4354-a464-0929109e8dfd.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/genai-engineer-career-hiring-ai-startup-what-ctos-look-for-p/runs/2026-03-26T09-25-58-142Z/avatars/mistic192.png",
+      "fetchedAt": "2026-03-26T09:26:21.573Z"
+    },
+    "boringpanda02": {
+      "user": "boringpanda02",
+      "url": "https://i.redd.it/snoovatar/avatars/2f2ddd4d-1516-492c-ac4b-31f4de290368.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/genai-engineer-career-hiring-ai-startup-what-ctos-look-for-p/runs/2026-03-26T09-25-58-142Z/avatars/boringpanda02.png",
+      "fetchedAt": "2026-03-26T09:26:23.005Z"
+    },
+    "Awwndrei": {
+      "user": "Awwndrei",
+      "url": "https://styles.redditmedia.com/t5_eqt04c/styles/profileIcon_8wqav5cf7dmf1.png?width=256&height=256&crop=256:256,smart&s=2612e20c0520032c0b40bb61e3f8d83a2b6a51bc",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/genai-engineer-career-hiring-ai-startup-what-ctos-look-for-p/runs/2026-03-26T09-26-24-054Z/avatars/Awwndrei.png",
+      "fetchedAt": "2026-03-26T09:26:51.356Z"
+    },
+    "Soggy_Limit8864": {
+      "user": "Soggy_Limit8864",
+      "url": "https://i.redd.it/snoovatar/avatars/0ae00375-e291-4597-a805-11ec37ef7690.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/genai-engineer-career-hiring-ai-startup-what-ctos-look-for-p/runs/2026-03-26T09-26-24-054Z/avatars/Soggy_Limit8864.png",
+      "fetchedAt": "2026-03-26T09:26:52.507Z"
+    },
+    "tylerq457": {
+      "user": "tylerq457",
+      "url": "https://i.redd.it/snoovatar/avatars/3b1f35ef-2cb0-4901-a8f6-375bb6e3a29e.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/genai-engineer-career-hiring-ai-startup-what-ctos-look-for-p/runs/2026-03-26T09-26-24-054Z/avatars/tylerq457.png",
+      "fetchedAt": "2026-03-26T09:26:53.683Z"
+    },
+    "ML_DL_RL": {
+      "user": "ML_DL_RL",
+      "url": "https://i.redd.it/snoovatar/avatars/78bd844b-7641-4c95-8cee-5b1e9569b9a4.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/genai-engineer-career-hiring-ai-startup-what-ctos-look-for-p/runs/2026-03-26T09-26-24-054Z/avatars/ML_DL_RL.png",
+      "fetchedAt": "2026-03-26T09:26:54.812Z"
+    },
+    "Frequent_Eggplant_23": {
+      "user": "Frequent_Eggplant_23",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/genai-engineer-career-hiring-ai-startup-what-ctos-look-for-p/runs/2026-03-26T09-26-24-054Z/avatars/Frequent_Eggplant_23.png",
+      "fetchedAt": "2026-03-26T09:26:55.857Z"
+    },
+    "CummingInTheNile": {
+      "user": "CummingInTheNile",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_4.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/genai-engineer-career-hiring-ai-startup-what-ctos-look-for-p/runs/2026-03-26T09-26-24-054Z/avatars/CummingInTheNile.png",
+      "fetchedAt": "2026-03-26T09:26:56.894Z"
+    },
+    "VanCliefMedia": {
+      "user": "VanCliefMedia",
+      "url": "https://i.redd.it/snoovatar/avatars/nftv2_bmZ0X2VpcDE1NToxMzdfZWI5NTlhNzE1ZGZmZmU2ZjgyZjQ2MDU1MzM5ODJjNDg1OWNiMTRmZV8xMTI3MDQ2NA_rare_8ca929b6-0e12-44f5-81c7-16ab6b1ceec5.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/genai-engineer-career-hiring-ai-startup-what-ctos-look-for-p/runs/2026-03-26T09-26-24-054Z/avatars/VanCliefMedia.png",
+      "fetchedAt": "2026-03-26T09:26:58.183Z"
+    },
+    "NeverGoneTooFar": {
+      "user": "NeverGoneTooFar",
+      "url": "https://i.redd.it/snoovatar/avatars/5156af62-b298-42ec-b204-f46bea887aa2.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/genai-engineer-career-hiring-ai-startup-what-ctos-look-for-p/runs/2026-03-26T09-26-24-054Z/avatars/NeverGoneTooFar.png",
+      "fetchedAt": "2026-03-26T09:26:59.316Z"
+    },
+    "Karmaisabeachhh": {
+      "user": "Karmaisabeachhh",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_2.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/genai-engineer-career-hiring-ai-startup-what-ctos-look-for-p/runs/2026-03-26T09-26-24-054Z/avatars/Karmaisabeachhh.png",
+      "fetchedAt": "2026-03-26T09:27:00.376Z"
+    },
+    "braveheart18": {
+      "user": "braveheart18",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_4.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/genai-engineer-career-hiring-ai-startup-what-ctos-look-for-p/runs/2026-03-26T09-26-24-054Z/avatars/braveheart18.png",
+      "fetchedAt": "2026-03-26T09:27:01.434Z"
+    },
+    "gaukmotors": {
+      "user": "gaukmotors",
+      "url": "https://styles.redditmedia.com/t5_awvl0/styles/profileIcon_k795rdky9nv91.jpg?width=256&height=256&crop=256:256,smart&s=9697ee1831e5a1a67b4f17f7abe76e13e2cbb36f",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/genai-engineer-career-hiring-ai-startup-what-ctos-look-for-p/runs/2026-03-26T09-26-24-054Z/avatars/gaukmotors.jpg",
+      "fetchedAt": "2026-03-26T09:27:02.700Z"
+    },
+    "deepestbluest": {
+      "user": "deepestbluest",
+      "url": "https://i.redd.it/snoovatar/avatars/e2d5c4f1-c1d4-4050-b24f-686fd72b7fef.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/genai-engineer-career-hiring-ai-startup-what-ctos-look-for-p/runs/2026-03-26T09-27-05-245Z/avatars/deepestbluest.png",
+      "fetchedAt": "2026-03-26T09:27:24.175Z"
+    },
+    "carllyq": {
+      "user": "carllyq",
+      "url": "https://i.redd.it/snoovatar/avatars/943ad7b4-2209-4ee9-9670-b9cad6f97a99.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/genai-engineer-career-hiring-ai-startup-what-ctos-look-for-p/runs/2026-03-26T09-27-05-245Z/avatars/carllyq.png",
+      "fetchedAt": "2026-03-26T09:27:25.303Z"
+    },
+    "SierraBravo26": {
+      "user": "SierraBravo26",
+      "url": "https://styles.redditmedia.com/t5_c0s1h/styles/profileIcon_qm6rsn406ee71.jpg?width=256&height=256&crop=256:256,smart&s=82dda63f967180a6b2a3d8398b7f6d5460084c14",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/genai-engineer-career-hiring-ai-startup-what-ctos-look-for-p/runs/2026-03-26T09-27-05-245Z/avatars/SierraBravo26.jpg",
+      "fetchedAt": "2026-03-26T09:27:26.509Z"
+    },
+    "flipstables": {
+      "user": "flipstables",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_6.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/genai-engineer-career-hiring-ai-startup-what-ctos-look-for-p/runs/2026-03-26T09-27-05-245Z/avatars/flipstables.png",
+      "fetchedAt": "2026-03-26T09:27:27.545Z"
+    },
+    "NFSgaming": {
+      "user": "NFSgaming",
+      "url": "https://styles.redditmedia.com/t5_3kyms/styles/profileIcon_rj8ul1i60zye1.jpg?width=256&height=256&crop=256:256,smart&s=28572f1c243cac6d25a15eb0e1ee928d47c099c0",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/genai-engineer-career-hiring-ai-startup-what-ctos-look-for-p/runs/2026-03-26T09-27-05-245Z/avatars/NFSgaming.jpg",
+      "fetchedAt": "2026-03-26T09:27:28.780Z"
     }
   }
 }

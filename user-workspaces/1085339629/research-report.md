@@ -1,62 +1,62 @@
-## RESEARCH REPORT — RAG
-Date: 2026-03-22
+## RESEARCH REPORT — GenAI engineer career hiring AI startup what CTOs look for production experience
+Date: 2026-03-26
 
 ---
 ### REDDIT
-# Reddit Scout — RAG
+# Reddit Scout — System Design for AI GenAI LLM infrastructure scalability fault tolerance distributed systems
 
-Run: 2026-03-22T19-35-16-898Z
-Started: 2026-03-22T19:35:16.898Z
-Output dir: /home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/rag/runs/2026-03-22T19-35-16-898Z
+Run: 2026-03-26T07-16-59-494Z
+Started: 2026-03-26T07:16:59.494Z
+Output dir: /home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/system-design-for-ai-genai-llm-infrastructure-scalability-fa/runs/2026-03-26T07-16-59-494Z
 
-Config: topN=10 | subLimit=10 | kinds=top,hot,rising | time=week | limitPerListing=25
-Search: RAG (sort=top t=auto)
+Config: topN=30 | subLimit=10 | kinds=top,hot,rising | time=all | limitPerListing=25
+Search: System Design for AI GenAI LLM infrastructure scalability fault tolerance distributed systems (sort=top t=auto)
 
 ## Top terms (from titles + top comments)
 
-- people (8)
-- live (6)
-- when (5)
-- swiffer (4)
-- season (4)
 - what (4)
-- will (4)
-- lincoln (4)
-- like (4)
-- love (4)
-- think (4)
-- there (4)
-- house (4)
-- better (3)
-- republicans (3)
-- years (3)
-- back (3)
-- well (3)
+- equivalent (3)
+- tools (2)
+- billion (2)
+- time (2)
+- langchain (2)
+- read (2)
+- lots (2)
+- holy (2)
+- partner (2)
+- social (2)
+- media (2)
+- guide (1)
+- build (1)
+- agents (1)
+- newb (1)
+- rise (1)
+- canoo (1)
 
 ## Viral content ideas (derived from these posts)
 
 **1. Personal story → timeline + receipts**
 - Hook: Hook with 1 line, then a 5-step timeline; end with the lesson and what you would do differently.
 
-**2. My people got automated: what I automated back (tools + workflow)**
+**2. My what got automated: what I automated back (tools + workflow)**
 - Hook: Turn it into a before/after workflow post. Include exact tool stack + steps.
 
-**3. Checklist: how to stay valuable when live hits your team**
+**3. Checklist: how to stay valuable when equivalent hits your team**
 - Hook: A numbered checklist (10 items). Make it practical: skills, portfolio, outreach, proof-of-work.
 
-**4. Hot take: when isn't the problem — swiffer is**
+**4. Hot take: tools isn't the problem — billion is**
 - Hook: Contrarian framing. Back it with 2 examples from the top posts and 1 counterexample.
 
-**5. Debunk thread: "AI will replace season" vs what's actually happening**
+**5. Debunk thread: "AI will replace time" vs what's actually happening**
 - Hook: Use 3 claims → 3 rebuttals. Cite specific post patterns: layoffs, hiring freezes, role shifts.
 
-**6. Salary/market reality: what vs will roles in 2026 (Reddit signals)**
+**6. Salary/market reality: langchain vs read roles in 2026 (Reddit signals)**
 - Hook: Summarize demand signals from comments: who is struggling, who is fine, why.
 
 **7. "What would you do in 30 days?" layoff recovery plan (day-by-day)**
 - Hook: 30-day plan: portfolio, interview loops, networking, mental health. Include a downloadable checklist.
 
-**8. Mini-case study: 1 resume bullet → 1 proof project using lincoln**
+**8. Mini-case study: 1 resume bullet → 1 proof project using lots**
 - Hook: Show how to convert a vague resume claim into a measurable project + writeup.
 
 **9. Community question: which tasks should *never* be delegated to AI?**
@@ -68,482 +68,346 @@ Search: RAG (sort=top t=auto)
 **11. Data post: a quick scorecard of the top threads (ups, comments, ratio) + what it signals**
 - Hook: Table or bullets; then 3 takeaways.
 
-**12. Meme angle (if relevant): like vs love — job search edition**
+**12. Meme angle (if relevant): holy vs partner — job search edition**
 - Hook: If your niche is not memes, skip memes; otherwise caption the pattern you saw in comments.
 
-## Top posts (10) + cards
+## Top posts (3) + cards
 
-### 1) Stop buying Swiffer Wet Pads - This Cleans better and reduces waste
-- Subreddit: r/Anticonsumption
-- Viral score: 128 | Ups: 2411 | Comments: 161 | Upvote ratio: 98%
-- Link: https://www.reddit.com/r/Anticonsumption/comments/1rzc5w0/stop_buying_swiffer_wet_pads_this_cleans_better/
-- Card (local): ./cards/1rzc5w0.png
+### 1) My guide on what tools to use to build AI agents (if you are a newb)
+- Subreddit: r/AI_Agents
+- Viral score: 1 | Ups: 2878 | Comments: 488 | Upvote ratio: 99%
+- Link: https://www.reddit.com/r/AI_Agents/comments/1il8b1i/my_guide_on_what_tools_to_use_to_build_ai_agents/
+- Card (local): ./cards/1il8b1i.png
 
-![reddit card](./cards/1rzc5w0.png)
+![reddit card](./cards/1il8b1i.png)
 
-### 2) This queen has raised the bar so high for US Drag Race. If she doesn’t win the season, what message will that send to future queens?
-- Subreddit: r/rupaulsdragrace
-- Viral score: 115 | Ups: 3694 | Comments: 526 | Upvote ratio: 93%
-- Link: https://www.reddit.com/r/rupaulsdragrace/comments/1rxbnis/this_queen_has_raised_the_bar_so_high_for_us_drag/
-- Card (local): ./cards/1rxbnis.png
+### 2) The Rise of Canoo ($GOEV) – Why JPOW’s printer, Biden’s EV support ($15 billion in infrastructure bill, $160 billion in EV subsidies in budget), ~70% increase in institution ownership, 30+% SI and ~98% utilization are primed to send a young and unique EV manufacturer to the stratosphere.
+- Subreddit: r/wallstreetbets
+- Viral score: 0 | Ups: 4050 | Comments: 605 | Upvote ratio: 93%
+- Link: https://www.reddit.com/r/wallstreetbets/comments/pt7jzp/the_rise_of_canoo_goev_why_jpows_printer_bidens/
+- Card (local): ./cards/pt7jzp.png
 
-![reddit card](./cards/1rxbnis.png)
+![reddit card](./cards/pt7jzp.png)
 
-### 3) You know what? I'm just gonna say it...
-- Subreddit: r/2007scape
-- Viral score: 114 | Ups: 2557 | Comments: 401 | Upvote ratio: 84%
-- Link: https://www.reddit.com/r/2007scape/comments/1rykjqy/you_know_what_im_just_gonna_say_it/
-- Card (local): ./cards/1rykjqy.png
+### 3) GPT-4 Week 6. The first AI Political Ad + Palantir's Military AI could be a new frontier for warfare - Nofil's Weekly Breakdown
+- Subreddit: r/ChatGPT
+- Viral score: 0 | Ups: 2256 | Comments: 324 | Upvote ratio: 98%
+- Link: https://www.reddit.com/r/ChatGPT/comments/1323qlg/gpt4_week_6_the_first_ai_political_ad_palantirs/
+- Card (local): ./cards/1323qlg.png
 
-![reddit card](./cards/1rykjqy.png)
-
-### 4) Project manager wants us to drill a hole where the red circle is in a live panel. Would you do it?
-- Subreddit: r/electricians
-- Viral score: 91 | Ups: 1208 | Comments: 882 | Upvote ratio: 96%
-- Link: https://www.reddit.com/r/electricians/comments/1ryf6o2/project_manager_wants_us_to_drill_a_hole_where/
-- Card (local): ./cards/1ryf6o2.png
-
-![reddit card](./cards/1ryf6o2.png)
-
-### 5) jazposting (sirakitz)
-- Subreddit: r/CultofDaisy
-- Viral score: 83 | Ups: 2238 | Comments: 17 | Upvote ratio: 99%
-- Link: https://www.reddit.com/r/CultofDaisy/comments/1rz54sq/jazposting_sirakitz/
-- Card (local): ./cards/1rz54sq.png
-
-![reddit card](./cards/1rz54sq.png)
-
-### 6) To all my dudes in creepy basements.
-- Subreddit: r/malelivingspace
-- Viral score: 77 | Ups: 2642 | Comments: 139 | Upvote ratio: 99%
-- Link: https://www.reddit.com/r/malelivingspace/comments/1rxtguo/to_all_my_dudes_in_creepy_basements/
-- Card (local): ./cards/1rxtguo.png
-
-![reddit card](./cards/1rxtguo.png)
-
-### 7) CMV: It is dishonest and misleading for Republicans to claim Abraham Lincoln as one of their own
-- Subreddit: r/changemyview
-- Viral score: 47 | Ups: 754 | Comments: 840 | Upvote ratio: 65%
-- Link: https://www.reddit.com/r/changemyview/comments/1ry1gsq/cmv_it_is_dishonest_and_misleading_for/
-- Card (local): ./cards/1ry1gsq.png
-
-![reddit card](./cards/1ry1gsq.png)
-
-### 8) Many people won't like it given the current climate, but whoever the 2028 Democratic nominee is needs to make military readiness, procurement, and innovation part of their campaign platform.
-- Subreddit: r/neoliberal
-- Viral score: 36 | Ups: 509 | Comments: 271 | Upvote ratio: 86%
-- Link: https://www.reddit.com/r/neoliberal/comments/1ryvth4/many_people_wont_like_it_given_the_current/
-- Card (local): ./cards/1ryvth4.png
-
-![reddit card](./cards/1ryvth4.png)
-
-### 9) Rags to Riches.
-- Subreddit: r/SkyrimMemes
-- Viral score: 33 | Ups: 1186 | Comments: 28 | Upvote ratio: 100%
-- Link: https://www.reddit.com/r/SkyrimMemes/comments/1ryeyyb/rags_to_riches/
-- Card (local): ./cards/1ryeyyb.png
-
-![reddit card](./cards/1ryeyyb.png)
-
-### 10) Invasion USA -Chuck Norris's Cold War paranoia fantasy where he kills drug doers
-- Subreddit: r/badMovies
-- Viral score: 25 | Ups: 422 | Comments: 123 | Upvote ratio: 89%
-- Link: https://www.reddit.com/r/badMovies/comments/1rz2uee/invasion_usa_chuck_norriss_cold_war_paranoia/
-- Card (local): ./cards/1rz2uee.png
-
-![reddit card](./cards/1rz2uee.png)
+![reddit card](./cards/1323qlg.png)
 
 ---
 ### TWITTER
-# Twitter Scout Report — RAG 2026
-Run: 2026-03-22T19-35-17-493Z | Scanned: 24 | Top 10
+# Twitter Scout Report — RAG in Production - Real architectural decisions, failure modes, and benchmark numbers from building RAG systems at scale. Hybrid search, reranking, RAGAS evaluation, context retrieval, embedding drift, vector DB trade-offs 2026
+Run: 2026-03-26T06-04-56-802Z | Scanned: 20 | Top 10
 
-## 1. Sahaj (@iamsahaj_xyz)
+## 1. Cameron R. Wolfe, Ph.D. (@cwolferesearch)
 **Viral Score:** 1.9/10
-**Tweet:** if you left software engineering in 2024 and came back in 2026, you would've missed:
+**Tweet:** RAG is one of the best (and easiest) ways to specialize an LLM over your own data, but successfully applying RAG in practice involves more than just stitching together pretrained models…
 
-MCP/A2A
-RAG
-Proompt Engineering
-AI tab complete
+What is RAG? At the highest level, RAG is a combination of a pretrained LLM with an
+**Metrics:** ❤️ 1300  🔁 275  💬 16  🔖 0
+**Images:** https://pbs.twimg.com/media/GFlw_2eXsAEadDS?format=jpg&name=small
+**URL:** https://x.com/cwolferesearch/status/1754558231802769857
 
-So basically not much because that's all irrelevant now
-**Metrics:** ❤️ 1800  🔁 45  💬 34  🔖 0
-**Images:** none
-**URL:** https://x.com/iamsahaj_xyz/status/2030248407324143989
+## 2. Victoria Slocum@victorialslocum·Nov 12, 2025 (unknown)
+**Viral Score:** 1.4/10
+**Tweet:** Why do RAG systems feel like they hit a ceiling?
 
-## 2. Rimsha Bhardwaj (@heyrimsha)
+I've been diving into @helloiamleonie's latest article on agent memory, and it provided so much clarity into the current evolution of RAG systems.
+
+The progression from RAG → Agentic RAG → Agent Memory isn't about adding
+**Metrics:** ❤️ 1000  🔁 198  💬 31  🔖 0
+**Images:** https://pbs.twimg.com/media/G5kPw6oXYAERgi4?format=png&name=small
+**URL:** https://x.com/victorialslocum/status/1988638095432888714
+
+## 3. Femke Plantinga (@femke_plantinga)
 **Viral Score:** 1.2/10
-**Tweet:** These are the best 10 AI projects that will get you hired in 2026:
+**Tweet:** Confused by all the new terminology around agents and memory? 
 
-1. RAG App with Real Evaluations
+(episodic, semantic, procedural memory…) 
 
-Build a production-grade RAG system with evals, monitoring, and feedback loops.
+Strip away all the buzz, and the evolution from RAG to agentic RAG to agent memory is actually just about one thing: 𝗵𝗼𝘄 𝘆𝗼𝘂 𝗺𝗮𝗻𝗮𝗴𝗲 𝗱𝗮𝘁𝗮 𝗶𝗻
+**Metrics:** ❤️ 830  🔁 150  💬 25  🔖 0
+**Images:** https://pbs.twimg.com/media/G-sjGHTWcAATC2Y?format=jpg&name=small
+**URL:** https://x.com/femke_plantinga/status/2011740250180108498
 
-Stack: OpenAI or Claude + vector DB + evals
-Guide: 
-https://
-pinecone.io/learn/retrieva
-l-augmented-generation/
-…
+## 4. Vaishnavi (@_vmlops)
+**Viral Score:** 1.1/10
+**Tweet:** RAG isn’t just embeddings + vector DB
 
-2. Autonomous
-**Metrics:** ❤️ 860  🔁 162  💬 20  🔖 0
-**Images:** https://pbs.twimg.com/media/HC4Tg31bcAAtuX6?format=jpg&name=360x360, https://pbs.twimg.com/media/HC4ThB2a4AAK_cv?format=jpg&name=360x360
-**URL:** https://x.com/heyrimsha/status/2030581942706725350
+Production-ready RAG requires:
+• Smart chunking
+• Efficient embeddings
+• Scalable vector storage
+• Hybrid retrieval + re-ranking
+• Proper document versioning & access control
 
-## 3. Cloudflare Developers (@CloudflareDev)
+RAG is not a feature
+It’s infrastructure
+**Metrics:** ❤️ 809  🔁 122  💬 26  🔖 0
+**Images:** https://pbs.twimg.com/media/HB0zvO7aYAAHPr-?format=jpg&name=small
+**URL:** https://x.com/_vmlops/status/2025832304900473311
+
+## 5. Victoria Slocum (@victorialslocum)
 **Viral Score:** 1/10
-**Tweet:** Initiate the crawl job with just a URL, and get a job ID back. Poll, or wait for results.
+**Tweet:** Hot take: I'm tired of RAG systems that just grab the first document and call it done.
+𝗔𝗴𝗲𝗻𝘁𝗶𝗰 𝗥𝗔𝗚 is probably the only way RAG is 𝘢𝘤𝘵𝘶𝘢𝘭𝘭𝘺 going to be useful.
 
-Great for training models, RAG, and researching/monitoring content.
-**Metrics:** ❤️ 724  🔁 37  💬 10  🔖 0
-**Images:** none
-**URL:** https://x.com/CloudflareDev/status/2031488102296956993
+But what’s actually the difference?
 
-## 4. Ihtesham Ali (@ihtesham2005)
+𝗧𝗵𝗲 𝗣𝗿𝗼𝗯𝗹𝗲𝗺 𝘄𝗶𝘁𝗵 𝗡𝗮𝗶𝘃𝗲 𝗥𝗔𝗚:
+Traditional
+**Metrics:** ❤️ 799  🔁 119  💬 5  🔖 0
+**Images:** https://pbs.twimg.com/media/GzRgKmCXkAAi2wR?format=jpg&name=small
+**URL:** https://x.com/victorialslocum/status/1960297539820720365
+
+## 6. Femke Plantinga (@femke_plantinga)
 **Viral Score:** 1/10
-**Tweet:** You don't need to write a single line of code to build a full AI agent with RAG, memory, and tool calling in 2026.
+**Tweet:** How did we go from vanilla RAG to agentic RAG SO fast?
 
-I know that sounds like a lie. But It's not.
+Just some years ago, we were excited about basic retrieval-augmented generation. 
 
-Flowise is an open source drag and drop builder for LLM apps and it's the most slept-on AI tool I've seen this year.
-**Metrics:** ❤️ 715  🔁 90  💬 45  🔖 0
-**Images:** none
-**URL:** https://x.com/ihtesham2005/status/2028514380963536918
+Now we're building full AI agents that can reason, plan, and use multiple tools autonomously.
 
-## 5. Tech with Mak (@techNmak)
+Here's what changed everything:
+**Metrics:** ❤️ 623  🔁 138  💬 25  🔖 0
+**Images:** https://pbs.twimg.com/media/G-DPjrnX0AAXPH9?format=png&name=small
+**URL:** https://x.com/femke_plantinga/status/2008871243848826891
+
+## 7. Ihtesham Ali (@ihtesham2005)
 **Viral Score:** 1/10
-**Tweet:** Learning AI engineering in 2026.
+**Tweet:** RAG is dead.
 
-What most people do:
-→ Jump to agents
-→ Skip foundations
-→ Ignore MLOps
-→ Wonder why nothing works
+I just tested Modular RAG and it’s making AI systems 30-40% more accurate on real production tasks.
 
-What this roadmap shows:
+The accuracy gains made me question everything I thought I knew about retrieval.
 
-1. Foundation (Python, APIs, clean code)
-2. Semantic intelligence (embeddings, vector DBs)
-3. RAG (grounded outputs)
-**Metrics:** ❤️ 605  🔁 118  💬 13  🔖 0
-**Images:** https://pbs.twimg.com/media/HD2Ur5BboAAKPD1?format=jpg&name=small
-**URL:** https://x.com/techNmak/status/2034946111694131639
+And the core insight destroyed my mental model in the best way possible.
 
-## 6. Ujjwal Chadha (@ujjwalscript)
+Naive RAG
+**Metrics:** ❤️ 570  🔁 101  💬 29  🔖 0
+**Images:** https://pbs.twimg.com/media/HCgaUXra0AAQbyr?format=jpg&name=small
+**URL:** https://x.com/ihtesham2005/status/2028900581084131420
+
+## 8. Rohan Paul (@rohanpaul_ai)
 **Viral Score:** 1/10
-**Tweet:** If you want to be an AI Engineer in 2026, learn THIS:
+**Tweet:** RAG or Long Context ??
 
- Foundations: Python, Advanced Prompting, API Integration (OpenAI, Anthropic, Gemini).
+This paper finds, when resourced sufficiently, Long Context consistently outperforms RAG in terms of average performance.
 
- The Brain (RAG): Embeddings, Vector DBs (Pinecone, Qdrant, Milvus), Advanced Chunking strategies.
+However, RAG’s significantly lower cost remains a distinct advantage.
 
- Orchestration & Agents:
-**Metrics:** ❤️ 525  🔁 102  💬 14  🔖 0
-**Images:** none
-**URL:** https://x.com/ujjwalscript/status/2033850603483631709
+To solve this they propose a new 'Hybrid' method
 
-## 7. 路飞  AI 研究员 (@0xluffy_eth)
+-----
+
+Key
+**Metrics:** ❤️ 485  🔁 103  💬 7  🔖 0
+**Images:** https://pbs.twimg.com/media/GVtcsefXwAAiCS0?format=png&name=small
+**URL:** https://x.com/rohanpaul_ai/status/1827156106449158339
+
+## 9. Femke Plantinga (@femke_plantinga)
 **Viral Score:** 1/10
-**Tweet:** 2026, the 5 AI Projects Easiest to Help You Land a Job
-(Recommended to bookmark directly)
+**Tweet:** Your RAG system isn’t hallucinating, it’s just lazy.
 
- Implement RAG from Scratch
-Not just calling APIs, but truly understanding the principles
-GitHub: 
-https://
-github.com/langchain-ai/r
-ag-from-scratch
-…
+Here’s what separates basic vector search from agentic retrieval:
 
- AI Social Media Agent
-Automatically posts content, analyzes
-**Metrics:** ❤️ 325  🔁 85  💬 5  🔖 0
-**Images:** https://pbs.twimg.com/media/HDwJJNMbEAATUTx?format=jpg&name=360x360, https://pbs.twimg.com/media/HDwJJX0bIAAbuHX?format=jpg&name=small
-**URL:** https://x.com/0xluffy_eth/status/2034511197576520033
+Let’s say you want to find: “𝘢𝘧𝘧𝘰𝘳𝘥𝘢𝘣𝘭𝘦 𝘦𝘤𝘰-𝘧𝘳𝘪𝘦𝘯𝘥𝘭𝘺 𝘴𝘮𝘢𝘳𝘵𝘱𝘩𝘰𝘯𝘦𝘴 𝘶𝘯𝘥𝘦𝘳 $500 𝘸𝘪𝘵𝘩 𝘩𝘪𝘨𝘩 𝘳𝘢𝘵𝘪𝘯𝘨𝘴” 
 
-## 8. Edison (@CodeEdison)
+you get
+**Metrics:** ❤️ 465  🔁 84  💬 17  🔖 0
+**Images:** https://pbs.twimg.com/media/HAycfGcWYAAaflF?format=jpg&name=small
+**URL:** https://x.com/femke_plantinga/status/2021162395746345393
+
+## 10. Aurimas Griciūnas (@Aurimas_Gr)
 **Viral Score:** 1/10
-**Tweet:** High-Demand & High Paying Tech Skills for 2026 
+**Tweet:** Building even a simple 𝗽𝗿𝗼𝗱𝘂𝗰𝘁𝗶𝗼𝗻 𝗴𝗿𝗮𝗱𝗲 𝗥𝗲𝘁𝗿𝗶𝗲𝘃𝗮𝗹 𝗔𝘂𝗴𝗺𝗲𝗻𝘁𝗲𝗱 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗶𝗼𝗻 (𝗥𝗔𝗚) 𝗯𝗮𝘀𝗲𝗱 𝗔𝗜 𝘀𝘆𝘀𝘁𝗲𝗺 is a challenging task. Read until the end to understand why 
 
-1. Cloud Engineering (AWS | Azure | GCP)
-2. DevOps & Automation (CI/CD | IaC | GitOps)
-3. Kubernetes & Containers
-4. Cybersecurity & Cloud Security
-5. Data Engineering 
-6. AI/ML Integration (LLMs, RAG, MLOps)
-7. Platform
-**Metrics:** ❤️ 299  🔁 41  💬 14  🔖 0
-**Images:** none
-**URL:** https://x.com/CodeEdison/status/2028003914310734116
-
-## 9. Cyber Security | Tech | AI | Crypto | (@XinoYaps)
-**Viral Score:** 1/10
-**Tweet:** Top AI future-proof IT certs for 2026 (cloud/dev focus):
-
-1. AWS Certified Generative AI Developer – Professional: Production RAG pipelines, agents, Bedrock deployment. New, high-demand, ties directly to that 200k+ hype.
-
-2. Google Cloud Professional Machine Learning Engineer:
-**Metrics:** ❤️ 252  🔁 20  💬 5  🔖 0
-**Images:** none
-**URL:** https://x.com/XinoYaps/status/2031037663214485560
-
-## 10. Shruti Codes (@Shruti_0810)
-**Viral Score:** 1/10
-**Tweet:** Skills That Pay in the AI Era (2026)
-
-• AI/ML → Python, PyTorch, Transformers
-• AI Stack → RAG, Vector DBs, Agents
-• Backend → Node.js, Go, Rust
-• Frontend → React, Next.js
-• APIs → REST, GraphQL, gRPC
-• Databases → PostgreSQL, Redis
-• DevOps → Docker, Kubernetes
-•
-**Metrics:** ❤️ 88  🔁 23  💬 2  🔖 0
-**Images:** https://pbs.twimg.com/media/HDdcIoUaAAAJvJf?format=jpg&name=small
-**URL:** https://x.com/Shruti_0810/status/2033195072804807048
+Here are some of the moving parts in the RAG based systems that
+**Metrics:** ❤️ 402  🔁 89  💬 7  🔖 0
+**Images:** https://pbs.twimg.com/media/Gx_V_LwXIAAlmPt?format=jpg&name=small
+**URL:** https://x.com/Aurimas_Gr/status/1954516058854826490
 
 ---
 ### YOUTUBE
-## YOUTUBE SCOUT REPORT — RAG Agentic AI Engineering, GenAI system design, AI for Indian SMBs
-Date: 2026-03-22
-Videos analysed: 4
+## YOUTUBE SCOUT REPORT — System Design for AI GenAI LLM infrastructure scalability fault tolerance distributed systems GenAI Engineering, LLM Infrastructure, System Design
+Date: 2026-03-26
+Videos analysed: 6
 
 ### Top Viral Videos
 
 ---
-Title: 10 Insane AI Agent Use Cases in n8n! (steal these)
-Channel: Jono Catliff
-Views: 290,322 | Likes: N/A | Duration: 16m30s
-Uploaded: N/A | Viral Score: 5.5/10
-URL: https://www.youtube.com/watch?v=Dt6u-yFEpsk
-Description: "COMMUNITY https://www.skool.com/automatable/about BLUEPRINTS • ChatGPT → https://youtu.be/YcDLVPYIRSA • Chatbot ..."
+Title: Hadoop In 5 Minutes | What Is Hadoop? | Introduction To Hadoop | Hadoop Explained |Simplilearn
+Channel: Simplilearn
+Views: 1,596,278 | Likes: N/A | Duration: 6m21s
+Uploaded: N/A | Viral Score: 6.2/10
+URL: https://www.youtube.com/watch?v=aReuLtY0YMI
+Description: "IBM - Data Analyst ..."
 
 ---
-Title: 10 Use Cases for AI Agents: IoT, RAG, & Disaster Response Explained
-Channel: IBM Technology
-Views: 156,819 | Likes: N/A | Duration: 9m12s
+Title: System Design was HARD until I Learned these 30 Concepts
+Channel: Ashish Pratap Singh
+Views: 1,407,285 | Likes: N/A | Duration: 20m44s
+Uploaded: N/A | Viral Score: 6.1/10
+URL: https://www.youtube.com/watch?v=s9Qh9fWeOAk
+Description: "My System Design Course: https://algomaster.io/learn/system-design/course-introduction ▻ My LLD interview course: ..."
+
+---
+Title: How to Answer System Design Interview Questions (Complete Guide)
+Channel: Exponent
+Views: 562,321 | Likes: N/A | Duration: 7m10s
+Uploaded: N/A | Viral Score: 5.7/10
+URL: https://www.youtube.com/watch?v=L9TfZdODuFQ
+Description: "Make sure you're interview-ready with Exponent's system design interview prep course: https://bit.ly/3M6qTj1 Read our complete ..."
+
+---
+Title: What is Data Pipeline? | Why Is It So Popular?
+Channel: ByteByteGo
+Views: 436,834 | Likes: N/A | Duration: 5m25s
+Uploaded: N/A | Viral Score: 5.6/10
+URL: https://www.youtube.com/watch?v=kGT4PcTEPP8
+Description: "Get a Free System Design PDF with 158 pages by subscribing to our weekly newsletter: https://bit.ly/bytebytegoytTopic Animation ..."
+
+---
+Title: How to Prepare for System Design Interviews w/ Meta Staff Engineer
+Channel: Hello Interview - SWE Interview Preparation
+Views: 153,505 | Likes: N/A | Duration: 18m27s
 Uploaded: N/A | Viral Score: 5.2/10
-URL: https://www.youtube.com/watch?v=Ts42JTye-AI
-Description: "Ready to become a certified watsonx Generative AI Engineer? Register now and use code IBMTechYT20 for 20% off of your exam ..."
+URL: https://www.youtube.com/watch?v=Ru54dxzCyD0
+Description: "Here is how I would prepare for a system design interview if I was starting from scratch! 00:00 - What is a system design interview ..."
 
 ---
-Title: What is AIOps and How it works? [With Examples]
-Channel: Cloud Champ
-Views: 28,692 | Likes: N/A | Duration: 8m46s
-Uploaded: N/A | Viral Score: 4.5/10
-URL: https://www.youtube.com/watch?v=yf0yCJOMtBY
-Description: "AIOps explained | What is AIops | Aiops use cases | AIOps tutorial In this tutorial video we will learn What is AIOps and How it ..."
-
----
-Title: Best AI Tools In Procurement & Supply Chain (2025)
-Channel: The Procurement Channel | TPC
-Views: 13,973 | Likes: N/A | Duration: 4m3s
-Uploaded: N/A | Viral Score: 4.1/10
-URL: https://www.youtube.com/watch?v=VkJ0SsNcNmM
-Description: "Cut 50–80% RFQ admin with this AI tool: https://www.tpc-consult.com/demo?utm_content=tpc-472 Download our Free AI ..."
+Title: LLM Serving - Control and Data Plane Disaggregation | Uplatz
+Channel: Uplatz
+Views: 9 | Likes: N/A | Duration: 6m36s
+Uploaded: N/A | Viral Score: 1/10
+URL: https://www.youtube.com/watch?v=6TkDdRneFfQ
+Description: "As LLM deployments scale from single models to fleet-level platforms, serving architecture becomes a systems problem—not just ..."
 
 
 ### SOURCE URLS (for idea-generator)
-- 10 Insane AI Agent Use Cases in n8n! (steal these) (290K views)
-  URL: https://www.youtube.com/watch?v=Dt6u-yFEpsk
-- 10 Use Cases for AI Agents: IoT, RAG, & Disaster Response Explained (157K views)
-  URL: https://www.youtube.com/watch?v=Ts42JTye-AI
-- What is AIOps and How it works? [With Examples] (29K views)
-  URL: https://www.youtube.com/watch?v=yf0yCJOMtBY
-- Best AI Tools In Procurement & Supply Chain (2025) (14K views)
-  URL: https://www.youtube.com/watch?v=VkJ0SsNcNmM
+- Hadoop In 5 Minutes | What Is Hadoop? | Introduction To Hadoop | Hadoop Explained |Simplilearn (1596K views)
+  URL: https://www.youtube.com/watch?v=aReuLtY0YMI
+- System Design was HARD until I Learned these 30 Concepts (1407K views)
+  URL: https://www.youtube.com/watch?v=s9Qh9fWeOAk
+- How to Answer System Design Interview Questions (Complete Guide) (562K views)
+  URL: https://www.youtube.com/watch?v=L9TfZdODuFQ
+- What is Data Pipeline? | Why Is It So Popular? (437K views)
+  URL: https://www.youtube.com/watch?v=kGT4PcTEPP8
+- How to Prepare for System Design Interviews w/ Meta Staff Engineer (154K views)
+  URL: https://www.youtube.com/watch?v=Ru54dxzCyD0
+- LLM Serving - Control and Data Plane Disaggregation | Uplatz (0K views)
+  URL: https://www.youtube.com/watch?v=6TkDdRneFfQ
 
 ---
 ### GOOGLE NEWS
-## GOOGLE NEWS SCOUT REPORT — RAG
-Date: 2026-03-22
-Articles: 20
+## GOOGLE NEWS SCOUT REPORT — System Design for AI GenAI LLM infrastructure scalability fault tolerance distributed systems
+Date: 2026-03-26
+Articles: 11
 
 ### Top Articles
 
 ---
-Title: Sale backpack sale rag and bone mini pilot backpack Flash Sales Rag Bone Mini Pilot Backpack 450 liked on Polyvore featuring bags backpacks winter picks - маяк32.рф
-Source: маяк32.рф
-Published: Sat, 21 Mar 2026 22:07:44 GMT
-Recency Score: 9/10
-URL: https://news.google.com/rss/articles/CBMiWEFVX3lxTFBaZUhkbF9VOFBjMHEwUFhsQVhpUkhSMERzQzdkNnJIUXkyV1lCRkE0YmU3SURrcURTQnNrUjB6NDNjZ1d6elMzTTc2MVBmOFVFT2RsMUFaMDU?oc=5
+Title: Exploring a space-based, scalable AI infrastructure system design - Research at Google
+Source: Research at Google
+Published: Tue, 04 Nov 2025 08:00:00 GMT
+Recency Score: 2/10
+URL: https://news.google.com/rss/articles/CBMimgFBVV95cUxNME1JUnFDODB3UktzYm1MMHpwb193anRMdUpfTFlTdFRyMEtaZ0hoUWNHWldlbzdDQ3V1aEJLbkdCZkRsOTFSQi1XalltV3VFdkZRZ29uV20xWWNEcGdVRlg0ZnhRQU45dktEZ3o2bXh1RnBpU2FwV1pLTmo1VXA0R21XLWwwUWxXcDZFT216TF9kQmplNWRRTDdB?oc=5
 
 ---
-Title: Commanders' 2026 NFL Draft buzz puts rags-to-riches rookie on notice - Riggo's Rag
-Source: Riggo's Rag
-Published: Sat, 21 Mar 2026 13:00:04 GMT
-Recency Score: 8/10
-URL: https://news.google.com/rss/articles/CBMimgFBVV95cUxNaXFmVTM1dk1qVGY5ckwtOV9VRGhJeVJfUWFwWFJJR3FGdVMxSEEyNUhIX1U0RHhNcmlkVnJ2TUlFbFF3WWVleFVSVDlTX2JTQ2ZQNzh3bGFudDlwcDFaZkJHdmlWd25Rb29jd05nR3hKb0ZYZEZxeno2bE9ZemxJV29aa0xkR0ZLZ2xFUkpaLVVWTlFGN1BFR0JR?oc=5
+Title: Performance, efficiency, and cost analysis of wafer-scale AI accelerators vs. single-chip GPUs - ScienceDirect.com
+Source: ScienceDirect.com
+Published: Fri, 17 Oct 2025 07:00:00 GMT
+Recency Score: 2/10
+URL: https://news.google.com/rss/articles/CBMidkFVX3lxTE5mank5R0ZoUGp1Vkp4TkE3djFhZXh6NEdDZEliMVNPUGNqQk5xTnZ6QjZjb1VrdnpzRkZuNlRmcXdyOWJ2NS1zRFZ6Y0dCVFp2X0VrYkhTdXc1TTU1U0xGaFR1bTA0RFpTVUlFQktWczh5NVJDT3c?oc=5
 
 ---
-Title: Use a Rag Rug As a Bath Mat - New York Magazine
-Source: New York Magazine
-Published: Fri, 20 Mar 2026 16:59:42 GMT
-Recency Score: 7/10
-URL: https://news.google.com/rss/articles/CBMid0FVX3lxTFA1elFWb0hZQm4zSUVBUG9qM19Fd1F2anNGVzJNbXVqYTZybEcwQzROR0ZfOUVCTU1MR1I0UHZWcjBnVGg3X0dNV0xCTE1RNEZ4ZVpEejV4emZDclJ0MVdTaS1TX29uZ3B6U3JXWDBWV2dIMmZ0ZXc0?oc=5
+Title: Meta’s Infrastructure Evolution and the Advent of AI - Engineering at Meta Blog
+Source: Engineering at Meta Blog
+Published: Mon, 29 Sep 2025 07:00:00 GMT
+Recency Score: 2/10
+URL: https://news.google.com/rss/articles/CBMirwFBVV95cUxPVEpDSmdobjhEV25aTHhhZlVodWpSNG1CeExoSmhib2paTnFOT2d3SXFJLU1COXZYUGJWdW42Wk80UkZOU3JPak8wRmlITjdqWktvUWp5Y1o0aVFuLWF5dDJLUWZUX2I4N3dwdzRrTElJSl85SW1WZEFHalJmNjNGRklJWTJ6dTlxQ3d4ZVJlTDBBblUxUHphUGViMDFMbEpHUi03Vi1pTlMxeVNxT1JB?oc=5
 
 ---
-Title: Narrowing bands of compliance: How the UK’s new RAG system will impact international student recruitment - ICEF Monitor
-Source: ICEF Monitor
-Published: Thu, 19 Mar 2026 20:54:06 GMT
-Recency Score: 7/10
-URL: https://news.google.com/rss/articles/CBMi0gFBVV95cUxNMzZUSk5sdXdBc0tNTEFxSUN3TW9UeXBfZ3VmRF9TdnFHU0NXQjgtcTVvQjZ5NjN5STlxNGhYZjc5R3lBb05SVVM2QW9XYTRLSDRZWGxleGUzWXFmTUw4cHNnSHFGVHE0UkV3ZGY4T204YmRZbmZDTVNLUWk2NzNvNTN5RHpGaVlsT21JdW5jVWw5djdJeDNtWnVYSXFzSE9lekZzS1U4dzNpc1pSR1hGODR6Vm5mcDJkVlJHM0hCbnh2aEZDM3VIQ19wcjB4OHdqbWc?oc=5
+Title: How Meta keeps its AI hardware reliable - Engineering at Meta Blog
+Source: Engineering at Meta Blog
+Published: Tue, 22 Jul 2025 07:00:00 GMT
+Recency Score: 2/10
+URL: https://news.google.com/rss/articles/CBMinwFBVV95cUxOREtqb3dYM2xMRUVuVFVhZzM2azR6RlZWWklhMzFtODhFTGhJSEY2NGhCOHJTLXRLai1seE1CVDM4SHhsUGRRMUJCYTVQRWlmd3BHeldka2xpSENBc0IyQzdvRWJyVTNCamlsXzkwTUlYa01fUGpxbmZiblFSYzNTQjNVZGV0NlRXeFJqUXdObkZPeDFIdTZ0SU9ydFJKQUU?oc=5
 
 ---
-Title: Use RAG for video generation using Amazon Bedrock and Amazon Nova Reel | Artificial Intelligence - Amazon Web Services (AWS)
-Source: Amazon Web Services (AWS)
-Published: Thu, 19 Mar 2026 16:45:50 GMT
-Recency Score: 6/10
-URL: https://news.google.com/rss/articles/CBMiuAFBVV95cUxPZVgwUHVYLXQ3LTRJTEY4UTN0VzZ6dzhBaVlPbDJTZ3JQMWJoWjZXLTdOclFQWWgwN3NCRk5pSzRwdTdxbGl2cW5JcEdRR3BRUXVZckR0YUotZHlVTUxGM1ZFM19oVXEwNWhHbGoxOGpSMzYwMVpGWGVfSy1pU1dSb1R1dFFXWHl5d3V3NmpuQzJFdm05VVRTWU5CaUFMc3VfTVY5RFJ3V05mU21kSGNFczBqSDhCUTlx?oc=5
-
----
-Title: Introducing V-RAG: revolutionizing AI-powered video production with Retrieval Augmented Generation - Amazon Web Services (AWS)
-Source: Amazon Web Services (AWS)
-Published: Thu, 19 Mar 2026 16:45:42 GMT
-Recency Score: 6/10
-URL: https://news.google.com/rss/articles/CBMi3AFBVV95cUxOMWZFY1oxN0lfU01rSzRZZFdacWtoSnhxMGhrUWtFOUxhSFBPVFNhWmgxMGh0R1BHbWVBazdFOFQ5MmswM29tb2Z5a184RmpHU3lOSENoTXJYLTVoUi1yZmZObS16WWw0OS12REk0UkQya01QRm1SUUVKQ2V1UFNXcTlrRkVxQXZJdTFyTzAtMHlrbXhkMmlyOVlvbHhqdjZjbmNRS3ZTdTNzaTV5emhKODZJMnhFcDg0SEhLZnJEUmJjd1ZWVnlUMHZwVm02MjhndXBRaWI3UEZTLTZY?oc=5
-
----
-Title: Rag & Bone's Elevated Essentials Are 25% Off - InsideHook
-Source: InsideHook
-Published: Thu, 19 Mar 2026 15:46:01 GMT
-Recency Score: 6/10
-URL: https://news.google.com/rss/articles/CBMiWkFVX3lxTE1Eb3didm5IWXcxamg2TzYzSVFaUzlxTFVXSGE2WU1VY0RoSDh1Rl9NRW5Sbk5lOHRxVkU3YVlGRDUtR2R4cWJvTmNsYWJpZ0U5OFZYRi1nbHR2d9IBX0FVX3lxTE56OUlkcS1ySE9XX2FLSmdOaVRnbEhiQUNFRUVpLVdFaF9TQ0RMUElhZVFCdlhlaDdDZ0JXajhVSzd6M1BxOTBGamlkU0lFQkJfWjY5dVUxMWhsWXRhM3hR?oc=5
-
----
-Title: Beyond Prompt Caching: 5 More Things You Should Cache in RAG Pipelines - Towards Data Science
+Title: A Developer’s Guide to Building Scalable AI: Workflows vs Agents - Towards Data Science
 Source: Towards Data Science
-Published: Thu, 19 Mar 2026 15:00:00 GMT
-Recency Score: 6/10
-URL: https://news.google.com/rss/articles/CBMiowFBVV95cUxPMl9VTENYdnFIZVBRNDNMeTVlZ2E4YjBxWlVNcUZ6eWVTd25uUHR2T3hIODNnLUQwdVhfMDVLVTZoSnA3QU9pN0kxdlZHTWI3VmRlQUxtR2h3QVdyN2duSzh3d2JoLTBVdldvM1JUNC1hZ0dJZ014RkRTUkZBSHE3N19GZ2drcHhtRm9QUEo0N29XaE16SXNUWTFNTUctQWE5NGw0?oc=5
+Published: Fri, 27 Jun 2025 07:00:00 GMT
+Recency Score: 2/10
+URL: https://news.google.com/rss/articles/CBMimgFBVV95cUxPalJqT1IycE4xVFIxY3NyOTI2cEx4TWtkTXVCRkVsMlI3RG1HbjBSQ0d2Y0VVbnJockdHanZZeW05RjF1dlpoWVp4SV9ER3luOFlBSkl5VXpZai1UWTNmeTc1SjFvMUJheFJ3LU1MTm5oa1daTkZmdUx4TjlaR2tiMVl1R2o1cEpXN1JlU0FEMmFiTmFqcFVqZHh3?oc=5
 
 ---
-Title: No Kings Protest Coming on March 28 — 19 Events in San Diego County — RSVP Here and Sign Up to Be Rag Photographer - OB Rag
-Source: OB Rag
-Published: Wed, 18 Mar 2026 19:52:46 GMT
-Recency Score: 6/10
-URL: https://news.google.com/rss/articles/CBMi0wFBVV95cUxOdTlqa1JQVk1ja00yeGpmaTJoRF9EdjdGMXlxTktEbkhMNC0yUUptRVVESEZNc2RHSTF4X0w4U3hPWmZwNEFrSGx0cGJHV2g5V3RNeHg5VVJ2eU9PQ09mbGJvZU8xa2JvNlJqMEp0OFVGZ2pDbkNLMW9QZHNxamoyc0NQSjRHQ00xQzFMSFRZTGdiRnkyVmxEYkZ6Zmk4QjJ5TDZnSWF3akNBMDVMU1hCOXd5dmkwWmhUbEg5clNZbTdlbFVUel9lNktsYnllVmgwTmVN?oc=5
+Title: UB-Mesh: A Cost-Efficient, Scalable Network Architecture for Large-Scale LLM Training - MarkTechPost
+Source: MarkTechPost
+Published: Thu, 03 Apr 2025 07:00:00 GMT
+Recency Score: 2/10
+URL: https://news.google.com/rss/articles/CBMiwgFBVV95cUxOMWw0MG55TjZJYnhFaS1VT0xFS3l5UElLYlBSWU8tV2tDdy1LYTdPQ29vc1czZVp1NF9tbWdrc1dxRVB1VW1URWFCTUpTMVVBSGdGUURJWVVkcGVjZkhJU2oyUFhxc0Z2RlhfaG5IWVRnaWdQcHVXVWN3SGljXzE0WEpOMnMySkh5aHV5dkZYMGQyYlEwSlNvRGNHNEd1bzc0SGhYbWxlMnc1c0dFREY4TzNXOUxCV2hJREdyVkF5ZHFKZ9IBxwFBVV95cUxNUkRMbllzT1FGeVFDTDgwdDBmaEgwM3VLNEFkeEpkRk5lUXZRalg3YUNqTjlja2Flck9POE4xY3FDMGJUbnhyUWZFMmQtMVFOMk1zcHZ0Y2tOU0hFSFA5WGZZUGJnWFhfS2hPdlRHT21tTTJ1NEdvaTRRdk5WcHJXRXN4T0lKUkxxM1dGVkZsVzZsQUdGbUxlQmt5Z1hoWXVJaXhkRzAwdG9MNEtNYjROdEVJb2tVQkJ2TkRFS1VsVEdZU09YallJ?oc=5
 
 ---
-Title: Oily rags in trash bag cause porch fire at Maine home, officials say - WMTW
-Source: WMTW
-Published: Wed, 18 Mar 2026 19:10:00 GMT
-Recency Score: 6/10
-URL: https://news.google.com/rss/articles/CBMinAFBVV95cUxQR0J5X0dBalhsVHZRS3VkcFlST1VVVmxGWlpjRGZTa0Mza2lFWmhPemc2ckZWOXhjcUh1bXc5bEtLRDdtQkJfTWZzdE5YNFhISnByaHhSX05hZll0aXpjME1EaHFrSG9mbTRPd1RrUHVMYjVaLUN2bEdiWnp1YVdXOHU4ZGJEc3dkQlJLNXhfb2dZdVhhazVGY2M2NFg?oc=5
+Title: Distributed inference with collaborative AI agents for Telco-powered Smart-X - Amazon Web Services
+Source: Amazon Web Services
+Published: Thu, 20 Mar 2025 07:00:00 GMT
+Recency Score: 2/10
+URL: https://news.google.com/rss/articles/CBMiuAFBVV95cUxQZmRlcFhGemdqUU1VQWllRzFWeDAyVWFpbFB0UDlseWk4Zk5lT2t5MnE2bnZIcUVaMzBjbUhwbm44VFpfNjJBYm1NWlRJWjl4dmxoYmJFVTh1UXByX1FRN2ZGQzUzNjAwYWRiNEdTV1BvR1lCOHRwM051NXBGTVR4QUtMMURIQVQzWEVBaWhJWEZmR1lfbVo2NmJYS2ZfUHJrRnRnUHlodHNSdFByM2VNV0hMQnItdF9W?oc=5
 
 ---
-Title: Openings & Closings: Goop Kitchen; Neuhaus; Gothic Cabinet Craft; Casa Salvo; Salomon; Columbus Park Dental; Lucia; Ayat Hinds Hall - West Side Rag
-Source: West Side Rag
-Published: Wed, 18 Mar 2026 12:30:18 GMT
-Recency Score: 6/10
-URL: https://news.google.com/rss/articles/CBMi1AFBVV95cUxPQzJzN3lLTnE3TFZ1SEN5NVF2dVo3VjgyXzVBY2VFbERwTzc1TzFEMmFjUmRHcWlBMWZybDdlYTVxTmhCQjdFN3d2MGZUanRKNTNkZTJ1ZEJFRW1vZzBGVEtLX0UzRkl1cXRPUWRqWnBqVHpkaFJNMFpBbThnMDdzUkFSTThOUWNWVzdQZWpjajEwVVZVTHlRRnFGN2tZQmdPQzlMd3NJOXhtbW05aDhUWk9XZWhBTmVPZUhrdlJSNlNYOFJQcmhkUHNNOVlfbnJnaGRzTw?oc=5
+Title: From Predictive to Generative – How Michelangelo Accelerates Uber’s AI Journey - Uber
+Source: Uber
+Published: Thu, 02 May 2024 07:00:00 GMT
+Recency Score: 2/10
+URL: https://news.google.com/rss/articles/CBMia0FVX3lxTE9rN3Y4VjRPd1hZdTdVSEE0NUVvQWJydXFwd3VsMEttNUpaOTZadlBiLVU4YkVpM2cyQUdBWkhVbklnMEFNbkY2R3FOYm5jUXRFZjNmVnFMclVIdk5PbHVNc3U1NlJMa2JYbVpJ?oc=5
 
 ---
-Title: Tiger Rag Radio Podcast: Charlie Crème on NCAA Tournament | Revenue Share Discussion and Cory Diaz Predictions - TigerRag.com |
-Source: TigerRag.com |
-Published: Wed, 18 Mar 2026 03:29:29 GMT
-Recency Score: 6/10
-URL: https://news.google.com/rss/articles/CBMizgFBVV95cUxPS1VuSzJTaWdjUHhNLWcyaUZkU3otVVE1WmsxV0l6U2hzVVcxS1Z0b0xUREtCdHAwRW5wc29mMGtEellUY3Qyc0tXUnRjbUV2MFE0Qy1ZT1VlYXVKYm1qelQyU2EzaU5VT245amhZbkxZal80ZThQNTdOUXpYeWFtUVZPbmlBSWJ5M3dyY2ltVEdPMEFGNmx4VTNLLXZDQmNKRkdlVnNvOGR4YkZneUxrNE9sa1JCbVRPVjNHT1prYU9WRi1sbWdES0VoRTd1UQ?oc=5
+Title: Logarithm: A logging engine for AI training workflows and services - Engineering at Meta Blog
+Source: Engineering at Meta Blog
+Published: Mon, 18 Mar 2024 07:00:00 GMT
+Recency Score: 2/10
+URL: https://news.google.com/rss/articles/CBMiuwFBVV95cUxOVjM1LWZfTXQxTmtXRzRvRTlZV3RXby03Wk5jRS1ib2NhX1lDTXlpS2RXR1pEakF0R2VRZnNVRnA0bWdWUnpGaExUSnhnM2tTa21QSEtKeVA3YV9pRHhpenM3NnpfX0NzTnM2UnpDTkdEX0NTbVBZZlJON3RkUXM2RDZSbldHaEtfX21NcmdCc0RHLTJnbFExUFdTZTc3elBfdjhRdktPVFQ2LTVKT1RBa1J2cUFxcEhjQTk0?oc=5
 
 ---
-Title: Communities D.I.Y. Projects and Creating ‘Third Places’ in Urban Neighborhoods - OB Rag
-Source: OB Rag
-Published: Tue, 17 Mar 2026 17:40:29 GMT
-Recency Score: 5/10
-URL: https://news.google.com/rss/articles/CBMiowFBVV95cUxOZFdyRmpnWEN4NmpmYVZSTUw5VTJuRl91NFdOakx1ZHZiZXVZcVlWT2UzVGh4WnNmWHZPakxKZXBKUHl5aVo5S1drYi1jbnQyNnAydS1CbVhiNHlQMDVoZlFWcHIxdmhJb1ltdU1lcF9sc3czMF9ua0I0QXpiTEkwSGNZcVBaZ3YyY196Mzl4dzh6YnlQN1hMd0VBMy1GeVJCYmlj?oc=5
+Title: Building Meta’s GenAI Infrastructure - Engineering at Meta Blog
+Source: Engineering at Meta Blog
+Published: Tue, 12 Mar 2024 07:00:00 GMT
+Recency Score: 2/10
+URL: https://news.google.com/rss/articles/CBMinwFBVV95cUxOOEhHTzdTNlhOb1lrWlRQX2ZxTHZhcE8yaUc5Y3UzWV9FV2lvUWd1TjZCdFZmaF9UcUNLVmRpd3Y5VzRlLWt5TFk3VExXV2FHUUdQN1h4aHpXNjRsd3BKclk4V3AwM041dElKbkJOc1B4M2k0VkFCdm01bjFpZll1NHhvYlU2YTR2ajhYNUUxU21NS3JjQ3BhZ2tRdnVyNzg?oc=5
 
 ---
-Title: Nordstrom’s Spring Sale Includes Rag & Bone’s Viral Sweatpant Jeans - Yahoo
-Source: Yahoo
-Published: Tue, 17 Mar 2026 15:04:00 GMT
-Recency Score: 5/10
-URL: https://news.google.com/rss/articles/CBMiogFBVV95cUxQZnlhQldoMU5Iek5Ra2tjMHNHODhVNmFPbS1lMm9CN2RubWUtQ2pPZ0tERWJOanNJaUhIVlFycG5BZjlXdmNMWFdJZG5WWGpLSzJfRTlfT1phTjRnUnVva0FmX08yN2FJWWp5VjBGMlB5ODNydTR1V3VZWVZIRnp2ZUNPanN3dnRKS3AtWkYyZUdZaThEX0dBSWUwYmRTR1BpcXc?oc=5
-
----
-Title: 17th Day and Third Week of Trump’s War With Iran - OB Rag
-Source: OB Rag
-Published: Tue, 17 Mar 2026 07:00:00 GMT
-Recency Score: 5/10
-URL: https://news.google.com/rss/articles/CBMikwFBVV95cUxOTTRVaTRCTkxLZnFFY1BpbXJkOGZNQ3BGZlBKVnY3empfcWtndjBQY19UdmFOdWdlVFVtVXlEOExXVkJqOUZqTUpsT2lnRHkwaFM0TE9mWXJRM0FwTzBaQm5oejlROU8wMC1uOWp6UXc3UkgyTEhoQzVhb3BObWNJQ09UNGVHRmpvQnVMQ3hIN1JmZ0E?oc=5
-
----
-Title: Explained: the proposed RAG rating system for BCA metrics - The PIE News
-Source: The PIE News
-Published: Mon, 16 Mar 2026 17:18:42 GMT
-Recency Score: 5/10
-URL: https://news.google.com/rss/articles/CBMihwFBVV95cUxNODdvUnU5TkxUX054OEp3ZnpUdVE4dTV5aFVxalRWTTNtVVhUTVRLaDIxMjNfeGk3TTBybHJEOEFhSzJfUmQ1cXA5TVpNU2YzamZXd0kxaGVLZHZINXFfZmJwZzUwc1dJUlQxbmtpT2p4dndhY3lOd1drQ1ZmQmg0bHB3V1k0RGs?oc=5
-
----
-Title: Your Model’s Memory Has Been Compromised: Adversarial Hubness in RAG Systems - Cisco Blogs
-Source: Cisco Blogs
-Published: Thu, 12 Mar 2026 16:03:42 GMT
-Recency Score: 4/10
-URL: https://news.google.com/rss/articles/CBMiowFBVV95cUxONGFlLUlFUUdBaERkdWNTMThMa0ZicFFMcnp1VzRJTHNHb3BPZWVHTUJ0Qm45VzJOMUU0R3Btc0U1OWtOeWM5ajJrbE1YRTJwaEpxY1h5d2FEU2pYTzJrekp3RmxUZExBLVJHcmUwcjlXOUNtODBBNktMVDF2aXNsNWxJdExGUEVPN2g0NGYtN3hBQWNlV09OY2hYdHNYaGZWVEVB?oc=5
-
----
-Title: Agents need vector search more than RAG ever did - VentureBeat
-Source: VentureBeat
-Published: Thu, 12 Mar 2026 07:00:00 GMT
-Recency Score: 4/10
-URL: https://news.google.com/rss/articles/CBMimwFBVV95cUxPdzdCbFZrR1BTZ2RUQjNpSmp0cmhLblhLUmEzMkc3LUJQOXJNSjNVclpEUFNhTHpOR3dGVU12U3BvZGJTdHJkQnhEZmRubms0cVF4LU1SMnF2UnRQTllDM2NUalNIYVF4ak1SS1ZQT19KZnB4U3lsNVFTYlpaNWZET21lNXhXcG5IVlUxaERLRFo3OVg1aS13ZmRGOA?oc=5
-
----
-Title: Understanding Context and Contextual Retrieval in RAG - Towards Data Science
-Source: Towards Data Science
-Published: Sat, 07 Mar 2026 08:00:00 GMT
-Recency Score: 3/10
-URL: https://news.google.com/rss/articles/CBMijgFBVV95cUxPQklLb0JhUHFWeWtmRFhQR1lhY1daNUhtdnJiOVlheVFQS2J1V1lqSTktMVpVb0JDWjdEUWRTQ1dmZjJ6UURoRjRIbVk2aWVyUGRCeE9aaXN2VnVaYXJ4Z3k2cXpXaHRqVGVqOTlXX25UajRRZmRfQ1o3X2FWdVlsU19oTnBmcGJncWtzUjZB?oc=5
-
----
-Title: Agentic RAG vs Classic RAG: From a Pipeline to a Control Loop - Towards Data Science
-Source: Towards Data Science
-Published: Tue, 03 Mar 2026 08:00:00 GMT
-Recency Score: 3/10
-URL: https://news.google.com/rss/articles/CBMilwFBVV95cUxNbW54S2R5bXM5UnpGbkNYckh2T0dYZ0VIM3ZWRnZLeGt3S3JwZzdXWmxQMWdBTUVad0VWMklrZi11TnRVUmNDMGdTS2h6Q2lPYnBnSUotQXZLYzJKVktILTRmbWZVdy1NTUI4d1dNTVRCZmV5OVFtMm5YclM5S09vSWRiVFBwNW5mb21KT3dtVXVNdVdyc2Rz?oc=5
+Title: Efficiently Scale LLM Training Across a Large GPU Cluster with Alpa and Ray - NVIDIA Developer
+Source: NVIDIA Developer
+Published: Mon, 15 May 2023 07:00:00 GMT
+Recency Score: 2/10
+URL: https://news.google.com/rss/articles/CBMirwFBVV95cUxOZDVvN0R5SkVGZ1cwWXJQM0NvNkpNWlJkeVUxbTFpOHZmRTNueWxGb01kOHR1U2d5bERvQ3EwV0ZfOEFOT1I1ZTctTFA5b1VGbU1HTTZjU1VqR20zLWlUYjJvTHZIbnpIWU5xQkw3OTdVY2ZWd3cyZ1hsek5BTG5kTjZ4cklPOTZNQ0ZxNXc5TFN1MlBpaGtEb0E4V1dTUUc0N2tlUUhoalA5X19Rcm5F?oc=5
 
 
 ### SOURCE URLS (for idea-generator)
-- Sale backpack sale rag and bone mini pilot backpack Flash Sales Rag Bone Mini Pilot Backpack 450 liked on Polyvore featuring bags backpacks winter picks - маяк32.рф — маяк32.рф
-  URL: https://news.google.com/rss/articles/CBMiWEFVX3lxTFBaZUhkbF9VOFBjMHEwUFhsQVhpUkhSMERzQzdkNnJIUXkyV1lCRkE0YmU3SURrcURTQnNrUjB6NDNjZ1d6elMzTTc2MVBmOFVFT2RsMUFaMDU?oc=5
-- Commanders' 2026 NFL Draft buzz puts rags-to-riches rookie on notice - Riggo's Rag — Riggo's Rag
-  URL: https://news.google.com/rss/articles/CBMimgFBVV95cUxNaXFmVTM1dk1qVGY5ckwtOV9VRGhJeVJfUWFwWFJJR3FGdVMxSEEyNUhIX1U0RHhNcmlkVnJ2TUlFbFF3WWVleFVSVDlTX2JTQ2ZQNzh3bGFudDlwcDFaZkJHdmlWd25Rb29jd05nR3hKb0ZYZEZxeno2bE9ZemxJV29aa0xkR0ZLZ2xFUkpaLVVWTlFGN1BFR0JR?oc=5
-- Use a Rag Rug As a Bath Mat - New York Magazine — New York Magazine
-  URL: https://news.google.com/rss/articles/CBMid0FVX3lxTFA1elFWb0hZQm4zSUVBUG9qM19Fd1F2anNGVzJNbXVqYTZybEcwQzROR0ZfOUVCTU1MR1I0UHZWcjBnVGg3X0dNV0xCTE1RNEZ4ZVpEejV4emZDclJ0MVdTaS1TX29uZ3B6U3JXWDBWV2dIMmZ0ZXc0?oc=5
-- Narrowing bands of compliance: How the UK’s new RAG system will impact international student recruitment - ICEF Monitor — ICEF Monitor
-  URL: https://news.google.com/rss/articles/CBMi0gFBVV95cUxNMzZUSk5sdXdBc0tNTEFxSUN3TW9UeXBfZ3VmRF9TdnFHU0NXQjgtcTVvQjZ5NjN5STlxNGhYZjc5R3lBb05SVVM2QW9XYTRLSDRZWGxleGUzWXFmTUw4cHNnSHFGVHE0UkV3ZGY4T204YmRZbmZDTVNLUWk2NzNvNTN5RHpGaVlsT21JdW5jVWw5djdJeDNtWnVYSXFzSE9lekZzS1U4dzNpc1pSR1hGODR6Vm5mcDJkVlJHM0hCbnh2aEZDM3VIQ19wcjB4OHdqbWc?oc=5
-- Use RAG for video generation using Amazon Bedrock and Amazon Nova Reel | Artificial Intelligence - Amazon Web Services (AWS) — Amazon Web Services (AWS)
-  URL: https://news.google.com/rss/articles/CBMiuAFBVV95cUxPZVgwUHVYLXQ3LTRJTEY4UTN0VzZ6dzhBaVlPbDJTZ3JQMWJoWjZXLTdOclFQWWgwN3NCRk5pSzRwdTdxbGl2cW5JcEdRR3BRUXVZckR0YUotZHlVTUxGM1ZFM19oVXEwNWhHbGoxOGpSMzYwMVpGWGVfSy1pU1dSb1R1dFFXWHl5d3V3NmpuQzJFdm05VVRTWU5CaUFMc3VfTVY5RFJ3V05mU21kSGNFczBqSDhCUTlx?oc=5
-- Introducing V-RAG: revolutionizing AI-powered video production with Retrieval Augmented Generation - Amazon Web Services (AWS) — Amazon Web Services (AWS)
-  URL: https://news.google.com/rss/articles/CBMi3AFBVV95cUxOMWZFY1oxN0lfU01rSzRZZFdacWtoSnhxMGhrUWtFOUxhSFBPVFNhWmgxMGh0R1BHbWVBazdFOFQ5MmswM29tb2Z5a184RmpHU3lOSENoTXJYLTVoUi1yZmZObS16WWw0OS12REk0UkQya01QRm1SUUVKQ2V1UFNXcTlrRkVxQXZJdTFyTzAtMHlrbXhkMmlyOVlvbHhqdjZjbmNRS3ZTdTNzaTV5emhKODZJMnhFcDg0SEhLZnJEUmJjd1ZWVnlUMHZwVm02MjhndXBRaWI3UEZTLTZY?oc=5
-- Rag & Bone's Elevated Essentials Are 25% Off - InsideHook — InsideHook
-  URL: https://news.google.com/rss/articles/CBMiWkFVX3lxTE1Eb3didm5IWXcxamg2TzYzSVFaUzlxTFVXSGE2WU1VY0RoSDh1Rl9NRW5Sbk5lOHRxVkU3YVlGRDUtR2R4cWJvTmNsYWJpZ0U5OFZYRi1nbHR2d9IBX0FVX3lxTE56OUlkcS1ySE9XX2FLSmdOaVRnbEhiQUNFRUVpLVdFaF9TQ0RMUElhZVFCdlhlaDdDZ0JXajhVSzd6M1BxOTBGamlkU0lFQkJfWjY5dVUxMWhsWXRhM3hR?oc=5
-- Beyond Prompt Caching: 5 More Things You Should Cache in RAG Pipelines - Towards Data Science — Towards Data Science
-  URL: https://news.google.com/rss/articles/CBMiowFBVV95cUxPMl9VTENYdnFIZVBRNDNMeTVlZ2E4YjBxWlVNcUZ6eWVTd25uUHR2T3hIODNnLUQwdVhfMDVLVTZoSnA3QU9pN0kxdlZHTWI3VmRlQUxtR2h3QVdyN2duSzh3d2JoLTBVdldvM1JUNC1hZ0dJZ014RkRTUkZBSHE3N19GZ2drcHhtRm9QUEo0N29XaE16SXNUWTFNTUctQWE5NGw0?oc=5
-- No Kings Protest Coming on March 28 — 19 Events in San Diego County — RSVP Here and Sign Up to Be Rag Photographer - OB Rag — OB Rag
-  URL: https://news.google.com/rss/articles/CBMi0wFBVV95cUxOdTlqa1JQVk1ja00yeGpmaTJoRF9EdjdGMXlxTktEbkhMNC0yUUptRVVESEZNc2RHSTF4X0w4U3hPWmZwNEFrSGx0cGJHV2g5V3RNeHg5VVJ2eU9PQ09mbGJvZU8xa2JvNlJqMEp0OFVGZ2pDbkNLMW9QZHNxamoyc0NQSjRHQ00xQzFMSFRZTGdiRnkyVmxEYkZ6Zmk4QjJ5TDZnSWF3akNBMDVMU1hCOXd5dmkwWmhUbEg5clNZbTdlbFVUel9lNktsYnllVmgwTmVN?oc=5
-- Oily rags in trash bag cause porch fire at Maine home, officials say - WMTW — WMTW
-  URL: https://news.google.com/rss/articles/CBMinAFBVV95cUxQR0J5X0dBalhsVHZRS3VkcFlST1VVVmxGWlpjRGZTa0Mza2lFWmhPemc2ckZWOXhjcUh1bXc5bEtLRDdtQkJfTWZzdE5YNFhISnByaHhSX05hZll0aXpjME1EaHFrSG9mbTRPd1RrUHVMYjVaLUN2bEdiWnp1YVdXOHU4ZGJEc3dkQlJLNXhfb2dZdVhhazVGY2M2NFg?oc=5
-- Openings & Closings: Goop Kitchen; Neuhaus; Gothic Cabinet Craft; Casa Salvo; Salomon; Columbus Park Dental; Lucia; Ayat Hinds Hall - West Side Rag — West Side Rag
-  URL: https://news.google.com/rss/articles/CBMi1AFBVV95cUxPQzJzN3lLTnE3TFZ1SEN5NVF2dVo3VjgyXzVBY2VFbERwTzc1TzFEMmFjUmRHcWlBMWZybDdlYTVxTmhCQjdFN3d2MGZUanRKNTNkZTJ1ZEJFRW1vZzBGVEtLX0UzRkl1cXRPUWRqWnBqVHpkaFJNMFpBbThnMDdzUkFSTThOUWNWVzdQZWpjajEwVVZVTHlRRnFGN2tZQmdPQzlMd3NJOXhtbW05aDhUWk9XZWhBTmVPZUhrdlJSNlNYOFJQcmhkUHNNOVlfbnJnaGRzTw?oc=5
-- Tiger Rag Radio Podcast: Charlie Crème on NCAA Tournament | Revenue Share Discussion and Cory Diaz Predictions - TigerRag.com | — TigerRag.com |
-  URL: https://news.google.com/rss/articles/CBMizgFBVV95cUxPS1VuSzJTaWdjUHhNLWcyaUZkU3otVVE1WmsxV0l6U2hzVVcxS1Z0b0xUREtCdHAwRW5wc29mMGtEellUY3Qyc0tXUnRjbUV2MFE0Qy1ZT1VlYXVKYm1qelQyU2EzaU5VT245amhZbkxZal80ZThQNTdOUXpYeWFtUVZPbmlBSWJ5M3dyY2ltVEdPMEFGNmx4VTNLLXZDQmNKRkdlVnNvOGR4YkZneUxrNE9sa1JCbVRPVjNHT1prYU9WRi1sbWdES0VoRTd1UQ?oc=5
-- Communities D.I.Y. Projects and Creating ‘Third Places’ in Urban Neighborhoods - OB Rag — OB Rag
-  URL: https://news.google.com/rss/articles/CBMiowFBVV95cUxOZFdyRmpnWEN4NmpmYVZSTUw5VTJuRl91NFdOakx1ZHZiZXVZcVlWT2UzVGh4WnNmWHZPakxKZXBKUHl5aVo5S1drYi1jbnQyNnAydS1CbVhiNHlQMDVoZlFWcHIxdmhJb1ltdU1lcF9sc3czMF9ua0I0QXpiTEkwSGNZcVBaZ3YyY196Mzl4dzh6YnlQN1hMd0VBMy1GeVJCYmlj?oc=5
-- Nordstrom’s Spring Sale Includes Rag & Bone’s Viral Sweatpant Jeans - Yahoo — Yahoo
-  URL: https://news.google.com/rss/articles/CBMiogFBVV95cUxQZnlhQldoMU5Iek5Ra2tjMHNHODhVNmFPbS1lMm9CN2RubWUtQ2pPZ0tERWJOanNJaUhIVlFycG5BZjlXdmNMWFdJZG5WWGpLSzJfRTlfT1phTjRnUnVva0FmX08yN2FJWWp5VjBGMlB5ODNydTR1V3VZWVZIRnp2ZUNPanN3dnRKS3AtWkYyZUdZaThEX0dBSWUwYmRTR1BpcXc?oc=5
-- 17th Day and Third Week of Trump’s War With Iran - OB Rag — OB Rag
-  URL: https://news.google.com/rss/articles/CBMikwFBVV95cUxOTTRVaTRCTkxLZnFFY1BpbXJkOGZNQ3BGZlBKVnY3empfcWtndjBQY19UdmFOdWdlVFVtVXlEOExXVkJqOUZqTUpsT2lnRHkwaFM0TE9mWXJRM0FwTzBaQm5oejlROU8wMC1uOWp6UXc3UkgyTEhoQzVhb3BObWNJQ09UNGVHRmpvQnVMQ3hIN1JmZ0E?oc=5
-- Explained: the proposed RAG rating system for BCA metrics - The PIE News — The PIE News
-  URL: https://news.google.com/rss/articles/CBMihwFBVV95cUxNODdvUnU5TkxUX054OEp3ZnpUdVE4dTV5aFVxalRWTTNtVVhUTVRLaDIxMjNfeGk3TTBybHJEOEFhSzJfUmQ1cXA5TVpNU2YzamZXd0kxaGVLZHZINXFfZmJwZzUwc1dJUlQxbmtpT2p4dndhY3lOd1drQ1ZmQmg0bHB3V1k0RGs?oc=5
-- Your Model’s Memory Has Been Compromised: Adversarial Hubness in RAG Systems - Cisco Blogs — Cisco Blogs
-  URL: https://news.google.com/rss/articles/CBMiowFBVV95cUxONGFlLUlFUUdBaERkdWNTMThMa0ZicFFMcnp1VzRJTHNHb3BPZWVHTUJ0Qm45VzJOMUU0R3Btc0U1OWtOeWM5ajJrbE1YRTJwaEpxY1h5d2FEU2pYTzJrekp3RmxUZExBLVJHcmUwcjlXOUNtODBBNktMVDF2aXNsNWxJdExGUEVPN2g0NGYtN3hBQWNlV09OY2hYdHNYaGZWVEVB?oc=5
-- Agents need vector search more than RAG ever did - VentureBeat — VentureBeat
-  URL: https://news.google.com/rss/articles/CBMimwFBVV95cUxPdzdCbFZrR1BTZ2RUQjNpSmp0cmhLblhLUmEzMkc3LUJQOXJNSjNVclpEUFNhTHpOR3dGVU12U3BvZGJTdHJkQnhEZmRubms0cVF4LU1SMnF2UnRQTllDM2NUalNIYVF4ak1SS1ZQT19KZnB4U3lsNVFTYlpaNWZET21lNXhXcG5IVlUxaERLRFo3OVg1aS13ZmRGOA?oc=5
-- Understanding Context and Contextual Retrieval in RAG - Towards Data Science — Towards Data Science
-  URL: https://news.google.com/rss/articles/CBMijgFBVV95cUxPQklLb0JhUHFWeWtmRFhQR1lhY1daNUhtdnJiOVlheVFQS2J1V1lqSTktMVpVb0JDWjdEUWRTQ1dmZjJ6UURoRjRIbVk2aWVyUGRCeE9aaXN2VnVaYXJ4Z3k2cXpXaHRqVGVqOTlXX25UajRRZmRfQ1o3X2FWdVlsU19oTnBmcGJncWtzUjZB?oc=5
-- Agentic RAG vs Classic RAG: From a Pipeline to a Control Loop - Towards Data Science — Towards Data Science
-  URL: https://news.google.com/rss/articles/CBMilwFBVV95cUxNbW54S2R5bXM5UnpGbkNYckh2T0dYZ0VIM3ZWRnZLeGt3S3JwZzdXWmxQMWdBTUVad0VWMklrZi11TnRVUmNDMGdTS2h6Q2lPYnBnSUotQXZLYzJKVktILTRmbWZVdy1NTUI4d1dNTVRCZmV5OVFtMm5YclM5S09vSWRiVFBwNW5mb21KT3dtVXVNdVdyc2Rz?oc=5
+- Exploring a space-based, scalable AI infrastructure system design - Research at Google — Research at Google
+  URL: https://news.google.com/rss/articles/CBMimgFBVV95cUxNME1JUnFDODB3UktzYm1MMHpwb193anRMdUpfTFlTdFRyMEtaZ0hoUWNHWldlbzdDQ3V1aEJLbkdCZkRsOTFSQi1XalltV3VFdkZRZ29uV20xWWNEcGdVRlg0ZnhRQU45dktEZ3o2bXh1RnBpU2FwV1pLTmo1VXA0R21XLWwwUWxXcDZFT216TF9kQmplNWRRTDdB?oc=5
+- Performance, efficiency, and cost analysis of wafer-scale AI accelerators vs. single-chip GPUs - ScienceDirect.com — ScienceDirect.com
+  URL: https://news.google.com/rss/articles/CBMidkFVX3lxTE5mank5R0ZoUGp1Vkp4TkE3djFhZXh6NEdDZEliMVNPUGNqQk5xTnZ6QjZjb1VrdnpzRkZuNlRmcXdyOWJ2NS1zRFZ6Y0dCVFp2X0VrYkhTdXc1TTU1U0xGaFR1bTA0RFpTVUlFQktWczh5NVJDT3c?oc=5
+- Meta’s Infrastructure Evolution and the Advent of AI - Engineering at Meta Blog — Engineering at Meta Blog
+  URL: https://news.google.com/rss/articles/CBMirwFBVV95cUxPVEpDSmdobjhEV25aTHhhZlVodWpSNG1CeExoSmhib2paTnFOT2d3SXFJLU1COXZYUGJWdW42Wk80UkZOU3JPak8wRmlITjdqWktvUWp5Y1o0aVFuLWF5dDJLUWZUX2I4N3dwdzRrTElJSl85SW1WZEFHalJmNjNGRklJWTJ6dTlxQ3d4ZVJlTDBBblUxUHphUGViMDFMbEpHUi03Vi1pTlMxeVNxT1JB?oc=5
+- How Meta keeps its AI hardware reliable - Engineering at Meta Blog — Engineering at Meta Blog
+  URL: https://news.google.com/rss/articles/CBMinwFBVV95cUxOREtqb3dYM2xMRUVuVFVhZzM2azR6RlZWWklhMzFtODhFTGhJSEY2NGhCOHJTLXRLai1seE1CVDM4SHhsUGRRMUJCYTVQRWlmd3BHeldka2xpSENBc0IyQzdvRWJyVTNCamlsXzkwTUlYa01fUGpxbmZiblFSYzNTQjNVZGV0NlRXeFJqUXdObkZPeDFIdTZ0SU9ydFJKQUU?oc=5
+- A Developer’s Guide to Building Scalable AI: Workflows vs Agents - Towards Data Science — Towards Data Science
+  URL: https://news.google.com/rss/articles/CBMimgFBVV95cUxPalJqT1IycE4xVFIxY3NyOTI2cEx4TWtkTXVCRkVsMlI3RG1HbjBSQ0d2Y0VVbnJockdHanZZeW05RjF1dlpoWVp4SV9ER3luOFlBSkl5VXpZai1UWTNmeTc1SjFvMUJheFJ3LU1MTm5oa1daTkZmdUx4TjlaR2tiMVl1R2o1cEpXN1JlU0FEMmFiTmFqcFVqZHh3?oc=5
+- UB-Mesh: A Cost-Efficient, Scalable Network Architecture for Large-Scale LLM Training - MarkTechPost — MarkTechPost
+  URL: https://news.google.com/rss/articles/CBMiwgFBVV95cUxOMWw0MG55TjZJYnhFaS1VT0xFS3l5UElLYlBSWU8tV2tDdy1LYTdPQ29vc1czZVp1NF9tbWdrc1dxRVB1VW1URWFCTUpTMVVBSGdGUURJWVVkcGVjZkhJU2oyUFhxc0Z2RlhfaG5IWVRnaWdQcHVXVWN3SGljXzE0WEpOMnMySkh5aHV5dkZYMGQyYlEwSlNvRGNHNEd1bzc0SGhYbWxlMnc1c0dFREY4TzNXOUxCV2hJREdyVkF5ZHFKZ9IBxwFBVV95cUxNUkRMbllzT1FGeVFDTDgwdDBmaEgwM3VLNEFkeEpkRk5lUXZRalg3YUNqTjlja2Flck9POE4xY3FDMGJUbnhyUWZFMmQtMVFOMk1zcHZ0Y2tOU0hFSFA5WGZZUGJnWFhfS2hPdlRHT21tTTJ1NEdvaTRRdk5WcHJXRXN4T0lKUkxxM1dGVkZsVzZsQUdGbUxlQmt5Z1hoWXVJaXhkRzAwdG9MNEtNYjROdEVJb2tVQkJ2TkRFS1VsVEdZU09YallJ?oc=5
+- Distributed inference with collaborative AI agents for Telco-powered Smart-X - Amazon Web Services — Amazon Web Services
+  URL: https://news.google.com/rss/articles/CBMiuAFBVV95cUxQZmRlcFhGemdqUU1VQWllRzFWeDAyVWFpbFB0UDlseWk4Zk5lT2t5MnE2bnZIcUVaMzBjbUhwbm44VFpfNjJBYm1NWlRJWjl4dmxoYmJFVTh1UXByX1FRN2ZGQzUzNjAwYWRiNEdTV1BvR1lCOHRwM051NXBGTVR4QUtMMURIQVQzWEVBaWhJWEZmR1lfbVo2NmJYS2ZfUHJrRnRnUHlodHNSdFByM2VNV0hMQnItdF9W?oc=5
+- From Predictive to Generative – How Michelangelo Accelerates Uber’s AI Journey - Uber — Uber
+  URL: https://news.google.com/rss/articles/CBMia0FVX3lxTE9rN3Y4VjRPd1hZdTdVSEE0NUVvQWJydXFwd3VsMEttNUpaOTZadlBiLVU4YkVpM2cyQUdBWkhVbklnMEFNbkY2R3FOYm5jUXRFZjNmVnFMclVIdk5PbHVNc3U1NlJMa2JYbVpJ?oc=5
+- Logarithm: A logging engine for AI training workflows and services - Engineering at Meta Blog — Engineering at Meta Blog
+  URL: https://news.google.com/rss/articles/CBMiuwFBVV95cUxOVjM1LWZfTXQxTmtXRzRvRTlZV3RXby03Wk5jRS1ib2NhX1lDTXlpS2RXR1pEakF0R2VRZnNVRnA0bWdWUnpGaExUSnhnM2tTa21QSEtKeVA3YV9pRHhpenM3NnpfX0NzTnM2UnpDTkdEX0NTbVBZZlJON3RkUXM2RDZSbldHaEtfX21NcmdCc0RHLTJnbFExUFdTZTc3elBfdjhRdktPVFQ2LTVKT1RBa1J2cUFxcEhjQTk0?oc=5
+- Building Meta’s GenAI Infrastructure - Engineering at Meta Blog — Engineering at Meta Blog
+  URL: https://news.google.com/rss/articles/CBMinwFBVV95cUxOOEhHTzdTNlhOb1lrWlRQX2ZxTHZhcE8yaUc5Y3UzWV9FV2lvUWd1TjZCdFZmaF9UcUNLVmRpd3Y5VzRlLWt5TFk3VExXV2FHUUdQN1h4aHpXNjRsd3BKclk4V3AwM041dElKbkJOc1B4M2k0VkFCdm01bjFpZll1NHhvYlU2YTR2ajhYNUUxU21NS3JjQ3BhZ2tRdnVyNzg?oc=5
+- Efficiently Scale LLM Training Across a Large GPU Cluster with Alpa and Ray - NVIDIA Developer — NVIDIA Developer
+  URL: https://news.google.com/rss/articles/CBMirwFBVV95cUxOZDVvN0R5SkVGZ1cwWXJQM0NvNkpNWlJkeVUxbTFpOHZmRTNueWxGb01kOHR1U2d5bERvQ3EwV0ZfOEFOT1I1ZTctTFA5b1VGbU1HTTZjU1VqR20zLWlUYjJvTHZIbnpIWU5xQkw3OTdVY2ZWd3cyZ1hsek5BTG5kTjZ4cklPOTZNQ0ZxNXc5TFN1MlBpaGtEb0E4V1dTUUc0N2tlUUhoalA5X19Rcm5F?oc=5
 

@@ -1,0 +1,442 @@
+[
+  {
+    "id": "1976526277403177116",
+    "text": "The Complete LLM & Generative AI Tech Stack\n\nFoundation Models & Core Technologies\n├── Large Language Models\n│   ├── OpenAI: GPT-4, GPT-4o\n│   ├── Anthropic: Claude 3\n│   ├── Meta: Llama 2, Llama 3\n│   └── Google: Gemini, PaLM 2\n├── Open Source Alternatives",
+    "author_name": "Dhanian ",
+    "author_handle": "@e_opore",
+    "metrics": {
+      "likes": 1600,
+      "retweets": 353,
+      "replies": 34,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G24ILHjXwAAFG-Q?format=jpg&name=small"
+    ],
+    "viral_score": 2.3,
+    "url": "https://x.com/e_opore/status/1976526277403177116"
+  },
+  {
+    "id": "2019503987217801241",
+    "text": "The LLM Engineering Roadmap.\n\nIf you want to start today, here's the roadmap\n\n LLM Foundations\nStart by understanding Python and LLM APIs and how they work.\nLearn prompt engineering, structured outputs, and tool use.\n\n↳ Python/Typescript Basics\n↳ LLM APIs\n↳ Prompt",
+    "author_name": "Inference",
+    "author_handle": "@inference_net",
+    "metrics": {
+      "likes": 1000,
+      "retweets": 243,
+      "replies": 23,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HAa4LDTa8AADOVK?format=jpg&name=medium"
+    ],
+    "viral_score": 1.5,
+    "url": "https://x.com/inference_net/status/2019503987217801241"
+  },
+  {
+    "id": "1814135222562165104",
+    "text": "A Survey of Prompt Engineering Methods in LLMs\n\nHuge collection of prompt engineering methods for all sorts of NLP tasks.",
+    "author_name": "elvis",
+    "author_handle": "@omarsar0",
+    "metrics": {
+      "likes": 1000,
+      "retweets": 257,
+      "replies": 6,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/GS0aIjxXsAAvumm?format=jpg&name=small"
+    ],
+    "viral_score": 1.5,
+    "url": "https://x.com/omarsar0/status/1814135222562165104"
+  },
+  {
+    "id": "1997860170693775456",
+    "text": "Karparhy is spot on - treating LLMs as simulators demystifies their “magic” & unlocks better prompting: \n•no persistent self: LLMs lack recurrent state or episodic memory; each response draws from a frozen embedding space shaped by training data distributions. “You” just",
+    "author_name": "Jen Zhu",
+    "author_handle": "@jenzhuscott",
+    "metrics": {
+      "likes": 1100,
+      "retweets": 98,
+      "replies": 61,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1.4,
+    "url": "https://x.com/jenzhuscott/status/1997860170693775456"
+  },
+  {
+    "id": "1830383737307041809",
+    "text": "76-page survey paper on Prompting Techniques \n\nExplores structured understanding and taxonomy of  58 text-only prompting techniques, and 40 techniques for other modalities.\n\n The paper focuses on discrete prefix prompts rather than cloze prompts, because prefix prompts are",
+    "author_name": "Rohan Paul",
+    "author_handle": "@rohanpaul_ai",
+    "metrics": {
+      "likes": 851,
+      "retweets": 149,
+      "replies": 20,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/GWbUESNWkAEu7Ay?format=png&name=small"
+    ],
+    "viral_score": 1.2,
+    "url": "https://x.com/rohanpaul_ai/status/1830383737307041809"
+  },
+  {
+    "id": "1777878559991668925",
+    "text": "LLM2Vec\n\nLarge Language Models Are Secretly Powerful Text Encoders\n\nLarge decoder-only language models (LLMs) are the state-of-the-art models on most of today's NLP tasks and benchmarks. Yet, the community is only slowly adopting these models for text embedding tasks,",
+    "author_name": "AK",
+    "author_handle": "@_akhaliq",
+    "metrics": {
+      "likes": 609,
+      "retweets": 120,
+      "replies": 9,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/GKxLINoWMAANBJH?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/_akhaliq/status/1777878559991668925"
+  },
+  {
+    "id": "1979277241617125532",
+    "text": "Model Architectures & Foundations in LLMs\n\n✓ Large Language Models (LLMs) are built upon advanced neural architectures that define how they process, understand, and generate human language.\n✓ These architectures , Transformers, RNNs, Attention Mechanisms, and Diffusion Models ,",
+    "author_name": "Dhanian ",
+    "author_handle": "@e_opore",
+    "metrics": {
+      "likes": 533,
+      "retweets": 110,
+      "replies": 11,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G3fOKBBXwAEZG_x?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/e_opore/status/1979277241617125532"
+  },
+  {
+    "id": "2004311326919704869",
+    "text": "GhidraGPT - \nhttps://\ngithub.com/weirdmachine64\n/GhidraGPT\n…\n\nIntegrate LLM models directly into Ghidra for automated code rewrite and analysis.\n\nA powerful Ghidra plugin that integrates Large Language Models (LLMs) directly into Ghidra to enhance reverse engineering workflows with code analysis and",
+    "author_name": "AISecHub",
+    "author_handle": "@AISecHub",
+    "metrics": {
+      "likes": 494,
+      "retweets": 119,
+      "replies": 5,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/AISecHub/status/2004311326919704869"
+  },
+  {
+    "id": "2025060487168184552",
+    "text": "50 LLM Projects with Source to Become a Pro\n\nFoundations: Core LLM Engineering\n\n→ Build a GPT-style Transformer from scratch using PyTorch\n→ Implement a tokenizer (BPE / WordPiece) from scratch\n→ Train a small language model on custom dataset\n→ Build a character-level",
+    "author_name": "Dhanian ",
+    "author_handle": "@e_opore",
+    "metrics": {
+      "likes": 447,
+      "retweets": 98,
+      "replies": 20,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HBp083TX0AA224V?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/e_opore/status/2025060487168184552"
+  },
+  {
+    "id": "1972386841451245683",
+    "text": "Great work showing prompt synthesis as a new scaling axis for reasoning.\n\nGood training data is scarce.\n\nThis work showcases a framework that might make it possible to construct high-quality training problems for reasoning-focused LLMs.\n\nTechnical details below:",
+    "author_name": "elvis",
+    "author_handle": "@omarsar0",
+    "metrics": {
+      "likes": 349,
+      "retweets": 76,
+      "replies": 20,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G19TYNtakAA-3yH?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/omarsar0/status/1972386841451245683"
+  },
+  {
+    "id": "1946095090130416007",
+    "text": "Building a GenAI app?\n\nDon’t just plug in a model - design it to scale, adapt, and evolve.\n\nHere’s your blueprint for future-ready GenAI systems. \n\n1. Modular Architecture\nSeparate UI, orchestration, models, and storage to swap parts independently. Use LangChain or LlamaIndex",
+    "author_name": "Shalini Goyal",
+    "author_handle": "@goyalshaliniuk",
+    "metrics": {
+      "likes": 335,
+      "retweets": 67,
+      "replies": 10,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/GwHf3i4WYAAplvi?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/goyalshaliniuk/status/1946095090130416007"
+  },
+  {
+    "id": "1766210545999286769",
+    "text": "Can LLMs plan and reason?\n\nThat and more AI papers I read this week:\n\n- GaLore\n- KnowAgent\n- LLMs for Law\n- Design2Code\n- Claude 3 Technical Report\n- Can LLMs Reason and Plan?\n- Robust Evaluation of Reasoning\n\nI am most excited about the discussion around reasoning and planning",
+    "author_name": "elvis",
+    "author_handle": "@omarsar0",
+    "metrics": {
+      "likes": 267,
+      "retweets": 52,
+      "replies": 5,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/omarsar0/status/1766210545999286769"
+  },
+  {
+    "id": "1815627911266771305",
+    "text": "Prompt engineering is the first step towards getting an LLM to output what you want.\n\nThere are many different techniques. \n\nHere’s a short list of common prompt templates and prompt engineering techniques.",
+    "author_name": "Leonie",
+    "author_handle": "@helloiamleonie",
+    "metrics": {
+      "likes": 246,
+      "retweets": 42,
+      "replies": 6,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/GTJn9o6WIAAB1lt?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/helloiamleonie/status/1815627911266771305"
+  },
+  {
+    "id": "2015145915569606836",
+    "text": "AI Engineering Projects to Become a Pro: 25 Hands-On Builds for Production-Ready LLM Systems\n\n•Smart Q&A Bot with OpenAI\n\n•PDF Document Chatbot\n\n•Personal Knowledge Base with RAG\n\n•AI Email Summarizer\n\n•Code Explainer Agent\n\n•Resume-to-Job Matcher\n\n•Flashcard Generator",
+    "author_name": "Dhanian ",
+    "author_handle": "@e_opore",
+    "metrics": {
+      "likes": 243,
+      "retweets": 38,
+      "replies": 11,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G_c8h8qXEAAjDYn?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/e_opore/status/2015145915569606836"
+  },
+  {
+    "id": "1774666524206280841",
+    "text": "Transformer-Lite\n\nHigh-efficiency Deployment of Large Language Models on Mobile Phone GPUs\n\nThe Large Language Model (LLM) is widely employed for tasks such as intelligent assistants, text summarization, translation, and multi-modality on mobile phones. However, the current",
+    "author_name": "AK",
+    "author_handle": "@_akhaliq",
+    "metrics": {
+      "likes": 242,
+      "retweets": 57,
+      "replies": 2,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/GKDhzFoXUAA0qR6?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/_akhaliq/status/1774666524206280841"
+  },
+  {
+    "id": "2035221186955669811",
+    "text": "All Paid Courses (Free for First 5000 People)\n\n LLM Mastery (GPT, Claude, Grok)\n AI Agent Building Masterclass\n Advanced Prompt Engineering\n AI Automation with Zapier & Make\n No-Code AI SaaS Building\n RAG Systems & Vector Databases\n LangChain & Agent Frameworks",
+    "author_name": "Suryansh Tiwari",
+    "author_handle": "@Suryanshti777",
+    "metrics": {
+      "likes": 172,
+      "retweets": 94,
+      "replies": 132,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HD6O4afXAAEbXFp?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/Suryanshti777/status/2035221186955669811"
+  },
+  {
+    "id": "2034246802820731046",
+    "text": "Best LLMs cheatsheet you’ll ever find \n\nCovers concepts, finetuning, evaluations:\n\nhttps://\ndrive.google.com/file/d/1J6aN8H\nLy1Okic1G3RhOLg5FUgk9UTIt2/view\n…\n\nIntroduction\n> Gen AI and Large Language Models\n> Tokens, Embeddings, and Self-Attention\n> Transformers and Parallel Processing\n\nTransformers Architecture and Variants\n>",
+    "author_name": "Rohit Kumar Tiwari",
+    "author_handle": "@_rohit_tiwari_",
+    "metrics": {
+      "likes": 126,
+      "retweets": 20,
+      "replies": 4,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HDsYrMqaUAEgcRe?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/_rohit_tiwari_/status/2034246802820731046"
+  },
+  {
+    "id": "2034819822886785024",
+    "text": "Advice for AI engineers \n\nYou don't need Large Language Models for reliable tool calling. 350M is enough.\n\nHere's an example ↓\n\nhttps://\ngithub.com/Liquid4All/coo\nkbook/tree/pau/examples/home-assistant/examples/home-assistant\n…",
+    "author_name": "Pau Labarta Bajo",
+    "author_handle": "@paulabartabajo_",
+    "metrics": {
+      "likes": 82,
+      "retweets": 11,
+      "replies": 4,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/paulabartabajo_/status/2034819822886785024"
+  },
+  {
+    "id": "2034847469599965185",
+    "text": "Episode 1: Introduction to Generative AI and LLMs\n\nCarlotta Castelluccio talks about Generative AI and large language models, explaining how they work and how they are changing different industries, especially education.\n\n\nhttps://\nlearn.microsoft.com/en-us/shows/ge\nnerative-ai-for-beginners/introduction-to-generative-ai-and-llms-generative-ai-for-beginners\n…",
+    "author_name": "Alex Moore",
+    "author_handle": "@heyalexmoore",
+    "metrics": {
+      "likes": 39,
+      "retweets": 7,
+      "replies": 2,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HD06_aZboAEw7wG?format=png&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/heyalexmoore/status/2034847469599965185"
+  },
+  {
+    "id": "2036370865848525180",
+    "text": "Siemens and Alibaba Cloud are expanding their partnership to deliver cutting-edge computer-aided engineering (CAE) capabilities as IaaS in China. Together, we're exploring how Alibaba’s Qwen large language models can revolutionize AI-driven engineering workflows and intelligent",
+    "author_name": "Alibaba Group",
+    "author_handle": "@AlibabaGroup",
+    "metrics": {
+      "likes": 39,
+      "retweets": 5,
+      "replies": 7,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HEKkUGUaQAAMTkB?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/AlibabaGroup/status/2036370865848525180"
+  },
+  {
+    "id": "2035326325070721029",
+    "text": "All Paid Courses (Free for First 500 People)\n\n LLM Mastery (GPT, Claude, Grok)\n AI Agent Building Masterclass\n Advanced Prompt Engineering\n AI Automation with Zapier & Make\n No-Code AI SaaS Building\n RAG Systems & Vector Databases\n LangChain & Agent Frameworks\n AI",
+    "author_name": "Suryansh Tiwari",
+    "author_handle": "@Suryanshti777",
+    "metrics": {
+      "likes": 37,
+      "retweets": 18,
+      "replies": 41,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HD7ugVSbQAATLA1?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/Suryanshti777/status/2035326325070721029"
+  },
+  {
+    "id": "2034847513535291706",
+    "text": "Episode 4: Understanding Prompt Engineering Fundamentals\n\nNitya Narasimhan talks about the basics of prompt engineering, showing how to make good prompts and improve them to get better results from AI that generates content.\n\n\nhttps://\nlearn.microsoft.com/en-us/shows/ge\nnerative-ai-for-beginners/understanding-prompt-engineering-fundamentals-generative-ai-for-beginners\n…",
+    "author_name": "Alex Moore",
+    "author_handle": "@heyalexmoore",
+    "metrics": {
+      "likes": 11,
+      "retweets": 1,
+      "replies": 1,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HD07B9JboAE9diu?format=png&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/heyalexmoore/status/2034847513535291706"
+  },
+  {
+    "id": "2034847703545651432",
+    "text": "Episode 17: AI Agents –\n\nThis section introduces AI Agents, systems where large language models (LLMs) perform tasks using tools or frameworks.\n\n\nhttps://\nlearn.microsoft.com/en-us/shows/ge\nnerative-ai-for-beginners/ai-agents-generative-ai-for-beginners\n…",
+    "author_name": "Alex Moore",
+    "author_handle": "@heyalexmoore",
+    "metrics": {
+      "likes": 4,
+      "retweets": 0,
+      "replies": 1,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HD07NCRboAcCfov?format=png&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/heyalexmoore/status/2034847703545651432"
+  },
+  {
+    "id": "2034286958453608878",
+    "text": "ChatGPT: Concepts, Working, & Capabilities You Should Know\n_____________________________________\n\n Core ChatGPT Concepts \n_a) ChatGPT_: An AI chatbot generating human-like responses using large language models.\n\n_b) Large Language Model (LLM)_: AI trained on massive text",
+    "author_name": "Tips Excel",
+    "author_handle": "@gudanglifehack",
+    "metrics": {
+      "likes": 4,
+      "retweets": 0,
+      "replies": 0,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/gudanglifehack/status/2034286958453608878"
+  },
+  {
+    "id": "2034847660059107682",
+    "text": "Episode 14: The Generative AI Application Lifecycle\n\nPablo Lopes explores the exciting world of generative AI, where new ideas are always happening. Learn how things are changing from old-style machine learning to new large language model operations.\n\n\nhttps://\nlearn.microsoft.com/en-us/shows/ge\nnerative-ai-for-beginners/the-generative-ai-application-lifecycle-generative-ai-for-beginners\n…",
+    "author_name": "Alex Moore",
+    "author_handle": "@heyalexmoore",
+    "metrics": {
+      "likes": 4,
+      "retweets": 0,
+      "replies": 1,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HD07Ke2boAIX_sB?format=png&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/heyalexmoore/status/2034847660059107682"
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "niche": "GenAI engineer career hiring AI startup what CTOs look for production experience",
+  "nicheSlug": "genai-engineer-career-hiring-ai-startup-what-ctos-look-for-p",
+  "runId": "2026-03-26T09-25-58-142Z",
+  "startedAt": "2026-03-26T09:25:58.142Z",
+  "keywords": [
+    "GenAI engineer career hiring AI startup what CTOs look for production experience"
+  ],
+  "mustInclude": [
+    "genai",
+    "engineer",
+    "career",
+    "hiring",
+    "ai",
+    "startup",
+    "what",
+    "ctos",
+    "look",
+    "production",
+    "experience"
+  ],
+  "search": "GenAI engineer career hiring AI startup what CTOs look for production experience",
+  "subAllowlist": null,
+  "config": {
+    "topN": 20,
+    "subLimit": 12,
+    "gapMs": 1000,
+    "limitPerListing": 25,
+    "time": "week",
+    "kinds": [
+      "top",
+      "hot",
+      "rising"
+    ],
+    "searchSort": "top",
+    "searchTime": null,
+    "minSubscribers": 0,
+    "sendCardsN": 5
+  }
+}

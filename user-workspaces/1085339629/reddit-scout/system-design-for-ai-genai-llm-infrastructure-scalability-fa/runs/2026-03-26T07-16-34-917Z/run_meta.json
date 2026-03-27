@@ -1,0 +1,40 @@
+{
+  "niche": "System Design for AI GenAI LLM infrastructure scalability fault tolerance distributed systems",
+  "nicheSlug": "system-design-for-ai-genai-llm-infrastructure-scalability-fa",
+  "runId": "2026-03-26T07-16-34-917Z",
+  "startedAt": "2026-03-26T07:16:34.917Z",
+  "keywords": [
+    "System Design for AI GenAI LLM infrastructure scalability fault tolerance distributed systems"
+  ],
+  "mustInclude": [
+    "system",
+    "design",
+    "ai",
+    "genai",
+    "llm",
+    "infrastructure",
+    "scalability",
+    "fault",
+    "tolerance",
+    "distributed",
+    "systems"
+  ],
+  "search": "System Design for AI GenAI LLM infrastructure scalability fault tolerance distributed systems",
+  "subAllowlist": null,
+  "config": {
+    "topN": 30,
+    "subLimit": 15,
+    "gapMs": 800,
+    "limitPerListing": 25,
+    "time": "month",
+    "kinds": [
+      "top",
+      "hot",
+      "rising"
+    ],
+    "searchSort": "top",
+    "searchTime": null,
+    "minSubscribers": 0,
+    "sendCardsN": 5
+  }
+}

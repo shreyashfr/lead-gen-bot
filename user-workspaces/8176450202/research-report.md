@@ -1,434 +1,594 @@
-# Research Report: Sports AI
-**Pillar:** Sports AI  
-**Date:** 2026-03-24  
-**User:** Vaibhav Misal (Software Engineer, Backend/System Design Focus)  
-**Platforms Researched:** Twitter/X, YouTube, Google News (Reddit experienced rate-limiting)
+## RESEARCH REPORT — Sales jobs
+Date: 2026-03-25
 
 ---
+### REDDIT
+# Reddit Scout — Vibe Outreach
 
-## WHAT PEOPLE ARE TALKING ABOUT
+Run: 2026-03-24T15-27-49-875Z
+Started: 2026-03-24T15:27:49.875Z
+Output dir: /home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/vibe-outreach/runs/2026-03-24T15-27-49-875Z
 
-### Core Themes Emerging Across Platforms
+Config: topN=30 | subLimit=10 | kinds=top,hot,rising | time=all | limitPerListing=25
+Search: Vibe Outreach (sort=top t=auto)
 
-1. **AI-Powered Sports Prediction & Betting**
-   - ELO rating systems applied to tennis (85% accuracy)
-   - NBA prediction models generating high ROI
-   - Multi-sport AI agents ($500 → $3,200+ in one week)
-   - Swarm intelligence for prediction markets
+## Top terms (from titles + top comments)
 
-2. **Computer Vision in Sports**
-   - Player tracking and motion analysis
-   - Real-time statistics extraction
-   - Ball/movement detection systems
+- vibe (3)
+- marketing (3)
+- comment (2)
+- launch (2)
+- have (2)
+- drop (1)
+- saas (1)
+- playbook (1)
+- sections (1)
+- super (1)
+- https (1)
+- superlaun (1)
+- clean (1)
+- minimal (1)
+- product (1)
+- platform (1)
+- currently (1)
+- visitors (1)
 
-3. **Market Momentum**
-   - AI Sports Analytics Market growing at 29% CAGR
-   - Enterprise adoption accelerating (player performance, game analytics)
-   - Early-stage funding rounds closing (Elite Picks, etc.)
+## Viral content ideas (derived from these posts)
 
-4. **Real-World Applications Beyond Betting**
-   - Injury prevention and diagnosis
-   - Athlete monitoring and performance optimization
-   - Coach decision support systems
-   - Trade/draft analysis (NBA, NFL)
+**1. Personal story → timeline + receipts**
+- Hook: Hook with 1 line, then a 5-step timeline; end with the lesson and what you would do differently.
 
----
+**2. My vibe got automated: what I automated back (tools + workflow)**
+- Hook: Turn it into a before/after workflow post. Include exact tool stack + steps.
 
-## TRENDING ANGLES
+**3. Checklist: how to stay valuable when marketing hits your team**
+- Hook: A numbered checklist (10 items). Make it practical: skills, portfolio, outreach, proof-of-work.
 
-### What's Resonating Right Now
+**4. Hot take: comment isn't the problem — launch is**
+- Hook: Contrarian framing. Back it with 2 examples from the top posts and 1 counterexample.
 
-1. **The "I Built This in X Time" Angle**
-   - Students building ELO models for tennis (95K+ matches)
-   - One-week side projects with massive returns
-   - Code-to-ROI case studies
-   - **Why it works:** Shows accessibility + credibility
+**5. Debunk thread: "AI will replace have" vs what's actually happening**
+- Hook: Use 3 claims → 3 rebuttals. Cite specific post patterns: layoffs, hiring freezes, role shifts.
 
-2. **The "Swarm vs Single Model" Narrative**
-   - Multiple AI agents debating outcomes
-   - Collective intelligence > individual algorithms
-   - 4,000 fake agents → $1.5M profit
-   - **Why it works:** Fresh take on ensemble methods
+**6. Salary/market reality: drop vs saas roles in 2026 (Reddit signals)**
+- Hook: Summarize demand signals from comments: who is struggling, who is fine, why.
 
-3. **The "Market Inefficiency" Angle**
-   - ESPN shows score with 15-second delay; AI predicts before that
-   - Finding the gap between fair odds and posted odds
-   - Prediction markets as proof-of-concept
-   - **Why it works:** Shows real economic edge
+**7. "What would you do in 30 days?" layoff recovery plan (day-by-day)**
+- Hook: 30-day plan: portfolio, interview loops, networking, mental health. Include a downloadable checklist.
 
-4. **The "Technical Deep Dive" Angle**
-   - 38 indicators (MA, RSI, MACD, Bollinger, sentiment)
-   - 79% winrate breakdown
-   - Bayesian hierarchical models in Python
-   - **Why it works:** Engineers/quants eat this up
+**8. Mini-case study: 1 resume bullet → 1 proof project using playbook**
+- Hook: Show how to convert a vague resume claim into a measurable project + writeup.
 
-5. **The "Open-Source Wins" Angle**
-   - Football AI systems on GitHub
-   - Community improvements (speed, accuracy)
-   - Replicable architectures
-   - **Why it works:** Dev credibility + sharing culture
+**9. Community question: which tasks should *never* be delegated to AI?**
+- Hook: Ask + give your own top 5. Encourage replies; add a poll if your platform supports it.
 
----
+**10. Template post: "I used AI to do X, got Y result, here's the exact prompt"**
+- Hook: Make it reproducible: prompt, inputs, outputs, gotchas.
 
-## HOOK STYLES THAT WORK
+**11. Data post: a quick scorecard of the top threads (ups, comments, ratio) + what it signals**
+- Hook: Table or bullets; then 3 takeaways.
 
-### Twitter/X (Proven High Engagement)
+**12. Meme angle (if relevant): sections vs super — job search edition**
+- Hook: If your niche is not memes, skip memes; otherwise caption the pattern you saw in comments.
 
-**Pattern 1: Data First Hook**
-```
-"a student took the ELO rating system from chess
-ran it through 95,491 tennis matches over 43 years
-trained an XGBoost model that predicts winners with 85% accuracy
-tested on Australian Open 2025: 99 out of 116 matches correct"
-```
-**Why:** Specific numbers → credible → shareable
+## Top posts (3) + cards
 
-**Pattern 2: The Swarm Story**
-```
-"Someone trained a swarm model on 3 years of NBA data
-let it loose on Polymarket
-The result: $1.49M
-He didn't build a better model. He built a better crowd."
-```
-**Why:** Narrative arc → outcome-focused → FOMO-inducing
+### 1) Drop your SaaS for a vibe marketing playbook!
+- Subreddit: r/vibemarketingbuild
+- Viral score: 0 | Ups: 2 | Comments: 5 | Upvote ratio: 100%
+- Link: https://www.reddit.com/r/vibemarketingbuild/comments/1mu1p8c/drop_your_saas_for_a_vibe_marketing_playbook/
+- Card (local): ./cards/1mu1p8c.png
 
-**Pattern 3: Side Hustle Proof**
-```
-"$500 each. 4 AI agents. 4 sports. One week.
-NERVE (tennis): +540%
-PHANTOM (NBA): +486%
-FROST (hockey): +395%
-SIEGE (soccer): +336%"
-```
-**Why:** Tables work. Progression feels inevitable.
+![reddit card](./cards/1mu1p8c.png)
 
-### YouTube (Long-Form Winning)
+### 2) Vibe marketing in comment sections
+- Subreddit: r/vibemarketingbuild
+- Viral score: 0 | Ups: 2 | Comments: 2 | Upvote ratio: 100%
+- Link: https://www.reddit.com/r/vibemarketingbuild/comments/1mv4txs/vibe_marketing_in_comment_sections/
+- Card (local): ./cards/1mv4txs.png
 
-**Pattern 1: Tutorial + Results**
-- "I Trained AI to Predict Sports" (1.4M views, 6.1/10 score)
-- "Football AI Tutorial: From Basics to Advanced Stats with Python" (323K views, 5.5/10)
-- **Hook:** Show the build process + the outcome
+![reddit card](./cards/1mv4txs.png)
 
-**Pattern 2: Technical Walkthrough**
-- "Predict NBA Games With Python And Machine Learning" (63K views)
-- "Building an NBA Betting Model in Python (With AI)" (technical breakdown)
-- **Hook:** Code-along format wins with dev audience
+### 3) Vibe marketing
+- Subreddit: r/vibemarketingbuild
+- Viral score: 0 | Ups: 1 | Comments: 0 | Upvote ratio: 100%
+- Link: https://www.reddit.com/r/vibemarketingbuild/comments/1n6w606/vibe_marketing/
+- Card (local): ./cards/1n6w606.png
 
-### Google News (Institutional Validation)
-
-**Pattern 1: Market Reports**
-- "AI Sports Analytics Market Size | CAGR of 29%"
-- "AI In Sports Market 2026 Transforming Athlete Performance"
-- **Hook:** Enterprise adoption = legitimacy
-
-**Pattern 2: Funding News**
-- "Founders Row Backs Early-Stage AI Sports Analytics Platform Elite Picks"
-- **Hook:** Investment announcements signal opportunity
+![reddit card](./cards/1n6w606.png)
 
 ---
+### TWITTER
+# Twitter Scout Report — vibe outreach energy authentic connection personal branding sales SDR networking
+Run: 2026-03-24T15-42-39-237Z | Scanned: 29 | Top 15
 
-## CONTENT GAPS (Nobody Is Covering)
+## 1. Guillermo Rauch (@rauchg)
+**Viral Score:** 7.8/10
+**Tweet:** A lot of younger people who’re new to the industry ask me how to do “networking”. 
 
-1. **The Backend Architecture Angle**
-   - How to scale prediction models to millions of users
-   - Real-time inference at <100ms latency
-   - Model serving (TensorFlow Serving, ONNX, etc.)
-   - Stream processing for live game data
-   - **(Vaibhav's Sweet Spot)**
+How do you go from knowing no one in San Francisco to having a network of people that you can do business with, learn from, hire, etc.
 
-2. **System Design for Sports AI**
-   - Data pipeline design (ingestion → processing → prediction)
-   - Database choices (time-series DB, caching layer)
-   - Microservices for different sports
-   - Handling model drift in production
-   - **(Vaibhav's Core Expertise)**
+The trick is I never set out to “network”. Maybe due to
+**Metrics:** ❤️ 6200  🔁 670  💬 258  🔖 0
+**Images:** none
+**URL:** https://x.com/rauchg/status/1971608210525003829
 
-3. **Low-Latency Predictions**
-   - Predicting before broadcasts show the event
-   - Edge inference (on-device models)
-   - Reducing inference time from seconds to milliseconds
-   - Handling streaming data with sub-100ms delays
-   - **(Vaibhav's Unique Edge)**
+## 2. GREG ISENBERG (@gregisenberg)
+**Viral Score:** 5.7/10
+**Tweet:** Remember how VIBE CODING (replit, bolt, lovable) transformed 8-week development cycles into 2-day sprints? The same 20x acceleration is hitting marketing teams RIGHT NOW
 
-4. **From Prototype to Profitable**
-   - Turning a Jupyter notebook into a production system
-   - Cost optimization (model size, inference speed, infra)
-   - Handling live data feeds at scale
-   - Monitoring and alerting for model degradation
+It's called VIBE MARKETING (I'll explain what it all means).
 
-5. **Engineer-to-Founder Stories**
-   - How to build a sports AI product as a solo engineer
-   - MVP architecture decisions
-   - Deployment challenges nobody talks about
-   - **(Underexplored in current content)**
+The old world - marketing teams with 10+
+**Metrics:** ❤️ 4400  🔁 525  💬 263  🔖 0
+**Images:** https://pbs.twimg.com/media/GmpvcO6b0AAvnjY?format=jpg&name=small
+**URL:** https://x.com/gregisenberg/status/1903457220093972552
 
----
+## 3. GREG ISENBERG (@gregisenberg)
+**Viral Score:** 4.2/10
+**Tweet:** you’re vibe coding when you should be vibe marketing (with claude code,  openclaw etc)
 
-## NATURAL ANGLE FOR VAIBHAV
+1. opus 4.6 / codex 5.3 → ship the product (core features, backend, auth, infra )
 
-### "Building Sports AI the Backend Engineering Way"
+2. claude code → design the playbook (content formats, hook templates, lead magnets, reply rules, tone of
+**Metrics:** ❤️ 3500  🔁 230  💬 250  🔖 0
+**Images:** none
+**URL:** https://x.com/gregisenberg/status/2020290971951391031
 
-**Why This Works for Your Niche:**
+## 4. Riley Brown (@rileybrown)
+**Viral Score:** 3.7/10
+**Tweet:** The TRUTH about "Vibe Marketing" 
 
-You combine 3 rare elements:
-- ✅ Deep backend/system design knowledge
-- ✅ Real-world low-latency experience
-- ✅ Practical engineering (not just theory)
+W/ 
+@boringmarketer
 
-**Content Pillars to Own:**
 
-1. **"How I'd Build a Sports Prediction Engine (System Design Edition)"**
-   - Data ingestion pipeline (live sports APIs)
-   - Real-time processing (Kafka, stream processors)
-   - Model serving at sub-100ms latency
-   - Database choices for time-series data
-   - Monitoring for model drift
+1. n8n (Workflows with Agents)
+2. Claude
+3. MCP
+4. Advanced Workflows
 
-2. **"The Backend Stack Behind Sports AI Predictions"**
-   - Which databases work best (TimescaleDB, ClickHouse, etc.)
-   - API design for prediction endpoints
-   - Caching strategies (Redis for hot predictions)
-   - Deployment patterns (Kubernetes, serverless)
+Time Stamps:
 
-3. **"Why Most Sports AI Projects Fail (Backend Perspective)"**
-   - Common architectural mistakes
-   - Latency issues nobody anticipates
-   - Data pipeline bottlenecks
-   - Scaling from 1K to 1M users
+00:00 - Introduction
+00:16 - Defining Vibe Marketing
+00:53 - Real-World Use Case: AI-Assisted SEO Agency
+01:52 - n8n: YouTube Video to
+**Metrics:** ❤️ 2900  🔁 372  💬 58  🔖 0
+**Images:** none
+**URL:** https://x.com/rileybrown/status/1930117670827110769
 
-4. **"Building a Sports AI MVP: Architecture First"**
-   - Minimal viable architecture
-   - Avoiding premature optimization
-   - When to use managed services vs. build-it-yourself
+## 5. GREG ISENBERG (@gregisenberg)
+**Viral Score:** 1.9/10
+**Tweet:** Is this AI agent startup the NEW n8n killer?  
 
-5. **"Real-Time Inference: A Backend Engineer's Guide"**
-   - Model serialization and loading
-   - Handling bursty traffic (live game events)
-   - Cost optimization for inference at scale
+How to set up vibe marketing automations with simple prompts (not crazy workflows) in 40 minutes
+**Metrics:** ❤️ 1500  🔁 185  💬 71  🔖 0
+**Images:** none
+**URL:** https://x.com/gregisenberg/status/1940551484460179817
 
----
+## 6. GREG ISENBERG (@gregisenberg)
+**Viral Score:** 1.3/10
+**Tweet:** VIBE MARKETING IS HERE:
 
-## TOP SOURCES
+1. This changes campaign planning. Marketing calendars that took weeks to build can now be auto-generated with AI agents suggesting optimal content mix, timing, and channel distribution based on past performance.
 
-### Twitter/X (10 Tweets - High Virality)
+2. This changes ad testing. Marketers can
+**Metrics:** ❤️ 1000  🔁 102  💬 75  🔖 0
+**Images:** https://pbs.twimg.com/media/GnDO6uvWUAA_rko?format=jpg&name=small
+**URL:** https://x.com/gregisenberg/status/1905250222042652893
 
-**URL:** https://x.com/dunik_7/status/2031452419717210322
-- Author: dunik (@dunik_7)
-- Content: ELO rating system on 95,491 tennis matches, 85% accuracy, Australian Open test
-- Engagement: 6,700 likes, 346 retweets, 121 replies
-- Viral Score: 7.5/10
+## 7. The Boring Marketer (@boringmarketer)
+**Viral Score:** 1/10
+**Tweet:** I put together a quick guide on how to go from zero to one as a vibe marketer:
+**Metrics:** ❤️ 762  🔁 53  💬 30  🔖 0
+**Images:** https://pbs.twimg.com/media/Gm0EqU9WkAAZR2a?format=jpg&name=small
+**URL:** https://x.com/boringmarketer/status/1904183459175686575
 
-**URL:** https://x.com/k1rallik/status/2033192538488627670
-- Author: BuBBliK (@k1rallik)
-- Content: Swarm model on NBA data → $1.49M on Polymarket
-- Engagement: 1,800 likes, 154 retweets, 108 replies
-- Viral Score: 2.2/10
+## 8. John Rush@johnrushx·Dec 5, 2025 (unknown)
+**Viral Score:** 1/10
+**Tweet:** I'm absolutely f*cking amazed by what this Vibe Marketing agent can do:
 
-**URL:** https://x.com/ArchiveExplorer/status/2028903434791854194
-- Author: Archive (@ArchiveExplorer)
-- Content: 4 AI agents, 4 sports, $500 each, one week results (+540%, +486%, +395%, +336%)
-- Engagement: 1,400 likes, 83 retweets, 96 replies
-- Viral Score: 1.7/10
+> it figures out a ton of ideas based on kw research
+> vibe codes mini tools to win SEO traffic
+> finds banger vids to convert them into articles
+> does real pSEO, templates, data curation
+> articles & news
+**Metrics:** ❤️ 637  🔁 24  💬 58  🔖 0
+**Images:** none
+**URL:** https://x.com/johnrushx/status/1996901468339830899
 
-**URL:** https://x.com/RoundtableSpace/status/2029229129497723189
-- Author: 0xMarioNawfal (@RoundtableSpace)
-- Content: 4 AI agents across sports with detailed ROI breakdown, edge explanation
-- Engagement: 1,100 likes, 97 retweets, 66 replies
-- Viral Score: 1.4/10
+## 9. Ernesto Lopez (@ErnestoSOFTWARE)
+**Viral Score:** 1/10
+**Tweet:** Do you understand what just happened?
 
-**URL:** https://x.com/namcios/status/2033308856550375809
-- Author: Felipe Demartini (@namcios)
-- Content: Swarm of 4,096 AI agents making predictions, $1.5M on Polymarket
-- Engagement: 879 likes, 83 retweets, 39 replies
-- Viral Score: 1.1/10
+marketing is officially over.
+vibe marketing is here. 
 
-**URL:** https://x.com/DanGambleAI/status/1846197034459525535
-- Author: Dan's AI Sports Picks (@DanGambleAI)
-- Content: NFL AI algorithm testing, $50 → $366 in initial results
-- Engagement: 763 likes, 15 retweets, 39 replies
-- Viral Score: 1.0/10
+→ a tool called Viewtrack just launched today and it’s crazy. 
 
-**URL:** https://x.com/k1rallik/status/2031683192445423617
-- Author: BuBBliK (@k1rallik)
-- Content: AI proof of Big Three in tennis (ELO curves), algorithm comparison
-- Engagement: 536 likes, 25 retweets, 25 replies
-- Viral Score: 1.0/10
+→ you feed it any account link from X, TikTok, YouTube, or Instagram and it
+Will pull all the videos.
 
-**URL:** https://x.com/de1lymoon/status/2031750472395047364
-- Author: Alex (@de1lymoon)
-- Content: 25 years of data, 79% winrate, 38 technical indicators breakdown
-- Engagement: 484 likes, 43 retweets, 24 replies
-- Viral Score: 1.0/10
+→ then every
+**Metrics:** ❤️ 627  🔁 38  💬 24  🔖 0
+**Images:** none
+**URL:** https://x.com/ErnestoSOFTWARE/status/2035050670110183671
 
-**URL:** https://x.com/skalskip92/status/1843644812953883128
-- Author: SkalskiP (@skalskip92)
-- Content: Football AI improvements (ball position, player speed, processing optimization)
-- Engagement: 432 likes, 45 retweets, 5 replies
-- Viral Score: 1.0/10
+## 10. Jeremy Kuo (@jeremykuoo)
+**Viral Score:** 1/10
+**Tweet:** They build meaningful relationships that turn customers into evangelists.
 
-**URL:** https://x.com/DanGambleAI/status/1902481515600122116
-- Author: Dan's AI Sports Picks (@DanGambleAI)
-- Content: March Moneyline Model with confidence scores for bracket predictions
-- Engagement: 411 likes, 13 retweets, 24 replies
-- Viral Score: 1.0/10
+They build genuine connections that create exponential value over time.
 
----
+In a world where AI handles transactions, and ads are obvious...
 
-### YouTube (8 Videos - Technical Content)
+Authentic human connection becomes your competitive advantage.
+**Metrics:** ❤️ 530  🔁 31  💬 6  🔖 0
+**Images:** https://pbs.twimg.com/media/GyKd8cnaIAAGlTY?format=jpg&name=small
+**URL:** https://x.com/jeremykuoo/status/1955298851893788983
 
-**URL:** https://www.youtube.com/watch?v=LkJpNLIaeVk
-- Title: I Trained AI to Predict Sports
-- Channel: Green Code
-- Views: 1,411,145
-- Viral Score: 6.1/10
-- Focus: Sports prediction fundamentals + Brilliant.org partnership
+## 11. Robert Lukoszko (@Karmedge)
+**Viral Score:** 1/10
+**Tweet:** I built the first truly vibe marketing tool:
+>Vibe Influencer marketing<
+- Finds all influencers like perplexity
+- Scrapes contact info
+- Sends emails and automatically negotiates!
+All in one place
+Meet the first truly autonomous marketing agent – Stormy
+no waitlist
+**Metrics:** ❤️ 500  🔁 32  💬 75  🔖 0
+**Images:** none
+**URL:** https://x.com/Karmedge/status/1905705437959463285
 
-**URL:** https://www.youtube.com/watch?v=aBVGKoNZQUw
-- Title: Football AI Tutorial: From Basics to Advanced Stats with Python
-- Channel: Roboflow
-- Views: 323,019
-- Viral Score: 5.5/10
-- Duration: 90m19s
-- Focus: Computer vision + player tracking, detailed ML pipeline
+## 12. E-go (@EgoDriv)
+**Viral Score:** 1/10
+**Tweet:** Stop trying to insert yourself in existing networks and build one around yourself. The best and only way to do this is by connecting people and getting them to benefit from knowing each other. The more people you introduce to each other, the more people want to introduce you to
+**Metrics:** ❤️ 483  🔁 40  💬 15  🔖 0
+**Images:** none
+**URL:** https://x.com/EgoDriv/status/1983231539895812263
 
-**URL:** https://www.youtube.com/watch?v=00YPWyB5aR4
-- Title: Predicting Football Results and Beating the Bookies with Machine Learning
-- Channel: Crypto Wizards
-- Views: 68,877
-- Viral Score: 4.8/10
-- Duration: 26m5s
-- Focus: Market inefficiency exploitation, odds analysis
+## 13. The Boring Marketer (@boringmarketer)
+**Viral Score:** 1/10
+**Tweet:** this is what a 10x vibe marketer looks like 
 
-**URL:** https://www.youtube.com/watch?v=egTylm6C2is
-- Title: Predict NBA Games With Python And Machine Learning
-- Channel: Dataquest
-- Views: 63,231
-- Viral Score: 4.8/10
-- Duration: 58m33s
-- Focus: Basketball prediction, Python workflow, box score analysis
+- vibe into new marketing channels by using MCPs + LLMs as your guide
 
-**URL:** https://www.youtube.com/watch?v=Bmh8bzWrkL0
-- Title: AI Sports Picks
-- Channel: LeansAI
-- Views: 14,642
-- Viral Score: 4.2/10
-- Duration: 0m57s
-- Focus: AI algorithm overview for sports prediction
+- you can build internal tools and workflows in Cursor, it feels like home 
 
-**URL:** https://www.youtube.com/watch?v=ViaGirGFJZY
-- Title: AI Project for Beginners: NFL Game Predictions with Python & Machine Learning
-- Channel: Christian
-- Views: 8,953
-- Viral Score: 4.0/10
-- Duration: 22m21s
-- Focus: Beginner-friendly NFL prediction project (includes Google Colab link)
+- automating manual tasks with n8n, Gumloop, etc is second nature
 
-**URL:** https://www.youtube.com/watch?v=EzhqwTpjS-Q
-- Title: Building an NBA Betting Model in Python (With AI)
-- Channel: Mamba Analytics
-- Views: 995
-- Viral Score: 3.0/10
-- Duration: 9m1s
-- Focus: Bayesian Hierarchical Model, technical walkthrough
+- you know how to
+**Metrics:** ❤️ 450  🔁 30  💬 35  🔖 0
+**Images:** none
+**URL:** https://x.com/boringmarketer/status/1933296850917875773
 
-**URL:** https://www.youtube.com/watch?v=4oqMECIsFfk
-- Title: "How AI Is Changing Sports Betting Forever: The Future of Predicting the Game"
-- Channel: Sports Guru
-- Views: 35
-- Viral Score: 1.5/10
-- Duration: 2m29s
-- Focus: High-level overview of AI in sports betting
+## 14. Adele Bloch (@adele_bloch)
+**Viral Score:** 1/10
+**Tweet:** the ones desperately seeking connection... people can FEEL it (i've seen this firsthand hosting 100s of events). it feels intense. comes on strong. it feels like they need something out of you.
+
+when you exist in an open & friendly way, without a moment needing to BE anything
+**Metrics:** ❤️ 433  🔁 20  💬 5  🔖 0
+**Images:** none
+**URL:** https://x.com/adele_bloch/status/1868443478264517048
+
+## 15. Jah Jiren (@Jahjiren)
+**Viral Score:** 1/10
+**Tweet:** Vibecoding is everywhere
+Apps are easier than ever to build
+
+Yet most people haven’t earned $1
+
+But you already knew that,
+The difference is attention
+
+Stop wasting time!
+
+Here are the 5 marketing angles that are proven to work:
+**Metrics:** ❤️ 351  🔁 24  💬 19  🔖 0
+**Images:** none
+**URL:** https://x.com/Jahjiren/status/2015489297667781102
 
 ---
+### YOUTUBE
+## YOUTUBE SCOUT REPORT — vibe outreach personal branding authentic connection sales networking
+Date: 2026-03-24
+Videos analysed: 10
 
-### Google News (10 Articles - Enterprise/Market Perspective)
-
-**URL:** https://news.google.com/rss/articles/CBMiugFBVV95cUxNd2VuTFlHcGwyUTFFMkRhUXF5RlJOZ0s5NjJhMF8zOWpwZWFQUGZib08xR2tITEZyQXgtUnk5QmhKSGc5dHhXX3MwU282TWJGcWlIS3ctZnpTSTMxQ0hkejd2YmdqdXE1LXF3SjlyWElFNUtTeWV0ZVJuQ0VCZWl3NkozU1JNVGNzQ1JqVDVlaXUtbTdvR1otLUNJd3Rrd3pfS3V3Z0hUdlk5MUtndlFPM0xTSXhtTlVjLXfSAb8BQVVfeXFMUG1CT0YxTmtCRGp0clo1V21yS2pZdTNaNndFVVhfVDRMRlZna1dOQ1hkUmNkOHU4UnJrTmRqYUM2QWw1dGQzc1dxa0d1Q1MwTkxKcEJ5RTRvOHVjX1FsV1JpRW9FcHpRV1pxdkF2X0xYOWl4bmNHbVZqWFVVT0pVQWxSOVNVWkZwNmFTd08yUWN0ckJSZnF6N21MWHUwLWY3TzdZOFFNeU1lYXJ1QkJUdS1DdDY2LTRyRlg0SGZvRDg?oc=5
-- Source: EIN News
-- Title: AI In Sports Market 2026 Transforming Athlete Performance And Game Analytics
-- Published: Mar 13, 2026
-- Recency Score: 4/10
-- Focus: Market transformation, athlete performance metrics, game analytics
-
-**URL:** https://news.google.com/rss/articles/CBMiYkFVX3lxTE9DdlRBRUlMRjJQZm9MajVJbFJLZEducTJUUjB0TG45bmljRUFidTBEbld3OEpqRlI3UzhfaXZpMHh0MFBsUHRjYm90WWM0cGJoRjBGb09wYkpydFFDSlVFbUl3?oc=5
-- Source: Market.us
-- Title: AI Sports Analytics Market Size | CAGR of 29%
-- Published: Jan 21, 2026
-- Recency Score: 2/10
-- Focus: Market growth projection, investment opportunity signal
-
-**URL:** https://news.google.com/rss/articles/CBMixgFBVV95cUxPbFBZYlNyUDNLYXFSZkdxVkFqelhnbWg0d3k2eHZKTlcwSzI5ZHloU3R4VTBET3lCZ3p6VWd6RERfTW1MS0xUT1RrY0F1NnRaVEhrWlhkR0lBUmVaT19JVU1YWWlMbUZxMk9KY2k5OWJtbGZsbml1S015aXhMakJsbGtRR2syZHdZdG9ZUl9hRVFJOXFhLTc2ZFQ1c3dHVGxFQUs1TkdGQXp1MTQxYnhvODJITjk3R3JJNVNHQ2F3Rk94NndKT2c?oc=5
-- Source: PR Newswire
-- Title: Founders Row Backs Early-Stage AI Sports Analytics Platform Elite Picks
-- Published: Jan 20, 2026
-- Recency Score: 2/10
-- Focus: Startup funding, early-stage platform validation
-
-**URL:** https://news.google.com/rss/articles/CBMinAFBVV95cUxORW4wdERpMWtYR2tYdHBhamp3THM5R3NSQUpWOTMzbWRyVlZiMHB2ZlN1V1p4ODR2LW1VcW0xM2ZJb2dTTjhBOEdwTjUyUEtXWFJBVXlrangxUmo0THVVUnlsNmhKTl96TnVGeHE2SjRtVlduM3BNSDdfd24zZGVmODJ4Wm10eHl2Zl9RUWhxT091RDJYcHBRdjhkTFc?oc=5
-- Source: cuindependent.com
-- Title: AI Odds and Sports Analytics: How Tech Is Changing Betting Futures
-- Published: Dec 17, 2025
-- Recency Score: 2/10
-- Focus: AI in betting, odds prediction, market applications
-
-**URL:** https://news.google.com/rss/articles/CBMiwAFBVV95cUxOdUhkakpfcWw4ak5RN0pnS1hPOXhISnhnbEZLVWZuTWtoajJpaW9LbnVQY1p2UGlxWlVWSkltdVFTUkM5MkhKcjFSZjJnUFhxeS1DM2daVkdtckU3d2xlVTFzeUktMXIwMFNMQnMya3VNd0xETWxUeDN5cHc0SjlSaXcteFNOMFVYR0FHNDVYeEtOemVDeE9aTy0zejl1U3BGVkZ3RlliUlZLbE5uSU83T1o5NGRoRkRtT0oyVnJHQTY?oc=5
-- Source: BNN Bloomberg
-- Title: Artificial intelligence having natural impact on sports business
-- Published: Dec 15, 2025
-- Recency Score: 2/10
-- Focus: Enterprise adoption, business transformation
-
-**URL:** https://news.google.com/rss/articles/CBMiX0FVX3lxTE41MUFDSlRZYWppQ0poRzFkT1NoZFNrUkpVaTNHNzZfS2pfZ1F1MGtKOWM2THNMaWpIZW01dHhoYmdZVEV2di1jM2JGdGpWSHlPV2dHbkt3Z1ExN2xvU0ZZ?oc=5
-- Source: Nature
-- Title: AI-driven medical image analysis for sports injury diagnosis and prevention
-- Published: Nov 23, 2025
-- Recency Score: 2/10
-- Focus: Medical AI for athlete health, injury prevention
-
-**URL:** https://news.google.com/rss/articles/CBMimgFBVV95cUxQcVoxTUNmMWl4TWs0RV85QUZqaEt1cWFRSUQzRnZ6T05IVFBEclJVZVNZdkRXTHBmN3FsaV9iUUlBTXNXVzFFOF9OOERES2piU3A3LUNSelpxNXNyUWJKVUJoUl9DbUI0V082NFlmMlpzVTZxQ1dwWWxSS0ZZXzczX2ZTenRyTmdyMks2N1ZNdlh1czYzMXJHZ0tR?oc=5
-- Source: San Francisco Chronicle
-- Title: From Warriors' Jimmy Butler trade to your kid's playing time, how AI is changing sports
-- Published: Nov 13, 2025
-- Recency Score: 2/10
-- Focus: Real-world AI applications (NBA trades, youth sports analytics)
-
-**URL:** https://news.google.com/rss/articles/CBMi1AFBVV95cUxOZkdvWGJRUW05RzdfTFVHQk9CdGpQc0V2NFNZVVY5emlUYW9xbnZtTW9WQ2lVb0pjNWcwMmtlOGZmYTdkS1RjZjI0RVNlMWFoVC1KNlBPcl9wS1hLdFdkeVhDc2gxWUhqNlg5Smo2THZfV0p1MlN3V2tadzhPam1EY3R4ckxmUkt5VUZQbmtDWHRseElsbDhnZHJWVnc0YUNydWV0bGo1OTBCU2pmaE1ObVBpRlRGX09wbzBySlhGcldGSHJsSnlBUHFRTVlBOXdnU0s0S9IB3AFBVV95cUxNTnRROEJsajBPaHdGcjJrS2daalJLSXh0cVZTdHRaM1JJOTZVTUhxZUVTUXRpbGp1ejZFTURBM3lCWEpna09zb2o0MTFjU1hoRElmT2xEMjJDdVhPNU5jOFc0TXNlNnc1U1FLM0VlamJiSWhPZ3V1YzdvTmRXOU1RS1JpVVFWXzduNHJ0Q2hmM1BQSmMwNGhsaVBEbVozTVdycC10cVJkc0txN19uSm1hWC02RlpvVlhZdGlzMEhBalFVU1VOSDRpbVFNRW1kdnFpeVNNSzQ2RzlMckRF?oc=5
-- Source: TechFinancials
-- Title: The Future of Sports Betting Predictions: How AI and Big Data Are Transforming the Way Bettors Win
-- Published: Nov 10, 2025
-- Recency Score: 2/10
-- Focus: Betting predictions, big data integration, future outlook
-
-**URL:** https://news.google.com/rss/articles/CBMilgFBVV95cUxQa0tZSWpDMlRLS3FPU0VnTmF6M1BjdTlSdkZES2lTcEhuTUllV2hkTVhUUGVOZXN5ZEpIcF95MHQ0M2dUcDZjOXFmWGNMRktRT1Y4RU5TaXA5OEttdVpOQ2xuWU02VTlCZ3hveGl2TWJtVzRQNUFtOFdQR090dVQ3dFNMMnZzT1dhdUtDTjNZS1h1NEotLWc?oc=5
-- Source: Cybernews
-- Title: The Rise of AI in Sports: How Algorithms Are Changing the Game
-- Published: Oct 22, 2025
-- Recency Score: 2/10
-- Focus: Algorithm impact, game-changing applications
+### Top Viral Videos
 
 ---
-
-## SUMMARY
-
-**Sports AI is a hot pillar with explosive growth signals:**
-- 29% CAGR in market size
-- Active Twitter/X community sharing real results
-- Proven monetization path (prediction markets, sports betting)
-- Early-stage VC funding flowing
-- Open-source tools emerging
-
-**For Vaibhav's niche**, the opportunity is clear:  
-Nobody is talking about the **backend infrastructure** side of Sports AI. The gap exists at:
-- Real-time data pipelines
-- Low-latency inference at scale
-- Production model serving
-- System design for sports analytics platforms
-
-This aligns perfectly with your expertise in **system design, backend engineering, and low-latency systems**. You can own a uniquely valuable angle nobody else is covering.
+Title: How to Grow Your Business SO Fast in 2026 It Feels ILLEGAL
+Channel: Alex Hormozi
+Views: 1,306,133 | Likes: N/A | Duration: 63m8s
+Uploaded: N/A | Viral Score: 6.1/10
+URL: https://www.youtube.com/watch?v=HxEQCHpZzHk
+Description: "Download your free scaling roadmap here: https://www.acquisition.com/roadmap-yta402 The easiest business I can help you start ..."
 
 ---
+Title: I Built a Marketing Team with 1 AI Agent and No Code (free n8n template)
+Channel: Nate Herk | AI Automation
+Views: 839,931 | Likes: N/A | Duration: 33m56s
+Uploaded: N/A | Viral Score: 5.9/10
+URL: https://www.youtube.com/watch?v=ldETapkr8Hg
+Description: "Full courses + unlimited support: https://www.skool.com/ai-automation-society-plus/about All my FREE resources: ..."
 
-**Research Report Completed**  
-Date: 2026-03-24 16:18 UTC  
-Platforms: Twitter/X (10 sources), YouTube (8 sources), Google News (10 sources)  
-All sources verified with direct URLs.
+---
+Title: How To Get Customers So Fast It Feels ILLEGAL
+Channel: Alex Hormozi
+Views: 613,674 | Likes: N/A | Duration: 41m43s
+Uploaded: N/A | Viral Score: 5.8/10
+URL: https://www.youtube.com/watch?v=FMzKk73iUhw
+Description: "Download your free scaling roadmap here: https://www.acquisition.com/roadmap-yta398 The easiest business I can help you start ..."
+
+---
+Title: Watch This Video Before Every Sales Call - Sales Motivation
+Channel: Dan Lok
+Views: 540,923 | Likes: N/A | Duration: 3m7s
+Uploaded: N/A | Viral Score: 5.7/10
+URL: https://www.youtube.com/watch?v=bDk8yAPxAQ0
+Description: "Do You Want To Attract High Ticket Clients with Ease? Start here ▻ http://highticketclientsbootcamp.danlok.link To sell something, ..."
+
+---
+Title: Introducing Cowork: Claude Code for the rest of your work
+Channel: Anthropic
+Views: 429,932 | Likes: N/A | Duration: 1m9s
+Uploaded: N/A | Viral Score: 5.6/10
+URL: https://www.youtube.com/watch?v=UAmKyyZ-b9E
+Description: "Claude Cowork lets you hand off your most time-consuming tasks to Claude, and come back to finished outputs. Describe what ..."
+
+---
+Title: Clawdbot/OpenClaw Clearly Explained (and how to use it)
+Channel: Greg Isenberg
+Views: 333,347 | Likes: N/A | Duration: 35m14s
+Uploaded: N/A | Viral Score: 5.5/10
+URL: https://www.youtube.com/watch?v=U8kXfk8enrY
+Description: "I sit down with Alex Finn to break down how he sets up Moltbot (formally Clawdbot) as a proactive AI employee he treats like a ..."
+
+---
+Title: How to Use Claude Cowork Better Than 99% of People (Full Guide)
+Channel: Ben AI
+Views: 252,716 | Likes: N/A | Duration: 21m7s
+Uploaded: N/A | Viral Score: 5.4/10
+URL: https://www.youtube.com/watch?v=HTu1OGWAn5w
+Description: "Join my AI Accelerator to build an AI business fast ⤵️ https://c.benai.co/htucc-acc Work with my AI Agency ..."
+
+---
+Title: How to Get SO Many Customers with AI it feels ILLEGAL
+Channel: Dan Martell
+Views: 249,756 | Likes: N/A | Duration: 18m1s
+Uploaded: N/A | Viral Score: 5.4/10
+URL: https://www.youtube.com/watch?v=5hZCTc_mwOg
+Description: "Get my FREE Offer Template here: https://bit.ly/3J1ocBH Most people are using AI wrong, and it's costing them customers."
+
+---
+Title: Seriously, please watch this before you start learning n8n
+Channel: The AI Growth Lab with Tom
+Views: 198,007 | Likes: N/A | Duration: 6m49s
+Uploaded: N/A | Viral Score: 5.3/10
+URL: https://www.youtube.com/watch?v=ofC4OeNjDx8
+Description: "Join my n8n mentorship https://learnn8nautomation.com/mentorship Weekly n8n Newsletter ..."
+
+---
+Title: Secrets to Building the Most Engaging Community Ever
+Channel: Pat Flynn
+Views: 131,724 | Likes: N/A | Duration: 15m8s
+Uploaded: N/A | Viral Score: 5.1/10
+URL: https://www.youtube.com/watch?v=6ZVpufakwfk
+Description: "Today especially, building communities is so important. It's the future of business in my opinion - niche communities with a founder ..."
+
+
+### SOURCE URLS (for idea-generator)
+- How to Grow Your Business SO Fast in 2026 It Feels ILLEGAL (1306K views)
+  URL: https://www.youtube.com/watch?v=HxEQCHpZzHk
+- I Built a Marketing Team with 1 AI Agent and No Code (free n8n template) (840K views)
+  URL: https://www.youtube.com/watch?v=ldETapkr8Hg
+- How To Get Customers So Fast It Feels ILLEGAL (614K views)
+  URL: https://www.youtube.com/watch?v=FMzKk73iUhw
+- Watch This Video Before Every Sales Call - Sales Motivation (541K views)
+  URL: https://www.youtube.com/watch?v=bDk8yAPxAQ0
+- Introducing Cowork: Claude Code for the rest of your work (430K views)
+  URL: https://www.youtube.com/watch?v=UAmKyyZ-b9E
+- Clawdbot/OpenClaw Clearly Explained (and how to use it) (333K views)
+  URL: https://www.youtube.com/watch?v=U8kXfk8enrY
+- How to Use Claude Cowork Better Than 99% of People (Full Guide) (253K views)
+  URL: https://www.youtube.com/watch?v=HTu1OGWAn5w
+- How to Get SO Many Customers with AI it feels ILLEGAL (250K views)
+  URL: https://www.youtube.com/watch?v=5hZCTc_mwOg
+- Seriously, please watch this before you start learning n8n (198K views)
+  URL: https://www.youtube.com/watch?v=ofC4OeNjDx8
+- Secrets to Building the Most Engaging Community Ever (132K views)
+  URL: https://www.youtube.com/watch?v=6ZVpufakwfk
+
+---
+### GOOGLE NEWS
+## GOOGLE NEWS SCOUT REPORT — Sports AI
+Date: 2026-03-24
+Articles: 20
+
+### Top Articles
+
+---
+Title: Revolutionizing Coaching: Lynk.coach - An AI-First Platform for Skill Development - Devdiscourse
+Source: Devdiscourse
+Published: Tue, 24 Mar 2026 08:49:36 GMT
+Recency Score: 10/10
+URL: https://news.google.com/rss/articles/CBMi0wFBVV95cUxOeXhEVmxpbGFJVUJFZ1hsTFUwT1NFOWJCSmh5a3piVnBhTkxCdGlHZndzVWFiMlBQbnFSSVRaeERlcy0wZXVRYm1pTDgyMW00VnJFdFh6ZXoySjVMMEotU0FMN2txVVBQYmNDNHVlRVZOdWJMQjBpLTJJVUM5SE1KZHp2WW9tMHNrdHlhN05rbVRidHVfaFl6TUNadHZDYU0xZThMWmMyZGQ4Vk5jOEhKLUR3M2dSc0pkTVNVUlhvMkstVktvbVZaTGhIQmhncUhUOTJR0gHYAUFVX3lxTE43VzM3QzlPUkpQZXZsVVJxN1R3VG9zNnZYTUlnd00zaExYSEFtYU1GNjBtamQ2RXJCUHU3eWk2TURMRWFubXJhWTA0ZVk0bE9XM0d1SHpiRnc4T2xZOGQ1MjNRNGxQMGRWWk91bVplRkNzSjlGQ0dJTktOWEM0eFRMQ3RDUG9TWFFYV2ozd3BqaUtFMGI5dGFrazBQbFhUZElJSVA3Um13YXEyMFBxajlsSi1yWWlZREhnWlRMU1dNWDVEYUVHM3lDMXpjekFtUmpQRnczVUs0Uw?oc=5
+
+---
+Title: Lyfskills launches Lynk.coach, an AI-powered coaching management platform for sports, fitness, performance arts and skill development - TheWire.in
+Source: TheWire.in
+Published: Tue, 24 Mar 2026 08:46:57 GMT
+Recency Score: 10/10
+URL: https://news.google.com/rss/articles/CBMi_gFBVV95cUxPVnZxNzkxS1RESWZnckkteDRGOE0zelFmSks4ODhfSTNzZkZDWk5kQ3ZTd1htOXhtQUNBOWdXNE5QRnFnVUt3RFZvV0JQV3BmenVZS2VVYjdGUkJFTjI3Y1NWako1T0lSUTljT1NxdjlRamNtd3lTNTVaWUFtNThCTUNVSEdpZUk2R1VBOVRscFVZQ1NfRzJxWmxZSE9abWFCbjVoSlFkWGYwUHoxUXdrTUx0d2lSWEFFMzRPbERQV01lQjBJRE1QR0lFeGZiLWtmR1Q3ZlR3eW1qSlI4bURONEgwcGUyVmJrb1RMZElYM1k2TVdPcGdDYjFPZExqUdIBgwJBVV95cUxQVEIxQmNmcmxZRlVfS05YMl9nUmp1N3c0ZWJjV3F0RTd0RGxwTGVEdzE0ODl4cy02akJQN3hPaC1QLVFjTWJyT00yOGlHai1jNXFCanBYcGxKZGFCRTMwMzlFX1pSVnBhZldMQnpTWDRGbGtjblFmcDZYaXoxUzNYd2ptekhSSnZGcnI0bEtRUk9jYTM2dlRvbnZub253OElGOHY0MXZnZ1ctRDZOQXJ0OGRSSU02UGlzdlZ4bE9CZEhUV3lIdE1zY25rdXBfOG5zZ2RIc2J0TUgzSjdROU5sa1RPTEdTT0tJTUszR3VzMEd0X0gxRTR5ZGNtT3lsY3NiSTBZ?oc=5
+
+---
+Title: Lil Wayne Returns To “Not Just Football” To Talk AI, World Cup & A Mixtape Weezy VERZUZ - LilWayneHQ
+Source: LilWayneHQ
+Published: Mon, 23 Mar 2026 20:27:23 GMT
+Recency Score: 9/10
+URL: https://news.google.com/rss/articles/CBMipAFBVV95cUxPZ2kwMUdGTnpwWVJZMWpLN1JZR0VtaTZqMExzRTZ1VUhiUEgxc3pOUWFEQ3NrcF80em1kb0U4T2diNVJTZk1WYjFSN2M2Q1B4V2FKWFhESkZ4REFjZmEtaDBZZkgtZU8tbmNJdVljT004cFBiYm1scUd5ZWdZTjVwaUpiNHBoTXZmZ1dIRnZraUxVcy0tV2dOY2cyTHc2U0hPeVFzMw?oc=5
+
+---
+Title: AI Sports Betting in 2026: Tools, Picks & What’s Changing - SportsHandle
+Source: SportsHandle
+Published: Mon, 23 Mar 2026 16:04:00 GMT
+Recency Score: 9/10
+URL: https://news.google.com/rss/articles/CBMiWkFVX3lxTE96VjJpZTNfc0loSmp0Q19xTi1iTGpwY1JXcjJHcE5BYzFnWm8xdHdZd0hGRGlHWjNnVEVDQnd1MEtpQ2VTRlB2cUZoNG0yQXNXaEdmME5seFZydw?oc=5
+
+---
+Title: How Infosys' AI Propels Formula E Fans to Pole Position - AI Magazine
+Source: AI Magazine
+Published: Mon, 23 Mar 2026 15:37:57 GMT
+Recency Score: 9/10
+URL: https://news.google.com/rss/articles/CBMiigFBVV95cUxQbktUdWt6cFVQckJVcmFRWTBvVnFNdlVPWmdob2NtWTVVdEN2UmJGSUJoT1hKLVpsM0p5UUF6eE5BR296cTlYb1JwSFBveTJQaUtidGUwaFBoc05fRG55V2VRVmlXNGpXZ3hyUFhxUTluWFQ3TVNOMGJoc0NlRWd0a0RJTFpOWUVDQ1E?oc=5
+
+---
+Title: Professional Baseball Players Association Signs Agreement With KTG Sports to Use AI-Based Publicity Rights - starnewskorea.com
+Source: starnewskorea.com
+Published: Mon, 23 Mar 2026 06:25:23 GMT
+Recency Score: 8/10
+URL: https://news.google.com/rss/articles/CBMiekFVX3lxTE41a3pFNUpobHdoSnpDRXN2OHBza0NPVktGU0J6OTV6N0dLSzhIUzMtOVIwc1ZQTFUzU2JOOHROam5jTUNWWnlCRlpYWVRVMzl1R2tTNzd3ZGhyMDV5N19LTldLdXBxUXBSSTQtMWZJU2xjbnpvazNPWXZB?oc=5
+
+---
+Title: Introducing Sports AI with Colin Cowherd on the FOX Sports App - FOX Sports
+Source: FOX Sports
+Published: Thu, 26 Feb 2026 08:00:00 GMT
+Recency Score: 3/10
+URL: https://news.google.com/rss/articles/CBMibkFVX3lxTE1kUDMzRDJJYVl6MGxhdWxBUFNVT3VOSEhHVy0xNEd0MTZqSEwyLXllTTBDbUFpcy1xLTJMRDRWbHR1dFBFT202SkZjVXpXWE94ZjJRZlZ0dVd1RXNUVWNuUDdWOFFQWF8xNWJxVUVB?oc=5
+
+---
+Title: Brady Tkachuk decries White House’s AI video of him insulting Canadians after US gold - The Guardian
+Source: The Guardian
+Published: Thu, 26 Feb 2026 08:00:00 GMT
+Recency Score: 3/10
+URL: https://news.google.com/rss/articles/CBMiygFBVV95cUxPY0t0VWhuaVVmVnR1bGhwRkZUa0FtMTgyTEQ3bm1WU2lMMHZCbm1CQzhsaXFJLUgzNFpwZTkwbDhNMGlHTVdnbkgwMWFjZjFPSjB0UV9xV2lWemwwbEdsYlFrdTE5UEdUM0xNX1BLcEg5dFZHNVdVX1pDSmZZZVpKbXNvb01JQmVVd2tiU2REdENnU1k4Wi11bm5EVmJUUnJJVnNsbUF2bU52SXFxdU9hOFEzdmR6V29Cc2xnNGh0d2JJaFdfM3AweGdB?oc=5
+
+---
+Title: AI will supercharge sports team valuations, says Arctos Partners’ Charles - CNBC
+Source: CNBC
+Published: Tue, 03 Feb 2026 08:00:00 GMT
+Recency Score: 2/10
+URL: https://news.google.com/rss/articles/CBMiiAFBVV95cUxQelAzazY1UF9kUmNoRmphaEo5NU1zS0ZzWUd4ekpqeFI5SlhUeHdRc2xZRUc5Wl9IcW5tVk9VVDg2YUhzczdwZjloc1dDNUlCUGUxT3d4d0JqbWpOTlduOHJqZENhdU4yeTJSSkJ3UE5ERzFGbFpGazVUdVc3ai16QS1jaFlqOTla0gGOAUFVX3lxTE9KNmlITFNKbnlabGZpaVRucUl0NTJYLWhVaWlIOXVnWGM4SFE0clE4Z2dOX3FsQXZCc2JWWEp3Y3RxSVVrWUtGQTFKVVhCcDg2NW9kaVhJd3ltUGEzYnVURkM0MlVMZ3N5TzN4d05TM0RPR1MxakJmSkJFVjZRUHJCTXdEZW1vODJCaFpYcmc?oc=5
+
+---
+Title: The future of sports, powered by AI - The Washington Post
+Source: The Washington Post
+Published: Tue, 09 Dec 2025 08:00:00 GMT
+Recency Score: 2/10
+URL: https://news.google.com/rss/articles/CBMilgFBVV95cUxPSk9OTFFrdDFrRFdvZjdDVWp5VmpyWGNwZlNIZ0gzQjBmNXNUdkNYQUZodkVMbXJzYTNFNF9tQkxpYms5RC11RVBfdFVZSUFEaEZ2OVpGMGRUT1c3OHlyZW1HTFdULTdHblpFT3FoNldsNV9zcDFtQktIWUlpTVd2WTFOT0d6Q2RobFJ3TmI2aThHcmNJSEE?oc=5
+
+---
+Title: Amazon’s custom AI-powered Prime Insights take fans inside the game - About Amazon
+Source: About Amazon
+Published: Tue, 25 Nov 2025 08:00:00 GMT
+Recency Score: 2/10
+URL: https://news.google.com/rss/articles/CBMifkFVX3lxTE5UNDM5dE83LTVmUUdnTUNabmt1OU9BRUpBanN6dHpnZ1dKamRQLWdkcXdVYzlVQUg0d0hhYlFrV0FkZUlpNGJBZVNHX1gyQWpHRmFONWJrUWkxMXRLSjhBZmVqX092dHVBV0tvaURJam5tdHBaSzdKeDBQZFR5dw?oc=5
+
+---
+Title: Sports AI — Built for Sports Fans, Backed by Fox Sports - FOX Sports
+Source: FOX Sports
+Published: Sat, 01 Nov 2025 00:31:18 GMT
+Recency Score: 2/10
+URL: https://news.google.com/rss/articles/CBMiU0FVX3lxTFA0Q1RXZ09tTHBROGZrWm1kTDFha0dHb1NGcDdJcG1Cd09BUUF4Zzg1TXdTcXN5ZGtvbDZpSFZsNDRtZkllVW5SVkN4TmpYV1oxM0tv?oc=5
+
+---
+Title: BBC Bitesize Guide to AI: How is AI transforming the world of football and sport? - BBC Bitesize - BBC
+Source: BBC
+Published: Wed, 15 Oct 2025 13:17:12 GMT
+Recency Score: 2/10
+URL: https://news.google.com/rss/articles/CBMiW0FVX3lxTE54S0RrMGNFWEtXZkJrX1gyRjdSdnIwUjRzM3VxczdseHlqdjhURXNJTWdhUWs0UlhJdGlXQzg5TnY4bHhBR280UGNnWFpsVENqMHQ5Z29jcWY2ZWs?oc=5
+
+---
+Title: AI in Sports: Applications and Use Cases - appinventiv.com
+Source: appinventiv.com
+Published: Mon, 13 Oct 2025 07:00:00 GMT
+Recency Score: 2/10
+URL: https://news.google.com/rss/articles/CBMiVEFVX3lxTFBrZnl6TE9GM1Q0bnVSWURKSGhsaF9VYzF5b1Zjck02Njh6SjZPMnR3WWh1QkE5OGliSWJnS1VIXy01WVFtVkxhNmtCR0Mxd2FocDNhTQ?oc=5
+
+---
+Title: Tristan Thompson on AI, Sports & Startups at Disrupt 2025 - TechCrunch
+Source: TechCrunch
+Published: Wed, 08 Oct 2025 07:00:00 GMT
+Recency Score: 2/10
+URL: https://news.google.com/rss/articles/CBMipwFBVV95cUxObVFzb01ScFAxQjlpY213c3BSWTNWcmUwdE1tLTREa003Vi1BY0FHNVZ5WDVNMW1PWkVlSnhIWjkxUmNCWUxaVGhTeUlGdG40NExYOEJwNk9xRjA0VnN3emVjUFVyWVhBcnFmMlM0LWVFdXM1ZkpfMzM5eXdQVXBvS1dqd3piSl8tYnlRNElhcTF2ZExpZDNHakNTUzNaOW5PUUl0LUFEZw?oc=5
+
+---
+Title: Can AI help detect doping in sports? | Euronews Tech Talks Podcast - Euronews.com
+Source: Euronews.com
+Published: Sun, 07 Sep 2025 07:00:00 GMT
+Recency Score: 2/10
+URL: https://news.google.com/rss/articles/CBMinAFBVV95cUxNVEVQOV9OUXZxMklDSlJPRy1zbm9BbVNHSjVhcVdQLXJvcFozZWlOdk9nVFoyUkFYLVU5dXNNVGRmZnFEckFNdlY1cExKb0tDSmRmQ1ZRSXBvbUQtTURPNkxXNER2Q1k1cTItWG1xUDMxOE5XSWlsM2VYRlRQTE5ySjktTEtVQ19LR05IaHhzY25RUk1PaUlxcU5MVjI?oc=5
+
+---
+Title: Meet the Guys Betting Big on AI Gambling Agents - WIRED
+Source: WIRED
+Published: Tue, 02 Sep 2025 07:00:00 GMT
+Recency Score: 2/10
+URL: https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUmFzcW5xNmZlZHo5Tm9sUVhqN0xkamNzeDBieWhBdlkzbWo5bjE4cDRHekRGXzNnN1hWbUt2NTlwOG40dWwzcUE5dnpFT2hucUdCSEJYbjl2M0ExZFEtQ1hWWDNDTS10d3pxNU9KbWtMQkJiei1PR2RTVG9KanU5dHZFTUg1M25Q?oc=5
+
+---
+Title: A.I. Researchers Are Negotiating $250 Million Pay Packages. Just Like N.B.A. Stars. - The New York Times
+Source: The New York Times
+Published: Fri, 01 Aug 2025 07:00:00 GMT
+Recency Score: 2/10
+URL: https://news.google.com/rss/articles/CBMigAFBVV95cUxNbDRSaHJ2RU5ka0l4a2I5Mk8zNW5lVjNrUjBoaWV2MU85Ulo3VkxmZm5UaUhnVHM0dHh4TWVlWU5jd0pieEZSUnJXZy03d3U4TTZwQTZKbGRaajhDS21aQXVVck1MQmFOeVYzTHMtYWVUT29JX2FaV1l6U29SMVZPcg?oc=5
+
+---
+Title: AI in sports: Changing the game for fans and players alike - IBM
+Source: IBM
+Published: Thu, 24 Jul 2025 06:12:15 GMT
+Recency Score: 2/10
+URL: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1CbDNVUE9MS25XTDRUMnBySkJkZXNYQ2dKYU5uSGNSRURBT3paaWhKOUhCMUEyRk9VSXpPUWdGYnpsQV9WMjBjNWhKSW0xbU1XUlp0V0N6bUVyRUE3WXFrMg?oc=5
+
+---
+Title: Research on the digital transaction model of the sports industry chain based on blockchain technology - Nature
+Source: Nature
+Published: Fri, 11 Jul 2025 07:00:00 GMT
+Recency Score: 2/10
+URL: https://news.google.com/rss/articles/CBMiX0FVX3lxTE96UHR3MlpaamdMYjBlMDAxSlRRWE5EUWZIX0VyeWJCVWQ0cVp6a25MNVd5MFlBR3kwYlBRQVBLVTZQUG13YmZNckdDSU90Z2xjMjBJSWZXc1JvVkhoc3Nz?oc=5
+
+
+### SOURCE URLS (for idea-generator)
+- Revolutionizing Coaching: Lynk.coach - An AI-First Platform for Skill Development - Devdiscourse — Devdiscourse
+  URL: https://news.google.com/rss/articles/CBMi0wFBVV95cUxOeXhEVmxpbGFJVUJFZ1hsTFUwT1NFOWJCSmh5a3piVnBhTkxCdGlHZndzVWFiMlBQbnFSSVRaeERlcy0wZXVRYm1pTDgyMW00VnJFdFh6ZXoySjVMMEotU0FMN2txVVBQYmNDNHVlRVZOdWJMQjBpLTJJVUM5SE1KZHp2WW9tMHNrdHlhN05rbVRidHVfaFl6TUNadHZDYU0xZThMWmMyZGQ4Vk5jOEhKLUR3M2dSc0pkTVNVUlhvMkstVktvbVZaTGhIQmhncUhUOTJR0gHYAUFVX3lxTE43VzM3QzlPUkpQZXZsVVJxN1R3VG9zNnZYTUlnd00zaExYSEFtYU1GNjBtamQ2RXJCUHU3eWk2TURMRWFubXJhWTA0ZVk0bE9XM0d1SHpiRnc4T2xZOGQ1MjNRNGxQMGRWWk91bVplRkNzSjlGQ0dJTktOWEM0eFRMQ3RDUG9TWFFYV2ozd3BqaUtFMGI5dGFrazBQbFhUZElJSVA3Um13YXEyMFBxajlsSi1yWWlZREhnWlRMU1dNWDVEYUVHM3lDMXpjekFtUmpQRnczVUs0Uw?oc=5
+- Lyfskills launches Lynk.coach, an AI-powered coaching management platform for sports, fitness, performance arts and skill development - TheWire.in — TheWire.in
+  URL: https://news.google.com/rss/articles/CBMi_gFBVV95cUxPVnZxNzkxS1RESWZnckkteDRGOE0zelFmSks4ODhfSTNzZkZDWk5kQ3ZTd1htOXhtQUNBOWdXNE5QRnFnVUt3RFZvV0JQV3BmenVZS2VVYjdGUkJFTjI3Y1NWako1T0lSUTljT1NxdjlRamNtd3lTNTVaWUFtNThCTUNVSEdpZUk2R1VBOVRscFVZQ1NfRzJxWmxZSE9abWFCbjVoSlFkWGYwUHoxUXdrTUx0d2lSWEFFMzRPbERQV01lQjBJRE1QR0lFeGZiLWtmR1Q3ZlR3eW1qSlI4bURONEgwcGUyVmJrb1RMZElYM1k2TVdPcGdDYjFPZExqUdIBgwJBVV95cUxQVEIxQmNmcmxZRlVfS05YMl9nUmp1N3c0ZWJjV3F0RTd0RGxwTGVEdzE0ODl4cy02akJQN3hPaC1QLVFjTWJyT00yOGlHai1jNXFCanBYcGxKZGFCRTMwMzlFX1pSVnBhZldMQnpTWDRGbGtjblFmcDZYaXoxUzNYd2ptekhSSnZGcnI0bEtRUk9jYTM2dlRvbnZub253OElGOHY0MXZnZ1ctRDZOQXJ0OGRSSU02UGlzdlZ4bE9CZEhUV3lIdE1zY25rdXBfOG5zZ2RIc2J0TUgzSjdROU5sa1RPTEdTT0tJTUszR3VzMEd0X0gxRTR5ZGNtT3lsY3NiSTBZ?oc=5
+- Lil Wayne Returns To “Not Just Football” To Talk AI, World Cup & A Mixtape Weezy VERZUZ - LilWayneHQ — LilWayneHQ
+  URL: https://news.google.com/rss/articles/CBMipAFBVV95cUxPZ2kwMUdGTnpwWVJZMWpLN1JZR0VtaTZqMExzRTZ1VUhiUEgxc3pOUWFEQ3NrcF80em1kb0U4T2diNVJTZk1WYjFSN2M2Q1B4V2FKWFhESkZ4REFjZmEtaDBZZkgtZU8tbmNJdVljT004cFBiYm1scUd5ZWdZTjVwaUpiNHBoTXZmZ1dIRnZraUxVcy0tV2dOY2cyTHc2U0hPeVFzMw?oc=5
+- AI Sports Betting in 2026: Tools, Picks & What’s Changing - SportsHandle — SportsHandle
+  URL: https://news.google.com/rss/articles/CBMiWkFVX3lxTE96VjJpZTNfc0loSmp0Q19xTi1iTGpwY1JXcjJHcE5BYzFnWm8xdHdZd0hGRGlHWjNnVEVDQnd1MEtpQ2VTRlB2cUZoNG0yQXNXaEdmME5seFZydw?oc=5
+- How Infosys' AI Propels Formula E Fans to Pole Position - AI Magazine — AI Magazine
+  URL: https://news.google.com/rss/articles/CBMiigFBVV95cUxQbktUdWt6cFVQckJVcmFRWTBvVnFNdlVPWmdob2NtWTVVdEN2UmJGSUJoT1hKLVpsM0p5UUF6eE5BR296cTlYb1JwSFBveTJQaUtidGUwaFBoc05fRG55V2VRVmlXNGpXZ3hyUFhxUTluWFQ3TVNOMGJoc0NlRWd0a0RJTFpOWUVDQ1E?oc=5
+- Professional Baseball Players Association Signs Agreement With KTG Sports to Use AI-Based Publicity Rights - starnewskorea.com — starnewskorea.com
+  URL: https://news.google.com/rss/articles/CBMiekFVX3lxTE41a3pFNUpobHdoSnpDRXN2OHBza0NPVktGU0J6OTV6N0dLSzhIUzMtOVIwc1ZQTFUzU2JOOHROam5jTUNWWnlCRlpYWVRVMzl1R2tTNzd3ZGhyMDV5N19LTldLdXBxUXBSSTQtMWZJU2xjbnpvazNPWXZB?oc=5
+- Introducing Sports AI with Colin Cowherd on the FOX Sports App - FOX Sports — FOX Sports
+  URL: https://news.google.com/rss/articles/CBMibkFVX3lxTE1kUDMzRDJJYVl6MGxhdWxBUFNVT3VOSEhHVy0xNEd0MTZqSEwyLXllTTBDbUFpcy1xLTJMRDRWbHR1dFBFT202SkZjVXpXWE94ZjJRZlZ0dVd1RXNUVWNuUDdWOFFQWF8xNWJxVUVB?oc=5
+- Brady Tkachuk decries White House’s AI video of him insulting Canadians after US gold - The Guardian — The Guardian
+  URL: https://news.google.com/rss/articles/CBMiygFBVV95cUxPY0t0VWhuaVVmVnR1bGhwRkZUa0FtMTgyTEQ3bm1WU2lMMHZCbm1CQzhsaXFJLUgzNFpwZTkwbDhNMGlHTVdnbkgwMWFjZjFPSjB0UV9xV2lWemwwbEdsYlFrdTE5UEdUM0xNX1BLcEg5dFZHNVdVX1pDSmZZZVpKbXNvb01JQmVVd2tiU2REdENnU1k4Wi11bm5EVmJUUnJJVnNsbUF2bU52SXFxdU9hOFEzdmR6V29Cc2xnNGh0d2JJaFdfM3AweGdB?oc=5
+- AI will supercharge sports team valuations, says Arctos Partners’ Charles - CNBC — CNBC
+  URL: https://news.google.com/rss/articles/CBMiiAFBVV95cUxQelAzazY1UF9kUmNoRmphaEo5NU1zS0ZzWUd4ekpqeFI5SlhUeHdRc2xZRUc5Wl9IcW5tVk9VVDg2YUhzczdwZjloc1dDNUlCUGUxT3d4d0JqbWpOTlduOHJqZENhdU4yeTJSSkJ3UE5ERzFGbFpGazVUdVc3ai16QS1jaFlqOTla0gGOAUFVX3lxTE9KNmlITFNKbnlabGZpaVRucUl0NTJYLWhVaWlIOXVnWGM4SFE0clE4Z2dOX3FsQXZCc2JWWEp3Y3RxSVVrWUtGQTFKVVhCcDg2NW9kaVhJd3ltUGEzYnVURkM0MlVMZ3N5TzN4d05TM0RPR1MxakJmSkJFVjZRUHJCTXdEZW1vODJCaFpYcmc?oc=5
+- The future of sports, powered by AI - The Washington Post — The Washington Post
+  URL: https://news.google.com/rss/articles/CBMilgFBVV95cUxPSk9OTFFrdDFrRFdvZjdDVWp5VmpyWGNwZlNIZ0gzQjBmNXNUdkNYQUZodkVMbXJzYTNFNF9tQkxpYms5RC11RVBfdFVZSUFEaEZ2OVpGMGRUT1c3OHlyZW1HTFdULTdHblpFT3FoNldsNV9zcDFtQktIWUlpTVd2WTFOT0d6Q2RobFJ3TmI2aThHcmNJSEE?oc=5
+- Amazon’s custom AI-powered Prime Insights take fans inside the game - About Amazon — About Amazon
+  URL: https://news.google.com/rss/articles/CBMifkFVX3lxTE5UNDM5dE83LTVmUUdnTUNabmt1OU9BRUpBanN6dHpnZ1dKamRQLWdkcXdVYzlVQUg0d0hhYlFrV0FkZUlpNGJBZVNHX1gyQWpHRmFONWJrUWkxMXRLSjhBZmVqX092dHVBV0tvaURJam5tdHBaSzdKeDBQZFR5dw?oc=5
+- Sports AI — Built for Sports Fans, Backed by Fox Sports - FOX Sports — FOX Sports
+  URL: https://news.google.com/rss/articles/CBMiU0FVX3lxTFA0Q1RXZ09tTHBROGZrWm1kTDFha0dHb1NGcDdJcG1Cd09BUUF4Zzg1TXdTcXN5ZGtvbDZpSFZsNDRtZkllVW5SVkN4TmpYV1oxM0tv?oc=5
+- BBC Bitesize Guide to AI: How is AI transforming the world of football and sport? - BBC Bitesize - BBC — BBC
+  URL: https://news.google.com/rss/articles/CBMiW0FVX3lxTE54S0RrMGNFWEtXZkJrX1gyRjdSdnIwUjRzM3VxczdseHlqdjhURXNJTWdhUWs0UlhJdGlXQzg5TnY4bHhBR280UGNnWFpsVENqMHQ5Z29jcWY2ZWs?oc=5
+- AI in Sports: Applications and Use Cases - appinventiv.com — appinventiv.com
+  URL: https://news.google.com/rss/articles/CBMiVEFVX3lxTFBrZnl6TE9GM1Q0bnVSWURKSGhsaF9VYzF5b1Zjck02Njh6SjZPMnR3WWh1QkE5OGliSWJnS1VIXy01WVFtVkxhNmtCR0Mxd2FocDNhTQ?oc=5
+- Tristan Thompson on AI, Sports & Startups at Disrupt 2025 - TechCrunch — TechCrunch
+  URL: https://news.google.com/rss/articles/CBMipwFBVV95cUxObVFzb01ScFAxQjlpY213c3BSWTNWcmUwdE1tLTREa003Vi1BY0FHNVZ5WDVNMW1PWkVlSnhIWjkxUmNCWUxaVGhTeUlGdG40NExYOEJwNk9xRjA0VnN3emVjUFVyWVhBcnFmMlM0LWVFdXM1ZkpfMzM5eXdQVXBvS1dqd3piSl8tYnlRNElhcTF2ZExpZDNHakNTUzNaOW5PUUl0LUFEZw?oc=5
+- Can AI help detect doping in sports? | Euronews Tech Talks Podcast - Euronews.com — Euronews.com
+  URL: https://news.google.com/rss/articles/CBMinAFBVV95cUxNVEVQOV9OUXZxMklDSlJPRy1zbm9BbVNHSjVhcVdQLXJvcFozZWlOdk9nVFoyUkFYLVU5dXNNVGRmZnFEckFNdlY1cExKb0tDSmRmQ1ZRSXBvbUQtTURPNkxXNER2Q1k1cTItWG1xUDMxOE5XSWlsM2VYRlRQTE5ySjktTEtVQ19LR05IaHhzY25RUk1PaUlxcU5MVjI?oc=5
+- Meet the Guys Betting Big on AI Gambling Agents - WIRED — WIRED
+  URL: https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUmFzcW5xNmZlZHo5Tm9sUVhqN0xkamNzeDBieWhBdlkzbWo5bjE4cDRHekRGXzNnN1hWbUt2NTlwOG40dWwzcUE5dnpFT2hucUdCSEJYbjl2M0ExZFEtQ1hWWDNDTS10d3pxNU9KbWtMQkJiei1PR2RTVG9KanU5dHZFTUg1M25Q?oc=5
+- A.I. Researchers Are Negotiating $250 Million Pay Packages. Just Like N.B.A. Stars. - The New York Times — The New York Times
+  URL: https://news.google.com/rss/articles/CBMigAFBVV95cUxNbDRSaHJ2RU5ka0l4a2I5Mk8zNW5lVjNrUjBoaWV2MU85Ulo3VkxmZm5UaUhnVHM0dHh4TWVlWU5jd0pieEZSUnJXZy03d3U4TTZwQTZKbGRaajhDS21aQXVVck1MQmFOeVYzTHMtYWVUT29JX2FaV1l6U29SMVZPcg?oc=5
+- AI in sports: Changing the game for fans and players alike - IBM — IBM
+  URL: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1CbDNVUE9MS25XTDRUMnBySkJkZXNYQ2dKYU5uSGNSRURBT3paaWhKOUhCMUEyRk9VSXpPUWdGYnpsQV9WMjBjNWhKSW0xbU1XUlp0V0N6bUVyRUE3WXFrMg?oc=5
+- Research on the digital transaction model of the sports industry chain based on blockchain technology - Nature — Nature
+  URL: https://news.google.com/rss/articles/CBMiX0FVX3lxTE96UHR3MlpaamdMYjBlMDAxSlRRWE5EUWZIX0VyeWJCVWQ0cVp6a25MNVd5MFlBR3kwYlBRQVBLVTZQUG13YmZNckdDSU90Z2xjMjBJSWZXc1JvVkhoc3Nz?oc=5
+

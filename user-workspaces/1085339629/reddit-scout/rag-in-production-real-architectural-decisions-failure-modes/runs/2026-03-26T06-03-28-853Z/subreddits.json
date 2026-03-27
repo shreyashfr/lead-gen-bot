@@ -1,0 +1,42 @@
+[
+  {
+    "name": "ArtisanVideos",
+    "title": "Videos of tradespeople and craftspeople skillfully performing their work",
+    "subscribers": 2290426,
+    "over18": false,
+    "url": "https://www.reddit.com/r/ArtisanVideos/",
+    "discoveredBy": [
+      "RAG in Production - Real architectural decisions, failure modes, and benchmark numbers from building RAG systems at scale. Hybrid search, reranking, RAGAS evaluation, context retrieval, embedding drift, vector DB trade-offs"
+    ]
+  },
+  {
+    "name": "TechnoProduction",
+    "title": "Techno Production",
+    "subscribers": 102093,
+    "over18": false,
+    "url": "https://www.reddit.com/r/TechnoProduction/",
+    "discoveredBy": [
+      "RAG in Production - Real architectural decisions, failure modes, and benchmark numbers from building RAG systems at scale. Hybrid search, reranking, RAGAS evaluation, context retrieval, embedding drift, vector DB trade-offs"
+    ]
+  },
+  {
+    "name": "AudioProductionDeals",
+    "title": "AudioProductionDeals - By Grabthar's Hammer..... what a savings. Est 2016",
+    "subscribers": 69982,
+    "over18": false,
+    "url": "https://www.reddit.com/r/AudioProductionDeals/",
+    "discoveredBy": [
+      "RAG in Production - Real architectural decisions, failure modes, and benchmark numbers from building RAG systems at scale. Hybrid search, reranking, RAGAS evaluation, context retrieval, embedding drift, vector DB trade-offs"
+    ]
+  },
+  {
+    "name": "Audiomemes",
+    "title": "Audiomemes - Laugh it up, soundboy",
+    "subscribers": 33172,
+    "over18": false,
+    "url": "https://www.reddit.com/r/Audiomemes/",
+    "discoveredBy": [
+      "RAG in Production - Real architectural decisions, failure modes, and benchmark numbers from building RAG systems at scale. Hybrid search, reranking, RAGAS evaluation, context retrieval, embedding drift, vector DB trade-offs"
+    ]
+  }
+]

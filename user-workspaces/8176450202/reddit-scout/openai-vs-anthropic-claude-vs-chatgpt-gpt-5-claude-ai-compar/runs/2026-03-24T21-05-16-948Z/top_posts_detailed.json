@@ -1,0 +1,2024 @@
+[
+  {
+    "id": "1s2cme5",
+    "subreddit": "technology",
+    "title": "Steve Wozniak says he's \"disappointed a lot\" by AI and rarely uses it",
+    "selftext": "",
+    "author": "AdSpecialist6598",
+    "created_utc": 1774356007,
+    "permalink": "https://www.reddit.com/r/technology/comments/1s2cme5/steve_wozniak_says_hes_disappointed_a_lot_by_ai/",
+    "url": "https://www.techspot.com/news/111806-steve-wozniak-disappointed-lot-ai-rarely-uses.html",
+    "domain": "techspot.com",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 16579,
+    "score": 16579,
+    "num_comments": 1153,
+    "upvote_ratio": 0.96,
+    "thumbnail": "https://external-preview.redd.it/PBHSR_536C7-bYj_7zaKsn5lfGoGxtBRFNwau17vY3U.jpeg?width=140&amp;height=93&amp;auto=webp&amp;s=6ee25dd533f1d5da2cdb67aecf696b79773fd156",
+    "media": null,
+    "post_hint": "link",
+    "listing": "rising",
+    "viral_score": 8960.271996302787,
+    "detail": {
+      "post": {
+        "id": "1s2cme5",
+        "title": "Steve Wozniak says he's \"disappointed a lot\" by AI and rarely uses it",
+        "selftext": "",
+        "author": "AdSpecialist6598",
+        "subreddit": "technology",
+        "created_utc": 1774356007,
+        "ups": 16589,
+        "num_comments": 1153,
+        "upvote_ratio": 0.96,
+        "permalink": "https://www.reddit.com/r/technology/comments/1s2cme5/steve_wozniak_says_hes_disappointed_a_lot_by_ai/",
+        "url": "https://www.techspot.com/news/111806-steve-wozniak-disappointed-lot-ai-rarely-uses.html",
+        "is_self": false,
+        "post_hint": "link",
+        "thumbnail": "https://external-preview.redd.it/PBHSR_536C7-bYj_7zaKsn5lfGoGxtBRFNwau17vY3U.jpeg?width=140&amp;height=93&amp;auto=webp&amp;s=6ee25dd533f1d5da2cdb67aecf696b79773fd156",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://external-preview.redd.it/PBHSR_536C7-bYj_7zaKsn5lfGoGxtBRFNwau17vY3U.jpeg?auto=webp&amp;s=36d9707a4988fc0675a5ac6fff43983bce934366",
+                "width": 2048,
+                "height": 1365
+              },
+              "resolutions": [
+                {
+                  "url": "https://external-preview.redd.it/PBHSR_536C7-bYj_7zaKsn5lfGoGxtBRFNwau17vY3U.jpeg?width=108&amp;crop=smart&amp;auto=webp&amp;s=17962ac60eee2f94ce6d3e7e0ccecec567b166e6",
+                  "width": 108,
+                  "height": 71
+                },
+                {
+                  "url": "https://external-preview.redd.it/PBHSR_536C7-bYj_7zaKsn5lfGoGxtBRFNwau17vY3U.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=dff7edf86a473cdb6fdb366f0799a9e1e38e6420",
+                  "width": 216,
+                  "height": 143
+                },
+                {
+                  "url": "https://external-preview.redd.it/PBHSR_536C7-bYj_7zaKsn5lfGoGxtBRFNwau17vY3U.jpeg?width=320&amp;crop=smart&amp;auto=webp&amp;s=0f72420cd3efacdb789a90c9cfce8269504e4cb6",
+                  "width": 320,
+                  "height": 213
+                },
+                {
+                  "url": "https://external-preview.redd.it/PBHSR_536C7-bYj_7zaKsn5lfGoGxtBRFNwau17vY3U.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=7f7094e1f5d26d4f2f15e3051259a76249aa07f4",
+                  "width": 640,
+                  "height": 426
+                },
+                {
+                  "url": "https://external-preview.redd.it/PBHSR_536C7-bYj_7zaKsn5lfGoGxtBRFNwau17vY3U.jpeg?width=960&amp;crop=smart&amp;auto=webp&amp;s=778481a16a206324684743b07bffc024776cea1a",
+                  "width": 960,
+                  "height": 639
+                },
+                {
+                  "url": "https://external-preview.redd.it/PBHSR_536C7-bYj_7zaKsn5lfGoGxtBRFNwau17vY3U.jpeg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=f93d211f8ea03bd732114cbee7902736e4c74c65",
+                  "width": 1080,
+                  "height": 719
+                }
+              ],
+              "variants": {},
+              "id": "PBHSR_536C7-bYj_7zaKsn5lfGoGxtBRFNwau17vY3U"
+            }
+          ],
+          "enabled": false
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "frakkintoaster",
+          "ups": 3205,
+          "body": "He forgot to add \"make no mistakes\" at the end of his prompt"
+        },
+        {
+          "author": "justeUnMec",
+          "ups": 1455,
+          "body": "Not really a surprise. He was known for extreme efficiency in design, coming up with clever hacks to minimise chip counts, and producing very compact code in constrained systems. He liked showing off the clever stuff he did to other enthusiasts, and sharing ideas at Homebrew for example, and he was lucky enough to do well out of it. I can see how AI takes away something of the pleasure of this human achievement for many. His philosophy is the opposite to that of generative AI."
+        },
+        {
+          "author": "Elliot-S9",
+          "ups": 458,
+          "body": "I'm disappointed that it exists at all."
+        }
+      ]
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "AdSpecialist6598",
+      "url": "https://i.redd.it/snoovatar/avatars/b7abf9c5-a18e-4228-a419-5179810e11df.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/openai-vs-anthropic-claude-vs-chatgpt-gpt-5-claude-ai-compar/runs/2026-03-24T21-05-16-948Z/avatars/AdSpecialist6598.png",
+      "fetchedAt": "2026-03-24T21:07:36.522Z"
+    }
+  },
+  {
+    "id": "1s2piv1",
+    "subreddit": "technology",
+    "title": "OpenAI Will Shut Down Sora Video Platform",
+    "selftext": "",
+    "author": "cmaia1503",
+    "created_utc": 1774384304,
+    "permalink": "https://www.reddit.com/r/technology/comments/1s2piv1/openai_will_shut_down_sora_video_platform/",
+    "url": "https://variety.com/2026/digital/news/openai-shutting-down-sora-video-platform-1236698277/",
+    "domain": "variety.com",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 418,
+    "score": 418,
+    "num_comments": 69,
+    "upvote_ratio": 0.98,
+    "thumbnail": "https://external-preview.redd.it/n0CywsTmaYqBSWdEYaiH7VjYaVGUDfEZFWX16AapZs8.png?width=140&amp;height=87&amp;auto=webp&amp;s=17667f7f365a9ad0f95a007c58d32e9eb22cefa4",
+    "media": null,
+    "post_hint": "link",
+    "listing": "rising",
+    "viral_score": 3558.304387146641,
+    "detail": {
+      "post": {
+        "id": "1s2piv1",
+        "title": "OpenAI Will Shut Down Sora Video Platform",
+        "selftext": "",
+        "author": "cmaia1503",
+        "subreddit": "technology",
+        "created_utc": 1774384304,
+        "ups": 431,
+        "num_comments": 70,
+        "upvote_ratio": 0.98,
+        "permalink": "https://www.reddit.com/r/technology/comments/1s2piv1/openai_will_shut_down_sora_video_platform/",
+        "url": "https://variety.com/2026/digital/news/openai-shutting-down-sora-video-platform-1236698277/",
+        "is_self": false,
+        "post_hint": "link",
+        "thumbnail": "https://external-preview.redd.it/n0CywsTmaYqBSWdEYaiH7VjYaVGUDfEZFWX16AapZs8.png?width=140&amp;height=87&amp;auto=webp&amp;s=17667f7f365a9ad0f95a007c58d32e9eb22cefa4",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://external-preview.redd.it/n0CywsTmaYqBSWdEYaiH7VjYaVGUDfEZFWX16AapZs8.png?auto=webp&amp;s=2d139acf592d6314315286d4e375af473a9c7d41",
+                "width": 901,
+                "height": 563
+              },
+              "resolutions": [
+                {
+                  "url": "https://external-preview.redd.it/n0CywsTmaYqBSWdEYaiH7VjYaVGUDfEZFWX16AapZs8.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=a364ee32fe100dc769f9ea4cc17c9d927afa90fe",
+                  "width": 108,
+                  "height": 67
+                },
+                {
+                  "url": "https://external-preview.redd.it/n0CywsTmaYqBSWdEYaiH7VjYaVGUDfEZFWX16AapZs8.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=b42fd5934c1bbd388ddffbf762cc37b1aa5ae98c",
+                  "width": 216,
+                  "height": 134
+                },
+                {
+                  "url": "https://external-preview.redd.it/n0CywsTmaYqBSWdEYaiH7VjYaVGUDfEZFWX16AapZs8.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=91e238dddb45902bc280f1deafde991bc57b5dba",
+                  "width": 320,
+                  "height": 199
+                },
+                {
+                  "url": "https://external-preview.redd.it/n0CywsTmaYqBSWdEYaiH7VjYaVGUDfEZFWX16AapZs8.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=707d2c7de35091bd2264ba67cbc1b803d6c9aae9",
+                  "width": 640,
+                  "height": 399
+                }
+              ],
+              "variants": {},
+              "id": "n0CywsTmaYqBSWdEYaiH7VjYaVGUDfEZFWX16AapZs8"
+            }
+          ],
+          "enabled": false
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "KennyDROmega",
+          "ups": 388,
+          "body": "Huh.  Maybe Ed Zitron was right and this is costing them money hand over fist with no real path to profitability."
+        },
+        {
+          "author": "AustinSpartan",
+          "ups": 223,
+          "body": "No one ever needed this slop generator"
+        },
+        {
+          "author": "Dust-by-Monday",
+          "ups": 104,
+          "body": "Nice! That’s a win right there. "
+        }
+      ]
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "cmaia1503",
+      "url": "https://i.redd.it/snoovatar/avatars/5eb4b702-a8b0-4d8f-abf9-d6d9444990dd.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/gen-ai-generative-ai-llm-large-language-models-ai-safety-pro/runs/2026-03-24T20-35-56-288Z/avatars/cmaia1503.png",
+      "fetchedAt": "2026-03-24T20:36:31.734Z"
+    }
+  },
+  {
+    "id": "1s2gt0a",
+    "subreddit": "technology",
+    "title": "The AI Economy Is “Propped Up by a Ponzi Scheme,” Says Director of ‘The AI Doc’",
+    "selftext": "",
+    "author": "idkbruh653",
+    "created_utc": 1774365741,
+    "permalink": "https://www.reddit.com/r/technology/comments/1s2gt0a/the_ai_economy_is_propped_up_by_a_ponzi_scheme/",
+    "url": "https://www.vanityfair.com/hollywood/story/ai-documentary-apocaloptimist-interview",
+    "domain": "vanityfair.com",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 4009,
+    "score": 4009,
+    "num_comments": 384,
+    "upvote_ratio": 0.97,
+    "thumbnail": "https://external-preview.redd.it/uK5zvfNPf9uLprIDukEkGS-vkMA-oofYCeqZxgPKqFw.jpeg?width=140&amp;height=78&amp;auto=webp&amp;s=3fb20ac390c58bb97865af17704ca9ce52f139b6",
+    "media": null,
+    "post_hint": "link",
+    "listing": "rising",
+    "viral_score": 3047.3792309998225,
+    "detail": {
+      "post": {
+        "id": "1s2gt0a",
+        "title": "The AI Economy Is “Propped Up by a Ponzi Scheme,” Says Director of ‘The AI Doc’",
+        "selftext": "",
+        "author": "idkbruh653",
+        "subreddit": "technology",
+        "created_utc": 1774365741,
+        "ups": 4010,
+        "num_comments": 384,
+        "upvote_ratio": 0.97,
+        "permalink": "https://www.reddit.com/r/technology/comments/1s2gt0a/the_ai_economy_is_propped_up_by_a_ponzi_scheme/",
+        "url": "https://www.vanityfair.com/hollywood/story/ai-documentary-apocaloptimist-interview",
+        "is_self": false,
+        "post_hint": "link",
+        "thumbnail": "https://external-preview.redd.it/uK5zvfNPf9uLprIDukEkGS-vkMA-oofYCeqZxgPKqFw.jpeg?width=140&amp;height=78&amp;auto=webp&amp;s=3fb20ac390c58bb97865af17704ca9ce52f139b6",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://external-preview.redd.it/uK5zvfNPf9uLprIDukEkGS-vkMA-oofYCeqZxgPKqFw.jpeg?auto=webp&amp;s=a2c0ad5414c05ff9fc7d26608923636fbf60e60b",
+                "width": 1280,
+                "height": 720
+              },
+              "resolutions": [
+                {
+                  "url": "https://external-preview.redd.it/uK5zvfNPf9uLprIDukEkGS-vkMA-oofYCeqZxgPKqFw.jpeg?width=108&amp;crop=smart&amp;auto=webp&amp;s=904137f21ad66dfff2f9532403a28f204d346100",
+                  "width": 108,
+                  "height": 60
+                },
+                {
+                  "url": "https://external-preview.redd.it/uK5zvfNPf9uLprIDukEkGS-vkMA-oofYCeqZxgPKqFw.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=9d061301659d5c135d31bdfe734681eb7610d39a",
+                  "width": 216,
+                  "height": 121
+                },
+                {
+                  "url": "https://external-preview.redd.it/uK5zvfNPf9uLprIDukEkGS-vkMA-oofYCeqZxgPKqFw.jpeg?width=320&amp;crop=smart&amp;auto=webp&amp;s=88afe89d4948f4f52bfc776012e3455a1dc4a076",
+                  "width": 320,
+                  "height": 180
+                },
+                {
+                  "url": "https://external-preview.redd.it/uK5zvfNPf9uLprIDukEkGS-vkMA-oofYCeqZxgPKqFw.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=89e3375a4ea3f55c1d4a151a9803f19647395402",
+                  "width": 640,
+                  "height": 360
+                },
+                {
+                  "url": "https://external-preview.redd.it/uK5zvfNPf9uLprIDukEkGS-vkMA-oofYCeqZxgPKqFw.jpeg?width=960&amp;crop=smart&amp;auto=webp&amp;s=9aab18283d130b0f4330aadb0250fcdae800cb56",
+                  "width": 960,
+                  "height": 540
+                },
+                {
+                  "url": "https://external-preview.redd.it/uK5zvfNPf9uLprIDukEkGS-vkMA-oofYCeqZxgPKqFw.jpeg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=bcd16a74671ed03c02d906830a0e483b019d3632",
+                  "width": 1080,
+                  "height": 607
+                }
+              ],
+              "variants": {},
+              "id": "uK5zvfNPf9uLprIDukEkGS-vkMA-oofYCeqZxgPKqFw"
+            }
+          ],
+          "enabled": false
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "McCoy818",
+          "ups": 772,
+          "body": "remember when crypto was the future of everything and then it just wasnt. getting real deja vu with this whole ai spending spree"
+        },
+        {
+          "author": "DressedSpring1",
+          "ups": 253,
+          "body": "&gt;The directors tried multiple avenues to get to Zuckerberg, but it was always a no. “He’s like an alien in a human being suit,” Roher says. “So of course they don’t want him to talk.”\n\n  \nThat's hilariously on point. \n\n  \nTrailers for this movie look interesting but I'm skeptical of how much time they seem to give Altman considering the man is completely full of shit and I'm not sure I want to spend much of my limited time on earth listening to him try and gaslight LLMs as a path to AGI "
+        },
+        {
+          "author": "ElvisHimselvis",
+          "ups": 94,
+          "body": "Adoption of AI is everywhere and widespread but at the same time, there are a significant number of CEOs and executives reporting that AI has not yet delivered expected, measurable gains in efficiency and productivity. "
+        }
+      ]
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "idkbruh653",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_5.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/openai-vs-anthropic-claude-vs-chatgpt-gpt-5-claude-ai-compar/runs/2026-03-24T21-05-16-948Z/avatars/idkbruh653.png",
+      "fetchedAt": "2026-03-24T21:07:37.612Z"
+    }
+  },
+  {
+    "id": "1s2jnpg",
+    "subreddit": "ChatGPT",
+    "title": "Tired of authors using ChatGPT in their books",
+    "selftext": "the way i instantly knew this was ai-generated!! look at these em dashes. no human writes like this! 😒\n\n  \ni'm honestly so disappointed in this author. you can tell exactly where she stopped writing and the ai took over because of the em dashes. she didnt even try to edit out the formatting. i'm so done with this era of fake authors!!🤮",
+    "author": "ShelilQirky",
+    "created_utc": 1774371803,
+    "permalink": "https://www.reddit.com/r/ChatGPT/comments/1s2jnpg/tired_of_authors_using_chatgpt_in_their_books/",
+    "url": "https://i.redd.it/2zetcb6kv0rg1.png",
+    "domain": "i.redd.it",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 1560,
+    "score": 1560,
+    "num_comments": 198,
+    "upvote_ratio": 0.9,
+    "thumbnail": "https://preview.redd.it/2zetcb6kv0rg1.png?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=c5329c2576a78d7be42a0aa21db504d7313a0595",
+    "media": null,
+    "post_hint": "image",
+    "listing": "rising",
+    "viral_score": 1592.6519861025847,
+    "detail": {
+      "post": {
+        "id": "1s2jnpg",
+        "title": "Tired of authors using ChatGPT in their books",
+        "selftext": "the way i instantly knew this was ai-generated!! look at these em dashes. no human writes like this! 😒\n\n  \ni'm honestly so disappointed in this author. you can tell exactly where she stopped writing and the ai took over because of the em dashes. she didnt even try to edit out the formatting. i'm so done with this era of fake authors!!🤮",
+        "author": "ShelilQirky",
+        "subreddit": "ChatGPT",
+        "created_utc": 1774371803,
+        "ups": 1556,
+        "num_comments": 200,
+        "upvote_ratio": 0.9,
+        "permalink": "https://www.reddit.com/r/ChatGPT/comments/1s2jnpg/tired_of_authors_using_chatgpt_in_their_books/",
+        "url": "https://i.redd.it/2zetcb6kv0rg1.png",
+        "is_self": false,
+        "post_hint": "image",
+        "thumbnail": "https://preview.redd.it/2zetcb6kv0rg1.png?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=c5329c2576a78d7be42a0aa21db504d7313a0595",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://preview.redd.it/2zetcb6kv0rg1.png?auto=webp&amp;s=61a2204877beff2a935413838a45db9b50015b06",
+                "width": 505,
+                "height": 813
+              },
+              "resolutions": [
+                {
+                  "url": "https://preview.redd.it/2zetcb6kv0rg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=0564e1556940e710c2642fd432f5372c192585e9",
+                  "width": 108,
+                  "height": 173
+                },
+                {
+                  "url": "https://preview.redd.it/2zetcb6kv0rg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=dc05435842d8008cfe6dc147c54098cc8f332e47",
+                  "width": 216,
+                  "height": 347
+                },
+                {
+                  "url": "https://preview.redd.it/2zetcb6kv0rg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=95da093726ffcfbefa490c61b66c5cd544b30bfa",
+                  "width": 320,
+                  "height": 515
+                }
+              ],
+              "variants": {},
+              "id": "2zetcb6kv0rg1"
+            }
+          ],
+          "enabled": true
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "EvaSingh",
+          "ups": 708,
+          "body": "Curse you Jane Austen for using ai!\n\n![gif](giphy|9jVAv94PRzPoc)"
+        },
+        {
+          "author": "ImpactBetelgeuse",
+          "ups": 353,
+          "body": "This is what it means to be sarcastic"
+        },
+        {
+          "author": "Gougeded",
+          "ups": 184,
+          "body": "My guess is that ChatGPT uses the em dash so much because its been trained on many (older) books where it is much more prevalent than in professionnal or casual communications."
+        }
+      ]
+    },
+    "media_extracted": {
+      "type": "image",
+      "url": "https://i.redd.it/2zetcb6kv0rg1.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/openai-vs-anthropic-claude-vs-chatgpt-gpt-5-claude-ai-compar/runs/2026-03-24T21-05-16-948Z/media/1s2jnpg.png",
+      "contentType": "image/png",
+      "bytes": 760335
+    },
+    "author_avatar": {
+      "user": "ShelilQirky",
+      "url": "https://styles.redditmedia.com/t5_dgu0p8/styles/profileIcon_vobhj89ddcqg1.png?width=256&height=256&crop=256:256,smart&s=40403cecf334327d898a324b6325e9b03acc8628",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/openai-vs-anthropic-claude-vs-chatgpt-gpt-5-claude-ai-compar/runs/2026-03-24T21-05-16-948Z/avatars/ShelilQirky.png",
+      "fetchedAt": "2026-03-24T21:07:38.671Z"
+    }
+  },
+  {
+    "id": "1s2onhy",
+    "subreddit": "OpenAI",
+    "title": "OPENAI TO DISCONTINUE SORA !!",
+    "selftext": "https://www.wsj.com/tech/ai/openai-set-to-discontinue-sora-video-platform-app-a82a9e4e",
+    "author": "IndividualShame2629",
+    "created_utc": 1774382411,
+    "permalink": "https://www.reddit.com/r/OpenAI/comments/1s2onhy/openai_to_discontinue_sora/",
+    "url": "https://i.redd.it/3o3saudwt1rg1.jpeg",
+    "domain": "i.redd.it",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 335,
+    "score": 335,
+    "num_comments": 81,
+    "upvote_ratio": 0.97,
+    "thumbnail": "https://preview.redd.it/3o3saudwt1rg1.jpeg?width=140&amp;height=101&amp;auto=webp&amp;s=4f78dd3a1d4629b7cc1c436896165464fce45d12",
+    "media": null,
+    "post_hint": "image",
+    "listing": "rising",
+    "viral_score": 1565.3921380242655,
+    "detail": {
+      "post": {
+        "id": "1s2onhy",
+        "title": "OPENAI TO DISCONTINUE SORA !!",
+        "selftext": "https://www.wsj.com/tech/ai/openai-set-to-discontinue-sora-video-platform-app-a82a9e4e",
+        "author": "IndividualShame2629",
+        "subreddit": "OpenAI",
+        "created_utc": 1774382411,
+        "ups": 340,
+        "num_comments": 81,
+        "upvote_ratio": 0.97,
+        "permalink": "https://www.reddit.com/r/OpenAI/comments/1s2onhy/openai_to_discontinue_sora/",
+        "url": "https://i.redd.it/3o3saudwt1rg1.jpeg",
+        "is_self": false,
+        "post_hint": "image",
+        "thumbnail": "https://preview.redd.it/3o3saudwt1rg1.jpeg?width=140&amp;height=101&amp;auto=webp&amp;s=4f78dd3a1d4629b7cc1c436896165464fce45d12",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://preview.redd.it/3o3saudwt1rg1.jpeg?auto=webp&amp;s=ae363dbabaab7177f1f57ab8ce2dcefed08c60c5",
+                "width": 1170,
+                "height": 849
+              },
+              "resolutions": [
+                {
+                  "url": "https://preview.redd.it/3o3saudwt1rg1.jpeg?width=108&amp;crop=smart&amp;auto=webp&amp;s=91e1308731f1b6a9c75996e22f9844d6f7525a99",
+                  "width": 108,
+                  "height": 78
+                },
+                {
+                  "url": "https://preview.redd.it/3o3saudwt1rg1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=7d42e15ce7350509a67c7c51ef3eb51ed5c87888",
+                  "width": 216,
+                  "height": 156
+                },
+                {
+                  "url": "https://preview.redd.it/3o3saudwt1rg1.jpeg?width=320&amp;crop=smart&amp;auto=webp&amp;s=5a1a1e6b6313d8f83da92f00304dc2fae5d74e35",
+                  "width": 320,
+                  "height": 232
+                },
+                {
+                  "url": "https://preview.redd.it/3o3saudwt1rg1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=f653dc074581a6d0bd61688eaa4aa3487cd8be39",
+                  "width": 640,
+                  "height": 464
+                },
+                {
+                  "url": "https://preview.redd.it/3o3saudwt1rg1.jpeg?width=960&amp;crop=smart&amp;auto=webp&amp;s=4b99f1002922854b9267ee9548179524a06233f4",
+                  "width": 960,
+                  "height": 696
+                },
+                {
+                  "url": "https://preview.redd.it/3o3saudwt1rg1.jpeg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=02362eb5bb4ebdff40e9ac18c7ece04e2216e307",
+                  "width": 1080,
+                  "height": 783
+                }
+              ],
+              "variants": {},
+              "id": "3o3saudwt1rg1"
+            }
+          ],
+          "enabled": true
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "Glugamesh",
+          "ups": 176,
+          "body": "Good, waste of time and servers. So locked down it was useless."
+        },
+        {
+          "author": "TheTeflonDude",
+          "ups": 1,
+          "body": "They were losing $500k PER DAY on Sora"
+        },
+        {
+          "author": "Willing_Leave_2566",
+          "ups": 1,
+          "body": "The frontier labs have _got_ to learn that when there’s no effort barrier, people don’t stop to ask whether what they want to make is worth the resources it takes to make it. They end up wasting enormous amounts of compute on things that just shouldn’t ever exist in the first place"
+        }
+      ]
+    },
+    "media_extracted": {
+      "type": "image",
+      "url": "https://i.redd.it/3o3saudwt1rg1.jpeg",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/openai-vs-anthropic-claude-vs-chatgpt-gpt-5-claude-ai-compar/runs/2026-03-24T21-05-16-948Z/media/1s2onhy.jpg",
+      "contentType": "image/jpeg",
+      "bytes": 156272
+    },
+    "author_avatar": {
+      "user": "IndividualShame2629",
+      "url": "https://i.redd.it/snoovatar/avatars/e658eccb-1787-4e02-bd06-6a2c52cff5fd.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/openai-vs-anthropic-claude-vs-chatgpt-gpt-5-claude-ai-compar/runs/2026-03-24T21-05-16-948Z/avatars/IndividualShame2629.png",
+      "fetchedAt": "2026-03-24T21:07:39.716Z"
+    }
+  },
+  {
+    "id": "1s1224n",
+    "subreddit": "ChatGPT",
+    "title": "Asked ChatGPT for an Image that Will Never Go Viral",
+    "selftext": "",
+    "author": "Algoartist",
+    "created_utc": 1774225393,
+    "permalink": "https://www.reddit.com/r/ChatGPT/comments/1s1224n/asked_chatgpt_for_an_image_that_will_never_go/",
+    "url": "https://i.redd.it/s8c0whnwuoqg1.png",
+    "domain": "i.redd.it",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 13383,
+    "score": 13383,
+    "num_comments": 833,
+    "upvote_ratio": 0.89,
+    "thumbnail": "https://preview.redd.it/s8c0whnwuoqg1.png?width=140&amp;height=105&amp;auto=webp&amp;s=3cbf9a54e2108866d30ac3207fcd4e2960abf973",
+    "media": null,
+    "post_hint": "image",
+    "listing": "top:week",
+    "viral_score": 874.9107529165858,
+    "detail": {
+      "post": {
+        "id": "1s1224n",
+        "title": "Asked ChatGPT for an Image that Will Never Go Viral",
+        "selftext": "",
+        "author": "Algoartist",
+        "subreddit": "ChatGPT",
+        "created_utc": 1774225393,
+        "ups": 13388,
+        "num_comments": 833,
+        "upvote_ratio": 0.89,
+        "permalink": "https://www.reddit.com/r/ChatGPT/comments/1s1224n/asked_chatgpt_for_an_image_that_will_never_go/",
+        "url": "https://i.redd.it/s8c0whnwuoqg1.png",
+        "is_self": false,
+        "post_hint": "image",
+        "thumbnail": "https://preview.redd.it/s8c0whnwuoqg1.png?width=140&amp;height=105&amp;auto=webp&amp;s=3cbf9a54e2108866d30ac3207fcd4e2960abf973",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://preview.redd.it/s8c0whnwuoqg1.png?auto=webp&amp;s=4737acc35731167900d63f1174657fb359dcc4aa",
+                "width": 1365,
+                "height": 1024
+              },
+              "resolutions": [
+                {
+                  "url": "https://preview.redd.it/s8c0whnwuoqg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=9fefa6607494bd0da8221ca8077b449aaf6b8ec0",
+                  "width": 108,
+                  "height": 81
+                },
+                {
+                  "url": "https://preview.redd.it/s8c0whnwuoqg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=8985b623b275c8b51ee8e327371211e1ab677a97",
+                  "width": 216,
+                  "height": 162
+                },
+                {
+                  "url": "https://preview.redd.it/s8c0whnwuoqg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=0072a0e41dabdf9216bf1fea37a9bb754b306cae",
+                  "width": 320,
+                  "height": 240
+                },
+                {
+                  "url": "https://preview.redd.it/s8c0whnwuoqg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=df797cd397ba4191a414ae89220f6de1dbe1edb7",
+                  "width": 640,
+                  "height": 480
+                },
+                {
+                  "url": "https://preview.redd.it/s8c0whnwuoqg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=c7201fc4672fb3744818527132620781c51c69da",
+                  "width": 960,
+                  "height": 720
+                },
+                {
+                  "url": "https://preview.redd.it/s8c0whnwuoqg1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=dbc83dd6022d00e0856c7d0cdf7175316b8b4e9f",
+                  "width": 1080,
+                  "height": 810
+                }
+              ],
+              "variants": {},
+              "id": "s8c0whnwuoqg1"
+            }
+          ],
+          "enabled": true
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "slaphappy1975",
+          "ups": 3170,
+          "body": "https://preview.redd.it/t4zu99fxxoqg1.jpeg?width=1032&amp;format=pjpg&amp;auto=webp&amp;s=395de67cd3ab6604564d22b11ef6f8317476f719"
+        },
+        {
+          "author": "Weedster009",
+          "ups": 696,
+          "body": "https://preview.redd.it/6i7i0cc32pqg1.jpeg?width=1536&amp;format=pjpg&amp;auto=webp&amp;s=c38610d733fb2eee38f7eca26b6fa073bf1b1c3e\n\nI love it."
+        },
+        {
+          "author": "Dusty_Bunny81",
+          "ups": 642,
+          "body": "here’s mine \n\nhttps://preview.redd.it/tvl0z66s0pqg1.png?width=1536&amp;format=png&amp;auto=webp&amp;s=e54a735985984f9b5a1e29f21feb4764c3fbd67d\n\n"
+        }
+      ]
+    },
+    "media_extracted": {
+      "type": "image",
+      "url": "https://i.redd.it/s8c0whnwuoqg1.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/openai-vs-anthropic-claude-vs-chatgpt-gpt-5-claude-ai-compar/runs/2026-03-24T21-05-16-948Z/media/1s1224n.png",
+      "contentType": "image/png",
+      "bytes": 1852474
+    },
+    "author_avatar": {
+      "user": "Algoartist",
+      "url": "https://styles.redditmedia.com/t5_2a40cq/styles/profileIcon_7h9oi882dgaf1.jpg?width=256&height=256&crop=256:256,smart&s=b88499fa4915aacdddb584baa07b605f37796a81",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/openai-vs-anthropic-claude-vs-chatgpt-gpt-5-claude-ai-compar/runs/2026-03-24T21-05-16-948Z/avatars/Algoartist.jpg",
+      "fetchedAt": "2026-03-24T21:07:40.834Z"
+    }
+  },
+  {
+    "id": "1s2nhi9",
+    "subreddit": "technology",
+    "title": "Satya Nadella needs to remember the Streisand effect for 'AI slop'",
+    "selftext": "",
+    "author": "Franco1875",
+    "created_utc": 1774379885,
+    "permalink": "https://www.reddit.com/r/technology/comments/1s2nhi9/satya_nadella_needs_to_remember_the_streisand/",
+    "url": "https://www.itpro.com/technology/artificial-intelligence/satya-nadella-needs-to-remember-the-streisand-effect-for-ai-slop",
+    "domain": "itpro.com",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 333,
+    "score": 333,
+    "num_comments": 32,
+    "upvote_ratio": 0.97,
+    "thumbnail": "https://external-preview.redd.it/STI0G9kXw71rVpmOlrueLBlOc2Vny74mvNx3-Rd6fio.jpeg?width=140&amp;height=78&amp;auto=webp&amp;s=b5cd70043519b60dd97421c89fdef3c7225b375f",
+    "media": null,
+    "post_hint": "link",
+    "listing": "rising",
+    "viral_score": 641.7800393900301,
+    "detail": {
+      "post": {
+        "id": "1s2nhi9",
+        "title": "Satya Nadella needs to remember the Streisand effect for 'AI slop'",
+        "selftext": "",
+        "author": "Franco1875",
+        "subreddit": "technology",
+        "created_utc": 1774379885,
+        "ups": 334,
+        "num_comments": 33,
+        "upvote_ratio": 0.97,
+        "permalink": "https://www.reddit.com/r/technology/comments/1s2nhi9/satya_nadella_needs_to_remember_the_streisand/",
+        "url": "https://www.itpro.com/technology/artificial-intelligence/satya-nadella-needs-to-remember-the-streisand-effect-for-ai-slop",
+        "is_self": false,
+        "post_hint": "link",
+        "thumbnail": "https://external-preview.redd.it/STI0G9kXw71rVpmOlrueLBlOc2Vny74mvNx3-Rd6fio.jpeg?width=140&amp;height=78&amp;auto=webp&amp;s=b5cd70043519b60dd97421c89fdef3c7225b375f",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://external-preview.redd.it/STI0G9kXw71rVpmOlrueLBlOc2Vny74mvNx3-Rd6fio.jpeg?auto=webp&amp;s=0025d0ad69db8f9d19e98fcf9a924f6c6ccff50b",
+                "width": 1920,
+                "height": 1080
+              },
+              "resolutions": [
+                {
+                  "url": "https://external-preview.redd.it/STI0G9kXw71rVpmOlrueLBlOc2Vny74mvNx3-Rd6fio.jpeg?width=108&amp;crop=smart&amp;auto=webp&amp;s=a02afef747f1559336d3bdcc07849636abf4d70b",
+                  "width": 108,
+                  "height": 60
+                },
+                {
+                  "url": "https://external-preview.redd.it/STI0G9kXw71rVpmOlrueLBlOc2Vny74mvNx3-Rd6fio.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=3447c37ae89e46e66246d280dc63befdb029739a",
+                  "width": 216,
+                  "height": 121
+                },
+                {
+                  "url": "https://external-preview.redd.it/STI0G9kXw71rVpmOlrueLBlOc2Vny74mvNx3-Rd6fio.jpeg?width=320&amp;crop=smart&amp;auto=webp&amp;s=e2b66d4dccb035a0825bbaae039e2aa5bf1e2f0e",
+                  "width": 320,
+                  "height": 180
+                },
+                {
+                  "url": "https://external-preview.redd.it/STI0G9kXw71rVpmOlrueLBlOc2Vny74mvNx3-Rd6fio.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=80891bf19e6b4ff93fd38160415d9edc1e949b04",
+                  "width": 640,
+                  "height": 360
+                },
+                {
+                  "url": "https://external-preview.redd.it/STI0G9kXw71rVpmOlrueLBlOc2Vny74mvNx3-Rd6fio.jpeg?width=960&amp;crop=smart&amp;auto=webp&amp;s=93193c6e6dc0057519d14f4586275d68b5cb435f",
+                  "width": 960,
+                  "height": 540
+                },
+                {
+                  "url": "https://external-preview.redd.it/STI0G9kXw71rVpmOlrueLBlOc2Vny74mvNx3-Rd6fio.jpeg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=4b49e2cbfd5f7a61e17dc6f9aefa3c4405d97227",
+                  "width": 1080,
+                  "height": 607
+                }
+              ],
+              "variants": {},
+              "id": "STI0G9kXw71rVpmOlrueLBlOc2Vny74mvNx3-Rd6fio"
+            }
+          ],
+          "enabled": false
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "gamersecret2",
+          "ups": 221,
+          "body": "Telling people to stop calling it “AI slop” is just going to make them say it louder.   \n  \nIf Microsoft wants less backlash, ship less junk, show real ROI, and stop forcing AI everywhere."
+        },
+        {
+          "author": "GroundbreakingMall54",
+          "ups": 71,
+          "body": "Nothing says \"this label is accurate\" quite like the CEO of the company getting visibly upset about it. If it wasn't slop, the word wouldn't bother him."
+        },
+        {
+          "author": "Franco1875",
+          "ups": 50,
+          "body": "&gt;I take some solace in the fact that the same company quasi-demanding that the Copilot key on your keyboard be mandatory is entering the spring of their discontent.\n\n\n\nDo think the outburst from Nadella on slop was rich given the company has been at the forefront of the generative AI push over the last three years. They're one of the big tech companies that's directly responsible for this. \n\n"
+        }
+      ]
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "Franco1875",
+      "url": "https://i.redd.it/snoovatar/avatars/7625d7c3-3ba0-4889-911b-b84f95c64412.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/openai-vs-anthropic-claude-vs-chatgpt-gpt-5-claude-ai-compar/runs/2026-03-24T21-05-16-948Z/avatars/Franco1875.png",
+      "fetchedAt": "2026-03-24T21:07:41.971Z"
+    }
+  },
+  {
+    "id": "1rzf6mq",
+    "subreddit": "Futurology",
+    "title": "AI Added 'Basically Zero' to US Economic Growth Last Year, Goldman Sachs Says",
+    "selftext": "",
+    "author": "Krankenitrate",
+    "created_utc": 1774058187,
+    "permalink": "https://www.reddit.com/r/Futurology/comments/1rzf6mq/ai_added_basically_zero_to_us_economic_growth/",
+    "url": "https://gizmodo.com/ai-added-basically-zero-to-us-economic-growth-last-year-goldman-sachs-says-2000725380",
+    "domain": "gizmodo.com",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 18491,
+    "score": 18491,
+    "num_comments": 677,
+    "upvote_ratio": 0.97,
+    "thumbnail": "https://external-preview.redd.it/GVOU5xRHEbAuPwI1AYFjMo8J8BkpA_CWNkbKlzXgR7M.png?width=140&amp;height=93&amp;auto=webp&amp;s=e5363a8ed6ec67005682b9fc8a4a95b9dc52a1a3",
+    "media": null,
+    "post_hint": "link",
+    "listing": "top:week",
+    "viral_score": 554.215626499802,
+    "detail": {
+      "post": {
+        "id": "1rzf6mq",
+        "title": "AI Added 'Basically Zero' to US Economic Growth Last Year, Goldman Sachs Says",
+        "selftext": "",
+        "author": "Krankenitrate",
+        "subreddit": "Futurology",
+        "created_utc": 1774058187,
+        "ups": 18483,
+        "num_comments": 677,
+        "upvote_ratio": 0.97,
+        "permalink": "https://www.reddit.com/r/Futurology/comments/1rzf6mq/ai_added_basically_zero_to_us_economic_growth/",
+        "url": "https://gizmodo.com/ai-added-basically-zero-to-us-economic-growth-last-year-goldman-sachs-says-2000725380",
+        "is_self": false,
+        "post_hint": "link",
+        "thumbnail": "https://external-preview.redd.it/GVOU5xRHEbAuPwI1AYFjMo8J8BkpA_CWNkbKlzXgR7M.png?width=140&amp;height=93&amp;auto=webp&amp;s=e5363a8ed6ec67005682b9fc8a4a95b9dc52a1a3",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://external-preview.redd.it/GVOU5xRHEbAuPwI1AYFjMo8J8BkpA_CWNkbKlzXgR7M.png?auto=webp&amp;s=69d8abe85665e3d66c2f1b3e355a36c9e639a129",
+                "width": 1500,
+                "height": 1000
+              },
+              "resolutions": [
+                {
+                  "url": "https://external-preview.redd.it/GVOU5xRHEbAuPwI1AYFjMo8J8BkpA_CWNkbKlzXgR7M.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=e7e61625c9dedc48bd4910f3fccf078b3121ecea",
+                  "width": 108,
+                  "height": 72
+                },
+                {
+                  "url": "https://external-preview.redd.it/GVOU5xRHEbAuPwI1AYFjMo8J8BkpA_CWNkbKlzXgR7M.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=8c0cc6610be814ed3536da7e1a6e9e32c28c150c",
+                  "width": 216,
+                  "height": 144
+                },
+                {
+                  "url": "https://external-preview.redd.it/GVOU5xRHEbAuPwI1AYFjMo8J8BkpA_CWNkbKlzXgR7M.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=e26e9ed4df3d2655fde11b9e493daa952fc8d4ba",
+                  "width": 320,
+                  "height": 213
+                },
+                {
+                  "url": "https://external-preview.redd.it/GVOU5xRHEbAuPwI1AYFjMo8J8BkpA_CWNkbKlzXgR7M.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=25ead40db11e07884f7376d4e18d4e3a753e5557",
+                  "width": 640,
+                  "height": 426
+                },
+                {
+                  "url": "https://external-preview.redd.it/GVOU5xRHEbAuPwI1AYFjMo8J8BkpA_CWNkbKlzXgR7M.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=f58969852a505dd6b55f98a37a85c4284f380d77",
+                  "width": 960,
+                  "height": 640
+                },
+                {
+                  "url": "https://external-preview.redd.it/GVOU5xRHEbAuPwI1AYFjMo8J8BkpA_CWNkbKlzXgR7M.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=f1f2d1f059d88af73b7b288ef6f87a9e58f8ac44",
+                  "width": 1080,
+                  "height": 720
+                }
+              ],
+              "variants": {},
+              "id": "GVOU5xRHEbAuPwI1AYFjMo8J8BkpA_CWNkbKlzXgR7M"
+            }
+          ],
+          "enabled": false
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "knotatumah",
+          "ups": 2493,
+          "body": "What growth are we really expecting, though? The primary use for ai right now is reduction in labor and cheapening of services. So if you're not laying off labor you're cutting out services you used to contract. The only growth happening is at the executive level where savings are passed up instead of down."
+        },
+        {
+          "author": "ipreferanothername",
+          "ups": 624,
+          "body": "Amazing how much money they are willing to spend just to not pay humans"
+        },
+        {
+          "author": "Magnusg",
+          "ups": 607,
+          "body": "Whaaaaaat?! Cannibalizing jobs and slashing salaries isn't good for gdp?!?!  Whaaaaaat?!"
+        }
+      ]
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "Krankenitrate",
+      "url": "https://i.redd.it/snoovatar/avatars/1fca4be2-8b88-43da-95eb-4a31c601ec01.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/openai-vs-anthropic-claude-vs-chatgpt-gpt-5-claude-ai-compar/runs/2026-03-24T21-05-16-948Z/avatars/Krankenitrate.png",
+      "fetchedAt": "2026-03-24T21:07:43.033Z"
+    }
+  },
+  {
+    "id": "1s2pssb",
+    "subreddit": "singularity",
+    "title": "Sora by OpenAI discontinued",
+    "selftext": "https://x.com/soraofficialapp/status/2036532795984715896?s=46\n\nI attribute this to opensource rather than compute. Opensource offerings are much better and then just couldn’t win. \n\nAlso factoring that, focusing on coding/agentic harness makes them a lot more money, I guess they are being pressured now to focus on what makes money.\n\nVery interesting turn of events.",
+    "author": "Fearless-Elephant-81",
+    "created_utc": 1774384911,
+    "permalink": "https://www.reddit.com/r/singularity/comments/1s2pssb/sora_by_openai_discontinued/",
+    "url": "https://www.reddit.com/r/singularity/comments/1s2pssb/sora_by_openai_discontinued/",
+    "domain": "self.singularity",
+    "is_self": true,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 12,
+    "score": 12,
+    "num_comments": 19,
+    "upvote_ratio": 0.83,
+    "thumbnail": "self",
+    "media": null,
+    "post_hint": null,
+    "listing": "rising",
+    "viral_score": 330.7830174162625,
+    "detail": {
+      "post": {
+        "id": "1s2pssb",
+        "title": "Sora by OpenAI discontinued",
+        "selftext": "https://x.com/soraofficialapp/status/2036532795984715896?s=46\n\nI attribute this to opensource rather than compute. Opensource offerings are much better and then just couldn’t win. \n\nAlso factoring that, focusing on coding/agentic harness makes them a lot more money, I guess they are being pressured now to focus on what makes money.\n\nVery interesting turn of events.",
+        "author": "Fearless-Elephant-81",
+        "subreddit": "singularity",
+        "created_utc": 1774384911,
+        "ups": 12,
+        "num_comments": 19,
+        "upvote_ratio": 0.8,
+        "permalink": "https://www.reddit.com/r/singularity/comments/1s2pssb/sora_by_openai_discontinued/",
+        "url": "https://www.reddit.com/r/singularity/comments/1s2pssb/sora_by_openai_discontinued/",
+        "is_self": true,
+        "post_hint": null,
+        "thumbnail": "self",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": null,
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "Condomphobic",
+          "ups": 1,
+          "body": "This post is misleading. The Sora app is disappearing but Sora 2 will be integrated into GPT\n\nLike how Google lets you generate Veo videos within their Gemini app"
+        },
+        {
+          "author": "peakedtooearly",
+          "ups": 1,
+          "body": "I think this is about money, compute and eliminating distractions from their core business. "
+        },
+        {
+          "author": "Nikvest",
+          "ups": 1,
+          "body": "what a failure of a product, remember when this sub said Sora was gonna produce movies? lol\n\nalso remember when Disney invested $1 billion into OpenAI because of Sora? what will happen to this investment? \n\n\nhttps://www.cnbc.com/2025/12/11/disney-openai-sora-characters-video.html"
+        }
+      ]
+    },
+    "author_avatar": {
+      "user": "Fearless-Elephant-81",
+      "url": "https://i.redd.it/snoovatar/avatars/nftv2_bmZ0X2VpcDE1NToxMzdfZWI5NTlhNzE1ZGZmZmU2ZjgyZjQ2MDU1MzM5ODJjNDg1OWNiMTRmZV8zMDI2OTAxNQ_rare_91d685f6-4788-4773-b938-becec2078e6d.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/openai-vs-anthropic-claude-vs-chatgpt-gpt-5-claude-ai-compar/runs/2026-03-24T21-05-16-948Z/avatars/Fearless-Elephant-81.png",
+      "fetchedAt": "2026-03-24T21:07:44.202Z"
+    }
+  },
+  {
+    "id": "1s2i7pw",
+    "subreddit": "LocalLLaMA",
+    "title": "Best model that can beat Claude opus that runs on 32MB of vram?",
+    "selftext": "Hi everyone! I want to get in to vibe coding to make my very own ai wrapper, what are the best models that can run on 32MB of vram? I have a GeForce 256, and an intel pentium 3, i want to be able to run a model on ollama that can AT LEAST match or beat Claude opus, any recommendations?",
+    "author": "PrestigiousEmu4485",
+    "created_utc": 1774368728,
+    "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1s2i7pw/best_model_that_can_beat_claude_opus_that_runs_on/",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1s2i7pw/best_model_that_can_beat_claude_opus_that_runs_on/",
+    "domain": "self.LocalLLaMA",
+    "is_self": true,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 333,
+    "score": 333,
+    "num_comments": 124,
+    "upvote_ratio": 0.82,
+    "thumbnail": "self",
+    "media": null,
+    "post_hint": null,
+    "listing": "rising",
+    "viral_score": 311.6999001065116,
+    "detail": {
+      "post": {
+        "id": "1s2i7pw",
+        "title": "Best model that can beat Claude opus that runs on 32MB of vram?",
+        "selftext": "Hi everyone! I want to get in to vibe coding to make my very own ai wrapper, what are the best models that can run on 32MB of vram? I have a GeForce 256, and an intel pentium 3, i want to be able to run a model on ollama that can AT LEAST match or beat Claude opus, any recommendations?",
+        "author": "PrestigiousEmu4485",
+        "subreddit": "LocalLLaMA",
+        "created_utc": 1774368728,
+        "ups": 340,
+        "num_comments": 124,
+        "upvote_ratio": 0.82,
+        "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1s2i7pw/best_model_that_can_beat_claude_opus_that_runs_on/",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1s2i7pw/best_model_that_can_beat_claude_opus_that_runs_on/",
+        "is_self": true,
+        "post_hint": null,
+        "thumbnail": "self",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": null,
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "Chromix_",
+          "ups": 329,
+          "body": "Oh, that's easy with that hardware, just run the Reflection-70M-FrankenSelfMerge-Claude-4.6-Opus-High-Reasoning-Distilled as IQ2\\_XXS quant.\n\nDM me if you need a CTO. /s"
+        },
+        {
+          "author": "sine120",
+          "ups": 135,
+          "body": "Just run inference off the drive.  GLM5 should fit on a 1TB SSD.  Might get 50-100 s/t"
+        },
+        {
+          "author": "crawler00000",
+          "ups": 106,
+          "body": "You can just enslave a human being and have them hold the computer while they work... you have to make sure they are smarter than Opus though"
+        }
+      ]
+    },
+    "author_avatar": {
+      "user": "PrestigiousEmu4485",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_5.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/openai-vs-anthropic-claude-vs-chatgpt-gpt-5-claude-ai-compar/runs/2026-03-24T21-05-16-948Z/avatars/PrestigiousEmu4485.png",
+      "fetchedAt": "2026-03-24T21:07:45.257Z"
+    }
+  },
+  {
+    "id": "1s2p1jr",
+    "subreddit": "technology",
+    "title": "OpenAI Set to Discontinue Sora Video Platform App",
+    "selftext": "",
+    "author": "Bobby_the_Donkey",
+    "created_utc": 1774383262,
+    "permalink": "https://www.reddit.com/r/technology/comments/1s2p1jr/openai_set_to_discontinue_sora_video_platform_app/",
+    "url": "https://www.wsj.com/tech/ai/openai-set-to-discontinue-sora-video-platform-app-a82a9e4e",
+    "domain": "wsj.com",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 49,
+    "score": 49,
+    "num_comments": 26,
+    "upvote_ratio": 0.87,
+    "thumbnail": "https://external-preview.redd.it/2NQXKeC9s3nkiL-iJqtylVHyhWs4bqndADIuplAORC8.jpeg?width=140&amp;height=70&amp;auto=webp&amp;s=93799b2d5c94706253e517efd14d713bee84fc57",
+    "media": null,
+    "post_hint": "link",
+    "listing": "rising",
+    "viral_score": 306.61843305626553,
+    "detail": {
+      "post": {
+        "id": "1s2p1jr",
+        "title": "OpenAI Set to Discontinue Sora Video Platform App",
+        "selftext": "",
+        "author": "Bobby_the_Donkey",
+        "subreddit": "technology",
+        "created_utc": 1774383262,
+        "ups": 51,
+        "num_comments": 26,
+        "upvote_ratio": 0.89,
+        "permalink": "https://www.reddit.com/r/technology/comments/1s2p1jr/openai_set_to_discontinue_sora_video_platform_app/",
+        "url": "https://www.wsj.com/tech/ai/openai-set-to-discontinue-sora-video-platform-app-a82a9e4e",
+        "is_self": false,
+        "post_hint": "link",
+        "thumbnail": "https://external-preview.redd.it/2NQXKeC9s3nkiL-iJqtylVHyhWs4bqndADIuplAORC8.jpeg?width=140&amp;height=70&amp;auto=webp&amp;s=93799b2d5c94706253e517efd14d713bee84fc57",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://external-preview.redd.it/2NQXKeC9s3nkiL-iJqtylVHyhWs4bqndADIuplAORC8.jpeg?auto=webp&amp;s=78d499e919057a1ee0280e823b35e31eadc7f496",
+                "width": 1280,
+                "height": 640
+              },
+              "resolutions": [
+                {
+                  "url": "https://external-preview.redd.it/2NQXKeC9s3nkiL-iJqtylVHyhWs4bqndADIuplAORC8.jpeg?width=108&amp;crop=smart&amp;auto=webp&amp;s=993fb5e19552e45b8e878850a0c1528e2d25dd2f",
+                  "width": 108,
+                  "height": 54
+                },
+                {
+                  "url": "https://external-preview.redd.it/2NQXKeC9s3nkiL-iJqtylVHyhWs4bqndADIuplAORC8.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=15989731cbeed8c0218c90dbaf826bb701c6f2b5",
+                  "width": 216,
+                  "height": 108
+                },
+                {
+                  "url": "https://external-preview.redd.it/2NQXKeC9s3nkiL-iJqtylVHyhWs4bqndADIuplAORC8.jpeg?width=320&amp;crop=smart&amp;auto=webp&amp;s=6f7c14cf7dfd7b610a1f0e9e7ff9681b151c9407",
+                  "width": 320,
+                  "height": 160
+                },
+                {
+                  "url": "https://external-preview.redd.it/2NQXKeC9s3nkiL-iJqtylVHyhWs4bqndADIuplAORC8.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=4ba1deb09356ddc8bbfdd971fe295050630137f2",
+                  "width": 640,
+                  "height": 320
+                },
+                {
+                  "url": "https://external-preview.redd.it/2NQXKeC9s3nkiL-iJqtylVHyhWs4bqndADIuplAORC8.jpeg?width=960&amp;crop=smart&amp;auto=webp&amp;s=6fe0e542ae0eddd0ffbf592f2b8ba6d1da65108a",
+                  "width": 960,
+                  "height": 480
+                },
+                {
+                  "url": "https://external-preview.redd.it/2NQXKeC9s3nkiL-iJqtylVHyhWs4bqndADIuplAORC8.jpeg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=a2c83514216b52c147c8834d1885f7c864693b70",
+                  "width": 1080,
+                  "height": 540
+                }
+              ],
+              "variants": {},
+              "id": "2NQXKeC9s3nkiL-iJqtylVHyhWs4bqndADIuplAORC8"
+            }
+          ],
+          "enabled": false
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "rnilf",
+          "ups": 36,
+          "body": "AI generated videos of beloved characters doing Nazi salutes wasn't profitable for them?\n\nAre they seeing the public isn't widely receptive to AI generated content in general?\n\nDo you think that's why they're refocusing on \"coding functions\", doing behind the scenes work where the real money is?"
+        },
+        {
+          "author": "erstwhiletexan",
+          "ups": 22,
+          "body": "Whatever happened to their deal with Disney?? [https://openai.com/index/disney-sora-agreement/](https://openai.com/index/disney-sora-agreement/)"
+        },
+        {
+          "author": "WeWantMOAR",
+          "ups": 8,
+          "body": "great the paywall workarounds aren't working for WSJ"
+        }
+      ]
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "Bobby_the_Donkey",
+      "url": "https://styles.redditmedia.com/t5_e7qpk/styles/profileIcon_48lr3igsxo651.jpg?width=256&height=256&crop=256:256,smart&s=c879142c8b99ce7890913aa45a56a08296aa4b05",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/openai-vs-anthropic-claude-vs-chatgpt-gpt-5-claude-ai-compar/runs/2026-03-24T21-05-16-948Z/avatars/Bobby_the_Donkey.jpg",
+      "fetchedAt": "2026-03-24T21:07:46.307Z"
+    }
+  },
+  {
+    "id": "1ryyz20",
+    "subreddit": "technology",
+    "title": "Thousands have swooned over this MAGA dream girl. She’s made with AI.",
+    "selftext": "",
+    "author": "BusyHands_",
+    "created_utc": 1774019657,
+    "permalink": "https://www.reddit.com/r/technology/comments/1ryyz20/thousands_have_swooned_over_this_maga_dream_girl/",
+    "url": "https://www.msn.com/en-us/news/other/thousands-have-swooned-over-this-maga-dream-girl-she-s-made-with-ai/ar-AA1Z2DaI",
+    "domain": "msn.com",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 10950,
+    "score": 10950,
+    "num_comments": 621,
+    "upvote_ratio": 0.91,
+    "thumbnail": "default",
+    "media": null,
+    "post_hint": null,
+    "listing": "top:week",
+    "viral_score": 281.0925208482476,
+    "detail": {
+      "post": {
+        "id": "1ryyz20",
+        "title": "Thousands have swooned over this MAGA dream girl. She’s made with AI.",
+        "selftext": "",
+        "author": "BusyHands_",
+        "subreddit": "technology",
+        "created_utc": 1774019657,
+        "ups": 10957,
+        "num_comments": 621,
+        "upvote_ratio": 0.91,
+        "permalink": "https://www.reddit.com/r/technology/comments/1ryyz20/thousands_have_swooned_over_this_maga_dream_girl/",
+        "url": "https://www.msn.com/en-us/news/other/thousands-have-swooned-over-this-maga-dream-girl-she-s-made-with-ai/ar-AA1Z2DaI",
+        "is_self": false,
+        "post_hint": null,
+        "thumbnail": "default",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": null,
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "Wizywig",
+          "ups": 2353,
+          "body": "Ah yes, the ideal MAGA woman... doesn't exist."
+        },
+        {
+          "author": "BusyHands_",
+          "ups": 2350,
+          "body": "New MAGA grift just opened up lol. "
+        },
+        {
+          "author": "Maoleficent",
+          "ups": 1738,
+          "body": "The high heels and short skirt as thick-necked Kegsbreath demands women should not be in the military except, apparently, as comfort women."
+        }
+      ]
+    },
+    "author_avatar": {
+      "user": "BusyHands_",
+      "url": "https://styles.redditmedia.com/t5_fxutgd/styles/profileIcon_k568b4w5fkpg1.jpeg?width=256&height=256&crop=256:256,smart&s=3142daa0db8d1eb5b88e939a8471e8db19fe99be",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/openai-vs-anthropic-claude-vs-chatgpt-gpt-5-claude-ai-compar/runs/2026-03-24T21-05-16-948Z/avatars/BusyHands_.jpeg",
+      "fetchedAt": "2026-03-24T21:07:47.339Z"
+    }
+  },
+  {
+    "id": "1s15ifu",
+    "subreddit": "ChatGPT",
+    "title": "I asked ChatGPT how does gaming in third world countries look like.",
+    "selftext": "",
+    "author": "EXIIL1M_Sedai",
+    "created_utc": 1774234866,
+    "permalink": "https://www.reddit.com/r/ChatGPT/comments/1s15ifu/i_asked_chatgpt_how_does_gaming_in_third_world/",
+    "url": "https://i.redd.it/iqq0gc56npqg1.png",
+    "domain": "i.redd.it",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 4633,
+    "score": 4633,
+    "num_comments": 266,
+    "upvote_ratio": 0.87,
+    "thumbnail": "https://preview.redd.it/iqq0gc56npqg1.png?width=140&amp;height=93&amp;auto=webp&amp;s=8e61f005012229ebd0cf38d7e7ab96742e7380c3",
+    "media": null,
+    "post_hint": "image",
+    "listing": "top:week",
+    "viral_score": 277.6067811250651,
+    "detail": {
+      "post": {
+        "id": "1s15ifu",
+        "title": "I asked ChatGPT how does gaming in third world countries look like.",
+        "selftext": "",
+        "author": "EXIIL1M_Sedai",
+        "subreddit": "ChatGPT",
+        "created_utc": 1774234866,
+        "ups": 4629,
+        "num_comments": 266,
+        "upvote_ratio": 0.87,
+        "permalink": "https://www.reddit.com/r/ChatGPT/comments/1s15ifu/i_asked_chatgpt_how_does_gaming_in_third_world/",
+        "url": "https://i.redd.it/iqq0gc56npqg1.png",
+        "is_self": false,
+        "post_hint": "image",
+        "thumbnail": "https://preview.redd.it/iqq0gc56npqg1.png?width=140&amp;height=93&amp;auto=webp&amp;s=8e61f005012229ebd0cf38d7e7ab96742e7380c3",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://preview.redd.it/iqq0gc56npqg1.png?auto=webp&amp;s=7619f3211a3b50ee270af3eb019626865a5f5469",
+                "width": 1536,
+                "height": 1024
+              },
+              "resolutions": [
+                {
+                  "url": "https://preview.redd.it/iqq0gc56npqg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=b98dba2bdb22a0e1399dc0f6ad06b67ebcb8b077",
+                  "width": 108,
+                  "height": 72
+                },
+                {
+                  "url": "https://preview.redd.it/iqq0gc56npqg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=064410d11c1813360eb240a548b72674fe835cf7",
+                  "width": 216,
+                  "height": 144
+                },
+                {
+                  "url": "https://preview.redd.it/iqq0gc56npqg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=4b364dc374be31ad9d210512c5bc182b87d37ef2",
+                  "width": 320,
+                  "height": 213
+                },
+                {
+                  "url": "https://preview.redd.it/iqq0gc56npqg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=b4199f17c8f2ea62d719af1f9ca67a950e6b7fff",
+                  "width": 640,
+                  "height": 426
+                },
+                {
+                  "url": "https://preview.redd.it/iqq0gc56npqg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=a54da40c9fa7f9b44a7c7a73b2a6c0666cb9a19c",
+                  "width": 960,
+                  "height": 640
+                },
+                {
+                  "url": "https://preview.redd.it/iqq0gc56npqg1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=1d05036d79cfa588dcb35289feda0fea00a67596",
+                  "width": 1080,
+                  "height": 720
+                }
+              ],
+              "variants": {},
+              "id": "iqq0gc56npqg1"
+            }
+          ],
+          "enabled": true
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "Alan_Reddit_M",
+          "ups": 3180,
+          "body": "As an ACTUAL third world gamer, this is what gaming looks like for most people here\n\nhttps://preview.redd.it/xhkjpvrnxpqg1.png?width=624&amp;format=png&amp;auto=webp&amp;s=8494335191ea6cab16567c45af110889aa48ffbd\n\n  \nBarely functioning laptop with a dead battery, permanently hooked up to power and several peripherals like it's the Emperor of mankind, running old games at 15FPS"
+        },
+        {
+          "author": "Maximum-Series8871",
+          "ups": 1157,
+          "body": "https://preview.redd.it/bw5izbuzrpqg1.jpeg?width=1284&amp;format=pjpg&amp;auto=webp&amp;s=51e77af0c6edbe815ed4e58d8c97b1f673376485\n\nNo joke this is literally how it is"
+        },
+        {
+          "author": "Happy_Animator6329",
+          "ups": 321,
+          "body": "Are they literally pedaling to keep the RGB running?"
+        }
+      ]
+    },
+    "media_extracted": {
+      "type": "image",
+      "url": "https://i.redd.it/iqq0gc56npqg1.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/openai-vs-anthropic-claude-vs-chatgpt-gpt-5-claude-ai-compar/runs/2026-03-24T21-05-16-948Z/media/1s15ifu.png",
+      "contentType": "image/png",
+      "bytes": 3059142
+    },
+    "author_avatar": {
+      "user": "EXIIL1M_Sedai",
+      "url": "https://i.redd.it/snoovatar/avatars/nftv2_bmZ0X2VpcDE1NToxMzdfZTY0YmI3ZGQwYTEzYWY2MjJlMGRlNjQ1NmQxYmJhZGM4ZDFlYzA5ZF8yMjEyOA_rare_e74c6e21-d86f-4e10-9857-f56ef8b4012f.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/openai-vs-anthropic-claude-vs-chatgpt-gpt-5-claude-ai-compar/runs/2026-03-24T21-05-16-948Z/avatars/EXIIL1M_Sedai.png",
+      "fetchedAt": "2026-03-24T21:07:48.655Z"
+    }
+  },
+  {
+    "id": "1rwr5nq",
+    "subreddit": "technology",
+    "title": "CEO of Krafton Asks ChatGPT How to Void $250 Million Contract, Ignores His Lawyers, Loses Terribly in Court",
+    "selftext": "",
+    "author": "ControlCAD",
+    "created_utc": 1773799924,
+    "permalink": "https://www.reddit.com/r/technology/comments/1rwr5nq/ceo_of_krafton_asks_chatgpt_how_to_void_250/",
+    "url": "https://www.404media.co/ceo-ignores-lawyers-asks-chatgpt-how-to-void-250-million-contract-loses-terribly-in-court/",
+    "domain": "404media.co",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 16142,
+    "score": 16142,
+    "num_comments": 467,
+    "upvote_ratio": 0.98,
+    "thumbnail": "https://external-preview.redd.it/SYX54kxs1OOc4vLXSfiCU-PaiQPZZU8XbyYFyKeAJLQ.png?width=140&amp;height=111&amp;auto=webp&amp;s=6ac7027dca780540b1e6ba41ed2a4e7452aa369d",
+    "media": null,
+    "post_hint": "link",
+    "listing": "top:week",
+    "viral_score": 244.21211914353202,
+    "detail": {
+      "post": {
+        "id": "1rwr5nq",
+        "title": "CEO of Krafton Asks ChatGPT How to Void $250 Million Contract, Ignores His Lawyers, Loses Terribly in Court",
+        "selftext": "",
+        "author": "ControlCAD",
+        "subreddit": "technology",
+        "created_utc": 1773799924,
+        "ups": 16148,
+        "num_comments": 467,
+        "upvote_ratio": 0.98,
+        "permalink": "https://www.reddit.com/r/technology/comments/1rwr5nq/ceo_of_krafton_asks_chatgpt_how_to_void_250/",
+        "url": "https://www.404media.co/ceo-ignores-lawyers-asks-chatgpt-how-to-void-250-million-contract-loses-terribly-in-court/",
+        "is_self": false,
+        "post_hint": "link",
+        "thumbnail": "https://external-preview.redd.it/SYX54kxs1OOc4vLXSfiCU-PaiQPZZU8XbyYFyKeAJLQ.png?width=140&amp;height=111&amp;auto=webp&amp;s=6ac7027dca780540b1e6ba41ed2a4e7452aa369d",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://external-preview.redd.it/SYX54kxs1OOc4vLXSfiCU-PaiQPZZU8XbyYFyKeAJLQ.png?auto=webp&amp;s=06ea9bae45d74fdb721e5b4a29d9f6f5df606a6a",
+                "width": 1532,
+                "height": 1224
+              },
+              "resolutions": [
+                {
+                  "url": "https://external-preview.redd.it/SYX54kxs1OOc4vLXSfiCU-PaiQPZZU8XbyYFyKeAJLQ.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=4b8b346f5761231cf351712825c81f7c4a2e218e",
+                  "width": 108,
+                  "height": 86
+                },
+                {
+                  "url": "https://external-preview.redd.it/SYX54kxs1OOc4vLXSfiCU-PaiQPZZU8XbyYFyKeAJLQ.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=afaaf0059bf42ee7152904541f2e4082f25b290c",
+                  "width": 216,
+                  "height": 172
+                },
+                {
+                  "url": "https://external-preview.redd.it/SYX54kxs1OOc4vLXSfiCU-PaiQPZZU8XbyYFyKeAJLQ.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=536703989a33ee666a7bc1e6e514af24d30ac5a2",
+                  "width": 320,
+                  "height": 255
+                },
+                {
+                  "url": "https://external-preview.redd.it/SYX54kxs1OOc4vLXSfiCU-PaiQPZZU8XbyYFyKeAJLQ.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=e52ddb4a689c57f62d9b64b606a637d45fed123e",
+                  "width": 640,
+                  "height": 511
+                },
+                {
+                  "url": "https://external-preview.redd.it/SYX54kxs1OOc4vLXSfiCU-PaiQPZZU8XbyYFyKeAJLQ.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=76ff56071983d1e98da41925367ad06736df43be",
+                  "width": 960,
+                  "height": 766
+                },
+                {
+                  "url": "https://external-preview.redd.it/SYX54kxs1OOc4vLXSfiCU-PaiQPZZU8XbyYFyKeAJLQ.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=335352ae8db2a2250bc490488dcfaafd0b7d176b",
+                  "width": 1080,
+                  "height": 862
+                }
+              ],
+              "variants": {},
+              "id": "SYX54kxs1OOc4vLXSfiCU-PaiQPZZU8XbyYFyKeAJLQ"
+            }
+          ],
+          "enabled": false
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "themastermatt",
+          "ups": 3091,
+          "body": "I'm sure my C levels are gonna forward this story around like they do every time some other org gets phished and demand that they themselves stop using the chat bot to run the company right? I really cannot continue arguing with AIs via human senior leader proxy. I'm so tired."
+        },
+        {
+          "author": "great_whitehope",
+          "ups": 1806,
+          "body": "Actually the AI told him not to basically and he refused that answer so the AI came up with another answer.\n\nThat’s the problem with probability based AI. It will always answer, it won’t always be right especially if you reject the first highest probability response."
+        },
+        {
+          "author": "jay2universe",
+          "ups": 888,
+          "body": "Everyone is laughing at the execution, but look at the instinct. The second a CEO faces a $250M payout to human talent, his immediate reflex is to ask an AI how to eliminate them. Give enterprise legal-AI two more years and these automated corporate hit jobs will actually work.\n\nFor some local Korean context - this same CEO just went on national television a few days ago casually chatting about his personal salary of roughly $450,000 *a month*. He's making millions while literally trying to use a free AI chatbot to cheat the actual game devs out of their bonus.\n\nOriginal Korean source showing him on the talk show: \\[https://biz.heraldcorp.com/article/10694611?ref=naver\\]"
+        }
+      ]
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "ControlCAD",
+      "url": "https://i.redd.it/snoovatar/avatars/nftv2_bmZ0X2VpcDE1NToxMzdfM2I0NzdhNmIxYmUyMzY2MjhiMDg4MzllMWU4Y2Y4YmE4ZDkzNTg5YV82ODI5Mzkz_rare_193bf5f6-d984-47b5-94ae-2730426e2384.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/openai-vs-anthropic-claude-vs-chatgpt-gpt-5-claude-ai-compar/runs/2026-03-24T21-05-16-948Z/avatars/ControlCAD.png",
+      "fetchedAt": "2026-03-24T21:07:49.705Z"
+    }
+  },
+  {
+    "id": "1s2dpuo",
+    "subreddit": "singularity",
+    "title": "The goal post moving by anti-AI people is getting ridiculous.",
+    "selftext": "I've been closely following AI news since 2017 and have been on this sub since around 2021. When I look at where we came from, it's mind-blowing.\n\nJust a few years ago, AI image generation was a blurry mess of pixels. Now Seedance is putting out videos that look like they came out of a professional studio. A few years ago, AI couldn't string two coherent sentences together. Now these models are solving olympiad-level math problems that only a handful of people on Earth can grasp. In 2022, people said AI would never write real code. Now it's handling entire codebases.\n\nAnd every single time, the reaction is the same: move the goal post.\n\nNow we have a wave of people who discovered this tech with ChatGPT or later, taking all of it for granted. They think it's perfectly \"normal\" to have a deep, nuanced conversation with what is essentially sand, plastic, and electricity. They think it's normal to generate in minutes animations that used to take entire teams months of work.\n\nAnd these same people are now telling us it's going nowhere. \"Look, it only does 85% of my company's code.\" \"There's an extra finger on this ultra-realistic animation.\" Every breakthrough gets instantly absorbed into the new baseline, and the conversation shifts to whatever isn't perfect yet.\n\nImagine going back to 2019 and telling someone: \"In 2026, people will be complaining that their AI-generated cinematic video has a slightly odd shadow.\" They'd think you were insane, not because of the complaint, but because of what it implies.",
+    "author": "Many_Consequence_337",
+    "created_utc": 1774358746,
+    "permalink": "https://www.reddit.com/r/singularity/comments/1s2dpuo/the_goal_post_moving_by_antiai_people_is_getting/",
+    "url": "https://www.reddit.com/r/singularity/comments/1s2dpuo/the_goal_post_moving_by_antiai_people_is_getting/",
+    "domain": "self.singularity",
+    "is_self": true,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 260,
+    "score": 260,
+    "num_comments": 231,
+    "upvote_ratio": 0.72,
+    "thumbnail": "self",
+    "media": null,
+    "post_hint": null,
+    "listing": "rising",
+    "viral_score": 212.61504421222185,
+    "detail": {
+      "post": {
+        "id": "1s2dpuo",
+        "title": "The goal post moving by anti-AI people is getting ridiculous.",
+        "selftext": "I've been closely following AI news since 2017 and have been on this sub since around 2021. When I look at where we came from, it's mind-blowing.\n\nJust a few years ago, AI image generation was a blurry mess of pixels. Now Seedance is putting out videos that look like they came out of a professional studio. A few years ago, AI couldn't string two coherent sentences together. Now these models are solving olympiad-level math problems that only a handful of people on Earth can grasp. In 2022, people said AI would never write real code. Now it's handling entire codebases.\n\nAnd every single time, the reaction is the same: move the goal post.\n\nNow we have a wave of people who discovered this tech with ChatGPT or later, taking all of it for granted. They think it's perfectly \"normal\" to have a deep, nuanced conversation with what is essentially sand, plastic, and electricity. They think it's normal to generate in minutes animations that used to take entire teams months of work.\n\nAnd these same people are now telling us it's going nowhere. \"Look, it only does 85% of my company's code.\" \"There's an extra finger on this ultra-realistic animation.\" Every breakthrough gets instantly absorbed into the new baseline, and the conversation shifts to whatever isn't perfect yet.\n\nImagine going back to 2019 and telling someone: \"In 2026, people will be complaining that their AI-generated cinematic video has a slightly odd shadow.\" They'd think you were insane, not because of the complaint, but because of what it implies.",
+        "author": "Many_Consequence_337",
+        "subreddit": "singularity",
+        "created_utc": 1774358746,
+        "ups": 260,
+        "num_comments": 232,
+        "upvote_ratio": 0.72,
+        "permalink": "https://www.reddit.com/r/singularity/comments/1s2dpuo/the_goal_post_moving_by_antiai_people_is_getting/",
+        "url": "https://www.reddit.com/r/singularity/comments/1s2dpuo/the_goal_post_moving_by_antiai_people_is_getting/",
+        "is_self": true,
+        "post_hint": null,
+        "thumbnail": "self",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": null,
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "timmeh1705",
+          "ups": 71,
+          "body": "Someone made the most startling point - Qwen 3.5 9B produces roughly the same quality GPT3 /3.5 did. Basically in a matter of 2-3 years we have found a way to get a functional AI model to be able to be run on a base Mac Mini. How fast will progress be in the next 2-3 years. "
+        },
+        {
+          "author": "unspecified_person11",
+          "ups": 66,
+          "body": "To be fair, there is a lot of goalpost moving on both sides of the argument. Pro-AI people twist everything into the most favourable interpretation for AI and anti-AI people twist it into the least favourable interpretation, the truth is somewhere in the middle."
+        },
+        {
+          "author": "ViolinistTemporary",
+          "ups": 47,
+          "body": "Well, this is what makes human progress. We are never satisfied. I say, let the chips fall where they may."
+        }
+      ]
+    }
+  },
+  {
+    "id": "1s29ul8",
+    "subreddit": "technews",
+    "title": "China's open-source dominance threatens US AI lead, US advisory body warns",
+    "selftext": "",
+    "author": "talkingatoms",
+    "created_utc": 1774347561,
+    "permalink": "https://www.reddit.com/r/technews/comments/1s29ul8/chinas_opensource_dominance_threatens_us_ai_lead/",
+    "url": "https://www.reuters.com/business/autos-transportation/chinas-open-source-dominance-threatens-us-ai-lead-us-advisory-body-warns-2026-03-23/",
+    "domain": "reuters.com",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 537,
+    "score": 537,
+    "num_comments": 77,
+    "upvote_ratio": 0.94,
+    "thumbnail": "https://external-preview.redd.it/keIMFwjBKRr3bUnTQjRzKoB8sRAzng3kSccDu6XBibg.jpeg?width=140&amp;height=73&amp;auto=webp&amp;s=ee505297288d1e3adb498929b2bc0684924ab771",
+    "media": null,
+    "post_hint": "link",
+    "listing": "rising",
+    "viral_score": 168.36836620911217,
+    "detail": {
+      "post": {
+        "id": "1s29ul8",
+        "title": "China's open-source dominance threatens US AI lead, US advisory body warns",
+        "selftext": "",
+        "author": "talkingatoms",
+        "subreddit": "technews",
+        "created_utc": 1774347561,
+        "ups": 535,
+        "num_comments": 77,
+        "upvote_ratio": 0.94,
+        "permalink": "https://www.reddit.com/r/technews/comments/1s29ul8/chinas_opensource_dominance_threatens_us_ai_lead/",
+        "url": "https://www.reuters.com/business/autos-transportation/chinas-open-source-dominance-threatens-us-ai-lead-us-advisory-body-warns-2026-03-23/",
+        "is_self": false,
+        "post_hint": "link",
+        "thumbnail": "https://external-preview.redd.it/keIMFwjBKRr3bUnTQjRzKoB8sRAzng3kSccDu6XBibg.jpeg?width=140&amp;height=73&amp;auto=webp&amp;s=ee505297288d1e3adb498929b2bc0684924ab771",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://external-preview.redd.it/keIMFwjBKRr3bUnTQjRzKoB8sRAzng3kSccDu6XBibg.jpeg?auto=webp&amp;s=2216d20d5eac4ec147446e62d2f55357257ec26b",
+                "width": 1920,
+                "height": 1005
+              },
+              "resolutions": [
+                {
+                  "url": "https://external-preview.redd.it/keIMFwjBKRr3bUnTQjRzKoB8sRAzng3kSccDu6XBibg.jpeg?width=108&amp;crop=smart&amp;auto=webp&amp;s=e8499a6b4b724696f3c1e3bdcabbcc9b566d1424",
+                  "width": 108,
+                  "height": 56
+                },
+                {
+                  "url": "https://external-preview.redd.it/keIMFwjBKRr3bUnTQjRzKoB8sRAzng3kSccDu6XBibg.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=bbbbba88d80da039f686d1e8c70153a379f6aea4",
+                  "width": 216,
+                  "height": 113
+                },
+                {
+                  "url": "https://external-preview.redd.it/keIMFwjBKRr3bUnTQjRzKoB8sRAzng3kSccDu6XBibg.jpeg?width=320&amp;crop=smart&amp;auto=webp&amp;s=92a2721c1bc7a26ce7fbdfc819fa9cd7177f26d8",
+                  "width": 320,
+                  "height": 167
+                },
+                {
+                  "url": "https://external-preview.redd.it/keIMFwjBKRr3bUnTQjRzKoB8sRAzng3kSccDu6XBibg.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=e4c57e16f16d452dc6b2747040ad647ba37bf677",
+                  "width": 640,
+                  "height": 335
+                },
+                {
+                  "url": "https://external-preview.redd.it/keIMFwjBKRr3bUnTQjRzKoB8sRAzng3kSccDu6XBibg.jpeg?width=960&amp;crop=smart&amp;auto=webp&amp;s=1d3087c617acaebcf1d12f9f4dd8c19f3086ebbb",
+                  "width": 960,
+                  "height": 502
+                },
+                {
+                  "url": "https://external-preview.redd.it/keIMFwjBKRr3bUnTQjRzKoB8sRAzng3kSccDu6XBibg.jpeg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=cf8445a0359d732b471d2120e9e413ec4f1654c0",
+                  "width": 1080,
+                  "height": 565
+                }
+              ],
+              "variants": {},
+              "id": "keIMFwjBKRr3bUnTQjRzKoB8sRAzng3kSccDu6XBibg"
+            }
+          ],
+          "enabled": false
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "sentencevillefonny",
+          "ups": 43,
+          "body": "The Software as a Service frenzy has been hurting my pockets for a decade. \n\nCan’t buy, only rent…and everything comes coupled with ads, bloat and the useful features paywalled behind the tier right above the one you just paid for. \n\nI’m all for any alternatives, especially open source. \n"
+        },
+        {
+          "author": "CoastingUphill",
+          "ups": 41,
+          "body": "Yes that’s why China keeps releasing those models"
+        },
+        {
+          "author": "YumariiWolf",
+          "ups": 8,
+          "body": "I had no idea 80% of AI startups in the US are using Chinese models, or that deepseeks R1 overtook chatGPT in US downloads on the App Store *last year*. Seems pretty plausible they could close the gap and overtake US companies. "
+        }
+      ]
+    },
+    "media_extracted": null
+  },
+  {
+    "id": "1s2ixtr",
+    "subreddit": "singularity",
+    "title": "I'm impressed that the Grok meltdown isn't posted here like the GPT 4o was.",
+    "selftext": "For those out of the loop, Grok is now paid for Imagine and Video creation. Furthermore, Grok is a lot more moderated than it was previously. You also get a lot less generation than you got previously (for paid, it's 100 images and 10 videos, every 5 or so hours).\n\nBasically, the only reason most people were using Grok was for the goon. Now, since it's been severely moderated, the gooning is, while not gone, heavily restricted. \n\nPeople on the Grok subreddit have been having a massive meltdown for the past few days. \n\nIt's weird that this subjected wasn't brought up here, considering that a lot of the 4o drama was.",
+    "author": "Grand0rk",
+    "created_utc": 1774370279,
+    "permalink": "https://www.reddit.com/r/singularity/comments/1s2ixtr/im_impressed_that_the_grok_meltdown_isnt_posted/",
+    "url": "https://www.reddit.com/r/singularity/comments/1s2ixtr/im_impressed_that_the_grok_meltdown_isnt_posted/",
+    "domain": "self.singularity",
+    "is_self": true,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 144,
+    "score": 144,
+    "num_comments": 70,
+    "upvote_ratio": 0.89,
+    "thumbnail": "self",
+    "media": null,
+    "post_hint": null,
+    "listing": "rising",
+    "viral_score": 159.77098015533988,
+    "detail": {
+      "post": {
+        "id": "1s2ixtr",
+        "title": "I'm impressed that the Grok meltdown isn't posted here like the GPT 4o was.",
+        "selftext": "For those out of the loop, Grok is now paid for Imagine and Video creation. Furthermore, Grok is a lot more moderated than it was previously. You also get a lot less generation than you got previously (for paid, it's 100 images and 10 videos, every 5 or so hours).\n\nBasically, the only reason most people were using Grok was for the goon. Now, since it's been severely moderated, the gooning is, while not gone, heavily restricted. \n\nPeople on the Grok subreddit have been having a massive meltdown for the past few days. \n\nIt's weird that this subjected wasn't brought up here, considering that a lot of the 4o drama was.",
+        "author": "Grand0rk",
+        "subreddit": "singularity",
+        "created_utc": 1774370279,
+        "ups": 147,
+        "num_comments": 70,
+        "upvote_ratio": 0.89,
+        "permalink": "https://www.reddit.com/r/singularity/comments/1s2ixtr/im_impressed_that_the_grok_meltdown_isnt_posted/",
+        "url": "https://www.reddit.com/r/singularity/comments/1s2ixtr/im_impressed_that_the_grok_meltdown_isnt_posted/",
+        "is_self": true,
+        "post_hint": null,
+        "thumbnail": "self",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": null,
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "RemusShepherd",
+          "ups": 96,
+          "body": "I think most people on Reddit already recognize that Grok is trash.  Gooners are using ComfyUI on their own hardware these days."
+        },
+        {
+          "author": "Prudent-Sorbet-5202",
+          "ups": 65,
+          "body": "Didn't even know that happened, lmao "
+        },
+        {
+          "author": "Mandoman61",
+          "ups": 55,
+          "body": "Most people here already dislike Musk and all his b.s. "
+        }
+      ]
+    }
+  },
+  {
+    "id": "1s1w200",
+    "subreddit": "cscareerquestions",
+    "title": "How come software devs are so much more worried about AI replacing them than other white collar jobs?",
+    "selftext": "Everyday there is multiple doom and gloom posts about AI taking all software dev roles, but it doesn’t seem as popular in other white collar jobs, why? \n\nMy gf is an accountant and she says her company just rolled out mandatory usage of copilot and I asked her if she feared AI taking her job and she just laughed and said no “we still have to prompt it and review it.”\n\nIn my career as a developer 6 yoe now, I never had a job where coding was greater than 30% of the time spent. I’m currently a senior dev, and even before AI, a majority of seniors weren’t coding everyday, but instead reviewing code from offshore or junior devs. \n\nThe rest of my time is usually spent understanding business requirements, meetings/ planning and prioritization, system design, etc. \n\nI may be going off topic, but what is it about software developers are so fearful of their jobs being taken, while other white collar jobs aren’t? ",
+    "author": "jholliday55",
+    "created_utc": 1774305522,
+    "permalink": "https://www.reddit.com/r/cscareerquestions/comments/1s1w200/how_come_software_devs_are_so_much_more_worried/",
+    "url": "https://www.reddit.com/r/cscareerquestions/comments/1s1w200/how_come_software_devs_are_so_much_more_worried/",
+    "domain": "self.cscareerquestions",
+    "is_self": true,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 490,
+    "score": 490,
+    "num_comments": 425,
+    "upvote_ratio": 0.92,
+    "thumbnail": null,
+    "media": null,
+    "post_hint": null,
+    "listing": "rising",
+    "viral_score": 144.0143520746585,
+    "detail": {
+      "post": {
+        "id": "1s1w200",
+        "title": "How come software devs are so much more worried about AI replacing them than other white collar jobs?",
+        "selftext": "Everyday there is multiple doom and gloom posts about AI taking all software dev roles, but it doesn’t seem as popular in other white collar jobs, why? \n\nMy gf is an accountant and she says her company just rolled out mandatory usage of copilot and I asked her if she feared AI taking her job and she just laughed and said no “we still have to prompt it and review it.”\n\nIn my career as a developer 6 yoe now, I never had a job where coding was greater than 30% of the time spent. I’m currently a senior dev, and even before AI, a majority of seniors weren’t coding everyday, but instead reviewing code from offshore or junior devs. \n\nThe rest of my time is usually spent understanding business requirements, meetings/ planning and prioritization, system design, etc. \n\nI may be going off topic, but what is it about software developers are so fearful of their jobs being taken, while other white collar jobs aren’t? ",
+        "author": "jholliday55",
+        "subreddit": "cscareerquestions",
+        "created_utc": 1774305522,
+        "ups": 494,
+        "num_comments": 425,
+        "upvote_ratio": 0.92,
+        "permalink": "https://www.reddit.com/r/cscareerquestions/comments/1s1w200/how_come_software_devs_are_so_much_more_worried/",
+        "url": "https://www.reddit.com/r/cscareerquestions/comments/1s1w200/how_come_software_devs_are_so_much_more_worried/",
+        "is_self": true,
+        "post_hint": null,
+        "thumbnail": null,
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": null,
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "Born-Rate-6692",
+          "ups": 918,
+          "body": "AI execs are trying their hardest to replace devs. They're not investing billions to replace accountants or radiologists, even though it might happen at one point."
+        },
+        {
+          "author": "CosbySweaters1992",
+          "ups": 140,
+          "body": "I think the concern is overblown regardless. However, the reason these tools are more helpful for a SWE than an accountant is because the people who built these tools understand Software Engineering… they don’t understand being an accountant, or any of the other jobs you mentioned. Therefore, the tools are more helpful in the software engineering space."
+        },
+        {
+          "author": "xian0",
+          "ups": 104,
+          "body": "They are competent making bots and more interested in turning them on their own careers subreddit."
+        }
+      ]
+    }
+  },
+  {
+    "id": "1s2iipi",
+    "subreddit": "ChatGPT",
+    "title": "The Ai are taking over",
+    "selftext": "",
+    "author": "Unlikely_Big_8152",
+    "created_utc": 1774369388,
+    "permalink": "https://www.reddit.com/r/ChatGPT/comments/1s2iipi/the_ai_are_taking_over/",
+    "url": "https://i.redd.it/7jdpg1h5r0rg1.png",
+    "domain": "i.redd.it",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 191,
+    "score": 191,
+    "num_comments": 12,
+    "upvote_ratio": 0.99,
+    "thumbnail": "https://preview.redd.it/7jdpg1h5r0rg1.png?width=140&amp;height=116&amp;auto=webp&amp;s=b28f533fa47b4612723c31c89fb6e53351444e7a",
+    "media": null,
+    "post_hint": "image",
+    "listing": "rising",
+    "viral_score": 103.80210332937142,
+    "detail": {
+      "post": {
+        "id": "1s2iipi",
+        "title": "The Ai are taking over",
+        "selftext": "",
+        "author": "Unlikely_Big_8152",
+        "subreddit": "ChatGPT",
+        "created_utc": 1774369388,
+        "ups": 192,
+        "num_comments": 12,
+        "upvote_ratio": 0.99,
+        "permalink": "https://www.reddit.com/r/ChatGPT/comments/1s2iipi/the_ai_are_taking_over/",
+        "url": "https://i.redd.it/7jdpg1h5r0rg1.png",
+        "is_self": false,
+        "post_hint": "image",
+        "thumbnail": "https://preview.redd.it/7jdpg1h5r0rg1.png?width=140&amp;height=116&amp;auto=webp&amp;s=b28f533fa47b4612723c31c89fb6e53351444e7a",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://preview.redd.it/7jdpg1h5r0rg1.png?auto=webp&amp;s=5aaeb0bbc546871f2ac08f9fc911ec57e055c299",
+                "width": 720,
+                "height": 600
+              },
+              "resolutions": [
+                {
+                  "url": "https://preview.redd.it/7jdpg1h5r0rg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=aa3992e06f2a52b2eac2fb486cf912adfb19aac8",
+                  "width": 108,
+                  "height": 90
+                },
+                {
+                  "url": "https://preview.redd.it/7jdpg1h5r0rg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=47356715348dc34998cf7df972b5358ba42e5212",
+                  "width": 216,
+                  "height": 180
+                },
+                {
+                  "url": "https://preview.redd.it/7jdpg1h5r0rg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=0641ffe232ee700e0d4a7a879380f68ce1cc13cf",
+                  "width": 320,
+                  "height": 266
+                },
+                {
+                  "url": "https://preview.redd.it/7jdpg1h5r0rg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=fc67df140db36367b830fa9d1e36c83fc7c160d8",
+                  "width": 640,
+                  "height": 533
+                }
+              ],
+              "variants": {},
+              "id": "7jdpg1h5r0rg1"
+            }
+          ],
+          "enabled": true
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "Omnishift",
+          "ups": 22,
+          "body": "Last panel should be “You’re absolutely right, here is a better output, no fluff, in your voice.”"
+        },
+        {
+          "author": "MeanderingSquid49",
+          "ups": 5,
+          "body": "There is a 100% certain way to make sure writing comes out in your voice, but..."
+        },
+        {
+          "author": "Kraien",
+          "ups": 3,
+          "body": "Good catch!"
+        }
+      ]
+    },
+    "media_extracted": {
+      "type": "image",
+      "url": "https://i.redd.it/7jdpg1h5r0rg1.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/8176450202/reddit-scout/openai-vs-anthropic-claude-vs-chatgpt-gpt-5-claude-ai-compar/runs/2026-03-24T21-05-16-948Z/media/1s2iipi.png",
+      "contentType": "image/png",
+      "bytes": 492462
+    }
+  },
+  {
+    "id": "1s1ipep",
+    "subreddit": "ClaudeAI",
+    "title": "The 5 levels of Claude Code (and how to know when you've hit the ceiling on each one)",
+    "selftext": "I've been through five distinct phases of using Claude Code. Each one felt like I'd figured it out until something broke. Here's the progression I wish someone had mapped for me.\n\nhttps://preview.redd.it/b0ll68fv0tqg1.png?width=2374&amp;format=png&amp;auto=webp&amp;s=375fade36f9817b6ef6ed48ce9f4e7f546cd3b14\n\n**Level 1: Raw prompting.** You open Claude Code, describe what you want, and it builds. This works surprisingly well for small tasks. The ceiling: your project grows past what fits in a single conversation. The agent forgets your conventions, introduces patterns you don't use, and you spend more time correcting than building.\n\n**Level 2: CLAUDE.md.** You create a markdown file at your project root that tells the agent how your codebase works. Tech stack, file structure, naming conventions, patterns to follow, patterns to avoid. This alone changes everything. The ceiling: I let mine grow to 145 lines and discovered compliance degraded well before Anthropic's recommended 200-line limit. Agents followed the top rules and silently ignored the rest. I trimmed it to 77 lines and compliance improved immediately. Keep it tight. And once your sessions get long enough, the agent starts losing the thread anyway: quality drops, earlier decisions get forgotten, it starts repeating itself and gives surface-level answers. That's when you know raw context isn't enough.\n\n**Level 3: Skills.** Markdown protocol files that teach the agent specialized procedures. Each one is a step-by-step workflow for a specific type of task. They load on demand and cost zero tokens when inactive. Instead of re-explaining how you want components built every session, you point the agent at a skill file. The ceiling: the agent follows your protocols but nobody checks its work automatically. You're still the quality gate.\n\n**Level 4: Hooks.** Lifecycle scripts that fire at specific moments during a session. PostToolUse to run a per-file typecheck after every edit (instead of flooding the agent with 200+ project-wide errors). Stop hooks for quality gates before task completion. SessionStart to load context before the agent touches anything. This is where you stop telling the agent to validate and start building infrastructure that validates for it. The ceiling: you're still one agent, one session. Your project outgrows what a single context window can hold.\n\n**Level 5: Orchestration.** Parallel agents in isolated worktrees, persistent campaign files that carry state across sessions, coordination layers that prevent agents from editing the same files. This is where one developer operates at institutional scale. I've run 198 agents across 32 fleet sessions with a 3.1% merge conflict rate. Most projects never need this level. Know when you do.\n\n**The pattern:** you don't graduate by deciding to. You graduate because you hit a ceiling and the friction forces you up. Each level exists because the one below it broke. Don't skip levels. I tried to jump to Level 5 before I had solid hooks and it was a mess. The infrastructure at each level is what makes the next level possible.\n\nI open-sourced the system these levels built: [https://github.com/SethGammon/Citadel](https://github.com/SethGammon/Citadel)",
+    "author": "DevMoses",
+    "created_utc": 1774276785,
+    "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1s1ipep/the_5_levels_of_claude_code_and_how_to_know_when/",
+    "url": "https://www.reddit.com/r/ClaudeAI/comments/1s1ipep/the_5_levels_of_claude_code_and_how_to_know_when/",
+    "domain": "self.ClaudeAI",
+    "is_self": true,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 937,
+    "score": 937,
+    "num_comments": 193,
+    "upvote_ratio": 0.96,
+    "thumbnail": "https://external-preview.redd.it/uZFQgNk5dXXfXmIad1YcO1dYAM2YyIzCJvedtu_W8pE.png?width=140&amp;height=70&amp;auto=webp&amp;s=dbb41c58b340a412871f9093c3f5bdd90309515d",
+    "media": null,
+    "post_hint": null,
+    "listing": "search:top:week",
+    "viral_score": 101.20902598651668,
+    "detail": {
+      "post": {
+        "id": "1s1ipep",
+        "title": "The 5 levels of Claude Code (and how to know when you've hit the ceiling on each one)",
+        "selftext": "I've been through five distinct phases of using Claude Code. Each one felt like I'd figured it out until something broke. Here's the progression I wish someone had mapped for me.\n\nhttps://preview.redd.it/b0ll68fv0tqg1.png?width=2374&amp;format=png&amp;auto=webp&amp;s=375fade36f9817b6ef6ed48ce9f4e7f546cd3b14\n\n**Level 1: Raw prompting.** You open Claude Code, describe what you want, and it builds. This works surprisingly well for small tasks. The ceiling: your project grows past what fits in a single conversation. The agent forgets your conventions, introduces patterns you don't use, and you spend more time correcting than building.\n\n**Level 2: CLAUDE.md.** You create a markdown file at your project root that tells the agent how your codebase works. Tech stack, file structure, naming conventions, patterns to follow, patterns to avoid. This alone changes everything. The ceiling: I let mine grow to 145 lines and discovered compliance degraded well before Anthropic's recommended 200-line limit. Agents followed the top rules and silently ignored the rest. I trimmed it to 77 lines and compliance improved immediately. Keep it tight. And once your sessions get long enough, the agent starts losing the thread anyway: quality drops, earlier decisions get forgotten, it starts repeating itself and gives surface-level answers. That's when you know raw context isn't enough.\n\n**Level 3: Skills.** Markdown protocol files that teach the agent specialized procedures. Each one is a step-by-step workflow for a specific type of task. They load on demand and cost zero tokens when inactive. Instead of re-explaining how you want components built every session, you point the agent at a skill file. The ceiling: the agent follows your protocols but nobody checks its work automatically. You're still the quality gate.\n\n**Level 4: Hooks.** Lifecycle scripts that fire at specific moments during a session. PostToolUse to run a per-file typecheck after every edit (instead of flooding the agent with 200+ project-wide errors). Stop hooks for quality gates before task completion. SessionStart to load context before the agent touches anything. This is where you stop telling the agent to validate and start building infrastructure that validates for it. The ceiling: you're still one agent, one session. Your project outgrows what a single context window can hold.\n\n**Level 5: Orchestration.** Parallel agents in isolated worktrees, persistent campaign files that carry state across sessions, coordination layers that prevent agents from editing the same files. This is where one developer operates at institutional scale. I've run 198 agents across 32 fleet sessions with a 3.1% merge conflict rate. Most projects never need this level. Know when you do.\n\n**The pattern:** you don't graduate by deciding to. You graduate because you hit a ceiling and the friction forces you up. Each level exists because the one below it broke. Don't skip levels. I tried to jump to Level 5 before I had solid hooks and it was a mess. The infrastructure at each level is what makes the next level possible.\n\nI open-sourced the system these levels built: [https://github.com/SethGammon/Citadel](https://github.com/SethGammon/Citadel)",
+        "author": "DevMoses",
+        "subreddit": "ClaudeAI",
+        "created_utc": 1774276785,
+        "ups": 938,
+        "num_comments": 193,
+        "upvote_ratio": 0.96,
+        "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1s1ipep/the_5_levels_of_claude_code_and_how_to_know_when/",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1s1ipep/the_5_levels_of_claude_code_and_how_to_know_when/",
+        "is_self": true,
+        "post_hint": null,
+        "thumbnail": "https://external-preview.redd.it/uZFQgNk5dXXfXmIad1YcO1dYAM2YyIzCJvedtu_W8pE.png?width=140&amp;height=70&amp;auto=webp&amp;s=dbb41c58b340a412871f9093c3f5bdd90309515d",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": {
+          "b0ll68fv0tqg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 55,
+                "x": 108,
+                "u": "https://preview.redd.it/b0ll68fv0tqg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=8586fa77cf9ebb9b1f8724422773bf1674ce5579"
+              },
+              {
+                "y": 111,
+                "x": 216,
+                "u": "https://preview.redd.it/b0ll68fv0tqg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=6e2f2f6193ade8eeff3be5973b207fbbfd8a3511"
+              },
+              {
+                "y": 164,
+                "x": 320,
+                "u": "https://preview.redd.it/b0ll68fv0tqg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=3ef84a5804e7293ab42802498024d141f6dc9cf2"
+              },
+              {
+                "y": 329,
+                "x": 640,
+                "u": "https://preview.redd.it/b0ll68fv0tqg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=1599bfb49855ae53cf83c331fa3e1107bd863713"
+              },
+              {
+                "y": 494,
+                "x": 960,
+                "u": "https://preview.redd.it/b0ll68fv0tqg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=827e51cb54c95b0e0464d1392113c1f44fc7b0bd"
+              },
+              {
+                "y": 556,
+                "x": 1080,
+                "u": "https://preview.redd.it/b0ll68fv0tqg1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=022446d88b85243363a099ba2a4a4f07448d5e61"
+              }
+            ],
+            "s": {
+              "y": 1223,
+              "x": 2374,
+              "u": "https://preview.redd.it/b0ll68fv0tqg1.png?width=2374&amp;format=png&amp;auto=webp&amp;s=375fade36f9817b6ef6ed48ce9f4e7f546cd3b14"
+            },
+            "id": "b0ll68fv0tqg1"
+          }
+        },
+        "preview": null,
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "whatelse02",
+          "ups": 58,
+          "body": "this breakdown is actually pretty accurate , especially the “you don’t move up by choice, you get forced up” part. I hit that Level 2 ceiling way faster than expected, CLAUDE.md just stops being followed after a point.\n\nfor me Level 3 was where things clicked, having reusable “skills” or templates changed everything. I kinda do something similar with Runable for structured outputs (like decks/docs) and then use Claude for reasoning, keeps things more predictable.\n\nhaven’t gone full orchestration yet though, that sounds cool but also like a maintenance nightmare lol"
+        },
+        {
+          "author": "Slow-Bake-9603",
+          "ups": 14,
+          "body": "And then it’s level 6 when you ask claude to build claude for you tailored to your specific workflow and project stack"
+        },
+        {
+          "author": "florinandrei",
+          "ups": 8,
+          "body": "There's a lot of slop on this sub, and not all AI, but this post is good.\n\nYeah, that's more or less the progression. I would not say the stages are set in stone, but the general direction is right. People start prompting the heck out of it, dumping tons of Markdown into it, and then they realize they need determinism.\n\nYou can burn through stages faster if you read the Claude Code documentation."
+        }
+      ]
+    },
+    "media_extracted": null
+  }
+]

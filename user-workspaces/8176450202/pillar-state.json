@@ -1,0 +1,16 @@
+{
+  "pillar": "Sales jobs",
+  "state": "IDEAS_DELIVERED",
+  "created_at": "2026-03-25T09:22:19.808Z",
+  "research_status": {
+    "reddit": "done",
+    "twitter": "done",
+    "youtube": "done",
+    "google_news": "done"
+  },
+  "message_sent": {
+    "pillar_received": true,
+    "research_done": true,
+    "error": false
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "niche": "RAG in Production - Real architectural decisions, failure modes, and benchmark numbers from building RAG systems at scale. Hybrid search, reranking, RAGAS evaluation, context retrieval, embedding drift, vector DB trade-offs",
+  "nicheSlug": "rag-in-production-real-architectural-decisions-failure-modes",
+  "runId": "2026-03-26T06-02-43-070Z",
+  "startedAt": "2026-03-26T06:02:43.070Z",
+  "keywords": [
+    "RAG in Production - Real architectural decisions, failure modes, and benchmark numbers from building RAG systems at scale. Hybrid search, reranking, RAGAS evaluation, context retrieval, embedding drift, vector DB trade-offs"
+  ],
+  "mustInclude": [
+    "rag",
+    "production",
+    "real",
+    "architectural",
+    "decisions",
+    "failure",
+    "modes",
+    "benchmark",
+    "numbers",
+    "from",
+    "building",
+    "rag",
+    "systems",
+    "scale",
+    "hybrid",
+    "search",
+    "reranking",
+    "ragas",
+    "evaluation",
+    "context",
+    "retrieval",
+    "embedding",
+    "drift",
+    "vector",
+    "db",
+    "trade",
+    "offs"
+  ],
+  "search": "RAG in Production - Real architectural decisions, failure modes, and benchmark numbers from building RAG systems at scale. Hybrid search, reranking, RAGAS evaluation, context retrieval, embedding drift, vector DB trade-offs",
+  "subAllowlist": null,
+  "config": {
+    "topN": 20,
+    "subLimit": 12,
+    "gapMs": 1000,
+    "limitPerListing": 25,
+    "time": "week",
+    "kinds": [
+      "top",
+      "hot",
+      "rising"
+    ],
+    "searchSort": "top",
+    "searchTime": null,
+    "minSubscribers": 0,
+    "sendCardsN": 5
+  }
+}

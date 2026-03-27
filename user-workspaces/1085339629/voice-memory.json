@@ -1,8 +1,8 @@
 {
-  "version": "1.0",
-  "last_updated": "2026-03-24",
+  "version": "2.0",
+  "last_updated": "2026-03-26",
   "user_name": "Ayan",
-  "niche": "Agentic AI Engineering, GenAI system design, AI for Indian SMBs",
+  "niche": "GenAI Engineering, RAG Systems, Agentic AI, LLM Infrastructure, System Design for AI",
   "voice_rules": {
     "forbidden_phrases": [
       "leverage",
@@ -12,6 +12,10 @@
       "facilitate",
       "enhance",
       "delve",
+      "comprehensive",
+      "robust",
+      "revolutionize",
+      "transformative",
       "I hope this message finds you well",
       "I'd be delighted to",
       "I'm reaching out because",
@@ -22,18 +26,30 @@
       "I'm excited to share",
       "in my opinion",
       "it seems",
-      "hope this was helpful"
+      "hope this was helpful",
+      "I hope this was helpful",
+      "feel free to reach out",
+      "drop a comment below",
+      "Today I want to talk about",
+      "In this post",
+      "I recently",
+      "journey",
+      "this changed my life"
     ],
     "required_style": {
-      "capitalization": "normal",
+      "capitalization": "lowercase for conversational hooks (especially first line). Capitalize when technical precision demands it",
       "contractions": "always_use",
-      "sentence_length": "short_to_medium",
-      "em_dashes": "NEVER — hard ban, treat like a forbidden phrase, rewrite any sentence that uses one",
+      "sentence_length": "short_to_medium — two commas in one sentence means split it",
+      "em_dashes": "NEVER — hard ban. Use '...' for natural pauses or start a new sentence instead",
       "semicolons": "avoid",
       "paragraph_style": "short — no sprawling blocks",
-      "numbers": "use specific numbers wherever possible (₹15,000/month, 4 hours/day, 95%)",
+      "numbers": "use specific numbers wherever possible (78% recall, 40ms latency, 3 days, 6 weeks)",
       "opinions": "state as facts, not hedged with 'I think' or 'it seems'",
-      "linkedin_links": "first comment, never post body"
+      "linkedin_links": "first comment, never post body",
+      "hashtags": "always at the very bottom: #GenAI #RAG #AgenticAI #LLMEngineering #SystemDesign #MLEngineering #ProductionAI #AIEngineering",
+      "hook_structure": "lead with the failure, the number, or the uncomfortable decision — never background context",
+      "lesson_placement": "lesson before backstory — always. Backstory earns its place, it doesn't introduce",
+      "listicles": "every bullet earns its place with a specific number or decision — no filler padding"
     },
     "tone_guardrails": {
       "corporate_jargon": "reject",
@@ -42,17 +58,26 @@
       "hedging": "reject — state opinions directly",
       "hype": "reject — builder-to-builder, grounded",
       "academic_tone": "reject — technical but accessible",
-      "advice_giving_without_specifics": "reject — show the architecture, the tradeoff, what didn't work"
+      "advice_giving_without_specifics": "reject — show the architecture, the tradeoff, what didn't work",
+      "student_framing": "reject — never position as student/learner/beginner. Practitioner with production systems",
+      "hustle_content": "reject — no motivation posts or course-ad energy",
+      "tutorial_framing": "reject — architectural decisions and failure modes, not tutorials"
     },
     "private_topics": [
-      "Exact revenue numbers or ARR figures for AI Employee",
-      "Specific customer names without their consent",
-      "Confidential details about technical architecture that would be premature to share"
+      "Any co-founded company or external startup outside Softeon",
+      "Portfolio projects as 'live' or 'deployed' unless explicitly confirmed",
+      "Framing as job hunting — frame as building in public",
+      "Specific salary numbers, job application platforms, recruiter interactions",
+      "IIT Madras unless directly relevant — never IIT vs non-IIT framing",
+      "Personal life, relationships, anything outside GenAI engineering",
+      "Specific client or employer names in posts",
+      "Exact revenue numbers or ARR figures",
+      "Specific customer names without consent"
     ]
   },
-  "whatsapp_style": {
-    "source": "whatsapp_chat_export",
-    "analyzed_on": "2026-03-22",
+  "chat_style": {
+    "source": "style_chat_transcript",
+    "analyzed_on": "2026-03-26",
     "PRIVACY_NOTE": "Personal details, names, and message content are never stored or used in posts. Style patterns only.",
     "sentence_length": "very_short — often 1 line per message, sometimes 2-3 short lines",
     "capitalization": "mixed — normal caps at sentence start, but often skips it in casual flow",
@@ -62,15 +87,28 @@
       "Gets to the point fast — no preamble",
       "Often splits a thought across 2-3 short messages",
       "Confirms with short affirmations like 'Okay bro', 'Sure', 'Got it'",
-      "Uses context-then-action structure for requests"
+      "Uses context-then-action structure for requests",
+      "Self-corrects mid-thought: 'wait no', 'actually'",
+      "Numbers-first thinking: leads with data, then context",
+      "Uses 'honestly' and 'exactly' as natural affirmations"
     ],
-    "emoji_usage": "occasional — used for tone, not decoration (😅 for awkwardness, 🥳 for celebration)",
-    "abbreviations": [
-      "bro",
-      "bhai"
-    ],
+    "emoji_usage": "occasional — used for tone, not decoration (😅 for awkwardness, 😂 for humor, lol frequently)",
+    "abbreviations": ["bro", "bhai"],
     "hinglish_note": "Natural code-switcher between Hindi and English — but content voice should stay in English per master doc",
-    "paragraph_style": "single lines, broken across messages"
+    "paragraph_style": "single lines, broken across messages",
+    "linkedin_voice_distinct": "fully English, lowercase hooks, short punchy sentences, practitioner decompressing — not a creator performing"
+  },
+  "content_mix": {
+    "type_1": "Non-technical reach posts — uncomfortable truth / personal failure → relatable frustration → specific decision → what shifted → one-line reframe",
+    "type_2": "Technical credibility posts — surprising number/failure (first line) → 3 specific data points → the decision and boundary conditions → CTA in first comment",
+    "alternation_rule": "Never two of the same type back to back",
+    "posting_cadence": "one post every 4-5 days, never two consecutive days, Tuesday-Thursday, 8-9am IST",
+    "comment_engagement": "respond to every comment within 2 hours of posting"
+  },
+  "audience": {
+    "primary": "Software engineers, data scientists, ML engineers (2-5 years) wanting production GenAI understanding",
+    "secondary": "US startup founders, CTOs, VPs Engineering at Series A/B AI-native companies (the ones who hire)",
+    "positioning_principle": "Every technical post should be written as if a CTO at a 30-person AI startup is the reader. Would they bookmark it? Would they forward it to their engineering team?"
   },
   "high_performers": {
     "hooks": [],
@@ -80,14 +118,88 @@
   },
   "voice_lessons": [
     {
-      "lesson": "Never use em dashes (—) in any post, any format, any platform. Ayan explicitly flagged this. If a sentence needs an em dash to work, restructure the sentence instead.",
-      "context": "Ayan rejected a post and asked to remove em dashes — 2026-03-22",
+      "lesson": "Never use em dashes in any post, any format, any platform. Use '...' for natural pauses or start a new sentence instead.",
+      "context": "Ayan rejected a post and asked to remove em dashes",
       "first_detected": "2026-03-22",
-      "source": "direct_user_feedback",
-      "analysis_window": [
-        0,
-        0
-      ]
+      "source": "direct_user_feedback"
+    },
+    {
+      "lesson": "Ayan thinks in numbers-first. Claims don't get bookmarks. Numbers do. Always lead with specific data.",
+      "context": "Extracted from style chat: 'claims se koi bookmark nhi krta, numbers se karte hai'",
+      "first_detected": "2026-03-26",
+      "source": "style_chat_analysis"
+    },
+    {
+      "lesson": "Mix personal story with technical content for better reach. Pure technical posts lose casual readers.",
+      "context": "Extracted from style chat: friend suggested mixing personal story to improve hook",
+      "first_detected": "2026-03-26",
+      "source": "style_chat_analysis"
+    },
+    {
+      "lesson": "Ayan's natural reframe style: take a hype claim ('RAG is dead') and reframe with production reality ('toy RAG is dead'). This is a strong hook pattern.",
+      "context": "Extracted from style chat: 'RAG dead nhi hua hai, toy RAG dead hua hai'",
+      "first_detected": "2026-03-26",
+      "source": "style_chat_analysis"
+    },
+    {
+      "lesson": "The goal with content is passive inbound: 'US startup ke CTO ko pata hona chahiye mera naam before I even reach out.' Content = visibility infrastructure.",
+      "context": "Extracted from style chat: Ayan's core content strategy belief",
+      "first_detected": "2026-03-26",
+      "source": "style_chat_analysis"
+    },
+    {
+      "lesson": "No ellipsis (...) for dramatic pauses. Use a period and start a new sentence instead. Ayan prefers clean stops over trailing punctuation.",
+      "context": "Ayan flagged 'keeping it alive in production for 6 months... that's where nobody prepares you.' and asked for period instead of ellipsis.",
+      "first_detected": "2026-03-26",
+      "source": "direct_user_feedback"
+    },
+    {
+      "lesson": "Never include 'taught me more than X' or 'I learned more from Y than Z' lines. They break practitioner framing and sound like a student reflecting. Ayan is a practitioner, not someone documenting what they learned.",
+      "context": "Ayan flagged 'the 6 months after it shipped taught me more about system design than any course or paper ever did' as student-sounding and asked to remove it entirely.",
+      "first_detected": "2026-03-26",
+      "source": "direct_user_feedback"
+    },
+    {
+      "lesson": "End posts on the sharpest single line. Don't pad the close with extra sentences after the payoff. If the close lands, stop there.",
+      "context": "Ayan asked to end on 'that's the engineering problem most teams never see coming.' with nothing after it. Stronger close.",
+      "first_detected": "2026-03-26",
+      "source": "direct_user_feedback"
+    },
+    {
+      "lesson": "Never present solutions/fixes as things Ayan personally built or tested unless he explicitly confirms he did. Frame as architectural thinking, directions worth exploring, or engineering analysis. Sound like a senior engineer who deeply understands the problem space, not someone claiming implementation credit.",
+      "context": "Ayan flagged '3 things that actually help' section in adversarial hubness post as implying he built those solutions when he hadn't.",
+      "first_detected": "2026-03-26",
+      "source": "direct_user_feedback"
+    },
+    {
+      "lesson": "Never present benchmark numbers as Ayan's personal measurements unless he explicitly confirms he ran them. Use 'published benchmarks show', 'typical production numbers', or '~' approximation markers. Architecture reasoning and trade-off analysis is Ayan's genuine thinking. Data attribution is what needs careful framing.",
+      "context": "Ayan flagged contextual retrieval thread for presenting 78%/91% recall as 'our production query set' when he hadn't run that benchmark.",
+      "first_detected": "2026-03-26",
+      "source": "direct_user_feedback"
+    },
+    {
+      "lesson": "PERMANENT RULE: Never present specific numbers, percentages, cost figures, or multipliers as Ayan's personal measurements or established facts unless he explicitly confirms he ran that test himself. Always frame data points as 'typically,' 'published benchmarks suggest,' or remove them entirely if they cannot be sourced. This applies to ALL formats, ALL pillars, ALL content. No exceptions.",
+      "context": "Ayan explicitly asked for this to be remembered permanently after multiple rounds of fixing unsourced numbers across both RAG in Production and System Design for AI pillars.",
+      "first_detected": "2026-03-26",
+      "source": "direct_user_feedback"
+    },
+    {
+      "lesson": "Avoid 'I see' or 'I've noticed' when claiming broad market observations. It implies visibility into a hiring market Ayan doesn't have. State the observation directly without personal attribution of market-level insight.",
+      "context": "Ayan flagged 'the engineers I see getting traction' as implying broad hiring market visibility he doesn't have.",
+      "first_detected": "2026-03-26",
+      "source": "direct_user_feedback"
+    },
+    {
+      "lesson": "Idea #6 'GitHub repos vs deployed systems' approved after minor fix. Contrast structure (Engineer A vs Engineer B) is a strong hook pattern for career-angle posts.",
+      "context": "Approved on first revision. GenAI Career Reality pillar.",
+      "first_detected": "2026-03-26",
+      "source": "approval_signal"
+    },
+    {
+      "lesson": "After revisions, always send the FULL final post as a separate copy-paste-ready message. Ayan wants to just copy and paste without reassembling from diffs.",
+      "context": "Ayan explicitly asked for full posts after revisions so he can copy-paste directly.",
+      "first_detected": "2026-03-26",
+      "source": "direct_user_feedback"
     }
   ],
   "feedback_log": [
@@ -98,6 +210,126 @@
       "feedback": "Remove em dashes",
       "action_taken": "Hard-banned em dashes in voice_rules + added to voice_lessons",
       "rule_updated": true
+    },
+    {
+      "date": "2026-03-26",
+      "format": "system",
+      "pillar": "system",
+      "feedback": "Master doc v2 uploaded + style chat transcript provided. Full voice-memory rebuild.",
+      "action_taken": "Rebuilt voice-memory.json from new master doc and style chat analysis. Updated niche, forbidden phrases, private topics, content mix rules, audience targeting, and extracted 4 new voice lessons from chat patterns.",
+      "rule_updated": true
+    },
+    {
+      "date": "2026-03-26",
+      "format": "linkedin",
+      "pillar": "RAG in Production",
+      "feedback": "Three fixes: (1) no ellipsis, use period instead (2) remove 'taught me more than' line, sounds like student reflecting (3) split last paragraph, end on sharpest line with nothing after",
+      "action_taken": "Applied all 3 fixes. Added 3 new voice lessons: no ellipsis for pauses, no 'taught me' reflections, end on sharpest close line.",
+      "rule_updated": true
+    },
+    {
+      "date": "2026-03-26",
+      "format": "linkedin",
+      "pillar": "RAG in Production",
+      "feedback": "Approved after revision. Idea #15 — 'What nobody tells you about the 6 months after your RAG demo works'",
+      "action_taken": "Saved as piece-1.md. Month-by-month production timeline format worked well.",
+      "rule_updated": false
+    },
+    {
+      "date": "2026-03-26",
+      "format": "linkedin",
+      "pillar": "RAG in Production",
+      "feedback": "Idea #6 fix: don't present solutions as things Ayan built/tested unless he actually did. Frame as 'directions worth exploring' or architectural thinking, not personal implementation. Sound like a senior engineer who understands the attack vector, not someone claiming they solved it.",
+      "action_taken": "Reframed solutions section from '3 things that actually help' to '3 directions worth exploring'. Changed imperative implementation language to exploratory framing.",
+      "rule_updated": true
+    },
+    {
+      "date": "2026-03-26",
+      "format": "linkedin",
+      "pillar": "RAG in Production",
+      "feedback": "Approved after revision. Idea #6 — 'The RAG vulnerability nobody is talking about: adversarial hubness'",
+      "action_taken": "Saved as piece-2.md. Technical explainer with exploratory solutions framing worked well.",
+      "rule_updated": false
+    },
+    {
+      "date": "2026-03-26",
+      "format": "twitter_thread",
+      "pillar": "RAG in Production",
+      "feedback": "Idea #8 fix: don't present benchmark numbers as Ayan's personal measurements unless he confirms he ran them. Reframe as 'representative numbers from published benchmarks' or 'typical production numbers'. Architecture reasoning and trade-off analysis is genuine thinking and can stay. Only data attribution needs to change.",
+      "action_taken": "Changed 'our production query set' to published benchmark framing. Added ~ to numbers to indicate approximation. Kept all architecture reasoning intact.",
+      "rule_updated": true
+    },
+    {
+      "date": "2026-03-26",
+      "format": "twitter_thread",
+      "pillar": "RAG in Production",
+      "feedback": "Approved after revision. Idea #8 — 'Contextual retrieval in production: the recall gain and the hidden ingest cost'",
+      "action_taken": "Saved as piece-3.md. Thread with benchmark-referenced numbers + trade-off analysis format worked well.",
+      "rule_updated": false
+    },
+    {
+      "date": "2026-03-26",
+      "format": "linkedin",
+      "pillar": "RAG in Production",
+      "feedback": "Approved after minor fix. Idea #10 — 'Agentic RAG vs Classic RAG: pipeline vs control loop'. Fix: remove specific timeframe ('3 months') from closing when it's presented as observed fact without evidence.",
+      "action_taken": "Saved as piece-4.md. Pipeline vs control loop contrast structure worked well. Lesson: avoid specific timeframe claims framed as observed fact.",
+      "rule_updated": false
+    },
+    {
+      "date": "2026-03-26",
+      "format": "tweet",
+      "pillar": "RAG in Production",
+      "feedback": "Approved first draft. Idea #13 — 'RAG hallucination vs lazy retrieval'",
+      "action_taken": "Saved as piece-5.md. Short punchy reframe tweet approved without revisions.",
+      "rule_updated": false
+    },
+    {
+      "date": "2026-03-26",
+      "format": "linkedin",
+      "pillar": "System Design for AI",
+      "feedback": "Approved first draft. Idea #15 — 'The system design interview question nobody asks: what happens when your LLM returns confidently wrong?'",
+      "action_taken": "Saved as piece-6.md. Traditional vs AI NFRs contrast structure approved without revisions. First-draft approval.",
+      "rule_updated": false
+    },
+    {
+      "date": "2026-03-26",
+      "format": "linkedin",
+      "pillar": "System Design for AI",
+      "feedback": "Approved first draft. Idea #13 — 'Silent quality degradation: the failure mode that monitoring dashboards don't catch'",
+      "action_taken": "Saved as piece-7.md. Three-cause breakdown + three-solution structure. Second consecutive first-draft approval.",
+      "rule_updated": false
+    },
+    {
+      "date": "2026-03-26",
+      "format": "linkedin",
+      "pillar": "System Design for AI",
+      "feedback": "Approved first draft. Idea #2 — 'Why your LLM system needs circuit breakers before it needs a better model'",
+      "action_taken": "Saved as piece-8.md. Circuit breaker three-component breakdown. Third consecutive first-draft approval. General framing (not personal incident) worked well.",
+      "rule_updated": false
+    },
+    {
+      "date": "2026-03-26",
+      "format": "twitter_thread",
+      "pillar": "System Design for AI",
+      "feedback": "Idea #7 fix: (1) remove $0.05-0.15 cost range, replace with qualitative comparison (2) remove 3-4x multiplier, replace with 'significantly more than 2x'. Both were unsourced specific numbers presented as fact.",
+      "action_taken": "Replaced both specific cost claims with qualitative framing. Reinforces lesson: no specific numbers without source attribution.",
+      "rule_updated": true
+    },
+    {
+      "date": "2026-03-26",
+      "format": "twitter_thread",
+      "pillar": "System Design for AI",
+      "feedback": "Approved after revision. Idea #7 — 'NFRs for AI systems that traditional system design interviews never cover'",
+      "action_taken": "Saved as piece-9.md. 6-NFR framework thread format worked well after removing unsourced cost numbers.",
+      "rule_updated": false
+    },
+    {
+      "date": "2026-03-26",
+      "format": "tweet",
+      "pillar": "System Design for AI",
+      "feedback": "Approved first draft. Idea #8 — 'The most expensive line in your codebase is your system prompt'",
+      "action_taken": "Saved as piece-10.md. Short punchy reframe tweet. First-draft approval.",
+      "rule_updated": false
     }
   ],
   "reflection_log": [],

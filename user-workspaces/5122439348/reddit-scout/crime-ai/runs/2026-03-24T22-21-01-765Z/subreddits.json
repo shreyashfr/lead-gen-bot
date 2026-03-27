@@ -1,0 +1,72 @@
+[
+  {
+    "name": "OpenAI",
+    "title": "OpenAI",
+    "subscribers": 2687041,
+    "over18": false,
+    "url": "https://www.reddit.com/r/OpenAI/",
+    "discoveredBy": [
+      "Crime AI"
+    ]
+  },
+  {
+    "name": "CharacterAI",
+    "title": "Character.AI",
+    "subscribers": 2586083,
+    "over18": false,
+    "url": "https://www.reddit.com/r/CharacterAI/",
+    "discoveredBy": [
+      "Crime AI"
+    ]
+  },
+  {
+    "name": "TrueCrimeDiscussion",
+    "title": "Everything Crime",
+    "subscribers": 1294358,
+    "over18": false,
+    "url": "https://www.reddit.com/r/TrueCrimeDiscussion/",
+    "discoveredBy": [
+      "Crime AI"
+    ]
+  },
+  {
+    "name": "artificial",
+    "title": "Artificial Intelligence (AI)",
+    "subscribers": 1239667,
+    "over18": false,
+    "url": "https://www.reddit.com/r/artificial/",
+    "discoveredBy": [
+      "Crime AI"
+    ]
+  },
+  {
+    "name": "antiai",
+    "title": "Anti AI",
+    "subscribers": 143601,
+    "over18": false,
+    "url": "https://www.reddit.com/r/antiai/",
+    "discoveredBy": [
+      "Crime AI"
+    ]
+  },
+  {
+    "name": "DefendingAIArt",
+    "title": "DefendingAIArt",
+    "subscribers": 57288,
+    "over18": false,
+    "url": "https://www.reddit.com/r/DefendingAIArt/",
+    "discoveredBy": [
+      "Crime AI"
+    ]
+  },
+  {
+    "name": "AI_NPC",
+    "title": "AI Suspects: Unmask AI Crime ",
+    "subscribers": 13,
+    "over18": false,
+    "url": "https://www.reddit.com/r/AI_NPC/",
+    "discoveredBy": [
+      "Crime AI"
+    ]
+  }
+]

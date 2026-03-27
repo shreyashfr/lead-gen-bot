@@ -1,0 +1,35 @@
+{
+  "n": 5,
+  "cards": [
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/system-design-for-ai-genai-llm-infrastructure-scalability-fa/runs/2026-03-26T07-16-14-953Z/cards/1s315bb.png",
+      "caption": "1) Anthropic just dropped 12 massive Claude updates - and most people are missing the best ones that turn Claude into a 24/7 AI employee that runs while you sleep\nr/ThinkingDeeplyAI · score 3 · 66 ups · 1 comments\nhttps://www.reddit.com/r/ThinkingDeeplyAI/comments/1s315bb/anthropic_just_dropped_12_massive_claude_updates/",
+      "permalink": "https://www.reddit.com/r/ThinkingDeeplyAI/comments/1s315bb/anthropic_just_dropped_12_massive_claude_updates/",
+      "id": "1s315bb"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/system-design-for-ai-genai-llm-infrastructure-scalability-fa/runs/2026-03-26T07-16-14-953Z/cards/1ry1f5v.png",
+      "caption": "2) AI Hypists Need a Reality Check (Francis Fukuyama)\nr/neoliberal · score 2 · 162 ups · 44 comments\nhttps://www.reddit.com/r/neoliberal/comments/1ry1f5v/ai_hypists_need_a_reality_check_francis_fukuyama/",
+      "permalink": "https://www.reddit.com/r/neoliberal/comments/1ry1f5v/ai_hypists_need_a_reality_check_francis_fukuyama/",
+      "id": "1ry1f5v"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/system-design-for-ai-genai-llm-infrastructure-scalability-fa/runs/2026-03-26T07-16-14-953Z/cards/1ryo919.png",
+      "caption": "3) I built a persistent memory system for AI agents because I got tired of them forgetting everything over time\nr/clawdbot · score 1 · 75 ups · 40 comments\nhttps://www.reddit.com/r/clawdbot/comments/1ryo919/i_built_a_persistent_memory_system_for_ai_agents/",
+      "permalink": "https://www.reddit.com/r/clawdbot/comments/1ryo919/i_built_a_persistent_memory_system_for_ai_agents/",
+      "id": "1ryo919"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/system-design-for-ai-genai-llm-infrastructure-scalability-fa/runs/2026-03-26T07-16-14-953Z/cards/1s129tx.png",
+      "caption": "4) 2026 Career Roadmap - 4 Pillars of Emerging AI Automation\nr/heracareerswitch · score 0 · 23 ups · 0 comments\nhttps://www.reddit.com/r/heracareerswitch/comments/1s129tx/2026_career_roadmap_4_pillars_of_emerging_ai/",
+      "permalink": "https://www.reddit.com/r/heracareerswitch/comments/1s129tx/2026_career_roadmap_4_pillars_of_emerging_ai/",
+      "id": "1s129tx"
+    },
+    {
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/system-design-for-ai-genai-llm-infrastructure-scalability-fa/runs/2026-03-26T07-16-14-953Z/cards/1rzir0t.png",
+      "caption": "5) I found a GitHub repo that teaches you to build production RAG systems the way actual companies do it. Seven weeks, one real project, zero toy demos. Here is why the sequencing is what makes it different.\nr/OpenClawInstall · score 0 · 36 ups · 0 comments\nhttps://www.reddit.com/r/OpenClawInstall/comments/1rzir0t/i_found_a_github_repo_that_teaches_you_to_build/",
+      "permalink": "https://www.reddit.com/r/OpenClawInstall/comments/1rzir0t/i_found_a_github_repo_that_teaches_you_to_build/",
+      "id": "1rzir0t"
+    }
+  ]
+}

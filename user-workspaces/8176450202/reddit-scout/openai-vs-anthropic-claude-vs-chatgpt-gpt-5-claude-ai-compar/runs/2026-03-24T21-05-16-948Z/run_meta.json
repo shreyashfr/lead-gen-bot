@@ -1,0 +1,64 @@
+{
+  "niche": "OpenAI vs Anthropic Claude vs ChatGPT GPT-5 Claude AI comparison backend developer",
+  "nicheSlug": "openai-vs-anthropic-claude-vs-chatgpt-gpt-5-claude-ai-compar",
+  "runId": "2026-03-24T21-05-16-948Z",
+  "startedAt": "2026-03-24T21:05:16.948Z",
+  "keywords": [
+    "OpenAI vs Anthropic Claude vs ChatGPT GPT-5 Claude AI comparison backend developer"
+  ],
+  "mustInclude": [
+    "openai",
+    "anthropic",
+    "claude",
+    "chatgpt",
+    "gpt",
+    "claude",
+    "ai",
+    "comparison",
+    "backend",
+    "developer"
+  ],
+  "search": "OpenAI vs Anthropic Claude vs ChatGPT GPT-5 Claude AI comparison backend developer",
+  "subAllowlist": [
+    "machinelearning",
+    "localllama",
+    "learnmachinelearning",
+    "artificial",
+    "singularity",
+    "chatgpt",
+    "openai",
+    "deeplearning",
+    "mlops",
+    "datascience",
+    "artificialintelligence",
+    "programming",
+    "softwareengineering",
+    "cscareerquestions",
+    "startupideas",
+    "technology",
+    "technews",
+    "gadgets",
+    "futurology",
+    "innovation",
+    "explainlikeimfive",
+    "claudeai",
+    "chatgptpro",
+    "languagetechnology"
+  ],
+  "config": {
+    "topN": 20,
+    "subLimit": 20,
+    "gapMs": 800,
+    "limitPerListing": 25,
+    "time": "week",
+    "kinds": [
+      "top",
+      "hot",
+      "rising"
+    ],
+    "searchSort": "top",
+    "searchTime": null,
+    "minSubscribers": 0,
+    "sendCardsN": 5
+  }
+}

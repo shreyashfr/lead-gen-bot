@@ -1,0 +1,31 @@
+{
+  "niche": "Sales jobs",
+  "nicheSlug": "sales-jobs",
+  "runId": "2026-03-25T09-22-45-300Z",
+  "startedAt": "2026-03-25T09:22:45.301Z",
+  "keywords": [
+    "Sales jobs"
+  ],
+  "mustInclude": [
+    "sales",
+    "jobs"
+  ],
+  "search": "Sales jobs",
+  "subAllowlist": null,
+  "config": {
+    "topN": 20,
+    "subLimit": 12,
+    "gapMs": 1000,
+    "limitPerListing": 25,
+    "time": "week",
+    "kinds": [
+      "top",
+      "hot",
+      "rising"
+    ],
+    "searchSort": "top",
+    "searchTime": null,
+    "minSubscribers": 0,
+    "sendCardsN": 5
+  }
+}

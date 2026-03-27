@@ -1,0 +1,7 @@
+{
+  "query": "RAG in Production - Real architectural decisions, failure modes, and benchmark numbers from building RAG systems at scale. Hybrid search, reranking, RAGAS evaluation, context retrieval, embedding drift, vector DB trade-offs 2026",
+  "runId": "2026-03-26T06-04-56-802Z",
+  "topN": 10,
+  "totalScanned": 20,
+  "timestamp": "2026-03-26T06:05:36.580Z"
+}

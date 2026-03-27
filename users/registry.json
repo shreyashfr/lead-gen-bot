@@ -59,9 +59,10 @@
       "email": "ayanarshad2002@gmail.com",
       "stripe_customer_id": "cus_UCG2EfzTKPckS4",
       "subscription_start": "2026-03-22",
-      "niche": "Agentic AI Engineering, GenAI system design, AI for Indian SMBs",
+      "niche": "GenAI Engineering, RAG Systems, Agentic AI, LLM Infrastructure, System Design for AI",
       "platforms": [
-        "linkedin"
+        "linkedin",
+        "twitter"
       ]
     },
     "1613832104": {

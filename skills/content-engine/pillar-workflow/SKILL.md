@@ -204,17 +204,25 @@ I'll start producing one at a time and send for your review before moving to the
 Save the complete IDEAS REPORT to file:
 {USER_WORKSPACE}ideas-report.md
 
-Then post to Telegram as DOCUMENT (not text message):
+Then do BOTH deliveries in this order:
+
+1. Send the FULL ideas report as a TEXT MESSAGE (not file) to Telegram:
 - Channel: telegram
 - Target: g-agent-ce-telegram-direct-{USER_TELEGRAM_ID}
-- Action: send document
-- File: {USER_WORKSPACE}ideas-report.md
-- Caption: (empty)
+- Action: send
+- Message: [the complete ideas report text]
 
-Do NOT send any other messages. Do NOT narrate. Do NOT explain. Just post the document. Then STOP."
+2. ALSO send as DOCUMENT attachment:
+- Channel: telegram
+- Target: g-agent-ce-telegram-direct-{USER_TELEGRAM_ID}
+- Action: send
+- File: {USER_WORKSPACE}ideas-report.md
+- Caption: '📋 Ideas Report'
+
+Do NOT send any other messages. Do NOT narrate. Do NOT explain. Send the text message, then the document. Then STOP."
 
 Mode: run
-Timeout: 120
+Timeout: 300
 ```
 
 **Do NOT wait for completion. Spawn and continue.**

@@ -1,0 +1,338 @@
+[
+  {
+    "id": "2023648625432330411",
+    "text": "Kotlin Multiplatform can bridge things, and you can get the same effect on iOS, but getting the exact same thing on Android is way more difficult",
+    "author_name": "Ranbir Singh",
+    "author_handle": "@android_poet",
+    "metrics": {
+      "likes": 2400,
+      "retweets": 77,
+      "replies": 27,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 2.6,
+    "url": "https://x.com/android_poet/status/2023648625432330411"
+  },
+  {
+    "id": "1854522978652058081",
+    "text": "I made this in SwiftUI with Cursor and Xcode\n\nSo Claude AI is actually great at iOS development. Prompt in Cursor and preview/build in Xcode. SwiftUI makes it incredibly easy to apply custom styling and animations on top of it.\n\nIf you're starting out, it's really fun. There is",
+    "author_name": "Meng To",
+    "author_handle": "@MengTo",
+    "metrics": {
+      "likes": 2000,
+      "retweets": 147,
+      "replies": 48,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 2.3,
+    "url": "https://x.com/MengTo/status/1854522978652058081"
+  },
+  {
+    "id": "1919804324940550540",
+    "text": "Compose Multiplatform for iOS is Stable and Production-Ready! \n\nBuild mobile apps faster with shared UI code, full control over native experiences, and the confidence to ship at scale.\n\nExplore all the updates in Compose Multiplatform 1.8.0:",
+    "author_name": "Kotlin by JetBrains",
+    "author_handle": "@kotlin",
+    "metrics": {
+      "likes": 794,
+      "retweets": 313,
+      "replies": 20,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1.4,
+    "url": "https://x.com/kotlin/status/1919804324940550540"
+  },
+  {
+    "id": "2011806324401541528",
+    "text": "In the past week, I've built a project in:\n- React Native\n- Native Swift, Native Kotlin\n- Flutter\n\nMy conclusion is that:\n- React Native takes forever to build from a clean slate\n- Native Swift and Kotlin are better, but can also take time\n- Flutter is surprisingly fast, no",
+    "author_name": "Filip Kowalski",
+    "author_handle": "@filippkowalski",
+    "metrics": {
+      "likes": 445,
+      "retweets": 26,
+      "replies": 59,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/filippkowalski/status/2011806324401541528"
+  },
+  {
+    "id": "1998075206271926408",
+    "text": "Hot take: Building a native Swift iOs app might now be easier than building a website.\n\nBefore AI, websites won. HTML/CSS/JS was more forgiving than Swift and Xcode.\n\nBut with Opus 4.5, vibe coding works great for Swift. And here's the thing: when you build a native app, that's",
+    "author_name": "Kieran Klaassen",
+    "author_handle": "@kieranklaassen",
+    "metrics": {
+      "likes": 343,
+      "retweets": 15,
+      "replies": 60,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/kieranklaassen/status/1998075206271926408"
+  },
+  {
+    "id": "2034259990513320018",
+    "text": "Swift Package Manager support is now available in Kotlin Multiplatform.\n\nTry importing iOS dependencies from Swift packages or migrating from CocoaPods.\n\nSee how to try out this experimental feature  \nhttps://\nkotl.in/kmp-swiftpm-im\nport\n…\n\nShare your feedback",
+    "author_name": "Kotlin by JetBrains",
+    "author_handle": "@kotlin",
+    "metrics": {
+      "likes": 305,
+      "retweets": 86,
+      "replies": 9,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/kotlin/status/2034259990513320018"
+  },
+  {
+    "id": "1938633540159045744",
+    "text": "“Compose Multiplatform for iOS: Ready for Production Use” \n\nIn this KotlinConf’25 talk, \n@sebi_io\n shares what’s new, what’s under the hood, and what’s next.\n\n Now available on Kotlin YouTube: \nhttps://\nkotl.in/conf-compose-f\nor-ios\n…",
+    "author_name": "Kotlin by JetBrains",
+    "author_handle": "@kotlin",
+    "metrics": {
+      "likes": 255,
+      "retweets": 38,
+      "replies": 2,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/Gudo6dNWgAIHPEK.jpg"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/kotlin/status/1938633540159045744"
+  },
+  {
+    "id": "1922916519391944888",
+    "text": "WOAH!  This is the first time I have developed and released an iOS application in my life.\n\nAs an Android developer, I was never motivated to jump into the iOS ecosystem and build something. However, to grow a product, covering at least both mobile platforms is essential.\n\nI",
+    "author_name": "Chris Krueger",
+    "author_handle": "@ChrisKruegerDev",
+    "metrics": {
+      "likes": 224,
+      "retweets": 16,
+      "replies": 23,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/Gq-PE4dWsAAP34M?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/ChrisKruegerDev/status/1922916519391944888"
+  },
+  {
+    "id": "2035007575364657486",
+    "text": "Claude gives a pretty interesting perspective of \"why SwiftUI List performs worse than AppKit equivalents\", after reading the assembly",
+    "author_name": "Oskar Groth",
+    "author_handle": "@oskargroth",
+    "metrics": {
+      "likes": 173,
+      "retweets": 18,
+      "replies": 5,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HD3L7SsWgAA-iR0?format=jpg&name=360x360",
+      "https://pbs.twimg.com/media/HD3MfoMXkAAdg08?format=jpg&name=small",
+      "https://pbs.twimg.com/media/HD2WvKAXEAAdDuk?format=jpg&name=120x120",
+      "https://pbs.twimg.com/media/HD2Wvp5WoAAIWvp?format=jpg&name=120x120",
+      "https://pbs.twimg.com/media/HD2WvIoXgAAZRpD?format=jpg&name=120x120",
+      "https://pbs.twimg.com/media/HD2WvOoWEAAyfua?format=jpg&name=120x120"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/oskargroth/status/2035007575364657486"
+  },
+  {
+    "id": "2034314304250335247",
+    "text": "Swift has more keywords than all those languages combined \nGo: 25 keywords.\nKotlin: 72 keywords.\nC++: an insane 95 keywords.",
+    "author_name": "Jacob Bartlett",
+    "author_handle": "@jacobtechtavern",
+    "metrics": {
+      "likes": 76,
+      "retweets": 2,
+      "replies": 10,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/jacobtechtavern/status/2034314304250335247"
+  },
+  {
+    "id": "2034178161760444826",
+    "text": "SwiftUI vs UIKit: the head-to-head scroll performance comparison \n\nI have crappy perception, so didn’t rate my ability to feel minor animation issues. But during my first run, I felt two very noticeable hangs, where the UI was briefly unresponsive betwixt tap and scroll.\nBut this",
+    "author_name": "Jacob Bartlett@jacobtechtavern·Mar 18",
+    "author_handle": "unknown",
+    "metrics": {
+      "likes": 59,
+      "retweets": 3,
+      "replies": 6,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HDraQh2X0AAz3oK?format=jpg&name=900x900",
+      "https://pbs.twimg.com/media/HDraQe4WgAIfJXI?format=jpg&name=900x900"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/jacobtechtavern/status/2034178161760444826"
+  },
+  {
+    "id": "2036001626419605986",
+    "text": "Compose HotSwan for Kotlin Multiplatform.\n\nCompose HotSwan lets you make instant Compose UI updates on your running Android app with state preserved.",
+    "author_name": "Jaewoong Eum",
+    "author_handle": "@github_skydoves",
+    "metrics": {
+      "likes": 32,
+      "retweets": 2,
+      "replies": 1,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/github_skydoves/status/2036001626419605986"
+  },
+  {
+    "id": "2036550936873804272",
+    "text": "I’ve tried KB. It’s like a mix of Notion and Atlassian.\n\nIf you’re a solo founder, just run Claude Code in a Company folder on your mac.\n\nEveryone else should consider KB.",
+    "author_name": "Michael",
+    "author_handle": "@michael_chomsky",
+    "metrics": {
+      "likes": 7,
+      "retweets": 0,
+      "replies": 0,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [
+      "https://pbs.twimg.com/media/HEMO6_tbIAAY9IU?format=jpg&name=small"
+    ],
+    "viral_score": 1,
+    "url": "https://x.com/michael_chomsky/status/2036550936873804272"
+  },
+  {
+    "id": "2034730761275023589",
+    "text": "You can see that Android and Apple takes very different approach about Vibe Coding apps. Of course Google is much more supportive and actively encourages its growth, because Google has products for it. Google AI Studio, Stitch, Antigravity, etc. Apple, on the other hand doesn’t",
+    "author_name": "Mario Saputra",
+    "author_handle": "@mariosaputra",
+    "metrics": {
+      "likes": 5,
+      "retweets": 0,
+      "replies": 1,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/mariosaputra/status/2034730761275023589"
+  },
+  {
+    "id": "2034487471279587801",
+    "text": "Some native modules yes. But this is for the mobile app. The Mac app is still 100% AppKit/SwiftUI",
+    "author_name": "Daniel Nguyen",
+    "author_handle": "@daniel_nguyenx",
+    "metrics": {
+      "likes": 2,
+      "retweets": 0,
+      "replies": 0,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/daniel_nguyenx/status/2034487471279587801"
+  },
+  {
+    "id": "2036556410918515113",
+    "text": "Foundation Models in iOS can read the contents of apps running in the simulator.\n\nPaul Hudson just discovered this by accident while rebuilding Copilot Recall on macOS.\n\nThe privacy-first on-device AI story Apple's been selling? This is the API surface that makes it real.\n\nWWDC26",
+    "author_name": "Emad Ghorbaninia",
+    "author_handle": "@emadgnia",
+    "metrics": {
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/emadgnia/status/2036556410918515113"
+  },
+  {
+    "id": "2035836536294641764",
+    "text": "Teaching Claude to QA a Capacitor mobile app:\n\nAndroid: 90 minutes setup via CDP\niOS: 6+ hours of edge cases\n\n• Can't type \"@\" via AppleScript\n• Can't dismiss native dialogs\n• Had to write directly to TCC.db\n\nNow runs 25-screen sweeps daily and auto-files bug reports.\n\niOS dev",
+    "author_name": "Mati",
+    "author_handle": "@MatiBuildsWith",
+    "metrics": {
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/MatiBuildsWith/status/2035836536294641764"
+  },
+  {
+    "id": "2036548861490073783",
+    "text": "Been through enough App Store reviews to know: 4-day waits are rough. But the deeper problem is Apple is playing whack-a-mole with code execution rules designed for a world where apps are hand-crafted.\n\nVibe coding didn't change what apps DO. It changed who can make them. Apple's",
+    "author_name": "Emad Ghorbaninia",
+    "author_handle": "@emadgnia",
+    "metrics": {
+      "likes": 0,
+      "retweets": 0,
+      "replies": 1,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/emadgnia/status/2036548861490073783"
+  },
+  {
+    "id": "2036546513938379151",
+    "text": "I mean, it's a rite of passage to vibe code your own note app. \n\nNeed to create it, drown in the scope creep attempting to differentiate, and then ultimately remember why Obsidian, Notion, or Apple Notes are so much more convenient.",
+    "author_name": "Winston B.",
+    "author_handle": "@DoDataThings",
+    "metrics": {
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/DoDataThings/status/2036546513938379151"
+  },
+  {
+    "id": "2036343182787518555",
+    "text": "Well it all would need contributions, I can't maintain 40K loc all on my own, I yesterday alone patched 3 vulns or so in my kernel virt layer, Every vulnerable I patch in my virt layer improves stability, something apple recently and never on Xcode ignores... and Swift support is",
+    "author_name": "Nyxia",
+    "author_handle": "@nyxengineer",
+    "metrics": {
+      "likes": 0,
+      "retweets": 0,
+      "replies": 1,
+      "bookmarks": 0,
+      "quotes": 0
+    },
+    "images": [],
+    "viral_score": 1,
+    "url": "https://x.com/nyxengineer/status/2036343182787518555"
+  }
+]

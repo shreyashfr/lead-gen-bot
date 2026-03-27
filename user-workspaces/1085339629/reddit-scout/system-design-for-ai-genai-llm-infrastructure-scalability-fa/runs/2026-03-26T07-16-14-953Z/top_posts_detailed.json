@@ -1,0 +1,691 @@
+[
+  {
+    "id": "1s315bb",
+    "subreddit": "ThinkingDeeplyAI",
+    "title": "Anthropic just dropped 12 massive Claude updates - and most people are missing the best ones that turn Claude into a 24/7 AI employee that runs while you sleep",
+    "selftext": "TLDR: Anthropic just released 12 massive updates that transform Claude from a chatbot into a full AI operating system. The updates include mobile-to-desktop remote control, persistent background task orchestration, a 1 million token context window, and native integrations that let Claude control your local machine. Here is the complete breakdown of every new feature and the hidden workflows most people are missing.\n\n**Anthropic is Shipping: The 12 Features That Change Everything**\n\nWhile the industry debates incremental model improvements, Anthropic quietly dropped a wave of features that fundamentally change how we interact with AI. Claude is no longer just a window you type into; it is a persistent, background-running system that executes tasks across your local machine and cloud infrastructure.\n\nHere is a deep dive into all 12 features, including the pro tips that separate casual users from power users.\n\n**1. Remote Control: Your Terminal in Your Pocket**\n\nClaude Code can now be fully controlled from your mobile device while your local machine continues running the heavy lifting.\n\nRun the /rc command in your terminal, and Claude generates a QR code. Scan it with the mobile app, and you get a live, encrypted bridge to your local session. You can watch file changes, monitor tool calls, and provide feedback in real time without your code ever leaving your machine.\n\nPro tip: Remote Control automatically reconnects if your laptop sleeps or your network drops. Use the /rename command to label your sessions so you can easily manage multiple background builds or deployments from your phone.\n\n**2. Dispatch: The Task Orchestration Brain**\n\nDispatch creates one continuous conversation thread between your phone and desktop, allowing you to assign complex tasks that Claude executes locally.\n\nYou can text Claude a request from your phone, and it will use your local file system, browser, and applications to complete it. It maintains session memory over time, learning your workflow patterns to avoid redundant requests.\n\nPro tip: Dispatch is not just a single-task runner; it can orchestrate multiple sub-agents to handle complex parallel tasks. The persistent memory means you can build a workflow once and trigger it repeatedly with simple shorthand.\n\n**3. Channels: Telegram and Discord Integration**\n\nYou can now connect a running Claude Code session directly to Telegram or Discord using a local MCP server bridge.\n\nThis gives you two-way, live communication with your local filesystem and git repository from any messaging app. You can send tasks from a team Discord server, receive CI alerts in Telegram, and reply with fix instructions without opening your laptop.\n\nPro tip: The --bypass-permissions flag is critical here. Without it, your automation workflows will stall waiting for manual approval. The plugin-based architecture also means support for Slack and other platforms is easily adaptable.\n\n**4. Scheduled Tasks: Your 24/7 AI Employee**\n\nDefine a prompt once and have it run automatically on a set schedule. With the new cloud-hosted option, these tasks run on Anthropic infrastructure even when your computer is off.\n\nPro tip: Do not just use this for static reports. Build a self-improving loop where the output of each scheduled run feeds into the context of the next. The agent will learn from errors, try alternative approaches, and update its own context over time.\n\n**5. Computer Use via Dispatch**\n\nClaude can now point, click, scroll, and navigate your macOS machine directly.\n\nWhen assigned a task, Claude prioritizes precise API connectors first. If no connector exists, it falls back to direct computer control, asking for permission before acting.\n\nPro tip: Set up MCP connectors for your most-used applications. Claude will default to these faster, more precise integrations rather than relying on screenshot-and-click navigation.\n\n**6. Projects in Claude Cowork**\n\nProjects provide structured, persistent workspaces for individuals and teams. On the Team plan, shared Projects give every member instant access to the same context, files, and instructions.\n\nPro tip: Projects solve the cold start problem. Team plan projects feature a 200K context window, allowing Cowork to read across all files simultaneously. Combine Projects with Scheduled Tasks to create an autonomous agent that always possesses your full business context.\n\n**7. Claude Opus 4.6: 1 Million Token Context**\n\nAnthropic introduced its first Opus-class model with a 1 million token context window, capable of ingesting roughly 30,000 lines of code or 750,000 words in a single prompt.\n\nCrucially, Opus 4.6 demonstrates a massive improvement in finding specific information within that massive context compared to previous models.\n\nPro tip: Do not treat 1 million tokens as a target to fill; treat it as breathing room to avoid context truncation mid-task. Use Opus to understand massive codebases, then spawn parallel agents to execute specific changes.\n\n**8. Bug Hunter Mode: Advanced Code Review**\n\nOpus 4.6 includes enhanced code review capabilities designed to proactively catch bugs and architectural issues. The /simplify command distributes parallel agents across recently changed files, reviewing for quality, efficiency, and code reuse simultaneously.\n\nPro tip: Make /simplify a non-negotiable step before every pull request. Because it runs parallel agents rather than sequential reviews, it is dramatically faster than traditional AI code review methods.\n\n**9. Skills in the Excel Add-In**\n\nClaude Skills — reusable, automated workflow actions — are now natively available inside the Claude for Excel and PowerPoint add-ins.\n\nPro tip: Context now passes seamlessly between Excel and PowerPoint. You can build a financial model in Excel and have Claude automatically pull those figures into a presentation deck, preserving all downstream formula relationships without manual copy-pasting.\n\n**10. Free Memory and Connectors**\n\nMemory (persistent context across conversations) and Connectors (integrations with over 150 tools like Slack, Google Workspace, and Notion) are now available on the free tier.\n\nPro tip: You can run a specific extraction prompt inside ChatGPT to export your entire chat history and memory, then import it directly into Claude. This creates an immediate, context-rich migration path.\n\n**11. Enterprise Plugin Marketplace**\n\nEnterprises can now access Claude-powered tools from partners like GitLab, Snowflake, and Replit directly through a consolidated marketplace, billed against existing Anthropic commitments.\n\nPro tip: Administrators get per-user provisioning and auto-install capabilities. You can automatically roll out specific plugins to every new hire based on their role, giving IT complete governance over AI tool access.\n\n**12. Shared AI Infrastructure for Teams**\n\nThe Claude Teams plan provides shared Projects, centralized admin controls, and organization-wide search.\n\nPro tip: The Premium seat tier includes Claude Code access. This means you can have technical and non-technical employees on the same centralized billing plan, utilizing the same shared knowledge base, without requiring separate contracts.\n\n**The Competitive Landscape**\n\nWhen compared to popular open-source autonomous agents, Anthropic has integrated the most highly requested features directly into their official ecosystem.\n\n|Feature|Competitive Advantage|\n|:-|:-|\n|Remote Control|First native mobile-to-desktop session bridge|\n|Channels|Brings open-source messaging integration natively to Claude|\n|Dispatch + Computer Use|The closest realization of an autonomous AI employee|\n|1M Token Opus 4.6|Vastly exceeds current mainstream context limits|\n|Free Memory|Removes the paywall for persistent user context|\n\nThe pace of these releases represents a platform shift. Build your workflows now, and they will scale as the ecosystem expands.\n\nWant to save these workflows and discover thousands of top-rated prompts? Build your prompt library for free at [Prompt Magic](https://promptmagic.dev/).\n\n",
+    "author": "Beginning-Willow-801",
+    "created_utc": 1774413614,
+    "permalink": "https://www.reddit.com/r/ThinkingDeeplyAI/comments/1s315bb/anthropic_just_dropped_12_massive_claude_updates/",
+    "url": "https://www.reddit.com/gallery/1s315bb",
+    "domain": "reddit.com",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 69,
+    "score": 69,
+    "num_comments": 1,
+    "upvote_ratio": 0.96,
+    "thumbnail": "https://preview.redd.it/hdr9ctb0e4rg1.png?width=140&amp;height=78&amp;auto=webp&amp;s=f4aeb99fff3c2ebf04c26d3726bec4d515e192d0",
+    "media": null,
+    "post_hint": null,
+    "listing": "search:top:week",
+    "viral_score": 2.8279679905702184,
+    "detail": {
+      "post": {
+        "id": "1s315bb",
+        "title": "Anthropic just dropped 12 massive Claude updates - and most people are missing the best ones that turn Claude into a 24/7 AI employee that runs while you sleep",
+        "selftext": "TLDR: Anthropic just released 12 massive updates that transform Claude from a chatbot into a full AI operating system. The updates include mobile-to-desktop remote control, persistent background task orchestration, a 1 million token context window, and native integrations that let Claude control your local machine. Here is the complete breakdown of every new feature and the hidden workflows most people are missing.\n\n**Anthropic is Shipping: The 12 Features That Change Everything**\n\nWhile the industry debates incremental model improvements, Anthropic quietly dropped a wave of features that fundamentally change how we interact with AI. Claude is no longer just a window you type into; it is a persistent, background-running system that executes tasks across your local machine and cloud infrastructure.\n\nHere is a deep dive into all 12 features, including the pro tips that separate casual users from power users.\n\n**1. Remote Control: Your Terminal in Your Pocket**\n\nClaude Code can now be fully controlled from your mobile device while your local machine continues running the heavy lifting.\n\nRun the /rc command in your terminal, and Claude generates a QR code. Scan it with the mobile app, and you get a live, encrypted bridge to your local session. You can watch file changes, monitor tool calls, and provide feedback in real time without your code ever leaving your machine.\n\nPro tip: Remote Control automatically reconnects if your laptop sleeps or your network drops. Use the /rename command to label your sessions so you can easily manage multiple background builds or deployments from your phone.\n\n**2. Dispatch: The Task Orchestration Brain**\n\nDispatch creates one continuous conversation thread between your phone and desktop, allowing you to assign complex tasks that Claude executes locally.\n\nYou can text Claude a request from your phone, and it will use your local file system, browser, and applications to complete it. It maintains session memory over time, learning your workflow patterns to avoid redundant requests.\n\nPro tip: Dispatch is not just a single-task runner; it can orchestrate multiple sub-agents to handle complex parallel tasks. The persistent memory means you can build a workflow once and trigger it repeatedly with simple shorthand.\n\n**3. Channels: Telegram and Discord Integration**\n\nYou can now connect a running Claude Code session directly to Telegram or Discord using a local MCP server bridge.\n\nThis gives you two-way, live communication with your local filesystem and git repository from any messaging app. You can send tasks from a team Discord server, receive CI alerts in Telegram, and reply with fix instructions without opening your laptop.\n\nPro tip: The --bypass-permissions flag is critical here. Without it, your automation workflows will stall waiting for manual approval. The plugin-based architecture also means support for Slack and other platforms is easily adaptable.\n\n**4. Scheduled Tasks: Your 24/7 AI Employee**\n\nDefine a prompt once and have it run automatically on a set schedule. With the new cloud-hosted option, these tasks run on Anthropic infrastructure even when your computer is off.\n\nPro tip: Do not just use this for static reports. Build a self-improving loop where the output of each scheduled run feeds into the context of the next. The agent will learn from errors, try alternative approaches, and update its own context over time.\n\n**5. Computer Use via Dispatch**\n\nClaude can now point, click, scroll, and navigate your macOS machine directly.\n\nWhen assigned a task, Claude prioritizes precise API connectors first. If no connector exists, it falls back to direct computer control, asking for permission before acting.\n\nPro tip: Set up MCP connectors for your most-used applications. Claude will default to these faster, more precise integrations rather than relying on screenshot-and-click navigation.\n\n**6. Projects in Claude Cowork**\n\nProjects provide structured, persistent workspaces for individuals and teams. On the Team plan, shared Projects give every member instant access to the same context, files, and instructions.\n\nPro tip: Projects solve the cold start problem. Team plan projects feature a 200K context window, allowing Cowork to read across all files simultaneously. Combine Projects with Scheduled Tasks to create an autonomous agent that always possesses your full business context.\n\n**7. Claude Opus 4.6: 1 Million Token Context**\n\nAnthropic introduced its first Opus-class model with a 1 million token context window, capable of ingesting roughly 30,000 lines of code or 750,000 words in a single prompt.\n\nCrucially, Opus 4.6 demonstrates a massive improvement in finding specific information within that massive context compared to previous models.\n\nPro tip: Do not treat 1 million tokens as a target to fill; treat it as breathing room to avoid context truncation mid-task. Use Opus to understand massive codebases, then spawn parallel agents to execute specific changes.\n\n**8. Bug Hunter Mode: Advanced Code Review**\n\nOpus 4.6 includes enhanced code review capabilities designed to proactively catch bugs and architectural issues. The /simplify command distributes parallel agents across recently changed files, reviewing for quality, efficiency, and code reuse simultaneously.\n\nPro tip: Make /simplify a non-negotiable step before every pull request. Because it runs parallel agents rather than sequential reviews, it is dramatically faster than traditional AI code review methods.\n\n**9. Skills in the Excel Add-In**\n\nClaude Skills — reusable, automated workflow actions — are now natively available inside the Claude for Excel and PowerPoint add-ins.\n\nPro tip: Context now passes seamlessly between Excel and PowerPoint. You can build a financial model in Excel and have Claude automatically pull those figures into a presentation deck, preserving all downstream formula relationships without manual copy-pasting.\n\n**10. Free Memory and Connectors**\n\nMemory (persistent context across conversations) and Connectors (integrations with over 150 tools like Slack, Google Workspace, and Notion) are now available on the free tier.\n\nPro tip: You can run a specific extraction prompt inside ChatGPT to export your entire chat history and memory, then import it directly into Claude. This creates an immediate, context-rich migration path.\n\n**11. Enterprise Plugin Marketplace**\n\nEnterprises can now access Claude-powered tools from partners like GitLab, Snowflake, and Replit directly through a consolidated marketplace, billed against existing Anthropic commitments.\n\nPro tip: Administrators get per-user provisioning and auto-install capabilities. You can automatically roll out specific plugins to every new hire based on their role, giving IT complete governance over AI tool access.\n\n**12. Shared AI Infrastructure for Teams**\n\nThe Claude Teams plan provides shared Projects, centralized admin controls, and organization-wide search.\n\nPro tip: The Premium seat tier includes Claude Code access. This means you can have technical and non-technical employees on the same centralized billing plan, utilizing the same shared knowledge base, without requiring separate contracts.\n\n**The Competitive Landscape**\n\nWhen compared to popular open-source autonomous agents, Anthropic has integrated the most highly requested features directly into their official ecosystem.\n\n|Feature|Competitive Advantage|\n|:-|:-|\n|Remote Control|First native mobile-to-desktop session bridge|\n|Channels|Brings open-source messaging integration natively to Claude|\n|Dispatch + Computer Use|The closest realization of an autonomous AI employee|\n|1M Token Opus 4.6|Vastly exceeds current mainstream context limits|\n|Free Memory|Removes the paywall for persistent user context|\n\nThe pace of these releases represents a platform shift. Build your workflows now, and they will scale as the ecosystem expands.\n\nWant to save these workflows and discover thousands of top-rated prompts? Build your prompt library for free at [Prompt Magic](https://promptmagic.dev/).\n\n",
+        "author": "Beginning-Willow-801",
+        "subreddit": "ThinkingDeeplyAI",
+        "created_utc": 1774413614,
+        "ups": 66,
+        "num_comments": 1,
+        "upvote_ratio": 0.95,
+        "permalink": "https://www.reddit.com/r/ThinkingDeeplyAI/comments/1s315bb/anthropic_just_dropped_12_massive_claude_updates/",
+        "url": "https://www.reddit.com/gallery/1s315bb",
+        "is_self": false,
+        "post_hint": null,
+        "thumbnail": "https://preview.redd.it/hdr9ctb0e4rg1.png?width=140&amp;height=78&amp;auto=webp&amp;s=f4aeb99fff3c2ebf04c26d3726bec4d515e192d0",
+        "is_gallery": true,
+        "gallery_data": {
+          "items": [
+            {
+              "media_id": "hdr9ctb0e4rg1",
+              "id": 894900870
+            },
+            {
+              "media_id": "3i12ssb0e4rg1",
+              "id": 894900871
+            },
+            {
+              "media_id": "bqez2ub0e4rg1",
+              "id": 894900872
+            },
+            {
+              "media_id": "6q321ub0e4rg1",
+              "id": 894900873
+            }
+          ]
+        },
+        "media_metadata": {
+          "3i12ssb0e4rg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 60,
+                "x": 108,
+                "u": "https://preview.redd.it/3i12ssb0e4rg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=c8cadc86cc25ca11f50611ca4e897663c0feb751"
+              },
+              {
+                "y": 120,
+                "x": 216,
+                "u": "https://preview.redd.it/3i12ssb0e4rg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=303f780345c8b4e38e1cc8e3d5274dc6e15f1167"
+              },
+              {
+                "y": 178,
+                "x": 320,
+                "u": "https://preview.redd.it/3i12ssb0e4rg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=7ddc335e95f3ad82397d41def5e61371ab120303"
+              },
+              {
+                "y": 357,
+                "x": 640,
+                "u": "https://preview.redd.it/3i12ssb0e4rg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=54c72d05921380da7414a28e1688679ba7be0423"
+              },
+              {
+                "y": 535,
+                "x": 960,
+                "u": "https://preview.redd.it/3i12ssb0e4rg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=7603dca25e0f850c01074a69d980ab682a5ddf41"
+              },
+              {
+                "y": 602,
+                "x": 1080,
+                "u": "https://preview.redd.it/3i12ssb0e4rg1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=2117173a7c12b4c1c59660953faf792267cd7a7c"
+              }
+            ],
+            "s": {
+              "y": 1536,
+              "x": 2752,
+              "u": "https://preview.redd.it/3i12ssb0e4rg1.png?width=2752&amp;format=png&amp;auto=webp&amp;s=24088b6d0fe04c183545673059f8106f10097583"
+            },
+            "id": "3i12ssb0e4rg1"
+          },
+          "hdr9ctb0e4rg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 60,
+                "x": 108,
+                "u": "https://preview.redd.it/hdr9ctb0e4rg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=711844ebf800651e91251174af4e15845cdad64f"
+              },
+              {
+                "y": 120,
+                "x": 216,
+                "u": "https://preview.redd.it/hdr9ctb0e4rg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=57c2480f3b1e134462b26fffc37724f6e08c94c0"
+              },
+              {
+                "y": 178,
+                "x": 320,
+                "u": "https://preview.redd.it/hdr9ctb0e4rg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=eec190a4e2517a0b581a72467cf0b3f59fee542c"
+              },
+              {
+                "y": 357,
+                "x": 640,
+                "u": "https://preview.redd.it/hdr9ctb0e4rg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=5a3ce9ed13e90a1d1a0eeb73c996c5eae8305fca"
+              },
+              {
+                "y": 535,
+                "x": 960,
+                "u": "https://preview.redd.it/hdr9ctb0e4rg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=0fec0888046511ba78197b491b83ccf910389106"
+              },
+              {
+                "y": 602,
+                "x": 1080,
+                "u": "https://preview.redd.it/hdr9ctb0e4rg1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=b897c2ddf747009a4bac087181d278b6fb4339aa"
+              }
+            ],
+            "s": {
+              "y": 1536,
+              "x": 2752,
+              "u": "https://preview.redd.it/hdr9ctb0e4rg1.png?width=2752&amp;format=png&amp;auto=webp&amp;s=80432c54b190a34b5bd179fac3f3eed2a6140497"
+            },
+            "id": "hdr9ctb0e4rg1"
+          },
+          "6q321ub0e4rg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 60,
+                "x": 108,
+                "u": "https://preview.redd.it/6q321ub0e4rg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=74f4a80aeee0a0492457a61aa227d250e2d4ff88"
+              },
+              {
+                "y": 120,
+                "x": 216,
+                "u": "https://preview.redd.it/6q321ub0e4rg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=3c47474cea9726438b0d0d4b4e7c844503e2451c"
+              },
+              {
+                "y": 178,
+                "x": 320,
+                "u": "https://preview.redd.it/6q321ub0e4rg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=8be092374116badb05852836d86098cfc40b0a89"
+              },
+              {
+                "y": 357,
+                "x": 640,
+                "u": "https://preview.redd.it/6q321ub0e4rg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=d55d897e27d91adddbfc9b71ad8e88a35f4cad2b"
+              },
+              {
+                "y": 535,
+                "x": 960,
+                "u": "https://preview.redd.it/6q321ub0e4rg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=4bc9258b45d7703e69558ca97a19060d267b18cf"
+              },
+              {
+                "y": 602,
+                "x": 1080,
+                "u": "https://preview.redd.it/6q321ub0e4rg1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=8ecf82332bb92da51730f951368099268a5dd61b"
+              }
+            ],
+            "s": {
+              "y": 1536,
+              "x": 2752,
+              "u": "https://preview.redd.it/6q321ub0e4rg1.png?width=2752&amp;format=png&amp;auto=webp&amp;s=1a0e20df94c4c0756d268a40d955958508f449ce"
+            },
+            "id": "6q321ub0e4rg1"
+          },
+          "bqez2ub0e4rg1": {
+            "status": "valid",
+            "e": "Image",
+            "m": "image/png",
+            "p": [
+              {
+                "y": 60,
+                "x": 108,
+                "u": "https://preview.redd.it/bqez2ub0e4rg1.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=7423e7c7388e5ee7af9f980ef994c7bcf0c7273e"
+              },
+              {
+                "y": 120,
+                "x": 216,
+                "u": "https://preview.redd.it/bqez2ub0e4rg1.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=c5fe524d031faf221fd01924fbd8bf97fe956e4c"
+              },
+              {
+                "y": 178,
+                "x": 320,
+                "u": "https://preview.redd.it/bqez2ub0e4rg1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=28a647c17721947fe8e3cfa727351955f0f3e0de"
+              },
+              {
+                "y": 357,
+                "x": 640,
+                "u": "https://preview.redd.it/bqez2ub0e4rg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=045704c505e33e6e2ae8ffc7aa68fa9cf1e5c94d"
+              },
+              {
+                "y": 535,
+                "x": 960,
+                "u": "https://preview.redd.it/bqez2ub0e4rg1.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=8162735dc1d55ab230b1a5d64345d970d51aa4de"
+              },
+              {
+                "y": 602,
+                "x": 1080,
+                "u": "https://preview.redd.it/bqez2ub0e4rg1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=29dce2ccc40a8cefd0401b3f2ad907bd8d1dd9d6"
+              }
+            ],
+            "s": {
+              "y": 1536,
+              "x": 2752,
+              "u": "https://preview.redd.it/bqez2ub0e4rg1.png?width=2752&amp;format=png&amp;auto=webp&amp;s=baf6b5fe46ff34d93b72cfe708eba54bf4e8b3bc"
+            },
+            "id": "bqez2ub0e4rg1"
+          }
+        },
+        "preview": null,
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "Too_Many_Flamingos",
+          "ups": 1,
+          "body": "It’s really the greatest "
+        }
+      ]
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "Beginning-Willow-801",
+      "url": "https://styles.redditmedia.com/t5_dw8f0r/styles/profileIcon_p3738d9gmz5f1.jpg?width=256&height=256&crop=256:256,smart&s=adbdc7bab5fc0bde042f8b2193fa7c39052b4a26",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/system-design-for-ai-genai-llm-infrastructure-scalability-fa/runs/2026-03-26T07-16-14-953Z/avatars/Beginning-Willow-801.jpg",
+      "fetchedAt": "2026-03-26T07:16:27.821Z"
+    }
+  },
+  {
+    "id": "1ry1f5v",
+    "subreddit": "neoliberal",
+    "title": "AI Hypists Need a Reality Check (Francis Fukuyama)",
+    "selftext": "Recently I heard a presentation by an engineer from OpenAI about the incredible transformations that will occur once we get to artificial general intelligence (AGI), or even superintelligence. He said that this will quickly solve many of the world’s problems: GDP growth rates could rise to 10, 15, even 20 percent per year, diseases will be cured, education revolutionized, and cities in the developing world will be transformed with clean drinking water for everyone.\n\nI happen to know something about the latter issue. I’ve been teaching cases over the past decade on why South Asian cities like Hyderabad and Dhaka have struggled with providing municipal water. The reason isn’t that we don’t know what an efficient water system looks like, or lack the technology to build it. Nor is it a simple lack of resources: multilateral development institutions have been willing to fund water projects for years.\n\nThe obstacles are different, and are entirely political, social, and cultural. Residents of these cities have the capacity to pay more for their water, but they don’t trust their governments not to waste resources on corruption or incompetent management. Businesses don’t want the disruption of pervasive infrastructure construction, and many cities host “water mafias” that buy cheap water and resell it at extortionate prices to poor people. These mafias are armed and ready to use violence against anyone challenging their monopolies. The state is too weak to control them, or to enforce the very good laws they already have on their books.\n\nIt is hard to see how even the most superintelligent AI is going to help solve these problems. And this points to a central conceit that plagues the whole AI field: a gross overestimation of the value of intelligence by itself to solve problems.\n\nIn the teaching I’ve done over the past two decades, and in the Master’s in International Policy program I direct at Stanford, I’ve helped develop a public problem-solving framework that we now teach to all our students. (Credit here also goes to my former colleague Jeremy Weinstein, who is now Dean of Harvard’s Kennedy School of Government.) The framework is simple, and consists of [three circles:](https://substackcdn.com/image/fetch/$s_!lscu!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3131c6df-5107-45f7-8874-a198c7c2cd8e_960x720.jpeg)\n\nThere is a problem that extends way beyond AI, and applies to the way we think about public problem-solving in general. The bulk of effort, and what most academic public policy programs seek to teach, centers on the first two of the three circles: Problem Identification and Solutions Development. Indeed, many programs focus on Solutions Development exclusively: they teach aspiring policy-makers how to gather data and use a battery of powerful econometric tools to analyze it. This yields a set of optimal solutions that a policy analyst can hand to his or her principal as a way forward.\n\nWhat is missing from this approach is what lies in the third circle: implementation. Our budding policy analyst typically finds that after handing a brilliant options memo to the boss, nothing happens. Nothing happens because there are too many obstacles—political, social, cultural—to carry out that preferred policy, as in the municipal water example.\n\nSo let’s go back to how AI will play in this space. AGI will definitely help in the first circle: identifying stakeholders, mapping a causal space, and defining the problem. It will be of most help in the second circle: gathering data and analyzing it to come up with optimal solutions. But intelligence only gets you to the end of the second circle, and is of limited help in the third. An LLM cannot directly interact with stakeholders, message them, or come up with resources. In particular, an LLM will not be able to engage in the kind of iterative back-and-forth between policymakers and citizens that is required for effective policy implementation. It will likely face big challenges in generating the kind of trust that is necessary for policies to be accepted and adopted.\n\nIt is not just political and social obstacles that AI has difficulty dealing with; LLMs have limited ability to directly manipulate physical objects. AI interacts with the physical world primarily through robotics, but the latter is a field that has lagged considerably behind the development of LLMs. Robots have proliferated enormously over the past decades and are omnipresent in manufacturing, agriculture, and many other domains. But the vast majority of today’s robots are programmed by human beings to do a limited range of very specific tasks. The world was wowed recently by Chinese humanoid robots doing kung fu moves, but I suspect the robots didn’t teach themselves how to act this way.\n\nRobotically-enabled LLMs do not have the ability to solve even simple physical problems that are novel or outside of their training set. My colleague Alex Stamos, a noted expert in cyber security, puts it this way: “my dog knows more physics than an LLM.” An LLM would be able to state Newton’s laws of motion, but it would not be able to direct a robot to chase a frisbee the way Alex’s dog can because that particular set of moves is not in its training set. It could be programmed to do this, but that is the product of human intelligence and not AI.\n\nHere’s an example of AI’s current limitations. I recently had an HVAC contractor replace the furnace in my house. The contractor photographed and measured the house’s layout; he had to route the new ducts and wiring in ways specific to my house’s design. It turned out that the new furnace would not fit through the existing attic door; he had to cut a larger opening with a reciprocating saw, and then repair the doorframe after the new unit was inside. There is no robot in the world that could do what my contractor did, and it is very hard to imagine a robot acquiring such abilities anytime in the near future, with or without AGI. Robots may get there eventually, but that level of human capacity remains a distant objective.\n\nMany of the enthusiasts hyping AI’s capabilities think of policy problems as if they were long-standing problems in mathematics that human beings had great difficulties solving, such as the four-color map theorem or the Cap Set problem. But math problems are entirely cognitive in nature and it is not surprising that AI could make advances in that realm. The people building AI systems are themselves very smart mathematically, and tend to overvalue the importance of this kind of pure intelligence.\n\nPolicy problems are different. They require connection to the real world, whether that’s physical objects or entrenched stakeholders who don’t necessarily want changes to occur. As the economic historian Joel Mokyr has shown, earlier technological revolutions took years and decades to materialize after the initial scientific and engineering breakthroughs were made, because those abstract ideas had to be implemented on a widespread basis in real world conditions. AI may move faster on a cognitive level, but it may not be able to solve implementation problems more quickly than in previous historical periods.\n\nThis is not at all to say that AI will not be hugely transformative. But the kind of explosive, self-reinforcing AI advances that some observers predict are on the way will still have to solve implementation problems for which machines are not well suited. A ten percent annual growth rate will double GDP in seven years. Yet planet Earth will not remotely yield the materials—water, land, minerals, energy, or people—to make this come about, no matter how smart our machines get.\n\n\n\n[](https://substackcdn.com/image/fetch/$s_!lscu!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3131c6df-5107-45f7-8874-a198c7c2cd8e_960x720.jpeg)\n\n",
+    "author": "AmericanPurposeMag",
+    "created_utc": 1773929378,
+    "permalink": "https://www.reddit.com/r/neoliberal/comments/1ry1f5v/ai_hypists_need_a_reality_check_francis_fukuyama/",
+    "url": "https://www.persuasion.community/p/ai-cant-deal-with-the-real-world",
+    "domain": "persuasion.community",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 157,
+    "score": 157,
+    "num_comments": 44,
+    "upvote_ratio": 0.95,
+    "thumbnail": "https://external-preview.redd.it/yEdlkEjuRI8xa4FLvujLn1RgH53YxJkskj4avzLynEU.jpeg?width=140&amp;height=78&amp;auto=webp&amp;s=427c4152d1b3a74746566e7d7a61bcdece63be18",
+    "media": null,
+    "post_hint": "link",
+    "listing": "search:top:week",
+    "viral_score": 2.2365765798770934,
+    "detail": {
+      "post": {
+        "id": "1ry1f5v",
+        "title": "AI Hypists Need a Reality Check (Francis Fukuyama)",
+        "selftext": "Recently I heard a presentation by an engineer from OpenAI about the incredible transformations that will occur once we get to artificial general intelligence (AGI), or even superintelligence. He said that this will quickly solve many of the world’s problems: GDP growth rates could rise to 10, 15, even 20 percent per year, diseases will be cured, education revolutionized, and cities in the developing world will be transformed with clean drinking water for everyone.\n\nI happen to know something about the latter issue. I’ve been teaching cases over the past decade on why South Asian cities like Hyderabad and Dhaka have struggled with providing municipal water. The reason isn’t that we don’t know what an efficient water system looks like, or lack the technology to build it. Nor is it a simple lack of resources: multilateral development institutions have been willing to fund water projects for years.\n\nThe obstacles are different, and are entirely political, social, and cultural. Residents of these cities have the capacity to pay more for their water, but they don’t trust their governments not to waste resources on corruption or incompetent management. Businesses don’t want the disruption of pervasive infrastructure construction, and many cities host “water mafias” that buy cheap water and resell it at extortionate prices to poor people. These mafias are armed and ready to use violence against anyone challenging their monopolies. The state is too weak to control them, or to enforce the very good laws they already have on their books.\n\nIt is hard to see how even the most superintelligent AI is going to help solve these problems. And this points to a central conceit that plagues the whole AI field: a gross overestimation of the value of intelligence by itself to solve problems.\n\nIn the teaching I’ve done over the past two decades, and in the Master’s in International Policy program I direct at Stanford, I’ve helped develop a public problem-solving framework that we now teach to all our students. (Credit here also goes to my former colleague Jeremy Weinstein, who is now Dean of Harvard’s Kennedy School of Government.) The framework is simple, and consists of [three circles:](https://substackcdn.com/image/fetch/$s_!lscu!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3131c6df-5107-45f7-8874-a198c7c2cd8e_960x720.jpeg)\n\nThere is a problem that extends way beyond AI, and applies to the way we think about public problem-solving in general. The bulk of effort, and what most academic public policy programs seek to teach, centers on the first two of the three circles: Problem Identification and Solutions Development. Indeed, many programs focus on Solutions Development exclusively: they teach aspiring policy-makers how to gather data and use a battery of powerful econometric tools to analyze it. This yields a set of optimal solutions that a policy analyst can hand to his or her principal as a way forward.\n\nWhat is missing from this approach is what lies in the third circle: implementation. Our budding policy analyst typically finds that after handing a brilliant options memo to the boss, nothing happens. Nothing happens because there are too many obstacles—political, social, cultural—to carry out that preferred policy, as in the municipal water example.\n\nSo let’s go back to how AI will play in this space. AGI will definitely help in the first circle: identifying stakeholders, mapping a causal space, and defining the problem. It will be of most help in the second circle: gathering data and analyzing it to come up with optimal solutions. But intelligence only gets you to the end of the second circle, and is of limited help in the third. An LLM cannot directly interact with stakeholders, message them, or come up with resources. In particular, an LLM will not be able to engage in the kind of iterative back-and-forth between policymakers and citizens that is required for effective policy implementation. It will likely face big challenges in generating the kind of trust that is necessary for policies to be accepted and adopted.\n\nIt is not just political and social obstacles that AI has difficulty dealing with; LLMs have limited ability to directly manipulate physical objects. AI interacts with the physical world primarily through robotics, but the latter is a field that has lagged considerably behind the development of LLMs. Robots have proliferated enormously over the past decades and are omnipresent in manufacturing, agriculture, and many other domains. But the vast majority of today’s robots are programmed by human beings to do a limited range of very specific tasks. The world was wowed recently by Chinese humanoid robots doing kung fu moves, but I suspect the robots didn’t teach themselves how to act this way.\n\nRobotically-enabled LLMs do not have the ability to solve even simple physical problems that are novel or outside of their training set. My colleague Alex Stamos, a noted expert in cyber security, puts it this way: “my dog knows more physics than an LLM.” An LLM would be able to state Newton’s laws of motion, but it would not be able to direct a robot to chase a frisbee the way Alex’s dog can because that particular set of moves is not in its training set. It could be programmed to do this, but that is the product of human intelligence and not AI.\n\nHere’s an example of AI’s current limitations. I recently had an HVAC contractor replace the furnace in my house. The contractor photographed and measured the house’s layout; he had to route the new ducts and wiring in ways specific to my house’s design. It turned out that the new furnace would not fit through the existing attic door; he had to cut a larger opening with a reciprocating saw, and then repair the doorframe after the new unit was inside. There is no robot in the world that could do what my contractor did, and it is very hard to imagine a robot acquiring such abilities anytime in the near future, with or without AGI. Robots may get there eventually, but that level of human capacity remains a distant objective.\n\nMany of the enthusiasts hyping AI’s capabilities think of policy problems as if they were long-standing problems in mathematics that human beings had great difficulties solving, such as the four-color map theorem or the Cap Set problem. But math problems are entirely cognitive in nature and it is not surprising that AI could make advances in that realm. The people building AI systems are themselves very smart mathematically, and tend to overvalue the importance of this kind of pure intelligence.\n\nPolicy problems are different. They require connection to the real world, whether that’s physical objects or entrenched stakeholders who don’t necessarily want changes to occur. As the economic historian Joel Mokyr has shown, earlier technological revolutions took years and decades to materialize after the initial scientific and engineering breakthroughs were made, because those abstract ideas had to be implemented on a widespread basis in real world conditions. AI may move faster on a cognitive level, but it may not be able to solve implementation problems more quickly than in previous historical periods.\n\nThis is not at all to say that AI will not be hugely transformative. But the kind of explosive, self-reinforcing AI advances that some observers predict are on the way will still have to solve implementation problems for which machines are not well suited. A ten percent annual growth rate will double GDP in seven years. Yet planet Earth will not remotely yield the materials—water, land, minerals, energy, or people—to make this come about, no matter how smart our machines get.\n\n\n\n[](https://substackcdn.com/image/fetch/$s_!lscu!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3131c6df-5107-45f7-8874-a198c7c2cd8e_960x720.jpeg)\n\n",
+        "author": "AmericanPurposeMag",
+        "subreddit": "neoliberal",
+        "created_utc": 1773929378,
+        "ups": 162,
+        "num_comments": 44,
+        "upvote_ratio": 0.95,
+        "permalink": "https://www.reddit.com/r/neoliberal/comments/1ry1f5v/ai_hypists_need_a_reality_check_francis_fukuyama/",
+        "url": "https://www.persuasion.community/p/ai-cant-deal-with-the-real-world",
+        "is_self": false,
+        "post_hint": "link",
+        "thumbnail": "https://external-preview.redd.it/yEdlkEjuRI8xa4FLvujLn1RgH53YxJkskj4avzLynEU.jpeg?width=140&amp;height=78&amp;auto=webp&amp;s=427c4152d1b3a74746566e7d7a61bcdece63be18",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://external-preview.redd.it/yEdlkEjuRI8xa4FLvujLn1RgH53YxJkskj4avzLynEU.jpeg?auto=webp&amp;s=824e871c0348eca292cb2c957cc31aa9728369d8",
+                "width": 1024,
+                "height": 576
+              },
+              "resolutions": [
+                {
+                  "url": "https://external-preview.redd.it/yEdlkEjuRI8xa4FLvujLn1RgH53YxJkskj4avzLynEU.jpeg?width=108&amp;crop=smart&amp;auto=webp&amp;s=e03c024cb141aeebdfcc429393efae8c63ac07b1",
+                  "width": 108,
+                  "height": 60
+                },
+                {
+                  "url": "https://external-preview.redd.it/yEdlkEjuRI8xa4FLvujLn1RgH53YxJkskj4avzLynEU.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=bd40fc40e600f9f9f74588841ad2dba6df4fee02",
+                  "width": 216,
+                  "height": 121
+                },
+                {
+                  "url": "https://external-preview.redd.it/yEdlkEjuRI8xa4FLvujLn1RgH53YxJkskj4avzLynEU.jpeg?width=320&amp;crop=smart&amp;auto=webp&amp;s=cfe5ac8d410ce3945b07587f69005e08be181382",
+                  "width": 320,
+                  "height": 180
+                },
+                {
+                  "url": "https://external-preview.redd.it/yEdlkEjuRI8xa4FLvujLn1RgH53YxJkskj4avzLynEU.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=166befc7c10f1b5d2f390ec2c502f84e6ebd0c91",
+                  "width": 640,
+                  "height": 360
+                },
+                {
+                  "url": "https://external-preview.redd.it/yEdlkEjuRI8xa4FLvujLn1RgH53YxJkskj4avzLynEU.jpeg?width=960&amp;crop=smart&amp;auto=webp&amp;s=16066e6b6e82c8a9d7b220af77411c234b87aee0",
+                  "width": 960,
+                  "height": 540
+                }
+              ],
+              "variants": {},
+              "id": "yEdlkEjuRI8xa4FLvujLn1RgH53YxJkskj4avzLynEU"
+            }
+          ],
+          "enabled": false
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "bmoredoc",
+          "ups": 132,
+          "body": "As a physician I witnessed something similar in the medical field. About 10-15 years ago, the big Tech players made massive investments in various information platforms that would use big data to identify and solve various problems in healthcare, from cost to health outcomes. Im referring to projects like Amazon's venture briefly led by Atul Gawande.\n\n\nA decade or so later, most of these programs have been scaled back or shuttered. It turned out that the problems were primarily regulatory, cultural, or biological. Technology could play a helpful but not central role. And obviously medicine has changed tremendously during that time, and we certainly still use many of these platforms, but they have not come close to fundamentally transforming healthcare."
+        },
+        {
+          "author": "margybargy",
+          "ups": 45,
+          "body": "I think some AI hype people are prone to imagining what i call \"comic book intelligence\", which I guess is also sci-fi intelligence.\n\nThe idea that if you're smart enough, it solves any problem. Physics? A mere hurdle. Mr Fantastic can do basically whatever, Batman can outsmart a god, etc.\n\nThe potential impact of intellectual labor at the level of a high-level expert limited only by electricity/water/chips is incredible, but assuming it can solve anything because it can come up with solutions we never would is assuming too much.\n\nI think Francis is a bit more reserved here in noting that intelligence alone isn't enough; I'm more thinking of the \"and yadda yadda yadda superintelligence fixes entropy\" type beliefs that seem to be floating around."
+        },
+        {
+          "author": "senator_fivey",
+          "ups": 42,
+          "body": "&gt; An LLM cannot directly interact with stakeholders, message them, or come up with resources. In particular, an LLM will not be able to engage in the kind of iterative back-and-forth between policymakers and citizens that is required for effective policy implementation.\n\nI’m not sure if you started saying “LLM” to distinguish current technology from the AGI hypothetical, but assuming we’re still talking about AGI: why not? I’d argue anything unable to do so is not AGI by definition.\n\n&gt; It will likely face big challenges in generating the kind of trust that is necessary for policies to be accepted and adopted.\n\nAgreed."
+        }
+      ]
+    },
+    "media_extracted": null,
+    "author_avatar": {
+      "user": "AmericanPurposeMag",
+      "url": "https://styles.redditmedia.com/t5_8aenpa/styles/profileIcon_pbbro1bty1wa1.png?width=256&height=256&crop=256:256,smart&s=9bd7d38b0783b2dbbdbe9966168a018e4ffd218f",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/system-design-for-ai-genai-llm-infrastructure-scalability-fa/runs/2026-03-26T07-16-14-953Z/avatars/AmericanPurposeMag.png",
+      "fetchedAt": "2026-03-26T07:16:29.163Z"
+    }
+  },
+  {
+    "id": "1ryo919",
+    "subreddit": "clawdbot",
+    "title": "I built a persistent memory system for AI agents because I got tired of them forgetting everything over time",
+    "selftext": "I've spent thousands of dollars on API costs running Claude Code and OpenClaw heavily over the past year, and the same problem kept killing productivity: **the agent forgets everything when the session ends**.\n\nYou tell your agent to restructure your portfolio on Monday, explain your risk tolerance, walk through the rationale. Wednesday it asks your risk tolerance again from scratch. 20 minutes and 30K+ tokens gone on something you already discussed.\n\nI tried the standard fixes:\n\n- **MEMORY.md** — overflows after a week. You're constantly pruning.\n- **RAG / vector search** — great if you know what to search for. But \"do I already have context on database migrations?\" isn't a search query — it's an awareness question. The agent doesn't know what it knows.\n- **Large context windows** — attention degrades, token bill explodes.\n- **Hosted memory services** — another API key, another dependency, another bill.\n\nNone of them solved the core issue: **the agent can't tell \"I know this\" from \"I've never seen this\" without loading everything or searching for something specific.**\n\nSo I built **Hipocampus**. The key idea is a compaction tree.\n\n### How it works\n\nYour conversation history compresses through 5 levels: **raw → daily → weekly → monthly → root**.\n\nThe root level is a topic index called ROOT.md. Here's a reconstructed example based on my actual usage (~2 months of daily OpenClaw sessions as a personal assistant):\n\n```\n## Active Context (recent ~7 days)\n- 2026-03-18: FOMC recap briefed, portfolio rebalancing options drafted, 2 email replies sent\n- 2026-03-17: Tokyo flight comparison saved (3 options), hotel vs Airbnb analysis done\n- 2026-03-16: Morning briefing flagged earnings miss on watchlist stock, spending alert triggered\n- 2026-03-15: Weekly expense report auto-generated, dentist appointment rescheduled\n  ...\n\n## Recent Patterns\n- Checks portfolio + market news every morning — pre-generate briefing before 8am\n- Travel planning active (Tokyo trip Apr 1-5) — expect follow-ups on itinerary, restaurants, JR pass\n- Email tone preference: direct, short, no corporate fluff — mirror this in all drafts\n- Dining spending trending up — nudge if weekly total &gt; $150\n- Tends to forget follow-ups with contacts met at events — auto-remind after 2 weeks\n- Weekend = personal errands + language study. Weekday = work + investing\n  ...\n\n## Historical Summary\n- 2026-03 W3: FOMC monitoring, Tokyo trip planning, Q1 expense analysis, 2 networking follow-ups, car insurance renewal research\n- 2026-03 W2: earnings season alerts (4 holdings reported), weekly meal prep plan started, dentist/doctor appointments booked, apartment lease renewal negotiation draft\n- 2026-03 W1: monthly portfolio review, competitor monitoring report for side project, JLPT N3 mock test (68% — grammar weak), tax docs sent to CPA\n- 2026-02 W4: apartment search finalized (signed lease), morning briefing format v2 (added calendar preview), Valentine's dinner reservation, 3 networking follow-ups\n- 2026-02 W3: apartment search (5 viewings, 2 shortlisted), tax document collection (W-2, 1099s), habit tracking setup (exercise 3x/week, water intake)\n- 2026-02 W2: portfolio restructuring (tech→dividend pivot), set up stock alerts + earnings calendar, flight deal monitoring for spring trip\n- 2026-02 W1: morning briefing system established (8am daily), personal CRM setup (imported 40+ contacts), budget categories defined, JLPT N3 study plan created\n\n## Topics Index\ndaily-briefing: morning-news, portfolio-summary, calendar-preview, pending-follow-ups, ...\ninvesting: portfolio-monitoring, stock-alerts, watchlist, earnings-tracking, sector-analysis, ...\nmacro: fomc, fed-speakers, rate-decisions, cpi-ppi, jobs-report, ...\ntravel: flight-search, hotel-comparison, airbnb, itinerary, restaurant-recs, transport-passes, ...\nemail: inbox-triage, draft-replies, tone-matching, auto-rules, priority-senders, ...\nfinance: expense-tracking, budget-categories, spending-alerts, monthly-report, savings-goal, ...\npersonal-crm: contact-notes, meeting-history, follow-up-reminders, event-connections, ...\ncalendar: task-management, reminders, appointment-booking, weekly-review, time-blocking, ...\nhousing: apartment-search, lease-negotiation, neighborhood-comparison, move-planning, ...\nlanguage: jlpt-n3, vocab-quiz, grammar-drills, mock-tests, progress-tracking, ...\nhealth: habit-tracking, exercise-log, water-intake, medical-appointments, meal-prep, ...\ntax: document-collection, cpa-communication, capital-gains-summary, filing-deadline, ...\nshopping: deal-alerts, price-comparison, reservation-monitoring, wishlist, ...\nside-project: competitor-monitoring, market-research, user-feedback-tracking, ...\ninsurance: car-renewal, plan-comparison, coverage-review, ...\n(... 70+ topics across 15 categories)\n```\n\nThat's ~2 months. The agent reads this at session start (~3K tokens) and immediately knows what it has context on, when it last dealt with each topic, and where to drill down. No blind file exploration.\n\nWhen the agent needs more detail, it drills down into the compaction tree. Here's what a monthly summary looks like (truncated):\n\n```\n# Monthly Summary: 2026-02\n\n## Key Themes\n\n### 1. Portfolio Restructuring (investing)\nShifted from growth/tech-heavy to 40% dividend + 30% value + 30% growth.\nTriggered by rising rate environment. Earnings calendar alerts set up for\nall 12 holdings. Weekly rebalancing check every Monday morning.\n\n### 2. Morning Briefing System (daily-briefing)\n8am daily: portfolio moves, macro news weighted by interest, yesterday's\npending follow-ups. v2 update (late Feb): added calendar preview for the\nday + weather. FOMC/Fed events highlighted separately when active.\n\n### 3. Apartment Search → Signed (housing)\n5 viewings over 2 weeks. Shortlisted 2 (Brooklyn vs Jersey City).\nFinal: Jersey City — PATH access + $400/mo cheaper. Lease signed Feb 25.\nMove-in checklist created, utilities setup tracked.\n\n### 4. Personal CRM Setup (personal-crm)\nImported 40+ contacts from phone + LinkedIn. Tagged by context (work,\ninvestor, friend, event). Auto-remind for follow-ups if no contact in\n14 days. 3 follow-ups completed, 2 new connections from conference.\n\n### 5. Tax Season Prep (tax)\nW-2, 1099s, tx history collected. CPA meeting scheduled Mar 5.\nCapital gains/losses summary: losses offset stock gains by ~$2K.\n\n  ... (+ habit tracking setup, flight deal monitoring, budget categories, language study plan, insurance review)\n\n## Major Decisions\n- Dividend pivot over growth — rate environment (2026-02-05)\n- Briefing at 8am not 7am — never reads before 8 (2026-02-10)\n- Jersey City over Brooklyn — PATH + price (2026-02-22)\n- JLPT N3 target: July exam (2026-02-01)\n\n## Carried Forward\n- Tokyo trip — dates confirmed, flights/hotel not booked\n- JLPT N3 — daily vocab active, grammar drills starting March\n- CPA meeting — Mar 5, final doc review needed\n- Meal prep plan — starting March (goal: cook 4x/week)\n```\n\nROOT.md gives the bird's-eye view. Monthly/weekly summaries give the detail. Raw logs are always preserved — nothing is ever lost, just compressed.\n\n### Why not just RAG?\n\nThey're complementary, not competing:\n\n- **RAG** answers: \"find me everything related to my investment portfolio\" (semantic similarity)\n- **ROOT.md** answers: \"do I already know about this?\" (awareness — no query needed)\n- **Compaction tree** answers: \"what did we discuss last week?\" (time-based browsing, hierarchical drill-down)\n\nHipocampus supports both — optional hybrid search via qmd (BM25 + vector) for when you need semantic retrieval.\n\n### How it compares\n\n**vs. cloud/enterprise solutions (Mem0, Letta, Mengram)** — they're solving a different problem: multi-user memory, knowledge graphs, framework integrations. Great if you need that. Hipocampus is for **any AI agent that needs persistent memory with zero overhead**.\n\n| | Hipocampus | Mem0 | Letta | Mengram |\n|---|---|---|---|---|\n| Setup | `npx hipocampus init` | pip + API key + vector DB | Docker + Postgres + ADE | API key + SDK |\n| Infrastructure | None (just markdown) | Server or cloud | Server required | Cloud API |\n| Cost | Free (MIT) | $19-249/mo | Cloud pricing | $0-99/mo |\n| Memory awareness | ROOT.md (constant cost) | Query-dependent (RAG) | Query-dependent | Query-dependent |\n| Temporal drill-down | Compaction tree | No | No | No |\n| Data ownership | Your filesystem | Their cloud (or self-host) | Your server | Their servers |\n| Context pollution | Subagent isolation | Inline extraction | Inline extraction | Inline extraction |\n\n**vs. local-first alternatives (Hmem, Mneme)** — these are the closest to what Hipocampus does. Honest comparison:\n\n| | Hipocampus | Hmem | Mneme |\n|---|---|---|---|\n| Storage | Markdown files | SQLite (.hmem file) | Plain text files |\n| Memory structure | 5-level compaction tree | 5-level hierarchy | Flat (facts + task state) |\n| Search | BM25 + vector + LLM rerank (via qmd) | Lazy-loaded drill-down | No search (explicit structure only) |\n| Cross-tool portable | CLI (`npx` init) | MCP server (Cursor, Windsurf, etc.) | Session-based |\n| Session start cost | ~3K tokens (ROOT.md) | ~20 tokens (L1 summary) | Varies |\n| Human-editable | Yes (markdown) | No (SQLite binary) | Yes (text files) |\n| Compaction | Auto (raw→daily→weekly→monthly→root) | Manual hierarchy | No compaction |\n| Hybrid search | Yes (optional qmd) | No | No |\n\n### Quick details\n\n- **3-tier memory**: hot (always loaded), warm (on-demand), cold (searchable archive)\n- **Subagent memory writes** — memory operations run in background, zero context pollution in your main session\n- **Pre-compaction hooks** — automatically preserves memory before context window compression\n- **Works with Claude Code and OpenClaw** — MIT licensed, zero dependencies\n\n### Try it\n\n```\nnpx hipocampus init\n```\n\nCreates the full memory structure, installs agent skills, sets up hooks. ~30 seconds.\n\nGitHub: https://github.com/kevin-hs-sohn/hipocampus\n\nBuilt from real pain, tested heavily. Happy to answer questions about the compaction algorithm or how it works in practice.\n\n\nUpdate: Opened a feature request for native OpenClaw integration: https://github.com/openclaw/openclaw/issues/51612\nIf you'd like to see this built in, a thumbs-up on the issue helps.",
+    "author": "Salty-Asparagus-4751",
+    "created_utc": 1773986193,
+    "permalink": "https://www.reddit.com/r/clawdbot/comments/1ryo919/i_built_a_persistent_memory_system_for_ai_agents/",
+    "url": "https://www.reddit.com/r/clawdbot/comments/1ryo919/i_built_a_persistent_memory_system_for_ai_agents/",
+    "domain": "self.clawdbot",
+    "is_self": true,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 74,
+    "score": 74,
+    "num_comments": 40,
+    "upvote_ratio": 0.88,
+    "thumbnail": "self",
+    "media": null,
+    "post_hint": "self",
+    "listing": "search:top:week",
+    "viral_score": 1.326542211364194,
+    "detail": {
+      "post": {
+        "id": "1ryo919",
+        "title": "I built a persistent memory system for AI agents because I got tired of them forgetting everything over time",
+        "selftext": "I've spent thousands of dollars on API costs running Claude Code and OpenClaw heavily over the past year, and the same problem kept killing productivity: **the agent forgets everything when the session ends**.\n\nYou tell your agent to restructure your portfolio on Monday, explain your risk tolerance, walk through the rationale. Wednesday it asks your risk tolerance again from scratch. 20 minutes and 30K+ tokens gone on something you already discussed.\n\nI tried the standard fixes:\n\n- **MEMORY.md** — overflows after a week. You're constantly pruning.\n- **RAG / vector search** — great if you know what to search for. But \"do I already have context on database migrations?\" isn't a search query — it's an awareness question. The agent doesn't know what it knows.\n- **Large context windows** — attention degrades, token bill explodes.\n- **Hosted memory services** — another API key, another dependency, another bill.\n\nNone of them solved the core issue: **the agent can't tell \"I know this\" from \"I've never seen this\" without loading everything or searching for something specific.**\n\nSo I built **Hipocampus**. The key idea is a compaction tree.\n\n### How it works\n\nYour conversation history compresses through 5 levels: **raw → daily → weekly → monthly → root**.\n\nThe root level is a topic index called ROOT.md. Here's a reconstructed example based on my actual usage (~2 months of daily OpenClaw sessions as a personal assistant):\n\n```\n## Active Context (recent ~7 days)\n- 2026-03-18: FOMC recap briefed, portfolio rebalancing options drafted, 2 email replies sent\n- 2026-03-17: Tokyo flight comparison saved (3 options), hotel vs Airbnb analysis done\n- 2026-03-16: Morning briefing flagged earnings miss on watchlist stock, spending alert triggered\n- 2026-03-15: Weekly expense report auto-generated, dentist appointment rescheduled\n  ...\n\n## Recent Patterns\n- Checks portfolio + market news every morning — pre-generate briefing before 8am\n- Travel planning active (Tokyo trip Apr 1-5) — expect follow-ups on itinerary, restaurants, JR pass\n- Email tone preference: direct, short, no corporate fluff — mirror this in all drafts\n- Dining spending trending up — nudge if weekly total &gt; $150\n- Tends to forget follow-ups with contacts met at events — auto-remind after 2 weeks\n- Weekend = personal errands + language study. Weekday = work + investing\n  ...\n\n## Historical Summary\n- 2026-03 W3: FOMC monitoring, Tokyo trip planning, Q1 expense analysis, 2 networking follow-ups, car insurance renewal research\n- 2026-03 W2: earnings season alerts (4 holdings reported), weekly meal prep plan started, dentist/doctor appointments booked, apartment lease renewal negotiation draft\n- 2026-03 W1: monthly portfolio review, competitor monitoring report for side project, JLPT N3 mock test (68% — grammar weak), tax docs sent to CPA\n- 2026-02 W4: apartment search finalized (signed lease), morning briefing format v2 (added calendar preview), Valentine's dinner reservation, 3 networking follow-ups\n- 2026-02 W3: apartment search (5 viewings, 2 shortlisted), tax document collection (W-2, 1099s), habit tracking setup (exercise 3x/week, water intake)\n- 2026-02 W2: portfolio restructuring (tech→dividend pivot), set up stock alerts + earnings calendar, flight deal monitoring for spring trip\n- 2026-02 W1: morning briefing system established (8am daily), personal CRM setup (imported 40+ contacts), budget categories defined, JLPT N3 study plan created\n\n## Topics Index\ndaily-briefing: morning-news, portfolio-summary, calendar-preview, pending-follow-ups, ...\ninvesting: portfolio-monitoring, stock-alerts, watchlist, earnings-tracking, sector-analysis, ...\nmacro: fomc, fed-speakers, rate-decisions, cpi-ppi, jobs-report, ...\ntravel: flight-search, hotel-comparison, airbnb, itinerary, restaurant-recs, transport-passes, ...\nemail: inbox-triage, draft-replies, tone-matching, auto-rules, priority-senders, ...\nfinance: expense-tracking, budget-categories, spending-alerts, monthly-report, savings-goal, ...\npersonal-crm: contact-notes, meeting-history, follow-up-reminders, event-connections, ...\ncalendar: task-management, reminders, appointment-booking, weekly-review, time-blocking, ...\nhousing: apartment-search, lease-negotiation, neighborhood-comparison, move-planning, ...\nlanguage: jlpt-n3, vocab-quiz, grammar-drills, mock-tests, progress-tracking, ...\nhealth: habit-tracking, exercise-log, water-intake, medical-appointments, meal-prep, ...\ntax: document-collection, cpa-communication, capital-gains-summary, filing-deadline, ...\nshopping: deal-alerts, price-comparison, reservation-monitoring, wishlist, ...\nside-project: competitor-monitoring, market-research, user-feedback-tracking, ...\ninsurance: car-renewal, plan-comparison, coverage-review, ...\n(... 70+ topics across 15 categories)\n```\n\nThat's ~2 months. The agent reads this at session start (~3K tokens) and immediately knows what it has context on, when it last dealt with each topic, and where to drill down. No blind file exploration.\n\nWhen the agent needs more detail, it drills down into the compaction tree. Here's what a monthly summary looks like (truncated):\n\n```\n# Monthly Summary: 2026-02\n\n## Key Themes\n\n### 1. Portfolio Restructuring (investing)\nShifted from growth/tech-heavy to 40% dividend + 30% value + 30% growth.\nTriggered by rising rate environment. Earnings calendar alerts set up for\nall 12 holdings. Weekly rebalancing check every Monday morning.\n\n### 2. Morning Briefing System (daily-briefing)\n8am daily: portfolio moves, macro news weighted by interest, yesterday's\npending follow-ups. v2 update (late Feb): added calendar preview for the\nday + weather. FOMC/Fed events highlighted separately when active.\n\n### 3. Apartment Search → Signed (housing)\n5 viewings over 2 weeks. Shortlisted 2 (Brooklyn vs Jersey City).\nFinal: Jersey City — PATH access + $400/mo cheaper. Lease signed Feb 25.\nMove-in checklist created, utilities setup tracked.\n\n### 4. Personal CRM Setup (personal-crm)\nImported 40+ contacts from phone + LinkedIn. Tagged by context (work,\ninvestor, friend, event). Auto-remind for follow-ups if no contact in\n14 days. 3 follow-ups completed, 2 new connections from conference.\n\n### 5. Tax Season Prep (tax)\nW-2, 1099s, tx history collected. CPA meeting scheduled Mar 5.\nCapital gains/losses summary: losses offset stock gains by ~$2K.\n\n  ... (+ habit tracking setup, flight deal monitoring, budget categories, language study plan, insurance review)\n\n## Major Decisions\n- Dividend pivot over growth — rate environment (2026-02-05)\n- Briefing at 8am not 7am — never reads before 8 (2026-02-10)\n- Jersey City over Brooklyn — PATH + price (2026-02-22)\n- JLPT N3 target: July exam (2026-02-01)\n\n## Carried Forward\n- Tokyo trip — dates confirmed, flights/hotel not booked\n- JLPT N3 — daily vocab active, grammar drills starting March\n- CPA meeting — Mar 5, final doc review needed\n- Meal prep plan — starting March (goal: cook 4x/week)\n```\n\nROOT.md gives the bird's-eye view. Monthly/weekly summaries give the detail. Raw logs are always preserved — nothing is ever lost, just compressed.\n\n### Why not just RAG?\n\nThey're complementary, not competing:\n\n- **RAG** answers: \"find me everything related to my investment portfolio\" (semantic similarity)\n- **ROOT.md** answers: \"do I already know about this?\" (awareness — no query needed)\n- **Compaction tree** answers: \"what did we discuss last week?\" (time-based browsing, hierarchical drill-down)\n\nHipocampus supports both — optional hybrid search via qmd (BM25 + vector) for when you need semantic retrieval.\n\n### How it compares\n\n**vs. cloud/enterprise solutions (Mem0, Letta, Mengram)** — they're solving a different problem: multi-user memory, knowledge graphs, framework integrations. Great if you need that. Hipocampus is for **any AI agent that needs persistent memory with zero overhead**.\n\n| | Hipocampus | Mem0 | Letta | Mengram |\n|---|---|---|---|---|\n| Setup | `npx hipocampus init` | pip + API key + vector DB | Docker + Postgres + ADE | API key + SDK |\n| Infrastructure | None (just markdown) | Server or cloud | Server required | Cloud API |\n| Cost | Free (MIT) | $19-249/mo | Cloud pricing | $0-99/mo |\n| Memory awareness | ROOT.md (constant cost) | Query-dependent (RAG) | Query-dependent | Query-dependent |\n| Temporal drill-down | Compaction tree | No | No | No |\n| Data ownership | Your filesystem | Their cloud (or self-host) | Your server | Their servers |\n| Context pollution | Subagent isolation | Inline extraction | Inline extraction | Inline extraction |\n\n**vs. local-first alternatives (Hmem, Mneme)** — these are the closest to what Hipocampus does. Honest comparison:\n\n| | Hipocampus | Hmem | Mneme |\n|---|---|---|---|\n| Storage | Markdown files | SQLite (.hmem file) | Plain text files |\n| Memory structure | 5-level compaction tree | 5-level hierarchy | Flat (facts + task state) |\n| Search | BM25 + vector + LLM rerank (via qmd) | Lazy-loaded drill-down | No search (explicit structure only) |\n| Cross-tool portable | CLI (`npx` init) | MCP server (Cursor, Windsurf, etc.) | Session-based |\n| Session start cost | ~3K tokens (ROOT.md) | ~20 tokens (L1 summary) | Varies |\n| Human-editable | Yes (markdown) | No (SQLite binary) | Yes (text files) |\n| Compaction | Auto (raw→daily→weekly→monthly→root) | Manual hierarchy | No compaction |\n| Hybrid search | Yes (optional qmd) | No | No |\n\n### Quick details\n\n- **3-tier memory**: hot (always loaded), warm (on-demand), cold (searchable archive)\n- **Subagent memory writes** — memory operations run in background, zero context pollution in your main session\n- **Pre-compaction hooks** — automatically preserves memory before context window compression\n- **Works with Claude Code and OpenClaw** — MIT licensed, zero dependencies\n\n### Try it\n\n```\nnpx hipocampus init\n```\n\nCreates the full memory structure, installs agent skills, sets up hooks. ~30 seconds.\n\nGitHub: https://github.com/kevin-hs-sohn/hipocampus\n\nBuilt from real pain, tested heavily. Happy to answer questions about the compaction algorithm or how it works in practice.\n\n\nUpdate: Opened a feature request for native OpenClaw integration: https://github.com/openclaw/openclaw/issues/51612\nIf you'd like to see this built in, a thumbs-up on the issue helps.",
+        "author": "Salty-Asparagus-4751",
+        "subreddit": "clawdbot",
+        "created_utc": 1773986193,
+        "ups": 75,
+        "num_comments": 40,
+        "upvote_ratio": 0.89,
+        "permalink": "https://www.reddit.com/r/clawdbot/comments/1ryo919/i_built_a_persistent_memory_system_for_ai_agents/",
+        "url": "https://www.reddit.com/r/clawdbot/comments/1ryo919/i_built_a_persistent_memory_system_for_ai_agents/",
+        "is_self": true,
+        "post_hint": "self",
+        "thumbnail": "self",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://external-preview.redd.it/s7-aNpRVMZsbCyn1zmddB8jYwcZDXP1S0NfMtd4CPIY.png?auto=webp&amp;s=eba82b8e818c2629d48b72f662b33052c8321a9c",
+                "width": 1200,
+                "height": 600
+              },
+              "resolutions": [
+                {
+                  "url": "https://external-preview.redd.it/s7-aNpRVMZsbCyn1zmddB8jYwcZDXP1S0NfMtd4CPIY.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=f554784f24a6c2a06c22098f2bf0a4704c876670",
+                  "width": 108,
+                  "height": 54
+                },
+                {
+                  "url": "https://external-preview.redd.it/s7-aNpRVMZsbCyn1zmddB8jYwcZDXP1S0NfMtd4CPIY.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=03034f546f72eb6eac726894cfa4ce59c00cb1b6",
+                  "width": 216,
+                  "height": 108
+                },
+                {
+                  "url": "https://external-preview.redd.it/s7-aNpRVMZsbCyn1zmddB8jYwcZDXP1S0NfMtd4CPIY.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=d49cbe84d23633a74eb5785ed1a78ffd1c3ea482",
+                  "width": 320,
+                  "height": 160
+                },
+                {
+                  "url": "https://external-preview.redd.it/s7-aNpRVMZsbCyn1zmddB8jYwcZDXP1S0NfMtd4CPIY.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=6cfcccc5eb5989304ed204d2e44c68c9486c9151",
+                  "width": 640,
+                  "height": 320
+                },
+                {
+                  "url": "https://external-preview.redd.it/s7-aNpRVMZsbCyn1zmddB8jYwcZDXP1S0NfMtd4CPIY.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=113881f5a1114399304630d17b3f2eb868ecc5cd",
+                  "width": 960,
+                  "height": 480
+                },
+                {
+                  "url": "https://external-preview.redd.it/s7-aNpRVMZsbCyn1zmddB8jYwcZDXP1S0NfMtd4CPIY.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=123c0c01c6681873bbc746fca2ea4cba4ad68f5d",
+                  "width": 1080,
+                  "height": 540
+                }
+              ],
+              "variants": {},
+              "id": "s7-aNpRVMZsbCyn1zmddB8jYwcZDXP1S0NfMtd4CPIY"
+            }
+          ],
+          "enabled": false
+        },
+        "media": null
+      },
+      "topComments": [
+        {
+          "author": "marowitt",
+          "ups": 7,
+          "body": "Some good ideas there. Very similar to mine, I'll steal some ideas.\n\nOne great thing that I've found is breaking down into topics instead of just hot/warm/cold. \n\nAnd allowing the agent to store more memory and having a scoring system on top that makrs every time something is retrieved. And then remove things with low retrieval rate and keep ones with high rates. So you end up with more information over all but noise gest filtered out over time."
+        },
+        {
+          "author": "sullenisme",
+          "ups": 6,
+          "body": "you too? i feel like the entire planet ran into the same issue and all decided to make their own fix without checking if one existed... \n\nmy whole youtube feed is \"fix openclaw with this one trick!\" and \"the creator of openclaw recommends this!\""
+        },
+        {
+          "author": "rossinetwork",
+          "ups": 3,
+          "body": "https://preview.redd.it/7fybzfzdc5qg1.jpeg?width=1179&amp;format=pjpg&amp;auto=webp&amp;s=197fb0ba623a84fe66031988fbcf7c6bae07ec7a\n\nOn my way to to set this up asap"
+        }
+      ]
+    },
+    "author_avatar": {
+      "user": "Salty-Asparagus-4751",
+      "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_1.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/system-design-for-ai-genai-llm-infrastructure-scalability-fa/runs/2026-03-26T07-16-14-953Z/avatars/Salty-Asparagus-4751.png",
+      "fetchedAt": "2026-03-26T07:16:30.394Z"
+    }
+  },
+  {
+    "id": "1s129tx",
+    "subreddit": "heracareerswitch",
+    "title": "2026 Career Roadmap - 4 Pillars of Emerging AI Automation",
+    "selftext": "If you’re preparing for AI roles, here’s a quick interview cheat sheet:\n\n• AI Automation → RAG, prompt design, grounding (reduce hallucinations)\n\n• Workflow Automation → orchestration, agent handoffs, APIs\n\n• LLMOps → monitoring, latency, cost, reliability\n\n• Architecture → governance, safety, human-in-the-loop\n\nKey tip: It’s not just about building — it’s about making systems reliable, scalable, and safe.\n\nStay ahead of the curve 💡",
+    "author": "RandomWalkAu",
+    "created_utc": 1774225972,
+    "permalink": "https://www.reddit.com/r/heracareerswitch/comments/1s129tx/2026_career_roadmap_4_pillars_of_emerging_ai/",
+    "url": "https://i.redd.it/gbgo8c4qwoqg1.jpeg",
+    "domain": "i.redd.it",
+    "is_self": false,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 24,
+    "score": 24,
+    "num_comments": 0,
+    "upvote_ratio": 0.96,
+    "thumbnail": "https://preview.redd.it/gbgo8c4qwoqg1.jpeg?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=ec434dbe0f700276867d3934685b615042d0061a",
+    "media": null,
+    "post_hint": "image",
+    "listing": "search:top:week",
+    "viral_score": 0.22550720620201042,
+    "detail": {
+      "post": {
+        "id": "1s129tx",
+        "title": "2026 Career Roadmap - 4 Pillars of Emerging AI Automation",
+        "selftext": "If you’re preparing for AI roles, here’s a quick interview cheat sheet:\n\n• AI Automation → RAG, prompt design, grounding (reduce hallucinations)\n\n• Workflow Automation → orchestration, agent handoffs, APIs\n\n• LLMOps → monitoring, latency, cost, reliability\n\n• Architecture → governance, safety, human-in-the-loop\n\nKey tip: It’s not just about building — it’s about making systems reliable, scalable, and safe.\n\nStay ahead of the curve 💡",
+        "author": "RandomWalkAu",
+        "subreddit": "heracareerswitch",
+        "created_utc": 1774225972,
+        "ups": 23,
+        "num_comments": 0,
+        "upvote_ratio": 0.96,
+        "permalink": "https://www.reddit.com/r/heracareerswitch/comments/1s129tx/2026_career_roadmap_4_pillars_of_emerging_ai/",
+        "url": "https://i.redd.it/gbgo8c4qwoqg1.jpeg",
+        "is_self": false,
+        "post_hint": "image",
+        "thumbnail": "https://preview.redd.it/gbgo8c4qwoqg1.jpeg?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=ec434dbe0f700276867d3934685b615042d0061a",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://preview.redd.it/gbgo8c4qwoqg1.jpeg?auto=webp&amp;s=3635e89f70769c3096724539eab237fd1a325bc1",
+                "width": 1536,
+                "height": 2752
+              },
+              "resolutions": [
+                {
+                  "url": "https://preview.redd.it/gbgo8c4qwoqg1.jpeg?width=108&amp;crop=smart&amp;auto=webp&amp;s=0f685f49ee62695a4dd3c530b252a455df6103d9",
+                  "width": 108,
+                  "height": 193
+                },
+                {
+                  "url": "https://preview.redd.it/gbgo8c4qwoqg1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=b2d40d040146a3d4565120e91a84d1d70f85dace",
+                  "width": 216,
+                  "height": 387
+                },
+                {
+                  "url": "https://preview.redd.it/gbgo8c4qwoqg1.jpeg?width=320&amp;crop=smart&amp;auto=webp&amp;s=c0a9694dee0c8cd5cfe732c10c51d9c2630a407d",
+                  "width": 320,
+                  "height": 573
+                },
+                {
+                  "url": "https://preview.redd.it/gbgo8c4qwoqg1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=924a971f9a18b5f3e99987a464fb0c01cd96e55e",
+                  "width": 640,
+                  "height": 1146
+                },
+                {
+                  "url": "https://preview.redd.it/gbgo8c4qwoqg1.jpeg?width=960&amp;crop=smart&amp;auto=webp&amp;s=72eae5dfde2461de031717387a7c3177e21889bc",
+                  "width": 960,
+                  "height": 1720
+                },
+                {
+                  "url": "https://preview.redd.it/gbgo8c4qwoqg1.jpeg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=f4869f5fbd500e86c17e120ca14b91ab28f6dba2",
+                  "width": 1080,
+                  "height": 1935
+                }
+              ],
+              "variants": {},
+              "id": "gbgo8c4qwoqg1"
+            }
+          ],
+          "enabled": true
+        },
+        "media": null
+      },
+      "topComments": []
+    },
+    "media_extracted": {
+      "type": "image",
+      "url": "https://i.redd.it/gbgo8c4qwoqg1.jpeg",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/system-design-for-ai-genai-llm-infrastructure-scalability-fa/runs/2026-03-26T07-16-14-953Z/media/1s129tx.jpg",
+      "contentType": "image/jpeg",
+      "bytes": 1191455
+    },
+    "author_avatar": {
+      "user": "RandomWalkAu",
+      "url": "https://i.redd.it/snoovatar/avatars/530aa388-5d3f-4ba7-8c65-6c739879e81e.png",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/system-design-for-ai-genai-llm-infrastructure-scalability-fa/runs/2026-03-26T07-16-14-953Z/avatars/RandomWalkAu.png",
+      "fetchedAt": "2026-03-26T07:16:31.980Z"
+    }
+  },
+  {
+    "id": "1rzir0t",
+    "subreddit": "OpenClawInstall",
+    "title": "I found a GitHub repo that teaches you to build production RAG systems the way actual companies do it. Seven weeks, one real project, zero toy demos. Here is why the sequencing is what makes it different.",
+    "selftext": "Most RAG tutorials follow the same arc.\n\nChunk some documents. Embed them. Throw them in a vector database. Query with similarity search. Ship it.\n\nThen you put that in production and it breaks. Not spectacularly, but quietly. Wrong chunks returned for obvious questions. Exact product names and error codes missed entirely. Latency spikes nobody warned you about. No way to trace why the agent gave a bad answer three days ago because you never built observability in.\n\nThe `production-agentic-rag-course` repo by `jamwithai` on GitHub takes the exact opposite approach. It builds RAG the way engineering teams at real companies actually build it: infrastructure first, search foundations before vectors, observability baked in before the first query ever runs, and an agentic layer added only after the retrieval stack is solid.github+1\n\nSeven weeks. One real project. A complete arxiv paper curator that ingests, indexes, retrieves, generates, traces, caches, and delivers results through a live Telegram bot. Every week has a notebook, a blog post, and a tagged git release so you can clone exactly where you left off.\n\n# Why the sequencing is the actual lesson\n\nThe course is built by Shantanu Ladhwe and the philosophy is explicit in how the weeks are ordered.linkedin+1\n\nYou do not touch vectors until week four.\n\nThat is not an oversight. It is the entire point.\n\n**Week 1: Docker, FastAPI, PostgreSQL, OpenSearch, Airflow**\n\nBefore you write a single AI call, you build the infrastructure that everything runs on. Docker for reproducible environments. FastAPI for the API layer with health checks and logging from day one. PostgreSQL for structured metadata. OpenSearch for the search backend. Airflow for the orchestration layer that manages pipelines.\n\nThis is exactly how real engineering teams start. The people who skip this step and go straight to a Jupyter notebook with a vector store end up rebuilding their entire stack later when they realize production needs more than an in-memory index.\n\n**Week 2: Automated arXiv paper ingestion pipeline**\n\nYour data pipeline before your retrieval pipeline. Automated ingestion from arXiv, processing, cleaning, and loading into your storage layer through Airflow workflows.\n\nThe discipline here is: you do not build retrieval until you understand your data. What does the document look like? What metadata matters? Where does the pipeline break? You find out in week 2, not after you have already built your vector index on top of a leaky data layer.\n\n**Week 3: BM25 keyword search foundations**\n\nThis is the week most tutorials skip entirely and it is the week that separates engineers who understand search from engineers who just know how to call an embedding API.\n\nBM25 is the statistical relevance algorithm behind decades of production search systems. It does something semantic search struggles with: exact keyword matching. Product codes, error messages, proper nouns, rare technical terms. When a user searches for `CVE-2024-1234` or `Transformer XL attention mask`, BM25 finds it reliably. Semantic search often misses exact terms because it is optimizing for meaning, not match.\n\nReal companies do not have vector-only retrieval. They have BM25 as the foundation, enhanced with semantic search on top. You learn the foundation before the enhancement.redis+1\n\n**Week 4: Hybrid search with embeddings and RRF fusion**\n\nNow you add vectors. But you add them to something solid.\n\nReciprocal Rank Fusion (RRF) combines BM25 results and vector similarity results into a single ranked list by treating each retrieval path as a separate ranker and fusing their ranks mathematically rather than trying to normalize incompatible scores.\n\nThe practical result: hybrid search consistently outperforms either method alone. Research shows 1-9% recall improvement over vector-only search, and real-world users feel the difference because their exact keyword queries work alongside their conceptual queries.​\n\n**Week 5: Complete RAG with local LLM and streaming responses**\n\nThe full generation loop with Ollama running a local model. Streaming responses through your FastAPI layer. The LLM is a controlled component of the pipeline, not the centerpiece. It takes the retrieved context and generates an answer. The quality of the answer depends heavily on the quality of the retrieval. By now, your retrieval is solid.\n\n**Week 6: Langfuse tracing and Redis caching for production monitoring**\n\nThis is the week nobody builds and then wishes they had built first.\n\nLangfuse gives you full observability: every LLM call, every retrieval query, every tool invocation, with inputs, outputs, latency, and cost. When your agent gives a bad answer in production, you open Langfuse and trace exactly what happened. Which documents were retrieved. What prompt was sent. What the model returned. You do not guess; you investigate.\n\nRedis caching cuts LLM costs and latency for repeated queries. When the same question comes in again, you return the cached result instantly without a round-trip to the model. In production, this changes the economics of running a RAG system significantly.\n\n**Week 7: Agentic RAG with LangGraph and Telegram bot**\n\nThe agentic layer comes last, built on a solid foundation. LangGraph gives you a state machine for your agent workflow: query validation checks if the question is well-formed, document grading evaluates whether retrieved chunks are actually relevant, adaptive retrieval rewrites the query and tries again if the grader rejects the first batch, generation produces a cited answer, and the Telegram bot delivers it to users.\n\nThis is the architecture that handles edge cases properly: bad queries, irrelevant retrievals, and generation failures all have explicit handling paths rather than silent failures.​\n\n# Why this matters for OpenClaw users specifically\n\nIf you are running OpenClaw on a VPS with any kind of knowledge base, document retrieval, or memory layer, you are already building RAG whether you think of it that way or not.\n\nThe gap between \"OpenClaw with a basic vector store\" and \"OpenClaw with a production retrieval stack\" is exactly the gap this course closes.\n\nSpecifically:\n\n**Hybrid search for your OpenClaw memory layer**  \nIf you are using pure vector similarity for memory retrieval, you are getting semantic matches but missing exact ones. Wire a BM25 layer into your retrieval stack and suddenly your agent reliably finds specific client names, exact error codes, and precise technical terms that semantic search was silently failing on.\n\n**Observability for overnight workflows**  \nThe Langfuse tracing pattern from Week 6 applies directly to OpenClaw agents. Trace every tool call, every retrieval, every model invocation. When something goes wrong at 3 AM, you have the full trace instead of a mystery.\n\n**Redis caching for repeated queries**  \nIf your OpenClaw agents handle frequent similar queries (daily briefings, repeated status checks, regular summaries), caching the LLM responses cuts both cost and latency. Week 6 shows you exactly how to implement this.\n\n**LangGraph for complex agent workflows**  \nThe Week 7 agentic patterns with query validation, document grading, and adaptive retrieval are directly applicable to any OpenClaw workflow that does knowledge-base queries. Instead of a single retrieval shot, you get an agent that validates, retrieves, grades, retries if needed, and generates with citations.\n\n# What makes this the right learning path in 2026\n\nThe people who are building the most reliable AI systems in 2026 are not the ones who know the most about models. They are the ones who understand the full stack: infrastructure, data pipelines, search fundamentals, observability, and caching, with the AI layer sitting on top of all of it as a controlled, traceable component.\n\nThe mistake most developers make is starting with the AI layer and trying to bolt infrastructure on later. It never fits cleanly. You end up with observability gaps, brittle retrieval, no caching, and no way to debug production failures.\n\nThis course builds in the right order. Every week depends on the week before it. By the time you get to LangGraph in week seven, every layer underneath it is production-grade and observable.\n\nThe tagged git releases per week are worth emphasizing: you can clone the repo at any tagged commit and run exactly that week's state of the project. If you get stuck in week four, you can clone the week three tag and work forward from there without losing anything. That is a design decision that reflects the same production mindset the course teaches: reproducibility and rollback are not afterthoughts.\n\nThe full course material including weekly notebooks, blog posts, and tagged releases is at [`github.com/jamwithai/production-agentic-rag-course`](http://github.com/jamwithai/production-agentic-rag-course).",
+    "author": "OpenClawInstall",
+    "created_utc": 1774069032,
+    "permalink": "https://www.reddit.com/r/OpenClawInstall/comments/1rzir0t/i_found_a_github_repo_that_teaches_you_to_build/",
+    "url": "https://www.reddit.com/r/OpenClawInstall/comments/1rzir0t/i_found_a_github_repo_that_teaches_you_to_build/",
+    "domain": "self.OpenClawInstall",
+    "is_self": true,
+    "over_18": false,
+    "spoiler": false,
+    "locked": false,
+    "stickied": false,
+    "ups": 33,
+    "score": 33,
+    "num_comments": 0,
+    "upvote_ratio": 0.94,
+    "thumbnail": "self",
+    "media": null,
+    "post_hint": "self",
+    "listing": "search:top:week",
+    "viral_score": 0.18834328818531929,
+    "detail": {
+      "post": {
+        "id": "1rzir0t",
+        "title": "I found a GitHub repo that teaches you to build production RAG systems the way actual companies do it. Seven weeks, one real project, zero toy demos. Here is why the sequencing is what makes it different.",
+        "selftext": "Most RAG tutorials follow the same arc.\n\nChunk some documents. Embed them. Throw them in a vector database. Query with similarity search. Ship it.\n\nThen you put that in production and it breaks. Not spectacularly, but quietly. Wrong chunks returned for obvious questions. Exact product names and error codes missed entirely. Latency spikes nobody warned you about. No way to trace why the agent gave a bad answer three days ago because you never built observability in.\n\nThe `production-agentic-rag-course` repo by `jamwithai` on GitHub takes the exact opposite approach. It builds RAG the way engineering teams at real companies actually build it: infrastructure first, search foundations before vectors, observability baked in before the first query ever runs, and an agentic layer added only after the retrieval stack is solid.github+1\n\nSeven weeks. One real project. A complete arxiv paper curator that ingests, indexes, retrieves, generates, traces, caches, and delivers results through a live Telegram bot. Every week has a notebook, a blog post, and a tagged git release so you can clone exactly where you left off.\n\n# Why the sequencing is the actual lesson\n\nThe course is built by Shantanu Ladhwe and the philosophy is explicit in how the weeks are ordered.linkedin+1\n\nYou do not touch vectors until week four.\n\nThat is not an oversight. It is the entire point.\n\n**Week 1: Docker, FastAPI, PostgreSQL, OpenSearch, Airflow**\n\nBefore you write a single AI call, you build the infrastructure that everything runs on. Docker for reproducible environments. FastAPI for the API layer with health checks and logging from day one. PostgreSQL for structured metadata. OpenSearch for the search backend. Airflow for the orchestration layer that manages pipelines.\n\nThis is exactly how real engineering teams start. The people who skip this step and go straight to a Jupyter notebook with a vector store end up rebuilding their entire stack later when they realize production needs more than an in-memory index.\n\n**Week 2: Automated arXiv paper ingestion pipeline**\n\nYour data pipeline before your retrieval pipeline. Automated ingestion from arXiv, processing, cleaning, and loading into your storage layer through Airflow workflows.\n\nThe discipline here is: you do not build retrieval until you understand your data. What does the document look like? What metadata matters? Where does the pipeline break? You find out in week 2, not after you have already built your vector index on top of a leaky data layer.\n\n**Week 3: BM25 keyword search foundations**\n\nThis is the week most tutorials skip entirely and it is the week that separates engineers who understand search from engineers who just know how to call an embedding API.\n\nBM25 is the statistical relevance algorithm behind decades of production search systems. It does something semantic search struggles with: exact keyword matching. Product codes, error messages, proper nouns, rare technical terms. When a user searches for `CVE-2024-1234` or `Transformer XL attention mask`, BM25 finds it reliably. Semantic search often misses exact terms because it is optimizing for meaning, not match.\n\nReal companies do not have vector-only retrieval. They have BM25 as the foundation, enhanced with semantic search on top. You learn the foundation before the enhancement.redis+1\n\n**Week 4: Hybrid search with embeddings and RRF fusion**\n\nNow you add vectors. But you add them to something solid.\n\nReciprocal Rank Fusion (RRF) combines BM25 results and vector similarity results into a single ranked list by treating each retrieval path as a separate ranker and fusing their ranks mathematically rather than trying to normalize incompatible scores.\n\nThe practical result: hybrid search consistently outperforms either method alone. Research shows 1-9% recall improvement over vector-only search, and real-world users feel the difference because their exact keyword queries work alongside their conceptual queries.​\n\n**Week 5: Complete RAG with local LLM and streaming responses**\n\nThe full generation loop with Ollama running a local model. Streaming responses through your FastAPI layer. The LLM is a controlled component of the pipeline, not the centerpiece. It takes the retrieved context and generates an answer. The quality of the answer depends heavily on the quality of the retrieval. By now, your retrieval is solid.\n\n**Week 6: Langfuse tracing and Redis caching for production monitoring**\n\nThis is the week nobody builds and then wishes they had built first.\n\nLangfuse gives you full observability: every LLM call, every retrieval query, every tool invocation, with inputs, outputs, latency, and cost. When your agent gives a bad answer in production, you open Langfuse and trace exactly what happened. Which documents were retrieved. What prompt was sent. What the model returned. You do not guess; you investigate.\n\nRedis caching cuts LLM costs and latency for repeated queries. When the same question comes in again, you return the cached result instantly without a round-trip to the model. In production, this changes the economics of running a RAG system significantly.\n\n**Week 7: Agentic RAG with LangGraph and Telegram bot**\n\nThe agentic layer comes last, built on a solid foundation. LangGraph gives you a state machine for your agent workflow: query validation checks if the question is well-formed, document grading evaluates whether retrieved chunks are actually relevant, adaptive retrieval rewrites the query and tries again if the grader rejects the first batch, generation produces a cited answer, and the Telegram bot delivers it to users.\n\nThis is the architecture that handles edge cases properly: bad queries, irrelevant retrievals, and generation failures all have explicit handling paths rather than silent failures.​\n\n# Why this matters for OpenClaw users specifically\n\nIf you are running OpenClaw on a VPS with any kind of knowledge base, document retrieval, or memory layer, you are already building RAG whether you think of it that way or not.\n\nThe gap between \"OpenClaw with a basic vector store\" and \"OpenClaw with a production retrieval stack\" is exactly the gap this course closes.\n\nSpecifically:\n\n**Hybrid search for your OpenClaw memory layer**  \nIf you are using pure vector similarity for memory retrieval, you are getting semantic matches but missing exact ones. Wire a BM25 layer into your retrieval stack and suddenly your agent reliably finds specific client names, exact error codes, and precise technical terms that semantic search was silently failing on.\n\n**Observability for overnight workflows**  \nThe Langfuse tracing pattern from Week 6 applies directly to OpenClaw agents. Trace every tool call, every retrieval, every model invocation. When something goes wrong at 3 AM, you have the full trace instead of a mystery.\n\n**Redis caching for repeated queries**  \nIf your OpenClaw agents handle frequent similar queries (daily briefings, repeated status checks, regular summaries), caching the LLM responses cuts both cost and latency. Week 6 shows you exactly how to implement this.\n\n**LangGraph for complex agent workflows**  \nThe Week 7 agentic patterns with query validation, document grading, and adaptive retrieval are directly applicable to any OpenClaw workflow that does knowledge-base queries. Instead of a single retrieval shot, you get an agent that validates, retrieves, grades, retries if needed, and generates with citations.\n\n# What makes this the right learning path in 2026\n\nThe people who are building the most reliable AI systems in 2026 are not the ones who know the most about models. They are the ones who understand the full stack: infrastructure, data pipelines, search fundamentals, observability, and caching, with the AI layer sitting on top of all of it as a controlled, traceable component.\n\nThe mistake most developers make is starting with the AI layer and trying to bolt infrastructure on later. It never fits cleanly. You end up with observability gaps, brittle retrieval, no caching, and no way to debug production failures.\n\nThis course builds in the right order. Every week depends on the week before it. By the time you get to LangGraph in week seven, every layer underneath it is production-grade and observable.\n\nThe tagged git releases per week are worth emphasizing: you can clone the repo at any tagged commit and run exactly that week's state of the project. If you get stuck in week four, you can clone the week three tag and work forward from there without losing anything. That is a design decision that reflects the same production mindset the course teaches: reproducibility and rollback are not afterthoughts.\n\nThe full course material including weekly notebooks, blog posts, and tagged releases is at [`github.com/jamwithai/production-agentic-rag-course`](http://github.com/jamwithai/production-agentic-rag-course).",
+        "author": "OpenClawInstall",
+        "subreddit": "OpenClawInstall",
+        "created_utc": 1774069032,
+        "ups": 36,
+        "num_comments": 0,
+        "upvote_ratio": 0.97,
+        "permalink": "https://www.reddit.com/r/OpenClawInstall/comments/1rzir0t/i_found_a_github_repo_that_teaches_you_to_build/",
+        "url": "https://www.reddit.com/r/OpenClawInstall/comments/1rzir0t/i_found_a_github_repo_that_teaches_you_to_build/",
+        "is_self": true,
+        "post_hint": "self",
+        "thumbnail": "self",
+        "is_gallery": false,
+        "gallery_data": null,
+        "media_metadata": null,
+        "preview": {
+          "images": [
+            {
+              "source": {
+                "url": "https://external-preview.redd.it/DGwRxDDOZOFzyC5j7uU9lW1PRZK7Lm-RbzrkD1RKL8M.png?auto=webp&amp;s=ea12b803cd3540f5667cae2169ea5b714a593b59",
+                "width": 1200,
+                "height": 600
+              },
+              "resolutions": [
+                {
+                  "url": "https://external-preview.redd.it/DGwRxDDOZOFzyC5j7uU9lW1PRZK7Lm-RbzrkD1RKL8M.png?width=108&amp;crop=smart&amp;auto=webp&amp;s=a54a6176dc474cfeb86c7c179ae6c0cf87cda7a2",
+                  "width": 108,
+                  "height": 54
+                },
+                {
+                  "url": "https://external-preview.redd.it/DGwRxDDOZOFzyC5j7uU9lW1PRZK7Lm-RbzrkD1RKL8M.png?width=216&amp;crop=smart&amp;auto=webp&amp;s=e41cdb5ce673bf587487ae3e7c621ac9e5f1ae4b",
+                  "width": 216,
+                  "height": 108
+                },
+                {
+                  "url": "https://external-preview.redd.it/DGwRxDDOZOFzyC5j7uU9lW1PRZK7Lm-RbzrkD1RKL8M.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=f277464c589c4cd6a0cf67c543061c215129d1ba",
+                  "width": 320,
+                  "height": 160
+                },
+                {
+                  "url": "https://external-preview.redd.it/DGwRxDDOZOFzyC5j7uU9lW1PRZK7Lm-RbzrkD1RKL8M.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=584469e820cc615d3a220593764b72b1eab3751c",
+                  "width": 640,
+                  "height": 320
+                },
+                {
+                  "url": "https://external-preview.redd.it/DGwRxDDOZOFzyC5j7uU9lW1PRZK7Lm-RbzrkD1RKL8M.png?width=960&amp;crop=smart&amp;auto=webp&amp;s=ed91577a9f66c33fa04af734588ffb4e95dd0f62",
+                  "width": 960,
+                  "height": 480
+                },
+                {
+                  "url": "https://external-preview.redd.it/DGwRxDDOZOFzyC5j7uU9lW1PRZK7Lm-RbzrkD1RKL8M.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=185a12c4b1026badf3b02f580fe0a3ea3cf336b7",
+                  "width": 1080,
+                  "height": 540
+                }
+              ],
+              "variants": {},
+              "id": "DGwRxDDOZOFzyC5j7uU9lW1PRZK7Lm-RbzrkD1RKL8M"
+            }
+          ],
+          "enabled": false
+        },
+        "media": null
+      },
+      "topComments": []
+    },
+    "author_avatar": {
+      "user": "OpenClawInstall",
+      "url": "https://styles.redditmedia.com/t5_gjbqmm/styles/profileIcon_dh6qq1oclhog1.png?width=256&height=256&crop=256:256,smart&s=efd8d8129f29860d284db41365aad0dcc2c79f8a",
+      "path": "/home/ubuntu/.openclaw/workspace-ce/users/1085339629/reddit-scout/system-design-for-ai-genai-llm-infrastructure-scalability-fa/runs/2026-03-26T07-16-14-953Z/avatars/OpenClawInstall.png",
+      "fetchedAt": "2026-03-26T07:16:33.338Z"
+    }
+  }
+]

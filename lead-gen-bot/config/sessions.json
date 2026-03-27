@@ -1,0 +1,32 @@
+{
+  "linkedin": {
+    "li_at": "AQEFAREBAAAAABysXW0AAAGdG1jsuQAAAZ0_ZXdoTQAA...", 
+    "JSESSIONID": "ajax:2689896008412439311"
+  },
+  "salesnav": {
+    "li_a": "AQEFAREBAAAAABysXW0AAAGdG1jsuQAAAZ0_ZXdoTQAA...",
+    "JSESSIONID": "ajax:2689896008412439311"
+  },
+  "glassdoor": {
+    "cookies": [
+      {
+        "name": "GDAT",
+        "value": "placeholder_gdat_cookie",
+        "domain": ".glassdoor.com"
+      },
+      {
+        "name": "JSESSIONID",
+        "value": "placeholder_jsessionid",
+        "domain": ".glassdoor.com"
+      }
+    ]
+  },
+  "proxy": {
+    "server": "http://proxy-10003.useragent.decodo.com:10003",
+    "username": "decodo_username", 
+    "password": "decodo_password"
+  },
+  "serper": {
+    "apiKey": "your_serper_api_key_here"
+  }
+}
