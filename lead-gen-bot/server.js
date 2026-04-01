@@ -12,6 +12,67 @@ const SECRET_KEY = process.env.SECRET_KEY || 'your-secret-key';
 app.use(cors());
 app.use(bodyParser.json());
 
+// Minimal dashboard UI for the lead-gen API
+app.get('/', (req, res) => {
+  res.type('html').send(`<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lead Gen Bot Dashboard</title>
+  <style>
+    body{font-family:Arial,sans-serif;max-width:980px;margin:40px auto;padding:0 16px;background:#0b1020;color:#e8eefc}
+    .card{background:#121935;border:1px solid #2a3566;border-radius:14px;padding:18px;margin:14px 0}
+    input,textarea,button{width:100%;padding:10px;border-radius:10px;border:1px solid #3b4a88;background:#0f1630;color:#fff;margin-top:8px}
+    button{background:#4f7cff;border:none;cursor:pointer;font-weight:600}
+    pre{white-space:pre-wrap;word-break:break-word;background:#0a1024;padding:12px;border-radius:10px}
+    .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  </style>
+</head>
+<body>
+  <h1>Lead Gen Bot Dashboard</h1>
+  <div class="card">
+    <h3>Company → Decision Makers</h3>
+    <div class="row">
+      <div><label>Company</label><input id="company" placeholder="Stripe" /></div>
+      <div><label>Role</label><input id="role" placeholder="VP Engineering" /></div>
+    </div>
+    <div class="row">
+      <div><label>Count</label><input id="count" type="number" value="5" /></div>
+      <div></div>
+    </div>
+    <button onclick="runCompany()">Find Leads</button>
+  </div>
+  <div class="card">
+    <h3>Jobs → Leads</h3>
+    <label>Jobs JSON (must include company)</label>
+    <textarea id="jobs" rows="8">[{"company":"Stripe"},{"company":"Figma"}]</textarea>
+    <div class="row">
+      <div><label>Role</label><input id="jobsRole" value="VP Engineering" /></div>
+      <div><label>Leads / Company</label><input id="lpc" type="number" value="3" /></div>
+    </div>
+    <button onclick="runJobs()">Find Leads From Jobs</button>
+  </div>
+  <div class="card">
+    <h3>Response</h3>
+    <pre id="out">Ready.</pre>
+  </div>
+  <script>
+    async function runCompany(){
+      const body={company:company.value,role:role.value,count:Number(count.value||5)};
+      const r=await fetch('/leads/company',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
+      out.textContent=JSON.stringify(await r.json(),null,2);
+    }
+    async function runJobs(){
+      const body={jobs:JSON.parse(jobs.value),role:jobsRole.value,leadsPerCompany:Number(lpc.value||3)};
+      const r=await fetch('/leads/from-jobs',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
+      out.textContent=JSON.stringify(await r.json(),null,2);
+    }
+  </script>
+</body>
+</html>`);
+});
+
 // Load config
 const configPath = path.join(__dirname, 'config', 'sessions.json');
 let config;
