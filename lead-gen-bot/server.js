@@ -61,7 +61,7 @@ app.post('/register', (req, res) => {
 
 // Scan endpoint - starts scraping in background
 app.post('/scan', authenticateToken, async (req, res) => {
-  const { userId, count = 20, query = 'marketing USA' } = req.body;
+  const { userId, count = 20, query = 'marketing USA', company = null } = req.body;
   if (!userId) return res.status(400).json({ error: 'userId required' });
 
   const session = userSessions[userId];
@@ -69,6 +69,11 @@ app.post('/scan', authenticateToken, async (req, res) => {
 
   // Parse query if custom, else use session
   const searchParams = parseQuery(query, session);
+  
+  // Add company if specified (for company-first search)
+  if (company) {
+    searchParams.company = company;
+  }
 
   leads[userId] = { status: 'scanning', leads: [], startedAt: new Date().toISOString(), params: searchParams };
 
@@ -117,6 +122,116 @@ app.post('/admin/test-sources', authenticateToken, async (req, res) => {
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
+});
+
+// ═══════════════════════════════════════════════════════════════════════════
+// Company-First Lead Search (Recommended for accurate results)
+// ═══════════════════════════════════════════════════════════════════════════
+
+/**
+ * POST /leads/company
+ * Get leads from a specific company
+ * 
+ * Body: {
+ *   company: "Stripe",        // Required: company name
+ *   role: "VP Engineering",   // Optional: title filter
+ *   count: 10                 // Optional: number of leads (default 10)
+ * }
+ */
+app.post('/leads/company', async (req, res) => {
+  const { company, role = '', count = 10 } = req.body;
+  
+  if (!company) {
+    return res.status(400).json({ error: 'company is required' });
+  }
+  
+  try {
+    const leads = await scrapers.salesnav.scrape({ company, role }, count);
+    res.json({
+      success: true,
+      company: company,
+      role: role || 'decision makers',
+      count: leads.length,
+      leads: leads
+    });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+/**
+ * POST /leads/search
+ * Keyword-based lead search (less accurate, use /leads/company when possible)
+ * 
+ * Body: {
+ *   role: "AI startup CEO",   // Required: role/title keywords
+ *   location: "San Francisco", // Optional: location filter
+ *   count: 10                  // Optional: number of leads
+ * }
+ */
+app.post('/leads/search', async (req, res) => {
+  const { role, location = '', count = 10 } = req.body;
+  
+  if (!role) {
+    return res.status(400).json({ error: 'role is required' });
+  }
+  
+  try {
+    const leads = await scrapers.salesnav.scrape({ role, location }, count);
+    res.json({
+      success: true,
+      query: { role, location },
+      count: leads.length,
+      leads: leads
+    });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+/**
+ * POST /leads/from-jobs
+ * Get leads from companies that have job postings
+ * Takes job search results and finds decision makers at those companies
+ * 
+ * Body: {
+ *   jobs: [{ company: "Stripe", ... }, ...],  // Job objects with company field
+ *   role: "VP Engineering",                    // Role to search for at each company
+ *   leadsPerCompany: 3                         // Leads per company (default 3)
+ * }
+ */
+app.post('/leads/from-jobs', async (req, res) => {
+  const { jobs, role = 'VP Engineering OR Director OR Head', leadsPerCompany = 3 } = req.body;
+  
+  if (!jobs || !Array.isArray(jobs) || jobs.length === 0) {
+    return res.status(400).json({ error: 'jobs array is required' });
+  }
+  
+  const allLeads = [];
+  const errors = [];
+  
+  // Dedupe companies
+  const companies = [...new Set(jobs.map(j => j.company).filter(Boolean))];
+  
+  for (const company of companies.slice(0, 10)) { // Limit to 10 companies
+    try {
+      const leads = await scrapers.salesnav.scrape({ company, role }, leadsPerCompany);
+      allLeads.push(...leads.map(l => ({ ...l, sourceCompany: company })));
+    } catch (err) {
+      errors.push({ company, error: err.message });
+    }
+    
+    // Rate limit
+    await new Promise(r => setTimeout(r, 500));
+  }
+  
+  res.json({
+    success: true,
+    companiesSearched: companies.slice(0, 10).length,
+    totalLeads: allLeads.length,
+    leads: allLeads,
+    errors: errors.length > 0 ? errors : undefined
+  });
 });
 
 // Helper to parse query
